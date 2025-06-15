@@ -106,7 +106,7 @@ function ContactPage() {
                     viewport={{ once: true }}
                 >
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
-                    Let's Build Something <span className="text-[#9a9c30]">Powerful Together</span>
+                    Let&apos;s Build Something <span className="text-[#9a9c30]">Powerful Together</span>
                     </h2>
                     <p className="text-lg text-gray-300 leading-relaxed mb-6">
                     At Bonhoeffer Machines, we believe in the power of partnership. Whether you&apos;re looking for 
@@ -136,7 +136,7 @@ function ContactPage() {
                     Send Us a Message
                     </h2>
                     <p className="text-gray-300 text-lg">
-                    Fill out the form below and we'll get back to you within 24 hours
+                    Fill out the form below and we&apos;ll get back to you within 24 hours
                     </p>
                 </motion.div>
 

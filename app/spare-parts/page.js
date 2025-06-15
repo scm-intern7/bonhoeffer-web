@@ -542,7 +542,7 @@ function SparePage() {
               Accessories
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Essential accessories and tools to enhance your machinery's functionality
+              Essential accessories and tools to enhance your machinery&apos;s functionality
             </p>
           </motion.div>
 

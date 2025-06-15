@@ -116,7 +116,7 @@ function Page() {
                 Our story began in 2018 under the umbrella of Heine Corporation Private Limited. In the initial six years, we took significant strides in the industry, and in 2023, we proudly established Bonhoeffer Machines Private Limited as our distinct brand.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                In this short span, we've ventured into over 17 countries, bringing our innovative products to various corners of the world. Starting our operations in Mexico, we've expanded our footprint, reaching as far as Panama with our diverse range of high-quality products.
+                In this short span, we&apos;ve ventured into over 17 countries, bringing our innovative products to various corners of the world. Starting our operations in Mexico, we&apos;ve expanded our footprint, reaching as far as Panama with our diverse range of high-quality products.
               </p>
             </div>
             <motion.div
