@@ -109,12 +109,12 @@ function ContactPage() {
                     Let's Build Something <span className="text-[#9a9c30]">Powerful Together</span>
                     </h2>
                     <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                    At Bonhoeffer Machines, we believe in the power of partnership. Whether you're looking for 
+                    At Bonhoeffer Machines, we believe in the power of partnership. Whether you&apos;re looking for 
                     cutting-edge industrial equipment, technical support, or exploring new business opportunities, 
                     our team is here to help you succeed.
                     </p>
                     <p className="text-lg text-gray-300 leading-relaxed">
-                    With decades of experience in manufacturing and exporting high-quality machinery, we're committed 
+                    With decades of experience in manufacturing and exporting high-quality machinery, we&apos;re committed 
                     to providing solutions that drive your business forward. Connect with us today and discover how 
                     we can power your next project.
                     </p>

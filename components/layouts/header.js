@@ -357,7 +357,7 @@ function Header() {
                         
                         {searchQuery && (
                             <div className="mt-4 text-sm text-gray-600">
-                                Press Enter to search for "{searchQuery}"
+                                Press Enter to search for &ldquo;{searchQuery}&rdquo;
                             </div>
                         )}
                     </form>

@@ -116,7 +116,7 @@ function Page() {
                 Our story began in 2018 under the umbrella of Heine Corporation Private Limited. In the initial six years, we took significant strides in the industry, and in 2023, we proudly established Bonhoeffer Machines Private Limited as our distinct brand.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                In this short span, we've ventured into over 17 countries, bringing our innovative products to various corners of the world. Starting our operations in Mexico, we've expanded our footprint, reaching as far as Panama with our diverse range of high-quality products.
+                In this short span, we&apos;ve ventured into over 17 countries, bringing our innovative products to various corners of the world. Starting our operations in Mexico, we&apos;ve expanded our footprint, reaching as far as Panama with our diverse range of high-quality products.
               </p>
             </div>
             <motion.div
@@ -135,7 +135,7 @@ function Page() {
         </div>
       </section>
 
-      {/* Founder's Desk */}
+      {/* Founder&apos;s Desk */}
       <section className="py-20 px-6 bg-black/20">
         <div className="max-w-7xl mx-auto">
           <motion.div 
@@ -152,18 +152,18 @@ function Page() {
             >
               <Image
                 src="/about/founder-desk.webp"
-                alt="Founder's Desk"
+                alt="Founder&apos;s Desk"
                 fill
                 className="object-cover"
               />
             </motion.div>
             <div className="text-white order-1 md:order-2">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#989b2e]">
-                From the Founder's Desk
+                From the Founder&apos;s Desk
               </h2>
               <div className="space-y-4 text-md text-gray-300 leading-relaxed">
                 <p>
-                  At Bonhoeffer Machines, our journey is not just about machines; it's about building lasting partnerships and contributing to the progress of industries worldwide. Join us on this incredible voyage as we continue to grow and make a positive impact with our cutting-edge solutions.
+                  At Bonhoeffer Machines, our journey is not just about machines; it&apos;s about building lasting partnerships and contributing to the progress of industries worldwide. Join us on this incredible voyage as we continue to grow and make a positive impact with our cutting-edge solutions.
                 </p>
                 <p>
                   Currently, we proudly operate in Latin America, Central America, and Asia, bringing the innovative solutions of Bonhoeffer Machines to diverse regions. Our extensive product line encompasses over 4500+ items, catering to the specific needs of agriculture, gardening, forestry, and construction across various segments.
@@ -195,7 +195,7 @@ function Page() {
               Leadership Team
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Meet the visionary leaders driving our company's success and innovation
+              Meet the visionary leaders driving our company&apos;s success and innovation
             </p>
           </motion.div>
 
@@ -295,7 +295,7 @@ function Page() {
               </h2>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  To be the world's most trusted partner in agricultural innovation, empowering farmers with cutting-edge technology that enhances productivity while preserving our planet's resources.
+                  To be the world&apos;s most trusted partner in agricultural innovation, empowering farmers with cutting-edge technology that enhances productivity while preserving our planet&apos;s resources.
                 </p>
                 <p>
                   We envision a future where sustainable farming practices meet advanced automation, creating a world where agriculture not only feeds the growing population but also nurtures the environment for generations to come.
