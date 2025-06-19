@@ -147,7 +147,7 @@ function Header() {
         <div className="flex flex-row items-center gap-5 text-white">
             <div className="image pt-5">
                 <img
-                    src="/logo.png"
+                    src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/logo.png"
                     alt="Bonhoeffer Machines Logo"
                     className="h-24 pl-5 pr-5"
                 />

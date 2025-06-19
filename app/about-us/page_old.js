@@ -427,7 +427,7 @@ function Page() {
                 transition={{ duration: 0.3 }}
               >
                 <Image
-                  src="/about/mission-copy.png"
+                  src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/mission-copy.png"
                   alt="Our Mission"
                   fill
                 />

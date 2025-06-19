@@ -3,11 +3,11 @@ import React, { useState, useEffect, useRef } from 'react';
 
 // Generate products from filenames with proper names
 const products = [
-  { id: 1, name: 'Gasoline Water Pump', image: '/home-products/1-gasoline-water-pump.webp', slug: 'gasoline-water-pump' },
-  { id: 2, name: 'Gasoline Engine', image: '/home-products/2-gasoline-engine.webp', slug: 'gasoline-engine' },
-  { id: 3, name: 'Gasoline Generator', image: '/home-products/3-gasoline-generator.webp', slug: 'gasoline-generator' },
-  { id: 4, name: 'Gasoline Inverter', image: '/home-products/4-gasoline-inverter.webp', slug: 'gasoline-inverter' },
-  { id: 5, name: 'Gasoline Tiller', image: '/home-products/5-gasoline-tiller.webp', slug: 'gasoline-tiller' },
+  { id: 1, name: 'Gasoline Water Pump', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1-gasoline-water-pump.webp', slug: 'gasoline-water-pump' },
+  { id: 2, name: 'Gasoline Engine', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2-gasoline-engine.webp', slug: 'gasoline-engine' },
+  { id: 3, name: 'Gasoline Generator', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3-gasoline-generator.webp', slug: 'gasoline-generator' },
+  { id: 4, name: 'Gasoline Inverter', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/4-gasoline-inverter.webp', slug: 'gasoline-inverter' },
+  { id: 5, name: 'Gasoline Tiller', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5-gasoline-tiller.webp', slug: 'gasoline-tiller' },
 ];
 
 function Producty() {

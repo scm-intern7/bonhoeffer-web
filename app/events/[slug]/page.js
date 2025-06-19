@@ -5,17 +5,17 @@ import { useRouter } from 'next/navigation';
 
 // Event images data (same as in events.js)
 const eventImages = [
-  { src: '/events/Argentina-Fair.png', name: 'Argentina Fair', slug: 'argentina-fair' },
-  { src: '/events/coimbatore-fair-home.webp', name: 'Coimbatore Fair', slug: 'coimbatore-fair' },
-  { src: '/events/Colombia-Fair.png', name: 'Colombia Fair', slug: 'colombia-fair' },
-  { src: '/events/Domican-Republic.png', name: 'Dominican Republic', slug: 'dominican-republic' },
-  { src: '/events/Football-Event.png', name: 'Football Event', slug: 'football-event' },
-  { src: '/events/indian-fair.png', name: 'Indian Fair', slug: 'indian-fair' },
-  { src: '/events/Mexico-Fair.png', name: 'Mexico Fair', slug: 'mexico-fair' },
-  { src: '/events/nicaragua-fair-home.webp', name: 'Nicaragua Fair', slug: 'nicaragua-fair' },
-  { src: '/events/peru-fair.png', name: 'Peru Fair', slug: 'peru-fair' },
-  { src: '/events/usaid1.png', name: 'USAID Event 1', slug: 'usaid-event-1' },
-  { src: '/events/usaid2.png', name: 'USAID Event 2', slug: 'usaid-event-2' }
+  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Argentina-Fair.png', name: 'Argentina Fair', slug: 'argentina-fair' },
+  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/coimbatore-fair-home.webp', name: 'Coimbatore Fair', slug: 'coimbatore-fair' },
+  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Colombia-Fair.png', name: 'Colombia Fair', slug: 'colombia-fair' },
+  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Domican-Republic.png', name: 'Dominican Republic', slug: 'dominican-republic' },
+  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Football-Event.png', name: 'Football Event', slug: 'football-event' },
+  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/indian-fair.png', name: 'Indian Fair', slug: 'indian-fair' },
+  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Mexico-Fair.png', name: 'Mexico Fair', slug: 'mexico-fair' },
+  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-fair-home.webp', name: 'Nicaragua Fair', slug: 'nicaragua-fair' },
+  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/peru-fair.png', name: 'Peru Fair', slug: 'peru-fair' },
+  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/usaid1.png', name: 'USAID Event 1', slug: 'usaid-event-1' },
+  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/usaid2.png', name: 'USAID Event 2', slug: 'usaid-event-2' }
 ];
 
 export default function EventDetail({ params }) {

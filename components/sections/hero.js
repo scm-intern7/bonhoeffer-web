@@ -141,7 +141,7 @@ function Hero() {
             loop 
             muted
           >
-            <source src="/hero_video.mp4" type="video/mp4" />
+            <source src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/hero_video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </motion.div>
@@ -197,7 +197,7 @@ function Hero() {
             viewport={{ once: true }}
           >
             <img 
-              src="/hero_gif.gif" 
+              src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/hero_gif.gif" 
               alt="Hero Animation"
               className="w-full object-cover rounded-2xl border-2 border-[#989b2e]/30 shadow-lg"
             />

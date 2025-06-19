@@ -312,7 +312,7 @@ function Page() {
             >
               <div className="relative h-64 rounded-2xl overflow-hidden mb-8">
                 <Image
-                  src="/about/mission-copy.png"
+                  src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/mission-copy.png"
                   alt="Our Mission"
                   fill
                   className="object-cover"

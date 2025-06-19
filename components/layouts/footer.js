@@ -87,7 +87,7 @@ function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-3">
             <img
-              src="/logo.png"
+              src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/logo.png"
               alt="Bonhoeffer Machines Logo"
               className="h-24 mb-3"
             />

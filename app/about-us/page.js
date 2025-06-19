@@ -64,7 +64,7 @@ function Page() {
       <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden mt-5">
         <div className="absolute inset-0">
           <Image
-            src="/about/About-us-new-banner.webp"
+            src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/logo.png"
             alt="About Us Banner"
             fill
             className="object-cover"
@@ -125,7 +125,7 @@ function Page() {
               transition={{ duration: 0.3 }}
             >
               <Image
-                src="/about/Overview.webp"
+                src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/logo.png"
                 alt="Company Introduction"
                 fill
                 className="object-cover"
@@ -151,7 +151,7 @@ function Page() {
               transition={{ duration: 0.3 }}
             >
               <Image
-                src="/about/founder-desk.webp"
+                src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/logo.png"
                 alt="Founder's Desk"
                 fill
                 className="object-cover"
@@ -312,7 +312,7 @@ function Page() {
             >
               <div className="relative h-100 rounded-2xl overflow-hidden mb-8">
                 <Image
-                  src="/about/mission-copy.png"
+                  src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/mission-copy.png"
                   alt="Our Mission"
                   fill
                   className="object-cover"
