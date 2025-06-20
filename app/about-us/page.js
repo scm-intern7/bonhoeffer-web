@@ -9,12 +9,12 @@ function Page() {
 
   // HOD data
   const hodData = [
-    { name: "Naveen Bakshi", position: "Head of Supply Chain", image: "/about/hod/Naveen-Bakshi.webp" },
-    { name: "Sachin Sharma", position: "Manager Financial Planning and Accounting", image: "/about/hod/Sachin-Sharma.webp" },
-    { name: "Sudhanshu Pandey", position: "CEO India Business", image: "/about/hod/Sudhanshu-Pandey.webp" },
-    { name: "Suparna Chawla", position: "Manager, Human Resource", image: "/about/hod/Suparna-Chawla.webp" },
-    { name: "Rajat Sahni", position: "Head Latin America", image: "/about/hod/Rajat-Sahni.webp" },
-    { name: "Ashwin Tharoor", position: "Sr. Manager Marketing", image: "/about/hod/ashwin-tharoor.webp" }
+    { name: "Naveen Bakshi", position: "Head of Supply Chain", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Naveen-Bakshi.webp" },
+    { name: "Sachin Sharma", position: "Manager Financial Planning and Accounting", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Sachin-Sharma.webp" },
+    { name: "Sudhanshu Pandey", position: "CEO India Business", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Sudhanshu-Pandey.webp" },
+    { name: "Suparna Chawla", position: "Manager, Human Resource", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Suparna-Chawla.webp" },
+    { name: "Rajat Sahni", position: "Head Latin America", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Rajat-Sahni.webp" },
+    { name: "Ashwin Tharoor", position: "Sr. Manager Marketing", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/ashwin-tharoor.webp" }
   ];
 
   // Differentiators data
@@ -64,13 +64,13 @@ function Page() {
       <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden mt-5">
         <div className="absolute inset-0">
           <Image
-            src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/logo.png"
+            src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/About-us-new-banner.webp"
             alt="About Us Banner"
             fill
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0" />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
         
         <motion.div 
@@ -125,7 +125,7 @@ function Page() {
               transition={{ duration: 0.3 }}
             >
               <Image
-                src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/logo.png"
+                src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Overview.webp"
                 alt="Company Introduction"
                 fill
                 className="object-cover"
@@ -151,7 +151,7 @@ function Page() {
               transition={{ duration: 0.3 }}
             >
               <Image
-                src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/logo.png"
+                src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/founder-desk.webp"
                 alt="Founder's Desk"
                 fill
                 className="object-cover"
@@ -284,7 +284,7 @@ function Page() {
             >
               <div className="relative h-100 rounded-2xl overflow-hidden mb-8">
                 <Image
-                  src="/about/vision.webp"
+                  src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/vision.webp"
                   alt="Our Vision"
                   fill
                   className="object-cover"

@@ -23,9 +23,9 @@ function ModelSpecificPage() {
           description: 'Compact and efficient water pump designed for residential and small commercial applications.',
           modelDescription: 'The WP-20 model features a reliable 4-stroke engine with automatic pressure regulation and durable cast iron construction for long-lasting performance.',
           images: [
-            '/home-products/1-gasoline-water-pump.webp',
-            '/home-products/1-gasoline-water-pump.webp',
-            '/home-products/1-gasoline-water-pump.webp'
+            'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1-gasoline-water-pump.webp',
+            'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1-gasoline-water-pump.webp',
+            'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1-gasoline-water-pump.webp'
           ],
           specifications: [
             { label: 'Engine Name', value: 'Bonhoeffer 168F' },
@@ -60,9 +60,9 @@ function ModelSpecificPage() {
           description: 'Lightweight and versatile brush cutter perfect for homeowners and light professional use.',
           modelDescription: 'The BC-260 model combines power and maneuverability with a 26cc 2-stroke engine, making it ideal for grass cutting and light brush clearing.',
           images: [
-            '/home-products/7-brush-cutter.webp',
-            '/home-products/7-brush-cutter.webp',
-            '/home-products/7-brush-cutter.webp'
+            'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/7-brush-cutter.webp',
+            'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/7-brush-cutter.webp',
+            'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/7-brush-cutter.webp'
           ],
           specifications: [
             { label: 'Engine Name', value: 'Bonhoeffer 260' },
@@ -156,13 +156,13 @@ function ModelSpecificPage() {
 
   const getProductImage = (slug) => {
     const imageMap = {
-      'gasoline-water-pump': '/home-products/1-gasoline-water-pump.webp',
-      'gasoline-engine': '/home-products/2-gasoline-engine.webp',
-      'gasoline-generator': '/home-products/3-gasoline-generator.webp',
-      'brush-cutter': '/home-products/7-brush-cutter.webp',
-      'chainsaw': '/home-products/10-chain-saw.webp'
+      'gasoline-water-pump': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1-gasoline-water-pump.webp',
+      'gasoline-engine': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2-gasoline-engine.webp',
+      'gasoline-generator': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3-gasoline-generator.webp',
+      'brush-cutter': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/7-brush-cutter.webp',
+      'chainsaw': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/10-chain-saw.webp'
     };
-    return imageMap[slug] || '/home-products/1-gasoline-water-pump.webp';
+    return imageMap[slug] || 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1-gasoline-water-pump.webp';
   };
 
   // Get other models for the same product
@@ -230,7 +230,7 @@ function ModelSpecificPage() {
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden mt-5">
         <div className="absolute inset-0">
           <Image
-            src="/products/product-banner.webp"
+            src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/product-banner.webp"
             alt="Product Banner"
             fill
             className="object-cover"

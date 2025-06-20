@@ -143,25 +143,25 @@ function PartSpecificPage() {
       'bearings': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/40_rodamientos-baleeros.png',
       'chain-accessories': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/41_accesorios-de-cadena-de-motosierra.png',
       'spark-plugs': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/42_bujias.png',
-      'irrigation-hose': '/spare-parts/32_manguera-de-riego.png',
-      'expandable-garden-hose': '/spare-parts/33_mangeura-de-jardin-expandible.png',
-      'aluminum-couplings': '/spare-parts/34_acoples-aluminio.png',
-      'aluminum-coupling-joint': '/spare-parts/35_junta-de-acoplamiento-de-aluminio.png',
-      'professional-harness': '/spare-parts/36_arnes-profesional-para-motoguadana.png',
-      'lawn-mower-wheels': '/spare-parts/37_llantas-para-cortacesped.png',
-      'high-pressure-spray-hose': '/spare-parts/38_manguera-de-fumigacion-de-alta-presion.png',
-      'spraying-parts': '/spare-parts/39_repuestos-de-fumigacion.png',
-      'air-gun': '/spare-parts/44_pistola-de-aire.png',
-      'garden-tools': '/spare-parts/47_herramient-as-de-jardin.png',
-      'long-tail-propeller': '/spare-parts/48_helice-de-cola-larga.png',
-      'eye-protection': '/spare-parts/49_proteccion-para-los-ojos.png',
-      'head-protection-helmet': '/spare-parts/50_proteccion-para-la-cabeza-combinacion-de-casco.png',
-      'drill': '/spare-parts/51_drill.png',
-      'respiratory-protection': '/spare-parts/51_proteccion-respiratoria.png',
-      'electrodes-wire': '/spare-parts/52_electrodes-and-wire.png',
-      'face-protection': '/spare-parts/53_protección-facial.png'
+      'irrigation-hose': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/32_manguera-de-riego.png',
+      'expandable-garden-hose': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/33_mangeura-de-jardin-expandible.png',
+      'aluminum-couplings': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/34_acoples-aluminio.png',
+      'aluminum-coupling-joint': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/35_junta-de-acoplamiento-de-aluminio.png',
+      'professional-harness': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/36_arnes-profesional-para-motoguadana.png',
+      'lawn-mower-wheels': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/37_llantas-para-cortacesped.png',
+      'high-pressure-spray-hose': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/38_manguera-de-fumigacion-de-alta-presion.png',
+      'spraying-parts': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/39_repuestos-de-fumigacion.png',
+      'air-gun': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/44_pistola-de-aire.png',
+      'garden-tools': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/47_herramient-as-de-jardin.png',
+      'long-tail-propeller': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/48_helice-de-cola-larga.png',
+      'eye-protection': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/49_proteccion-para-los-ojos.png',
+      'head-protection-helmet': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/50_proteccion-para-la-cabeza-combinacion-de-casco.png',
+      'drill': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/51_drill.png',
+      'respiratory-protection': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/51_proteccion-respiratoria.png',
+      'electrodes-wire': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/52_electrodes-and-wire.png',
+      'face-protection': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/53_protección-facial.png'
     };
-    return imageMap[slug] || '/spare-parts/1_kit-de-piston.png';
+    return imageMap[slug] || 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_kit-de-piston.png';
   };
 
   const partName = getPartName(slug);
@@ -174,7 +174,7 @@ function PartSpecificPage() {
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden mt-5">
         <div className="absolute inset-0">
           <Image
-            src="/spare-parts/spare-parts-banner.webp"
+            src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/spare-parts-banner.webp"
             alt="Spare Parts Banner"
             fill
             className="object-cover"

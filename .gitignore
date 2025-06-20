@@ -248,4 +248,4 @@ runtime-config.json
 /public/hero_video.mp4
 /public/hero_gif.gif
 .env*.local
-/public
+/public/

@@ -12,7 +12,7 @@ function CertificationPage() {
     {
       id: 1,
       name: "ISO Quality Management Certification",
-      image: "/certification/Certificacion-ISO.jpg",
+      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Certificacion-ISO.jpg",
       authority: "International Organization for Standardization",
       type: "Quality Management System",
       description: "ISO certification ensures our commitment to quality management systems, continuous improvement, and customer satisfaction.",
@@ -22,7 +22,7 @@ function CertificationPage() {
     {
       id: 2,
       name: "Commercial Test Report - GT-950T",
-      image: "/certification/BON-GT-950T.jpg",
+      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/BON-GT-950T.jpg",
       authority: "Government of India - Ministry of Agriculture and Farmers Welfare",
       type: "Commercial Test Report",
       description: "Official government authorization for international trade operations and machinery export.",
@@ -32,7 +32,7 @@ function CertificationPage() {
     {
       id: 3,
       name: "Commercial Test Report - BC36",
-      image: "/certification/BON-P-BC36.jpg",
+      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/BON-P-BC36.jpg",
       authority: "Government of India - Ministry of Agriculture and Farmers Welfare",
       type: "Commercial Test Report",
       description: "BIS certification confirming our products meet Indian quality and safety standards.",
@@ -42,7 +42,7 @@ function CertificationPage() {
     {
       id: 4,
       name: "Commercial Test Report - BC45",
-      image: "/certification/BON-P-BC45.jpg",
+      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/BON-P-BC45.jpg",
       authority: "Government of India - Ministry of Agriculture and Farmers Welfare",
       type: "Advanced Product Certification",
       description: "Enhanced product certification for our advanced machinery line ensuring superior quality.",
@@ -52,7 +52,7 @@ function CertificationPage() {
     {
       id: 5,
       name: "Commercial Test Report - BP-BC45",
-      image: "/certification/BON-P-BP-BC45.jpg",
+      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/BON-P-BP-BC45.jpg",
       authority: "Government of India - Ministry of Agriculture and Farmers Welfare",
       type: "Business Process Certification",
       description: "Certification validating our business processes, manufacturing standards, and operational excellence.",

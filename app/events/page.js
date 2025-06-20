@@ -10,159 +10,159 @@ const fairCategories = [
     name: 'Argentina Fair',
     slug: 'argentina-fair',
     location: 'Argentina',
-    coverImage: '/fair/Argentina-fair1.webp',
+    coverImage: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Argentina-fair1.webp',
     imageCount: 6,
     images: [
-      '/fair/Argentina-fair1.webp',
-      '/fair/Argentina-fair2.webp',
-      '/fair/Argentina-fair3.webp',
-      '/fair/Argentina-fair4.webp',
-      '/fair/Argentina-fair5.webp',
-      '/fair/Argentina-fair6.webp'
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Argentina-fair1.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Argentina-fair2.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Argentina-fair3.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Argentina-fair4.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Argentina-fair5.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Argentina-fair6.webp'
     ]
   },
   {
     name: 'Colombia Fair',
     slug: 'colombia-fair',
     location: 'Colombia',
-    coverImage: '/fair/columbia-fair1.webp',
+    coverImage: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair1.webp',
     imageCount: 11,
     images: [
-      '/fair/columbia-fair1.webp',
-      '/fair/columbia-fair2.webp',
-      '/fair/columbia-fair3.webp',
-      '/fair/columbia-fair4.webp',
-      '/fair/columbia-fair5.webp',
-      '/fair/columbia-fair6.webp',
-      '/fair/columbia-fair7.webp',
-      '/fair/columbia-fair8.webp',
-      '/fair/columbia-fair9.webp',
-      '/fair/columbia-fair10.webp',
-      '/fair/columbia-fair11.webp'
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair1.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair2.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair3.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair4.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair5.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair6.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair7.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair8.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair9.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair10.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair11.webp'
     ]
   },
   {
     name: 'Dominican Republic Fair',
     slug: 'dominican-republic',
     location: 'Dominican Republic',
-    coverImage: '/fair/Dominican-Republic-fair1.webp',
+    coverImage: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Dominican-Republic-fair1.webp',
     imageCount: 2,
     images: [
-      '/fair/Dominican-Republic-fair1.webp',
-      '/fair/Dominican-Republic-fair2.webp'
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Dominican-Republic-fair1.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Dominican-Republic-fair2.webp'
     ]
   },
   {
     name: 'India Fair',
     slug: 'indian-fair',
     location: 'India',
-    coverImage: '/fair/india-fair1.webp',
+    coverImage: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair1.webp',
     imageCount: 10,
     images: [
-      '/fair/india-fair1.webp',
-      '/fair/india-fair2.webp',
-      '/fair/india-fair3.webp',
-      '/fair/india-fair4.webp',
-      '/fair/india-fair5.webp',
-      '/fair/india-fair6.webp',
-      '/fair/india-fair7.webp',
-      '/fair/india-fair8.webp',
-      '/fair/india-fair9.webp',
-      '/fair/india-fair10.webp'
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair1.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair2.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair3.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair4.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair5.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair6.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair7.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair8.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair9.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair10.webp'
     ]
   },
   {
     name: 'Coimbatore Fair',
     slug: 'coimbatore-fair',
     location: 'Coimbatore, India',
-    coverImage: '/fair/coimbatore-slider1.webp',
+    coverImage: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/coimbatore-slider1.webp',
     imageCount: 7,
     images: [
-      '/fair/coimbatore-slider1.webp',
-      '/fair/coimbatore-slider2.webp',
-      '/fair/coimbatore-slider3.webp',
-      '/fair/coimbatore-slider4.webp',
-      '/fair/coimbatore-slider5.webp',
-      '/fair/coimbatore-slider6.webp',
-      '/fair/coimbatore-slider7.webp'
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/coimbatore-slider1.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/coimbatore-slider2.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/coimbatore-slider3.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/coimbatore-slider4.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/coimbatore-slider5.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/coimbatore-slider6.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/coimbatore-slider7.webp'
     ]
   },
   {
     name: 'Guadalajara Mexico Fair',
     slug: 'guadalajara-mexico-fair',
     location: 'Guadalajara, Mexico',
-    coverImage: '/fair/Guadalajara-Mexico-fair1.webp',
+    coverImage: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Guadalajara-Mexico-fair1.webp',
     imageCount: 2,
     images: [
-      '/fair/Guadalajara-Mexico-fair1.webp',
-      '/fair/Guadalajara-Mexico-fair2.webp'
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Guadalajara-Mexico-fair1.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Guadalajara-Mexico-fair2.webp'
     ]
   },
   {
     name: 'Mexico Guanajuato Fair',
     slug: 'mexico-guanajuato-fair',
     location: 'Guanajuato, Mexico',
-    coverImage: '/fair/Mexico-Guanajuato-fair1.webp',
+    coverImage: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Mexico-Guanajuato-fair1.webp',
     imageCount: 5,
     images: [
-      '/fair/Mexico-Guanajuato-fair1.webp',
-      '/fair/Mexico-Guanajuato-fair2.webp',
-      '/fair/Mexico-Guanajuato-fair3.webp',
-      '/fair/Mexico-Guanajuato-fair4.webp',
-      '/fair/Mexico-Guanajuato-fair5.webp'
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Mexico-Guanajuato-fair1.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Mexico-Guanajuato-fair2.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Mexico-Guanajuato-fair3.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Mexico-Guanajuato-fair4.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Mexico-Guanajuato-fair5.webp'
     ]
   },
   {
     name: 'Nicaragua Fair',
     slug: 'nicaragua-fair',
     location: 'Nicaragua',
-    coverImage: '/fair/nicaragua-slider1.webp',
+    coverImage: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-slider1.webp',
     imageCount: 9,
     images: [
-      '/fair/nicaragua-slider1.webp',
-      '/fair/nicaragua-slider2.webp',
-      '/fair/nicaragua-slider3.webp',
-      '/fair/nicaragua-slider4.webp',
-      '/fair/nicaragua-slider5.webp',
-      '/fair/nicaragua-slider6.webp',
-      '/fair/nicaragua-slider7.webp',
-      '/fair/nicaragua-slider8.webp',
-      '/fair/nicaragua-slider9.webp'
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-slider1.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-slider2.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-slider3.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-slider4.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-slider5.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-slider6.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-slider7.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-slider8.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-slider9.webp'
     ]
   },
   {
     name: 'Pantnagar Fair',
     slug: 'pantnagar-fair',
     location: 'Pantnagar, India',
-    coverImage: '/fair/pantnagar-slider1.webp',
+    coverImage: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/pantnagar-slider1.webp',
     imageCount: 6,
     images: [
-      '/fair/pantnagar-slider1.webp',
-      '/fair/pantnagar-slider2.webp',
-      '/fair/pantnagar-slider3.webp',
-      '/fair/pantnagar-slider4.webp',
-      '/fair/pantnagar-slider5.webp',
-      '/fair/pantnagar-slider6.webp'
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/pantnagar-slider1.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/pantnagar-slider2.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/pantnagar-slider3.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/pantnagar-slider4.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/pantnagar-slider5.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/pantnagar-slider6.webp'
     ]
   },
   {
     name: 'Peru Fair',
     slug: 'peru-fair',
     location: 'Peru',
-    coverImage: '/fair/Peru-Fair1.webp',
+    coverImage: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair1.webp',
     imageCount: 11,
     images: [
-      '/fair/Peru-Fair1.webp',
-      '/fair/Peru-Fair2.webp',
-      '/fair/Peru-Fair3.webp',
-      '/fair/Peru-Fair4.webp',
-      '/fair/Peru-Fair5.webp',
-      '/fair/Peru-Fair6.webp',
-      '/fair/Peru-Fair7.webp',
-      '/fair/Peru-Fair8.webp',
-      '/fair/Peru-Fair9.webp',
-      '/fair/Peru-Fair10.webp',
-      '/fair/Peru-Fair11.webp'
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair1.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair2.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair3.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair4.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair5.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair6.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair7.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair8.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair9.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair10.webp',
+      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair11.webp'
     ]
   }
 ];

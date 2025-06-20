@@ -14,34 +14,34 @@ function ProductSpecificPage() {
   const getProductModels = (productSlug) => {
     const productModels = {
       'gasoline-water-pump': [
-        { id: 1, name: 'WP-20', image: '/home-products/1-gasoline-water-pump.webp', power: '5.5 HP', displacement: '163cc' },
-        { id: 2, name: 'WP-30', image: '/home-products/1-gasoline-water-pump.webp', power: '6.5 HP', displacement: '196cc' },
-        { id: 3, name: 'WP-40', image: '/home-products/1-gasoline-water-pump.webp', power: '7.0 HP', displacement: '210cc' },
-        { id: 4, name: 'WP-50', image: '/home-products/1-gasoline-water-pump.webp', power: '8.0 HP', displacement: '250cc' }
+        { id: 1, name: 'WP-20', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1-gasoline-water-pump.webp', power: '5.5 HP', displacement: '163cc' },
+        { id: 2, name: 'WP-30', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1-gasoline-water-pump.webp', power: '6.5 HP', displacement: '196cc' },
+        { id: 3, name: 'WP-40', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1-gasoline-water-pump.webp', power: '7.0 HP', displacement: '210cc' },
+        { id: 4, name: 'WP-50', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1-gasoline-water-pump.webp', power: '8.0 HP', displacement: '250cc' }
       ],
       'gasoline-engine': [
-        { id: 1, name: 'GE-154F', image: '/home-products/2-gasoline-engine.webp', power: '2.6 HP', displacement: '87cc' },
-        { id: 2, name: 'GE-168F', image: '/home-products/2-gasoline-engine.webp', power: '5.5 HP', displacement: '163cc' },
-        { id: 3, name: 'GE-170F', image: '/home-products/2-gasoline-engine.webp', power: '7.0 HP', displacement: '210cc' },
-        { id: 4, name: 'GE-188F', image: '/home-products/2-gasoline-engine.webp', power: '13.0 HP', displacement: '389cc' }
+        { id: 1, name: 'GE-154F', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2-gasoline-engine.webp', power: '2.6 HP', displacement: '87cc' },
+        { id: 2, name: 'GE-168F', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2-gasoline-engine.webp', power: '5.5 HP', displacement: '163cc' },
+        { id: 3, name: 'GE-170F', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2-gasoline-engine.webp', power: '7.0 HP', displacement: '210cc' },
+        { id: 4, name: 'GE-188F', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2-gasoline-engine.webp', power: '13.0 HP', displacement: '389cc' }
       ],
       'gasoline-generator': [
-        { id: 1, name: 'GG-950', image: '/home-products/3-gasoline-generator.webp', power: '650W', displacement: '63cc' },
-        { id: 2, name: 'GG-1200', image: '/home-products/3-gasoline-generator.webp', power: '1000W', displacement: '87cc' },
-        { id: 3, name: 'GG-2500', image: '/home-products/3-gasoline-generator.webp', power: '2000W', displacement: '163cc' },
-        { id: 4, name: 'GG-6500', image: '/home-products/3-gasoline-generator.webp', power: '5500W', displacement: '389cc' }
+        { id: 1, name: 'GG-950', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3-gasoline-generator.webp', power: '650W', displacement: '63cc' },
+        { id: 2, name: 'GG-1200', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3-gasoline-generator.webp', power: '1000W', displacement: '87cc' },
+        { id: 3, name: 'GG-2500', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3-gasoline-generator.webp', power: '2000W', displacement: '163cc' },
+        { id: 4, name: 'GG-6500', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3-gasoline-generator.webp', power: '5500W', displacement: '389cc' }
       ],
       'brush-cutter': [
-        { id: 1, name: 'BC-260', image: '/home-products/7-brush-cutter.webp', power: '1.0 HP', displacement: '26cc' },
-        { id: 2, name: 'BC-330', image: '/home-products/7-brush-cutter.webp', power: '1.2 HP', displacement: '33cc' },
-        { id: 3, name: 'BC-430', image: '/home-products/7-brush-cutter.webp', power: '1.7 HP', displacement: '43cc' },
-        { id: 4, name: 'BC-520', image: '/home-products/7-brush-cutter.webp', power: '2.2 HP', displacement: '52cc' }
+        { id: 1, name: 'BC-260', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/7-brush-cutter.webp', power: '1.0 HP', displacement: '26cc' },
+        { id: 2, name: 'BC-330', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/7-brush-cutter.webp', power: '1.2 HP', displacement: '33cc' },
+        { id: 3, name: 'BC-430', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/7-brush-cutter.webp', power: '1.7 HP', displacement: '43cc' },
+        { id: 4, name: 'BC-520', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/7-brush-cutter.webp', power: '2.2 HP', displacement: '52cc' }
       ],
       'chainsaw': [
-        { id: 1, name: 'CS-3800', image: '/home-products/10-chain-saw.webp', power: '2.0 HP', displacement: '38cc' },
-        { id: 2, name: 'CS-4500', image: '/home-products/10-chain-saw.webp', power: '2.4 HP', displacement: '45cc' },
-        { id: 3, name: 'CS-5200', image: '/home-products/10-chain-saw.webp', power: '3.2 HP', displacement: '52cc' },
-        { id: 4, name: 'CS-6500', image: '/home-products/10-chain-saw.webp', power: '4.8 HP', displacement: '65cc' }
+        { id: 1, name: 'CS-3800', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/10-chain-saw.webp', power: '2.0 HP', displacement: '38cc' },
+        { id: 2, name: 'CS-4500', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/10-chain-saw.webp', power: '2.4 HP', displacement: '45cc' },
+        { id: 3, name: 'CS-5200', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/10-chain-saw.webp', power: '3.2 HP', displacement: '52cc' },
+        { id: 4, name: 'CS-6500', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/10-chain-saw.webp', power: '4.8 HP', displacement: '65cc' }
       ]
     };
 
@@ -111,41 +111,41 @@ function ProductSpecificPage() {
 
   const getProductImage = (slug) => {
     const imageMap = {
-      'gasoline-water-pump': '/home-products/1-gasoline-water-pump.webp',
-      'gasoline-engine': '/home-products/2-gasoline-engine.webp',
-      'gasoline-generator': '/home-products/3-gasoline-generator.webp',
-      'gasoline-inverter': '/home-products/4-gasoline-inverter.webp',
-      'gasoline-tiller': '/home-products/5-gasoline-tiller.webp',
-      'brush-cutter': '/home-products/7-brush-cutter.webp',
-      'backpack-brush-cutter': '/home-products/8-bagpack-brushcutter.webp',
-      'multi-tool': '/home-products/9-multi-tool.webp',
-      'chainsaw': '/home-products/10-chain-saw.webp',
-      'hedge-trimmer': '/home-products/11-hedge-trimmer.webp',
-      'leaf-blower': '/home-products/12-blower.webp',
-      'lawn-mower': '/home-products/13-gasoline-lawn-mower.webp',
-      'earth-auger': '/home-products/14-earth-auger.webp',
-      'diesel-water-pump': '/home-products/19-diesel-water-pump.webp',
-      'diesel-generator': '/home-products/20-diesel-generator.webp',
-      'diesel-engine': '/home-products/21-diesel-engine.webp',
-      'pressure-washer': '/home-products/22-gasoline-pressure-washer.webp',
-      'domestic-pressure-washer': '/home-products/23-pressure-washer-home-use.webp',
-      'air-compressor': '/home-products/24-direct-driven-air-compressor.webp',
-      'commercial-vacuum': '/home-products/25-vaccum-cleaner.webp',
-      'manual-sprayer': '/home-products/27-manual-sprayer.webp',
-      'electric-pressure-washer': '/home-products/28-electric-pressure-washer.webp',
-      'mistduster': '/home-products/29-Mistduster.webp',
-      'centrifugal-pump': '/home-products/31-Centrifugal-Pump.webp',
-      'submersible-pump': '/home-products/32-Submersible-Pump.webp',
-      'solar-water-pump': '/home-products/33-Solar-Submersible-Pump.webp',
-      'solar-panel': '/home-products/34-solar-pannel.webp',
-      'tamping-rammer': '/home-products/35-tamping-rammer.webp',
-      'plate-compactor': '/home-products/36-plate-compactor.webp',
-      'concrete-cutter': '/home-products/37-Concrete-cutter.webp',
-      'concrete-vibrator': '/home-products/38-concrete-vibrator.webp',
-      'power-trowel': '/home-products/39-power-trovel.webp',
-      'welding-machine': '/home-products/40-welding-set.webp'
+      'gasoline-water-pump': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1-gasoline-water-pump.webp',
+      'gasoline-engine': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2-gasoline-engine.webp',
+      'gasoline-generator': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3-gasoline-generator.webp',
+      'gasoline-inverter': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/4-gasoline-inverter.webp',
+      'gasoline-tiller': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5-gasoline-tiller.webp',
+      'brush-cutter': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/7-brush-cutter.webp',
+      'backpack-brush-cutter': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/8-bagpack-brushcutter.webp',
+      'multi-tool': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/9-multi-tool.webp',
+      'chainsaw': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/10-chain-saw.webp',
+      'hedge-trimmer': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/11-hedge-trimmer.webp',
+      'leaf-blower': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/12-blower.webp',
+      'lawn-mower': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/13-gasoline-lawn-mower.webp',
+      'earth-auger': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/14-earth-auger.webp',
+      'diesel-water-pump': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/19-diesel-water-pump.webp',
+      'diesel-generator': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/20-diesel-generator.webp',
+      'diesel-engine': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/21-diesel-engine.webp',
+      'pressure-washer': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/22-gasoline-pressure-washer.webp',
+      'domestic-pressure-washer': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/23-pressure-washer-home-use.webp',
+      'air-compressor': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/24-direct-driven-air-compressor.webp',
+      'commercial-vacuum': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/25-vaccum-cleaner.webp',
+      'manual-sprayer': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/27-manual-sprayer.webp',
+      'electric-pressure-washer': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/28-electric-pressure-washer.webp',
+      'mistduster': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/29-Mistduster.webp',
+      'centrifugal-pump': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/31-Centrifugal-Pump.webp',
+      'submersible-pump': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/32-Submersible-Pump.webp',
+      'solar-water-pump': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/33-Solar-Submersible-Pump.webp',
+      'solar-panel': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/34-solar-pannel.webp',
+      'tamping-rammer': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/35-tamping-rammer.webp',
+      'plate-compactor': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/36-plate-compactor.webp',
+      'concrete-cutter': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/37-Concrete-cutter.webp',
+      'concrete-vibrator': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/38-concrete-vibrator.webp',
+      'power-trowel': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/39-power-trovel.webp',
+      'welding-machine': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/40-welding-set.webp'
     };
-    return imageMap[slug] || '/home-products/1-gasoline-water-pump.webp';
+    return imageMap[slug] || 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1-gasoline-water-pump.webp';
   };
 
   const getProductDescription = (slug) => {
@@ -171,7 +171,7 @@ function ProductSpecificPage() {
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden mt-5">
         <div className="absolute inset-0">
           <Image
-            src="/products/product-banner.webp"
+            src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/product-banner.webp"
             alt="Product Banner"
             fill
             className="object-cover"

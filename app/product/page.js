@@ -16,121 +16,121 @@ function ProductPage() {
       id: 1,
       name: "Agro Industrial",
       products: [
-        { name: "Gasoline Water Pump", slug: "gasoline-water-pump", image: "/products/1_bomba-de-agua-gasolina.webp" },
-        { name: "Diesel Water Pump", slug: "diesel-water-pump", image: "/products/1_BOMBA_DE_AGUA_DE_DIESEL.webp" },
-        { name: "Gasoline Engine", slug: "gasoline-engine", image: "/home-products/2-gasoline-engine.webp" },
-        { name: "Diesel Engine", slug: "diesel-engine", image: "/products/3_MOTOR_DE_DIESEL.webp" },
-        { name: "Gasoline Tiller", slug: "gasoline-tiller", image: "/home-products/5-gasoline-tiller.webp" },
-        { name: "Mini Cultivator", slug: "mini-cultivator", image: "/products/5_MINI-CULTIVADOR-DE-GASOLIN.webp" }
+        { name: "Gasoline Water Pump", slug: "gasoline-water-pump", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_bomba-de-agua-gasolina.webp" },
+        { name: "Diesel Water Pump", slug: "diesel-water-pump", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_BOMBA_DE_AGUA_DE_DIESEL.webp" },
+        { name: "Gasoline Engine", slug: "gasoline-engine", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2-gasoline-engine.webp" },
+        { name: "Diesel Engine", slug: "diesel-engine", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3_MOTOR_DE_DIESEL.webp" },
+        { name: "Gasoline Tiller", slug: "gasoline-tiller", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5-gasoline-tiller.webp" },
+        { name: "Mini Cultivator", slug: "mini-cultivator", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5_MINI-CULTIVADOR-DE-GASOLIN.webp" }
       ]
     },
     {
       id: 2,
       name: "Garden and Forestry",
       products: [
-        { name: "Brush Cutter", slug: "brush-cutter", image: "/products/1_DESBROZADORA.webp" },
-        { name: "Backpack Brush Cutter", slug: "backpack-brush-cutter", image: "/products/2_DESBROZADORA_DE_MOCHILA.webp" },
-        { name: "Chainsaw", slug: "chainsaw", image: "/products/4_MOTOSIERRA.webp" },
-        { name: "Hedge Trimmer", slug: "hedge-trimmer", image: "/products/5_CORTAZETOS.webp" },
-        { name: "Lawn Mower", slug: "lawn-mower", image: "/products/10_CORTAC심PED.webp" },
-        { name: "Leaf Blower", slug: "leaf-blower", image: "/products/6_SOPLADORA.webp" },
-        { name: "Multi Tool", slug: "multi-tool", image: "/products/3_MULTIFUNCIONAL.webp" }
+        { name: "Brush Cutter", slug: "brush-cutter", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_DESBROZADORA.webp" },
+        { name: "Backpack Brush Cutter", slug: "backpack-brush-cutter", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2_DESBROZADORA_DE_MOCHILA.webp" },
+        { name: "Chainsaw", slug: "chainsaw", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/4_MOTOSIERRA.webp" },
+        { name: "Hedge Trimmer", slug: "hedge-trimmer", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5_CORTAZETOS.webp" },
+        { name: "Lawn Mower", slug: "lawn-mower", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/10_CORTACAPED.webp" },
+        { name: "Leaf Blower", slug: "leaf-blower", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/6_SOPLADORA.webp" },
+        { name: "Multi Tool", slug: "multi-tool", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3_MULTIFUNCIONAL.webp" }
       ]
     },
     {
       id: 3,
       name: "Diesel Machines",
       products: [
-        { name: "Diesel Generator", slug: "diesel-generator", image: "/products/2_GENERADOR_DE_DIESEL.webp" },
-        { name: "Diesel Water Pump", slug: "diesel-water-pump", image: "/products/1_BOMBA_DE_AGUA_DE_DIESEL.webp" },
-        { name: "Diesel Engine", slug: "diesel-engine", image: "/products/3_MOTOR_DE_DIESEL.webp" }
+        { name: "Diesel Generator", slug: "diesel-generator", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2_GENERADOR_DE_DIESEL.webp" },
+        { name: "Diesel Water Pump", slug: "diesel-water-pump", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_BOMBA_DE_AGUA_DE_DIESEL.webp" },
+        { name: "Diesel Engine", slug: "diesel-engine", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3_MOTOR_DE_DIESEL.webp" }
       ]
     },
     {
       id: 4,
       name: "Electric Machines",
       products: [
-        { name: "Electric Pressure Washer", slug: "electric-pressure-washer", image: "/products/1_HIDROLAVADORA-DE-ELECTRICA.webp" },
-        { name: "Electric Motors", slug: "electric-motors", image: "/products/2_electric-motors.webp" },
-        { name: "Direct Driven Air Compressor", slug: "air-compressor", image: "/products/4_Direct-driven-air-compressor.webp" }
+        { name: "Electric Pressure Washer", slug: "electric-pressure-washer", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_HIDROLAVADORA-DE-ELECTRICA.webp" },
+        { name: "Electric Motors", slug: "electric-motors", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2_electric-motors.webp" },
+        { name: "Direct Driven Air Compressor", slug: "air-compressor", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/4_Direct-driven-air-compressor.webp" }
       ]
     },
     {
       id: 5,
       name: "Solar",
       products: [
-        { name: "Solar Panel", slug: "solar-panel", image: "/products/1_PANEL_SOLAR.webp" },
-        { name: "Solar Water Pump", slug: "solar-water-pump", image: "/products/2_BOMBA_DE_SOLAR.webp" }
+        { name: "Solar Panel", slug: "solar-panel", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_PANEL_SOLAR.webp" },
+        { name: "Solar Water Pump", slug: "solar-water-pump", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2_BOMBA_DE_SOLAR.webp" }
       ]
     },
     {
       id: 6,
       name: "Sprayers and Fumigation",
       products: [
-        { name: "Gasoline Sprayer", slug: "gasoline-sprayer", image: "/products/1_FUMIGADORA_DE_GASOLINA.webp" },
-        { name: "Manual Sprayer", slug: "manual-sprayer", image: "/products/2_FUMIGADORA_MANUAL.webp" },
-        { name: "Backpack Atomizer", slug: "backpack-atomizer", image: "/products/4_ATOMIZADOR_DE_MOCHILA.webp" },
-        { name: "Mistduster", slug: "mistduster", image: "/products/5_NEBULIZADOR.webp" }
+        { name: "Gasoline Sprayer", slug: "gasoline-sprayer", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_FUMIGADORA_DE_GASOLINA.webp" },
+        { name: "Manual Sprayer", slug: "manual-sprayer", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2_FUMIGADORA_MANUAL.webp" },
+        { name: "Backpack Atomizer", slug: "backpack-atomizer", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/4_ATOMIZADOR_DE_MOCHILA.webp" },
+        { name: "Mistduster", slug: "mistduster", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5_NEBULIZADOR.webp" }
       ]
     },
     {
       id: 7,
       name: "Domestic and Commercial",
       products: [
-        { name: "Gasoline Generator", slug: "gasoline-generator", image: "/products/3_GENERADOR-DE-GASOLINA.webp" },
-        { name: "Gasoline Inverter", slug: "gasoline-inverter", image: "/products/4_INVERSOR-DE-GASOLINA.webp" },
-        { name: "Pressure Washer", slug: "pressure-washer", image: "/products/2_HIDROLAVADORA-DE-GASOLINA.webp" },
-        { name: "Domestic Pressure Washer", slug: "domestic-pressure-washer", image: "/products/3_Domestic-pressure-washer.webp" },
-        { name: "Commercial Vacuum", slug: "commercial-vacuum", image: "/products/5_ASPIRADORA-GRADO-COMERCIAL.webp" }
+        { name: "Gasoline Generator", slug: "gasoline-generator", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3_GENERADOR-DE-GASOLINA.webp" },
+        { name: "Gasoline Inverter", slug: "gasoline-inverter", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/4_INVERSOR-DE-GASOLINA.webp" },
+        { name: "Pressure Washer", slug: "pressure-washer", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2_HIDROLAVADORA-DE-GASOLINA.webp" },
+        { name: "Domestic Pressure Washer", slug: "domestic-pressure-washer", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3_Domestic-pressure-washer.webp" },
+        { name: "Commercial Vacuum", slug: "commercial-vacuum", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5_ASPIRADORA-GRADO-COMERCIAL.webp" }
       ]
     },
     {
       id: 8,
       name: "Industrial",
       products: [
-        { name: "Welding Machine", slug: "welding-machine", image: "/products/1_MAQUINAS-DE-SOLDAR.webp" },
-        { name: "Centrifugal Pump", slug: "centrifugal-pump", image: "/products/4_BOMBA-CENTRÖFUGA.webp" },
-        { name: "Submersible Pump", slug: "submersible-pump", image: "/products/5_BOMBA-DE-SUMERGIBLE.webp" },
-        { name: "2-Stroke Water Pump", slug: "2-stroke-water-pump", image: "/products/8_BOMBA_DE_AGUA_2_TIEMPO.webp" },
-        { name: "2-Stroke Engine", slug: "2-stroke-engine", image: "/products/9_MOTOR_DE_2_TIEMPOS.webp" }
+        { name: "Welding Machine", slug: "welding-machine", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_MAQUINAS-DE-SOLDAR.webp" },
+        { name: "Centrifugal Pump", slug: "centrifugal-pump", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/4_BOMBA-CENTR%C3%96FUGA.webp" },
+        { name: "Submersible Pump", slug: "submersible-pump", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5_BOMBA-DE-SUMERGIBLE.webp" },
+        { name: "2-Stroke Water Pump", slug: "2-stroke-water-pump", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/8_BOMBA_DE_AGUA_2_TIEMPO.webp" },
+        { name: "2-Stroke Engine", slug: "2-stroke-engine", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/9_MOTOR_DE_2_TIEMPOS.webp" }
       ]
     },
     {
       id: 9,
       name: "Construction",
       products: [
-        { name: "Tamping Rammer", slug: "tamping-rammer", image: "/products/1_MARCOS-DE-APISONAMIENTO.webp" },
-        { name: "Plate Compactor", slug: "plate-compactor", image: "/products/2_PLATO-COMPACTADOR.webp" },
-        { name: "Concrete Cutter", slug: "concrete-cutter", image: "/products/3_concrete-cutter.webp" },
-        { name: "Concrete Vibrator", slug: "concrete-vibrator", image: "/products/4_concrete-vibrator.webp" },
-        { name: "Power Trowel", slug: "power-trowel", image: "/products/5_PODER-CONCRETO-PALETA.webp" }
+        { name: "Tamping Rammer", slug: "tamping-rammer", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_MARCOS-DE-APISONAMIENTO.webp" },
+        { name: "Plate Compactor", slug: "plate-compactor", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2_PLATO-COMPACTADOR.webp" },
+        { name: "Concrete Cutter", slug: "concrete-cutter", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3_concrete-cutter.webp" },
+        { name: "Concrete Vibrator", slug: "concrete-vibrator", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/4_concrete-vibrator.webp" },
+        { name: "Power Trowel", slug: "power-trowel", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5_PODER-CONCRETO-PALETA.webp" }
       ]
     },
     {
       id: 10,
       name: "Tools",
       products: [
-        { name: "Earth Auger", slug: "earth-auger", image: "/products/7_BARRENA_DE_TIERRA.webp" },
-        { name: "Garden Tools", slug: "garden-tools", image: "/products/garden-tools.webp" },
-        { name: "Hand Tools", slug: "hand-tools", image: "/products/hand-tools-home.webp" }
+        { name: "Earth Auger", slug: "earth-auger", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/7_BARRENA_DE_TIERRA.webp" },
+        { name: "Garden Tools", slug: "garden-tools", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/garden-tools.webp" },
+        { name: "Hand Tools", slug: "hand-tools", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/hand-tools-home.webp" }
       ]
     },
     {
       id: 11,
       name: "Wood Chipper and Chaff Cutter",
       products: [
-        { name: "Wood Chipper", slug: "wood-chipper", image: "/products/wood-chipper-home.webp" },
-        { name: "Chaff Cutter", slug: "chaff-cutter", image: "/products/chaff-cutter.webp" }
+        { name: "Wood Chipper", slug: "wood-chipper", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/wood-chipper-home.webp" },
+        { name: "Chaff Cutter", slug: "chaff-cutter", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/chaff-cutter.webp" }
       ]
     },
     {
       id: 12,
       name: "Special Segment",
       products: [
-        { name: "Log Splitter", slug: "log-splitter", image: "/products/log-splitter-home.webp" },
-        { name: "Mini Dumper", slug: "mini-dumper", image: "/products/mini-dumper-home.webp" },
-        { name: "Trencher", slug: "trencher", image: "/products/trencher-home.webp" },
-        { name: "AC Professional", slug: "ac-professional", image: "/products/ac-professional-home.webp" }
+        { name: "Log Splitter", slug: "log-splitter", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/log-splitter-home.webp" },
+        { name: "Mini Dumper", slug: "mini-dumper", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/mini-dumper-home.webp" },
+        { name: "Trencher", slug: "trencher", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/trencher-home.webp" },
+        { name: "AC Professional", slug: "ac-professional", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/ac-professional-home.webp" }
       ]
     }
   ];
@@ -166,7 +166,7 @@ function ProductPage() {
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden mt-5">
         <div className="absolute inset-0">
           <Image
-            src="/products/product-banner.webp"
+            src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/product-banner.webp"
             alt="Products Banner"
             fill
             className="object-cover"

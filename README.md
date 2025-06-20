@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Logo](public/logo.png)
+![Logo](https://9lhi1aprmhe38img.public.blob.vercel-storage.com/logo.png)
 
 **Professional Machinery & Equipment Website**
 

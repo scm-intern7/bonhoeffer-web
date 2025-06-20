@@ -156,22 +156,39 @@ function ModelSpecificPage() {
       'rubber-parts': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/31_partes-de-goma-motosierra-china.png',
       'bearings': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/40_rodamientos-baleeros.png',
       'chain-accessories': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/41_accesorios-de-cadena-de-motosierra.png',
-      'spark-plugs': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/42_bujias.png'
+      'spark-plugs': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/42_bujias.png',
+      'irrigation-hose': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/32_manguera-de-riego.png',
+      'expandable-garden-hose': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/33_mangeura-de-jardin-expandible.png',
+      'aluminum-couplings': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/34_acoples-aluminio.png',
+      'aluminum-coupling-joint': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/35_junta-de-acoplamiento-de-aluminio.png',
+      'professional-harness': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/36_arnes-profesional-para-motoguadana.png',
+      'lawn-mower-wheels': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/37_llantas-para-cortacesped.png',
+      'high-pressure-spray-hose': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/38_manguera-de-fumigacion-de-alta-presion.png',
+      'spraying-parts': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/39_repuestos-de-fumigacion.png',
+      'air-gun': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/44_pistola-de-aire.png',
+      'garden-tools': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/47_herramient-as-de-jardin.png',
+      'long-tail-propeller': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/48_helice-de-cola-larga.png',
+      'eye-protection': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/49_proteccion-para-los-ojos.png',
+      'head-protection-helmet': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/50_proteccion-para-la-cabeza-combinacion-de-casco.png',
+      'drill': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/51_drill.png',
+      'respiratory-protection': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/51_proteccion-respiratoria.png',
+      'electrodes-wire': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/52_electrodes-and-wire.png',
+      'face-protection': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/53_protección-facial.png'
     };
-    return imageMap[slug] || '/spare-parts/1_kit-de-piston.png';
+    return imageMap[slug] || 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_kit-de-piston.png';
   };
 
   // Get similar parts for the slider
   const getSimilarParts = (currentSlug) => {
     const allParts = [
-      { name: 'Piston Kit', slug: 'piston-kit', image: '/spare-parts/1_kit-de-piston.png' },
-      { name: 'Carburetor', slug: 'carburetor', image: '/spare-parts/3_carburetor.png' },
-      { name: 'Air Filter', slug: 'air-filter', image: '/spare-parts/16_filtro-de-aire.png' },
-      { name: 'Spark Plugs', slug: 'spark-plugs', image: '/spare-parts/42_bujias.png' },
-      { name: 'Starter', slug: 'starter', image: '/spare-parts/13_arrancador.png' },
-      { name: 'Chainsaw Chain', slug: 'chainsaw-chain', image: '/spare-parts/5_cadena-de-motosierra.png' },
-      { name: 'Oil Pump', slug: 'oil-pump', image: '/spare-parts/18_bomba-de-aciete.png' },
-      { name: 'Ignition Coil', slug: 'ignition-coil', image: '/spare-parts/26_bobina-de-encendido.png' }
+      { name: 'Piston Kit', slug: 'piston-kit', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_kit-de-piston.png' },
+      { name: 'Carburetor', slug: 'carburetor', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3_carburetor.png' },
+      { name: 'Air Filter', slug: 'air-filter', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/16_filtro-de-aire.png' },
+      { name: 'Spark Plugs', slug: 'spark-plugs', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/42_bujias.png' },
+      { name: 'Starter', slug: 'starter', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/13_arrancador.png' },
+      { name: 'Chainsaw Chain', slug: 'chainsaw-chain', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5_cadena-de-motosierra.png' },
+      { name: 'Oil Pump', slug: 'oil-pump', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/18_bomba-de-aciete.png' },
+      { name: 'Ignition Coil', slug: 'ignition-coil', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/26_bobina-de-encendido.png' }
     ];
     
     return allParts.filter(part => part.slug !== currentSlug);
@@ -196,7 +213,7 @@ function ModelSpecificPage() {
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden mt-5">
         <div className="absolute inset-0">
           <Image
-            src="/spare-parts/spare-parts-banner.webp"
+            src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/spare-parts-banner.webp"
             alt="Spare Parts Banner"
             fill
             className="object-cover"

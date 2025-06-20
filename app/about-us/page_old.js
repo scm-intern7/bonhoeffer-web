@@ -131,7 +131,7 @@ function Page() {
         <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0">
             <Image
-              src="/about/About-us-new-banner.webp"
+              src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/About-us-new-banner.webp"
               alt="About Us Banner"
               fill
               className="object-cover"
@@ -192,7 +192,7 @@ function Page() {
                 transition={{ duration: 0.3 }}
               >
                 <Image
-                  src="/about/Overview.webp"
+                  src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Overview.webp"
                   alt="Company Introduction"
                   fill
                   className="object-cover"
@@ -218,7 +218,7 @@ function Page() {
                 transition={{ duration: 0.3 }}
               >
                 <Image
-                  src="/about/founder-desk.webp"
+                  src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/founder-desk.webp"
                   alt="Founder&apos;s Desk"
                   fill
                   className="object-cover"
@@ -305,7 +305,7 @@ function Page() {
                 transition={{ duration: 0.3 }}
               >
                 <Image
-                  src="/about/our-presence.webp"
+                  src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/our-presence.webp"
                   alt="Our Global Presence"
                   fill
                   className="object-cover"
@@ -401,7 +401,7 @@ function Page() {
                 transition={{ duration: 0.3 }}
               >
                 <Image
-                  src="/about/vision.webp"
+                  src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/vision.webp"
                   alt="Our Vision"
                   fill
                   className="object-cover"
@@ -539,7 +539,7 @@ function Page() {
                   muted
                   playsInline
                 >
-                  <source src="/about/brand-video-updated.mp4" type="video/mp4" />
+                  <source src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/brand-video-updated.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </motion.div>
