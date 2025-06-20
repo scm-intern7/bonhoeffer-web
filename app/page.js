@@ -4,6 +4,7 @@ import Hero from "@/components/sections/hero";
 import Social from "@/components/sections/social";
 import Products from "@/components/sections/products";
 import BgLayout from "@/components/templates/bgLayout";
+import Producty from "@/components/sections/producty";
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
       <Hero/>
       <Events/>
       <Social/>
-      <Products/>
+      {/* <Products/> */}
+      <Producty/>
     </BgLayout>
   );
 }

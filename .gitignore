@@ -243,9 +243,5 @@ runtime-config.json
 *.pre-lfs
 
 # Custom ignores for this project
-/public/events
-/public/home-products
-/public/hero_video.mp4
-/public/hero_gif.gif
 .env*.local
 /public/

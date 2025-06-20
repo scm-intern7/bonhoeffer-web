@@ -1,242 +1,98 @@
-'use client';
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react'
+import Link from 'next/link'
 
+// Full product list from products.js
 const products = [
-  { id: 1, name: 'Gasoline Water Pump', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1-gasoline-water-pump.webp', depth: 1 },
-  { id: 2, name: 'Gasoline Engine', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2-gasoline-engine.webp', depth: 2 },
-  { id: 3, name: 'Gasoline Generator', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3-gasoline-generator.webp', depth: 3 },
-  { id: 4, name: 'Gasoline Inverter', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/4-gasoline-inverter.webp', depth: 4 },
-  { id: 5, name: 'Gasoline Tiller', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5-gasoline-tiller.webp', depth: 5 },
-  { id: 6, name: 'Brush Cutter', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/7-brush-cutter.webp', depth: 6 },
+  { id: 1, name: 'Gasoline Water Pump', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1-gasoline-water-pump.webp', description: 'High-performance water pump for industrial and residential use' },
+  { id: 2, name: 'Gasoline Engine', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2-gasoline-engine.webp', description: 'Reliable gasoline engine with superior power output' },
+  { id: 3, name: 'Gasoline Generator', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3-gasoline-generator.webp', description: 'Portable power solution for all your energy needs' },
+  { id: 4, name: 'Gasoline Inverter', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/4-gasoline-inverter.webp', description: 'Clean, stable power for sensitive electronics' },
+  { id: 5, name: 'Gasoline Tiller', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5-gasoline-tiller.webp', description: 'Professional-grade soil cultivation equipment' },
+  { id: 6, name: 'EFI Machines', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/6-Gasoline-EFI-Machines.webp', description: 'Advanced fuel injection technology for maximum efficiency' },
+  { id: 7, name: 'Brush Cutter', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/7-brush-cutter.webp', description: 'Heavy-duty cutting power for tough vegetation' },
+  { id: 8, name: 'Backpack Brushcutter', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/8-bagpack-brushcutter.webp', description: 'Ergonomic design for extended professional use' },
+  { id: 9, name: 'Multi Tool', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/9-multi-tool.webp', description: 'Versatile tool for multiple landscaping applications' },
+  { id: 10, name: 'Chain Saw', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/10-chain-saw.webp', description: 'Professional chainsaw for forestry and construction' },
+  { id: 11, name: 'Hedge Trimmer', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/11-hedge-trimmer.webp', description: 'Precision trimming for perfect hedge maintenance' },
+  { id: 12, name: 'Blower', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/12-blower.webp', description: 'Powerful air movement for cleaning and maintenance' },
+  { id: 13, name: 'Gasoline Lawn Mower', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/13-gasoline-lawn-mower.webp', description: 'Professional lawn care with precision cutting' },
+  { id: 14, name: 'Earth Auger', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/14-earth-auger.webp', description: 'Powerful drilling solution for post holes and planting' },
+  { id: 15, name: 'Electric Segment', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/15-electric-segment.webp', description: 'Eco-friendly electric power solutions' },
+  { id: 16, name: 'Battery Segment', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/16-battery-segment.webp', description: 'Cordless convenience with long-lasting battery power' },
+  { id: 17, name: 'Water Pump 2-Stroke', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/17-water-pump-2-stroke.webp', description: 'Lightweight 2-stroke water pump for efficient operation' },
+  { id: 18, name: 'Engine 2-Stroke', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/18-engine-2-stroke.webp', description: 'Compact 2-stroke engine for maximum power-to-weight ratio' },
+  { id: 19, name: 'Diesel Water Pump', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/19-diesel-water-pump.webp', description: 'Heavy-duty diesel water pump for industrial applications' },
+  { id: 20, name: 'Diesel Generator', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/20-diesel-generator.webp', description: 'Reliable diesel power generation for continuous operation' },
+  { id: 21, name: 'Diesel Engine', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/21-diesel-engine.webp', description: 'Robust diesel engine with exceptional fuel efficiency' },
+  { id: 22, name: 'Gasoline Pressure Washer', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/22-gasoline-pressure-washer.webp', description: 'High-pressure cleaning power for tough jobs' },
+  { id: 23, name: 'Pressure Washer Home Use', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/23-pressure-washer-home-use.webp', description: 'Perfect pressure washing solution for home maintenance' },
+  { id: 24, name: 'Direct Driven Air Compressor', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/24-direct-driven-air-compressor.webp', description: 'Efficient air compression for pneumatic tools' },
+  { id: 25, name: 'Vacuum Cleaner', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/25-vaccum-cleaner.webp', description: 'Industrial-grade vacuum cleaning system' },
+  { id: 26, name: 'Knapsack Sprayer', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/26-knapsack-sprayer.webp', description: 'Portable spraying solution for agricultural applications' },
+  { id: 27, name: 'Manual Sprayer', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/27-manual-sprayer.webp', description: 'Precision manual spraying for targeted applications' },
+  { id: 28, name: 'Electric Pressure Washer', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/28-electric-pressure-washer.webp', description: 'Electric-powered pressure washing for eco-friendly cleaning' },
+  { id: 29, name: 'Stationary Fumigation', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/28-Stationary-Fumigation.webp', description: 'Fixed fumigation system for pest control' },
+  { id: 30, name: 'Mist Duster', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/29-Mistduster.webp', description: 'Fine mist application for crop protection' },
+  { id: 31, name: 'Thermal Fogger', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/30-Thermal-Fogger.webp', description: 'Thermal fogging for wide-area pest control' },
+  { id: 32, name: 'Centrifugal Pump', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/31-Centrifugal-Pump.webp', description: 'High-efficiency centrifugal pumping system' },
+  { id: 33, name: 'Submersible Pump', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/32-Submersible-Pump.webp', description: 'Underwater pumping solution for deep wells' },
+  { id: 34, name: 'Solar Submersible Pump', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/33-Solar-Submersible-Pump.webp', description: 'Solar-powered submersible pump for sustainable water access' },
+  { id: 35, name: 'Solar Panel', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/34-solar-pannel.webp', description: 'High-efficiency solar panels for renewable energy' },
+  { id: 36, name: 'Tamping Rammer', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/35-tamping-rammer.webp', description: 'Soil compaction tool for construction projects' },
+  { id: 37, name: 'Plate Compactor', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/36-plate-compactor.webp', description: 'Surface compaction for paving and construction' },
+  { id: 38, name: 'Concrete Cutter', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/37-Concrete-cutter.webp', description: 'Precision cutting through concrete and stone' },
+  { id: 39, name: 'Concrete Vibrator', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/38-concrete-vibrator.webp', description: 'Professional concrete consolidation equipment' },
+  { id: 40, name: 'Power Trowel', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/39-power-trovel.webp', description: 'Smooth concrete finishing for professional results' },
+  { id: 41, name: 'Welding Set', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/40-welding-set.webp', description: 'Complete welding solution for metal fabrication' },
+  { id: 42, name: 'Bench Grinder', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/41-bench-grinder.webp', description: 'Precision grinding and sharpening workstation' },
+  { id: 43, name: 'Drill Press', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/42-Drill-Press.webp', description: 'Precise drilling with professional accuracy' },
+  { id: 44, name: 'Silent Generator', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/43-silent-generator.webp', description: 'Quiet power generation for noise-sensitive environments' },
 ];
 
+// Helper to create slugs from product names
+const slugify = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
 function Producty() {
-  const [scrollY, setScrollY] = useState(0);
-  const containerRef = useRef(null);
-  const [containerOffset, setContainerOffset] = useState(0);
-  const [containerHeight, setContainerHeight] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    const handleResize = () => {
-      if (containerRef.current) {
-        const rect = containerRef.current.getBoundingClientRect();
-        setContainerOffset(window.scrollY + rect.top);
-        setContainerHeight(rect.height);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    window.addEventListener('resize', handleResize);
-    handleResize();
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  // Calculate how much the user has scrolled through this section
-  const scrollProgress = Math.max(0, Math.min(1, 
-    (scrollY - containerOffset + window.innerHeight) / (containerHeight + window.innerHeight)
-  ));
-
-  // Create dramatic parallax effects based on scroll progress
-  const getParallaxTransform = (depth, type = 'background') => {
-    const baseMove = (scrollProgress - 0.5) * 100;
-    
-    switch (type) {
-      case 'background':
-        return `translate3d(0, ${baseMove * depth * 0.3}px, 0) scale(${1 + scrollProgress * 0.2})`;
-      case 'midground':
-        return `translate3d(0, ${baseMove * depth * 0.6}px, 0) scale(${1 + scrollProgress * 0.1})`;
-      case 'foreground':
-        return `translate3d(0, ${baseMove * depth * 1.2}px, 0) rotateX(${scrollProgress * 5}deg)`;
-      default:
-        return `translate3d(0, ${baseMove * depth}px, 0)`;
-    }
-  };
-
   return (
-    <section 
-      ref={containerRef} 
-      className="relative h-[300vh] bg-gradient-to-b from-black via-gray-900 to-black overflow-hidden"
-    >
-      {/* Title that follows scroll with perspective */}
-      <div className="sticky top-1/2 transform -translate-y-1/2 z-50 text-center">
-        <h2 
-          className="text-6xl md:text-8xl font-black text-white mb-8 leading-tight"
-          style={{
-            transform: `perspective(1000px) rotateY(${(scrollProgress - 0.5) * 20}deg) translateZ(${scrollProgress * 50}px)`,
-            opacity: 1 - Math.abs(scrollProgress - 0.5) * 2,
-          }}
+    <div className="w-full overflow-hidden">
+      {/* Sticky section title with arrows */}
+      <div className="sticky top-0 z-50 flex items-center justify-center bg-transparent py-8">
+        {/* Left Arrow (different style, pointing right) */}
+        <svg className="w-10 h-10 md:w-14 md:h-14 text-[#9a9c30] mr-2 md:mr-4" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20h20M20 10l10 10-10 10" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+        <h1 className="text-6xl md:text-8xl font-bold text-white bg-clip-text text-center drop-shadow-lg mx-2">
+          Our <span className="text-[#9a9c30]">Products</span>
+        </h1>
+        {/* Right Arrow (different style, pointing left) */}
+        <svg className="w-10 h-10 md:w-14 md:h-14 text-[#9a9c30] ml-2 md:ml-4 rotate-180" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20h20M20 10l10 10-10 10" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      </div>
+      {products.map((product, idx) => (
+        <section
+          key={product.id}
+          className="w-full min-h-screen flex items-center justify-start relative bg-fixed bg-cover bg-center"
+          style={{ backgroundImage: `url(${product.image})` }}
         >
-          INDUSTRIAL
-          <br />
-          <span className="text-[#9a9c30]">POWER</span>
-        </h2>
-      </div>
-
-      {/* Deep background layers */}
-      <div className="absolute inset-0">
-        {products.map((product, index) => (
-          <div
-            key={`bg-${product.id}`}
-            className="absolute inset-0"
-            style={{
-              transform: getParallaxTransform(product.depth, 'background'),
-              backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url(${product.image})`,
-              backgroundSize: '120%',
-              backgroundPosition: `${50 + index * 10}% ${30 + index * 15}%`,
-              backgroundAttachment: 'fixed',
-              opacity: 0.15 - index * 0.02,
-              filter: `blur(${index * 2}px) sepia(${index * 10}%)`,
-              zIndex: -product.depth,
-            }}
-          />
-        ))}
-      </div>
-
-      {/* Floating product showcases */}
-      <div className="absolute inset-0">
-        {products.map((product, index) => {
-          const xPos = 10 + (index % 3) * 30;
-          const yStart = 20 + index * 40;
-          const rotation = (scrollProgress - 0.5) * (10 + index * 5);
-          
-          return (
-            <div
-              key={`product-${product.id}`}
-              className="absolute"
-              style={{
-                left: `${xPos}%`,
-                top: `${yStart}%`,
-                transform: `
-                  ${getParallaxTransform(product.depth * 0.5, 'foreground')}
-                  rotateY(${rotation}deg) 
-                  rotateZ(${rotation * 0.3}deg)
-                  scale(${0.8 + scrollProgress * 0.4})
-                `,
-                zIndex: 10 + index,
-              }}
-            >
-              <div 
-                className="relative group cursor-pointer"
-                style={{
-                  perspective: '1000px',
-                }}
-              >
-                <div 
-                  className="w-80 h-80 rounded-3xl overflow-hidden shadow-2xl transition-all duration-700 group-hover:shadow-[#9a9c30]/50"
-                  style={{
-                    background: `linear-gradient(135deg, rgba(154,156,48,0.2) 0%, rgba(0,0,0,0.8) 100%)`,
-                    backdropFilter: 'blur(20px)',
-                    border: '1px solid rgba(154,156,48,0.3)',
-                    transform: `rotateX(${scrollProgress * 10}deg)`,
-                  }}
-                >
-                  <div className="p-8 h-full flex flex-col justify-between">
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className="w-full h-48 object-cover rounded-2xl mb-6 transition-transform duration-700 group-hover:scale-110"
-                      style={{
-                        transform: `translateY(${(scrollProgress - 0.5) * 20}px) rotateX(${scrollProgress * -5}deg)`,
-                        filter: `brightness(${1 + scrollProgress * 0.3})`,
-                      }}
-                    />
-                    
-                    <div>
-                      <h3 
-                        className="text-white text-2xl font-bold mb-4 leading-tight"
-                        style={{
-                          transform: `translateY(${(scrollProgress - 0.5) * -10}px)`,
-                        }}
-                      >
-                        {product.name}
-                      </h3>
-                      
-                      <div 
-                        className="text-[#9a9c30] font-semibold text-lg"
-                        style={{
-                          transform: `translateY(${(scrollProgress - 0.5) * -15}px)`,
-                          opacity: 0.7 + scrollProgress * 0.3,
-                        }}
-                      >
-                        Professional Series
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-
-      {/* Dynamic particle field */}
-      <div className="absolute inset-0 pointer-events-none">
-        {[...Array(50)].map((_, i) => {
-          const x = (i % 10) * 10;
-          const y = Math.floor(i / 10) * 20;
-          const delay = i * 0.1;
-          
-          return (
-            <div
-              key={i}
-              className="absolute w-2 h-2 bg-[#9a9c30] rounded-full"
-              style={{
-                left: `${x}%`,
-                top: `${y}%`,
-                transform: `
-                  translate3d(
-                    ${Math.sin(scrollProgress * Math.PI * 2 + delay) * 50}px,
-                    ${(scrollProgress - 0.5) * (100 + i * 10)}px,
-                    0
-                  ) scale(${0.3 + scrollProgress})
-                `,
-                opacity: Math.sin(scrollProgress * Math.PI + delay) * 0.5 + 0.3,
-              }}
-            />
-          );
-        })}
-      </div>
-
-      {/* Immersive scroll indicator */}
-      <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50">
-        <div className="flex flex-col items-center space-y-4">
-          <div 
-            className="w-64 h-2 bg-black/30 rounded-full overflow-hidden backdrop-blur"
-            style={{
-              background: `linear-gradient(90deg, #9a9c30 ${scrollProgress * 100}%, rgba(255,255,255,0.1) ${scrollProgress * 100}%)`,
-            }}
-          />
-          
-          <div 
-            className="text-white text-sm font-mono"
-            style={{
-              opacity: 0.7 + scrollProgress * 0.3,
-              transform: `translateY(${(1 - scrollProgress) * 20}px)`,
-            }}
-          >
-            EXPLORING {Math.round(scrollProgress * 100)}% COMPLETE
+          {/* Removed overlay title from first product */}
+          <div className="bg-[#9a9c30] p-6 rounded-lg shadow-2xl w-[420px] ml-0 absolute left-8 top-1/2 -translate-y-1/2 z-30">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">
+              {product.name}
+            </h2>
+            <p className="text-sm md:text-base text-green-100 mb-6 leading-relaxed">
+              {product.description}
+            </p>
+            <Link href={`/product/${slugify(product.name)}`} passHref >
+              <button className="px-8 py-3 bg-white text-[#9a9c30] font-semibold rounded-full hover:bg-green-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer block text-center">
+                Explore Product
+              </button>
+            </Link>
           </div>
-        </div>
-      </div>
-
-      {/* Depth field overlay */}
-      <div 
-        className="fixed inset-0 pointer-events-none"
-        style={{
-          background: `radial-gradient(circle at ${50 + (scrollProgress - 0.5) * 100}% 50%, transparent 0%, rgba(0,0,0,${0.3 + scrollProgress * 0.4}) 70%)`,
-          zIndex: 5,
-        }}
-      />
-    </section>
-  );
+        </section>
+      ))}
+    </div>
+  )
 }
 
-export default Producty;
+export default Producty

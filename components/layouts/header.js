@@ -144,12 +144,12 @@ function Header() {
 
   return (
     <section>
-        <div className="flex flex-row items-center gap-5 text-white">
+        <div className="flex flex-row items-center gap-10 text-white">
             <div className="image pt-5">
                 <img
                     src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/logo.png"
                     alt="Bonhoeffer Machines Logo"
-                    className="h-24 pl-5 pr-5"
+                    className="h-24 pl-10 pr-10"
                 />
 
                 {/* <h1 className="text-2xl font-bold mt-5 py-1 pl-5 bg-[#989b2e] w-70 rounded-r-xl">Become Our Dealer</h1> */}
@@ -167,7 +167,7 @@ function Header() {
                                 >
                                     <Link
                                         href={item.href}
-                                        className="text-lg font-semibold text-white hover:text-gray-400 cursor-pointer flex items-center space-x-1"
+                                        className="text-xl font-semibold text-white hover:text-gray-400 cursor-pointer flex items-center space-x-1"
                                     >
                                         <span>{item.label}</span>
                                         <svg 
@@ -215,7 +215,7 @@ function Header() {
                             ) : (
                                 <Link
                                     href={item.href}
-                                    className="text-lg font-semibold text-white hover:text-gray-400 cursor-pointer"
+                                    className="text-xl font-semibold text-white hover:text-gray-400 cursor-pointer"
                                 >
                                     {item.label}
                                 </Link>
@@ -257,7 +257,7 @@ function Header() {
                     <span className="text-xl">
                         {languages.find(lang => lang.code === currentLanguage)?.flag}
                     </span>
-                    <span className="text-sm font-medium">
+                    <span className="text-xl font-medium">
                         {languages.find(lang => lang.code === currentLanguage)?.name}
                     </span>
                     <svg 
@@ -276,19 +276,19 @@ function Header() {
                 </button>
 
                 {isLanguageDropdownOpen && (
-                    <div className="absolute top-full right-0 mt-1 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50 min-w-[160px]">
+                    <div className="absolute top-full right-0 mt-1 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-lg shadow-lg border border-[#989b2e] py-2 z-50 min-w-[160px]">
                         {languages.map((language) => (
                             <button
                                 key={language.code}
                                 onClick={() => handleLanguageChange(language.code)}
-                                className={`w-full flex items-center space-x-3 px-4 py-2 text-left hover:bg-gray-100 transition-colors duration-150 ${
-                                    currentLanguage === language.code ? 'bg-gray-50 text-[#989b2e] font-medium' : 'text-gray-700'
+                                className={`w-full flex items-center space-x-3 px-4 py-2 text-left hover:bg-[#989b2e] transition-colors cursor-pointer duration-150 ${
+                                    currentLanguage === language.code ? 'bg-[#989b2e] text-white font-medium' : 'text-gray-100'
                                 }`}
                             >
                                 <span className="text-xl">{language.flag}</span>
-                                <span className="text-sm">{language.name}</span>
+                                <span className="text-lg">{language.name}</span>
                                 {currentLanguage === language.code && (
-                                    <svg className="w-4 h-4 ml-auto text-[#989b2e]" fill="currentColor" viewBox="0 0 20 20">
+                                    <svg className="w-4 h-4 ml-auto text-white" fill="currentColor" viewBox="0 0 20 20">
                                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                                     </svg>
                                 )}

@@ -374,7 +374,7 @@ function SparePage() {
     {
       id: 49,
       name: "Eye Protection",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/49_proteccion-para-los-ojos.png",
+      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/50_proteccion-para-los-ojos.png",
       slug: "eye-protection",
       category: "accessories",
       label: "Safety Equipment"
@@ -382,7 +382,7 @@ function SparePage() {
     {
       id: 50,
       name: "Head Protection & Helmet",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/50_proteccion-para-la-cabeza-combinacion-de-casco.png",
+      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/51_proteccion-para-la-cabeza-combinacion-de-casco.png",
       slug: "head-protection-helmet",
       category: "accessories",
       label: "Safety Equipment"
@@ -390,7 +390,7 @@ function SparePage() {
     {
       id: 51,
       name: "Drill",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/51_drill.png",
+      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/52_drill.png",
       slug: "drill",
       category: "accessories",
       label: "Tools"
@@ -398,7 +398,7 @@ function SparePage() {
     {
       id: 52,
       name: "Respiratory Protection",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/51_proteccion-respiratoria.png",
+      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/52_proteccion-respiratoria.png",
       slug: "respiratory-protection",
       category: "accessories",
       label: "Safety Equipment"
@@ -406,7 +406,7 @@ function SparePage() {
     {
       id: 53,
       name: "Electrodes & Wire",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/52_electrodes-and-wire.png",
+      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/53_electrodes-and-wire.png",
       slug: "electrodes-wire",
       category: "accessories",
       label: "Welding Equipment"
@@ -414,7 +414,7 @@ function SparePage() {
     {
       id: 54,
       name: "Face Protection",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/53_protección-facial.png",
+      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/54_protecci%C3%B3n-facial.png",
       slug: "face-protection",
       category: "accessories",
       label: "Safety Equipment"
@@ -430,7 +430,7 @@ function SparePage() {
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden mt-5">
         <div className="absolute inset-0">
           <Image
-            src="/spare-parts/spare-parts-banner.webp"
+            src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/spare-parts-banner-india.webp"
             alt="Spare Parts Banner"
             fill
             className="object-cover"

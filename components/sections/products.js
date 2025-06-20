@@ -54,6 +54,7 @@ const Products = () => {
   const containerRef = useRef(null);
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
   const [sectionTop, setSectionTop] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -63,42 +64,53 @@ const Products = () => {
         height: window.innerHeight
       });
     };
-
-    // Get the top position of this section
     const updateSectionTop = () => {
       if (containerRef.current) {
         const rect = containerRef.current.getBoundingClientRect();
         setSectionTop(rect.top + window.scrollY);
       }
     };
-
     window.addEventListener('scroll', handleScroll, { passive: true });
     window.addEventListener('resize', handleResize);
-    handleResize(); // Set initial dimensions
-    
-    // Use timeout to ensure DOM is rendered
+    handleResize();
     setTimeout(updateSectionTop, 100);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleResize);
     };
   }, []);
 
+  // Only render products when section is near viewport
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const threshold = 500; // px before section enters viewport
+      const onScroll = () => {
+        if (containerRef.current) {
+          const rect = containerRef.current.getBoundingClientRect();
+          setIsVisible(rect.top < window.innerHeight + threshold && rect.bottom > -threshold);
+        }
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+      return () => window.removeEventListener('scroll', onScroll);
+    }
+  }, []);
+
   return (
     <section ref={containerRef} className="relative overflow-hidden " 
              style={{ minHeight: `${(products.length + 2) * 600}px` }}>
       {/* Section Title - Always Visible */}
-      {/* <div className="sticky top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/90 via-black/60 to-transparent h-40 pointer-events-none">
+      <div className="sticky top-0 left-0 right-0 z-50  h-40 pointer-events-none">
         <div className="container mx-auto px-8 pt-12">
-          <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent text-center">
-            Our Products
+          <h1 className="text-6xl md:text-8xl font-bold text-white bg-clip-text text-center">
+            Our 
+            <span className='text-[#9a9c30]'> Products</span>
           </h1>
         </div>
-      </div> */}
+      </div>
 
       {/* Full-Screen Product Layers */}
-      {products.map((product, index) => {
+      {isVisible && products.map((product, index) => {
         const relativeScroll = scrollY - sectionTop;
         const productOffset = index * 600; // Distance between products (increased from 600 to 1200)
         const progress = (relativeScroll - productOffset) / 600; // Progress for this product
@@ -181,19 +193,21 @@ const Products = () => {
       })}
 
       {/* Scroll Indicator - only show at beginning */}
-      <div 
-        className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-40 text-white/60 animate-bounce"
-        style={{
-          opacity: sectionTop > 0 ? Math.max(0, 1 - (scrollY - sectionTop) / 400) : 0
-        }}
-      >
-        <div className="flex flex-col items-center">
-          <span className="text-sm mb-2">Scroll to explore</span>
-          <div className="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse" />
+      {isVisible && (
+        <div 
+          className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-40 text-white/60 animate-bounce"
+          style={{
+            opacity: sectionTop > 0 ? Math.max(0, 1 - (scrollY - sectionTop) / 400) : 0
+          }}
+        >
+          <div className="flex flex-col items-center">
+            <span className="text-sm mb-2">Scroll to explore</span>
+            <div className="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center">
+              <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse" />
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       {/* Final Product Sticky Section - to prevent footer overlap */}
       <div 
