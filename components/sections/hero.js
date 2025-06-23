@@ -141,7 +141,7 @@ function Hero() {
             loop 
             muted
           >
-            <source src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/hero_video.mp4" type="video/mp4" />
+            <source src="https://bonhoeffermachines.com/en/public/images/Brand_Video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </motion.div>
@@ -182,7 +182,7 @@ function Hero() {
               
               <div className="p-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
                 <h3 className='text-4xl font-semibold text-white'>
-                  <AnimatedCounter end={4500} suffix="+" delay={1.1} /> Products
+                  <AnimatedCounter end={4500} suffix="+" delay={0.5} /> Products
                 </h3>
               </div>
             </div>
@@ -197,7 +197,7 @@ function Hero() {
             viewport={{ once: true }}
           >
             <img 
-              src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/hero_gif.gif" 
+              src="https://bonhoeffermachines.com/en/public/index_files/Global%20Presence.gif" 
               alt="Hero Animation"
               className="w-full object-cover rounded-2xl border-2 border-[#989b2e]/30 shadow-lg"
             />

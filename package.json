@@ -3,14 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@react-spring/parallax": "^10.0.1",
+    "@vercel/blob": "^1.1.1",
     "aos": "^2.3.4",
+    "dotenv": "^16.5.0",
     "framer-motion": "^12.16.0",
     "locomotive-scroll": "^4.1.4",
     "motion": "^12.16.0",

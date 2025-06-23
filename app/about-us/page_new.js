@@ -207,7 +207,7 @@ function Page() {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.3, delay: index * 0.01 }}
                 whileHover={{ scale: 1.05 }}
               >
                 <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
@@ -256,7 +256,7 @@ function Page() {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.3, delay: index * 0.01 }}
                 whileHover={{ scale: 1.05 }}
               >
                 <h3 className="text-xl font-bold text-[#989b2e] mb-3">
@@ -360,7 +360,7 @@ function Page() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.3, delay: index * 0.01 }}
               >
                 <button
                   className="w-full p-6 text-left flex justify-between items-center hover:bg-white/5 transition-colors duration-200"
@@ -423,7 +423,7 @@ function Page() {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.3, delay: index * 0.01 }}
                 whileHover={{ scale: 1.05 }}
               >
                 <h3 className="text-xl font-bold text-[#989b2e] mb-4">

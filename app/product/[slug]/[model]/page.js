@@ -23,9 +23,9 @@ function ModelSpecificPage() {
           description: 'Compact and efficient water pump designed for residential and small commercial applications.',
           modelDescription: 'The WP-20 model features a reliable 4-stroke engine with automatic pressure regulation and durable cast iron construction for long-lasting performance.',
           images: [
-            'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1-gasoline-water-pump.webp',
-            'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1-gasoline-water-pump.webp',
-            'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1-gasoline-water-pump.webp'
+            'https://bonhoeffermachines.com/public/product_banner/1-gasoline-water-pump.webp',
+            'https://bonhoeffermachines.com/public/product_banner/1-gasoline-water-pump.webp',
+            'https://bonhoeffermachines.com/public/product_banner/1-gasoline-water-pump.webp'
           ],
           specifications: [
             { label: 'Engine Name', value: 'Bonhoeffer 168F' },
@@ -60,9 +60,9 @@ function ModelSpecificPage() {
           description: 'Lightweight and versatile brush cutter perfect for homeowners and light professional use.',
           modelDescription: 'The BC-260 model combines power and maneuverability with a 26cc 2-stroke engine, making it ideal for grass cutting and light brush clearing.',
           images: [
-            'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/7-brush-cutter.webp',
-            'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/7-brush-cutter.webp',
-            'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/7-brush-cutter.webp'
+            'https://bonhoeffermachines.com/public/product_banner/7-brush-cutter.webp',
+            'https://bonhoeffermachines.com/public/product_banner/7-brush-cutter.webp',
+            'https://bonhoeffermachines.com/public/product_banner/7-brush-cutter.webp'
           ],
           specifications: [
             { label: 'Engine Name', value: 'Bonhoeffer 260' },
@@ -156,13 +156,13 @@ function ModelSpecificPage() {
 
   const getProductImage = (slug) => {
     const imageMap = {
-      'gasoline-water-pump': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1-gasoline-water-pump.webp',
-      'gasoline-engine': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2-gasoline-engine.webp',
-      'gasoline-generator': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3-gasoline-generator.webp',
-      'brush-cutter': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/7-brush-cutter.webp',
-      'chainsaw': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/10-chain-saw.webp'
+      'gasoline-water-pump': 'https://bonhoeffermachines.com/public/product_banner/1-gasoline-water-pump.webp',
+      'gasoline-engine': 'https://bonhoeffermachines.com/public/product_banner/2-gasoline-engine.webp',
+      'gasoline-generator': 'https://bonhoeffermachines.com/public/product_banner/3-gasoline-generator.webp',
+      'brush-cutter': 'https://bonhoeffermachines.com/public/product_banner/7-brush-cutter.webp',
+      'chainsaw': 'https://bonhoeffermachines.com/public/product_banner/10-chain-saw.webp'
     };
-    return imageMap[slug] || 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1-gasoline-water-pump.webp';
+    return imageMap[slug] || 'https://bonhoeffermachines.com/public/product_banner/1-gasoline-water-pump.webp';
   };
 
   // Get other models for the same product
@@ -230,7 +230,7 @@ function ModelSpecificPage() {
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden mt-5">
         <div className="absolute inset-0">
           <Image
-            src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/product-banner.webp"
+            src="https://bonhoeffermachines.com/public/product_banner/product-banner.webp"
             alt="Product Banner"
             fill
             className="object-cover"
@@ -468,7 +468,7 @@ function ModelSpecificPage() {
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
-                      transition={{ duration: 0.6, delay: index * 0.05 }}
+                      transition={{ duration: 0.3, delay: index * 0.005 }}
                     >
                       <div className="flex justify-between items-center">
                         <h4 className="text-[#989b2e] text-sm font-medium">{spec.label}</h4>
@@ -486,7 +486,7 @@ function ModelSpecificPage() {
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
-                      transition={{ duration: 0.6, delay: index * 0.1 }}
+                      transition={{ duration: 0.3, delay: index * 0.01 }}
                     >
                       <p className="text-gray-300 leading-relaxed">{feature}</p>
                     </motion.div>
@@ -564,7 +564,7 @@ function ModelSpecificPage() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.3, delay: index * 0.01 }}
               >
                 <h4 className="text-lg font-semibold text-white mb-3">{faq.question}</h4>
                 <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
@@ -601,7 +601,7 @@ function ModelSpecificPage() {
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  transition={{ duration: 0.3, delay: index * 0.01 }}
                   whileHover={{ scale: 1.02 }}
                 >
                   <div className="relative h-60 mb-4 rounded-xl overflow-hidden bg-white">

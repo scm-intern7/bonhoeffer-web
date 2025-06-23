@@ -9,6 +9,9 @@ function Header() {
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
   const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false);
   const [productDropdownTimeout, setProductDropdownTimeout] = useState(null);
+  const [isGalleryDropdownOpen, setIsGalleryDropdownOpen] = useState(false);
+  const [galleryDropdownTimeout, setGalleryDropdownTimeout] = useState(null);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const languages = [
     { code: 'en', name: 'English' },
@@ -22,7 +25,7 @@ function Header() {
     { href: "/product", label: "Products", hasDropdown: true },
     { href: "/spare-parts", label: "Spare Parts" },
     { href: "/events", label: "Fair" },
-    { href: "/gallery", label: "Gallery" },
+    { href: "/gallery", label: "Gallery", hasDropdown: true },
     { href: "/blog", label: "Success Stories" },
     { href: "/contact-us", label: "Contact Us" }
   ]
@@ -55,8 +58,24 @@ function Header() {
   const handleProductDropdownLeave = () => {
     const timeout = setTimeout(() => {
       setIsProductsDropdownOpen(false);
-    }, 1000); // 2 second delay
+    }, 300); // 0.3 second delay
     setProductDropdownTimeout(timeout);
+  };
+
+  // Gallery dropdown timeout handlers
+  const handleGalleryDropdownEnter = () => {
+    if (galleryDropdownTimeout) {
+      clearTimeout(galleryDropdownTimeout);
+      setGalleryDropdownTimeout(null);
+    }
+    setIsGalleryDropdownOpen(true);
+  };
+
+  const handleGalleryDropdownLeave = () => {
+    const timeout = setTimeout(() => {
+      setIsGalleryDropdownOpen(false);
+    }, 300); // 0.3 second delay
+    setGalleryDropdownTimeout(timeout);
   };
 
   // Cleanup timeout on component unmount
@@ -65,8 +84,11 @@ function Header() {
       if (productDropdownTimeout) {
         clearTimeout(productDropdownTimeout);
       }
+      if (galleryDropdownTimeout) {
+        clearTimeout(galleryDropdownTimeout);
+      }
     };
-  }, [productDropdownTimeout]);
+  }, [productDropdownTimeout, galleryDropdownTimeout]);
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
@@ -125,6 +147,17 @@ function Header() {
     detectLanguageByLocation();
   }, []);
 
+  // Handle scroll events for header transformation
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 80);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const handleLanguageChange = (languageCode) => {
     setCurrentLanguage(languageCode);
     setIsLanguageDropdownOpen(false);
@@ -143,13 +176,15 @@ function Header() {
   };
 
   return (
-    <section>
+    <>
+      {/* Original Header */}
+      <section className={`transition-all duration-700 ease-out ${isScrolled ? 'opacity-0 pointer-events-none transform -translate-y-4' : 'opacity-100 transform translate-y-0'}`}>
         <div className="flex flex-row items-center gap-10 text-white">
             <div className="image pt-5">
                 <img
-                    src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/logo.png"
+                    src="/logo.png"
                     alt="Bonhoeffer Machines Logo"
-                    className="h-24 pl-10 pr-10"
+                    className="h-20 pl-10 pr-10"
                 />
 
                 {/* <h1 className="text-2xl font-bold mt-5 py-1 pl-5 bg-[#989b2e] w-70 rounded-r-xl">Become Our Dealer</h1> */}
@@ -162,8 +197,8 @@ function Header() {
                             {item.hasDropdown ? (
                                 <div
                                     className="relative"
-                                    onMouseEnter={handleProductDropdownEnter}
-                                    onMouseLeave={handleProductDropdownLeave}
+                                    onMouseEnter={item.label === 'Products' ? handleProductDropdownEnter : handleGalleryDropdownEnter}
+                                    onMouseLeave={item.label === 'Products' ? handleProductDropdownLeave : handleGalleryDropdownLeave}
                                 >
                                     <Link
                                         href={item.href}
@@ -171,7 +206,10 @@ function Header() {
                                     >
                                         <span>{item.label}</span>
                                         <svg 
-                                            className={`w-4 h-4 transition-transform duration-200 ${isProductsDropdownOpen ? 'rotate-180' : ''}`}
+                                            className={`w-4 h-4 transition-transform duration-200 ${
+                                                (item.label === 'Products' && isProductsDropdownOpen) || 
+                                                (item.label === 'Gallery' && isGalleryDropdownOpen) ? 'rotate-180' : ''
+                                            }`}
                                             fill="none" 
                                             stroke="currentColor" 
                                             viewBox="0 0 24 24"
@@ -181,7 +219,7 @@ function Header() {
                                     </Link>
                                     
                                     {/* Products Dropdown */}
-                                    {isProductsDropdownOpen && (
+                                    {item.label === 'Products' && isProductsDropdownOpen && (
                                         <div className="absolute top-full left-0 mt-2 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-2xl shadow-2xl border border-gray-800 z-50 min-w-[400px] max-w-[600px]">
                                             <div className="p-6">
                                                 <h3 className="font-bold text-gray-100 mb-4 text-lg">Product Categories</h3>
@@ -206,6 +244,31 @@ function Header() {
                                                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                                         </svg>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )}
+
+                                    {/* Gallery Dropdown */}
+                                    {item.label === 'Gallery' && isGalleryDropdownOpen && (
+                                        <div className="absolute top-full left-0 mt-2 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-2xl shadow-2xl border border-gray-800 z-50 min-w-[200px]">
+                                            <div className="p-4">
+                                                <h3 className="font-bold text-gray-100 mb-3 text-lg">Gallery</h3>
+                                                <div className="space-y-2">
+                                                    <Link
+                                                        href="/gallery/photos"
+                                                        className="flex items-center space-x-3 p-2 rounded-lg hover:bg-[#989b2e] hover:text-white transition-colors group"
+                                                    >
+                                                        <span className="text-xl">📸</span>
+                                                        <span className="text-sm font-medium">Photos</span>
+                                                    </Link>
+                                                    <Link
+                                                        href="/gallery/videos"
+                                                        className="flex items-center space-x-3 p-2 rounded-lg hover:bg-[#989b2e] hover:text-white transition-colors group"
+                                                    >
+                                                        <span className="text-xl">🎥</span>
+                                                        <span className="text-sm font-medium">Videos</span>
                                                     </Link>
                                                 </div>
                                             </div>
@@ -364,7 +427,183 @@ function Header() {
                 </div>
             </div>
         )}
-    </section>
+      </section>
+
+      {/* Capsule Sticky Header */}
+      <div className={`fixed top-0 left-1/2 transform -translate-x-1/2 z-40 transition-all duration-700 ease-out ${
+        isScrolled ? 'opacity-100 translate-y-4' : 'opacity-0 -translate-y-8 pointer-events-none'
+      }`}>
+        <div className="bg-gradient-to-r from-gray-900/95 via-gray-800/95 to-gray-900/95 backdrop-blur-lg rounded-full shadow-2xl border border-gray-700/50 px-8 py-3">
+          <nav className="relative">
+            <ul className="flex items-center space-x-8">
+              {links.map((item) => (
+                <li key={`capsule-${item.href + item.label}`} className="relative">
+                  {item.hasDropdown ? (
+                    <div
+                      className="relative"
+                      onMouseEnter={item.label === 'Products' ? handleProductDropdownEnter : handleGalleryDropdownEnter}
+                      onMouseLeave={item.label === 'Products' ? handleProductDropdownLeave : handleGalleryDropdownLeave}
+                    >
+                      <Link
+                        href={item.href}
+                        className="text-lg font-medium text-white hover:text-[#989b2e] cursor-pointer flex items-center space-x-1 transition-colors duration-200 whitespace-nowrap"
+                      >
+                        <span>{item.label}</span>
+                        <svg 
+                          className={`w-3 h-3 transition-transform duration-200 ${
+                            (item.label === 'Products' && isProductsDropdownOpen) || 
+                            (item.label === 'Gallery' && isGalleryDropdownOpen) ? 'rotate-180' : ''
+                          }`}
+                          fill="none" 
+                          stroke="currentColor" 
+                          viewBox="0 0 24 24"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </Link>
+                      
+                      {/* Products Dropdown for Capsule */}
+                      {item.label === 'Products' && isProductsDropdownOpen && (
+                        <div className="absolute top-full left-0 mt-2 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-2xl shadow-2xl border border-gray-800 z-50 min-w-[400px] max-w-[600px]">
+                          <div className="p-6">
+                            <h3 className="font-bold text-gray-100 mb-4 text-lg">Product Categories</h3>
+                            <div className="grid grid-cols-2 gap-3">
+                              {productCategories.map((category) => (
+                                <Link
+                                  key={category.slug}
+                                  href="/product"
+                                  className="flex items-center space-x-3 p-2 rounded-lg hover:bg-[#989b2e] hover:text-white transition-colors group"
+                                >
+                                  <span className="text-base font-medium">{category.name}</span>
+                                </Link>
+                              ))}
+                            </div>
+                            <div className="mt-4 pt-4 border-t border-gray-200">
+                              <Link
+                                href="/product"
+                                className="inline-flex items-center space-x-2 text-[#989b2e] hover:text-[#7a7d24] font-medium"
+                              >
+                                <span>View All Products</span>
+                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                </svg>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Gallery Dropdown for Capsule */}
+                      {item.label === 'Gallery' && isGalleryDropdownOpen && (
+                        <div className="absolute top-full left-0 mt-2 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-2xl shadow-2xl border border-gray-800 z-50 min-w-[200px]">
+                          <div className="p-4">
+                            <h3 className="font-bold text-gray-100 mb-3 text-lg">Gallery</h3>
+                            <div className="space-y-2">
+                              <Link
+                                href="/gallery/photos"
+                                className="flex items-center space-x-3 p-2 rounded-lg hover:bg-[#989b2e] hover:text-white transition-colors group"
+                              >
+                                {/* <span className="text-xl">📸</span> */}
+                                <span className="text-base font-medium">Photos</span>
+                              </Link>
+                              <Link
+                                href="/gallery/videos"
+                                className="flex items-center space-x-3 p-2 rounded-lg hover:bg-[#989b2e] hover:text-white transition-colors group"
+                              >
+                                {/* <span className="text-xl">🎥</span> */}
+                                <span className="text-base font-medium">Videos</span>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className="text-lg font-medium text-white hover:text-[#989b2e] cursor-pointer transition-colors duration-200 whitespace-nowrap"
+                    >
+                      {item.label}
+                    </Link>
+                  )}
+                </li>
+              ))}
+              
+              {/* Search button in capsule */}
+              <li>
+                <button 
+                  onClick={toggleSearch}
+                  className="text-white hover:text-[#989b2e] transition-colors duration-200 p-1 cursor-pointer"
+                  aria-label="Open search"
+                >
+                  <svg 
+                    className="w-5 h-5" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth={2} 
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" 
+                    />
+                  </svg>
+                </button>
+              </li>
+              
+              {/* Language selector in capsule */}
+              <li className="relative">
+                <button
+                  onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
+                  className="flex items-center space-x-1 text-white hover:text-[#989b2e] transition-colors duration-200 p-1 cursor-pointer"
+                  aria-label="Change language"
+                >
+                  <span className="text-lg font-medium">
+                    {languages.find(lang => lang.code === currentLanguage)?.name}
+                  </span>
+                  <svg 
+                    className={`w-3 h-3 transition-transform duration-200 ${isLanguageDropdownOpen ? 'rotate-180' : ''}`}
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth={2} 
+                      d="M19 9l-7 7-7-7" 
+                    />
+                  </svg>
+                </button>
+
+                {isLanguageDropdownOpen && (
+                  <div className="absolute top-full right-0 mt-1 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-lg shadow-lg border border-[#989b2e] py-2 z-50 min-w-[160px]">
+                    {languages.map((language) => (
+                      <button
+                        key={language.code}
+                        onClick={() => handleLanguageChange(language.code)}
+                        className={`w-full flex items-center space-x-3 px-4 py-2 text-left hover:bg-[#989b2e] transition-colors cursor-pointer duration-150 ${
+                          currentLanguage === language.code ? 'bg-[#989b2e] text-white font-medium' : 'text-gray-100'
+                        }`}
+                      >
+                        {/* <span className="text-xl">{language.flag}</span> */}
+                        <span className="text-lg">{language.name}</span>
+                        {currentLanguage === language.code && (
+                          <svg className="w-4 h-4 ml-auto text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        )}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </>
   )
 }
 

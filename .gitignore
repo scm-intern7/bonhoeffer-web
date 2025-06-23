@@ -244,5 +244,4 @@ runtime-config.json
 
 # Custom ignores for this project
 .env*.local
-/public/
-/app/admin/
+# /public/

@@ -9,12 +9,12 @@ function Page() {
 
   // HOD data
   const hodData = [
-    { name: "Naveen Bakshi", position: "Head of Supply Chain", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Naveen-Bakshi.webp" },
-    { name: "Sachin Sharma", position: "Manager Financial Planning and Accounting", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Sachin-Sharma.webp" },
-    { name: "Sudhanshu Pandey", position: "CEO India Business", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Sudhanshu-Pandey.webp" },
-    { name: "Suparna Chawla", position: "Manager, Human Resource", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Suparna-Chawla.webp" },
-    { name: "Rajat Sahni", position: "Head Latin America", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Rajat-Sahni.webp" },
-    { name: "Ashwin Tharoor", position: "Sr. Manager Marketing", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/ashwin-tharoor.webp" }
+    { name: "Naveen Bakshi", position: "Head of Supply Chain", image: "https://bonhoeffermachines.com/public/images/about-new/Naveen-Bakshi.webp" },
+    { name: "Sachin Sharma", position: "Manager Financial Planning and Accounting", image: "https://bonhoeffermachines.com/public/images/about-new/Sachin-Sharma.webp" },
+    { name: "Sudhanshu Pandey", position: "CEO India Business", image: "https://bonhoeffermachines.com/public/images/about-new/Sudhanshu-Pandey.webp" },
+    { name: "Suparna Chawla", position: "Manager, Human Resource", image: "https://bonhoeffermachines.com/public/images/about-new/Suparna-Chawla.webp" },
+    { name: "Rajat Sahni", position: "Head Latin America", image: "https://bonhoeffermachines.com/public/images/about-new/Rajat-Sahni.webp" },
+    { name: "Ashwin Tharoor", position: "Sr. Manager Marketing", image: "https://bonhoeffermachines.com/public/images/about-new/ashwin-tharoor.webp" }
   ];
 
   // Differentiators data
@@ -64,7 +64,7 @@ function Page() {
       <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden mt-5">
         <div className="absolute inset-0">
           <Image
-            src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/About-us-new-banner.webp"
+            src="https://bonhoeffermachines.com/en/public/images/about-new/About-us-new-banner.webp"
             alt="About Us Banner"
             fill
             className="object-cover"
@@ -125,7 +125,7 @@ function Page() {
               transition={{ duration: 0.3 }}
             >
               <Image
-                src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Overview.webp"
+                src="https://bonhoeffermachines.com/en/public/images/about-new/Overview.webp"
                 alt="Company Introduction"
                 fill
                 className="object-cover"
@@ -151,7 +151,7 @@ function Page() {
               transition={{ duration: 0.3 }}
             >
               <Image
-                src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/founder-desk.webp"
+                src="https://bonhoeffermachines.com/public/images/about-new/Chairman-desk.webp"
                 alt="Founder's Desk"
                 fill
                 className="object-cover"
@@ -175,6 +175,86 @@ function Page() {
                   <p className="font-semibold text-xl text-[#989b2e]">Varun Gupta</p>
                   <p className="text-gray-400 text-lg">Founder</p>
                 </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Company Overview */}
+      <section className="py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <motion.div 
+            className="grid md:grid-cols-2 gap-12 items-center"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="text-white">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#989b2e]">
+                Company Overview
+              </h2>
+              <div className="space-y-4 text-md text-gray-300 leading-relaxed">
+                <p>
+                  Bonhoeffer is a premium agriculture, forestry, construction, industrial and gardening machinery, spare parts, and tools brand, working in the three major regions of the world - Central America, Latin America, and Asia. We strive to deliver high-quality machinery for durable and efficient use. Taking the simple belief of changing lives with easy and compatible service--Bonhoeffer delivers the best and most professional power machines. Our products meet the needs of tomorrow with their advanced and sustainable equipment which bridges the gap between nature and people.
+                </p>
+                <p>
+                  At Bonhoeffer Machines, we are a prominent provider of high-quality agriculture & industrial machinery and equipment in more than 16 countries. With a strong commitment to innovation and customer satisfaction, we strive to deliver innovative solutions for various industries.
+                </p>
+              </div>
+            </div>
+            <motion.div
+              className="relative aspect-video rounded-2xl overflow-hidden bg-black"
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+            >
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/Gb1rKlc_XNw"
+                title="Company Overview Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Our Presence */}
+      <section className="py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <motion.div 
+            className="grid md:grid-cols-2 gap-12 items-center"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <motion.div
+              className="relative h-96 rounded-2xl overflow-hidden order-2 md:order-1"
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+            >
+              <Image
+                src="https://bonhoeffermachines.com/en/public/images/about-new/our-presence.webp"
+                alt="Our Global Presence"
+                fill
+                className="object-cover"
+              />
+            </motion.div>
+            <div className="text-white order-1 md:order-2">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#989b2e]">
+                Our Global Presence
+              </h2>
+              <div className="space-y-4 text-md text-gray-300 leading-relaxed">
+                <p>
+                  At Bonhoeffer Machines, we started with a vision to redefine the machinery industry. Our journey is a testament to our commitment to innovation and quality. In every machine we create, we infuse the essence of precision engineering and durability. Our customers deserve nothing less. Our success is deeply rooted in the trust of our customers. We continuously strive to exceed their expectations. Sustainability is not just a trend; it&apos;s our responsibility.
+                </p>
+                <p>
+                  Our machines are designed with the environment in mind. We believe in the power of partnerships. Together, we build a future where efficiency and sustainability go hand in hand. Bonhoeffer Machines is more than a brand; it&apos;s a promise. A promise of quality, sustainability, and a brighter tomorrow.
+                </p>
               </div>
             </div>
           </motion.div>
@@ -207,7 +287,7 @@ function Page() {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.3, delay: index * 0.01 }}
                 whileHover={{ scale: 1.05 }}
               >
                 <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
@@ -256,7 +336,7 @@ function Page() {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.3, delay: index * 0.01 }}
                 whileHover={{ scale: 1.05 }}
               >
                 <h3 className="text-xl font-bold text-[#989b2e] mb-3">
@@ -284,7 +364,7 @@ function Page() {
             >
               <div className="relative h-100 rounded-2xl overflow-hidden mb-8">
                 <Image
-                  src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/vision.webp"
+                  src="https://bonhoeffermachines.com/public/images/about-new/Philosophy1.webp"
                   alt="Our Vision"
                   fill
                   className="object-cover"
@@ -312,10 +392,10 @@ function Page() {
             >
               <div className="relative h-100 rounded-2xl overflow-hidden mb-8">
                 <Image
-                  src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/mission-copy.png"
+                  src="https://bonhoeffermachines.com/public/images/about-new/Philosophy2.webp"
                   alt="Our Mission"
                   fill
-                  className="object-cover"
+                  className="object-top"
                 />
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#989b2e]">
@@ -331,6 +411,51 @@ function Page() {
               </div>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <motion.div 
+            className="grid md:grid-cols-2 gap-12 items-center"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="text-white">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#989b2e]">
+                How We Produce
+              </h2>
+              <div className="space-y-4 text-lg text-gray-300 leading-relaxed">
+                <p>
+                  Our manufacturing process combines traditional craftsmanship with cutting-edge technology, ensuring every machine meets our rigorous quality standards.
+                </p>
+                <p>
+                  From precision engineering and advanced metallurgy to automated assembly lines and comprehensive testing protocols, we maintain excellence at every stage of production.
+                </p>
+                <p>
+                  Our ISO-certified facilities utilize sustainable practices, advanced quality control systems, and continuous improvement methodologies to deliver products that exceed customer expectations.
+                </p>
+              </div>
+            </div>
+            <motion.div
+              className="relative aspect-video rounded-2xl overflow-hidden bg-black"
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+            >
+              <video
+                className="w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source src="https://bonhoeffermachines.com/en/public/images/brand-video-updated.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 
@@ -360,7 +485,7 @@ function Page() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.3, delay: index * 0.01 }}
               >
                 <button
                   className="w-full p-6 text-left flex justify-between items-center hover:bg-white/5 transition-colors duration-200"
@@ -423,7 +548,7 @@ function Page() {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.3, delay: index * 0.01 }}
                 whileHover={{ scale: 1.05 }}
               >
                 <h3 className="text-xl font-bold text-[#989b2e] mb-4">

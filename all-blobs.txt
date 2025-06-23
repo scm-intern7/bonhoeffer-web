@@ -1,0 +1,16 @@
+Vercel CLI 43.3.0
+Fetching blobs
+
+  Uploaded At     Size       Pathname                         URL                                                                                      
+  1d              6148       .DS_Store                        https://9lhi1aprmhe38img.public.blob.vercel-storage.com/.DS_Store                        
+  1d              606124     1-gasoline-water-pump.webp       https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1-gasoline-water-pump.webp       
+  1d              373154     10-chain-saw.webp                https://9lhi1aprmhe38img.public.blob.vercel-storage.com/10-chain-saw.webp                
+  1d              333634     10_CORTACAPED.webp               https://9lhi1aprmhe38img.public.blob.vercel-storage.com/10_CORTACAPED.webp               
+  1d              333634     10_CORTAC心PED.webp              https://9lhi1aprmhe38img.public.blob.vercel-storage.com/10_CORTAC%E5%BF%83PED.webp       
+  7h              304174     10_nyon-de-motoguadana.png       https://9lhi1aprmhe38img.public.blob.vercel-storage.com/10_nyon-de-motoguadana.png       
+  1d              857454     11-hedge-trimmer.webp            https://9lhi1aprmhe38img.public.blob.vercel-storage.com/11-hedge-trimmer.webp            
+  7h              417480     11_espada-de-motosierra.png      https://9lhi1aprmhe38img.public.blob.vercel-storage.com/11_espada-de-motosierra.png      
+  1d              547832     12-blower.webp                   https://9lhi1aprmhe38img.public.blob.vercel-storage.com/12-blower.webp                   
+  7h              404700     12_espada-con-punta-dura.png     https://9lhi1aprmhe38img.public.blob.vercel-storage.com/12_espada-con-punta-dura.png     
+
+> To display the next page run `vercel blob list --cursor 1FtR38gPz05CNlRtbtoqE31ZPp6AHkvwTG4wCzCfihJSipH+dVhMltbJaYb4f5l0UTa8WFK8Z2TvMcK+lTe+f0oIGKtw6YhPKDXklkKToz6Nv4hjwDPUlpxWz+pSrzGQJ`

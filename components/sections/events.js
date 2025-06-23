@@ -5,17 +5,17 @@ import { useInView } from 'react-intersection-observer';
 
 // Event images data
 const eventImages = [
-  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Argentina-Fair.png', name: 'Argentina Fair', slug: 'argentina-fair' },
-  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/coimbatore-fair-home.webp', name: 'Coimbatore Fair', slug: 'coimbatore-fair' },
-  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Colombia-Fair.png', name: 'Colombia Fair', slug: 'colombia-fair' },
-  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Domican-Republic.png', name: 'Dominican Republic', slug: 'dominican-republic' },
-  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Football-Event.png', name: 'Football Event', slug: 'football-event' },
-  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/indian-fair.png', name: 'Indian Fair', slug: 'indian-fair' },
-  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Mexico-Fair.png', name: 'Mexico Fair', slug: 'mexico-fair' },
-  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-fair-home.webp', name: 'Nicaragua Fair', slug: 'nicaragua-fair' },
-  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/peru-fair.png', name: 'Peru Fair', slug: 'peru-fair' },
-  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/usaid1.png', name: 'USAID Event 1', slug: 'usaid-event-1' },
-  { src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/usaid2.png', name: 'World Vision', slug: 'usaid-event-2' }
+  { src: 'https://bonhoeffermachines.com/en/public/images/Argentina-Fair.png', name: 'Argentina Fair', slug: 'argentina-fair' },
+  { src: 'https://bonhoeffermachines.com/en/public/images/coimbatore-fair-home.webp', name: 'Coimbatore Fair', slug: 'coimbatore-fair' },
+  { src: 'https://bonhoeffermachines.com/en/public/images/Colombia-Fair.png', name: 'Colombia Fair', slug: 'colombia-fair' },
+  { src: 'https://bonhoeffermachines.com/en/public/images/Domican-Republic.png', name: 'Dominican Republic', slug: 'dominican-republic' },
+  { src: 'https://bonhoeffermachines.com/en/public/images/Football-Event.png', name: 'Football Event', slug: 'football-event' },
+  { src: 'https://bonhoeffermachines.com/en/public/images/indian-fair.png', name: 'Indian Fair', slug: 'indian-fair' },
+  { src: 'https://bonhoeffermachines.com/en/public/images/Mexico-Fair.png', name: 'Mexico Fair', slug: 'mexico-fair' },
+  { src: 'https://bonhoeffermachines.com/en/public/images/nicaragua-fair-home.webp', name: 'Nicaragua Fair', slug: 'nicaragua-fair' },
+  { src: 'https://bonhoeffermachines.com/en/public/images/peru-fair.png', name: 'Peru Fair', slug: 'peru-fair' },
+  { src: 'https://bonhoeffermachines.com/en/public/images/usaid1.png', name: 'USAID Event 1', slug: 'usaid-event-1' },
+  { src: 'https://bonhoeffermachines.com/en/public/images/usaid2.png', name: 'World Vision', slug: 'usaid-event-2' }
 ];
 
 // Floating Arrow Component
@@ -107,17 +107,17 @@ const ImageSlider = ({ posts }) => {
         <>
           <button
             onClick={prevSlide}
-            className="absolute left-[-55] top-1/2 transform -translate-y-1/2 z-10 bg-[#989b2e] hover:bg-[#7a7d24] text-white p-4 rounded-full transition-colors duration-300 shadow-lg"
+            className="absolute left-[-75] top-1/2 transform -translate-y-1/2 z-10 bg-[#989b2e] hover:bg-[#7a7d24] text-white p-4 rounded-full transition-colors duration-300 shadow-lg"
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
               <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
             </svg>
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-[-55] top-1/2 transform -translate-y-1/2 z-10 bg-[#989b2e] hover:bg-[#7a7d24] text-white p-4 rounded-full transition-colors duration-300 shadow-lg"
+            className="absolute right-[-75] top-1/2 transform -translate-y-1/2 z-10 bg-[#989b2e] hover:bg-[#7a7d24] text-white p-4 rounded-full transition-colors duration-300 shadow-lg"
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
               <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
             </svg>
           </button>

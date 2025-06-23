@@ -235,7 +235,7 @@ function PartSpecificPage() {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.3, delay: index * 0.01 }}
                 whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(152, 155, 46, 0.1)" }}
               >
                 <div className="relative h-48 mb-6 rounded-xl overflow-hidden bg-white/5">

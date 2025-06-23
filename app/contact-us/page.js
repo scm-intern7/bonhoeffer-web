@@ -33,6 +33,10 @@ function ContactPage() {
 		email: '',
 		phone: '',
 		company: '',
+		requirement: '',
+		designation: '',
+		city: '',
+		country: '',
 		subject: '',
 		message: '',
 		productInterest: '',
@@ -60,6 +64,10 @@ function ContactPage() {
 			email: '',
 			phone: '',
 			company: '',
+			requirement: '',
+			designation: '',
+			city: '',
+			country: '',
 			subject: '',
 			message: '',
 			productInterest: '',
@@ -98,7 +106,7 @@ function ContactPage() {
 
 			{/* Introduction Text Section */}
 			<section className="py-20 px-4">
-				<div className="max-w-4xl mx-auto text-center">
+				<div className="max-w-6xl mx-auto text-center">
 					<motion.div
 						initial={{ opacity: 0, y: 30 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -152,6 +160,7 @@ function ContactPage() {
 						transition={{ duration: 0.8 }}
 						viewport={{ once: true }}
 					>
+						{/* Row 1: Name, Email */}
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 							<div>
 								<label className="block text-white font-medium mb-2">
@@ -184,6 +193,7 @@ function ContactPage() {
 							</div>
 						</div>
 
+						{/* Row 2: Phone, Company */}
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 							<div>
 								<label className="block text-white font-medium mb-2">
@@ -213,18 +223,23 @@ function ContactPage() {
 							</div>
 						</div>
 
+						{/* Row 3: Requirement, Product Interest */}
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 							<div>
-								<label className="block text-white font-medium mb-2">Subject *</label>
-								<input
-									type="text"
-									name="subject"
-									value={formData.subject}
+								<label className="block text-white font-medium mb-2">
+									Requirement *
+								</label>
+								<select
+									name="requirement"
+									value={formData.requirement}
 									onChange={handleInputChange}
 									required
-									className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:border-[#9a9c30] focus:ring-2 focus:ring-[#9a9c30]/20 transition-all duration-300"
-									placeholder="What's this about?"
-								/>
+									className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-xl text-white focus:border-[#9a9c30] focus:ring-2 focus:ring-[#9a9c30]/20 transition-all duration-300"
+								>
+									<option value="">Select requirement type</option>
+									<option value="buyer">Buyer</option>
+									<option value="dealer">Dealer</option>
+								</select>
 							</div>
 
 							<div>
@@ -248,6 +263,61 @@ function ContactPage() {
 							</div>
 						</div>
 
+						{/* Row 4: City, Country */}
+						<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+							<div>
+								<label className="block text-white font-medium mb-2">City</label>
+								<input
+									type="text"
+									name="city"
+									value={formData.city}
+									onChange={handleInputChange}
+									className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:border-[#9a9c30] focus:ring-2 focus:ring-[#9a9c30]/20 transition-all duration-300"
+									placeholder="Your city"
+								/>
+							</div>
+
+							<div>
+								<label className="block text-white font-medium mb-2">Country</label>
+								<input
+									type="text"
+									name="country"
+									value={formData.country}
+									onChange={handleInputChange}
+									className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:border-[#9a9c30] focus:ring-2 focus:ring-[#9a9c30]/20 transition-all duration-300"
+									placeholder="Your country"
+								/>
+							</div>
+						</div>
+
+						{/* Row 5: Designation (full width) */}
+						<div className="mb-6">
+							<label className="block text-white font-medium mb-2">Designation</label>
+							<input
+								type="text"
+								name="designation"
+								value={formData.designation}
+								onChange={handleInputChange}
+								className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:border-[#9a9c30] focus:ring-2 focus:ring-[#9a9c30]/20 transition-all duration-300"
+								placeholder="Your designation/title"
+							/>
+						</div>
+
+						{/* Row 6: Subject (full width) */}
+						<div className="mb-6">
+							<label className="block text-white font-medium mb-2">Subject *</label>
+							<input
+								type="text"
+								name="subject"
+								value={formData.subject}
+								onChange={handleInputChange}
+								required
+								className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:border-[#9a9c30] focus:ring-2 focus:ring-[#9a9c30]/20 transition-all duration-300"
+								placeholder="What's this about?"
+							/>
+						</div>
+
+						{/* Row 7: Message (full width) */}
 						<div className="mb-8">
 							<label className="block text-white font-medium mb-2">Message *</label>
 							<textarea
@@ -380,7 +450,7 @@ function ContactPage() {
 								className={`bg-gradient-to-br ${dept.color} p-1 rounded-2xl hover:scale-105 transition-all duration-300`}
 								initial={{ opacity: 0, y: 30 }}
 								whileInView={{ opacity: 1, y: 0 }}
-								transition={{ duration: 0.6, delay: index * 0.1 }}
+								transition={{ duration: 0.3, delay: index * 0.01 }}
 								viewport={{ once: true }}
 							>
 								<div className="bg-gray-900 rounded-xl p-6 h-full">

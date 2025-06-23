@@ -16,121 +16,121 @@ function ProductPage() {
       id: 1,
       name: "Agro Industrial",
       products: [
-        { name: "Gasoline Water Pump", slug: "gasoline-water-pump", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_bomba-de-agua-gasolina.webp" },
-        { name: "Diesel Water Pump", slug: "diesel-water-pump", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_BOMBA_DE_AGUA_DE_DIESEL.webp" },
-        { name: "Gasoline Engine", slug: "gasoline-engine", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2-gasoline-engine.webp" },
-        { name: "Diesel Engine", slug: "diesel-engine", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3_MOTOR_DE_DIESEL.webp" },
-        { name: "Gasoline Tiller", slug: "gasoline-tiller", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5-gasoline-tiller.webp" },
-        { name: "Mini Cultivator", slug: "mini-cultivator", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5_MINI-CULTIVADOR-DE-GASOLIN.webp" }
+        { name: "Gasoline Water Pump", slug: "gasoline-water-pump", image: "https://bonhoeffermachines.in/public/images/segment/1_bomba-de-agua-gasolina.webp" },
+        { name: "Diesel Water Pump", slug: "diesel-water-pump", image: "https://bonhoeffermachines.com/public/images/segment/1_BOMBA_DE_AGUA_DE_DIESEL.webp" },
+        { name: "Gasoline Engine", slug: "gasoline-engine", image: "https://bonhoeffermachines.in/public/images/segment/2-gasoline-engine.webp" },
+        { name: "Diesel Engine", slug: "diesel-engine", image: "https://bonhoeffermachines.in/public/images/segment/3_MOTOR_DE_DIESEL.webp" },
+        { name: "Gasoline Tiller", slug: "gasoline-tiller", image: "https://bonhoeffermachines.in/public/images/segment/5-gasoline-tiller.webp" },
+        { name: "Mini Cultivator", slug: "mini-cultivator", image: "https://bonhoeffermachines.in/public/images/segment/5_MINI-CULTIVADOR-DE-GASOLIN.webp" }
       ]
     },
     {
       id: 2,
       name: "Garden and Forestry",
       products: [
-        { name: "Brush Cutter", slug: "brush-cutter", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_DESBROZADORA.webp" },
-        { name: "Backpack Brush Cutter", slug: "backpack-brush-cutter", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2_DESBROZADORA_DE_MOCHILA.webp" },
-        { name: "Chainsaw", slug: "chainsaw", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/4_MOTOSIERRA.webp" },
-        { name: "Hedge Trimmer", slug: "hedge-trimmer", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5_CORTAZETOS.webp" },
-        { name: "Lawn Mower", slug: "lawn-mower", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/10_CORTACAPED.webp" },
-        { name: "Leaf Blower", slug: "leaf-blower", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/6_SOPLADORA.webp" },
-        { name: "Multi Tool", slug: "multi-tool", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3_MULTIFUNCIONAL.webp" }
+        { name: "Brush Cutter", slug: "brush-cutter", image: "https://bonhoeffermachines.in/public/images/segment/1_DESBROZADORA.webp" },
+        { name: "Backpack Brush Cutter", slug: "backpack-brush-cutter", image: "https://bonhoeffermachines.in/public/images/segment/2_DESBROZADORA_DE_MOCHILA.webp" },
+        { name: "Chainsaw", slug: "chainsaw", image: "https://bonhoeffermachines.in/public/images/segment/4_MOTOSIERRA.webp" },
+        { name: "Hedge Trimmer", slug: "hedge-trimmer", image: "https://bonhoeffermachines.in/public/images/segment/5_CORTAZETOS.webp" },
+        { name: "Lawn Mower", slug: "lawn-mower", image: "https://bonhoeffermachines.in/public/images/segment/10_CORTACAPED.webp" },
+        { name: "Leaf Blower", slug: "leaf-blower", image: "https://bonhoeffermachines.in/public/images/segment/6_SOPLADORA.webp" },
+        { name: "Multi Tool", slug: "multi-tool", image: "https://bonhoeffermachines.in/public/images/segment/3_MULTIFUNCIONAL.webp" }
       ]
     },
     {
       id: 3,
       name: "Diesel Machines",
       products: [
-        { name: "Diesel Generator", slug: "diesel-generator", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2_GENERADOR_DE_DIESEL.webp" },
-        { name: "Diesel Water Pump", slug: "diesel-water-pump", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_BOMBA_DE_AGUA_DE_DIESEL.webp" },
-        { name: "Diesel Engine", slug: "diesel-engine", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3_MOTOR_DE_DIESEL.webp" }
+        { name: "Diesel Generator", slug: "diesel-generator", image: "https://bonhoeffermachines.in/public/images/segment/2_GENERADOR_DE_DIESEL.webp" },
+        { name: "Diesel Water Pump", slug: "diesel-water-pump", image: "https://bonhoeffermachines.in/public/images/segment/1_BOMBA_DE_AGUA_DE_DIESEL.webp" },
+        { name: "Diesel Engine", slug: "diesel-engine", image: "https://bonhoeffermachines.in/public/images/segment/3_MOTOR_DE_DIESEL.webp" }
       ]
     },
     {
       id: 4,
       name: "Electric Machines",
       products: [
-        { name: "Electric Pressure Washer", slug: "electric-pressure-washer", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_HIDROLAVADORA-DE-ELECTRICA.webp" },
-        { name: "Electric Motors", slug: "electric-motors", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2_electric-motors.webp" },
-        { name: "Direct Driven Air Compressor", slug: "air-compressor", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/4_Direct-driven-air-compressor.webp" }
+        { name: "Electric Pressure Washer", slug: "electric-pressure-washer", image: "https://bonhoeffermachines.in/public/images/segment/1_HIDROLAVADORA-DE-ELECTRICA.webp" },
+        { name: "Electric Motors", slug: "electric-motors", image: "https://bonhoeffermachines.in/public/images/segment/2_electric-motors.webp" },
+        { name: "Direct Driven Air Compressor", slug: "air-compressor", image: "https://bonhoeffermachines.in/public/images/segment/4_Direct-driven-air-compressor.webp" }
       ]
     },
     {
       id: 5,
       name: "Solar",
       products: [
-        { name: "Solar Panel", slug: "solar-panel", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_PANEL_SOLAR.webp" },
-        { name: "Solar Water Pump", slug: "solar-water-pump", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2_BOMBA_DE_SOLAR.webp" }
+        { name: "Solar Panel", slug: "solar-panel", image: "https://bonhoeffermachines.in/public/images/segment/1_PANEL_SOLAR.webp" },
+        { name: "Solar Water Pump", slug: "solar-water-pump", image: "https://bonhoeffermachines.in/public/images/segment/2_BOMBA_DE_SOLAR.webp" }
       ]
     },
     {
       id: 6,
       name: "Sprayers and Fumigation",
       products: [
-        { name: "Gasoline Sprayer", slug: "gasoline-sprayer", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_FUMIGADORA_DE_GASOLINA.webp" },
-        { name: "Manual Sprayer", slug: "manual-sprayer", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2_FUMIGADORA_MANUAL.webp" },
-        { name: "Backpack Atomizer", slug: "backpack-atomizer", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/4_ATOMIZADOR_DE_MOCHILA.webp" },
-        { name: "Mistduster", slug: "mistduster", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5_NEBULIZADOR.webp" }
+        { name: "Gasoline Sprayer", slug: "gasoline-sprayer", image: "https://bonhoeffermachines.in/public/images/segment/1_FUMIGADORA_DE_GASOLINA.webp" },
+        { name: "Manual Sprayer", slug: "manual-sprayer", image: "https://bonhoeffermachines.in/public/images/segment/2_FUMIGADORA_MANUAL.webp" },
+        { name: "Backpack Atomizer", slug: "backpack-atomizer", image: "https://bonhoeffermachines.in/public/images/segment/4_ATOMIZADOR_DE_MOCHILA.webp" },
+        { name: "Mistduster", slug: "mistduster", image: "https://bonhoeffermachines.in/public/images/segment/5_NEBULIZADOR.webp" }
       ]
     },
     {
       id: 7,
       name: "Domestic and Commercial",
       products: [
-        { name: "Gasoline Generator", slug: "gasoline-generator", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3_GENERADOR-DE-GASOLINA.webp" },
-        { name: "Gasoline Inverter", slug: "gasoline-inverter", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/4_INVERSOR-DE-GASOLINA.webp" },
-        { name: "Pressure Washer", slug: "pressure-washer", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2_HIDROLAVADORA-DE-GASOLINA.webp" },
-        { name: "Domestic Pressure Washer", slug: "domestic-pressure-washer", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3_Domestic-pressure-washer.webp" },
-        { name: "Commercial Vacuum", slug: "commercial-vacuum", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5_ASPIRADORA-GRADO-COMERCIAL.webp" }
+        { name: "Gasoline Generator", slug: "gasoline-generator", image: "https://bonhoeffermachines.in/public/images/segment/3_GENERADOR-DE-GASOLINA.webp" },
+        { name: "Gasoline Inverter", slug: "gasoline-inverter", image: "https://bonhoeffermachines.in/public/images/segment/4_INVERSOR-DE-GASOLINA.webp" },
+        { name: "Pressure Washer", slug: "pressure-washer", image: "https://bonhoeffermachines.in/public/images/segment/2_HIDROLAVADORA-DE-GASOLINA.webp" },
+        { name: "Domestic Pressure Washer", slug: "domestic-pressure-washer", image: "https://bonhoeffermachines.in/public/images/segment/3_Domestic-pressure-washer.webp" },
+        { name: "Commercial Vacuum", slug: "commercial-vacuum", image: "https://bonhoeffermachines.in/public/images/segment/5_ASPIRADORA-GRADO-COMERCIAL.webp" }
       ]
     },
     {
       id: 8,
       name: "Industrial",
       products: [
-        { name: "Welding Machine", slug: "welding-machine", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_MAQUINAS-DE-SOLDAR.webp" },
-        { name: "Centrifugal Pump", slug: "centrifugal-pump", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/4_BOMBA-CENTR%C3%96FUGA.webp" },
-        { name: "Submersible Pump", slug: "submersible-pump", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5_BOMBA-DE-SUMERGIBLE.webp" },
-        { name: "2-Stroke Water Pump", slug: "2-stroke-water-pump", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/8_BOMBA_DE_AGUA_2_TIEMPO.webp" },
-        { name: "2-Stroke Engine", slug: "2-stroke-engine", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/9_MOTOR_DE_2_TIEMPOS.webp" }
+        { name: "Welding Machine", slug: "welding-machine", image: "https://bonhoeffermachines.in/public/images/segment/1_MAQUINAS-DE-SOLDAR.webp" },
+        { name: "Centrifugal Pump", slug: "centrifugal-pump", image: "https://bonhoeffermachines.in/public/images/segment/4_BOMBA-CENTR%C3%96FUGA.webp" },
+        { name: "Submersible Pump", slug: "submersible-pump", image: "https://bonhoeffermachines.in/public/images/segment/5_BOMBA-DE-SUMERGIBLE.webp" },
+        { name: "2-Stroke Water Pump", slug: "2-stroke-water-pump", image: "https://bonhoeffermachines.in/public/images/segment/8_BOMBA_DE_AGUA_2_TIEMPO.webp" },
+        { name: "2-Stroke Engine", slug: "2-stroke-engine", image: "https://bonhoeffermachines.in/public/images/segment/9_MOTOR_DE_2_TIEMPOS.webp" }
       ]
     },
     {
       id: 9,
       name: "Construction",
       products: [
-        { name: "Tamping Rammer", slug: "tamping-rammer", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_MARCOS-DE-APISONAMIENTO.webp" },
-        { name: "Plate Compactor", slug: "plate-compactor", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2_PLATO-COMPACTADOR.webp" },
-        { name: "Concrete Cutter", slug: "concrete-cutter", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3_concrete-cutter.webp" },
-        { name: "Concrete Vibrator", slug: "concrete-vibrator", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/4_concrete-vibrator.webp" },
-        { name: "Power Trowel", slug: "power-trowel", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5_PODER-CONCRETO-PALETA.webp" }
+        { name: "Tamping Rammer", slug: "tamping-rammer", image: "https://bonhoeffermachines.in/public/images/segment/1_MARCOS-DE-APISONAMIENTO.webp" },
+        { name: "Plate Compactor", slug: "plate-compactor", image: "https://bonhoeffermachines.in/public/images/segment/2_PLATO-COMPACTADOR.webp" },
+        { name: "Concrete Cutter", slug: "concrete-cutter", image: "https://bonhoeffermachines.in/public/images/segment/3_concrete-cutter.webp" },
+        { name: "Concrete Vibrator", slug: "concrete-vibrator", image: "https://bonhoeffermachines.in/public/images/segment/4_concrete-vibrator.webp" },
+        { name: "Power Trowel", slug: "power-trowel", image: "https://bonhoeffermachines.in/public/images/segment/5_PODER-CONCRETO-PALETA.webp" }
       ]
     },
     {
       id: 10,
       name: "Tools",
       products: [
-        { name: "Earth Auger", slug: "earth-auger", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/7_BARRENA_DE_TIERRA.webp" },
-        { name: "Garden Tools", slug: "garden-tools", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/garden-tools.webp" },
-        { name: "Hand Tools", slug: "hand-tools", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/hand-tools-home.webp" }
+        { name: "Earth Auger", slug: "earth-auger", image: "https://bonhoeffermachines.in/public/images/segment/7_BARRENA_DE_TIERRA.webp" },
+        { name: "Garden Tools", slug: "garden-tools", image: "https://bonhoeffermachines.in/public/images/segment/garden-tools.webp" },
+        { name: "Hand Tools", slug: "hand-tools", image: "https://bonhoeffermachines.in/public/images/segment/hand-tools-home.webp" }
       ]
     },
     {
       id: 11,
       name: "Wood Chipper and Chaff Cutter",
       products: [
-        { name: "Wood Chipper", slug: "wood-chipper", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/wood-chipper-home.webp" },
-        { name: "Chaff Cutter", slug: "chaff-cutter", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/chaff-cutter.webp" }
+        { name: "Wood Chipper", slug: "wood-chipper", image: "https://bonhoeffermachines.in/public/images/segment/wood-chipper-home.webp" },
+        { name: "Chaff Cutter", slug: "chaff-cutter", image: "https://bonhoeffermachines.in/public/images/segment/chaff-cutter.webp" }
       ]
     },
     {
       id: 12,
       name: "Special Segment",
       products: [
-        { name: "Log Splitter", slug: "log-splitter", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/log-splitter-home.webp" },
-        { name: "Mini Dumper", slug: "mini-dumper", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/mini-dumper-home.webp" },
-        { name: "Trencher", slug: "trencher", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/trencher-home.webp" },
-        { name: "AC Professional", slug: "ac-professional", image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/ac-professional-home.webp" }
+        { name: "Log Splitter", slug: "log-splitter", image: "https://bonhoeffermachines.in/public/images/segment/log-splitter-home.webp" },
+        { name: "Mini Dumper", slug: "mini-dumper", image: "https://bonhoeffermachines.in/public/images/segment/mini-dumper-home.webp" },
+        { name: "Trencher", slug: "trencher", image: "https://bonhoeffermachines.in/public/images/segment/trencher-home.webp" },
+        { name: "AC Professional", slug: "ac-professional", image: "https://bonhoeffermachines.in/public/images/segment/ac-professional-home.webp" }
       ]
     }
   ];
@@ -163,10 +163,10 @@ function ProductPage() {
   return (
     <BgLayout>
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden mt-5">
+      <section className="relative min-h-[40vh] flex items-center justify-center overflow-hidden mt-5">
         <div className="absolute inset-0">
           <Image
-            src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/product-banner.webp"
+            src="https://bonhoeffermachines.in/public/images/product-banner.webp"
             alt="Products Banner"
             fill
             className="object-cover"
@@ -310,7 +310,7 @@ function ProductPage() {
 
       {/* Product Categories Sections */}
       {productCategories.map((category, categoryIndex) => (
-        <section key={category.id} className={`py-20 px-6 ${categoryIndex % 2 === 1 ? 'bg-black/20' : ''}`}>
+        <section key={category.id} className={`py-10 px-6 ${categoryIndex % 2 === 1 ? '' : ''}`}>
           <div className="max-w-7xl mx-auto">
             <motion.div
               className="text-center mb-12"
@@ -334,11 +334,11 @@ function ProductPage() {
                     className="flex-shrink-0 w-80"
                   >
                     <motion.div
-                      className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 cursor-pointer"
+                      className="group backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 cursor-pointer"
                       initial={{ opacity: 0, x: 50 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
-                      transition={{ duration: 0.6, delay: index * 0.1 }}
+                      transition={{ duration: 0.3, delay: index * 0.01 }}
                       whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(152, 155, 46, 0.1)" }}
                     >
                       <div className="relative h-96 mb-6 rounded-xl overflow-hidden bg-white">
@@ -372,7 +372,7 @@ function ProductPage() {
       ))}
 
       {/* Call to Action */}
-      <section className="py-20 px-6 bg-[#989b2e]/10">
+      <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}

@@ -161,7 +161,7 @@ function CertificationPage() {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.3, delay: index * 0.01 }}
                 whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(152, 155, 46, 0.1)" }}
                 onClick={() => openModal(cert)}
               >
@@ -257,7 +257,7 @@ function CertificationPage() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.3, delay: index * 0.01 }}
               >
                 <div className="text-4xl mb-4">{item.icon}</div>
                 <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>

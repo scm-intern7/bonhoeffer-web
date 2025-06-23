@@ -258,7 +258,7 @@ function ModelSpecificPage() {
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.3 }}
             >
               <div className="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10">
                 <Image
@@ -276,7 +276,7 @@ function ModelSpecificPage() {
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.3 }}
             >
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -302,7 +302,7 @@ function ModelSpecificPage() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    transition={{ duration: 0.3, delay: index * 0.01 }}
                   >
                     <h4 className="text-[#989b2e] text-sm font-medium mb-2">{detail.label}</h4>
                     <p className="text-white font-semibold">{detail.value}</p>
