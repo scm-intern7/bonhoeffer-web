@@ -260,14 +260,14 @@ function Header() {
                                                         href="/gallery/photos"
                                                         className="flex items-center space-x-3 p-2 rounded-lg hover:bg-[#989b2e] hover:text-white transition-colors group"
                                                     >
-                                                        <span className="text-xl">📸</span>
+                                                        {/* <span className="text-xl">📸</span> */}
                                                         <span className="text-sm font-medium">Photos</span>
                                                     </Link>
                                                     <Link
                                                         href="/gallery/videos"
                                                         className="flex items-center space-x-3 p-2 rounded-lg hover:bg-[#989b2e] hover:text-white transition-colors group"
                                                     >
-                                                        <span className="text-xl">🎥</span>
+                                                        {/* <span className="text-xl">🎥</span> */}
                                                         <span className="text-sm font-medium">Videos</span>
                                                     </Link>
                                                 </div>

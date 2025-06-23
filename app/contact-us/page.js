@@ -83,11 +83,11 @@ function ContactPage() {
 					className="absolute inset-0 bg-cover bg-center"
 					style={{
 						backgroundImage:
-							'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url("https://9lhi1aprmhe38img.public.blob.vercel-storage.com/contact-banner.jpg")',
+							'linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url("https://bonhoeffermachines.com/en/public/images/contact-banner-india.webp")',
 					}}
 				/>
 
-				<div className="absolute inset-0 flex items-center justify-center z-10">
+				{/* <div className="absolute inset-0 flex items-center justify-center z-10">
 					<motion.div
 						className="text-center"
 						initial={{ opacity: 0, y: 50 }}
@@ -101,7 +101,7 @@ function ContactPage() {
 							Ready to power your business with our industrial solutions?
 						</p>
 					</motion.div>
-				</div>
+				</div> */}
 			</section>
 
 			{/* Introduction Text Section */}

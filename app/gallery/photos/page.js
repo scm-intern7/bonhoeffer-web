@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import BgLayout from '@/components/templates/bgLayout'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
-import galleryUrls from '@/public/gallery-urls.json'
+import galleryUrls from '../../../gallery-urls.json'
 
 function PhotosPage() {
   const [selectedImage, setSelectedImage] = useState(null)
@@ -71,8 +71,19 @@ function PhotosPage() {
 
   return (
     <BgLayout>
+      {/* Hero Image */}
+      <div className="relative w-full h-[40vw] min-h-[220px] max-h-[400px] mt-5">
+        <Image
+          src="https://bonhoeffermachines.com/en/public/images/images-banner-india.webp"
+          alt="Gallery Hero Banner"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+
       {/* Header */}
-      <section className="py-20 px-6 text-center">
+      <section className="py-12 px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -136,7 +147,7 @@ function PhotosPage() {
           >
             {/* Close Button */}
             <button
-              className="absolute top-4 right-4 text-white hover:text-[#989b2e] z-[10000]"
+              className="absolute top-4 right-4 text-white hover:text-[#989b2e] z-[10000] cursor-pointer"
               onClick={closeLightbox}
             >
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -146,7 +157,7 @@ function PhotosPage() {
 
             {/* Previous Button */}
             <button
-              className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-[#989b2e] z-[10000]"
+              className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-[#989b2e] z-[10000] cursor-pointer"
               onClick={(e) => {
                 e.stopPropagation()
                 prevImage()
@@ -159,7 +170,7 @@ function PhotosPage() {
 
             {/* Next Button */}
             <button
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-[#989b2e] z-[10000]"
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-[#989b2e] z-[10000] cursor-pointer"
               onClick={(e) => {
                 e.stopPropagation()
                 nextImage()

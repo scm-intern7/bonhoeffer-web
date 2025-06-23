@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import BgLayout from '@/components/templates/bgLayout'
 import { motion, AnimatePresence } from 'framer-motion'
+import Image from 'next/image'
 
 function VideosPage() {
   const [selectedVideo, setSelectedVideo] = useState(null)
@@ -108,8 +109,19 @@ function VideosPage() {
 
   return (
     <BgLayout>
+      {/* Hero Image */}
+      <div className="relative w-full h-[40vw] min-h-[220px] max-h-[400px] mt-5">
+        <Image
+          src="https://bonhoeffermachines.com/en/public/images/images-banner-india.webp"
+          alt="Gallery Hero Banner"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+
       {/* Header */}
-      <section className="py-20 px-6 text-center">
+      <section className="py-12 px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
