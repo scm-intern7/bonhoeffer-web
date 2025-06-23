@@ -1,0 +1,26 @@
+banner: https://bonhoeffermachines.com/en/public/product_banner/brush-cutter-banner.webp
+description: Brush cutter makes your daily task of cutting and trimming the uneven bushes, shrubs, and grass easy. Bonhoeffer’s Brush cutter comes with 30% more powerful engine compared with traditional engines. Made with shear precision, it is compatible, lightweight, and has a 200 Hour tested Professional Gear Box. Our Brush cutter engine is fitted with 20 CRMO material Crankshaft for a longer service life. Ergonomic bicycle type handle helps to do outdoor work effectively.
+
+<div class="_listing">
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_1">
+                        <a href="https://bonhoeffermachines.com/en/category-details/brush-cutter/BON-P-BC36" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-P-BC36.webp" />                        </a>
+                        <h3>Model : BON-P-BC36 </h3>
+                        <strong class="cat_title"> Brush Cutter </strong>
+                        <strong class="cat_mb">Displacement 36 CC </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_214">
+                        <a href="https://bonhoeffermachines.com/en/category-details/brush-cutter/BON-ET-BC53" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-ET-BC53.webp" />                        </a>
+                        <h3>Model : BON-ET-BC53 </h3>
+                        <strong class="cat_title"> Brush Cutter </strong>
+                        <strong class="cat_mb">DISPLACEMENT 53 CC </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_114">
+                        <a href="https://bonhoeffermachines.com/en/category-details/brush-cutter/BON-P-BC45" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-P-BC45.webp" />                        </a>
+                        <h3>Model : BON-P-BC45 </h3>
+                        <strong class="cat_title"> Brush Cutter </strong>
+                        <strong class="cat_mb">DISPLACEMENT 45 CC </strong>
+                     </div>
+                                       </div>

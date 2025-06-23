@@ -1,0 +1,26 @@
+banner: https://bonhoeffermachines.com/en/public/product_banner/blower-banner.webp
+description: Blowers are mainly used in homes and industries to blow away dust from every nook and corner. The blower has the features of a vacuum, blower, and mulching and is the perfect solution for cleaning the off-season leaves from your garden and gathering the dust particles. The 2-stroke engine with a single cylinder Bonhoeffer blower runs like a compact machine and has a double-layer air filter for a cleaner engine. Accessibility of adjustable handle inside the 90-degree range, makes it comfortable and reduces fatigue. The Blower even works for heavy workloads because of an Air Volume of 1450 M3/H and an ideal air velocity of 78 M/S.
+
+<div class="_listing">
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_174">
+                        <a href="https://bonhoeffermachines.com/en/category-details/blower/BON-P-BBL53" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-P-BBL53.webp" />                        </a>
+                        <h3>Model : BON-P-BBL53 </h3>
+                        <strong class="cat_title"> BLOWER </strong>
+                        <strong class="cat_mb">DISPLACEMENT 53 CC </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_12">
+                        <a href="https://bonhoeffermachines.com/en/category-details/blower/BON-P-BL26" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-P-BL26.webp" />                        </a>
+                        <h3>Model : BON-P-BL26 </h3>
+                        <strong class="cat_title"> BLOWER </strong>
+                        <strong class="cat_mb">DESPLAZAMIENTO 26 CC </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_113">
+                        <a href="https://bonhoeffermachines.com/en/category-details/blower/BON-P-BLV26" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-P-BLV26.webp" />                        </a>
+                        <h3>Model : BON-P-BLV26 </h3>
+                        <strong class="cat_title"> BLOWER </strong>
+                        <strong class="cat_mb">DISPLACEMENT 26 CC </strong>
+                     </div>
+                                       </div>

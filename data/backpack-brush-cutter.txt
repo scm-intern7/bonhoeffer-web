@@ -1,0 +1,12 @@
+banner: https://bonhoeffermachines.com/en/public/product_banner/backpack-brush-cutter-banner.webp
+description: Backpack Brush cutters make the machine much more convenient to carry around. Bonhoeffer’s Brush cutter comes with 30% more powerful engine compared with traditional engines , 200 Hour tested Professional Gear Box , 20 CRMO material Crankshaft, high quality harness and durable steel frame for engine fitment.
+
+<div class="_listing">
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_109">
+                        <a href="https://bonhoeffermachines.com/en/category-details/backpack-brush-cutter/BON-P-BP-BC45" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-P-BP-BC45.webp" />                        </a>
+                        <h3>Model : BON-P-BP-BC45 </h3>
+                        <strong class="cat_title"> Backpack Brush Cutter </strong>
+                        <strong class="cat_mb">DISPLACEMENT 45 CC </strong>
+                     </div>
+                                       </div>

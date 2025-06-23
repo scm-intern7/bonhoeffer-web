@@ -1,0 +1,12 @@
+banner: https://bonhoeffermachines.com/en/public/product_banner/hedge-trimmer-banner.webp
+description: A hedge trimmer is a must-have tool to beautify your garden or to shape the fences of a plantation. Bonhoeffer's hedge trimmer gears up with a powerful 2-stroke engine , double blade action with 600 mm cutting length and has a maximum speed of 4200 rpm that is a perfect solution for overgrown hedges.
+
+<div class="_listing">
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_10">
+                        <a href="https://bonhoeffermachines.com/en/category-details/hedge-trimmer/BON-P-HT23" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-P-HT23.webp" />                        </a>
+                        <h3>Model : BON-P-HT23 </h3>
+                        <strong class="cat_title"> HEDGE TRIMMER </strong>
+                        <strong class="cat_mb">Displacement 23 CC </strong>
+                     </div>
+                                       </div>

@@ -10,127 +10,126 @@ function ProductPage() {
   const [showDropdown, setShowDropdown] = useState(false);
   const [dropdownTimeout, setDropdownTimeout] = useState(null);
 
-  // Complete product categories with Spanish filenames converted to English
+  // Product categories and products, hardcoded from product page.csv
   const productCategories = [
     {
       id: 1,
       name: "Agro Industrial",
       products: [
-        { name: "Gasoline Water Pump", slug: "gasoline-water-pump", image: "https://bonhoeffermachines.in/public/images/segment/1_bomba-de-agua-gasolina.webp" },
-        { name: "Diesel Water Pump", slug: "diesel-water-pump", image: "https://bonhoeffermachines.com/public/images/segment/1_BOMBA_DE_AGUA_DE_DIESEL.webp" },
-        { name: "Gasoline Engine", slug: "gasoline-engine", image: "https://bonhoeffermachines.in/public/images/segment/2-gasoline-engine.webp" },
-        { name: "Diesel Engine", slug: "diesel-engine", image: "https://bonhoeffermachines.in/public/images/segment/3_MOTOR_DE_DIESEL.webp" },
-        { name: "Gasoline Tiller", slug: "gasoline-tiller", image: "https://bonhoeffermachines.in/public/images/segment/5-gasoline-tiller.webp" },
-        { name: "Mini Cultivator", slug: "mini-cultivator", image: "https://bonhoeffermachines.in/public/images/segment/5_MINI-CULTIVADOR-DE-GASOLIN.webp" }
+        { name: "Gasoline Water Pump", slug: "gasoline-water-pump", image: "https://bonhoeffermachines.com/public/images/segment/1_bomba-de-agua-gasolina.webp" },
+        { name: "Gasoline Engine", slug: "gasoline-engine", image: "https://bonhoeffermachines.com/public/images/segment/2_MOTOR-DE-GASOLINA.webp" },
+        { name: "Gasoline Generator", slug: "gasoline-generator", image: "https://bonhoeffermachines.com/public/images/segment/3_GENERADOR-DE-GASOLINA.webp" },
+        { name: "Gasoline Inverter", slug: "gasoline-inverter", image: "https://bonhoeffermachines.com/public/images/segment/4_INVERSOR-DE-GASOLINA.webp" },
+        { name: "Tiller", slug: "tiller", image: "https://bonhoeffermachines.com/public/images/segment/5_MINI-CULTIVADOR-DE-GASOLIN.webp" }
       ]
     },
     {
       id: 2,
-      name: "Garden and Forestry",
+      name: "Garden And Forestry",
       products: [
-        { name: "Brush Cutter", slug: "brush-cutter", image: "https://bonhoeffermachines.in/public/images/segment/1_DESBROZADORA.webp" },
-        { name: "Backpack Brush Cutter", slug: "backpack-brush-cutter", image: "https://bonhoeffermachines.in/public/images/segment/2_DESBROZADORA_DE_MOCHILA.webp" },
-        { name: "Chainsaw", slug: "chainsaw", image: "https://bonhoeffermachines.in/public/images/segment/4_MOTOSIERRA.webp" },
-        { name: "Hedge Trimmer", slug: "hedge-trimmer", image: "https://bonhoeffermachines.in/public/images/segment/5_CORTAZETOS.webp" },
-        { name: "Lawn Mower", slug: "lawn-mower", image: "https://bonhoeffermachines.in/public/images/segment/10_CORTACAPED.webp" },
-        { name: "Leaf Blower", slug: "leaf-blower", image: "https://bonhoeffermachines.in/public/images/segment/6_SOPLADORA.webp" },
-        { name: "Multi Tool", slug: "multi-tool", image: "https://bonhoeffermachines.in/public/images/segment/3_MULTIFUNCIONAL.webp" }
+        { name: "Earth Auger", slug: "earth-auger", image: "https://bonhoeffermachines.com/public/images/segment/7_BARRENA_DE_TIERRA.webp" },
+        { name: "Water Pump 2 Stroke", slug: "water-pump-2-stroke", image: "https://bonhoeffermachines.com/public/images/segment/8_BOMBA_DE_AGUA_2_TIEMPO.webp" },
+        { name: "Engine 2 Strokes", slug: "engine-2-strokes", image: "https://bonhoeffermachines.com/public/images/segment/9_MOTOR_DE_2_TIEMPOS.webp" },
+        { name: "Lawn Mower", slug: "lawn-mower", image: "https://bonhoeffermachines.com/public/images/segment/10_CORTAC%E5%BF%83PED.webp" },
+        { name: "Brush Cutter", slug: "brush-cutter", image: "https://bonhoeffermachines.com/public/images/segment/1_DESBROZADORA.webp" },
+        { name: "Backpack Brush Cutter", slug: "backpack-brush-cutter", image: "https://bonhoeffermachines.com/public/images/segment/2_DESBROZADORA_DE_MOCHILA.webp" },
+        { name: "Multi Tool", slug: "multi-tool", image: "https://bonhoeffermachines.com/public/images/segment/3_MULTIFUNCIONAL.webp" },
+        { name: "Chainsaw", slug: "chainsaw", image: "https://bonhoeffermachines.com/public/images/segment/4_MOTOSIERRA.webp" },
+        { name: "Hedge Trimmer", slug: "hedge-trimmer", image: "https://bonhoeffermachines.com/public/images/segment/5_CORTAZETOS.webp" },
+        { name: "Blower", slug: "blower", image: "https://bonhoeffermachines.com/public/images/segment/6_SOPLADORA.webp" }
       ]
     },
     {
       id: 3,
       name: "Diesel Machines",
       products: [
-        { name: "Diesel Generator", slug: "diesel-generator", image: "https://bonhoeffermachines.in/public/images/segment/2_GENERADOR_DE_DIESEL.webp" },
-        { name: "Diesel Water Pump", slug: "diesel-water-pump", image: "https://bonhoeffermachines.in/public/images/segment/1_BOMBA_DE_AGUA_DE_DIESEL.webp" },
-        { name: "Diesel Engine", slug: "diesel-engine", image: "https://bonhoeffermachines.in/public/images/segment/3_MOTOR_DE_DIESEL.webp" }
+        { name: "Diesel Water Pump", slug: "diesel-water-pump", image: "https://bonhoeffermachines.com/public/images/segment/1_BOMBA_DE_AGUA_DE_DIESEL.webp" },
+        { name: "Diesel Generator", slug: "diesel-generator", image: "https://bonhoeffermachines.com/public/images/segment/2_GENERADOR_DE_DIESEL.webp" },
+        { name: "Diesel Engine", slug: "diesel-engine", image: "https://bonhoeffermachines.com/public/images/segment/3_MOTOR_DE_DIESEL.webp" }
       ]
     },
     {
       id: 4,
-      name: "Electric Machines",
+      name: "Electric Machine",
       products: [
-        { name: "Electric Pressure Washer", slug: "electric-pressure-washer", image: "https://bonhoeffermachines.in/public/images/segment/1_HIDROLAVADORA-DE-ELECTRICA.webp" },
-        { name: "Electric Motors", slug: "electric-motors", image: "https://bonhoeffermachines.in/public/images/segment/2_electric-motors.webp" },
-        { name: "Direct Driven Air Compressor", slug: "air-compressor", image: "https://bonhoeffermachines.in/public/images/segment/4_Direct-driven-air-compressor.webp" }
+        { name: "Electric Lawn Mower", slug: "electric", image: "https://bonhoeffermachines.com/public/images/segment/10_CORTAC%E5%BF%83PED.webp" },
+        { name: "Electric Pressure Washer", slug: "electric-pressure-washer", image: "https://bonhoeffermachines.com/public/images/segment/1_HIDROLAVADORA-DE-ELECTRICA.webp" }
       ]
     },
     {
       id: 5,
       name: "Solar",
       products: [
-        { name: "Solar Panel", slug: "solar-panel", image: "https://bonhoeffermachines.in/public/images/segment/1_PANEL_SOLAR.webp" },
-        { name: "Solar Water Pump", slug: "solar-water-pump", image: "https://bonhoeffermachines.in/public/images/segment/2_BOMBA_DE_SOLAR.webp" }
+        { name: "Panel Solar", slug: "solar-panel", image: "https://bonhoeffermachines.com/public/images/segment/1_PANEL_SOLAR.webp" },
+        { name: "Submersible Pump", slug: "submersible-pump", image: "https://bonhoeffermachines.com/public/images/segment/2_BOMBA_DE_SOLAR.webp" }
       ]
     },
     {
       id: 6,
-      name: "Sprayers and Fumigation",
+      name: "Sprayers And Fumigation",
       products: [
-        { name: "Gasoline Sprayer", slug: "gasoline-sprayer", image: "https://bonhoeffermachines.in/public/images/segment/1_FUMIGADORA_DE_GASOLINA.webp" },
-        { name: "Manual Sprayer", slug: "manual-sprayer", image: "https://bonhoeffermachines.in/public/images/segment/2_FUMIGADORA_MANUAL.webp" },
-        { name: "Backpack Atomizer", slug: "backpack-atomizer", image: "https://bonhoeffermachines.in/public/images/segment/4_ATOMIZADOR_DE_MOCHILA.webp" },
-        { name: "Mistduster", slug: "mistduster", image: "https://bonhoeffermachines.in/public/images/segment/5_NEBULIZADOR.webp" }
+        { name: "Knapsack Sprayer", slug: "knapsack-sprayer", image: "https://bonhoeffermachines.com/public/images/segment/1_FUMIGADORA_DE_GASOLINA.webp" },
+        { name: "Manual Sprayer", slug: "manual-sprayer", image: "https://bonhoeffermachines.com/public/images/segment/2_FUMIGADORA_MANUAL.webp" },
+        { name: "Mist Duster", slug: "mistduster", image: "https://bonhoeffermachines.com/public/images/segment/4_ATOMIZADOR_DE_MOCHILA.webp" },
+        { name: "Thermal Fogger", slug: "thermal-fogger", image: "https://bonhoeffermachines.com/public/images/segment/5_NEBULIZADOR.webp" }
       ]
     },
     {
       id: 7,
-      name: "Domestic and Commercial",
+      name: "Domestic And Commercial",
       products: [
-        { name: "Gasoline Generator", slug: "gasoline-generator", image: "https://bonhoeffermachines.in/public/images/segment/3_GENERADOR-DE-GASOLINA.webp" },
-        { name: "Gasoline Inverter", slug: "gasoline-inverter", image: "https://bonhoeffermachines.in/public/images/segment/4_INVERSOR-DE-GASOLINA.webp" },
-        { name: "Pressure Washer", slug: "pressure-washer", image: "https://bonhoeffermachines.in/public/images/segment/2_HIDROLAVADORA-DE-GASOLINA.webp" },
-        { name: "Domestic Pressure Washer", slug: "domestic-pressure-washer", image: "https://bonhoeffermachines.in/public/images/segment/3_Domestic-pressure-washer.webp" },
-        { name: "Commercial Vacuum", slug: "commercial-vacuum", image: "https://bonhoeffermachines.in/public/images/segment/5_ASPIRADORA-GRADO-COMERCIAL.webp" }
+        { name: "Gasoline Pressure Washer", slug: "gasoline-pressure-washer", image: "https://bonhoeffermachines.com/public/images/segment/2_HIDROLAVADORA-DE-GASOLINA.webp" },
+        { name: "Pressure Washer Home Use", slug: "pressure-washer-home-use", image: "https://bonhoeffermachines.com/public/images/segment/3_Domestic-pressure-washer.webp" },
+        { name: "Direct Driven Air Compressor", slug: "direct-driven-air-compressor", image: "https://bonhoeffermachines.com/public/images/segment/4_Direct-driven-air-compressor.webp" },
+        { name: "Vacuum Cleaner Commercial Grade", slug: "vacuum-cleaner-commercial-grade", image: "https://bonhoeffermachines.com/public/images/segment/5_ASPIRADORA-GRADO-COMERCIAL.webp" }
       ]
     },
     {
       id: 8,
       name: "Industrial",
       products: [
-        { name: "Welding Machine", slug: "welding-machine", image: "https://bonhoeffermachines.in/public/images/segment/1_MAQUINAS-DE-SOLDAR.webp" },
-        { name: "Centrifugal Pump", slug: "centrifugal-pump", image: "https://bonhoeffermachines.in/public/images/segment/4_BOMBA-CENTR%C3%96FUGA.webp" },
-        { name: "Submersible Pump", slug: "submersible-pump", image: "https://bonhoeffermachines.in/public/images/segment/5_BOMBA-DE-SUMERGIBLE.webp" },
-        { name: "2-Stroke Water Pump", slug: "2-stroke-water-pump", image: "https://bonhoeffermachines.in/public/images/segment/8_BOMBA_DE_AGUA_2_TIEMPO.webp" },
-        { name: "2-Stroke Engine", slug: "2-stroke-engine", image: "https://bonhoeffermachines.in/public/images/segment/9_MOTOR_DE_2_TIEMPOS.webp" }
+        { name: "Electric Motors", slug: "electric-motors", image: "https://bonhoeffermachines.com/en/public/images/segment/2_electric-motors.webp" },
+        { name: "Centrifugal Pump", slug: "centrifugal-pump", image: "https://bonhoeffermachines.com/en/public/images/segment/4_BOMBA-CENTRO%CC%88FUGA.webp" },
+        { name: "Submersible Pump", slug: "submersible-pump", image: "https://bonhoeffermachines.com/public/images/segment/5_BOMBA-DE-SUMERGIBLE.webp" },
+        { name: "Welding Machines", slug: "welding-machines", image: "https://bonhoeffermachines.com/en/public/images/segment/1_MAQUINAS-DE-SOLDAR.webp" }
       ]
     },
     {
       id: 9,
       name: "Construction",
       products: [
-        { name: "Tamping Rammer", slug: "tamping-rammer", image: "https://bonhoeffermachines.in/public/images/segment/1_MARCOS-DE-APISONAMIENTO.webp" },
-        { name: "Plate Compactor", slug: "plate-compactor", image: "https://bonhoeffermachines.in/public/images/segment/2_PLATO-COMPACTADOR.webp" },
-        { name: "Concrete Cutter", slug: "concrete-cutter", image: "https://bonhoeffermachines.in/public/images/segment/3_concrete-cutter.webp" },
-        { name: "Concrete Vibrator", slug: "concrete-vibrator", image: "https://bonhoeffermachines.in/public/images/segment/4_concrete-vibrator.webp" },
-        { name: "Power Trowel", slug: "power-trowel", image: "https://bonhoeffermachines.in/public/images/segment/5_PODER-CONCRETO-PALETA.webp" }
+        { name: "Plate Compactor", slug: "plate-compactor", image: "https://bonhoeffermachines.com/public/images/segment/2_PLATO-COMPACTADOR.webp" },
+        { name: "Concrete Cutter", slug: "concrete-cutter", image: "https://bonhoeffermachines.com/public/images/segment/3_concrete-cutter.webp" },
+        { name: "Concrete Vibrator", slug: "concrete-vibrator", image: "https://bonhoeffermachines.com/public/images/segment/4_concrete-vibrator.webp" },
+        { name: "Concrete Power Trowel", slug: "concrete-power-trowel", image: "https://bonhoeffermachines.com/public/images/segment/5_PODER-CONCRETO-PALETA.webp" },
+        { name: "Tamping Rammer", slug: "tamping-rammer", image: "https://bonhoeffermachines.com/public/images/segment/1_MARCOS-DE-APISONAMIENTO.webp" }
       ]
     },
     {
       id: 10,
       name: "Tools",
       products: [
-        { name: "Earth Auger", slug: "earth-auger", image: "https://bonhoeffermachines.in/public/images/segment/7_BARRENA_DE_TIERRA.webp" },
-        { name: "Garden Tools", slug: "garden-tools", image: "https://bonhoeffermachines.in/public/images/segment/garden-tools.webp" },
-        { name: "Hand Tools", slug: "hand-tools", image: "https://bonhoeffermachines.in/public/images/segment/hand-tools-home.webp" }
+        { name: "Power Tools", slug: "power-tools", image: "https://bonhoeffermachines.com/public/images/segment/ac-professional-home.webp" },
+        { name: "Hand Tools", slug: "hand-tools", image: "https://bonhoeffermachines.com/public/images/segment/hand-tools-home.webp" },
+        { name: "Garden Tools", slug: "garden-tools", image: "https://bonhoeffermachines.com/public/images/segment/garden-tools.webp" }
       ]
     },
     {
       id: 11,
-      name: "Wood Chipper and Chaff Cutter",
+      name: "Wood Chipper And Chaff Cutter",
       products: [
-        { name: "Wood Chipper", slug: "wood-chipper", image: "https://bonhoeffermachines.in/public/images/segment/wood-chipper-home.webp" },
-        { name: "Chaff Cutter", slug: "chaff-cutter", image: "https://bonhoeffermachines.in/public/images/segment/chaff-cutter.webp" }
+        { name: "Wood Chipper", slug: "wood-chipper", image: "https://bonhoeffermachines.com/public/images/segment/wood-chipper-home.webp" },
+        { name: "Corn Thresher & Chaff Cutter", slug: "corn-thresher-chaff-cutter", image: "https://bonhoeffermachines.com/public/images/segment/chaff-cutter.webp" }
       ]
     },
     {
       id: 12,
       name: "Special Segment",
       products: [
-        { name: "Log Splitter", slug: "log-splitter", image: "https://bonhoeffermachines.in/public/images/segment/log-splitter-home.webp" },
-        { name: "Mini Dumper", slug: "mini-dumper", image: "https://bonhoeffermachines.in/public/images/segment/mini-dumper-home.webp" },
-        { name: "Trencher", slug: "trencher", image: "https://bonhoeffermachines.in/public/images/segment/trencher-home.webp" },
-        { name: "AC Professional", slug: "ac-professional", image: "https://bonhoeffermachines.in/public/images/segment/ac-professional-home.webp" }
+        { name: "Trencher", slug: "trencher", image: "https://bonhoeffermachines.com/public/images/segment/trencher-home.webp" },
+        { name: "Leaf Blower", slug: "leaf-blower", image: "https://bonhoeffermachines.com/public/images/segment/leaf-blower-home.webp" },
+        { name: "Mini Dumper", slug: "mini-dumper", image: "https://bonhoeffermachines.com/public/images/segment/mini-dumper-home.webp" },
+        { name: "Log Splitter", slug: "log-splitter", image: "https://bonhoeffermachines.com/public/images/segment/log-splitter-home.webp" }
       ]
     }
   ];
@@ -147,7 +146,7 @@ function ProductPage() {
   const handleDropdownLeave = () => {
     const timeout = setTimeout(() => {
       setShowDropdown(false);
-    }, 1000); // 2 second delay
+    }, 300); // 0.3 second delay
     setDropdownTimeout(timeout);
   };
 
@@ -159,6 +158,57 @@ function ProductPage() {
       }
     };
   }, [dropdownTimeout]);
+
+  // Product Categories Sections
+  const [sliderIndices, setSliderIndices] = React.useState(
+    productCategories.map(() => 0)
+  );
+  const productsPerView = 3;
+  const autoSlideInterval = React.useRef([]);
+
+  React.useEffect(() => {
+    // Clear all intervals on unmount
+    return () => {
+      autoSlideInterval.current.forEach(clearInterval);
+    };
+  }, []);
+
+  React.useEffect(() => {
+    // Set up auto-slide for each category
+    productCategories.forEach((cat, catIdx) => {
+      if (cat.products.length > productsPerView) {
+        if (autoSlideInterval.current[catIdx]) clearInterval(autoSlideInterval.current[catIdx]);
+        autoSlideInterval.current[catIdx] = setInterval(() => {
+          setSliderIndices(prev => {
+            const updated = [...prev];
+            const maxIdx = Math.max(0, cat.products.length - productsPerView);
+            updated[catIdx] = prev[catIdx] >= maxIdx ? 0 : prev[catIdx] + 1;
+            return updated;
+          });
+        }, 4000);
+      }
+    });
+    // Cleanup on category/product change
+    return () => {
+      autoSlideInterval.current.forEach(clearInterval);
+    };
+  }, [productCategories, productsPerView]);
+
+  // Move these functions above the return statement so they are defined before use
+  const handleNext = (catIdx, maxIdx) => {
+    setSliderIndices(prev => {
+      const updated = [...prev];
+      updated[catIdx] = prev[catIdx] >= maxIdx ? 0 : prev[catIdx] + 1;
+      return updated;
+    });
+  };
+  const handlePrev = (catIdx, maxIdx) => {
+    setSliderIndices(prev => {
+      const updated = [...prev];
+      updated[catIdx] = prev[catIdx] <= 0 ? maxIdx : prev[catIdx] - 1;
+      return updated;
+    });
+  };
 
   return (
     <BgLayout>
@@ -222,7 +272,7 @@ function ProductPage() {
             {/* Dropdown Menu */}
             {showDropdown && (
               <motion.div
-                className="absolute top-full left-0 mt-2 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-2xl shadow-2xl border border-gray-200 z-50 min-w-[800px]"
+                className="absolute top-full left-0 mt-2 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-2xl shadow-2xl border border-[#989b2e] z-50 min-w-[800px]"
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
@@ -309,67 +359,102 @@ function ProductPage() {
       </section>
 
       {/* Product Categories Sections */}
-      {productCategories.map((category, categoryIndex) => (
-        <section key={category.id} className={`py-10 px-6 ${categoryIndex % 2 === 1 ? '' : ''}`}>
-          <div className="max-w-7xl mx-auto">
-            <motion.div
-              className="text-center mb-12"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#989b2e]">
-                {category.name}
-              </h2>
-            </motion.div>
-
-            {/* Product Slider */}
-            <div className="relative">
-              <div className="flex space-x-6 overflow-x-auto scrollbar-hide pb-4">
-                {category.products.map((product, index) => (
-                  <Link
-                    key={index}
-                    href={`/product/${product.slug}`}
-                    className="flex-shrink-0 w-80"
-                  >
-                    <motion.div
-                      className="group backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 cursor-pointer"
-                      initial={{ opacity: 0, x: 50 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.3, delay: index * 0.01 }}
-                      whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(152, 155, 46, 0.1)" }}
+      {productCategories.map((category, categoryIndex) => {
+        const maxIndex = Math.max(0, category.products.length - productsPerView);
+        const currentIndex = sliderIndices[categoryIndex] || 0;
+        return (
+          <section key={category.id} className={`py-10 px-6 ${categoryIndex % 2 === 1 ? '' : ''}`}>
+            <div className="max-w-7xl mx-auto">
+              <motion.div
+                className="text-center mb-12"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+              >
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#989b2e]">
+                  {category.name}
+                </h2>
+              </motion.div>
+              {/* Product Slider */}
+              <div className="relative">
+                {/* Navigation Arrows */}
+                {category.products.length > productsPerView && (
+                  <div className="absolute right-0 -top-10 flex space-x-2 z-10">
+                    <button
+                      onClick={() => handlePrev(categoryIndex, maxIndex)}
+                      className="bg-[#989b2e] hover:bg-[#7a7d24] text-white p-3 rounded-full shadow-lg transition-colors duration-300"
+                      aria-label="Previous"
                     >
-                      <div className="relative h-96 mb-6 rounded-xl overflow-hidden bg-white">
-                        <Image
-                          src={product.image}
-                          alt={product.name}
-                          fill
-                          className="object-contain p-2 group-hover:scale-110 transition-transform duration-300"
-                        />
-                      </div>
-                      
-                      <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#989b2e] transition-colors text-center">
-                        {product.name}
-                      </h3>
-                      
-                      <div className="text-center">
-                        <span className="inline-flex items-center text-[#989b2e] font-medium">
-                          View Models
-                          <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                          </svg>
-                        </span>
-                      </div>
-                    </motion.div>
-                  </Link>
-                ))}
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                      </svg>
+                    </button>
+                    <button
+                      onClick={() => handleNext(categoryIndex, maxIndex)}
+                      className="bg-[#989b2e] hover:bg-[#7a7d24] text-white p-3 rounded-full shadow-lg transition-colors duration-300"
+                      aria-label="Next"
+                    >
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+                      </svg>
+                    </button>
+                  </div>
+                )}
+                <div className="overflow-hidden pb-4">
+                  <div
+                    className="flex transition-transform duration-500"
+                    style={{
+                      width: `${category.products.length * 340 + (category.products.length - 1) * 24}px`, // 24px for space-x-6
+                      transform: `translateX(-${currentIndex * (340 + 24)}px)`
+                    }}
+                  >
+                    {category.products.map((product, index) => (
+                      <Link
+                        key={index}
+                        href={`/product/${product.slug}`}
+                        className="flex-shrink-0 mr-6 last:mr-0"
+                        style={{ width: `340px`, height: '510px' }}
+                      >
+                        <motion.div
+                          className="group backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 cursor-pointer h-full flex flex-col"
+                          initial={{ opacity: 0, x: 50 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.3, delay: index * 0.01 }}
+                          whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(152, 155, 46, 0.1)" }}
+                        >
+                          <div className="relative mb-6 rounded-xl overflow-hidden bg-white flex-1 flex items-center justify-center"
+                            style={{ height: '440px', width: '292px', margin: '0 auto' }}>
+                            <Image
+                              src={product.image}
+                              alt={product.name}
+                              fill
+                              className="object-contain p-2 group-hover:scale-110 transition-transform duration-300"
+                              style={{ objectFit: 'contain' }}
+                            />
+                          </div>
+                          <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#989b2e] transition-colors text-center">
+                            {product.name}
+                          </h3>
+                          <div className="text-center">
+                            <span className="inline-flex items-center text-[#989b2e] font-medium">
+                              View Models
+                              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                              </svg>
+                            </span>
+                          </div>
+                        </motion.div>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-      ))}
+          </section>
+        );
+      })}
 
       {/* Call to Action */}
       <section className="py-20 px-6">

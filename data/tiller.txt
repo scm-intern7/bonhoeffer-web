@@ -1,0 +1,48 @@
+banner link: https://bonhoeffermachines.com/en/public/product_banner/gasoline-tiller-banner.webp
+Description: A very robust and powerful weeder for customers who valuelong- lasting durability and high efficiency. Reliable and easy-starting diesel-power Bonhoeffer engine with oil bath air filter for longest service life. An absolute requirement for engines used in dry and dusty environments. Power weeder has a fully sealed transmission for usage in wet cultures and operates with a direct clutch; two speeds forward and one reverse. The handlebar is adjustable, both horizontally and vertically, for comfortable use. Removable transport wheels are standard and allow the use of many accessories, such as ploughs and ditching blades. The AUX PTO makes the machine extremely versatile as it gives you the option to connect several useful accessories to be powered by this multi-purpose machine.
+
+<div class="_listing">
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_128">
+                        <a href="https://bonhoeffermachines.com/en/category-details/gasoline-tiller/BON-DI-950" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-DI-950.webp" />                        </a>
+                        <h3>Model : BON-DI-950 </h3>
+                        <strong class="cat_title"> Power Weeder And Tiller  </strong>
+                        <strong class="cat_mb">POWER 10.0 HP </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_197">
+                        <a href="https://bonhoeffermachines.com/en/category-details/gasoline-tiller/BON-GT-500B" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-GT-500B.webp" />                        </a>
+                        <h3>Model : BON-GT-500B </h3>
+                        <strong class="cat_title"> Power Weeder And Tiller </strong>
+                        <strong class="cat_mb">POWER 3.5 HP </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_198">
+                        <a href="https://bonhoeffermachines.com/en/category-details/gasoline-tiller/BON-GT-500S" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-GT-500S.webp" />                        </a>
+                        <h3>Model : BON-GT-500S </h3>
+                        <strong class="cat_title"> Power Weeder And Tiller </strong>
+                        <strong class="cat_mb">POTENCIA 5.0 HP </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_199">
+                        <a href="https://bonhoeffermachines.com/en/category-details/gasoline-tiller/BON-GT-900" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-GT-900.webp" />                        </a>
+                        <h3>Model : BON-GT-900 </h3>
+                        <strong class="cat_title"> 
+Power Weeder And Tiller </strong>
+                        <strong class="cat_mb">POWER 7.0 HP </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_200">
+                        <a href="https://bonhoeffermachines.com/en/category-details/gasoline-tiller/BON-GT-950T" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-GT-950T.webp" />                        </a>
+                        <h3>Model : BON-GT-950T </h3>
+                        <strong class="cat_title"> Power Weeder And Tiller </strong>
+                        <strong class="cat_mb">POWER 7.0 HP </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_201">
+                        <a href="https://bonhoeffermachines.com/en/category-details/gasoline-tiller/BON-GT-950C" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-GT-950C.webp" />                        </a>
+                        <h3>Model : BON-GT-950C </h3>
+                        <strong class="cat_title"> Power Weeder And Tiller </strong>
+                        <strong class="cat_mb">POTENCIA 14.0 HP </strong>
+                     </div>
+                                       </div>

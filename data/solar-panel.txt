@@ -1,0 +1,12 @@
+banner: https://bonhoeffermachines.com/en/public/product_banner/solar-pannel-banner.webp
+description: Solar panels collect energy from the sun in the form of sunlight and convert it into electricity that can be used to power homes and businesses. Bonhoeffer's high-efficiency solar panels come in monocrystalline and polycrystalline types with a power range from 150W to 460W.
+
+<div class="_listing">
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_104">
+                        <a href="https://bonhoeffermachines.com/en/category-details/solar-panel/BON-MC-SP-430W" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-MC-SP-430W.webp" />                        </a>
+                        <h3>Model : BON-MC-SP-430W </h3>
+                        <strong class="cat_title"> Panel Solar </strong>
+                        <strong class="cat_mb">POWER 430 W </strong>
+                     </div>
+                                       </div>

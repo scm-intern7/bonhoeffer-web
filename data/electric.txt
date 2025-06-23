@@ -1,0 +1,22 @@
+this is for electric lawn mower but its slug should be kept 'electric' for SEO purposes
+and title should be 'Electric Segment'
+
+banner: https://bonhoeffermachines.com/en/public/product_banner/electric-lawn-mower-banner.webp
+description: auto-generate
+
+<div class="_listing">
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_194">
+                        <a href="https://bonhoeffermachines.com/en/category-details/electric/BON-E-LM-1600W" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-E-LM-1600W-front.webp" />                        </a>
+                        <h3>Model : BON-E-LM-1600W </h3>
+                        <strong class="cat_title"> ELECTRIC LAWN MOWER </strong>
+                        <strong class="cat_mb">POWER 1600 W </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_95">
+                        <a href="https://bonhoeffermachines.com/en/category-details/electric/BON-E-LM-1800W" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-E-LM-1800W-front.webp" />                        </a>
+                        <h3>Model : BON-E-LM-1800W </h3>
+                        <strong class="cat_title"> LAWN MOWER </strong>
+                        <strong class="cat_mb">POWER 1800 W </strong>
+                     </div>
+                                       </div>

@@ -1,0 +1,12 @@
+banner: https://bonhoeffermachines.com/en/public/product_banner/waterpump-2stroke-banner.webp
+description: To withstand the challenge of shifting water from place to place in irrigation, Bonhoeffer’s 2-stroke engine water pump is perfectly capable to draw water from 6m beneath surface. It has a 1-liter fuel tank capacity and discharges water at 10000m/hour.
+
+<div class="_listing">
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_15">
+                        <a href="https://bonhoeffermachines.com/en/category-details/water-pump-2-stroke/BON-WP1.0-52-2S" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-WP1.0-52-2S.webp" />                        </a>
+                        <h3>Model : BON-WP1.0-52-2S </h3>
+                        <strong class="cat_title"> WATER PUMP 2 STROKE </strong>
+                        <strong class="cat_mb">INLET / OUTLET- 1 INCHES - 52 CC </strong>
+                     </div>
+                                       </div>

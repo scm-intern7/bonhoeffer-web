@@ -1,6 +1,6 @@
 'use client'
 import BgLayout from '@/components/templates/bgLayout'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -123,72 +123,72 @@ function ModelSpecificPage() {
 
   const getPartImage = (slug) => {
     const imageMap = {
-      'piston-kit': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_kit-de-piston.png',
-      'piston-rings': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2_anillos-de-piston.png',
-      'carburetor': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3_carburetor.png',
-      'carburetor-repair-kit': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/4_kit-de-reparacion-del-carburetor-.png',
-      'chainsaw-chain': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5_cadena-de-motosierra.png',
-      'fuel-hose-primer-bulb': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5_manguera-combustible-_-bulbo-de-imprimacion.png',
-      'cylinder-kit': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/7_kit-de-cilindro.png',
-      'brush-cutter-head': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/8_cabezal-de-motoguadana.png',
-      'head-spare-parts': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/9_repuestos-de-cabezal.png',
-      'brush-cutter-nylon': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/10_nyon-de-motoguadana.png',
-      'chainsaw-bar': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/11_espada-de-motosierra.png',
-      'hard-tip-bar': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/12_espada-con-punta-dura.png',
-      'starter': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/13_arrancador.png',
-      'starter-rope': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/14_cuerda-de-arranque.png',
-      'metal-wire-rope': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/15_cuerda-metallica-cuerda.png',
-      'air-filter': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/16_filtro-de-aire.png',
-      'fuel-filter': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/17_filtro-de-combustible.png',
-      'oil-pump': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/18_bomba-de-aciete.png',
-      'pinion': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/19_pinion.png',
-      'pinion-with-rim': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/20_pinion-con-rim.png',
-      'clutch-drum': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/21_emberague-tambor-de-emberague.png',
-      'clutch-bell': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/22_campana-de-clutch.png',
-      'gearbox': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/23_caja-de-engranaje.png',
-      'gearbox-parts': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/24_repuestos-de-caja-de-engranaje.png',
-      'mounting': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/25_montaje.png',
-      'ignition-coil': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/26_bobina-de-encendido.png',
-      'crankshaft': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/27_ciguenal.png',
-      'brush-cutter-shaft': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/28_eje-para-motoguadana.png',
-      '2-3-teeth-blades': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/29_cuchillas-de-2-3-dientes-para-motoguadana.png',
-      'round-blades': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/30_cuchillas-redondas-para-motoguadana.png',
-      'rubber-parts': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/31_partes-de-goma-motosierra-china.png',
-      'bearings': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/40_rodamientos-baleeros.png',
-      'chain-accessories': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/41_accesorios-de-cadena-de-motosierra.png',
-      'spark-plugs': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/42_bujias.png',
-      'irrigation-hose': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/32_manguera-de-riego.png',
-      'expandable-garden-hose': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/33_mangeura-de-jardin-expandible.png',
-      'aluminum-couplings': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/34_acoples-aluminio.png',
-      'aluminum-coupling-joint': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/35_junta-de-acoplamiento-de-aluminio.png',
-      'professional-harness': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/36_arnes-profesional-para-motoguadana.png',
-      'lawn-mower-wheels': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/37_llantas-para-cortacesped.png',
-      'high-pressure-spray-hose': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/38_manguera-de-fumigacion-de-alta-presion.png',
-      'spraying-parts': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/39_repuestos-de-fumigacion.png',
-      'air-gun': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/44_pistola-de-aire.png',
-      'garden-tools': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/47_herramient-as-de-jardin.png',
-      'long-tail-propeller': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/48_helice-de-cola-larga.png',
-      'eye-protection': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/49_proteccion-para-los-ojos.png',
-      'head-protection-helmet': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/50_proteccion-para-la-cabeza-combinacion-de-casco.png',
-      'drill': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/51_drill.png',
-      'respiratory-protection': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/51_proteccion-respiratoria.png',
-      'electrodes-wire': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/52_electrodes-and-wire.png',
-      'face-protection': 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/53_protección-facial.png'
+      'piston-kit': 'https://bonhoeffermachines.com/en/public/parts-category/1_kit-de-piston.png',
+      'piston-rings': 'https://bonhoeffermachines.com/en/public/parts-category/2_anillos-de-piston.png',
+      'carburetor': 'https://bonhoeffermachines.com/en/public/parts-category/3_carburetor.png',
+      'carburetor-repair-kit': 'https://bonhoeffermachines.com/en/public/parts-category/4_kit-de-reparacion-del-carburetor-.png',
+      'chainsaw-chain': 'https://bonhoeffermachines.com/en/public/parts-category/5_cadena-de-motosierra.png',
+      'fuel-hose-primer-bulb': 'https://bonhoeffermachines.com/en/public/parts-category/5_manguera-combustible-_-bulbo-de-imprimacion.png',
+      'cylinder-kit': 'https://bonhoeffermachines.com/en/public/parts-category/7_kit-de-cilindro.png',
+      'brush-cutter-head': 'https://bonhoeffermachines.com/en/public/parts-category/8_cabezal-de-motoguadana.png',
+      'head-spare-parts': 'https://bonhoeffermachines.com/en/public/parts-category/9_repuestos-de-cabezal.png',
+      'brush-cutter-nylon': 'https://bonhoeffermachines.com/en/public/parts-category/10_nyon-de-motoguadana.png',
+      'chainsaw-bar': 'https://bonhoeffermachines.com/en/public/parts-category/11_espada-de-motosierra.png',
+      'hard-tip-bar': 'https://bonhoeffermachines.com/en/public/parts-category/12_espada-con-punta-dura.png',
+      'starter': 'https://bonhoeffermachines.com/en/public/parts-category/13_arrancador.png',
+      'starter-rope': 'https://bonhoeffermachines.com/en/public/parts-category/14_cuerda-de-arranque.png',
+      'metal-wire-rope': 'https://bonhoeffermachines.com/en/public/parts-category/15_cuerda-metallica-cuerda.png',
+      'air-filter': 'https://bonhoeffermachines.com/en/public/parts-category/16_filtro-de-aire.png',
+      'fuel-filter': 'https://bonhoeffermachines.com/en/public/parts-category/17_filtro-de-combustible.png',
+      'oil-pump': 'https://bonhoeffermachines.com/en/public/parts-category/18_bomba-de-aciete.png',
+      'pinion': 'https://bonhoeffermachines.com/en/public/parts-category/19_pinion.png',
+      'pinion-with-rim': 'https://bonhoeffermachines.com/en/public/parts-category/20_pinion-con-rim.png',
+      'clutch-drum': 'https://bonhoeffermachines.com/en/public/parts-category/21_emberague-tambor-de-emberague.png',
+      'clutch-bell': 'https://bonhoeffermachines.com/en/public/parts-category/22_campana-de-clutch.png',
+      'gearbox': 'https://bonhoeffermachines.com/en/public/parts-category/23_caja-de-engranaje.png',
+      'gearbox-parts': 'https://bonhoeffermachines.com/en/public/parts-category/24_repuestos-de-caja-de-engranaje.png',
+      'mounting': 'https://bonhoeffermachines.com/en/public/parts-category/25_montaje.png',
+      'ignition-coil': 'https://bonhoeffermachines.com/en/public/parts-category/26_bobina-de-encendido.png',
+      'crankshaft': 'https://bonhoeffermachines.com/en/public/parts-category/27_ciguenal.png',
+      'brush-cutter-shaft': 'https://bonhoeffermachines.com/en/public/parts-category/28_eje-para-motoguadana.png',
+      '2-3-teeth-blades': 'https://bonhoeffermachines.com/en/public/parts-category/29_cuchillas-de-2-3-dientes-para-motoguadana.png',
+      'round-blades': 'https://bonhoeffermachines.com/en/public/parts-category/30_cuchillas-redondas-para-motoguadana.png',
+      'rubber-parts': 'https://bonhoeffermachines.com/en/public/parts-category/31_partes-de-goma-motosierra-china.png',
+      'bearings': 'https://bonhoeffermachines.com/en/public/parts-category/40_rodamientos-baleeros.png',
+      'chain-accessories': 'https://bonhoeffermachines.com/en/public/parts-category/41_accesorios-de-cadena-de-motosierra.png',
+      'spark-plugs': 'https://bonhoeffermachines.com/en/public/parts-category/42_bujias.png',
+      'irrigation-hose': 'https://bonhoeffermachines.com/en/public/parts-category/32_manguera-de-riego.png',
+      'expandable-garden-hose': 'https://bonhoeffermachines.com/en/public/parts-category/33_mangeura-de-jardin-expandible.png',
+      'aluminum-couplings': 'https://bonhoeffermachines.com/en/public/parts-category/34_acoples-aluminio.png',
+      'aluminum-coupling-joint': 'https://bonhoeffermachines.com/en/public/parts-category/35_junta-de-acoplamiento-de-aluminio.png',
+      'professional-harness': 'https://bonhoeffermachines.com/en/public/parts-category/36_arnes-profesional-para-motoguadana.png',
+      'lawn-mower-wheels': 'https://bonhoeffermachines.com/en/public/parts-category/37_llantas-para-cortacesped.png',
+      'high-pressure-spray-hose': 'https://bonhoeffermachines.com/en/public/parts-category/38_manguera-de-fumigacion-de-alta-presion.png',
+      'spraying-parts': 'https://bonhoeffermachines.com/en/public/parts-category/39_repuestos-de-fumigacion.png',
+      'air-gun': 'https://bonhoeffermachines.com/en/public/parts-category/44_pistola-de-aire.png',
+      'garden-tools': 'https://bonhoeffermachines.com/en/public/parts-category/47_herramient-as-de-jardin.png',
+      'long-tail-propeller': 'https://bonhoeffermachines.com/en/public/parts-category/48_helice-de-cola-larga.png',
+      'eye-protection': 'https://bonhoeffermachines.com/en/public/parts-category/49_proteccion-para-los-ojos.png',
+      'head-protection-helmet': 'https://bonhoeffermachines.com/en/public/parts-category/50_proteccion-para-la-cabeza-combinacion-de-casco.png',
+      'drill': 'https://bonhoeffermachines.com/en/public/parts-category/51_drill.png',
+      'respiratory-protection': 'https://bonhoeffermachines.com/en/public/parts-category/51_proteccion-respiratoria.png',
+      'electrodes-wire': 'https://bonhoeffermachines.com/en/public/parts-category/52_electrodes-and-wire.png',
+      'face-protection': 'https://bonhoeffermachines.com/en/public/parts-category/53_protección-facial.png'
     };
-    return imageMap[slug] || 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_kit-de-piston.png';
+    return imageMap[slug] || 'https://bonhoeffermachines.com/en/public/parts-category/1_kit-de-piston.png';
   };
 
   // Get similar parts for the slider
   const getSimilarParts = (currentSlug) => {
     const allParts = [
-      { name: 'Piston Kit', slug: 'piston-kit', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_kit-de-piston.png' },
-      { name: 'Carburetor', slug: 'carburetor', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3_carburetor.png' },
-      { name: 'Air Filter', slug: 'air-filter', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/16_filtro-de-aire.png' },
-      { name: 'Spark Plugs', slug: 'spark-plugs', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/42_bujias.png' },
-      { name: 'Starter', slug: 'starter', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/13_arrancador.png' },
-      { name: 'Chainsaw Chain', slug: 'chainsaw-chain', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5_cadena-de-motosierra.png' },
-      { name: 'Oil Pump', slug: 'oil-pump', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/18_bomba-de-aciete.png' },
-      { name: 'Ignition Coil', slug: 'ignition-coil', image: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/26_bobina-de-encendido.png' }
+      { name: 'Piston Kit', slug: 'piston-kit', image: 'https://bonhoeffermachines.com/en/public/parts-category/1_kit-de-piston.png' },
+      { name: 'Carburetor', slug: 'carburetor', image: 'https://bonhoeffermachines.com/en/public/parts-category/3_carburetor.png' },
+      { name: 'Air Filter', slug: 'air-filter', image: 'https://bonhoeffermachines.com/en/public/parts-category/16_filtro-de-aire.png' },
+      { name: 'Spark Plugs', slug: 'spark-plugs', image: 'https://bonhoeffermachines.com/en/public/parts-category/42_bujias.png' },
+      { name: 'Starter', slug: 'starter', image: 'https://bonhoeffermachines.com/en/public/parts-category/13_arrancador.png' },
+      { name: 'Chainsaw Chain', slug: 'chainsaw-chain', image: 'https://bonhoeffermachines.com/en/public/parts-category/5_cadena-de-motosierra.png' },
+      { name: 'Oil Pump', slug: 'oil-pump', image: 'https://bonhoeffermachines.com/en/public/parts-category/18_bomba-de-aciete.png' },
+      { name: 'Ignition Coil', slug: 'ignition-coil', image: 'https://bonhoeffermachines.com/en/public/parts-category/26_bobina-de-encendido.png' }
     ];
     
     return allParts.filter(part => part.slug !== currentSlug);
@@ -213,7 +213,7 @@ function ModelSpecificPage() {
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden mt-5">
         <div className="absolute inset-0">
           <Image
-            src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/spare-parts-banner-india.webp"
+            src="https://bonhoeffermachines.com/en/public/images/spare-parts-banner-india.webp"
             alt="Spare Parts Banner"
             fill
             className="object-cover"
@@ -331,7 +331,7 @@ function ModelSpecificPage() {
         </div>
       </section>
 
-      {/* Similar Spare Parts Slider */}
+      {/* Similar Spare Parts Infinite Scroller */}
       <section className="py-20 px-6 ">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -349,53 +349,8 @@ function ModelSpecificPage() {
             </p>
           </motion.div>
 
-          {/* Continuous Slider */}
-          <div className="relative overflow-hidden rounded-2xl">
-            <motion.div 
-              className="flex space-x-6"
-              animate={{ x: `${-currentSlide * 300}px` }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-              style={{ width: `${similarParts.length * 300}px` }}
-            >
-              {similarParts.map((part, index) => (
-                <Link
-                  key={index}
-                  href={`/spare-parts/${part.slug}`}
-                  className="flex-shrink-0 w-72"
-                >
-                  <motion.div
-                    className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300 cursor-pointer"
-                    whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(152, 155, 46, 0.1)" }}
-                  >
-                    <div className="relative h-40 mb-4 rounded-xl overflow-hidden bg-white/5">
-                      <Image
-                        src={part.image}
-                        alt={part.name}
-                        fill
-                        className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                    <h3 className="text-lg font-bold text-white group-hover:text-[#989b2e] transition-colors text-center">
-                      {part.name}
-                    </h3>
-                  </motion.div>
-                </Link>
-              ))}
-            </motion.div>
-          </div>
-
-          {/* Slider Indicators */}
-          <div className="flex justify-center mt-8 space-x-2">
-            {similarParts.map((_, index) => (
-              <button
-                key={index}
-                className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-                  index === currentSlide ? 'bg-[#989b2e]' : 'bg-gray-600'
-                }`}
-                onClick={() => setCurrentSlide(index)}
-              />
-            ))}
-          </div>
+          {/* Infinite Scrolling Slider */}
+          <InfiniteSparePartsSlider parts={similarParts} />
         </div>
       </section>
 
@@ -424,6 +379,56 @@ function ModelSpecificPage() {
       </section>
     </BgLayout>
   )
+}
+
+function InfiniteSparePartsSlider({ parts }) {
+  const sliderRef = useRef(null);
+  // Duplicate the parts array for seamless looping
+  const displayParts = [...parts, ...parts];
+
+  // Animation: move left continuously
+  // We'll use a CSS keyframes animation for performance
+  return (
+    <div className="relative overflow-hidden w-full">
+      <div
+        ref={sliderRef}
+        className="flex gap-8 animate-infinite-scroll"
+        style={{ minWidth: '200%', willChange: 'transform' }}
+      >
+        {displayParts.map((part, idx) => (
+          <div
+            key={idx}
+            className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl shadow-2xl overflow-hidden hover:bg-white/10 transition-all duration-300 cursor-pointer w-72 flex-shrink-0"
+            onClick={() => window.location.href = `/spare-parts/${part.slug}`}
+          >
+            <div className="relative h-48 overflow-hidden">
+              <Image
+                src={part.image}
+                alt={part.name}
+                fill
+                className="w-full h-full object-contain transition-all duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+            </div>
+            <div className="p-6">
+              <h4 className="text-white text-lg font-semibold mb-1 text-center">
+                {part.name}
+              </h4>
+            </div>
+          </div>
+        ))}
+      </div>
+      <style jsx>{`
+        @keyframes infinite-scroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .animate-infinite-scroll {
+          animation: infinite-scroll 10s linear infinite;
+        }
+      `}</style>
+    </div>
+  );
 }
 
 export default ModelSpecificPage

@@ -1,0 +1,61 @@
+banner link: https://bonhoeffermachines.com/en/public/product_banner/gasoline-inverter-banner.webp
+Description: Gasoline Inverter have unique feature of portability, light weight and compact. Bonhoeffer gasoline inverter are ultra-quiet fitted with 4 stroke gasoline engine, high quality Plastic resin parts, work perfectly at variable temperature of -5 °c and 50 °c and full use of petrol when tilt at different angles up to 25° in all directions.
+
+<div class="_listing">
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_190">
+                        <a href="https://bonhoeffermachines.com/en/category-details/gasoline-inverter/BON-P-GI-1.8KW" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-P-GI-1.8KW.webp" />                        </a>
+                        <h3>Model : BON-P-GI-1.8KW </h3>
+                        <strong class="cat_title"> GASOLINE INVERTER </strong>
+                        <strong class="cat_mb">MAX . POWER 1.8 KW </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_30">
+                        <a href="https://bonhoeffermachines.com/en/category-details/gasoline-inverter/BON-P-GI-2.1KW" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-P-GI-2.1KW.png" />                        </a>
+                        <h3>Model : BON-P-GI-2.1KW </h3>
+                        <strong class="cat_title"> GASOLINE INVERTER </strong>
+                        <strong class="cat_mb">MAX . POWER 2.1 KW </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_242">
+                        <a href="https://bonhoeffermachines.com/en/category-details/gasoline-inverter/BON-P-GI-2.5KW" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-P-GI-2.5KW.webp" />                        </a>
+                        <h3>Model : BON-P-GI-2.5KW </h3>
+                        <strong class="cat_title"> GASOLINE INVERTER </strong>
+                        <strong class="cat_mb">MAX . POWER 2.5 KW </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_241">
+                        <a href="https://bonhoeffermachines.com/en/category-details/gasoline-inverter/BON-P-GI-2.9KW" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-P-GI-2.9KW.webp" />                        </a>
+                        <h3>Model : BON-P-GI-2.9KW </h3>
+                        <strong class="cat_title"> GASOLINE INVERTER </strong>
+                        <strong class="cat_mb">MAX . POWER 2.9 KW </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_240">
+                        <a href="https://bonhoeffermachines.com/en/category-details/gasoline-inverter/BON-P-GI-3.5KW" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-P-GI-3.5KW.webp" />                        </a>
+                        <h3>Model : BON-P-GI-3.5KW </h3>
+                        <strong class="cat_title"> GASOLINE INVERTER </strong>
+                        <strong class="cat_mb">MAX . POWER 3.5 KW </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_239">
+                        <a href="https://bonhoeffermachines.com/en/category-details/gasoline-inverter/BON-P-GI-3.8KW" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-P-GI-3.8KW.webp" />                        </a>
+                        <h3>Model : BON-P-GI-3.8KW </h3>
+                        <strong class="cat_title"> GASOLINE INVERTER </strong>
+                        <strong class="cat_mb">MAX . POWER 3.8 KW </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_238">
+                        <a href="https://bonhoeffermachines.com/en/category-details/gasoline-inverter/BON-P-GI-5.5KW" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-P-GI-5.5KW.webp" />                        </a>
+                        <h3>Model : BON-P-GI-5.5KW </h3>
+                        <strong class="cat_title"> GASOLINE INVERTER </strong>
+                        <strong class="cat_mb">MAX . POWER 5.5 KW </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_237">
+                        <a href="https://bonhoeffermachines.com/en/category-details/gasoline-inverter/BON-P-GI-7.5KW" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-P-GI-7.5KW.webp" />                        </a>
+                        <h3>Model : BON-P-GI-7.5KW </h3>
+                        <strong class="cat_title"> GASOLINE INVERTER </strong>
+                        <strong class="cat_mb">MAX . POWER 7.5 KW </strong>
+                     </div>
+                                       </div>

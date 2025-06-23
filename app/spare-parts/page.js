@@ -12,7 +12,7 @@ function SparePage() {
     {
       id: 1,
       name: "Piston Kit",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/1_kit-de-piston.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/1_kit-de-piston.png",
       slug: "piston-kit",
       category: "spare-parts",
       label: "Engine Components"
@@ -20,7 +20,7 @@ function SparePage() {
     {
       id: 2,
       name: "Piston Rings",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/2_anillos-de-piston.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/2_anillos-de-piston.png",
       slug: "piston-rings",
       category: "spare-parts",
       label: "Engine Components"
@@ -28,7 +28,7 @@ function SparePage() {
     {
       id: 3,
       name: "Carburetor",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/3_carburetor.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/3_carburetor.png",
       slug: "carburetor",
       category: "spare-parts",
       label: "Fuel System"
@@ -36,7 +36,7 @@ function SparePage() {
     {
       id: 4,
       name: "Carburetor Repair Kit",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/4_kit-de-reparacion-del-carburetor-.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/4_kit-de-reparacion-del-carburetor-.png",
       slug: "carburetor-repair-kit",
       category: "spare-parts",
       label: "Fuel System"
@@ -44,7 +44,7 @@ function SparePage() {
     {
       id: 5,
       name: "Chainsaw Chain",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5_cadena-de-motosierra.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/5_cadena-de-motosierra.png",
       slug: "chainsaw-chain",
       category: "spare-parts",
       label: "Cutting Components"
@@ -52,7 +52,7 @@ function SparePage() {
     {
       id: 6,
       name: "Fuel Hose & Primer Bulb",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/5_manguera-combustible-_-bulbo-de-imprimacion.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/5_manguera-combustible-_-bulbo-de-imprimacion.png",
       slug: "fuel-hose-primer-bulb",
       category: "spare-parts",
       label: "Fuel System"
@@ -60,7 +60,7 @@ function SparePage() {
     {
       id: 7,
       name: "Cylinder Kit",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/7_kit-de-cilindro.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/7_kit-de-cilindro.png",
       slug: "cylinder-kit", 
       category: "spare-parts",
       label: "Engine Components"
@@ -68,7 +68,7 @@ function SparePage() {
     {
       id: 8,
       name: "Brush Cutter Head",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/8_cabezal-de-motoguadana.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/8_cabezal-de-motoguadana.png",
       slug: "brush-cutter-head",
       category: "spare-parts",
       label: "Cutting Components"
@@ -76,7 +76,7 @@ function SparePage() {
     {
       id: 9,
       name: "Head Spare Parts",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/9_repuestos-de-cabezal.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/9_repuestos-de-cabezal.png",
       slug: "head-spare-parts",
       category: "spare-parts",
       label: "Cutting Components"
@@ -84,7 +84,7 @@ function SparePage() {
     {
       id: 10,
       name: "Brush Cutter Nylon",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/10_nyon-de-motoguadana.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/10_nyon-de-motoguadana.png",
       slug: "brush-cutter-nylon",
       category: "spare-parts",
       label: "Cutting Components"
@@ -92,7 +92,7 @@ function SparePage() {
     {
       id: 11,
       name: "Chainsaw Bar",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/11_espada-de-motosierra.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/11_espada-de-motosierra.png",
       slug: "chainsaw-bar",
       category: "spare-parts",
       label: "Cutting Components"
@@ -100,7 +100,7 @@ function SparePage() {
     {
       id: 12,
       name: "Hard Tip Bar",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/12_espada-con-punta-dura.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/12_espada-con-punta-dura.png",
       slug: "hard-tip-bar",
       category: "spare-parts",
       label: "Cutting Components"
@@ -108,7 +108,7 @@ function SparePage() {
     {
       id: 13,
       name: "Starter",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/13_arrancador.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/13_arrancador.png",
       slug: "starter",
       category: "spare-parts",
       label: "Starting System"
@@ -116,7 +116,7 @@ function SparePage() {
     {
       id: 14,
       name: "Starter Rope",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/14_cuerda-de-arranque.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/14_cuerda-de-arranque.png",
       slug: "starter-rope",
       category: "spare-parts",
       label: "Starting System"
@@ -124,7 +124,7 @@ function SparePage() {
     {
       id: 15,
       name: "Metal Wire Rope",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/15_cuerda-metallica-cuerda.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/15_cuerda-metallica-cuerda.png",
       slug: "metal-wire-rope",
       category: "spare-parts",
       label: "Starting System"
@@ -132,7 +132,7 @@ function SparePage() {
     {
       id: 16,
       name: "Air Filter",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/16_filtro-de-aire.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/16_filtro-de-aire.png",
       slug: "air-filter",
       category: "spare-parts",
       label: "Filtration System"
@@ -140,7 +140,7 @@ function SparePage() {
     {
       id: 17,
       name: "Fuel Filter",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/17_filtro-de-combustible.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/17_filtro-de-combustible.png",
       slug: "fuel-filter",
       category: "spare-parts",
       label: "Filtration System"
@@ -148,7 +148,7 @@ function SparePage() {
     {
       id: 18,
       name: "Oil Pump",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/18_bomba-de-aciete.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/18_bomba-de-aciete.png",
       slug: "oil-pump",
       category: "spare-parts",
       label: "Lubrication System"
@@ -156,7 +156,7 @@ function SparePage() {
     {
       id: 19,
       name: "Pinion",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/19_pinion.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/19_pinion.png",
       slug: "pinion",
       category: "spare-parts",
       label: "Drive System"
@@ -164,7 +164,7 @@ function SparePage() {
     {
       id: 20,
       name: "Pinion with Rim",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/20_pinion-con-rim.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/20_pinion-con-rim.png",
       slug: "pinion-with-rim",
       category: "spare-parts",
       label: "Drive System"
@@ -172,7 +172,7 @@ function SparePage() {
     {
       id: 21,
       name: "Clutch Drum",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/21_emberague-tambor-de-emberague.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/21_emberague-tambor-de-emberague.png",
       slug: "clutch-drum",
       category: "spare-parts",
       label: "Drive System"
@@ -180,7 +180,7 @@ function SparePage() {
     {
       id: 22,
       name: "Clutch Bell",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/22_campana-de-clutch.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/22_campana-de-clutch.png",
       slug: "clutch-bell",
       category: "spare-parts",
       label: "Drive System"
@@ -188,7 +188,7 @@ function SparePage() {
     {
       id: 23,
       name: "Gearbox",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/23_caja-de-engranaje.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/23_caja-de-engranaje.png",
       slug: "gearbox",
       category: "spare-parts",
       label: "Drive System"
@@ -196,7 +196,7 @@ function SparePage() {
     {
       id: 24,
       name: "Gearbox Parts",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/24_repuestos-de-caja-de-engranaje.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/24_repuestos-de-caja-de-engranaje.png",
       slug: "gearbox-parts",
       category: "spare-parts",
       label: "Drive System"
@@ -204,7 +204,7 @@ function SparePage() {
     {
       id: 25,
       name: "Mounting",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/25_montaje.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/25_montaje.png",
       slug: "mounting",
       category: "spare-parts",
       label: "Assembly Parts"
@@ -212,7 +212,7 @@ function SparePage() {
     {
       id: 26,
       name: "Ignition Coil",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/26_bobina-de-encendido.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/26_bobina-de-encendido.png",
       slug: "ignition-coil",
       category: "spare-parts",
       label: "Ignition System"
@@ -220,7 +220,7 @@ function SparePage() {
     {
       id: 27,
       name: "Crankshaft",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/27_ciguenal.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/27_ciguenal.png",
       slug: "crankshaft",
       category: "spare-parts",
       label: "Engine Components"
@@ -228,7 +228,7 @@ function SparePage() {
     {
       id: 28,
       name: "Brush Cutter Shaft",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/28_eje-para-motoguadana.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/28_eje-para-motoguadana.png",
       slug: "brush-cutter-shaft",
       category: "spare-parts",
       label: "Drive System"
@@ -236,7 +236,7 @@ function SparePage() {
     {
       id: 29,
       name: "2-3 Teeth Blades",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/29_cuchillas-de-2-3-dientes-para-motoguadana.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/29_cuchillas-de-2-3-dientes-para-motoguadana.png",
       slug: "2-3-teeth-blades",
       category: "spare-parts",
       label: "Cutting Components"
@@ -244,7 +244,7 @@ function SparePage() {
     {
       id: 30,
       name: "Round Blades",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/30_cuchillas-redondas-para-motoguadana.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/30_cuchillas-redondas-para-motoguadana.png",
       slug: "round-blades",
       category: "spare-parts",
       label: "Cutting Components"
@@ -252,7 +252,7 @@ function SparePage() {
     {
       id: 31,
       name: "Rubber Parts",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/31_partes-de-goma-motosierra-china.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/31_partes-de-goma-motosierra-china.png",
       slug: "rubber-parts",
       category: "spare-parts",
       label: "Sealing & Gaskets"
@@ -260,7 +260,7 @@ function SparePage() {
     {
       id: 40,
       name: "Bearings",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/40_rodamientos-baleeros.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/40_rodamientos-baleeros.png",
       slug: "bearings",
       category: "spare-parts",
       label: "Drive System"
@@ -268,7 +268,7 @@ function SparePage() {
     {
       id: 41,
       name: "Chain Accessories",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/41_accesorios-de-cadena-de-motosierra.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/41_accesorios-de-cadena-de-motosierra.png",
       slug: "chain-accessories",
       category: "spare-parts",
       label: "Cutting Components"
@@ -276,7 +276,7 @@ function SparePage() {
     {
       id: 42,
       name: "Spark Plugs",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/42_bujias.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/42_bujias.png",
       slug: "spark-plugs",
       category: "spare-parts",
       label: "Ignition System"
@@ -286,7 +286,7 @@ function SparePage() {
     {
       id: 32,
       name: "Irrigation Hose",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/32_manguera-de-riego.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/32_manguera-de-riego.png",
       slug: "irrigation-hose",
       category: "accessories",
       label: "Garden Accessories"
@@ -294,7 +294,7 @@ function SparePage() {
     {
       id: 33,
       name: "Expandable Garden Hose",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/33_mangeura-de-jardin-expandible.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/33_mangeura-de-jardin-expandible.png",
       slug: "expandable-garden-hose",
       category: "accessories",
       label: "Garden Accessories"
@@ -302,7 +302,7 @@ function SparePage() {
     {
       id: 34,
       name: "Aluminum Couplings",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/34_acoples-aluminio.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/34_acoples-aluminio.png",
       slug: "aluminum-couplings",
       category: "accessories",
       label: "Connection Parts"
@@ -310,7 +310,7 @@ function SparePage() {
     {
       id: 35,
       name: "Aluminum Coupling Joint",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/35_junta-de-acoplamiento-de-aluminio.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/35_junta-de-acoplamiento-de-aluminio.png",
       slug: "aluminum-coupling-joint",
       category: "accessories",
       label: "Connection Parts"
@@ -318,7 +318,7 @@ function SparePage() {
     {
       id: 36,
       name: "Professional Harness",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/36_arnes-profesional-para-motoguadana.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/36_arnes-profesional-para-motoguadana.png",
       slug: "professional-harness",
       category: "accessories",
       label: "Safety Equipment"
@@ -326,7 +326,7 @@ function SparePage() {
     {
       id: 37,
       name: "Lawn Mower Wheels",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/37_llantas-para-cortacesped.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/37_llantas-para-cortacesped.png",
       slug: "lawn-mower-wheels",
       category: "accessories",
       label: "Mower Parts"
@@ -334,7 +334,7 @@ function SparePage() {
     {
       id: 38,
       name: "High Pressure Spray Hose",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/38_manguera-de-fumigacion-de-alta-presion.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/38_manguera-de-fumigacion-de-alta-presion.png",
       slug: "high-pressure-spray-hose",
       category: "accessories",
       label: "Spraying Equipment"
@@ -342,7 +342,7 @@ function SparePage() {
     {
       id: 39,
       name: "Spraying Parts",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/39_repuestos-de-fumigacion.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/39_repuestos-de-fumigacion.png",
       slug: "spraying-parts",
       category: "accessories",
       label: "Spraying Equipment"
@@ -350,7 +350,7 @@ function SparePage() {
     {
       id: 44,
       name: "Air Gun",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/44_pistola-de-aire.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/44_pistola-de-aire.png",
       slug: "air-gun",
       category: "accessories",
       label: "Tools"
@@ -358,7 +358,7 @@ function SparePage() {
     {
       id: 47,
       name: "Garden Tools",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/47_herramient-as-de-jardin.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/47_herramient-as-de-jardin.png",
       slug: "garden-tools",
       category: "accessories",
       label: "Garden Accessories"
@@ -366,7 +366,7 @@ function SparePage() {
     {
       id: 48,
       name: "Long Tail Propeller",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/48_helice-de-cola-larga.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/48_helice-de-cola-larga.png",
       slug: "long-tail-propeller",
       category: "accessories",
       label: "Boat Parts"
@@ -374,7 +374,7 @@ function SparePage() {
     {
       id: 49,
       name: "Eye Protection",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/50_proteccion-para-los-ojos.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/50_proteccion-para-los-ojos.png",
       slug: "eye-protection",
       category: "accessories",
       label: "Safety Equipment"
@@ -382,7 +382,7 @@ function SparePage() {
     {
       id: 50,
       name: "Head Protection & Helmet",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/51_proteccion-para-la-cabeza-combinacion-de-casco.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/51_proteccion-para-la-cabeza-combinacion-de-casco.png",
       slug: "head-protection-helmet",
       category: "accessories",
       label: "Safety Equipment"
@@ -390,7 +390,7 @@ function SparePage() {
     {
       id: 51,
       name: "Drill",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/52_drill.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/52_drill.png",
       slug: "drill",
       category: "accessories",
       label: "Tools"
@@ -398,7 +398,7 @@ function SparePage() {
     {
       id: 52,
       name: "Respiratory Protection",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/52_proteccion-respiratoria.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/52_proteccion-respiratoria.png",
       slug: "respiratory-protection",
       category: "accessories",
       label: "Safety Equipment"
@@ -406,7 +406,7 @@ function SparePage() {
     {
       id: 53,
       name: "Electrodes & Wire",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/53_electrodes-and-wire.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/53_electrodes-and-wire.png",
       slug: "electrodes-wire",
       category: "accessories",
       label: "Welding Equipment"
@@ -414,7 +414,7 @@ function SparePage() {
     {
       id: 54,
       name: "Face Protection",
-      image: "https://9lhi1aprmhe38img.public.blob.vercel-storage.com/54_protecci%C3%B3n-facial.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/54_protecci%C3%B3n-facial.png",
       slug: "face-protection",
       category: "accessories",
       label: "Safety Equipment"
@@ -430,7 +430,7 @@ function SparePage() {
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden mt-5">
         <div className="absolute inset-0">
           <Image
-            src="https://9lhi1aprmhe38img.public.blob.vercel-storage.com/spare-parts-banner-india.webp"
+            src="https://bonhoeffermachines.com/en/public/images/spare-parts-banner-india.webp"
             alt="Spare Parts Banner"
             fill
             className="object-cover"
