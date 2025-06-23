@@ -5,7 +5,7 @@ import Header from '../layouts/header';
 import Footer from '../layouts/footer';
 
 // Centralized Global Particle System (consistent across all pages)
-const GlobalParticles = () => {
+const GlobalParticles = React.memo(function GlobalParticles() {
   const [mounted, setMounted] = useState(false);
   
   useEffect(() => {
@@ -62,7 +62,7 @@ const GlobalParticles = () => {
       ))}
     </div>
   );
-};
+});
 
 function BgLayout({ children, className = "" }) {
   return (

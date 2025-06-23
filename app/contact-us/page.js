@@ -1,7 +1,9 @@
 'use client';
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useRef, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import BgLayout from '@/components/templates/bgLayout';
+import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 const departments = [
 	{
@@ -43,6 +45,9 @@ function ContactPage() {
 	});
 
 	const [isSubmitting, setIsSubmitting] = useState(false);
+	const [showThankYou, setShowThankYou] = useState(false);
+	const timeoutRef = useRef(null);
+	const router = useRouter();
 
 	const handleInputChange = (e) => {
 		setFormData({
@@ -58,7 +63,8 @@ function ContactPage() {
 		// Simulate form submission
 		await new Promise((resolve) => setTimeout(resolve, 2000));
 
-		alert('Thank you for your message! We will get back to you soon.');
+		setShowThankYou(true);
+		setIsSubmitting(false);
 		setFormData({
 			name: '',
 			email: '',
@@ -72,7 +78,21 @@ function ContactPage() {
 			message: '',
 			productInterest: '',
 		});
-		setIsSubmitting(false);
+	};
+
+	// Redirect to home after 10s or when modal is closed
+	useEffect(() => {
+		if (showThankYou) {
+			timeoutRef.current = setTimeout(() => {
+				router.push('/');
+			}, 10000);
+		}
+		return () => clearTimeout(timeoutRef.current);
+	}, [showThankYou, router]);
+
+	const closeModal = () => {
+		setShowThankYou(false);
+		router.push('/');
 	};
 
 	return (
@@ -154,11 +174,15 @@ function ContactPage() {
 
 					<motion.form
 						onSubmit={handleSubmit}
-						className="bg-gray-800/50 backdrop-blur-lg rounded-3xl p-8 md:p-12 border border-gray-700 shadow-2xl"
+						className="bg-gray-800/50 backdrop-blur-lg rounded-3xl p-8 md:p-12 border border-gray-700 shadow-2xl relative"
 						initial={{ opacity: 0, scale: 0.95 }}
 						whileInView={{ opacity: 1, scale: 1 }}
 						transition={{ duration: 0.8 }}
 						viewport={{ once: true }}
+						style={{
+							filter: showThankYou ? 'blur(2px)' : 'none',
+							pointerEvents: showThankYou ? 'none' : 'auto',
+						}}
 					>
 						{/* Row 1: Name, Email */}
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -334,18 +358,71 @@ function ContactPage() {
 						<button
 							type="submit"
 							disabled={isSubmitting}
-							className="w-full bg-gradient-to-r from-[#9a9c30] to-[#8a8c20] text-white font-bold py-4 px-8 rounded-xl hover:from-[#8a8c20] hover:to-[#7a7c10] transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+							className="w-full py-3 bg-[#9a9c30] hover:bg-[#7a7d24] text-white font-bold rounded-lg transition-colors text-lg mt-2 disabled:opacity-60 disabled:cursor-not-allowed"
 						>
-							{isSubmitting ? (
-								<div className="flex items-center justify-center">
-									<div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white mr-3"></div>
-									Sending Message...
-								</div>
-							) : (
-								'Send Message'
-							)}
+							{isSubmitting ? 'Submitting...' : 'Submit'}
 						</button>
 					</motion.form>
+
+					{/* Animated Thank You Modal */}
+					<AnimatePresence>
+						{showThankYou && (
+							<motion.div
+								className="fixed inset-0 flex items-center justify-center z-50 bg-black/60 backdrop-blur-sm"
+								initial={{ opacity: 0 }}
+								animate={{ opacity: 1 }}
+								exit={{ opacity: 0 }}
+							>
+								<motion.div
+									className="bg-gray-900 rounded-2xl shadow-2xl p-8 max-w-lg w-full text-center border border-[#989b2e] relative"
+									initial={{ scale: 0.8, opacity: 0, y: 60 }}
+									animate={{ scale: 1, opacity: 1, y: 0 }}
+									exit={{ scale: 0.8, opacity: 0, y: 60 }}
+									transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+								>
+									<button
+										onClick={closeModal}
+										className="absolute top-4 right-4 text-gray-400 hover:text-[#989b2e] text-2xl font-bold focus:outline-none"
+									>
+										&times;
+									</button>
+									<Image
+										src="https://bonhoeffermachines.com/en/public/images/Event-Banner.jpg"
+										alt="Thank You Banner"
+										width={480}
+										height={120}
+										className="object-cover rounded-xl mx-auto mb-6"
+									/>
+									<motion.div
+										initial={{ opacity: 0, y: 20 }}
+										animate={{ opacity: 1, y: 0 }}
+										transition={{ delay: 0.2 }}
+									>
+										<h1 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+											Thank you for reaching out to Bonhoeffer!
+										</h1>
+										<p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-4">
+											We will get back to you as soon as possible with a response.
+											In the meantime, please feel free to explore and know more
+											about Bonhoeffer along with its product offerings across the
+											various segments.
+										</p>
+										<p className="text-md text-gray-400 max-w-xl mx-auto mb-2">
+											You can also reach out to us at{' '}
+											<a
+												href="mailto:support@bonhoeffermachines.com"
+												className="underline text-[#989b2e]"
+											>
+												support@bonhoeffermachines.com
+											</a>{' '}
+											for any urgent queries or requirement of additional
+											information.
+										</p>
+									</motion.div>
+								</motion.div>
+							</motion.div>
+						)}
+					</AnimatePresence>
 				</div>
 			</section>
 

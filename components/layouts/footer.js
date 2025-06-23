@@ -95,7 +95,9 @@ function Footer() {
               Leading manufacturer of agricultural machinery worldwide.
             </p>
             <div className="bg-[#989b2e] px-3 py-1 rounded-md inline-block">
-              <span className="text-white text-xs font-bold">Become Our Dealer</span>
+              <Link href="/become-a-dealer">
+                <span className="text-white text-xs font-bold">Become Our Dealer</span>
+              </Link>
             </div>
           </div>
 
