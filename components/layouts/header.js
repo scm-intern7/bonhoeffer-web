@@ -181,11 +181,13 @@ function Header() {
       <section className={`transition-all duration-700 ease-out ${isScrolled ? 'opacity-0 pointer-events-none transform -translate-y-4' : 'opacity-100 transform translate-y-0'}`}>
         <div className="flex flex-row items-center gap-10 text-white">
             <div className="image pt-5">
+              <Link href="/">
                 <img
                     src="/logo.png"
                     alt="Bonhoeffer Machines Logo"
                     className="h-20 pl-10 pr-10"
                 />
+              </Link>
 
                 {/* <h1 className="text-2xl font-bold mt-5 py-1 pl-5 bg-[#989b2e] w-70 rounded-r-xl">Become Our Dealer</h1> */}
             </div>

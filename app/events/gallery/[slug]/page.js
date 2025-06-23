@@ -10,159 +10,159 @@ const fairCategories = [
     name: 'Argentina Fair',
     slug: 'argentina-fair',
     location: 'Argentina',
-    coverImage: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Argentina-fair1.webp',
+    coverImage: 'https://bonhoeffermachines.com/en/public/events/webp/Argentina-fair1.webp',
     imageCount: 6,
     images: [
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Argentina-fair1.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Argentina-fair2.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Argentina-fair3.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Argentina-fair4.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Argentina-fair5.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Argentina-fair6.webp'
+      'https://bonhoeffermachines.com/en/public/events/webp/Argentina-fair1.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/Argentina-fair2.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/Argentina-fair3.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/Argentina-fair4.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/Argentina-fair5.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/Argentina-fair6.webp'
     ]
   },
   {
     name: 'Colombia Fair',
     slug: 'colombia-fair',
     location: 'Colombia',
-    coverImage: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair1.webp',
+    coverImage: 'https://bonhoeffermachines.com/en/public/events/webp/columbia-fair1.webp',
     imageCount: 11,
     images: [
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair1.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair2.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair3.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair4.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair5.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair6.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair7.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair8.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair9.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair10.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/columbia-fair11.webp'
+      'https://bonhoeffermachines.com/en/public/events/webp/columbia-fair1.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/columbia-fair2.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/columbia-fair3.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/columbia-fair4.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/columbia-fair5.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/columbia-fair6.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/columbia-fair7.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/columbia-fair8.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/columbia-fair9.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/columbia-fair10.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/columbia-fair11.webp'
     ]
   },
   {
     name: 'Dominican Republic Fair',
     slug: 'dominican-republic',
     location: 'Dominican Republic',
-    coverImage: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Dominican-Republic-fair1.webp',
+    coverImage: 'https://bonhoeffermachines.com/en/public/events/webp/Dominican-Republic-fair1.webp',
     imageCount: 2,
     images: [
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Dominican-Republic-fair1.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Dominican-Republic-fair2.webp'
+      'https://bonhoeffermachines.com/en/public/events/webp/Dominican-Republic-fair1.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/Dominican-Republic-fair2.webp'
     ]
   },
   {
     name: 'India Fair',
     slug: 'indian-fair',
     location: 'India',
-    coverImage: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair1.webp',
+    coverImage: 'https://bonhoeffermachines.com/en/public/events/webp/india-fair1.webp',
     imageCount: 10,
     images: [
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair1.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair2.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair3.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair4.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair5.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair6.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair7.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair8.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair9.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/india-fair10.webp'
+      'https://bonhoeffermachines.com/en/public/events/webp/india-fair1.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/india-fair2.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/india-fair3.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/india-fair4.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/india-fair5.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/india-fair6.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/india-fair7.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/india-fair8.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/india-fair9.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/india-fair10.webp'
     ]
   },
   {
     name: 'Coimbatore Fair',
     slug: 'coimbatore-fair',
     location: 'Coimbatore, India',
-    coverImage: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/coimbatore-slider1.webp',
+    coverImage: 'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider1.webp',
     imageCount: 7,
     images: [
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/coimbatore-slider1.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/coimbatore-slider2.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/coimbatore-slider3.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/coimbatore-slider4.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/coimbatore-slider5.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/coimbatore-slider6.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/coimbatore-slider7.webp'
+      'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider1.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider2.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider3.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider4.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider5.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider6.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider7.webp'
     ]
   },
   {
     name: 'Guadalajara Mexico Fair',
     slug: 'guadalajara-mexico-fair',
     location: 'Guadalajara, Mexico',
-    coverImage: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Guadalajara-Mexico-fair1.webp',
+    coverImage: 'https://bonhoeffermachines.com/en/public/events/webp/Guadalajara-Mexico-fair1.webp',
     imageCount: 2,
     images: [
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Guadalajara-Mexico-fair1.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Guadalajara-Mexico-fair2.webp'
+      'https://bonhoeffermachines.com/en/public/events/webp/Guadalajara-Mexico-fair1.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/Guadalajara-Mexico-fair2.webp'
     ]
   },
   {
     name: 'Mexico Guanajuato Fair',
     slug: 'mexico-guanajuato-fair',
     location: 'Guanajuato, Mexico',
-    coverImage: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Mexico-Guanajuato-fair1.webp',
+    coverImage: 'https://bonhoeffermachines.com/en/public/events/webp/Mexico-Guanajuato-fair1.webp',
     imageCount: 5,
     images: [
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Mexico-Guanajuato-fair1.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Mexico-Guanajuato-fair2.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Mexico-Guanajuato-fair3.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Mexico-Guanajuato-fair4.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Mexico-Guanajuato-fair5.webp'
+      'https://bonhoeffermachines.com/en/public/events/webp/Mexico-Guanajuato-fair1.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/Mexico-Guanajuato-fair2.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/Mexico-Guanajuato-fair3.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/Mexico-Guanajuato-fair4.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/Mexico-Guanajuato-fair5.webp'
     ]
   },
   {
     name: 'Nicaragua Fair',
     slug: 'nicaragua-fair',
     location: 'Nicaragua',
-    coverImage: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-slider1.webp',
+    coverImage: 'https://bonhoeffermachines.com/en/public/events/webp/nicaragua-slider1.webp',
     imageCount: 9,
     images: [
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-slider1.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-slider2.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-slider3.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-slider4.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-slider5.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-slider6.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-slider7.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-slider8.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/nicaragua-slider9.webp'
+      'https://bonhoeffermachines.com/en/public/events/webp/nicaragua-slider1.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/nicaragua-slider2.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/nicaragua-slider3.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/nicaragua-slider4.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/nicaragua-slider5.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/nicaragua-slider6.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/nicaragua-slider7.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/nicaragua-slider8.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/nicaragua-slider9.webp'
     ]
   },
   {
     name: 'Pantnagar Fair',
     slug: 'pantnagar-fair',
     location: 'Pantnagar, India',
-    coverImage: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/pantnagar-slider1.webp',
+    coverImage: 'https://bonhoeffermachines.com/en/public/events/webp/pantnagar-slider1.webp',
     imageCount: 6,
     images: [
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/pantnagar-slider1.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/pantnagar-slider2.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/pantnagar-slider3.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/pantnagar-slider4.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/pantnagar-slider5.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/pantnagar-slider6.webp'
+      'https://bonhoeffermachines.com/en/public/events/webp/pantnagar-slider1.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/pantnagar-slider2.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/pantnagar-slider3.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/pantnagar-slider4.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/pantnagar-slider5.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/pantnagar-slider6.webp'
     ]
   },
   {
     name: 'Peru Fair',
     slug: 'peru-fair',
     location: 'Peru',
-    coverImage: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair1.webp',
+    coverImage: 'https://bonhoeffermachines.com/en/public/events/webp/Peru-Fair1.webp',
     imageCount: 11,
     images: [
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair1.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair2.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair3.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair4.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair5.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair6.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair7.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair8.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair9.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair10.webp',
-      'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/Peru-Fair11.webp'
+      'https://bonhoeffermachines.com/en/public/events/webp/Peru-Fair1.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/Peru-Fair2.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/Peru-Fair3.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/Peru-Fair4.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/Peru-Fair5.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/Peru-Fair6.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/Peru-Fair7.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/Peru-Fair8.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/Peru-Fair9.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/Peru-Fair10.webp',
+      'https://bonhoeffermachines.com/en/public/events/webp/Peru-Fair11.webp'
     ]
   }
 ];
