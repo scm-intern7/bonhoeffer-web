@@ -99,8 +99,8 @@ function ProductPage() {
       name: "Construction",
       products: [
         { name: "Plate Compactor", slug: "plate-compactor", image: "https://bonhoeffermachines.com/public/images/segment/2_PLATO-COMPACTADOR.webp" },
-        { name: "Concrete Cutter", slug: "concrete-cutter", image: "https://bonhoeffermachines.com/public/images/segment/3_concrete-cutter.webp" },
-        { name: "Concrete Vibrator", slug: "concrete-vibrator", image: "https://bonhoeffermachines.com/public/images/segment/4_concrete-vibrator.webp" },
+        { name: "Concrete Cutter", slug: "concrete-cutter", image: "https://bonhoeffermachines.in/public/images/segment/3_concrete-cutter.webp" },
+        { name: "Concrete Vibrator", slug: "concrete-vibrator", image: "https://bonhoeffermachines.in/public/images/segment/4_concrete-vibrator.webp" },
         { name: "Concrete Power Trowel", slug: "concrete-power-trowel", image: "https://bonhoeffermachines.com/public/images/segment/5_PODER-CONCRETO-PALETA.webp" },
         { name: "Tamping Rammer", slug: "tamping-rammer", image: "https://bonhoeffermachines.com/public/images/segment/1_MARCOS-DE-APISONAMIENTO.webp" }
       ]
@@ -430,11 +430,11 @@ function ProductPage() {
                               src={product.image}
                               alt={product.name}
                               fill
-                              className="object-contain p-2 group-hover:scale-115 transition-transform duration-300"
+                              className="object-contain p-2 group-hover:scale-120 transition-transform duration-300"
                               style={{ objectFit: 'contain' }}
                             />
                           </div>
-                          <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#989b2e] transition-colors text-center">
+                          <h3 className="text-xl font-bold text-white my-4 group-hover:text-[#989b2e] transition-colors text-center">
                             {product.name}
                           </h3>
                           <div className="text-center">
