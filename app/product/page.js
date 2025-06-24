@@ -401,7 +401,7 @@ function ProductPage() {
                     </button>
                   </div>
                 )}
-                <div className="overflow-hidden pb-4">
+                <div className="overflow-hidden py-4">
                   <div
                     className="flex transition-transform duration-500"
                     style={{
@@ -425,12 +425,12 @@ function ProductPage() {
                           whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(152, 155, 46, 0.1)" }}
                         >
                           <div className="relative mb-6 rounded-xl overflow-hidden bg-white flex-1 flex items-center justify-center"
-                            style={{ height: '440px', width: '292px', margin: '0 auto' }}>
+                            style={{ height: '440px', width: '280px', margin: '0 auto' }}>
                             <Image
                               src={product.image}
                               alt={product.name}
                               fill
-                              className="object-contain p-2 group-hover:scale-110 transition-transform duration-300"
+                              className="object-contain p-2 group-hover:scale-115 transition-transform duration-300"
                               style={{ objectFit: 'contain' }}
                             />
                           </div>

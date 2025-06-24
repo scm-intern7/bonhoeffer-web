@@ -46,7 +46,7 @@ const SocialSlider = ({ posts }) => {
     if (isAutoPlaying && posts.length > postsPerView) {
       intervalRef.current = setInterval(() => {
         setCurrentIndex(prev => prev >= maxIndex ? 0 : prev + 1)
-      }, 4000)
+      }, 2000)
     }
     return () => clearInterval(intervalRef.current)
   }, [isAutoPlaying, maxIndex, posts.length, postsPerView])
@@ -289,97 +289,121 @@ function Social() {
     // POST 1 - Image
     {
       type: 'image',
-      src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/SnapInsta.to_488885213_1107940894680980_4789339094195931779_n.jpg',
+      src: 'https://raw.githubusercontent.com/scm-intern7/bm-web-assets/refs/heads/main/image1.jpg',
       link: 'https://www.instagram.com/p/DCGWdZ6h8Ep/', // PASTE INSTAGRAM POST LINK HERE
       alt: 'Instagram Post 1'
     },
 
-    // POST 2 - Video  
-    {
-      type: 'video',
-      src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/SnapInsta.to_AQP-Q2mmRGLUiN_qFs_zkilVzghmekiys7TT_rgjlUhFz8B1Xpe7UHbk1i5bvsEp1Apya8OFf6KVlYDmsNBGFlggreGr_PnGSXWiWy0.mp4',
-      link: 'https://www.instagram.com/reel/DC4ABhAph-Q/', // PASTE INSTAGRAM POST LINK HERE
-      alt: 'Instagram Reel 1'
-    },
-
-    // POST 3 - Image
+    // POST 2 - Image
     {
       type: 'image',
-      src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/SnapInsta.to_489077248_1108475861294150_3656903405949980397_n.jpg',
-      link: 'https://www.instagram.com/p/DC6k8BWBZE3/?img_index=3', // PASTE INSTAGRAM POST LINK HERE
+      src: 'https://raw.githubusercontent.com/scm-intern7/bm-web-assets/refs/heads/main/image2.jpg',
+      link: 'https://www.instagram.com/p/DC6k8BWBZE3/?img_index=1', // PASTE INSTAGRAM POST LINK HERE
       alt: 'Instagram Post 2'
     },
 
-    // POST 4 - Video
+    // POST 3 - Video  
     {
       type: 'video',
-      src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/SnapInsta.to_AQP7OJDMBLMjtJZFVAsdTJ5hfuak6GvvYkZLm09TvI2uRKlRbCONdJt2x2aKgY9BaSJ7th9Ip0c5yRFiKvMJLYkYnI_5oQoZyxQw6as.mp4',
-      link: 'https://www.instagram.com/reel/DCjX3mtyPiZ/', // PASTE INSTAGRAM POST LINK HERE
-      alt: 'Instagram Reel 2'
+      src: 'https://raw.githubusercontent.com/scm-intern7/bm-web-assets/refs/heads/main/reel1.mp4',
+      link: 'https://www.instagram.com/p/DC4ABhAph-Q/', // PASTE INSTAGRAM POST LINK HERE
+      alt: 'Instagram Reel 1'
+    },
+
+    // POST 4 - Image
+    {
+      type: 'image',
+      src: 'https://raw.githubusercontent.com/scm-intern7/bm-web-assets/refs/heads/main/image3.jpg',
+      link: 'https://www.instagram.com/p/DC6k8BWBZE3/?img_index=2', // PASTE INSTAGRAM POST LINK HERE
+      alt: 'Instagram Post 3'
     },
 
     // POST 5 - Image
     {
       type: 'image',
-      src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/SnapInsta.to_489145578_1108062314668838_7283280978802939278_n.jpg',
-      link: 'https://www.instagram.com/p/DCYd1gzBDsQ/', // PASTE INSTAGRAM POST LINK HERE
-      alt: 'Instagram Post 3'
+      src: 'https://raw.githubusercontent.com/scm-intern7/bm-web-assets/refs/heads/main/image4.jpg',
+      link: 'https://www.instagram.com/p/DC6k8BWBZE3/?img_index=3', // PASTE INSTAGRAM POST LINK HERE
+      alt: 'Instagram Post 4'
     },
 
     // POST 6 - Video
     {
       type: 'video',
-      src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/SnapInsta.to_AQPaX38cYK6yL9YtmbuxwpdS2CN8XEK4RPvZwtbxuGi1G11r_JWudokpdyg6gU7EFb6IVaQQEvKDT-OkPrc5cpNLm3ThjASVJjuWNOI.mp4',
-      link: 'https://www.instagram.com/reel/DCYeoPYM9HG/', // PASTE INSTAGRAM POST LINK HERE
-      alt: 'Instagram Reel 3'
+      src: 'https://raw.githubusercontent.com/scm-intern7/bm-web-assets/refs/heads/main/reel2.mp4',
+      link: 'https://www.instagram.com/p/DCjX3mtyPiZ/', // PASTE INSTAGRAM POST LINK HERE
+      alt: 'Instagram Reel 2'
     },
 
     // POST 7 - Image
     {
       type: 'image',
-      src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/SnapInsta.to_489408786_1108288477979555_2083801441289224471_n.jpg',
-      link: 'https://www.instagram.com/p/DCrKdKhhzGX/?img_index=2', // PASTE INSTAGRAM POST LINK HERE
-      alt: 'Instagram Post 4'
+      src: 'https://raw.githubusercontent.com/scm-intern7/bm-web-assets/refs/heads/main/image5.jpg',
+      link: 'https://www.instagram.com/p/DCYd1gzBDsQ/', // PASTE INSTAGRAM POST LINK HERE
+      alt: 'Instagram Post 5'
     },
 
-    // POST 8 - Video
-    {
-      type: 'video',
-      src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/SnapInsta.to_AQPejIREjYJM_5_UxtS6weKd7GEmD30CqTe6XF0l5u3c6svCm_OjF-c4iL7MVUSSKyWYjMC-IR1D-DrxolwhABUFjQ6DvEP6a0fsBd4.mp4',
-      link: 'https://www.instagram.com/reel/DC4ABhAph-Q/', // PASTE INSTAGRAM POST LINK HERE
-      alt: 'Instagram Reel 4'
-    },
-
-    // POST 9 - Image
+    // POST 8 - Image
     {
       type: 'image',
-      src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/SnapInsta.to_489439352_1108342044640865_7538575157735465045_n.jpg',
-      link: 'https://www.instagram.com/p/DC0zD0Lh0zE/', // PASTE INSTAGRAM POST LINK HERE
-      alt: 'Instagram Post 5'
+      src: 'https://raw.githubusercontent.com/scm-intern7/bm-web-assets/refs/heads/main/image6.jpg',
+      link: 'https://www.instagram.com/p/DCrKdKhhzGX/?img_index=1', // PASTE INSTAGRAM POST LINK HERE
+      alt: 'Instagram Post 6'
+    },
+
+    // POST 9 - Video
+    {
+      type: 'video',
+      src: 'https://raw.githubusercontent.com/scm-intern7/bm-web-assets/refs/heads/main/reel3.mp4',
+      link: 'https://www.instagram.com/p/DCYeoPYM9HG/', // PASTE INSTAGRAM POST LINK HERE
+      alt: 'Instagram Reel 3'
     },
 
     // POST 10 - Image
     {
       type: 'image',
-      src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/SnapInsta.to_489449824_1108288564646213_5468841401004960226_n.jpg',
-      link: 'https://www.instagram.com/p/DCrKdKhhzGX/?img_index=1', // PASTE INSTAGRAM POST LINK HERE
-      alt: 'Instagram Post 6'
+      src: 'https://raw.githubusercontent.com/scm-intern7/bm-web-assets/refs/heads/main/image7.jpg',
+      link: 'https://www.instagram.com/p/DCrKdKhhzGX/?img_index=2', // PASTE INSTAGRAM POST LINK HERE
+      alt: 'Instagram Post 7'
     },
 
     // POST 11 - Image
     {
       type: 'image',
-      src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/SnapInsta.to_489555397_1108288651312871_3601338633129120268_n.jpg',
+      src: 'https://raw.githubusercontent.com/scm-intern7/bm-web-assets/refs/heads/main/image8.jpg',
       link: 'https://www.instagram.com/p/DCrKdKhhzGX/?img_index=3', // PASTE INSTAGRAM POST LINK HERE
-      alt: 'Instagram Post 7'
+      alt: 'Instagram Post 8'
     },
 
-    // POST 12 - Image
+    // POST 12 - Video
+    {
+      type: 'video',
+      src: 'https://raw.githubusercontent.com/scm-intern7/bm-web-assets/refs/heads/main/reel4.mp4',
+      link: 'https://www.instagram.com/p/DJQw3ddM4no/', // PASTE INSTAGRAM POST LINK HERE
+      alt: 'Instagram Reel 4'
+    },
+
+    // POST 13 - Image
     {
       type: 'image',
-      src: 'https://9lhi1aprmhe38img.public.blob.vercel-storage.com/SnapInsta.to_489911847_1108475831294153_2393572046063124811_n.jpg',
-      link: 'https://www.instagram.com/p/DC6k8BWBZE3/?img_index=2', // PASTE INSTAGRAM POST LINK HERE
-      alt: 'Instagram Post 8'
+      src: 'https://raw.githubusercontent.com/scm-intern7/bm-web-assets/refs/heads/main/image9.jpg',
+      link: 'https://www.instagram.com/p/DC0zD0Lh0zE/', // PASTE INSTAGRAM POST LINK HERE
+      alt: 'Instagram Post 9'
+    },
+
+    // POST 14 - Image
+    {
+      type: 'image',
+      src: 'https://raw.githubusercontent.com/scm-intern7/bm-web-assets/refs/heads/main/image10.jpg',
+      link: 'https://www.instagram.com/p/DDb2XGJBOWk/', // PASTE INSTAGRAM POST LINK HERE
+      alt: 'Instagram Post 10'
+    },
+
+    // POST 15 - Video
+    {
+      type: 'video',
+      src: 'https://raw.githubusercontent.com/scm-intern7/bm-web-assets/refs/heads/main/reel5.mp4',
+      link: 'https://www.instagram.com/p/DHsVKvMCqjg/', // PASTE INSTAGRAM POST LINK HERE
+      alt: 'Instagram Reel 5'
     }
   ]
 
