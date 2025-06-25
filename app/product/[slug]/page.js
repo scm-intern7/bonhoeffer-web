@@ -313,60 +313,55 @@ function ProductSpecificPage() {
 
   return (
     <BgLayout>
+      {/* Mobile header spacer for fixed header on mobile/tablet */}
+      <div className="block lg:hidden" style={{ height: '4em' }} aria-hidden="true" />
+
       {/* Hero Section */}
-      <section className="relative h-[40vh] flex items-center overflow-hidden mt-5">
+      <section
+        className="relative h-[22vh] xs:h-[26vh] sm:h-[32vh] md:h-[38vh] lg:h-[44vh] min-h-[160px] sm:min-h-[200px] md:min-h-[260px] lg:min-h-[320px] flex items-center overflow-hidden mt-4 md:mt-5"
+      >
         <div className="absolute inset-0">
           <Image
             src={productImage}
             alt="Product Banner"
             fill
-            className="object-cover"
+            className="object-cover object-left md:object-center"
             priority
           />
-          <div className="absolute inset-0 bg-black/5" />
+          <div className="absolute inset-0 bg-black/10" />
         </div>
-        
-        <motion.div 
-          className="relative z-10 text-white px-0 flex items-center h-full justify-start"
+        <motion.div
+          className="relative z-10 text-white px-3 xs:px-4 sm:px-6 flex items-center h-full justify-start w-full"
           style={{ left: 0 }}
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <motion.h1 
-            className="text-4xl md:text-6xl font-bold mb-6 text-left w-full md:w-1/4 pl-6 md:pl-12"
-            style={{ maxWidth: '25%' }}
+          <motion.h1
+            className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-left w-full max-w-[90%] xs:max-w-[80%] md:max-w-[40%] pl-1 xs:pl-2 sm:pl-4 md:pl-12"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
+            style={{ maxWidth: '25%' }}
           >
             <span className="text-[#989b2e]">{productName}</span>
           </motion.h1>
-          
-          {/* <motion.p 
-            className="text-lg md:text-xl max-w-3xl mx-auto text-gray-300"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.6 }}
-          >
-            Choose from our range of professional {productName.toLowerCase()} models
-          </motion.p> */}
         </motion.div>
       </section>
 
       {/* Product Description */}
-      <section className="py-16 px-6">
-        <div className="max-w-6xl mx-auto text-center">
+      <section className="py-10 xs:py-12 md:py-16 px-3 xs:px-4 sm:px-6">
+        <div className="max-w-3xl sm:max-w-4xl md:max-w-5xl lg:max-w-6xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+            <h2 className="text-2xl xs:text-3xl md:text-4xl font-bold text-white mb-4 md:mb-8">
               Professional Grade <span className="text-[#989b2e]">{productName}</span>
             </h2>
-            <p className="text-lg text-gray-300 leading-relaxed max-w-4xl mx-auto">
+            <p className="text-base xs:text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl sm:max-w-3xl md:max-w-4xl mx-auto">
               {productDescription}
             </p>
           </motion.div>
@@ -374,53 +369,40 @@ function ProductSpecificPage() {
       </section>
 
       {/* Models Grid Section */}
-      <section className="py-20 px-6 ">
-        <div className="max-w-7xl mx-auto">
-          {/* <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+      <section className="py-10 xs:py-14 md:py-20 px-3 xs:px-4 sm:px-6">
+        <div className="max-w-2xl sm:max-w-4xl md:max-w-6xl lg:max-w-7xl mx-auto">
+          <div
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6 md:gap-8"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-              Available <span className="text-[#989b2e]">Models</span>
-            </h2>
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-              Select the perfect {productName.toLowerCase()} model for your specific needs
-            </p>
-          </motion.div> */}
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {models.map((model, index) => (
               <motion.div
                 key={model.id || model.name}
-                className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300"
+                className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 xs:p-5 md:p-6 hover:bg-white/10 transition-all duration-300 flex flex-col items-center"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: index * 0.01 }}
-                whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(152, 155, 46, 0.1)" }}
+                whileHover={{ scale: 1.02, boxShadow: '0 20px 40px rgba(152, 155, 46, 0.1)' }}
               >
-                <div className="relative h-48 mb-6 rounded-xl overflow-hidden bg-white">
+                <div className="relative w-full h-36 xs:h-40 sm:h-44 md:h-48 mb-4 xs:mb-6 rounded-xl overflow-hidden bg-white flex items-center justify-center">
                   <Image
                     src={model.image}
                     alt={model.name}
                     fill
-                    className="object-contain p-2 scale-150 transition-transform duration-300"
+                    className="object-contain p-2 transition-transform duration-300"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#989b2e] transition-colors text-center">
+                <h3 className="text-base xs:text-lg sm:text-xl font-bold text-white mb-2 xs:mb-3 group-hover:text-[#989b2e] transition-colors text-center">
                   {model.name}
                 </h3>
-                <div className="space-y-2 mb-4 text-center">
-                  <p className="text-gray-300 text-sm">
+                <div className="space-y-1 xs:space-y-2 mb-2 xs:mb-4 text-center">
+                  <p className="text-gray-300 text-xs xs:text-sm">
                     {model.feature}
                   </p>
                 </div>
-                <Link 
+                <Link
                   href={model.link || `/product/${slug}/${model.name.toLowerCase()}`}
-                  className="inline-flex items-center justify-center w-full bg-[#989b2e] hover:bg-[#8a8c20] text-white px-6 py-3 rounded-full font-medium transition-all duration-300 group-hover:scale-105 cursor-pointer"
+                  className="inline-flex items-center justify-center w-full bg-[#989b2e] hover:bg-[#8a8c20] text-white px-4 xs:px-6 py-2 xs:py-3 rounded-full font-medium transition-all duration-300 group-hover:scale-105 cursor-pointer text-sm xs:text-base mt-auto"
                 >
                   View Details
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -434,12 +416,12 @@ function ProductSpecificPage() {
       </section>
 
       {/* Back Navigation */}
-      <section className="py-10 px-6 text-center">
-        <Link 
+      <section className="py-6 xs:py-8 md:py-10 px-3 xs:px-4 sm:px-6 text-center">
+        <Link
           href="/product"
-          className="inline-flex items-center text-[#989b2e] hover:text-white transition-colors"
+          className="inline-flex items-center text-[#989b2e] hover:text-white transition-colors text-base xs:text-lg font-medium gap-1 xs:gap-2"
         >
-          <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5 mr-1 xs:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
           Back to All Products

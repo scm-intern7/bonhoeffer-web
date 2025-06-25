@@ -97,8 +97,11 @@ function ContactPage() {
 
 	return (
 		<BgLayout>
+			{/* Mobile header spacer for fixed header on mobile/tablet */}
+      		<div className="block lg:hidden" style={{ height: '4em' }} aria-hidden="true" />
+
 			{/* Hero Section */}
-			<section className="relative h-[50vh] overflow-hidden mt-5">
+			<section className="relative h-[38vh] sm:h-[44vh] md:h-[50vh] overflow-hidden mt-5">
 				<div
 					className="absolute inset-0 bg-cover bg-center"
 					style={{
@@ -106,26 +109,10 @@ function ContactPage() {
 							'linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url("https://bonhoeffermachines.com/en/public/images/contact-banner-india.webp")',
 					}}
 				/>
-
-				{/* <div className="absolute inset-0 flex items-center justify-center z-10">
-					<motion.div
-						className="text-center"
-						initial={{ opacity: 0, y: 50 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 1 }}
-					>
-						<h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-							Get In <span className="text-[#9a9c30]">Touch</span>
-						</h1>
-						<p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">
-							Ready to power your business with our industrial solutions?
-						</p>
-					</motion.div>
-				</div> */}
 			</section>
 
 			{/* Introduction Text Section */}
-			<section className="py-20 px-4">
+			<section className="py-10 sm:py-14 md:py-20 px-2 sm:px-4">
 				<div className="max-w-6xl mx-auto text-center">
 					<motion.div
 						initial={{ opacity: 0, y: 30 }}
@@ -133,48 +120,41 @@ function ContactPage() {
 						transition={{ duration: 0.8 }}
 						viewport={{ once: true }}
 					>
-						<h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+						<h2 className="text-2xl xs:text-3xl md:text-4xl font-bold text-white mb-5 sm:mb-8">
 							Let&apos;s Build Something{' '}
 							<span className="text-[#9a9c30]">Powerful Together</span>
 						</h2>
-						<p className="text-lg text-gray-300 leading-relaxed mb-6">
-							At Bonhoeffer Machines, we believe in the power of partnership.
-							Whether you&apos;re looking for cutting-edge industrial equipment,
-							technical support, or exploring new business opportunities, our team
-							is here to help you succeed.
+						<p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-4 sm:mb-6">
+							At Bonhoeffer Machines, we believe in the power of partnership. Whether you&apos;re looking for cutting-edge industrial equipment, technical support, or exploring new business opportunities, our team is here to help you succeed.
 						</p>
-						<p className="text-lg text-gray-300 leading-relaxed">
-							With decades of experience in manufacturing and exporting high-quality
-							machinery, we&apos;re committed to providing solutions that drive
-							your business forward. Connect with us today and discover how we can
-							power your next project.
+						<p className="text-base sm:text-lg text-gray-300 leading-relaxed">
+							With decades of experience in manufacturing and exporting high-quality machinery, we&apos;re committed to providing solutions that drive your business forward. Connect with us today and discover how we can power your next project.
 						</p>
 					</motion.div>
 				</div>
 			</section>
 
 			{/* Contact Form Section */}
-			<section className="py-20 px-4">
+			<section className="py-10 sm:py-14 md:py-20 px-2 sm:px-4">
 				<div className="max-w-4xl mx-auto">
 					<motion.div
 						initial={{ opacity: 0, y: 30 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.8 }}
 						viewport={{ once: true }}
-						className="text-center mb-12"
+						className="text-center mb-8 sm:mb-12"
 					>
-						<h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+						<h2 className="text-2xl xs:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">
 							Send Us a Message
 						</h2>
-						<p className="text-gray-300 text-lg">
-							Fill out the form below and we&apos;ll get back to you within 24
-							hours
+						<p className="text-gray-300 text-base sm:text-lg">
+							Fill out the form below and we&apos;ll get back to you within 24 hours
 						</p>
 					</motion.div>
 
 					<motion.form
 						onSubmit={handleSubmit}
-						className="bg-gray-800/50 backdrop-blur-lg rounded-3xl p-8 md:p-12 border border-gray-700 shadow-2xl relative"
+						className="bg-gray-800/50 backdrop-blur-lg rounded-2xl sm:rounded-3xl p-4 xs:p-6 sm:p-8 md:p-12 border border-gray-700 shadow-2xl relative"
 						initial={{ opacity: 0, scale: 0.95 }}
 						whileInView={{ opacity: 1, scale: 1 }}
 						transition={{ duration: 0.8 }}
@@ -185,7 +165,7 @@ function ContactPage() {
 						}}
 					>
 						{/* Row 1: Name, Email */}
-						<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+						<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
 							<div>
 								<label className="block text-white font-medium mb-2">
 									Full Name *
@@ -218,7 +198,7 @@ function ContactPage() {
 						</div>
 
 						{/* Row 2: Phone, Company */}
-						<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+						<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
 							<div>
 								<label className="block text-white font-medium mb-2">
 									Phone Number *
@@ -248,7 +228,7 @@ function ContactPage() {
 						</div>
 
 						{/* Row 3: Requirement, Product Interest */}
-						<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+						<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
 							<div>
 								<label className="block text-white font-medium mb-2">
 									Requirement *
@@ -288,7 +268,7 @@ function ContactPage() {
 						</div>
 
 						{/* Row 4: City, Country */}
-						<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+						<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
 							<div>
 								<label className="block text-white font-medium mb-2">City</label>
 								<input
@@ -315,7 +295,7 @@ function ContactPage() {
 						</div>
 
 						{/* Row 5: Designation (full width) */}
-						<div className="mb-6">
+						<div className="mb-4 sm:mb-6">
 							<label className="block text-white font-medium mb-2">Designation</label>
 							<input
 								type="text"
@@ -328,7 +308,7 @@ function ContactPage() {
 						</div>
 
 						{/* Row 6: Subject (full width) */}
-						<div className="mb-6">
+						<div className="mb-4 sm:mb-6">
 							<label className="block text-white font-medium mb-2">Subject *</label>
 							<input
 								type="text"
@@ -342,7 +322,7 @@ function ContactPage() {
 						</div>
 
 						{/* Row 7: Message (full width) */}
-						<div className="mb-8">
+						<div className="mb-6 sm:mb-8">
 							<label className="block text-white font-medium mb-2">Message *</label>
 							<textarea
 								name="message"
@@ -358,7 +338,7 @@ function ContactPage() {
 						<button
 							type="submit"
 							disabled={isSubmitting}
-							className="w-full py-3 bg-[#9a9c30] hover:bg-[#7a7d24] text-white font-bold rounded-lg transition-colors text-lg mt-2 disabled:opacity-60 disabled:cursor-not-allowed"
+							className="w-full py-3 bg-[#9a9c30] hover:bg-[#7a7d24] text-white font-bold rounded-lg transition-colors text-base sm:text-lg mt-2 disabled:opacity-60 disabled:cursor-not-allowed"
 						>
 							{isSubmitting ? 'Submitting...' : 'Submit'}
 						</button>
@@ -427,24 +407,24 @@ function ContactPage() {
 			</section>
 
 			{/* Contact Information Section */}
-			<section className="py-20 px-4">
+			<section className="py-10 sm:py-14 md:py-20 px-2 sm:px-4">
 				<div className="max-w-6xl mx-auto">
 					<motion.div
 						initial={{ opacity: 0, y: 30 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.8 }}
 						viewport={{ once: true }}
-						className="text-center mb-16"
+						className="text-center mb-10 sm:mb-16"
 					>
-						<h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+						<h2 className="text-2xl xs:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">
 							Reach Out to Us
 						</h2>
-						<p className="text-gray-300 text-lg">
+						<p className="text-gray-300 text-base sm:text-lg">
 							Multiple ways to connect with our team
 						</p>
 					</motion.div>
 
-					<div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 mb-8">
 						<motion.div
 							className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 text-center border border-gray-700 hover:border-[#9a9c30] transition-all duration-300 transform hover:scale-105"
 							initial={{ opacity: 0, y: 30 }}
@@ -457,7 +437,7 @@ function ContactPage() {
 							<p className="text-gray-300 mb-4">Send us an email anytime</p>
 							<a
 								href="mailto:support@bonhoeffermachines.com"
-								className="text-[#9a9c30] hover:text-[#8a8c20] font-medium"
+								className="text-[#9a9c30] hover:text-[#8a8c20] break-all font-medium"
 							>
 								support@bonhoeffermachines.com
 							</a>
@@ -503,24 +483,24 @@ function ContactPage() {
 			</section>
 
 			{/* Department Emails Section */}
-			<section className="py-20 px-4">
+			<section className="py-10 sm:py-14 md:py-20 px-2 sm:px-4">
 				<div className="max-w-6xl mx-auto">
 					<motion.div
 						initial={{ opacity: 0, y: 30 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.8 }}
 						viewport={{ once: true }}
-						className="text-center mb-16"
+						className="text-center mb-10 sm:mb-16"
 					>
-						<h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+						<h2 className="text-2xl xs:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">
 							Department Contacts
 						</h2>
-						<p className="text-gray-300 text-lg">
+						<p className="text-gray-300 text-base sm:text-lg">
 							Connect directly with the right department for faster assistance
 						</p>
 					</motion.div>
 
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
 						{departments.map((dept, index) => (
 							<motion.div
 								key={dept.name}
@@ -552,48 +532,48 @@ function ContactPage() {
 			</section>
 
 			{/* Corporate Office Address */}
-			<section className="py-20 px-4">
+			<section className="py-10 sm:py-14 md:py-20 px-2 sm:px-4">
 				<div className="max-w-4xl mx-auto">
 					<motion.div
 						initial={{ opacity: 0, y: 30 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.8 }}
 						viewport={{ once: true }}
-						className="text-center mb-12"
+						className="text-center mb-8 sm:mb-12"
 					>
-						<h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+						<h2 className="text-2xl xs:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">
 							Corporate Office
 						</h2>
-						<p className="text-gray-300 text-lg">
+						<p className="text-gray-300 text-base sm:text-lg">
 							Visit us at our headquarters
 						</p>
 					</motion.div>
 
 					<motion.div
-						className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 md:p-12 border border-gray-700 text-center"
+						className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl sm:rounded-3xl p-4 xs:p-6 sm:p-8 md:p-12 border border-gray-700 text-center"
 						initial={{ opacity: 0, scale: 0.95 }}
 						whileInView={{ opacity: 1, scale: 1 }}
 						transition={{ duration: 0.8 }}
 						viewport={{ once: true }}
 					>
-						<div className="text-5xl mb-6">🏢</div>
-						<h3 className="text-3xl font-bold text-white mb-6">
+						<div className="text-3xl sm:text-5xl mb-4 sm:mb-6">🏢</div>
+						<h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4 sm:mb-6">
 							Bonhoeffer Machines Pvt. Ltd.
 						</h3>
 
-						<div className="space-y-4 text-gray-300 text-lg">
+						<div className="space-y-2 sm:space-y-4 text-gray-300 text-base sm:text-lg">
 							<p>Plot No. 756, 2nd Floor, Udyog Vihar Phase -5</p>
 							<p>Gurugram, Haryana 122001</p>
 							<p>India</p>
 						</div>
 
-						<div className="mt-8 pt-8 border-t border-gray-700">
-							<h4 className="text-2xl font-bold text-white mb-4">
+						<div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-gray-700">
+							<h4 className="text-lg sm:text-2xl font-bold text-white mb-2 sm:mb-4">
 								Business Hours
 							</h4>
-							<div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-gray-300">
+							<div className="grid grid-cols-1 gap-2 sm:gap-4 text-gray-300">
 								<div>
-									<p className="font-medium text-lg">Monday - Friday</p>
+									<p className="font-medium text-base sm:text-lg">Monday - Friday</p>
 									<p>10:00 AM - 6:00 PM IST</p>
 								</div>
 								{/* <div>
@@ -604,15 +584,10 @@ function ContactPage() {
 						</div>
 
 						<motion.button
-							className="mt-8 bg-[#9a9c30] text-white px-8 py-3 rounded-full font-medium hover:bg-[#8a8c20] transition-all duration-300"
+							className="mt-6 sm:mt-8 bg-[#9a9c30] text-white px-6 sm:px-8 py-3 rounded-full font-medium hover:bg-[#8a8c20] transition-all duration-300 text-base sm:text-lg"
 							whileHover={{ scale: 1.05 }}
 							whileTap={{ scale: 0.95 }}
-							onClick={() =>
-								window.open(
-									'https://maps.app.goo.gl/YFtj4tyftwo91y8w6',
-									'_blank'
-								)
-							}
+							onClick={() => window.open('https://maps.app.goo.gl/YFtj4tyftwo91y8w6', '_blank')}
 						>
 							📍 View on Google Maps
 						</motion.button>

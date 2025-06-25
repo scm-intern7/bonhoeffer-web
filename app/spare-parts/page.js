@@ -414,7 +414,7 @@ function SparePage() {
     {
       id: 54,
       name: "Face Protection",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/54_protecci%C3%B3n-facial.png",
+      image: "https://bonhoeffermachines.com/en/public/parts-category/54_proteccio%CC%81n-facial.png",
       slug: "face-protection",
       category: "accessories",
       label: "Safety Equipment"
@@ -426,6 +426,9 @@ function SparePage() {
 
   return (
     <BgLayout>
+      {/* Mobile header spacer for fixed header on mobile/tablet */}
+      <div className="block lg:hidden" style={{ height: '4em' }} aria-hidden="true" />
+
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden mt-5">
         <div className="absolute inset-0">
@@ -487,14 +490,14 @@ function SparePage() {
             {sparePartsItems.map((part, index) => (
               <motion.div
                 key={part.id}
-                className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300"
+                className="group bg-white/5 backdrop-blur-sm flex flex-col items-center border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: index * 0.01 }}
                 whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(152, 155, 46, 0.1)" }}
               >
-                <div className="relative h-48 mb-6 rounded-xl overflow-hidden bg-white/5">
+                <div className="relative h-48 mb-6 rounded-xl overflow-hidden bg-white/5 w-[80%]">
                   <Image
                     src={part.image}
                     alt={part.name}

@@ -2,10 +2,10 @@
 2. make section gap - 10em
 3. all page should have title and paragraph below them 
 4. try removing cards from spare-parts page
-5. in contact page, add more fields - requirement [Buyer or Dealer] (Compulsory), designation, city, country (not compulsory).
-6. correct gaps in product section
-7. add arrows on top-right of category and remove scroller
-8. add gallery page
+5. in contact page, add more fields - requirement [Buyer or Dealer] (Compulsory), designation, city, country (not compulsory). - done
+6. correct gaps in product section - done
+7. add arrows on top-right of category and remove scroller - done
+8. add gallery page - done
 
 
 all h1 should be 48px/5xl
