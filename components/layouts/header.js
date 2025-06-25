@@ -30,8 +30,8 @@ function Header() {
     { href: "/product", label: "Products", hasDropdown: true },
     { href: "/spare-parts", label: "Spare Parts" },
     { href: "/events", label: "Fair" },
-    { href: "/gallery", label: "Gallery", hasDropdown: true },
-    { href: "/blog", label: "Success Stories" },
+    // { href: "/gallery", label: "Gallery", hasDropdown: true },
+    // { href: "/blog", label: "Success Stories" },
     { href: "/contact-us", label: "Contact Us" }
   ]
 
@@ -220,7 +220,7 @@ function Header() {
       <section
         className={`transition-all duration-700 ease-out ${isScrolled ? 'opacity-0 pointer-events-none transform -translate-y-4' : 'opacity-100 transform translate-y-0'} hidden lg:block`}
       >
-        <div className="flex flex-row items-center gap-10 text-white">
+        <div className="flex flex-row justify-around items-center gap-10 text-white">
             <div className="image pt-5">
               <Link href="/">
                 <img
@@ -331,77 +331,79 @@ function Header() {
                 </ul>
             </nav>
             
-            <div className="">
-                <button 
-                    onClick={toggleSearch}
-                    className="text-white hover:text-gray-400 transition-colors duration-200 p-2 cursor-pointer"
-                    aria-label="Open search"
-                >
-                    <svg 
-                        className="w-6 h-6" 
-                        fill="none" 
-                        stroke="currentColor" 
-                        viewBox="0 0 24 24" 
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path 
-                            strokeLinecap="round" 
-                            strokeLinejoin="round" 
-                            strokeWidth={2} 
-                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" 
-                        />
-                    </svg>
-                </button>
-            </div>
+            <div className='flex flex-row items-center gap-4'>
+              <div className="">
+                  <button 
+                      onClick={toggleSearch}
+                      className="text-white hover:text-gray-400 transition-colors duration-200 p-2 cursor-pointer"
+                      aria-label="Open search"
+                  >
+                      <svg 
+                          className="w-6 h-6" 
+                          fill="none" 
+                          stroke="currentColor" 
+                          viewBox="0 0 24 24" 
+                          xmlns="http://www.w3.org/2000/svg"
+                      >
+                          <path 
+                              strokeLinecap="round" 
+                              strokeLinejoin="round" 
+                              strokeWidth={2} 
+                              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" 
+                          />
+                      </svg>
+                  </button>
+              </div>
 
-            <div className="relative pr-0">
-                <button
-                    onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
-                    className="flex items-center space-x-2 text-white hover:text-gray-400 transition-colors duration-200 p-2 cursor-pointer"
-                    aria-label="Change language"
-                >
-                    <span className="text-xl">
-                        {languages.find(lang => lang.code === currentLanguage)?.flag}
-                    </span>
-                    <span className="text-xl font-medium">
-                        {languages.find(lang => lang.code === currentLanguage)?.name}
-                    </span>
-                    <svg 
-                        className={`w-4 h-4 transition-transform duration-200 ${isLanguageDropdownOpen ? 'rotate-180' : ''}`}
-                        fill="none" 
-                        stroke="currentColor" 
-                        viewBox="0 0 24 24"
-                    >
-                        <path 
-                            strokeLinecap="round" 
-                            strokeLinejoin="round" 
-                            strokeWidth={2} 
-                            d="M19 9l-7 7-7-7" 
-                        />
-                    </svg>
-                </button>
+              <div className="relative pr-0">
+                  <button
+                      onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
+                      className="flex items-center space-x-2 text-white hover:text-gray-400 transition-colors duration-200 p-2 cursor-pointer"
+                      aria-label="Change language"
+                  >
+                      <span className="text-xl">
+                          {languages.find(lang => lang.code === currentLanguage)?.flag}
+                      </span>
+                      <span className="text-xl font-medium">
+                          {languages.find(lang => lang.code === currentLanguage)?.name}
+                      </span>
+                      <svg 
+                          className={`w-4 h-4 transition-transform duration-200 ${isLanguageDropdownOpen ? 'rotate-180' : ''}`}
+                          fill="none" 
+                          stroke="currentColor" 
+                          viewBox="0 0 24 24"
+                      >
+                          <path 
+                              strokeLinecap="round" 
+                              strokeLinejoin="round" 
+                              strokeWidth={2} 
+                              d="M19 9l-7 7-7-7" 
+                          />
+                      </svg>
+                  </button>
 
-                {isLanguageDropdownOpen && (
-                    <div className="absolute top-full right-0 mt-1 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-lg shadow-lg border border-[#989b2e] py-2 z-50 min-w-[160px]">
-                        {languages.map((language) => (
-                            <button
-                                key={language.code}
-                                onClick={() => handleLanguageChange(language.code)}
-                                className={`w-full flex items-center space-x-3 px-4 py-2 text-left hover:bg-[#989b2e] transition-colors cursor-pointer duration-150 ${
-                                    currentLanguage === language.code ? 'bg-[#989b2e] text-white font-medium' : 'text-gray-100'
-                                }`}
-                            >
-                                <span className="text-xl">{language.flag}</span>
-                                <span className="text-lg">{language.name}</span>
-                                {currentLanguage === language.code && (
-                                    <svg className="w-4 h-4 ml-auto text-white" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                                    </svg>
-                                )}
-                            </button>
-                        ))}
-                    </div>
-                )}
+                  {isLanguageDropdownOpen && (
+                      <div className="absolute top-full right-0 mt-1 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-lg shadow-lg border border-[#989b2e] py-2 z-50 min-w-[160px]">
+                          {languages.map((language) => (
+                              <button
+                                  key={language.code}
+                                  onClick={() => handleLanguageChange(language.code)}
+                                  className={`w-full flex items-center space-x-3 px-4 py-2 text-left hover:bg-[#989b2e] transition-colors cursor-pointer duration-150 ${
+                                      currentLanguage === language.code ? 'bg-[#989b2e] text-white font-medium' : 'text-gray-100'
+                                  }`}
+                              >
+                                  <span className="text-xl">{language.flag}</span>
+                                  <span className="text-lg">{language.name}</span>
+                                  {currentLanguage === language.code && (
+                                      <svg className="w-4 h-4 ml-auto text-white" fill="currentColor" viewBox="0 0 20 20">
+                                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                                      </svg>
+                                  )}
+                              </button>
+                          ))}
+                      </div>
+                  )}
+              </div>
             </div>
         </div>
         
