@@ -2,6 +2,8 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useRouter } from 'next/navigation';
+import '../../app/globals.css';
 
 function Header() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -17,6 +19,86 @@ function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   // Mobile search state
   const [mobileSearch, setMobileSearch] = useState('');
+
+  const router = useRouter();
+
+  // --- Product & Spare Part Data (for search) ---
+  // These arrays are auto-generated from your product/[slug]/page.js and workspace context
+  const allProducts = [
+    { name: 'Gasoline Water Pump', slug: 'gasoline-water-pump', type: 'product', link: '/product/gasoline-water-pump' },
+    { name: 'Diesel Water Pump', slug: 'diesel-water-pump', type: 'product', link: '/product/diesel-water-pump' },
+    { name: 'Gasoline Engine', slug: 'gasoline-engine', type: 'product', link: '/product/gasoline-engine' },
+    { name: 'Diesel Engine', slug: 'diesel-engine', type: 'product', link: '/product/diesel-engine' },
+    { name: 'Brush Cutter', slug: 'brush-cutter', type: 'product', link: '/product/brush-cutter' },
+    { name: 'Backpack Brush Cutter', slug: 'backpack-brush-cutter', type: 'product', link: '/product/backpack-brush-cutter' },
+    { name: 'Chainsaw', slug: 'chainsaw', type: 'product', link: '/product/chainsaw' },
+    { name: 'Multi Tool', slug: 'multi-tool', type: 'product', link: '/product/multi-tool' },
+    { name: 'Gasoline Generator', slug: 'gasoline-generator', type: 'product', link: '/product/gasoline-generator' },
+    { name: 'Gasoline Inverter', slug: 'gasoline-inverter', type: 'product', link: '/product/gasoline-inverter' },
+    { name: 'Earth Auger', slug: 'earth-auger', type: 'product', link: '/product/earth-auger' },
+    { name: 'Water Pump 2-Stroke', slug: 'water-pump-2-stroke', type: 'product', link: '/product/water-pump-2-stroke' },
+    { name: 'Engine 2-Stroke', slug: 'engine-2-stroke', type: 'product', link: '/product/engine-2-stroke' },
+    { name: 'Lawn Mower', slug: 'lawn-mover', type: 'product', link: '/product/lawn-mover' },
+    { name: 'Blower', slug: 'blower', type: 'product', link: '/product/blower' },
+    { name: 'Diesel Generator', slug: 'diesel-generator', type: 'product', link: '/product/diesel-generator' },
+    { name: 'Electric Pressure Washer', slug: 'electric-pressure-washer', type: 'product', link: '/product/electric-pressure-washer' },
+    { name: 'Electric Lawn Mower', slug: 'electric', type: 'product', link: '/product/electric' },
+    { name: 'Solar Panel', slug: 'solar-panel', type: 'product', link: '/product/solar-panel' },
+    { name: 'Submersible Pump', slug: 'submersible-pump', type: 'product', link: '/product/submersible-pump' },
+    { name: 'Tiller', slug: 'tiller', type: 'product', link: '/product/tiller' },
+    // Models (flattened, from product/[slug]/page.js)
+    { name: 'BON-P-WP1.0-31', type: 'model', link: '/product/gasoline-water-pump/BON-P-WP1.0-31' },
+    { name: 'BON-P-WP1.5-79', type: 'model', link: '/product/gasoline-water-pump/BON-P-WP1.5-79' },
+    { name: 'BON-P-WP2.0-149', type: 'model', link: '/product/gasoline-water-pump/BON-P-WP2.0-149' },
+    { name: 'BON-P-WP2.0-196', type: 'model', link: '/product/gasoline-water-pump/BON-P-WP2.0-196' },
+    { name: 'BON-P-WP3.0-196', type: 'model', link: '/product/gasoline-water-pump/BON-P-WP3.0-196' },
+    { name: 'BON-P-WP4.0-272', type: 'model', link: '/product/gasoline-water-pump/BON-P-WP4.0-272' },
+    { name: 'BON-P-WP1.5-224HL', type: 'model', link: '/product/gasoline-water-pump/BON-P-WP1.5-224HL' },
+    { name: 'BON-P-WP6.0-420', type: 'model', link: '/product/gasoline-water-pump/BON-P-WP6.0-420' },
+    { name: 'BON-P-WP2.0-224HL', type: 'model', link: '/product/gasoline-water-pump/BON-P-WP2.0-224HL' },
+    { name: 'BON-P-WP2.0-420HL', type: 'model', link: '/product/gasoline-water-pump/BON-P-WP2.0-420HL' },
+    { name: 'BON-P-WP3.0-420HL', type: 'model', link: '/product/gasoline-water-pump/BON-P-WP3.0-420HL' },
+    { name: 'BON-P-WP2.0-196CH', type: 'model', link: '/product/gasoline-water-pump/BON-P-WP2.0-196CH' },
+    { name: 'BON-P-WP2.0-196TR', type: 'model', link: '/product/gasoline-water-pump/BON-P-WP2.0-196TR' },
+    { name: 'BON-P-WP3.0-196TR', type: 'model', link: '/product/gasoline-water-pump/BON-P-WP3.0-196TR' },
+    { name: 'BON-P-GE-3.0HP', type: 'model', link: '/product/gasoline-engine/BON-P-GE-3.0HP' },
+    { name: 'BON-P-GE-3.5HP', type: 'model', link: '/product/gasoline-engine/BON-P-GE-3.5HP' },
+    { name: 'BON-P-GE-4.0HP', type: 'model', link: '/product/gasoline-engine/BON-P-GE-4.0HP' },
+    { name: 'BON-P-GE-5.0HP', type: 'model', link: '/product/gasoline-engine/BON-P-GE-5.0HP' },
+    { name: 'BON-P-GE-7.0HP', type: 'model', link: '/product/gasoline-engine/BON-P-GE-7.0HP' },
+    { name: 'BON-P-GE-9.0HP', type: 'model', link: '/product/gasoline-engine/BON-P-GE-9.0HP' },
+    { name: 'BON-P-GE-13.0HP', type: 'model', link: '/product/gasoline-engine/BON-P-GE-13.0HP' },
+    { name: 'BON-P-GE-14.0HP', type: 'model', link: '/product/gasoline-engine/BON-P-GE-14.0HP' },
+    { name: 'BON-P-GE-16.0HP', type: 'model', link: '/product/gasoline-engine/BON-P-GE-16.0HP' },
+    { name: 'BON-P-GE-24.0HP', type: 'model', link: '/product/gasoline-engine/BON-P-GE-24.0HP' },
+    { name: 'BON-P-GE-34.0HP', type: 'model', link: '/product/gasoline-engine/BON-P-GE-34.0HP' },
+    // ...add more models from your product/[slug]/page.js as needed
+  ];
+  const allSpareParts = [
+    { name: 'Carburetor', slug: 'carburetor', type: 'spare-part', link: '/spare-parts/carburetor' },
+    { name: 'Air Filter', slug: 'air-filter', type: 'spare-part', link: '/spare-parts/air-filter' },
+    { name: 'Fuel Tank', slug: 'fuel-tank', type: 'spare-part', link: '/spare-parts/fuel-tank' },
+    { name: 'Ignition Coil', slug: 'ignition-coil', type: 'spare-part', link: '/spare-parts/ignition-coil' },
+    { name: 'Recoil Starter', slug: 'recoil-starter', type: 'spare-part', link: '/spare-parts/recoil-starter' },
+    { name: 'Spark Plug', slug: 'spark-plug', type: 'spare-part', link: '/spare-parts/spark-plug' },
+    { name: 'Blade', slug: 'blade', type: 'spare-part', link: '/spare-parts/blade' },
+    { name: 'Oil Filter', slug: 'oil-filter', type: 'spare-part', link: '/spare-parts/oil-filter' },
+    { name: 'Starter Rope', slug: 'starter-rope', type: 'spare-part', link: '/spare-parts/starter-rope' },
+    { name: 'Gasket Set', slug: 'gasket-set', type: 'spare-part', link: '/spare-parts/gasket-set' },
+    { name: 'Piston Kit', slug: 'piston-kit', type: 'spare-part', link: '/spare-parts/piston-kit' },
+    { name: 'Cylinder', slug: 'cylinder', type: 'spare-part', link: '/spare-parts/cylinder' },
+    { name: 'Crankshaft', slug: 'crankshaft', type: 'spare-part', link: '/spare-parts/crankshaft' },
+    { name: 'Valve', slug: 'valve', type: 'spare-part', link: '/spare-parts/valve' },
+    { name: 'Fuel Filter', slug: 'fuel-filter', type: 'spare-part', link: '/spare-parts/fuel-filter' },
+    { name: 'Handle', slug: 'handle', type: 'spare-part', link: '/spare-parts/handle' },
+    { name: 'Switch', slug: 'switch', type: 'spare-part', link: '/spare-parts/switch' },
+    { name: 'Clutch', slug: 'clutch', type: 'spare-part', link: '/spare-parts/clutch' },
+    { name: 'Muffler', slug: 'muffler', type: 'spare-part', link: '/spare-parts/muffler' },
+    { name: 'Flywheel', slug: 'flywheel', type: 'spare-part', link: '/spare-parts/flywheel' },
+    // ...add more as needed
+  ];
+  const [searchResults, setSearchResults] = useState([]);
+  const [showSearchResults, setShowSearchResults] = useState(false);
 
   const languages = [
     { code: 'en', name: 'English' },
@@ -95,15 +177,42 @@ function Header() {
     };
   }, [productDropdownTimeout, galleryDropdownTimeout]);
 
-  const handleSearchSubmit = (e) => {
-    e.preventDefault();
-    if (searchQuery.trim()) {
-      // Implement your search logic here
-      console.log('Searching for:', searchQuery);
-      // You can redirect to a search results page or filter content
-      // window.location.href = `/search?q=${encodeURIComponent(searchQuery)}`;
+  function fuzzyMatch(str, query) {
+    if (!str || !query) return false;
+    return str.toLowerCase().includes(query.toLowerCase());
+  }
+
+  function handleSearchInputChange(e) {
+    const value = e.target.value;
+    setSearchQuery(value);
+    if (value.trim().length === 0) {
+      setSearchResults([]);
+      setShowSearchResults(false);
+      return;
     }
-  };
+    // Search both products and spare parts
+    const results = [
+      ...allProducts.filter(p => fuzzyMatch(p.name, value)),
+      ...allSpareParts.filter(s => fuzzyMatch(s.name, value)),
+    ];
+    setSearchResults(results);
+    setShowSearchResults(true);
+  }
+
+  function handleSearchSubmit(e) {
+    e.preventDefault();
+    if (searchResults.length === 1) {
+      router.push(searchResults[0].link);
+      setIsSearchOpen(false);
+      setShowSearchResults(false);
+      setSearchQuery('');
+    } else if (searchResults.length > 1) {
+      setShowSearchResults(true);
+    } else {
+      // Optionally show 'no results found'
+      setShowSearchResults(true);
+    }
+  }
 
   const detectLanguageByLocation = () => {
     if ("geolocation" in navigator) {
@@ -408,21 +517,22 @@ function Header() {
         </div>
         
         {isSearchOpen && (
-            <div className="fixed inset-0 bg-black z-50 flex items-start justify-center pt-20">
-                <div className="bg-white backdrop-blur-sm rounded-lg shadow-xl w-full max-w-5xl mx-4">
-                    <form onSubmit={handleSearchSubmit} className="p-6">
-                        <div className="flex items-center space-x-4">
+            <div className="fixed inset-0 bg-black/70 z-50 flex items-start justify-center pt-24 px-2">
+                <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 border border-[#989b2e] shadow-2xl rounded-2xl w-full max-w-2xl mx-auto relative">
+                    <form onSubmit={handleSearchSubmit} className="p-0">
+                        <div className="flex items-center space-x-4 px-6 py-6">
                             <div className="flex-1 relative">
                                 <input
                                     id="search-input"
                                     type="text"
                                     value={searchQuery}
-                                    onChange={(e) => setSearchQuery(e.target.value)}
-                                    placeholder="Search anything..."
-                                    className="w-full px-4 py-3 text-black text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#989b2e] focus:border-transparent"
+                                    onChange={handleSearchInputChange}
+                                    placeholder="Search for products, models, or spare parts..."
+                                    className="w-full px-6 py-3 text-white text-lg bg-gray-900 border border-[#989b2e] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#989b2e] focus:border-transparent placeholder-gray-400"
+                                    autoComplete="off"
                                 />
                                 <svg 
-                                    className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" 
+                                    className="absolute right-2 top-1/2 transform -translate-y-1/2 w-5 h-5 text-[#989b2e]" 
                                     fill="none" 
                                     stroke="currentColor" 
                                     viewBox="0 0 24 24"
@@ -437,14 +547,14 @@ function Header() {
                             </div>
                             <button
                                 type="submit"
-                                className="px-6 py-3 bg-[#989b2e] text-white rounded-lg hover:bg-[#7a7d24] transition-colors duration-200 font-semibold cursor-pointer"
+                                className="px-6 py-3 bg-[#989b2e] text-white rounded-xl hover:bg-[#7a7d24] transition-colors duration-200 font-semibold cursor-pointer shadow"
                             >
                                 Search
                             </button>
                             <button
                                 type="button"
                                 onClick={toggleSearch}
-                                className="p-3 text-gray-400 hover:text-gray-600 transition-colors duration-200 cursor-pointer"
+                                className="p-3 text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer"
                                 aria-label="Close search"
                             >
                                 <svg 
@@ -462,11 +572,34 @@ function Header() {
                                 </svg>
                             </button>
                         </div>
-                        
-                        {searchQuery && (
-                            <div className="mt-4 text-sm text-gray-600">
-                                Press Enter to search for &ldquo;{searchQuery}&rdquo;
-                            </div>
+                        {showSearchResults && (
+                          <div className="mt-2 pb-6 px-6 max-h-80 overflow-y-auto custom-scrollbar">
+                            {/*
+                              To use a styled scrollbar instead of hiding, replace 'scrollbar-hide' with 'custom-scrollbar' and define the class in your global CSS.
+                              Example for gold/dark theme:
+                              .custom-scrollbar::-webkit-scrollbar { width: 6px; background: #232323; }
+                              .custom-scrollbar::-webkit-scrollbar-thumb { background: #989b2e; border-radius: 8px; }
+                              .custom-scrollbar { scrollbar-width: thin; scrollbar-color: #989b2e #232323; }
+                            */}
+                            {searchResults.length > 0 ? (
+                              <ul className="divide-y divide-gray-800">
+                                {searchResults.map((result, idx) => (
+                                  <li key={result.link + idx}>
+                                    <Link
+                                      href={result.link}
+                                      className="block px-3 py-4 hover:bg-[#989b2e] hover:text-white rounded-xl transition-colors text-white/90 text-lg font-medium"
+                                      onClick={() => { setIsSearchOpen(false); setShowSearchResults(false); setSearchQuery(''); }}
+                                    >
+                                      <span className="font-semibold text-white">{result.name}</span>
+                                      <span className="ml-2 text-xs text-[#989b2e]">({result.type.replace('-', ' ')})</span>
+                                    </Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            ) : (
+                              <div className="text-gray-400 px-3 py-4 text-center">No results found.</div>
+                            )}
+                          </div>
                         )}
                     </form>
                 </div>
@@ -747,6 +880,24 @@ function Header() {
           </motion.nav>
         )}
       </AnimatePresence>
+
+      <style jsx global>{`
+        .custom-scrollbar {
+          scrollbar-width: thin;
+          scrollbar-color: #989b2e #23272a;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 8px;
+          background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: linear-gradient(135deg, #989b2e 60%, #23272a 100%);
+          border-radius: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: transparent;
+        }
+      `}</style>
     </>
   )
 }
