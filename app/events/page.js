@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import Header from '@/components/layouts/header';
 import Image from 'next/image';
+import BgLayout from '@/components/templates/bgLayout';
 
 // Organized fair data based on the images in /fair folder
 const fairCategories = [
@@ -172,15 +173,12 @@ export default function EventsPage() {
 	const router = useRouter();
 
 	return (
-		<div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 min-h-screen">
-			{/* Global Background Overlay */}
-			<div className="fixed inset-0 bg-gradient-to-b from-black via-transparent to-black pointer-events-none z-0" />
-			<div className="relative z-20">
-				<Header />
-			</div>
+		<BgLayout>
+			{/* Mobile header spacer for fixed header on mobile/tablet */}
+      		<div className="block lg:hidden" style={{ height: '4em' }} aria-hidden="true" />
 
 			{/* Hero Image */}
-			<div className="relative w-full h-[40vw] min-h-[220px] max-h-[400px] mt-5">
+			<div className="relative w-full h-[40vw] min-h-[180px] max-h-[320px] sm:min-h-[220px] sm:max-h-[400px] mt-5">
 				<Image
 					src="https://bonhoeffermachines.com/en/public/images/event-banner-india.webp"
 					alt="Events Hero Banner"
@@ -193,13 +191,13 @@ export default function EventsPage() {
 			<div className="relative z-10 pt-0">
 				{/* Header Section */}
 				<motion.div
-					className="text-center mb-16 px-6 pt-12"
+					className="text-center mb-10 sm:mb-16 px-4 sm:px-6 pt-8 sm:pt-12"
 					initial={{ opacity: 0, y: 50 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8 }}
 				>
 					<motion.h1
-						className="text-5xl md:text-7xl font-bold text-white mb-4"
+						className="text-3xl xs:text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-2 sm:mb-4"
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ duration: 0.8, delay: 0.2 }}
@@ -207,7 +205,7 @@ export default function EventsPage() {
 						Fairs Gallery
 					</motion.h1>
 					<motion.p
-						className="text-lg text-gray-300 max-w-3xl mx-auto"
+						className="text-base sm:text-lg text-gray-300 max-w-2xl sm:max-w-3xl mx-auto"
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ duration: 0.8, delay: 0.4 }}
@@ -217,8 +215,8 @@ export default function EventsPage() {
 				</motion.div>
 
 				{/* Events Grid */}
-				<div className="max-w-7xl mx-auto px-6 pb-20">
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-14 sm:pb-20">
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-6 md:gap-x-8">
 						{fairCategories.map((fair, index) => (
 							<motion.div
 								key={fair.slug}
@@ -231,7 +229,7 @@ export default function EventsPage() {
 							>
 								<div className="relative overflow-hidden rounded-2xl shadow-2xl bg-gray-800">
 									{/* Cover Image */}
-									<div className="relative h-64 overflow-hidden">
+									<div className="relative w-full aspect-[4/3] overflow-hidden">
 										<img
 											src={fair.coverImage}
 											alt={fair.name}
@@ -243,17 +241,17 @@ export default function EventsPage() {
 
 										{/* Fair Name Overlay */}
 										<div className="absolute bottom-4 left-4 right-4">
-											<h3 className="text-white text-xl md:text-2xl font-bold mb-1">
+											<h3 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-1 truncate">
 												{fair.location}
 											</h3>
-											<p className="text-gray-300 text-sm">
+											<p className="text-gray-300 text-xs sm:text-sm md:text-base">
 												{fair.imageCount} Photos
 											</p>
 										</div>
 
 										{/* Hover Effect Icon */}
 										<motion.div
-											className="absolute top-4 right-4 bg-[#989b2e] p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+											className="absolute top-4 right-4 bg-[#989b2e] p-2 sm:p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
 											whileHover={{ scale: 1.1 }}
 										>
 											<svg width="20" height="20" viewBox="0 0 24 24" fill="white">
@@ -263,19 +261,19 @@ export default function EventsPage() {
 									</div>
 
 									{/* Card Content */}
-									<div className="p-6 bg-white/5 backdrop-blur-sm border-t border-white/10">
-										<div className="flex items-center justify-between">
+									<div className="p-4 sm:p-6 bg-white/5 backdrop-blur-sm border-t border-white/10">
+										<div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-y-2 sm:gap-y-0">
 											<div>
-												<h4 className="text-white text-lg font-semibold mb-1">
+												<h4 className="text-white text-base sm:text-lg font-semibold mb-1">
 													{fair.name}
 												</h4>
-												<p className="text-gray-400 text-sm">
+												<p className="text-gray-400 text-xs sm:text-sm">
 													Industrial Machinery Exhibition
 												</p>
 											</div>
 
-											<div className="text-right">
-												<div className="bg-[#989b2e] text-white px-3 py-1 rounded-full text-xs font-semibold">
+											<div className="text-right w-full sm:w-auto">
+												<div className="bg-[#989b2e] text-white px-3 py-1 rounded-full text-xs sm:text-xs md:text-sm font-semibold w-max mx-auto sm:mx-0">
 													View Gallery
 												</div>
 											</div>
@@ -287,6 +285,6 @@ export default function EventsPage() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</BgLayout>
 	);
 }

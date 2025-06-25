@@ -3,10 +3,10 @@ import React, { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 
 // FloatingArrow component for horizontal arrows
-const FloatingArrow = ({ direction, className }) => {
+const FloatingArrow = ({ direction, className = "", sizeClass = "w-20 h-2" }) => {
   return (
     <motion.div
-      className={`absolute ${className}`}
+      className={`relative overflow-hidden ${className}`}
       initial={{ opacity: 0, x: direction === 'right' ? -20 : 20 }}
       animate={{ 
         opacity: [0.5, 1, 0.5],
@@ -18,7 +18,12 @@ const FloatingArrow = ({ direction, className }) => {
         ease: "easeInOut"
       }}
     >
-      <svg width="80" height="8" viewBox="0 0 80 8" fill="none">
+      <svg
+        width="40" height="8"
+        className={`min-w-0 max-w-[32px] max-h-[8px] sm:max-w-[48px] sm:max-h-[10px] md:max-w-[64px] md:max-h-[12px] lg:max-w-[80px] lg:max-h-[16px] ${sizeClass}`}
+        viewBox="0 0 80 8" fill="none"
+        preserveAspectRatio="xMidYMid meet"
+      >
         <path
           d={direction === 'right' 
             ? "M0 4L6 0.5V2.5H79V5.5H6V7.5L0 4Z"
@@ -35,10 +40,23 @@ const FloatingArrow = ({ direction, className }) => {
 const SocialSlider = ({ posts }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
+  const [postsPerView, setPostsPerView] = useState(3)
   const intervalRef = useRef(null)
   const sliderRef = useRef(null)
 
-  const postsPerView = 3
+  // Responsive postsPerView
+  useEffect(() => {
+    function handleResize() {
+      const width = window.innerWidth;
+      if (width < 640) setPostsPerView(1); // mobile
+      else if (width < 900) setPostsPerView(2); // small tablet
+      else setPostsPerView(3); // desktop
+    }
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const maxIndex = Math.max(0, posts.length - postsPerView)
 
   // Auto-scroll functionality
@@ -50,6 +68,11 @@ const SocialSlider = ({ posts }) => {
     }
     return () => clearInterval(intervalRef.current)
   }, [isAutoPlaying, maxIndex, posts.length, postsPerView])
+
+  useEffect(() => {
+    // Reset currentIndex if postsPerView changes and currentIndex is out of range
+    if (currentIndex > maxIndex) setCurrentIndex(0);
+  }, [postsPerView, maxIndex]);
 
   const nextSlide = () => {
     setCurrentIndex(prev => prev >= maxIndex ? 0 : prev + 1)
@@ -88,28 +111,6 @@ const SocialSlider = ({ posts }) => {
 
   return (
     <div className="relative w-full max-w-7xl mx-auto">
-      {/* Navigation Arrows */}
-      {posts.length > postsPerView && (
-        <>
-          <button
-            onClick={prevSlide}
-            className="absolute left-[-45] top-1/2 transform -translate-y-1/2 z-10 bg-[#989b2e] hover:bg-[#7a7d24] text-white p-3 rounded-full transition-colors duration-300 shadow-lg"
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-            </svg>
-          </button>
-          <button
-            onClick={nextSlide}
-            className="absolute right-[-45] top-1/2 transform -translate-y-1/2 z-10 bg-[#989b2e] hover:bg-[#7a7d24] text-white p-3 rounded-full transition-colors duration-300 shadow-lg"
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
-            </svg>
-          </button>
-        </>
-      )}
-
       {/* Slider Container */}
       <div className="overflow-hidden rounded-2xl">
         <motion.div
@@ -197,21 +198,73 @@ const SocialSlider = ({ posts }) => {
 
       {/* Progress Indicators */}
       {posts.length > postsPerView && (
-        <div className="flex justify-center mt-6 space-x-2">
-          {Array.from({ length: maxIndex + 1 }, (_, index) => (
-            <button
-              key={index}
-              onClick={() => {
-                setCurrentIndex(index)
-                setIsAutoPlaying(false)
-                setTimeout(() => setIsAutoPlaying(true), 8000)
-              }}
-              className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-                index === currentIndex ? 'bg-[#989b2e]' : 'bg-gray-300'
-              }`}
-            />
-          ))}
+        <div className="flex flex-col items-center mt-6 space-y-3">
+          {/* Progress bar only when arrows are at sides (desktop) */}
+          {postsPerView === 3 && (
+            <div className="flex justify-center space-x-2">
+              {Array.from({ length: maxIndex + 1 }, (_, index) => (
+                <button
+                  key={index}
+                  onClick={() => {
+                    setCurrentIndex(index)
+                    setIsAutoPlaying(false)
+                    setTimeout(() => setIsAutoPlaying(true), 8000)
+                  }}
+                  className={`w-3 h-3 rounded-full transition-colors duration-300 ${
+                    index === currentIndex ? 'bg-[#989b2e]' : 'bg-gray-300'
+                  }`}
+                />
+              ))}
+            </div>
+          )}
+          {/* Bottom center arrows for < 3 postsPerView */}
+          {postsPerView < 3 && (
+            <div className="flex justify-center space-x-6 mt-2">
+              <button
+                onClick={prevSlide}
+                className="bg-[#989b2e] hover:bg-[#7a7d24] text-white p-3 rounded-full transition-colors duration-300 shadow-lg"
+                aria-label="Previous slide"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                </svg>
+              </button>
+              <button
+                onClick={nextSlide}
+                className="bg-[#989b2e] hover:bg-[#7a7d24] text-white p-3 rounded-full transition-colors duration-300 shadow-lg"
+                aria-label="Next slide"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+                </svg>
+              </button>
+            </div>
+          )}
         </div>
+      )}
+
+      {/* Side arrows for desktop (postsPerView === 3) */}
+      {posts.length > postsPerView && postsPerView === 3 && (
+        <>
+          <button
+            onClick={prevSlide}
+            className="absolute left-[-45px] top-1/2 transform -translate-y-1/2 z-10 bg-[#989b2e] hover:bg-[#7a7d24] text-white p-3 rounded-full transition-colors duration-300 shadow-lg hidden md:block"
+            aria-label="Previous slide"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+            </svg>
+          </button>
+          <button
+            onClick={nextSlide}
+            className="absolute right-[-45px] top-1/2 transform -translate-y-1/2 z-10 bg-[#989b2e] hover:bg-[#7a7d24] text-white p-3 rounded-full transition-colors duration-300 shadow-lg hidden md:block"
+            aria-label="Next slide"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+            </svg>
+          </button>
+        </>
       )}
     </div>
   )
@@ -417,27 +470,33 @@ function Social() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="relative flex items-center justify-center mb-16"
         >
-          {/* Left Arrow */}
-          <FloatingArrow 
-            direction="left" 
-            className="right-full -mr-70 top-1/2 transform -translate-y-1/2" 
-          />
-          
-          {/* Main Title */}
-          <motion.h1
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white"
-          >
-            Digital Platforms
-          </motion.h1>
-          
-          {/* Right Arrow */}
-          <FloatingArrow 
-            direction="right" 
-            className="left-full -ml-70 top-1/2 transform -translate-y-1/2" 
-          />
+          <div className="relative flex items-center justify-center">
+            {/* Left Arrow */}
+            <div className="absolute left-0 -translate-x-full items-center sm:flex hidden" style={{ marginRight: '10px', maxWidth: 'calc(100vw/8)' }}>
+              <FloatingArrow 
+                direction="left" 
+                className="static"
+                sizeClass="w-8 h-2 sm:w-12 sm:h-2 md:w-16 md:h-2 lg:w-20 lg:h-2"
+              />
+            </div>
+            {/* Main Title */}
+            <motion.h1
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white px-6"
+            >
+              Digital Platforms
+            </motion.h1>
+            {/* Right Arrow */}
+            <div className="absolute right-0 translate-x-full items-center sm:flex hidden" style={{ marginLeft: '10px', maxWidth: 'calc(100vw/8)' }}>
+              <FloatingArrow 
+                direction="right" 
+                className="static"
+                sizeClass="w-8 h-2 sm:w-12 sm:h-2 md:w-16 md:h-2 lg:w-20 lg:h-2"
+              />
+            </div>
+          </div>
         </motion.div>
 
         {/* Social Media Carousel */}

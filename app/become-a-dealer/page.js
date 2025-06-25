@@ -48,6 +48,9 @@ function DealerPage() {
 
   return (
     <BgLayout>
+      {/* Mobile header spacer for fixed header on mobile/tablet */}
+      <div className="block lg:hidden" style={{ height: '4em' }} aria-hidden="true" />
+
       {/* Hero Image */}
       <div className="relative w-full h-[40vw] min-h-[220px] max-h-[400px] mt-5">
         <Image
@@ -160,7 +163,7 @@ function DealerPage() {
                     <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-4">
                       We will get back to you as soon as possible with a response. In the meantime, please feel free to explore and know more about Bonhoeffer along with its product offerings across the various segments.
                     </p>
-                    <p className="text-md text-gray-400 max-w-xl mx-auto mb-2">
+                    <p className="text-md text-gray-400 max-w-xl mx-auto mb-2 break-all">
                       You can also reach out to us at <a href="mailto:support@bonhoeffermachines.com" className="underline text-[#989b2e]">support@bonhoeffermachines.com</a> for any urgent queries or requirement of additional information.
                     </p>
                   </motion.div>

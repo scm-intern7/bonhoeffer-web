@@ -71,6 +71,9 @@ function CertificationPage() {
 
   return (
     <BgLayout>
+      {/* Mobile header spacer for fixed header on mobile/tablet */}
+      <div className="block lg:hidden" style={{ height: '4em' }} aria-hidden="true" />
+
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 " />
@@ -136,63 +139,33 @@ function CertificationPage() {
       </section> */}
 
       {/* Certifications Grid */}
-      <section className="py-10 px-6">
+      <section className="py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          {/* <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#989b2e]">
-              Official Certifications
-            </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Click on any certificate to view detailed information and verification
-            </p>
-          </motion.div> */}
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-6 md:gap-x-8">
             {certifications.map((cert, index) => (
               <motion.div
                 key={cert.id}
-                className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 cursor-pointer"
+                className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 sm:p-6 hover:bg-white/10 transition-all duration-300 cursor-pointer"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: index * 0.01 }}
-                whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(152, 155, 46, 0.1)" }}
+                whileHover={{ scale: 1.02, boxShadow: '0 20px 40px rgba(152, 155, 46, 0.1)' }}
                 onClick={() => openModal(cert)}
               >
-                <div className="relative h-[50vh] mb-6 rounded-xl overflow-hidden bg-white/10">
+                <div className="relative w-full aspect-[3/4] mb-6 rounded-xl overflow-hidden bg-white/10">
                   <Image
                     src={cert.image}
                     alt={cert.name}
                     fill
-                    className="object-top group-hover:scale-105 transition-transform duration-300"
+                    className="object-contain group-hover:scale-105 transition-transform duration-300"
                   />
-                  {/* <div className="absolute top-4 right-4">
-                    <div className="bg-[#989b2e] text-white px-3 py-1 rounded-full text-sm font-medium">
-                      Valid until {cert.validUntil}
-                    </div>
-                  </div> */}
                 </div>
-                
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#989b2e] transition-colors">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 group-hover:text-[#989b2e] transition-colors">
                   {cert.name}
                 </h3>
-                
-                {/* <p className="text-gray-400 text-sm mb-2 font-medium">
-                  {cert.authority}
-                </p> */}
-                
-                {/* <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                  {cert.description}
-                </p> */}
-                
                 <div className="flex items-center justify-between">
-                  <span className="text-[#989b2e] text-sm font-medium">
+                  <span className="text-[#989b2e] text-xs sm:text-sm font-medium">
                     {cert.authority}
                   </span>
                   <motion.div
@@ -211,24 +184,23 @@ function CertificationPage() {
       </section>
 
       {/* Why Certifications Matter */}
-      <section className="py-20 px-6 ">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="max-w-6xl mx-auto">
           <motion.div
-            className="text-center mb-16"
+            className="text-center mb-10 sm:mb-16"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#989b2e]">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
               Why Our Certifications Matter
             </h2>
-            <p className="text-xl text-gray-300 max-w-4xl mx-auto">
+            <p className="text-base sm:text-xl text-gray-300 max-w-2xl sm:max-w-4xl mx-auto">
               Every certification represents our commitment to excellence and your assurance of quality
             </p>
           </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-6 md:gap-x-8">
             {[
               {
                 icon: "🏛️",
@@ -271,24 +243,24 @@ function CertificationPage() {
       {/* Certificate Modal */}
       {selectedCert && (
         <motion.div
-          className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-2 sm:p-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={closeModal}
         >
           <motion.div
-            className="bg-gray-900 border border-gray-700 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+            className="bg-gray-900 border border-gray-700 rounded-2xl w-full max-w-2xl sm:max-w-3xl md:max-w-4xl max-h-[90vh] overflow-y-auto mt-16 lg:mt-0"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.8, opacity: 0 }}
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="p-8">
-              <div className="flex justify-between items-start mb-6">
+            <div className="p-4 sm:p-8">
+              <div className="flex flex-col sm:flex-row justify-between items-start mb-6 gap-y-4 sm:gap-y-0">
                 <div>
-                  <h2 className="text-3xl font-bold text-white mb-2">{selectedCert.name}</h2>
-                  <p className="text-[#989b2e] font-medium">{selectedCert.authority}</p>
+                  <h2 className="text-xl sm:text-3xl font-bold text-white mb-2">{selectedCert.name}</h2>
+                  <p className="text-[#989b2e] font-medium text-sm sm:text-base">{selectedCert.authority}</p>
                 </div>
                 <button
                   onClick={closeModal}
@@ -299,8 +271,7 @@ function CertificationPage() {
                   </svg>
                 </button>
               </div>
-
-              <div className="relative h-[100vh] rounded-xl overflow-hidden bg-white">
+              <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden bg-white">
                 <Image
                   src={selectedCert.image}
                   alt={selectedCert.name}

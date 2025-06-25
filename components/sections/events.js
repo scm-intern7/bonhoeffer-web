@@ -50,10 +50,24 @@ const FloatingArrow = ({ direction = "down", className = "" }) => {
 const ImageSlider = ({ posts }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
+  const [postsPerView, setPostsPerView] = useState(4)
   const intervalRef = useRef(null)
   const sliderRef = useRef(null)
 
-  const postsPerView = 4
+  // Responsive postsPerView
+  useEffect(() => {
+    function handleResize() {
+      const width = window.innerWidth;
+      if (width < 640) setPostsPerView(1); // mobile
+      else if (width < 900) setPostsPerView(2); // small tablet
+      else if (width < 1200) setPostsPerView(3); // large tablet/small desktop
+      else setPostsPerView(4); // desktop
+    }
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const maxIndex = Math.max(0, posts.length - postsPerView)
 
   // Auto-scroll functionality
@@ -65,6 +79,11 @@ const ImageSlider = ({ posts }) => {
     }
     return () => clearInterval(intervalRef.current)
   }, [isAutoPlaying, maxIndex, posts.length, postsPerView])
+
+  useEffect(() => {
+    // Reset currentIndex if postsPerView changes and currentIndex is out of range
+    if (currentIndex > maxIndex) setCurrentIndex(0);
+  }, [postsPerView, maxIndex]);
 
   const nextSlide = () => {
     setCurrentIndex(prev => prev >= maxIndex ? 0 : prev + 1)
@@ -102,28 +121,6 @@ const ImageSlider = ({ posts }) => {
 
   return (
     <div className="relative w-full max-w-7xl mx-auto">
-      {/* Navigation Arrows - Outside the frame */}
-      {posts.length > postsPerView && (
-        <>
-          <button
-            onClick={prevSlide}
-            className="absolute left-[-75] top-1/2 transform -translate-y-1/2 z-10 bg-[#989b2e] hover:bg-[#7a7d24] text-white p-4 rounded-full transition-colors duration-300 shadow-lg"
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-            </svg>
-          </button>
-          <button
-            onClick={nextSlide}
-            className="absolute right-[-75] top-1/2 transform -translate-y-1/2 z-10 bg-[#989b2e] hover:bg-[#7a7d24] text-white p-4 rounded-full transition-colors duration-300 shadow-lg"
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
-            </svg>
-          </button>
-        </>
-      )}
-
       {/* Slider Container */}
       <div className="overflow-hidden rounded-2xl">
         <motion.div
@@ -181,21 +178,73 @@ const ImageSlider = ({ posts }) => {
 
       {/* Progress Indicators */}
       {posts.length > postsPerView && (
-        <div className="flex justify-center mt-6 space-x-2">
-          {Array.from({ length: maxIndex + 1 }, (_, index) => (
-            <button
-              key={index}
-              onClick={() => {
-                setCurrentIndex(index)
-                setIsAutoPlaying(false)
-                setTimeout(() => setIsAutoPlaying(true), 8000)
-              }}
-              className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-                index === currentIndex ? 'bg-[#989b2e]' : 'bg-gray-300'
-              }`}
-            />
-          ))}
+        <div className="flex flex-col items-center mt-6 space-y-3">
+          {/* Progress bar only when arrows are at sides (desktop) */}
+          {postsPerView === 4 && (
+            <div className="flex justify-center space-x-2">
+              {Array.from({ length: maxIndex + 1 }, (_, index) => (
+                <button
+                  key={index}
+                  onClick={() => {
+                    setCurrentIndex(index)
+                    setIsAutoPlaying(false)
+                    setTimeout(() => setIsAutoPlaying(true), 8000)
+                  }}
+                  className={`w-3 h-3 rounded-full transition-colors duration-300 ${
+                    index === currentIndex ? 'bg-[#989b2e]' : 'bg-gray-300'
+                  }`}
+                />
+              ))}
+            </div>
+          )}
+          {/* Bottom center arrows for < 4 postsPerView */}
+          {postsPerView < 4 && (
+            <div className="flex justify-center space-x-6 mt-2">
+              <button
+                onClick={prevSlide}
+                className="bg-[#989b2e] hover:bg-[#7a7d24] text-white p-3 rounded-full transition-colors duration-300 shadow-lg"
+                aria-label="Previous slide"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                </svg>
+              </button>
+              <button
+                onClick={nextSlide}
+                className="bg-[#989b2e] hover:bg-[#7a7d24] text-white p-3 rounded-full transition-colors duration-300 shadow-lg"
+                aria-label="Next slide"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+                </svg>
+              </button>
+            </div>
+          )}
         </div>
+      )}
+
+      {/* Side arrows for desktop (postsPerView === 4) */}
+      {posts.length > postsPerView && postsPerView === 4 && (
+        <>
+          <button
+            onClick={prevSlide}
+            className="absolute left-[-75px] top-1/2 transform -translate-y-1/2 z-10 bg-[#989b2e] hover:bg-[#7a7d24] text-white p-4 rounded-full transition-colors duration-300 shadow-lg hidden lg:block"
+            aria-label="Previous slide"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+            </svg>
+          </button>
+          <button
+            onClick={nextSlide}
+            className="absolute right-[-75px] top-1/2 transform -translate-y-1/2 z-10 bg-[#989b2e] hover:bg-[#7a7d24] text-white p-4 rounded-full transition-colors duration-300 shadow-lg hidden lg:block"
+            aria-label="Next slide"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+            </svg>
+          </button>
+        </>
       )}
     </div>
   )
@@ -216,19 +265,19 @@ function Events() {
   }));
 
   return (
-    <section className="relative min-h-screen py-20 overflow-hidden">
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+    <section className="relative min-h-screen py-10 sm:py-16 md:py-20 overflow-hidden">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <motion.div 
           ref={ref}
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-16"
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
           {/* Top Arrow */}
           <motion.div
-            className="flex justify-center mb-8"
+            className="flex justify-center mb-6 sm:mb-8"
             initial={{ opacity: 0, y: -30 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -238,7 +287,7 @@ function Events() {
 
           {/* Title */}
           <motion.h1 
-            className="text-5xl md:text-7xl font-bold text-white mb-4"
+            className="text-4xl xs:text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-2 sm:mb-4"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={inView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -248,7 +297,7 @@ function Events() {
 
           {/* Subtitle */}
           <motion.p
-            className="text-xl text-gray-300 max-w-3xl mx-auto mb-8"
+            className="text-base sm:text-xl text-gray-300 max-w-2xl sm:max-w-3xl mx-auto mb-6 sm:mb-8"
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.5 }}

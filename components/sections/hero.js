@@ -74,18 +74,21 @@ function Hero() {
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   return (
     <>
+      {/* Mobile header spacer for fixed header on mobile/tablet */}
+      <div className="block lg:hidden" style={{ height: '4em' }} aria-hidden="true" />
+
       <section ref={containerRef} className="relative min-h-screen overflow-hidden">
         {/* Main Content */}
-        <div className='flex flex-col items-center text-white pt-20 relative z-10'>
+        <div className='flex flex-col items-center text-white pt-16 sm:pt-20 relative z-10 w-full px-4'>
           {/* Hero Title - Simplified Animation */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center"
+            className="text-center w-full"
           >
             <motion.h1 
-              className='text-6xl font-bold mb-4 text-white'
+              className='text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-white break-words'
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.3 }}
@@ -94,7 +97,7 @@ function Hero() {
             </motion.h1>
             
             <motion.p
-              className="text-lg text-gray-300 max-w-2xl mx-auto"
+              className="text-base xs:text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.5 }}
@@ -103,9 +106,9 @@ function Hero() {
             </motion.p>
           </motion.div>
 
-          {/* Search Bar - Simplified */}
+          {/* Search Bar - Responsive */}
           <motion.div 
-            className='flex flex-row mt-8 relative'
+            className='flex flex-col sm:flex-row mt-8 relative w-full max-w-lg'
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7 }}
@@ -117,26 +120,26 @@ function Hero() {
               onChange={(e) => setSearchValue(e.target.value)}
               onFocus={() => setIsSearchFocused(true)}
               onBlur={() => setIsSearchFocused(false)}
-              className='w-96 p-3 rounded-l-lg bg-white/10 backdrop-blur-md text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#989b2e] transition-all duration-300 border border-white/20'
+              className='w-full sm:w-96 p-3 rounded-t-lg sm:rounded-t-none sm:rounded-l-lg bg-white/10 backdrop-blur-md text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#989b2e] transition-all duration-300 border border-white/20'
             />
             <button 
-              className='px-6 py-3 bg-[#989b2e] rounded-r-lg transition-all duration-300 font-semibold hover:bg-[#7a7d24]'
+              className='w-full sm:w-auto px-6 py-3 bg-[#989b2e] rounded-b-lg sm:rounded-l-none sm:rounded-r-lg transition-all duration-300 font-semibold hover:bg-[#7a7d24]'
             >
               Search
             </button>
           </motion.div>
         </div>
 
-        {/* Video Section - Simplified Parallax */}
+        {/* Video Section - Parallax, desktop untouched */}
         <motion.div 
-          className='flex justify-center mt-16 relative'
+          className='flex justify-center mt-16 relative w-full px-2 sm:px-0'
           style={{ y }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1 }}
         >
           <video 
-            className='w-[75%] mx-auto object-cover rounded-2xl shadow-xl' 
+            className='w-full sm:w-[75%] mx-auto object-cover rounded-2xl shadow-xl' 
             autoPlay 
             loop 
             muted
@@ -146,9 +149,9 @@ function Hero() {
           </video>
         </motion.div>
 
-        {/* Statistics Section - Simplified */}
+        {/* Statistics Section - Responsive, desktop untouched */}
         <motion.div 
-          className='flex justify-center items-center gap-16 mt-50 mb-16'
+          className='flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 mt-10 sm:mt-50 mb-5 w-full px-2'
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -156,41 +159,38 @@ function Hero() {
         >
           {/* Statistics Column */}
           <motion.div 
-            className="text-center space-y-6"
+            className="text-center space-y-6 w-full md:w-auto"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <div className="px-12 py-8 mb-10 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-              <h1 className='text-8xl font-bold mb-2 text-[#989b2e]'>Global</h1>
-              <h2 className='text-7xl font-bold text-white'>Presence</h2>
+            <div className="px-6 py-6 sm:px-12 sm:py-8 mb-6 sm:mb-10 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+              <h1 className='text-4xl sm:text-5xl md:text-7xl font-bold mb-2 text-[#989b2e]'>Global</h1>
+              <h2 className='text-3xl sm:text-4xl md:text-6xl font-bold text-white'>Presence</h2>
             </div>
-            
-            <div className="space-y-10">
+            <div className="space-y-6 sm:space-y-10">
               <div className="p-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
-                <h3 className='text-4xl font-semibold text-white'>
+                <h3 className='text-2xl sm:text-2xl md:text-3xl font-semibold text-white'>
                   <AnimatedCounter end={3} suffix="+" delay={0.5} /> Continents
                 </h3>
               </div>
-              
               <div className="p-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
-                <h3 className='text-4xl font-semibold text-white'>
+                <h3 className='text-2xl sm:text-2xl md:text-3xl font-semibold text-white'>
                   <AnimatedCounter end={17} suffix="+" delay={0.8} /> Countries
                 </h3>
               </div>
-              
               <div className="p-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
-                <h3 className='text-4xl font-semibold text-white'>
+                <h3 className='text-2xl sm:text-2xl md:text-3xl font-semibold text-white'>
                   <AnimatedCounter end={4500} suffix="+" delay={0.5} /> Products
                 </h3>
               </div>
             </div>
           </motion.div>
 
-          {/* GIF Section - Simplified */}
+          {/* GIF Section - Responsive, desktop untouched */}
           <motion.div
-            className="relative"
+            className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}

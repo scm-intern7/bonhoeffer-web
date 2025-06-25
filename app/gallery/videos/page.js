@@ -109,6 +109,9 @@ function VideosPage() {
 
   return (
     <BgLayout>
+      {/* Mobile header spacer for fixed header on mobile/tablet */}
+      <div className="block lg:hidden" style={{ height: '4em' }} aria-hidden="true" />
+
       {/* Hero Image */}
       <div className="relative w-full h-[40vw] min-h-[220px] max-h-[400px] mt-5">
         <Image
@@ -212,7 +215,7 @@ function VideosPage() {
           >
             {/* Close Button */}
             <button
-              className="absolute top-4 right-4 text-white hover:text-[#989b2e] z-[10000]"
+              className="absolute bottom-4 right-4 text-white hover:text-[#989b2e] z-[10000]"
               onClick={closeVideoModal}
             >
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">

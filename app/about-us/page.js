@@ -60,11 +60,14 @@ function Page() {
 
   return (
     <BgLayout>
+      {/* Mobile header spacer for fixed header on mobile/tablet */}
+      <div className="block lg:hidden" style={{ height: '4em' }} aria-hidden="true" />
+
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden mt-5">
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden mt-5 px-4 sm:px-6 lg:px-8">
         <div className="absolute inset-0">
           <Image
-            src="https://bonhoeffermachines.com/en/public/images/about-new/About-us-new-banner.webp"
+            src="https://bonhoeffermachines.com/public/images/about-new/About-us-new-banner.webp"
             alt="About Us Banner"
             fill
             className="object-cover"
@@ -74,13 +77,13 @@ function Page() {
         </div>
         
         <motion.div 
-          className="relative z-10 text-center text-white px-6"
+          className="relative z-10 text-center text-white px-2 sm:px-6"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
           <motion.h1 
-            className="text-6xl md:text-8xl font-bold mb-6"
+            className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-4 sm:mb-6"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
@@ -88,7 +91,7 @@ function Page() {
             About Us
           </motion.h1>
           <motion.p 
-            className="text-2xl md:text-3xl max-w-3xl mx-auto"
+            className="text-lg xs:text-xl sm:text-2xl md:text-3xl max-w-2xl sm:max-w-3xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
@@ -99,28 +102,28 @@ function Page() {
       </section>
 
       {/* Company Introduction */}
-      <section className="py-20 px-6">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div 
-            className="grid md:grid-cols-2 gap-12 items-center"
+            className="grid gap-y-10 md:grid-cols-2 md:gap-12 items-center"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
             <div className="text-white">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#989b2e]">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
                 Welcome to Bonhoeffer Machines - Your Partner in Progress!
               </h2>
-              <p className="text-lg text-gray-300 mb-6 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-300 mb-4 sm:mb-6 leading-relaxed">
                 Our story began in 2018 under the umbrella of Heine Corporation Private Limited. In the initial six years, we took significant strides in the industry, and in 2023, we proudly established Bonhoeffer Machines Private Limited as our distinct brand.
               </p>
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
                 In this short span, we&apos;ve ventured into over 17 countries, bringing our innovative products to various corners of the world. Starting our operations in Mexico, we&apos;ve expanded our footprint, reaching as far as Panama with our diverse range of high-quality products.
               </p>
             </div>
             <motion.div
-              className="relative h-96 rounded-2xl overflow-hidden"
+              className="relative w-full aspect-[4/3] md:h-96 rounded-2xl overflow-hidden"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
@@ -136,17 +139,17 @@ function Page() {
       </section>
 
       {/* Founder's Desk */}
-      <section className="py-20 px-6">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div 
-            className="grid md:grid-cols-2 gap-12 items-center"
+            className="grid gap-y-10 md:grid-cols-2 md:gap-12 items-center"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
             <motion.div
-              className="relative h-full rounded-2xl overflow-hidden order-2 md:order-1"
+              className="relative w-full aspect-[4/3] md:h-full rounded-2xl overflow-hidden order-2 md:order-1"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
@@ -158,10 +161,10 @@ function Page() {
               />
             </motion.div>
             <div className="text-white order-1 md:order-2">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#989b2e]">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
                 From the Founder&apos;s Desk
               </h2>
-              <div className="space-y-4 text-md text-gray-300 leading-relaxed">
+              <div className="space-y-4 text-base sm:text-md text-gray-300 leading-relaxed">
                 <p>
                   At Bonhoeffer Machines, our journey is not just about machines; it&apos;s about building lasting partnerships and contributing to the progress of industries worldwide. Join us on this incredible voyage as we continue to grow and make a positive impact with our cutting-edge solutions.
                 </p>
@@ -172,8 +175,8 @@ function Page() {
                   At Bonhoeffer Machines, our dynamic team comprises skilled professionals in Sales, Product Development, Marketing, Supply Chain, and Human Resources. Together, we strive to deliver excellence, ensuring that our machines not only meet but exceed the expectations of our valued customers worldwide. Join us as we continue to grow and make a positive impact on industries across the globe.
                 </p>
                 <div className="mt-6 pt-4 border-t border-gray-600">
-                  <p className="font-semibold text-xl text-[#989b2e]">Varun Gupta</p>
-                  <p className="text-gray-400 text-lg">Founder</p>
+                  <p className="font-semibold text-lg sm:text-xl text-[#989b2e]">Varun Gupta</p>
+                  <p className="text-gray-400 text-base sm:text-lg">Founder</p>
                 </div>
               </div>
             </div>
@@ -182,20 +185,20 @@ function Page() {
       </section>
 
       {/* Company Overview */}
-      <section className="py-20 px-6">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div 
-            className="grid md:grid-cols-2 gap-12 items-center"
+            className="grid gap-y-10 md:grid-cols-2 md:gap-12 items-center"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
             <div className="text-white">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#989b2e]">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
                 Company Overview
               </h2>
-              <div className="space-y-4 text-md text-gray-300 leading-relaxed">
+              <div className="space-y-4 text-base sm:text-md text-gray-300 leading-relaxed">
                 <p>
                   Bonhoeffer is a premium agriculture, forestry, construction, industrial and gardening machinery, spare parts, and tools brand, working in the three major regions of the world - Central America, Latin America, and Asia. We strive to deliver high-quality machinery for durable and efficient use. Taking the simple belief of changing lives with easy and compatible service--Bonhoeffer delivers the best and most professional power machines. Our products meet the needs of tomorrow with their advanced and sustainable equipment which bridges the gap between nature and people.
                 </p>
@@ -205,12 +208,12 @@ function Page() {
               </div>
             </div>
             <motion.div
-              className="relative aspect-video rounded-2xl overflow-hidden bg-black"
+              className="relative w-full aspect-video rounded-2xl overflow-hidden bg-black"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
               <iframe
-                className="w-full h-full"
+                className="w-full h-full min-h-[200px]"
                 src="https://www.youtube.com/embed/Gb1rKlc_XNw"
                 title="Company Overview Video"
                 frameBorder="0"
@@ -223,17 +226,17 @@ function Page() {
       </section>
 
       {/* Our Presence */}
-      <section className="py-20 px-6">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div 
-            className="grid md:grid-cols-2 gap-12 items-center"
+            className="grid gap-y-10 md:grid-cols-2 md:gap-12 items-center"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
             <motion.div
-              className="relative h-96 rounded-2xl overflow-hidden order-2 md:order-1"
+              className="relative w-full aspect-[4/3] md:h-96 rounded-2xl overflow-hidden order-2 md:order-1"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
@@ -245,10 +248,10 @@ function Page() {
               />
             </motion.div>
             <div className="text-white order-1 md:order-2">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#989b2e]">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
                 Our Global Presence
               </h2>
-              <div className="space-y-4 text-md text-gray-300 leading-relaxed">
+              <div className="space-y-4 text-base sm:text-md text-gray-300 leading-relaxed">
                 <p>
                   At Bonhoeffer Machines, we started with a vision to redefine the machinery industry. Our journey is a testament to our commitment to innovation and quality. In every machine we create, we infuse the essence of precision engineering and durability. Our customers deserve nothing less. Our success is deeply rooted in the trust of our customers. We continuously strive to exceed their expectations. Sustainability is not just a trend; it&apos;s our responsibility.
                 </p>
@@ -262,35 +265,35 @@ function Page() {
       </section>
 
       {/* Leadership Team */}
-      <section className="py-20 px-6">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div
-            className="text-center mb-16"
+            className="text-center mb-10 sm:mb-16"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#989b2e]">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
               Leadership Team
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-300 max-w-2xl sm:max-w-3xl mx-auto">
               Meet the visionary leaders driving our company&apos;s success and innovation
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid gap-y-8 md:grid-cols-2 lg:grid-cols-3 gap-x-8">
             {hodData.map((hod, index) => (
               <motion.div
                 key={index}
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center hover:bg-white/10 transition-all duration-300"
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 sm:p-6 text-center hover:bg-white/10 transition-all duration-300"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: index * 0.01 }}
                 whileHover={{ scale: 1.05 }}
               >
-                <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                <div className="relative w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-4 rounded-full overflow-hidden">
                   <Image
                     src={hod.image}
                     alt={hod.name}
@@ -298,10 +301,10 @@ function Page() {
                     className="object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-1 sm:mb-2">
                   {hod.name}
                 </h3>
-                <p className="text-[#989b2e] font-medium">
+                <p className="text-[#989b2e] font-medium text-sm sm:text-base">
                   {hod.position}
                 </p>
               </motion.div>
@@ -311,38 +314,38 @@ function Page() {
       </section>
 
       {/* What Makes Us Different */}
-      <section className="py-20 px-6 ">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="max-w-7xl mx-auto">
           <motion.div
-            className="text-center mb-16"
+            className="text-center mb-10 sm:mb-16"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#989b2e]">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
               What Makes Us Different
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-300 max-w-2xl sm:max-w-3xl mx-auto">
               Our unique approach combines innovation, quality, and customer-centricity to deliver exceptional value
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid gap-y-8 md:grid-cols-2 lg:grid-cols-3 gap-x-8">
             {differentiators.map((item, index) => (
               <motion.div
                 key={index}
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300"
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 sm:p-6 hover:bg-white/10 transition-all duration-300"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: index * 0.01 }}
                 whileHover={{ scale: 1.05 }}
               >
-                <h3 className="text-xl font-bold text-[#989b2e] mb-3">
+                <h3 className="text-lg sm:text-xl font-bold text-[#989b2e] mb-2 sm:mb-3">
                   {item.title}
                 </h3>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                   {item.description}
                 </p>
               </motion.div>
@@ -352,9 +355,9 @@ function Page() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-20 px-6">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-16">
+          <div className="grid gap-y-10 md:grid-cols-2 md:gap-16">
             {/* Vision */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -362,7 +365,7 @@ function Page() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <div className="relative h-100 rounded-2xl overflow-hidden mb-8">
+              <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 sm:mb-8">
                 <Image
                   src="https://bonhoeffermachines.com/public/images/about-new/Philosophy1.webp"
                   alt="Our Vision"
@@ -370,10 +373,10 @@ function Page() {
                   className="object-cover"
                 />
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#989b2e]">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
                 Our Vision
               </h2>
-              <div className="space-y-4 text-gray-300 leading-relaxed">
+              <div className="space-y-3 sm:space-y-4 text-gray-300 leading-relaxed text-base sm:text-md">
                 <p>
                   To be the world&apos;s most trusted partner in agricultural innovation, empowering farmers with cutting-edge technology that enhances productivity while preserving our planet&apos;s resources.
                 </p>
@@ -390,18 +393,18 @@ function Page() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <div className="relative h-100 rounded-2xl overflow-hidden mb-8">
+              <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 sm:mb-8">
                 <Image
                   src="https://bonhoeffermachines.com/public/images/about-new/Philosophy2.webp"
                   alt="Our Mission"
                   fill
-                  className="object-top"
+                  className="object-top object-cover"
                 />
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#989b2e]">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
                 Our Mission
               </h2>
-              <div className="space-y-4 text-gray-300 leading-relaxed">
+              <div className="space-y-3 sm:space-y-4 text-gray-300 leading-relaxed text-base sm:text-md">
                 <p>
                   To revolutionize agriculture through innovative machinery solutions that enhance productivity, ensure sustainability, and improve the livelihoods of farmers worldwide.
                 </p>
@@ -414,20 +417,20 @@ function Page() {
         </div>
       </section>
 
-      <section className="py-20 px-6">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div 
-            className="grid md:grid-cols-2 gap-12 items-center"
+            className="grid gap-y-10 md:grid-cols-2 md:gap-12 items-center"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
             <div className="text-white">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#989b2e]">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
                 How We Produce
               </h2>
-              <div className="space-y-4 text-lg text-gray-300 leading-relaxed">
+              <div className="space-y-3 sm:space-y-4 text-base sm:text-lg text-gray-300 leading-relaxed">
                 <p>
                   Our manufacturing process combines traditional craftsmanship with cutting-edge technology, ensuring every machine meets our rigorous quality standards.
                 </p>
@@ -440,12 +443,12 @@ function Page() {
               </div>
             </div>
             <motion.div
-              className="relative aspect-video rounded-2xl overflow-hidden bg-black"
+              className="relative w-full aspect-video rounded-2xl overflow-hidden bg-black"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
               <video
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover min-h-[200px]"
                 autoPlay
                 loop
                 muted
@@ -460,19 +463,19 @@ function Page() {
       </section>
 
       {/* FAQs */}
-      <section className="py-20 px-6 ">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="max-w-4xl mx-auto">
           <motion.div
-            className="text-center mb-16"
+            className="text-center mb-10 sm:mb-16"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#989b2e]">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
               Frequently Asked Questions
             </h2>
-            <p className="text-xl text-gray-300">
+            <p className="text-lg sm:text-xl text-gray-300">
               Find answers to common questions about our products and services
             </p>
           </motion.div>
@@ -488,10 +491,10 @@ function Page() {
                 transition={{ duration: 0.3, delay: index * 0.01 }}
               >
                 <button
-                  className="w-full p-6 text-left flex justify-between items-center hover:bg-white/5 transition-colors duration-200"
+                  className="w-full p-4 sm:p-6 text-left flex justify-between items-center hover:bg-white/5 transition-colors duration-200"
                   onClick={() => setExpandedFaq(expandedFaq === index ? null : index)}
                 >
-                  <h3 className="text-lg font-semibold text-white pr-4">
+                  <h3 className="text-base sm:text-lg font-semibold text-white pr-2 sm:pr-4">
                     {faq.question}
                   </h3>
                   <motion.div
@@ -510,8 +513,8 @@ function Page() {
                   transition={{ duration: 0.3 }}
                   className="overflow-hidden"
                 >
-                  <div className="px-6 pb-6">
-                    <p className="text-gray-300 leading-relaxed">
+                  <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                    <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                       {faq.answer}
                     </p>
                   </div>
@@ -523,51 +526,51 @@ function Page() {
       </section>
 
       {/* Global Offices */}
-      <section className="py-20 px-6">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div
-            className="text-center mb-16"
+            className="text-center mb-10 sm:mb-16"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#989b2e]">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
               Our Global Offices
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-300 max-w-2xl sm:max-w-3xl mx-auto">
               Reach out to us at any of our global locations for support and assistance
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid gap-y-8 md:grid-cols-3 gap-x-8">
             {offices.map((office, index) => (
               <motion.div
                 key={index}
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300"
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 sm:p-6 hover:bg-white/10 transition-all duration-300"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: index * 0.01 }}
                 whileHover={{ scale: 1.05 }}
               >
-                <h3 className="text-xl font-bold text-[#989b2e] mb-4">
+                <h3 className="text-lg sm:text-xl font-bold text-[#989b2e] mb-2 sm:mb-4">
                   {office.title}
                 </h3>
-                <div className="space-y-3 text-gray-300">
-                  <p className="text-sm leading-relaxed">
+                <div className="space-y-2 sm:space-y-3 text-gray-300">
+                  <p className="text-xs sm:text-sm leading-relaxed">
                     <span className="font-medium">Address:</span><br />
                     {office.address}
                   </p>
-                  <p className="text-sm">
+                  <p className="text-xs sm:text-sm">
                     <span className="font-medium">Phone:</span><br />
                     <a href={`tel:${office.phone}`} className="text-[#989b2e] hover:underline">
                       {office.phone}  
                     </a>
                   </p>
-                  <p className="text-sm">
+                  <p className="text-xs sm:text-sm ">
                     <span className="font-medium">Email:</span><br />
-                    <a href={`mailto:${office.email}`} className="text-[#989b2e] hover:underline">
+                    <a href={`mailto:${office.email}`} className="text-[#989b2e] hover:underline break-all">
                       {office.email}
                     </a>
                   </p>

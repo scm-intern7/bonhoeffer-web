@@ -56,35 +56,40 @@ function Producty() {
   return (
     <div className="w-full overflow-hidden">
       {/* Sticky section title with arrows */}
-      <div className="sticky top-0 z-50 flex items-center justify-center bg-transparent py-8">
+      <div className="sticky top-0 z-50 flex flex-col xs:flex-row items-center justify-center bg-transparent py-6 sm:py-8 px-2 sm:px-0 gap-2 sm:gap-0">
         {/* Left Arrow (different style, pointing right) */}
-        <svg className="w-10 h-10 md:w-14 md:h-14 text-[#9a9c30] mr-2 md:mr-4" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 text-[#9a9c30] mr-0 xs:mr-2 md:mr-4" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M10 20h20M20 10l10 10-10 10" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
-        <h1 className="text-6xl md:text-8xl font-bold text-white bg-clip-text text-center drop-shadow-lg mx-2">
+        <h1 className="text-3xl xs:text-5xl sm:text-6xl md:text-8xl font-bold text-white bg-clip-text text-center drop-shadow-lg mx-2">
           Our <span className="text-[#9a9c30]">Products</span>
         </h1>
         {/* Right Arrow (different style, pointing left) */}
-        <svg className="w-10 h-10 md:w-14 md:h-14 text-[#9a9c30] ml-2 md:ml-4 rotate-180" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 text-[#9a9c30] ml-0 xs:ml-2 md:ml-4 rotate-180" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M10 20h20M20 10l10 10-10 10" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </div>
       {products.map((product, idx) => (
         <section
           key={product.id}
-          className="w-full min-h-screen flex items-center justify-start relative bg-fixed bg-cover bg-center"
+          className="w-full min-h-screen flex flex-col sm:flex-row items-center justify-start relative bg-fixed bg-cover bg-center px-2 sm:px-0"
           style={{ backgroundImage: `url(${product.image})` }}
         >
-          {/* Removed overlay title from first product */}
-          <div className="bg-[#9a9c30] p-6 rounded-lg shadow-2xl w-[420px] ml-0 absolute left-8 top-1/2 -translate-y-1/2 z-30">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">
+          {/* Overlay title and card - responsive, bottom left on mobile/tablet */}
+          <div className="bg-[#9a9c30] p-4 sm:p-6 rounded-lg shadow-2xl w-full max-w-xs sm:max-w-md md:max-w-lg z-30
+            absolute sm:static left-0 sm:left-8 bottom-0 sm:bottom-auto top-auto sm:top-auto
+            ml-0 sm:ml-8
+            translate-y-0 sm:translate-y-0
+            mb-4 sm:mb-0"
+          >
+            <h2 className="text-lg sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-4 text-white">
               {product.name}
             </h2>
-            <p className="text-sm md:text-base text-green-100 mb-6 leading-relaxed">
+            <p className="text-xs sm:text-sm md:text-base text-green-100 mb-4 sm:mb-6 leading-relaxed">
               {product.description}
             </p>
             <Link href={`/product/${slugify(product.name)}`} passHref >
-              <button className="px-8 py-3 bg-white text-[#9a9c30] font-semibold rounded-full hover:bg-green-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer block text-center">
+              <button className="w-full px-4 py-2 sm:px-8 sm:py-3 bg-white text-[#9a9c30] font-semibold rounded-full hover:bg-green-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer block text-center text-sm sm:text-base">
                 Explore Product
               </button>
             </Link>

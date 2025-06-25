@@ -1,6 +1,7 @@
 "use client";
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 function Header() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -12,6 +13,10 @@ function Header() {
   const [isGalleryDropdownOpen, setIsGalleryDropdownOpen] = useState(false);
   const [galleryDropdownTimeout, setGalleryDropdownTimeout] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
+  // Add state for mobile menu
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  // Mobile search state
+  const [mobileSearch, setMobileSearch] = useState('');
 
   const languages = [
     { code: 'en', name: 'English' },
@@ -175,10 +180,46 @@ function Header() {
     }
   };
 
+  // Hamburger icon for mobile
+  const Hamburger = ({ open, toggle }) => (
+    <button
+      className="flex flex-col justify-center items-center w-10 h-10 z-50 focus:outline-none lg:hidden"
+      aria-label="Toggle menu"
+      onClick={toggle}
+      type="button"
+    >
+      <span className="sr-only">Open main menu</span>
+      <motion.span
+        animate={{ rotate: open ? 45 : 0, y: open ? 8 : 0 }}
+        className="block w-7 h-1 bg-white rounded mb-1 origin-center transition-all"
+      />
+      <motion.span
+        animate={{ opacity: open ? 0 : 1 }}
+        className="block w-7 h-1 bg-white rounded mb-1 origin-center transition-all"
+      />
+      <motion.span
+        animate={{ rotate: open ? -45 : 0, y: open ? -8 : 0 }}
+        className="block w-7 h-1 bg-white rounded origin-center transition-all"
+      />
+    </button>
+  );
+
+  // Lock scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [mobileMenuOpen]);
+
   return (
     <>
-      {/* Original Header */}
-      <section className={`transition-all duration-700 ease-out ${isScrolled ? 'opacity-0 pointer-events-none transform -translate-y-4' : 'opacity-100 transform translate-y-0'}`}>
+      {/* Desktop/Tablet Header (untouched, just add responsive tweaks) */}
+      <section
+        className={`transition-all duration-700 ease-out ${isScrolled ? 'opacity-0 pointer-events-none transform -translate-y-4' : 'opacity-100 transform translate-y-0'} hidden lg:block`}
+      >
         <div className="flex flex-row items-center gap-10 text-white">
             <div className="image pt-5">
               <Link href="/">
@@ -431,10 +472,10 @@ function Header() {
         )}
       </section>
 
-      {/* Capsule Sticky Header */}
-      <div className={`fixed top-0 left-1/2 transform -translate-x-1/2 z-40 transition-all duration-700 ease-out ${
-        isScrolled ? 'opacity-100 translate-y-4' : 'opacity-0 -translate-y-8 pointer-events-none'
-      }`}>
+      {/* Capsule Sticky Header (untouched, just add responsive tweaks) */}
+      <div
+        className={`fixed top-0 left-1/2 transform -translate-x-1/2 z-40 transition-all duration-700 ease-out ${isScrolled ? 'opacity-100 translate-y-4' : 'opacity-0 -translate-y-8 pointer-events-none'} hidden lg:block`}
+      >
         <div className="bg-gradient-to-r from-gray-900/95 via-gray-800/95 to-gray-900/95 backdrop-blur-lg rounded-full shadow-2xl border border-gray-700/50 px-8 py-3">
           <nav className="relative">
             <ul className="flex items-center space-x-8">
@@ -605,6 +646,105 @@ function Header() {
           </nav>
         </div>
       </div>
+
+      {/* Mobile/Foldable/Tablet Header (separate, only on < lg screens) */}
+      <div className={`lg:hidden fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-gray-900/95 via-gray-800/95 to-gray-900/95 flex items-center justify-between px-4 py-3 transition-all duration-300${mobileMenuOpen ? ' opacity-0 pointer-events-none' : ' opacity-100'}`}>
+        <Link href="/">
+          <img src="/logo.png" alt="Bonhoeffer Machines Logo" className="h-15" />
+        </Link>
+        <Hamburger open={mobileMenuOpen} toggle={() => setMobileMenuOpen((v) => !v)} />
+      </div>
+      {/* Animated Mobile Menu Drawer */}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.nav
+            initial={{ x: '100%' }}
+            animate={{ x: 0 }}
+            exit={{ x: '100%' }}
+            transition={{ type: 'spring', stiffness: 400, damping: 40 }}
+            className="fixed inset-0 z-40 bg-black/70 backdrop-blur-sm flex justify-end lg:hidden"
+          >
+            <motion.div
+              initial={{ x: 80, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: 80, opacity: 0 }}
+              transition={{ type: 'spring', stiffness: 300, damping: 30, delay: 0.05 }}
+              className="w-4/5 max-w-xs h-full overflow-y-auto bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 shadow-2xl p-7 flex flex-col"
+            >
+              <div className="flex items-center justify-between mb-8">
+                <Link href="/" onClick={() => setMobileMenuOpen(false)}>
+                  <img src="/logo.png" alt="Bonhoeffer Machines Logo" className="h-20" />
+                </Link>
+                <button onClick={() => setMobileMenuOpen(false)} aria-label="Close menu" className="text-gray-300 hover:text-white p-2">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              {/* Mobile Search */}
+              <form
+                onSubmit={e => {
+                  e.preventDefault();
+                  if (mobileSearch.trim()) {
+                    // Implement your search logic here
+                    setMobileMenuOpen(false);
+                    setIsSearchOpen(false);
+                    setSearchQuery(mobileSearch);
+                    // You can redirect or handle search as needed
+                  }
+                }}
+                className="mb-6"
+              >
+                <div className="flex items-center bg-gray-800 rounded-lg px-3 py-2">
+                  <input
+                    type="text"
+                    value={mobileSearch}
+                    onChange={e => setMobileSearch(e.target.value)}
+                    placeholder="Search..."
+                    className="flex-1 bg-transparent text-white placeholder-gray-400 outline-none border-none text-base"
+                  />
+                  <button type="submit" className="ml-2 text-[#989b2e] hover:text-white">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+              {/* Mobile Language Switcher */}
+              <div className="mb-6">
+                <div className="text-xs text-gray-400 mb-2">Language</div>
+                <div className="flex gap-2">
+                  {languages.map(lang => (
+                    <button
+                      key={lang.code}
+                      onClick={() => { setCurrentLanguage(lang.code); setIsLanguageDropdownOpen(false); setMobileMenuOpen(false); }}
+                      className={`px-3 py-1 rounded-full text-sm font-medium border transition-colors duration-150 ${currentLanguage === lang.code ? 'bg-[#989b2e] text-white border-[#989b2e]' : 'bg-gray-800 text-gray-200 border-gray-700 hover:bg-[#989b2e] hover:text-white'}`}
+                    >
+                      {lang.name}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              {/* Mobile Nav Links */}
+              <ul className="flex flex-col gap-5">
+                {links.map((item) => (
+                  <li key={item.href + item.label}>
+                    <Link
+                      href={item.href}
+                      className="text-xl font-semibold text-white hover:text-[#989b2e] transition-colors duration-200 block py-2"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+            {/* Click outside to close */}
+            <div className="flex-1" onClick={() => setMobileMenuOpen(false)} />
+          </motion.nav>
+        )}
+      </AnimatePresence>
     </>
   )
 }

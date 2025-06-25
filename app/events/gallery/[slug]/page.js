@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import Header from '@/components/layouts/header';
+import BgLayout from '@/components/templates/bgLayout';
 
 // Fair data (same as in events page)
 const fairCategories = [
@@ -172,7 +173,7 @@ const Lightbox = ({ images, currentIndex, onClose, onNext, onPrev }) => {
   return (
     <AnimatePresence>
       <motion.div
-        className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center"
+        className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center px-2 sm:px-6"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -190,7 +191,7 @@ const Lightbox = ({ images, currentIndex, onClose, onNext, onPrev }) => {
 
         {/* Navigation Arrows */}
         <button
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white p-3 hover:bg-white/20 rounded-full transition-colors"
+          className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 text-white p-2 sm:p-3 hover:bg-white/20 rounded-full transition-colors"
           onClick={(e) => { e.stopPropagation(); onPrev(); }}
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -199,7 +200,7 @@ const Lightbox = ({ images, currentIndex, onClose, onNext, onPrev }) => {
         </button>
 
         <button
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white p-3 hover:bg-white/20 rounded-full transition-colors"
+          className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 text-white p-2 sm:p-3 hover:bg-white/20 rounded-full transition-colors"
           onClick={(e) => { e.stopPropagation(); onNext(); }}
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -209,7 +210,7 @@ const Lightbox = ({ images, currentIndex, onClose, onNext, onPrev }) => {
 
         {/* Main Image */}
         <motion.div
-          className="max-w-7xl max-h-[90vh] mx-4"
+          className="w-full max-w-2xl sm:max-w-3xl md:max-w-4xl max-h-[80vh] flex items-center justify-center"
           initial={{ scale: 0.8 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.3 }}
@@ -218,12 +219,12 @@ const Lightbox = ({ images, currentIndex, onClose, onNext, onPrev }) => {
           <img
             src={images[currentIndex]}
             alt={`Gallery image ${currentIndex + 1}`}
-            className="w-full h-full object-contain rounded-lg"
+            className="w-full h-auto max-h-[70vh] object-contain rounded-lg shadow-lg"
           />
         </motion.div>
 
         {/* Image Counter */}
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/50 text-white px-4 py-2 rounded-full">
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/50 text-white px-4 py-2 rounded-full text-xs sm:text-sm">
           {currentIndex + 1} / {images.length}
         </div>
       </motion.div>
@@ -241,11 +242,7 @@ export default function FairGallery({ params }) {
   
   if (!fair) {
     return (
-      <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 min-h-screen">
-        <div className="fixed inset-0 bg-gradient-to-b from-black via-transparent to-black pointer-events-none z-0" />
-        <div className="relative z-20">
-          <Header />
-        </div>
+      <BgLayout>
         <div className="relative z-10 flex items-center justify-center min-h-screen">
           <div className="text-center text-white">
             <h1 className="text-4xl font-bold mb-4">Fair Gallery Not Found</h1>
@@ -257,7 +254,7 @@ export default function FairGallery({ params }) {
             </button>
           </div>
         </div>
-      </div>
+      </BgLayout>
     );
   }
 
@@ -282,18 +279,14 @@ export default function FairGallery({ params }) {
   };
 
   return (
-    <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 min-h-screen">
-      {/* Global Background Overlay */}
-      <div className="fixed inset-0 bg-gradient-to-b from-black via-transparent to-black pointer-events-none z-0" />
-      
-      <div className="relative z-20">
-        <Header />
-      </div>
-      
+    <BgLayout>
+      {/* Mobile header spacer for fixed header on mobile/tablet */}
+      <div className="block lg:hidden" style={{ height: '4em' }} aria-hidden="true" />
+
       <div className="relative z-10 pt-20">
         {/* Header Section */}
         <motion.div 
-          className="flex items-center justify-between p-6 max-w-7xl mx-auto"
+          className="flex flex-col md:flex-row items-start md:items-center justify-between gap-y-4 p-4 sm:p-6 max-w-7xl mx-auto"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -305,24 +298,21 @@ export default function FairGallery({ params }) {
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
               <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/>
             </svg>
-            <span className="text-lg font-semibold">Back to Events</span>
+            <span className="text-base sm:text-lg font-semibold">Back to Events</span>
           </button>
-          
-          <div className="text-center">
-            <h1 className="text-3xl md:text-4xl font-bold text-white">
+          <div className="text-center flex-1">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
               {fair.name}
             </h1>
-            <p className="text-gray-300 mt-1">{fair.location}</p>
+            <p className="text-gray-300 mt-1 text-sm sm:text-base">{fair.location}</p>
           </div>
-          
           <div className="text-right text-gray-300">
-            <p className="text-sm">{fair.imageCount} Photos</p>
+            <p className="text-xs sm:text-sm">{fair.imageCount} Photos</p>
           </div>
         </motion.div>
-
         {/* Gallery Grid */}
-        <div className="max-w-7xl mx-auto px-6 pb-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-14 sm:pb-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {fair.images.map((image, index) => (
               <motion.div
                 key={index}
@@ -334,23 +324,21 @@ export default function FairGallery({ params }) {
                 whileHover={{ y: -5 }}
               >
                 <div className="relative overflow-hidden rounded-xl shadow-lg bg-gray-800">
-                  <div className="relative h-48 overflow-hidden">
+                  <div className="relative w-full aspect-[4/3] overflow-hidden">
                     <img
                       src={image}
                       alt={`${fair.name} - Photo ${index + 1}`}
                       className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
                     />
-                    
                     {/* Hover Overlay */}
                     <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                      <div className="bg-white/20 backdrop-blur-sm rounded-full p-3">
+                      <div className="bg-white/20 backdrop-blur-sm rounded-full p-2 sm:p-3">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
                           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                         </svg>
                       </div>
                     </div>
                   </div>
-                  
                   {/* Image Number */}
                   <div className="absolute top-2 right-2 bg-black/50 text-white px-2 py-1 rounded text-xs">
                     {index + 1}
@@ -361,7 +349,6 @@ export default function FairGallery({ params }) {
           </div>
         </div>
       </div>
-
       {/* Lightbox */}
       {lightboxIndex !== null && (
         <Lightbox
@@ -372,6 +359,6 @@ export default function FairGallery({ params }) {
           onPrev={prevImage}
         />
       )}
-    </div>
+    </BgLayout>
   );
 }
