@@ -1,0 +1,26 @@
+banner: https://bonhoeffermachines.com/en/public/product_banner/plate-compactor-banner.webp
+description: A plate compactor is a piece of construction equipment used to smooth and level the earth. It consists of a heavy iron plate mounted to the base of a machine and uses either a vibrating or pounding action to flatten the land. Bonhoeffer Plate compactors are fitted with professional quality 6.5 HP gasoline engine that helps in getting greater centrifugal force, heavy duty iron plate, folding handle, and protective frame make the machine more efficient.
+
+  <div class="_listing">
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_188">
+                        <a href="https://bonhoeffermachines.com/en/category-details/plate-compactor/BON-P-PC-10.5KN-6.5HP" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-P-PC-10.5KN-6.5HP.webp" />                        </a>
+                        <h3>Model : BON-P-PC-10.5KN-6.5HP </h3>
+                        <strong class="cat_title"> PLATE COMPACTOR </strong>
+                        <strong class="cat_mb">IMPACT FORCE 13.7 KN </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_81">
+                        <a href="https://bonhoeffermachines.com/en/category-details/plate-compactor/BON-P-PC-11KN-6.5HP" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-P-PC-11KN-6.5HP.webp" />                        </a>
+                        <h3>Model : BON-P-PC-11KN-6.5HP </h3>
+                        <strong class="cat_title"> PLATE COMPACTOR </strong>
+                        <strong class="cat_mb">IMPACT FORCE 11 KN </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_189">
+                        <a href="https://bonhoeffermachines.com/en/category-details/plate-compactor/BON-P-PC-15KN-6.5HP" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-P-PC-15KN-6.5HP.webp" />                        </a>
+                        <h3>Model : BON-P-PC-15KN-6.5HP </h3>
+                        <strong class="cat_title"> PLATE COMPACTOR </strong>
+                        <strong class="cat_mb">IMPACT FORCE 13.7 KN </strong>
+                     </div>
+                                       </div>

@@ -1,0 +1,61 @@
+banner: https://bonhoeffermachines.com/en/public/product_banner/44-electric-motors-banner.webp
+description: auto-generate
+
+<div class="_listing">
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_267">
+                        <a href="https://bonhoeffermachines.com/en/category-details/electric-motors/BON-EM-LRPM-1.0HP" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-EM-LRPM-1.0HP.webp" />                        </a>
+                        <h3>Model : BON-EM-LRPM-1.0HP </h3>
+                        <strong class="cat_title">  </strong>
+                        <strong class="cat_mb"> </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_268">
+                        <a href="https://bonhoeffermachines.com/en/category-details/electric-motors/BON-EM-LRPM-2.0HP" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-EM-LRPM-2.0HP.webp" />                        </a>
+                        <h3>Model : BON-EM-LRPM-2.0HP </h3>
+                        <strong class="cat_title">  </strong>
+                        <strong class="cat_mb"> </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_269">
+                        <a href="https://bonhoeffermachines.com/en/category-details/electric-motors/BON-EM-LRPM-3.0HP" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-EM-LRPM-3.0HP.webp" />                        </a>
+                        <h3>Model : BON-EM-LRPM-3.0HP </h3>
+                        <strong class="cat_title">  </strong>
+                        <strong class="cat_mb"> </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_270">
+                        <a href="https://bonhoeffermachines.com/en/category-details/electric-motors/BON-EM-LRPM-4.0HP" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-EM-LRPM-4.0HP.webp" />                        </a>
+                        <h3>Model : BON-EM-LRPM-4.0HP </h3>
+                        <strong class="cat_title">  </strong>
+                        <strong class="cat_mb"> </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_271">
+                        <a href="https://bonhoeffermachines.com/en/category-details/electric-motors/BON-EM-HRPM-1.0HP" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-EM-HRPM-1.0HP.webp" />                        </a>
+                        <h3>Model : BON-EM-HRPM-1.0HP </h3>
+                        <strong class="cat_title">  </strong>
+                        <strong class="cat_mb"> </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_272">
+                        <a href="https://bonhoeffermachines.com/en/category-details/electric-motors/BON-EM-HRPM-2.0HP" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-EM-HRPM-2.0HP.webp" />                        </a>
+                        <h3>Model : BON-EM-HRPM-2.0HP </h3>
+                        <strong class="cat_title">  </strong>
+                        <strong class="cat_mb"> </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_273">
+                        <a href="https://bonhoeffermachines.com/en/category-details/electric-motors/BON-EM-HRPM-3.0HP" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-EM-HRPM-3.0HP.webp" />                        </a>
+                        <h3>Model : BON-EM-HRPM-3.0HP </h3>
+                        <strong class="cat_title">  </strong>
+                        <strong class="cat_mb"> </strong>
+                     </div>
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_274">
+                        <a href="https://bonhoeffermachines.com/en/category-details/electric-motors/BON-EM-HRPM-4.0HP" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-EM-HRPM-4.0HP.webp" />                        </a>
+                        <h3>Model : BON-EM-HRPM-4.0HP </h3>
+                        <strong class="cat_title">  </strong>
+                        <strong class="cat_mb"> </strong>
+                     </div>
+                                       </div>

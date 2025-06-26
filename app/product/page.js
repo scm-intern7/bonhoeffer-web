@@ -29,7 +29,7 @@ function ProductPage() {
       products: [
         { name: "Earth Auger", slug: "earth-auger", image: "https://bonhoeffermachines.com/public/images/segment/7_BARRENA_DE_TIERRA.webp" },
         { name: "Water Pump 2 Stroke", slug: "water-pump-2-stroke", image: "https://bonhoeffermachines.com/public/images/segment/8_BOMBA_DE_AGUA_2_TIEMPO.webp" },
-        { name: "Engine 2 Strokes", slug: "engine-2-strokes", image: "https://bonhoeffermachines.com/public/images/segment/9_MOTOR_DE_2_TIEMPOS.webp" },
+        { name: "Engine 2 Strokes", slug: "engine-2-stroke", image: "https://bonhoeffermachines.com/public/images/segment/9_MOTOR_DE_2_TIEMPOS.webp" },
         { name: "Lawn Mower", slug: "lawn-mower", image: "https://bonhoeffermachines.com/public/images/segment/10_CORTAC%E5%BF%83PED.webp" },
         { name: "Brush Cutter", slug: "brush-cutter", image: "https://bonhoeffermachines.com/public/images/segment/1_DESBROZADORA.webp" },
         { name: "Backpack Brush Cutter", slug: "backpack-brush-cutter", image: "https://bonhoeffermachines.com/public/images/segment/2_DESBROZADORA_DE_MOCHILA.webp" },
@@ -81,14 +81,14 @@ function ProductPage() {
         { name: "Gasoline Pressure Washer", slug: "gasoline-pressure-washer", image: "https://bonhoeffermachines.com/public/images/segment/2_HIDROLAVADORA-DE-GASOLINA.webp" },
         { name: "Pressure Washer Home Use", slug: "pressure-washer-home-use", image: "https://bonhoeffermachines.com/public/images/segment/3_Domestic-pressure-washer.webp" },
         { name: "Direct Driven Air Compressor", slug: "direct-driven-air-compressor", image: "https://bonhoeffermachines.com/public/images/segment/4_Direct-driven-air-compressor.webp" },
-        { name: "Vacuum Cleaner Commercial Grade", slug: "vacuum-cleaner-commercial-grade", image: "https://bonhoeffermachines.com/public/images/segment/5_ASPIRADORA-GRADO-COMERCIAL.webp" }
+        { name: "Vacuum Cleaner Commercial Grade", slug: "vacuum-cleaner", image: "https://bonhoeffermachines.com/public/images/segment/5_ASPIRADORA-GRADO-COMERCIAL.webp" }
       ]
     },
     {
       id: 8,
       name: "Industrial",
       products: [
-        { name: "Electric Motors", slug: "electric-motors", image: "https://bonhoeffermachines.com/en/public/images/segment/2_electric-motors.webp" },
+        { name: "Electric Motors", slug: "electric-motor", image: "https://bonhoeffermachines.com/en/public/images/segment/2_electric-motors.webp" },
         { name: "Centrifugal Pump", slug: "centrifugal-pump", image: "https://bonhoeffermachines.com/en/public/images/segment/4_BOMBA-CENTRO%CC%88FUGA.webp" },
         { name: "Submersible Pump", slug: "submersible-pump", image: "https://bonhoeffermachines.com/public/images/segment/5_BOMBA-DE-SUMERGIBLE.webp" },
         { name: "Welding Machines", slug: "welding-machines", image: "https://bonhoeffermachines.com/en/public/images/segment/1_MAQUINAS-DE-SOLDAR.webp" }
@@ -389,7 +389,7 @@ function ProductPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
               >
-                <h2 className="text-2xl xs:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
+                <h2 className="text-2xl xs:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[#989b2e]" id={`category-${category.id}`}>
                   {category.name}
                 </h2>
               </motion.div>

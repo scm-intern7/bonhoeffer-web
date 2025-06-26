@@ -88,12 +88,11 @@ function ProductSpecificPage() {
         { id: 1, name: 'BON-WP1.0-52-2S', image: 'https://bonhoeffermachines.com/en/public/machines/BON-WP1.0-52-2S.webp', feature: 'INLET / OUTLET- 1 INCHES - 52 CC', link: '/product/water-pump-2-stroke/BON-WP1.0-52-2S' }
       ],
       'engine-2-stroke': [
-        { id: 1, name: 'BON-2S-35', image: 'https://bonhoeffermachines.com/en/public/machines/BON-2S-35.webp', feature: '2-Stroke, 35cc, 1.0kW', link: '/product/engine-2-stroke/BON-2S-35' },
-        { id: 2, name: 'BON-2S-43', image: 'https://bonhoeffermachines.com/en/public/machines/BON-2S-43.webp', feature: '2-Stroke, 43cc, 1.25kW', link: '/product/engine-2-stroke/BON-2S-43' },
-        { id: 3, name: 'BON-2S-52', image: 'https://bonhoeffermachines.com/en/public/machines/BON-2S-52.webp', feature: '2-Stroke, 52cc, 1.45kW', link: '/product/engine-2-stroke/BON-2S-52' }
+        { id: 1, name: 'BON-E-2S-23', image: 'https://bonhoeffermachines.com/en/public/machines/BON-E-2S-23.webp', feature: 'DISPLACEMENT 23 CC', link: '/product/engine-2-stroke/BON-E-2S-23' },
+        { id: 2, name: 'BON-E-2S-26', image: 'https://bonhoeffermachines.com/en/public/machines/BON-E-2S-26.webp', feature: 'DISPLACEMENT 26 CC', link: '/product/engine-2-stroke/BON-E-2S-26' },
       ],
-      'lawn-mover': [
-        { id: 1, name: 'BON-P-LM22', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-LM22.webp', feature: 'CUTTING WIDTH - 22 INCHES', link: '/product/lawn-mover/BON-P-LM22' }
+      'lawn-mower': [
+        { id: 1, name: 'BON-P-LM22', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-LM22.webp', feature: 'CUTTING WIDTH - 22 INCHES', link: '/product/lawn-mower/BON-P-LM22' }
       ],
       'backpack-brush-cutter': [
         { id: 1, name: 'BON-P-BP-BC45', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-BP-BC45.webp', feature: 'DISPLACEMENT 45 CC', link: '/product/backpack-brush-cutter/BON-P-BP-BC45' }
@@ -160,6 +159,89 @@ function ProductSpecificPage() {
         { id: 5, name: 'BON-GT-950T', image: 'https://bonhoeffermachines.com/en/public/machines/BON-GT-950T.webp', feature: 'POWER 7.0 HP', link: '/product/tiller/BON-GT-950T' },
         { id: 6, name: 'BON-GT-950C', image: 'https://bonhoeffermachines.com/en/public/machines/BON-GT-950C.webp', feature: 'POTENCIA 14.0 HP', link: '/product/tiller/BON-GT-950C' }
       ],
+      'knapsack-sprayer': [
+        { id: 1, name: 'BON-P-KS26', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-KS26.webp', feature: 'DISPLACEMENT 26 CC' },
+        { id: 2, name: 'BON-P-KS37', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-KS37.webp', feature: 'DISPLACEMENT 37 CC - 4 STROKE' }
+      ],
+      'electric-motor': [
+        { id: 1, name: 'BON-EM-LRPM-1.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-LRPM-1.0HP.webp', feature: '' },
+        { id: 2, name: 'BON-EM-LRPM-2.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-LRPM-2.0HP.webp', feature: '' },
+        { id: 3, name: 'BON-EM-LRPM-3.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-LRPM-3.0HP.webp', feature: '' },
+        { id: 4, name: 'BON-EM-LRPM-4.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-LRPM-4.0HP.webp', feature: '' },
+        { id: 5, name: 'BON-EM-HRPM-1.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-HRPM-1.0HP.webp', feature: '' },
+        { id: 6, name: 'BON-EM-HRPM-2.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-HRPM-2.0HP.webp', feature: '' },
+        { id: 7, name: 'BON-EM-HRPM-3.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-HRPM-3.0HP.webp', feature: '' },
+        { id: 8, name: 'BON-EM-HRPM-4.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-HRPM-4.0HP.webp', feature: '' }
+      ],
+      'centrifugal-pump': [
+        { id: 1, name: 'BON-P-CP-0.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-CP-0.50HP.webp', feature: 'POWER 0.5 HP' },
+        { id: 2, name: 'BON-P-CP-2.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-CP-2.0HP.webp', feature: 'POWER 2.0 HP' },
+        { id: 3, name: 'BON-P-CP-1.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/%20BON-P-CP-1.0HP.webp', feature: 'POWER 1.0 HP' }
+      ],
+      'welding-machines': [
+        { id: 1, name: 'BON-WM-DUAL-200A', image: 'https://bonhoeffermachines.com/en/public/machines/BON-WM-DUAL-200A.webp', feature: 'MAXIMUM CURRENT 200A' },
+        { id: 2, name: 'BON-WM-DUAL-130A', image: 'https://bonhoeffermachines.com/en/public/machines/BON-WM-DUAL-130A.webp', feature: 'MAXIMUM CURRENT 130A' },
+        { id: 3, name: 'BON-WM-DUAL-160A', image: 'https://bonhoeffermachines.com/en/public/machines/BON-WM-DUAL-160A.webp', feature: 'MAXIMUM CURRENT 160A' }
+      ],
+      'tamping-rammer': [
+        { id: 1, name: 'BON-P-TR-13.7KN-4.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-TR-13.7KN-4.0HP.webp', feature: 'IMPACT FORCE 13.7 KN' },
+        { id: 2, name: 'BON-P-TR-10KN-4.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-TR-13.7KN-4.0HP.webp', feature: 'IMPACT FORCE 10 KN' }
+      ],
+      'plate-compactor': [
+        { id: 1, name: 'BON-P-PC-10.5KN-6.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PC-10.5KN-6.5HP.webp', feature: 'IMPACT FORCE 13.7 KN' },
+        { id: 2, name: 'BON-P-PC-11KN-6.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PC-11KN-6.5HP.webp', feature: 'IMPACT FORCE 11 KN' },
+        { id: 3, name: 'BON-P-PC-15KN-6.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PC-15KN-6.5HP.webp', feature: 'IMPACT FORCE 13.7 KN' }
+      ],
+      'concrete-cutter': [
+        { id: 1, name: 'BON-P-CC-14CM-13HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-CC-14CM-13HP.webp', feature: 'PROF CORTE 14 CM' },
+        { id: 2, name: 'BON-P-CC-15CM-13HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-CC-15CM-13HP.webp', feature: 'PROF CORTE 15 CM' }
+      ],
+      'concrete-vibrator': [
+        { id: 1, name: 'BON-P-CV-6M-6.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-CV-6M-6.5HP.webp', feature: 'POWER 6.5 HP' }
+      ],
+      'concrete-power-trowel': [
+        { id: 1, name: 'BON-PT-6.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/02345.png', feature: 'POWER 6.5 HP' },
+        { id: 2, name: 'BON-SFS-38CC', image: 'https://bonhoeffermachines.com/en/public/machines/BON-SFS-38CC.webp', feature: 'DISPLACEMENT 38 CC' }
+      ],
+      'manual-sprayer': [
+        { id: 1, name: 'BON-P-MS20L-JB', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MS20L-JB.webp', feature: 'CAPACITY 20L - BRASS PUMP' },
+        { id: 2, name: 'BON-P-MS5L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MS5L.webp', feature: 'CAPACITY 5L' },
+        { id: 3, name: 'BON-P-MS20L-JP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MS20L-JP.webp', feature: 'CAPACITY 20L' },
+        { id: 4, name: 'BON-P-EMS-20', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-EMS-20.webp', feature: '20L BATTERY SPRAYER' },
+        { id: 5, name: 'BON-P-MS2L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MS2L.webp', feature: 'CAPACITY 2L' }
+      ],
+      'mistduster': [
+        { id: 1, name: 'BON-P-MD42', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MD42.webp', feature: 'DISPLACEMENT 42 CC' },
+        { id: 2, name: 'BON-P-MD52', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MD52.webp', feature: 'DISPLACEMENT 52 CC' },
+        { id: 3, name: 'BON-P-MD82', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MD82.webp', feature: 'DISPLACEMENT 82 CC' }
+      ],
+      'thermal-fogger': [
+        { id: 1, name: 'BON-P-TF6L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-TF6L.webp', feature: 'CAPACITY 6L' },
+        { id: 2, name: 'BON-P-TF2L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-TF2L.webp', feature: 'CAPACITY 2L' }
+      ],
+      'gasoline-pressure-washer': [
+        { id: 1, name: 'BON-P-PW-G6.5HP-AP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PW-G6.5KW-AP.webp', feature: 'POWER 6.5 HP-AP' },
+        { id: 2, name: 'BON-P-PW-6.5HP-TP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PW-6.5HP-TP.webp', feature: 'POWER 6.5 HP' },
+        { id: 3, name: 'BON-P-PW-G6.5HP-TP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PW-G6.5HP-TP.webp', feature: 'POWER 6.5 HP' },
+        { id: 4, name: 'BON-P-PW-G9.0HP-TP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PW-G9.0HP-TP.webp', feature: 'POWER 9.0 HP' },
+        { id: 5, name: 'BON-P-PW-G13.0HP-TP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PW-G13.0HP-TP.webp', feature: 'POWER 13.0 HP' }
+      ],
+      'pressure-washer-home-use': [
+        { id: 1, name: 'BON-E-PW-1400W', image: 'https://bonhoeffermachines.com/en/public/machines/BON-E-PW-1400W.webp', feature: 'POWER 1400 W' },
+        { id: 2, name: 'BON-E-PW-1600W', image: 'https://bonhoeffermachines.com/en/public/machines/BON-E-PW-1600W.webp', feature: 'POWER 1600 W' },
+        { id: 3, name: 'BON-E-PW-2000W', image: 'https://bonhoeffermachines.com/en/public/machines/BON-E-PW-2000W.webp', feature: 'POWER 2000 W' }
+      ],
+      'air-compressor': [
+        { id: 1, name: 'BON-P-DDAC-25L', image: '', feature: 'CAPACITY 25L' },
+        { id: 2, name: 'BON-P-DDAC-50L', image: '', feature: 'CAPACITY 50L' }
+      ],
+      'vacuum-cleaner': [
+        { id: 1, name: 'BON-VC-1400W-30L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-VC-1400W-30L.webp', feature: 'CAPACITY 30L' },
+        { id: 2, name: 'BON-VC-1400W-50L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-VC-1400W-50L.webp', feature: 'CAPACITY 50L' }
+      ],
+      'hedge-trimmer': [
+        { id: 1, name: 'BON-P-HT-23CC', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-HT23.webp', feature: 'DISPLACEMENT 23 CC', link: '/product/hedge-trimmer/BON-P-HT-23' },
+      ],
       // Default models for products not specifically defined
       defaultModels: [
         { id: 1, name: `${getProductName(productSlug)}-100`, image: getProductImage(productSlug), feature: '5.5 HP - 163cc', link: `/product/${productSlug}/${getProductName(productSlug)}-100` },
@@ -185,12 +267,12 @@ function ProductSpecificPage() {
       'chainsaw': 'Chainsaw',
       'hedge-trimmer': 'Hedge Trimmer',
       'lawn-mower': 'Lawn Mower',
-      'leaf-blower': 'Leaf Blower',
+      'blower': 'Blower',
       'multi-tool': 'Multi Tool',
       'diesel-generator': 'Diesel Generator',
       'electric': 'Electric Lawn Mower',
       'electric-pressure-washer': 'Electric Pressure Washer',
-      'electric-motors': 'Electric Motors',
+      'electric-motor': 'Electric Motors',
       'air-compressor': 'Air Compressor',
       'solar-panel': 'Solar Panel',
       'solar-water-pump': 'Solar Water Pump',
@@ -201,7 +283,7 @@ function ProductSpecificPage() {
       'gasoline-generator': 'Gasoline Generator',
       'gasoline-inverter': 'Gasoline Inverter',
       'pressure-washer': 'Pressure Washer',
-      'domestic-pressure-washer': 'Domestic Pressure Washer',
+      'pressure-washer-home-use': 'Domestic Pressure Washer',
       'commercial-vacuum': 'Commercial Vacuum',
       'welding-machine': 'Welding Machine',
       'centrifugal-pump': 'Centrifugal Pump',
@@ -221,7 +303,31 @@ function ProductSpecificPage() {
       'log-splitter': 'Log Splitter',
       'mini-dumper': 'Mini Dumper',
       'trencher': 'Trencher',
-      'ac-professional': 'AC Professional'
+      'ac-professional': 'AC Professional',
+      'vacuum-cleaner': 'Vacuum Cleaner',
+      'knapsack-sprayer': 'Knapsack Sprayer',
+      'electric-motor': 'Electric Motor',
+      'centrifugal-pump': 'Centrifugal Pump',
+      'welding-machines': 'Welding Machines',
+      'tamping-rammer': 'Tamping Rammer',
+      'plate-compactor': 'Plate Compactor',
+      'concrete-cutter': 'Concrete Cutter',
+      'concrete-vibrator': 'Concrete Vibrator',
+      'concrete-power-trowel': 'Concrete Power Trowel',
+      'manual-sprayer': 'Manual Sprayer',
+      'mistduster': 'Mistduster',
+      'thermal-fogger': 'Thermal Fogger',
+      'gasoline-pressure-washer': 'Gasoline Pressure Washer',
+      'pressure-washer-home-use': 'Pressure Washer for Home Use',
+      'air-compressor': 'Air Compressor',
+      'vacuum-cleaner': 'Vacuum Cleaner',
+      'solar-panel': 'Solar Panel',
+      'submersible-pump': 'Submersible Pump',
+      'tiller': 'Tiller',
+      'knapsack-sprayer': 'Knapsack Sprayer',
+      'electric-motor': 'Electric Motor',
+      'centrifugal-pump': 'Centrifugal Pump',
+      'welding-machines': 'Welding Machines',
     };
     return nameMap[slug] || 'Product';
   };
@@ -235,23 +341,23 @@ function ProductSpecificPage() {
       'gasoline-tiller': 'https://bonhoeffermachines.com/public/product_banner/5-gasoline-tiller.webp',
       'brush-cutter': 'https://bonhoeffermachines.com/en/public/product_banner/brush-cutter-banner.webp',
       'backpack-brush-cutter': 'https://bonhoeffermachines.com/en/public/product_banner/backpack-brush-cutter-banner.webp',
-      'multi-tool': 'https://bonhoeffermachines.com/public/product_banner/9-multi-tool.webp',
-      'chainsaw': 'https://bonhoeffermachines.com/public/product_banner/10-chain-saw.webp',
-      'hedge-trimmer': 'https://bonhoeffermachines.com/public/product_banner/11-hedge-trimmer.webp',
-      'leaf-blower': 'https://bonhoeffermachines.com/public/product_banner/12-blower.webp',
-      'lawn-mower': 'https://bonhoeffermachines.com/public/product_banner/13-gasoline-lawn-mower.webp',
-      'earth-auger': 'https://bonhoeffermachines.com/public/product_banner/14-earth-auger.webp',
-      'diesel-water-pump': 'https://bonhoeffermachines.com/public/product_banner/19-diesel-water-pump.webp',
-      'diesel-generator': 'https://bonhoeffermachines.com/public/product_banner/20-diesel-generator.webp',
-      'diesel-engine': 'https://bonhoeffermachines.com/public/product_banner/21-diesel-engine.webp',
-      'pressure-washer': 'https://bonhoeffermachines.com/public/product_banner/22-gasoline-pressure-washer.webp',
-      'domestic-pressure-washer': 'https://bonhoeffermachines.com/public/product_banner/23-pressure-washer-home-use.webp',
-      'air-compressor': 'https://bonhoeffermachines.com/public/product_banner/24-direct-driven-air-compressor.webp',
-      'commercial-vacuum': 'https://bonhoeffermachines.com/public/product_banner/25-vaccum-cleaner.webp',
-      'manual-sprayer': 'https://bonhoeffermachines.com/public/product_banner/27-manual-sprayer.webp',
-      'electric-pressure-washer': 'https://bonhoeffermachines.com/public/product_banner/28-electric-pressure-washer.webp',
-      'mistduster': 'https://bonhoeffermachines.com/public/product_banner/29-Mistduster.webp',
-      'centrifugal-pump': 'https://bonhoeffermachines.com/public/product_banner/31-Centrifugal-Pump.webp',
+      'multi-tool': 'https://bonhoeffermachines.com/en/public/product_banner/multi-tool-banner.webp',
+      'chainsaw': 'https://bonhoeffermachines.com/en/public/product_banner/chainsaw-banner.webp',
+      'hedge-trimmer': 'https://bonhoeffermachines.com/en/public/product_banner/hedge-trimmer-banner.webp',
+      'leaf-blower': 'https://bonhoeffermachines.com/en/public/product_banner/blower-banner.webp',
+      'lawn-mower': 'https://bonhoeffermachines.com/en/public/product_banner/lawn-mower-banner.webp',
+      'earth-auger': 'https://bonhoeffermachines.com/en/public/product_banner/earth-auger-banner.webp',
+      'diesel-water-pump': 'https://bonhoeffermachines.com/en/public/product_banner/diesel-water-pump-banner.webp',
+      'diesel-generator': 'https://bonhoeffermachines.com/en/public/product_banner/diesel-generator-banner.webp',
+      'diesel-engine': 'https://bonhoeffermachines.com/en/public/product_banner/diesel-engine-banner.webp',
+      'pressure-washer': 'https://bonhoeffermachines.com/en/public/product_banner/gasoline-pressure-washer-banner.webp',
+      'pressure-washer-home-use': 'https://bonhoeffermachines.com/en/public/product_banner/pressure-washer-home-use-banner.webp',
+      'air-compressor': 'https://bonhoeffermachines.com/en/public/product_banner/direct-driven-air-compressor-banner.webp',
+      'commercial-vacuum': 'https://bonhoeffermachines.com/en/public/product_banner/vaccum-cleaner-banner.webp',
+      'manual-sprayer': 'https://bonhoeffermachines.com/en/public/product_banner/manual-sprayers-banner.webp',
+      'electric-pressure-washer': 'https://bonhoeffermachines.com/en/public/product_banner/28-electric-pressure-washer.webp',
+      'mistduster': 'https://bonhoeffermachines.com/en/public/product_banner/mistduster-banner.webp',
+      'centrifugal-pump': 'https://bonhoeffermachines.com/en/public/product_banner/centrifugal-pump-banner.webp',
       'submersible-pump': 'https://bonhoeffermachines.com/public/product_banner/32-Submersible-Pump.webp',
       'solar-water-pump': 'https://bonhoeffermachines.com/public/product_banner/33-Solar-Submersible-Pump.webp',
       'solar-panel': 'https://bonhoeffermachines.com/public/product_banner/34-solar-pannel.webp',
@@ -262,7 +368,7 @@ function ProductSpecificPage() {
       'power-trowel': 'https://bonhoeffermachines.com/public/product_banner/39-power-trovel.webp',
       'welding-machine': 'https://bonhoeffermachines.com/public/product_banner/40-welding-set.webp',
       'water-pump-2-stroke': 'https://bonhoeffermachines.com/en/public/product_banner/waterpump-2stroke-banner.webp',
-      'engine-2-stroke': 'https://bonhoeffermachines.com/en/public/product_banner/2stroke-engine-banner.webp',
+      'engine-2-stroke': 'https://bonhoeffermachines.com/en/public/product_banner/2-stroke-engine-banner.webp',
       'lawn-mover': 'https://bonhoeffermachines.com/en/public/product_banner/lawn-mower-banner.webp',
       'blower': 'https://bonhoeffermachines.com/en/public/product_banner/blower-banner.webp',
       'diesel-engine': 'https://bonhoeffermachines.com/en/public/product_banner/diesel-engine-banner.webp',
@@ -274,6 +380,17 @@ function ProductSpecificPage() {
       'solar-panel': 'https://bonhoeffermachines.com/en/public/product_banner/solar-pannel-banner.webp',
       'submersible-pump': 'https://bonhoeffermachines.com/en/public/product_banner/submersible-pumps-banner.webp',
       'tiller': 'https://bonhoeffermachines.com/en/public/product_banner/gasoline-tiller-banner.webp',
+      'knapsack-sprayer': 'https://bonhoeffermachines.com/en/public/product_banner/knapsack-sprayer-banner.webp',
+      'electric-motor': 'https://bonhoeffermachines.com/en/public/product_banner/44-electric-motors-banner.webp',
+      'centrifugal-pump': 'https://bonhoeffermachines.com/en/public/product_banner/centrifugal-pump-banner.webp',
+      'welding-machines': 'https://bonhoeffermachines.com/en/public/product_banner/welding-machine-banner.webp',
+      'tamping-rammer': 'https://bonhoeffermachines.com/en/public/product_banner/tamping-rammer-banner.webp',
+      'plate-compactor': 'https://bonhoeffermachines.com/en/public/product_banner/plate-compactor-banner.webp',
+      'concrete-cutter': 'https://bonhoeffermachines.com/en/public/product_banner/concrete-cutter-banner.webp',
+      'concrete-vibrator': 'https://bonhoeffermachines.com/en/public/product_banner/concrete-vibrator-banner.webp',
+      'concrete-power-trowel': 'https://bonhoeffermachines.com/en/public/product_banner/power-trovel-banner.webp',
+      'vacuum-cleaner': 'https://bonhoeffermachines.com/en/public/product_banner/vaccum-cleaner-banner.webp',
+      'thermal-fogger': 'https://bonhoeffermachines.com/en/public/product_banner/thermal-fogger-banner.webp',
     };
     return imageMap[slug] || 'https://bonhoeffermachines.com/public/product_banner/1-gasoline-water-pump.webp';
   };
@@ -285,11 +402,11 @@ function ProductSpecificPage() {
       'gasoline-generator': 'Gasoline generators are best source of all your power requirements at places where there is lack of electricity. Bonhoeffer\'s generators are fitted with professional gasoline engines and 100% copper winding alternators. Frames are built up with Q235-type steel using fully automatic robotic welding technology. Control Panel is Integrated with graphical interface for easy operation. Our generators are capable of handling all the load requirements and ensures complete safety.',
       'gasoline-inverter': 'Gasoline Inverter have unique feature of portability, light weight and compact. Bonhoeffer gasoline inverter are ultra-quiet fitted with 4 stroke gasoline engine, high quality Plastic resin parts, work perfectly at variable temperature of -5 °c and 50 °c and full use of petrol when tilt at different angles up to 25° in all directions.',
       'brush-cutter': 'Brush cutter makes your daily task of cutting and trimming the uneven bushes, shrubs, and grass easy. Bonhoeffer\'s Brush cutter comes with 30% more powerful engine compared with traditional engines. Made with shear precision, it is compatible, lightweight, and has a 200 Hour tested Professional Gear Box. Our Brush cutter engine is fitted with 20 CRMO material Crankshaft for a longer service life. Ergonomic bicycle type handle helps to do outdoor work effectively.',
-      'chainsaw': 'Professional chainsaws for tree felling, pruning, and wood cutting applications. Features advanced anti-kickback technology, automatic chain lubrication, and ergonomic design for extended use.',
+      'chainsaw': 'Chainsaws are used to cut the big logs and the hardwood. Bonhoeffer chain saws are equipped with a powerful engine which can deliver an output of 13000+ RPM while sustaining a longer running time to give maximum fuel efficiency. Designed for maximum stability, low vibration and professional quality guide bar and saw chain which helps in achieving greater speed, efficiency, and precision.',
       'earth-auger': 'Earth augers are powerful tools designed for drilling holes in the ground quickly and efficiently. Ideal for planting trees, installing fence posts, and other agricultural or construction applications. Bonhoeffer earth augers feature robust 2-stroke engines, ergonomic handles, and durable auger bits for reliable performance in tough soil conditions.',
       'water-pump-2-stroke': 'To withstand the challenge of shifting water from place to place in irrigation, Bonhoeffer\'s 2-stroke engine water pump is perfectly capable to draw water from 6m beneath surface. It has a 1-liter fuel tank capacity and discharges water at 10000m/hour.',
       'engine-2-stroke': 'Bonhoeffer\'s 2-stroke engines are compact, lightweight, and powerful, ideal for handheld equipment and portable machinery. Designed for high performance and reliability, these engines feature easy start, efficient fuel consumption, and robust construction for demanding applications.',
-      'lawn-mover': 'Powered to maneuver over grass and turf for desirable and affordable trimming and clearing, the Bonhoeffer 4-in-1 Stringing Mower comes with a 6.5 HP motor and a 22-inch cutting width. Steel covers make it stronger and more durable. Self-propelled driving makes it convenient to move. Equipped with a 65L bag to facilitate waste collection.',
+      'lawn-mower': 'Powered to maneuver over grass and turf for desirable and affordable trimming and clearing, the Bonhoeffer 4-in-1 Stringing Mower comes with a 6.5 HP motor and a 22-inch cutting width. Steel covers make it stronger and more durable. Self-propelled driving makes it convenient to move. Equipped with a 65L bag to facilitate waste collection.',
       'backpack-brush-cutter': 'Backpack Brush cutters make the machine much more convenient to carry around. Bonhoeffer\'s Brush cutter comes with 30% more powerful engine compared with traditional engines , 200 Hour tested Professional Gear Box , 20 CRMO material Crankshaft, high quality harness and durable steel frame for engine fitment.',
       'blower': 'Blowers are mainly used in homes and industries to blow away dust from every nook and corner. The blower has the features of a vacuum, blower, and mulching and is the perfect solution for cleaning the off-season leaves from your garden and gathering the dust particles. The 2-stroke engine with a single cylinder Bonhoeffer blower runs like a compact machine and has a double-layer air filter for a cleaner engine. Accessibility of adjustable handle inside the 90-degree range, makes it comfortable and reduces fatigue. The Blower even works for heavy workloads because of an Air Volume of 1450 M3/H and an ideal air velocity of 78 M/S.',
       'diesel-engine': 'Diesel engines are widely used in multiple applications and machines such as Water pumps, tillers, generators, etc. Bonhoeffer diesel Engines provided a higher compression ratio, uniform distribution in the fuel, low maintenance, and high performance. compared with ordinary engine Bonhoeffer Diesel Engine equipped with HCCI technology.',
@@ -300,7 +417,27 @@ function ProductSpecificPage() {
       'electric': 'Electric lawn mowers are eco-friendly and efficient, ideal for residential and commercial use. Bonhoeffer\'s electric lawn mowers feature high-performance motors, ergonomic designs, and durable construction for reliable operation.',
       'solar-panel': 'Solar panels collect energy from the sun in the form of sunlight and convert it into electricity that can be used to power homes and businesses. Bonhoeffer\'s high-efficiency solar panels come in monocrystalline and polycrystalline types with a power range from 150W to 460W.',
       'submersible-pump': 'Submersible pumps are used to pump out large amounts of water from underground and in borewell areas with high pressure. Bonhoeffer submersible pumps are fitted with brass inlet and outlet to avoid oxidation. POM Impellers for high efficiency, 100% copper winding motor for resistance to high temperatures, and better working efficiency.',
-      'tiller': 'A very robust and powerful weeder for customers who value long-lasting durability and high efficiency. Reliable and easy-starting diesel-power Bonhoeffer engine with oil bath air filter for longest service life. An absolute requirement for engines used in dry and dusty environments. Power weeder has a fully sealed transmission for usage in wet cultures and operates with a direct clutch; two speeds forward and one reverse. The handlebar is adjustable, both horizontally and vertically, for comfortable use. Removable transport wheels are standard and allow the use of many accessories, such as ploughs and ditching blades. The AUX PTO makes the machine extremely versatile as it gives you the option to connect several useful accessories to be powered by this multi-purpose machine.'
+      'tiller': 'A very robust and powerful weeder for customers who value long-lasting durability and high efficiency. Reliable and easy-starting diesel-power Bonhoeffer engine with oil bath air filter for longest service life. An absolute requirement for engines used in dry and dusty environments. Power weeder has a fully sealed transmission for usage in wet cultures and operates with a direct clutch; two speeds forward and one reverse. The handlebar is adjustable, both horizontally and vertically, for comfortable use. Removable transport wheels are standard and allow the use of many accessories, such as ploughs and ditching blades. The AUX PTO makes the machine extremely versatile as it gives you the option to connect several useful accessories to be powered by this multi-purpose machine.',
+      'knapsack-sprayer': 'Knapsack Sprayer enables the farmer to apply chemicals with relative ease. Bonhoeffer\'s knapsack sprayer comes with 2 stroke and 4 stroke engines coupled with high quality greaseless pump for easy maintenance. It has 25 litres tank capacity for longer work duration and durable spraying accessories.',
+      'electric-motor': 'Electric motors are devices that convert electrical energy into mechanical energy. Bonhoeffer electric motors are known for their high efficiency, durability, and reliable performance in various industrial applications.',
+      'centrifugal-pump': 'Centrifugal pumps are used across a vast array of Domestic, Agriculture, and Industrial purposes. Supplying water used in residential places to do normal pumping work in various industries these are compact and handy pumps. Bonhoeffer\'s Centrifugal Pump is an electric pump with a durable and fast cooling feature. The brass impeller mounted in the machine makes it more effective and productive. The device comes with 100% copper winding and works effectively for long time usage.',
+      'welding-machines': 'Welding machines are among the most essential tools for a welding professional. Welding machines generate heat that melts metal parts so that these parts can be joined. Bonhoeffer\'s welding machines are the supreme equipment due to digital display and IGBT inverter technology. The double function of MMA/Lift TIG Welding makes this machine portable and durable for users. Another highlight of our welding machines is that they come with an automatic temperature protector that allows the machine to cool down.',
+      'tamping-rammer': 'Tamping rammer is a machine used for compacting different types of soil under various construction sites. Bonhoeffer\'s Tamping Rammer has a powerful engine specially build for working at construction sites. It has a robust housing crankcase aluminium alloy for more extended durability. Fitted with long-lasting bellows with ribbed polyurethane for maximum durability and forged steel alloy plate for greater intensity and better shock absorption.',
+      'plate-compactor': 'A plate compactor is a piece of construction equipment used to smooth and level the earth. It consists of a heavy iron plate mounted to the base of a machine and uses either a vibrating or pounding action to flatten the land. Bonhoeffer Plate compactors are fitted with professional quality 6.5 HP gasoline engine that helps in getting greater centrifugal force, heavy duty iron plate, folding handle, and protective frame make the machine more efficient.',
+      'concrete-cutter': 'Concrete saws are power tools used to cut concrete, tiles, asphalt, and other solid materials. Bonhoeffer\'s concrete cutter is powered by 13 HP Gasoline engine, heavy duty frame and undercarriage to eliminate frame vibration and bending, wheels have ball bearings and waterproof seals for reduced maintenance, screw-type depth control w/lock guarantees accurate cutting.',
+      'concrete-vibrator': 'Concrete Vibrator machines are used in the process of eradicating air bubbles by forcefully shaking the freshly poured concrete. Bonhoeffer\'s concrete vibrator comes with 6.5 HP gasoline engine. Vibrating poker diameter ranges from 28 mm to 70 mm and length varies from 4 M to 8 M.',
+      'concrete-power-trowel': 'A concrete power trowel also known as a power float is a tool used during construction to apply a smooth finish to concrete slabs. Bonhoeffer concrete power trowel comes in 6.5 Hp with a rotor diameter of 91 cm, finish blades of 35*15 cm, and Millstone diameter of 97 cm. Bonhoeffer power trowel is lighter compared to the ride-on model and they are the best when observing the surface.',
+      'pressure-washer-home-use': 'Pressure washers are mainly used to clean greasy and dirty surfaces such as home, offices, vehicles, etc. Bonhoeffer offers the best pressure washers in the industry with a powerful copper-wound brushless motor that provides maximum pressure for efficient cleaning. It also comes with auto cut-off feature when the trigger is released for energy saving.',
+      'mist-duster': 'Mist Duster\'s are suitable for spraying pesticides and fungicides. They are mainly used for spraying pesticides in rice, fruits and vegetable crops. Bonhoeffer\'s Mist Duster is equipped with a booster pump through which it helps to cover an extensive and wide range. Our Mist dusters are fitted with powerful and durable engines that guarantees top performance and high productivity. Mist dusters are available in different tank sizes',
+      'thermal-fogger': 'Thermal fogging is used to process disinfectant solution within the air for a period in order to disinfect the surfaces of dust particles, it plays a major role in disease prevention and control. Bonhoeffer Thermal Fogger machine is both electric starting and manual starting, SS Body to prevent corrosion and electrical flow, Light in weight and balanced. Also available in butane gas variant.',
+      'gasoline-pressure-washer': 'Gasoline Pressure washers are used in various industries, residential complexes, and workshops to remove loose paint, dust, mud, and dirt from surfaces. Bonhoeffer\'s Gasoline pressure washer is fitted with professional quality gasoline engines, a Heavy-duty grade direct drive brass manifold triplex pump, solid heat treatment stainless steel plunger with ceramic coating, and accessories such as quick plug type nozzle tips, 10" pneumatic tires, steel braided high-pressure hose, professional trigger gun with stainless steel lance.',
+      'manual-sprayer': 'Manual sprayers are used for spraying pesticides, fungicides, and herbicides in agriculture. Bonhoeffer\'s manual sprayers are designed for ease of use, featuring a durable tank, ergonomic handle, and efficient nozzle for precise application. They are ideal for small-scale farming and gardening.',
+      'gasoline-pressure-washer': 'Gasoline Pressure washers are used in various industries, residential complexes, and workshops to remove loose paint, dust, mud, and dirt from surfaces. Bonhoeffer\'s Gasoline pressure washer is fitted with professional quality gasoline engines, a Heavy-duty grade direct drive brass manifold triplex pump, solid heat treatment stainless steel plunger with ceramic coating, and accessories such as quick plug type nozzle tips, 10" pneumatic tires, steel braided high-pressure hose, professional trigger gun with stainless steel lance',
+      'direct-driven-air-compressor': 'The air compressor is a device with wide application in almost all types of industries and domestic needs. Powered by a copper electric motor, Bonhoeffer\'s range of direct drive air compressors come with durable and powerful wheels for easy maneuvering. The tank capacity of 25 liters and 50 liters offers options to choose from as per requirements. The flow ranges between 233 liters per minute.',
+      'vacuum-cleaner': 'Vacuum cleaners are not only effective at cleaning dust and getting rid of allergens, they are also easy to use and they also save time and energy. Bonhoeffer\'s Vacuum cleaners are equipped with highly efficient Particulate Air Filter (HEPA) and are powerful enough to pull in wet and dry waste. The best thing about Bonhoeffer\'s Vacuum cleaner is that it comes with stainless steel tanks of 30 Litres and 50 Litres along with a 1400 W copper winding Motor.',
+      'multi-tool': 'Be it cutting and trimming long-height trees or far-reached shrubs, multitool eases your effort. The multi-tool has a long shaft connected with the engine and the detachable accessories are used for a different purpose. Bonhoeffer’s Multi-Tool comes with a digital intelligent engine that is 30% more powerful than standard engines, Professional Gear Box, Nikasil Coated cylinder, and 20 CRMO material Crankshaft. Accessories include Trimmer Head /Bladed / Pruner / Hedge Trimmer which is ideal for multipurpose.',
+      'hedge-trimmer': 'A hedge trimmer is a must-have tool to beautify your garden or to shape the fences of a plantation. Bonhoeffer\'s hedge trimmer gears up with a powerful 2-stroke engine , double blade action with 600 mm cutting length and has a maximum speed of 4200 rpm that is a perfect solution for overgrown hedges.',
+
     };
     
     return descriptions[slug] || `Professional ${getProductName(slug).toLowerCase()} designed for heavy-duty applications. Built with premium materials and advanced engineering for reliable performance in demanding conditions.`;
@@ -350,7 +487,7 @@ function ProductSpecificPage() {
       </section>
 
       {/* Product Description */}
-      <section className="py-10 xs:py-12 md:py-16 px-3 xs:px-4 sm:px-6">
+      <section className="pt-10 xs:pt-12 md:pt-16 px-3 xs:px-4 sm:px-6">
         <div className="max-w-3xl sm:max-w-4xl md:max-w-5xl lg:max-w-6xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -361,7 +498,7 @@ function ProductSpecificPage() {
             <h2 className="text-2xl xs:text-3xl md:text-4xl font-bold text-white mb-4 md:mb-8">
               Professional Grade <span className="text-[#989b2e]">{productName}</span>
             </h2>
-            <p className="text-base xs:text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl sm:max-w-3xl md:max-w-4xl mx-auto">
+            <p className="text-base xs:text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl sm:max-w-4xl md:max-w-6xl mx-auto">
               {productDescription}
             </p>
           </motion.div>
@@ -369,7 +506,7 @@ function ProductSpecificPage() {
       </section>
 
       {/* Models Grid Section */}
-      <section className="py-10 xs:py-14 md:py-20 px-3 xs:px-4 sm:px-6">
+      <section className="pt-10 xs:pt-14 md:pt-20 px-3 xs:px-4 sm:px-6">
         <div className="max-w-2xl sm:max-w-4xl md:max-w-6xl lg:max-w-7xl mx-auto">
           <div
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6 md:gap-8"
@@ -416,7 +553,7 @@ function ProductSpecificPage() {
       </section>
 
       {/* Back Navigation */}
-      <section className="py-6 xs:py-8 md:py-10 px-3 xs:px-4 sm:px-6 text-center">
+      <section className="pt-6 xs:pt-8 md:pt-10 px-3 xs:px-4 sm:px-6 text-center">
         <Link
           href="/product"
           className="inline-flex items-center text-[#989b2e] hover:text-white transition-colors text-base xs:text-lg font-medium gap-1 xs:gap-2"

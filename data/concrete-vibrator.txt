@@ -1,0 +1,12 @@
+banner: https://bonhoeffermachines.com/en/public/product_banner/concrete-vibrator-banner.webp
+description: Concrete Vibrator machines are used in the process of eradicating air bubbles by forcefully shaking the freshly poured concrete. Bonhoeffer’s concrete vibrator comes with 6.5 HP gasoline engine. Vibrating poker diameter ranges from 28 mm to 70 mm and length varies from 4 M to 8 M.
+
+  <div class="_listing">
+                                          <div class="_card accordion_head1 contentsection1" data-content="1contentsection_84">
+                        <a href="https://bonhoeffermachines.com/en/category-details/concrete-vibrator/BON-P-CV-6M-6.5HP" target="_blank">
+                        <img src="https://bonhoeffermachines.com/en/public/machines/BON-P-CV-6M-6.5HP.webp" />                        </a>
+                        <h3>Model : BON-P-CV-6M-6.5HP </h3>
+                        <strong class="cat_title"> CONCRETE VIBRATOR </strong>
+                        <strong class="cat_mb">POWER 6.5 HP </strong>
+                     </div>
+                                       </div>
