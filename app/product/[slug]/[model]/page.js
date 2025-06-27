@@ -1273,24 +1273,42 @@ function ModelSpecificPage() {
         </section>
       );
     } else if (modelDetails.isVideo && Array.isArray(modelDetails.videoUrls) && modelDetails.videoUrls.length > 0) {
-      // Video banner (YouTube embed)
-      const video = modelDetails.videoUrls[0];
+      // Video banner (YouTube embed) - handles multiple videos
       return (
-        <section className="relative min-h-[60vh] flex flex-col items-center justify-center overflow-hidden mt-5">
-          <div className="w-full max-w-3xl aspect-video relative z-10">
-            <iframe
-              src={video.url}
-              title={video.title || 'Product Video'}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="w-full h-full rounded-2xl border-none"
-            />
+        <section className="relative min-h-[70vh] flex flex-col items-center justify-center overflow-hidden mt-5 py-12">
+          
+          <div className={`grid gap-6 w-full max-w-7xl px-6 ${
+            modelDetails.videoUrls.length === 1 ? 'grid-cols-1 max-w-4xl' :
+            modelDetails.videoUrls.length === 2 ? 'grid-cols-1 md:grid-cols-2' :
+            'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
+          }`}>
+            {modelDetails.videoUrls.map((video, index) => (
+              <motion.div
+                key={index}
+                className="relative z-10"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: index * 0.2 }}
+              >
+                <div className="aspect-video relative">
+                  <iframe
+                    src={video.url}
+                    title={video.title || `Product Video ${index + 1}`}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full rounded-2xl border-none shadow-2xl"
+                  />
+                </div>
+                {video.title && (
+                  <div className="mt-3 text-center text-white text-base font-semibold">
+                    {video.title}
+                  </div>
+                )}
+              </motion.div>
+            ))}
           </div>
-          {video.title && (
-            <div className="mt-4 text-center text-white text-lg font-semibold">{video.title}</div>
-          )}
           <motion.div 
-            className="relative z-10 text-center text-white px-6 mt-6"
+            className="relative z-10 text-center text-white px-6 my-8"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
