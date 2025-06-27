@@ -27,6 +27,7 @@ function ModelSpecificPage() {
       'gasoline-water-pump': {
         'BON-P-WP1.0-31': {
           name: 'Gasoline Water Pump',
+          model: 'BON-P-WP1.0-31',
           description: [
             {title: 'Compact and Powerful Pump', text: 'The BON-P-WP1.0-31 gasoline water pump is small but powerful, with a 2 HP engine running at 7000 rpm. It can pump up to 8,000 liters of water per hour, making it great for smaller jobs. The self-priming design and easy retractable start make it simple to use, perfect for home or light commercial use.'},
             {title: 'Lightweight and Durable', text: 'The BON-P-WP1.0-31 is built with strong but lightweight aluminum parts, making it easy to move around while still being tough. The carbon and ceramic mechanical seal helps prevent leaks, ensuring reliable operation. Whether you\'re watering the garden or pumping water from a well, this pump is a durable and dependable choice.'}
@@ -43,6 +44,8 @@ function ModelSpecificPage() {
           videoUrls: [
             {title: 'Troubleshoot', url:'https://www.youtube.com/embed/KDoZQKhpj00'},
           ],
+          isCatalogueLeft: true,
+          isCatalogueRight: true,
           catalougeLeft: 'https://bonhoeffermachines.com/en/public/machines/specification_left_1718186339_850cc03e19fb1858ca2f.webp',
           catalougeRight: 'https://bonhoeffermachines.com/en/public/machines/specification_light_1718186352_495c82b0719f1d7ed41c.webp',
           isWorkshopManual: true,
@@ -85,29 +88,38 @@ function ModelSpecificPage() {
         
         'BON-P-WP1.5-79': {
           name: 'Gasoline Water Pump',
+          model: 'BON-P-WP1.5-79',
           description: [
-            {title: 'High-Performance Water Transfer', text: 'The BON-P-WP1.5-79 is a high-performance water pump designed for efficient water transfer in various demanding conditions. It features an ergonomically shaped L-handle for comfortable transport, OHV technology for enhanced engine efficiency, and a robust vertical engine capable of operating up to 250 hours continuously.'},
-            {title: 'Large-Scale Applications', text: 'With a high suction and discharge capacity of 13 tons of water per hour, this pump is ideal for large-scale applications. Additionally, it includes a steel grid muffler protector for user safety, preventing accidental contact with hot surfaces.'}
+            {
+              title: 'Compact and Efficient Water Pump',
+              text: 'The BON-P-WP1.5-79 is a compact centrifugal self-priming water pump designed for reliable and efficient performance. Featuring a 2 HP, 79 CC engine, this pump delivers a maximum discharge of 13,000 L/hr with a 15 m total head and 6 m suction lift. The recoil start system and 24 kg dry weight make it easy to operate and transport.'
+            },
+            {
+              title: 'Durable Pump and Great Choice for Industrial Applications',
+              text: 'Built for durability, it includes a 4‑vane cast iron impeller and rigid cast iron volute. The silicon carbide mechanical seal enhances longevity, making this pump a robust choice for agricultural, residential, and light industrial use.'
+            }
           ],
-          descriptionImage: 'https://bonhoeffermachines.com/en/public/machines/specification_dark_1721129007_aa71a890cbda98df88c2.webp',
+          descriptionImage: 'https://bonhoeffermachines.com/en/public/machines/specification_dark_1720595587_c6f57f9de1de7946c0df.webp',
           showcaseImages: [
-            'https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-wp1.5-79.webp',
-            'https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-wp1.5-79.webp',
-            'https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-wp1.5-79-4.webp'
+            'https://bonhoeffermachines.com/en/public/machines/showcase-3-BON-P-WP1.5-79.webp',
+            'https://bonhoeffermachines.com/en/public/machines/showcase-2-BON-P-WP1.5-79.webp',
+            'https://bonhoeffermachines.com/en/public/machines/showcase-1-BON-P-WP1.5-79.webp'
           ],
           isBannerImage: false,
-          bannerImage: [],
+          bannerImage: '',
           isVideo: true,
           videoUrls: [
-            'https://www.youtube.com/embed/troubleshooting1',
-            'https://www.youtube.com/embed/troubleshooting2'
+            { title: 'Troubleshoot', url: 'https://www.youtube.com/embed/F84__M51Hrk' },
+            { title: 'Troubleshoot', url: 'https://www.youtube.com/embed/KDoZQKhpj00' }
           ],
-          catalougeLeft: 'https://bonhoeffermachines.com/en/public/machines/specification_left_1718186339_850cc03e19fb1858ca2f.webp',
-          catalougeRight: 'https://bonhoeffermachines.com/en/public/machines/specification_light_1718186352_495c82b0719f1d7ed41c.webp',
+          isCatalogueLeft: true,
+          isCatalogueRight: true,
+          catalougeLeft: 'https://bonhoeffermachines.com/en/public/machines/specification_left_1721380303_b8ff8f89fb2bef9b42a8.webp',
+          catalougeRight: 'https://bonhoeffermachines.com/en/public/machines/specification_light_1721380316_1388a5ad449eefe5b3f9.webp',
           isWorkshopManual: true,
           workshopManualUrl: 'https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-water-pump.pdf',
           isUserManual: true,
-          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-WP1.5-79.pdf',
+          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/ENGLISH-MANUAL-BON-P-WP1.5-79.pdf',
           isBrochure: true,
           brochureUrl: 'https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-WP1.5-79.pdf',
           isSpareParts: true,
@@ -115,52 +127,62 @@ function ModelSpecificPage() {
           warrantyTime: 36,
           isFMTTI: false,
           specifications: [
-            { label: 'Pump Type', value: 'Self-priming' },
-            { label: 'Maximum Power', value: '3 HP / 4000 rpm' },
-            { label: 'Maximum Pumping Capacity', value: '13000 liters per hour' },
-            { label: 'Starting System', value: 'Retractable' },
-            { label: 'Suction Diameter', value: '1.5 inch' },
-            { label: 'Discharge Diameter', value: '1.5 inch' },
-            { label: 'Total Elevation', value: '15 meters' },
-            { label: 'Suction Height', value: '5 meters' },
-            { label: 'Fuel Tank Size', value: '1.2 liters' },
-            { label: 'Recommended Oil', value: 'SAE10W-30' },
-            { label: 'Compression Ratio', value: '8.0:1' },
-            { label: 'Volute Material', value: 'Aluminum' },
-            { label: 'Impeller Material', value: 'Aluminum' },
-            { label: 'Mechanical Seal', value: 'Carbon/Ceramic' }
+            { label: 'Pump Type', value: 'Centrifugal Self Priming, Monoblock Horizontal with Mechanical Seal' },
+            { label: 'Displacement (CC)', value: '79' },
+            { label: 'Engine Power (HP)', value: '2' },
+            { label: 'Start System', value: 'Recoil' },
+            { label: 'Suction Port Diameter (mm)', value: '38' },
+            { label: 'Discharge Port Diameter (mm)', value: '38' },
+            { label: 'Total Head (m)', value: '15' },
+            { label: 'Suction Lift (m)', value: '6' },
+            { label: 'Maximum Discharge (Litre Per Hour)', value: '13000' },
+            { label: 'Dry Weight (kg)', value: '24' },
+            { label: 'Impeller', value: '4 Vane Cast Iron' },
+            { label: 'Compression Ratio', value: '8.5:1' },
+            { label: 'Volute', value: 'Rigid Mounted Cast Iron' },
+            { label: 'Mechanical Seal (Pump case)', value: 'Silicon Carbide' }
           ],
           features: [
-            'OHV technology for enhanced engine efficiency',
-            'High suction and discharge capacity of 13 tons per hour',
-            'Vertical engine design for work in demanding conditions',
-            'Steel grid muffler protector for user safety',
-            'Ergonomically shaped L-handle for comfortable transport',
-            'Robust vertical engine capable of operating up to 250 hours continuously',
-            'Self-priming design',
-            'Retractable starting system',
+            'OHV design enhances combustion efficiency',
+            'Durable silicon carbide mechanical seal',
+            '4 vane high efficiency impeller',
+            'Cast iron volute',
+            'Heavy duty full frame protection',
+            'Protected by bonhoeffer Oil Alert®',
+            'Easy starting Bonhoeffer OHV commercial engine'
           ],
         },
+
         'BON-P-WP2.0-149': {
           name: 'Gasoline Water Pump',
+          model: 'BON-P-WP2.0-149',
           description: [
-            {title: 'Powerful and Easy-to-Use', text: 'The BON-P-WP2.0-149 is a powerful and easy-to-use water pump perfect for moving large amounts of water quickly. With a strong 5-horsepower engine, it can pump up to 30,000 liters of water per hour. It starts easily with a pull-cord and has 2-inch-wide pipes for both suction and discharge.'},
-            {title: 'Heavy-Duty Performance', text: 'This pump can lift water up to 25 meters high and draw it from up to 6 meters deep. It is fuel-efficient with a 1.2-liter tank and runs best with standard SAE10W-30 oil. This pump is great for heavy-duty tasks like draining pools, emptying flooded areas, or supplying irrigation systems.'}
+            {
+              title: 'BON-P-WP2.0-149: Efficient and Powerful Water Pump',
+              text: 'The BON-P-WP2.0-149 is a self-priming water pump designed to deliver reliable and efficient performance. With a maximum power of 5 HP at 4000 rpm, this pump can achieve a maximum pumping capacity of 30,000 litres per hour, making it perfect for a wide range of water transfer applications. The pump features a 2-inch suction and discharge diameter, allowing for a strong and steady water flow. Its total elevation capacity of 25 meters and a suction height of 6 meters ensure that it can handle both vertical and horizontal water movement effectively.'
+            },
+            {
+              title: 'Optimal Performance for Agriculture and Irrigation',
+              text: 'Built for ease of use and durability, the BON-P-WP2.0-149 comes with a retractable starting system for quick and convenient operation. It has a rated power of 2.5 kW and is equipped with a 1.2-liter fuel tank, ensuring extended operation times without frequent refuelling. For optimal performance, it is recommended to use SAE10W-30 oil. Whether for agricultural irrigation, dewatering, or other water transfer needs, the BON-P-WP2.0-149 offers a reliable and powerful solution that meets your requirements.'
+            }
           ],
-          descriptionImage: 'https://bonhoeffermachines.com/en/public/machines/specification_dark_1721129007_aa71a890cbda98df88c2.webp',
+          descriptionImage: 'https://bonhoeffermachines.com/en/public/machines/specification_dark_1726649540_df9fc6a0ae38c893a27a.webp',
           showcaseImages: [
-            'https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-wp2.0-149.webp',
             'https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-wp2.0-149.webp',
-            'https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-wp2.0-149-4.webp'
+            'https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-wp2.0-149.webp',
+            'https://bonhoeffermachines.com/en/public/machines/showcase-3-bon-p-wp2.0-149.webp',
+            'https://bonhoeffermachines.com/en/public/machines/showcase-4-bon-p-wp2.0-149.webp'
           ],
           isBannerImage: false,
-          bannerImage: [],
+          bannerImage: '',
           isVideo: true,
           videoUrls: [
-            'https://www.youtube.com/embed/troubleshooting-wp2'
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/KDoZQKhpj00' }
           ],
-          catalougeLeft: 'https://bonhoeffermachines.com/en/public/machines/specification_left_1718186339_850cc03e19fb1858ca2f.webp',
-          catalougeRight: 'https://bonhoeffermachines.com/en/public/machines/specification_light_1718186352_495c82b0719f1d7ed41c.webp',
+          isCatalogueLeft: true,
+          isCatalogueRight: true,
+          catalougeLeft: 'https://bonhoeffermachines.com/en/public/machines/specification_left_1721116573_bd9681dc746dda8a0d2a.webp',
+          catalougeRight: 'https://bonhoeffermachines.com/en/public/machines/specification_light_1721116586_0ea6799f2f87e89b2369.webp',
           isWorkshopManual: true,
           workshopManualUrl: 'https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-water-pump.pdf',
           isUserManual: true,
@@ -172,31 +194,772 @@ function ModelSpecificPage() {
           warrantyTime: 36,
           isFMTTI: false,
           specifications: [
-            { label: 'Pump Type', value: 'Self-priming' },
+            { label: 'Pump Type', value: 'Autocebante (Self-Priming)' },
             { label: 'Maximum Power', value: '5 HP / 4000 rpm' },
-            { label: 'Maximum Pumping Capacity', value: '30,000 liters per hour' },
-            { label: 'Starting System', value: 'Retractable' },
-            { label: 'Suction Diameter', value: '2 inches' },
-            { label: 'Discharge Diameter', value: '2 inches' },
-            { label: 'Total Elevation', value: '25 meters' },
-            { label: 'Suction Height', value: '6 meters' },
-            { label: 'Fuel Tank Size', value: '1.2 liters' },
-            { label: 'Recommended Oil', value: 'SAE10W-30' },
-            { label: 'Compression Ratio', value: '8.0:1' },
-            { label: 'Volute Material', value: 'Aluminum' },
-            { label: 'Impeller Material', value: 'Aluminum' },
-            { label: 'Mechanical Seal', value: 'Carbon/Ceramic' }
+            { label: 'Maximum Pumping Capacity', value: '30,000 litres per hour' },
+            { label: 'Start System', value: 'Retráctil (Recoil)' },
+            { label: 'Suction Diameter', value: '2 Pulgadas (2 Inches)' },
+            { label: 'Discharge Diameter', value: '2 Pulgadas (2 Inches)' },
+            { label: 'Total Head (Elevación total)', value: '25 Metros' },
+            { label: 'Suction Height (Altura de succión)', value: '6 Metros' },
+            { label: 'Rated Power', value: '2.5 kW' },
+            { label: 'Fuel Tank Size', value: '1.2 Litros' },
+            { label: 'Recommended Oil', value: 'SAE10W-30' }
           ],
           features: [
-            'Cast iron cylinders, metal cams, forged crankshafts for durability',
-            'High suction/discharge capacity - 30,000 liters of water per hour',
-            'UV-resistant plastic components designed to withstand exposure',
-            'Full protection frame offering effective safeguarding',
-            'Vertical motor design for tough conditions up to 250 hours',
-            'OHV technology for enhanced efficiency and durability',
-            'Easy pull-cord starting system',
-            'Large 2-inch diameter pipes for maximum flow',
+            'OHV design enhances combustion efficiency',
+            'Durable silicon carbide mechanical seal',
+            '4 vane high efficiency impeller',
+            'Cast iron volute',
+            'Heavy duty full frame protection',
+            'Protected by bonhoeffer Oil Alert®',
+            'Easy starting Bonhoeffer OHV commercial engine'
           ],
+        },
+
+        'BON-P-WP2.0-196': {
+          name: 'Petrol Water Pump',
+          model: 'BON-P-WP2.0-196',
+          description: [
+            {
+              title: 'BON-P-WP2.0-196: Efficient and Reliable Water Pump',
+              text: 'The BON-P-WP2.0-196 is a centrifugal self-priming, Monoblock horizontal water pump designed for efficiency and reliability. Powered by a 6.5 HP engine with a displacement of 196 CC, this pump can handle a maximum discharge of 36,000 litres per hour. Its robust construction includes a 51 mm suction port and discharge port, making it suitable for a variety of water transfer needs. With a total head of 32 meters and a suction lift of 8 meters, this pump ensures excellent performance in both residential and commercial applications.'
+            },
+            {
+              title: 'Built to Long Term Performance',
+              text: 'Built to last, the BON-P-WP2.0-196 features a durable 4 vane cast iron impeller and a rigid mounted cast iron volute. The silicon carbide mechanical seal in the pump case enhances its durability, ensuring long-term, trouble-free operation. Weighing just 24 kg and equipped with a recoil start system, this pump is easy to use and transport. Whether you need it for irrigation, water supply, or drainage, the BON-P-WP2.0-196 is a reliable and efficient choice for all your water pumping needs.'
+            }
+          ],
+          descriptionImage: 'https://bonhoeffermachines.com/en/public/machines/specification_dark_1720593525_2393802d7b2de8177267.webp',
+          showcaseImages: [
+            'https://bonhoeffermachines.com/en/public/machines/showcase-1-BON-P-WP2.0-196.webp',
+            'https://bonhoeffermachines.com/en/public/machines/showcase-2-BON-P-WP2.0-196.webp',
+            'https://bonhoeffermachines.com/en/public/machines/showcase-3-BON-P-WP2.0-196.webp'
+          ],
+          isBannerImage: false,
+          bannerImage: '',
+          isVideo: true,
+          videoUrls: [
+            {
+              title: 'Troubleshooting',
+              url: 'https://www.youtube.com/embed/KDoZQKhpj00'
+            }
+          ],
+          isCatalogueLeft: true,
+          isCatalogueRight: true,
+          catalougeLeft: 'https://bonhoeffermachines.com/en/public/machines/specification_left_1718186649_89397e8bd5adf8331fb2.webp',
+          catalougeRight: 'https://bonhoeffermachines.com/en/public/machines/specification_light_1718186666_a891eb120c82c540a06a.webp',
+          isWorkshopManual: true,
+          workshopManualUrl: 'https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-water-pump.pdf',
+          isUserManual: true,
+          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-WP.pdf',
+          isBrochure: true,
+          brochureUrl: 'https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-WP2.0-196.pdf',
+          isSpareParts: true,
+          sparePartsUrl: 'https://bonhoeffermachines.com/en/public/pdfs/BON-P-WP2.0-196.pdf',
+          warrantyTime: 36,
+          isFMTTI: false,
+          specifications: [
+            { label: 'Pump Type', value: 'Centrifugal Self Priming, Monoblock Horizontal With Mechanical Seal' },
+            { label: 'Displacement (CC)', value: '196' },
+            { label: 'Engine Power (HP)', value: '6.5' },
+            { label: 'Start System', value: 'Recoil' },
+            { label: 'Suction Port Diameter (mm)', value: '51' },
+            { label: 'Discharge Port Diameter (mm)', value: '51' },
+            { label: 'Total Head (m)', value: '32' },
+            { label: 'Suction Lift (m)', value: '8' },
+            { label: 'Maximum Discharge (Litre Per Hour)', value: '36000' },
+            { label: 'Dry Weight (kg)', value: '24' },
+            { label: 'Impeller', value: '4 Vane Cast Iron' },
+            { label: 'Compression Ratio', value: '8.5:1' },
+            { label: 'Volute', value: 'Rigid Mounted Cast Iron' },
+            { label: 'Mechanical Seal (Pump case)', value: 'Silicon Carbide' }
+          ],
+          features: [
+            'OHV design enhances combustion efficiency',
+            'Durable silicon carbide mechanical seal',
+            '4 vane high efficiency impeller',
+            'Cast iron volute',
+            'Heavy duty full frame protection',
+            'Protected by bonhoeffer Oil Alert®',
+            'Easy starting bonhoeffer mini 4-stroke commercial engine'
+          ],
+        },
+
+        "BON-P-WP3.0-196": {
+          name: "Petrol Water Pump",
+          model: "BON-P-WP3.0-196",
+          description: [
+            {
+              title: "BON-P-WP3.0-196: High-Performance Water Pump",
+              text: "The BON-P-WP3.0-196 is a centrifugal self-priming water pump designed for high efficiency and reliable performance. With a powerful 6.5 HP engine and a displacement of 196 CC, this pump can handle a maximum discharge of 55,000 liters per hour, making it ideal for large-scale water transfer needs. The pump features a 3-inch suction port and discharge port, ensuring robust water flow. It has a total head of 30 meters and a suction lift of 7 meters, which means it can effectively move water over significant distances and heights."
+            },
+            {
+              title: "Ideal for Agriculture, Irrigation and Industrial Applications",
+              text: "Built for durability, the BON-P-WP3.0-196 includes a 4 vane cast iron impeller and a rigid mounted cast iron volute. The silicon carbide mechanical seal in the pump case enhances its longevity, providing reliable, long-term operation. Weighing 26 kg and equipped with a recoil start system, this pump is easy to operate and transport. Whether for agricultural irrigation, industrial applications, or emergency water transfer, the BON-P-WP3.0-196 is a dependable choice that combines power and durability."
+            }
+          ],
+          descriptionImage: "https://bonhoeffermachines.com/en/public/machines/specification_dark_1720596412_dd0e34c7d2665fb6d1d6.webp",
+          showcaseImages: [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-showcase-4-bon-p-wp3.0-196.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-showcase-3-bon-p-wp3.0-196.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-showcase-2-bon-p-wp3.0-196.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-showcase-1-bon-p-wp3.0-196.webp"
+          ],
+          isBannerImage: false,
+          bannerImage: "",
+          isVideo: true,
+          videoUrls: [
+            {
+              title: "Troubleshooting",
+              url: "https://www.youtube.com/embed/KDoZQKhpj00"
+            }
+          ],
+          isCatalogueLeft: true,
+          isCatalogueRight: true,
+          catalougeLeft: "https://bonhoeffermachines.com/en/public/machines/specification_left_1718186921_efd8e70b552d012cee64.webp",
+          catalougeRight: "https://bonhoeffermachines.com/en/public/machines/specification_light_1718186933_2908dcc7f3ffae6e8d87.webp",
+          isWorkshopManual: true,
+          workshopManualUrl: "https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-water-pump.pdf",
+          isUserManual: true,
+          userManualUrl: "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-WP.pdf",
+          isBrochure: true,
+          brochureUrl: "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-WP3.0-196.pdf",
+          isSpareParts: true,
+          sparePartsUrl: "https://bonhoeffermachines.com/en/public/pdfs/BON-P-WP3.0-196.pdf",
+          warrantyTime: 36,
+          isFMTTI: false,
+          specifications: [
+            { label: 'Pump Type', value: 'Centrifugal Self Priming, Monoblock Horizontal With Mechanical Seal' },
+            { label: 'Displacement (CC)', value: '196' },
+            { label: 'Engine Power (HP)', value: '6.5' },
+            { label: 'Start System', value: 'Recoil' },
+            { label: 'Suction Port Diameter (mm)', value: '51' },
+            { label: 'Discharge Port Diameter (mm)', value: '51' },
+            { label: 'Total Head (m)', value: '30' },
+            { label: 'Suction Lift (m)', value: '7' },
+            { label: 'Maximum Discharge (Litre Per Hour)', value: '55000' },
+            { label: 'Dry Weight (kg)', value: '26' },
+            { label: 'Impeller', value: '4 Vane Cast Iron' },
+            { label: 'Compression Ratio', value: '8.5:1' },
+            { label: 'Volute', value: 'Rigid Mounted Cast Iron' },
+            { label: 'Mechanical Seal (Pump case)', value: 'Silicon Carbide' }
+          ],
+          features: [
+            'OHV design enhances combustion efficiency',
+            'Durable silicon carbide mechanical seal',
+            '4 vane high efficiency impeller',
+            'Cast iron volute',
+            'Heavy duty full frame protection',
+            'Protected by bonhoeffer Oil Alert®',
+            'Easy starting bonhoeffer mini 4-stroke commercial engine'
+          ],
+        },
+
+        "BON-P-WP4.0-272": {
+          name: "Petrol Water Pump",
+          model: "BON-P-WP4.0-272",
+          description: [
+            {
+              title: "BON-P-WP4.0-272: High-Capacity Centrifugal Pump",
+              text: "The BON-P-WP4.0-272 is a high-performance centrifugal self-priming water pump designed for heavy-duty applications. With a powerful 9 HP engine and a displacement of 272 CC, this pump achieves an impressive maximum discharge of 105,000 litres per hour. It features a 4-inch suction and discharge port, allowing for efficient water flow and handling. The pump can achieve a total head of 25 meters and a suction lift of 6 meters, making it suitable for various demanding water transfer tasks. Its recoil start system ensures easy and reliable operation."
+            },
+            {
+              title: "Durable and Robust Design",
+              text: "Built to last, the BON-P-WP4.0-272 includes a 4-vane cast iron impeller and a rigid mounted cast iron volute for enhanced durability. The mechanical seal made of silicon carbide in the pump case ensures long-term reliability and minimal maintenance. Weighing 37 kg, this pump combines robust performance with a sturdy design, making it ideal for industrial, agricultural, and large-scale water management applications."
+            }
+          ],
+          descriptionImage: "https://bonhoeffermachines.com/en/public/machines/specification_dark_1721128870_a8beec55136bb64ec52c.webp",
+          showcaseImages: [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-9.0hp_silde_2.png",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-showcase-1-bon-p-wp4.0-272.webp"
+          ],
+          isBannerImage: false,
+          bannerImage: "",
+          isVideo: true,
+          videoUrls: [
+            {
+              title: "Unboxing",
+              url: "https://www.youtube.com/embed/nHk2mb63GTw"
+            },
+            {
+              title: "Troubleshooting",
+              url: "https://www.youtube.com/embed/KDoZQKhpj00"
+            }
+          ],
+          isCatalogueLeft: true,
+          isCatalogueRight: true,
+          catalougeLeft: "https://bonhoeffermachines.com/en/public/machines/specification_left_1722420089_f81ff3b9986e9b210d84.webp",
+          catalougeRight: "https://bonhoeffermachines.com/en/public/machines/specification_light_1722420099_644bcf2c9834dc571a03.webp",
+          isWorkshopManual: true,
+          workshopManualUrl: 'https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-water-pump.pdf',
+          isUserManual: true,
+          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-WP.pdf',
+          isBrochure: true,
+          brochureUrl: 'https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-WP4.0-272.pdf',
+          isSpareParts: true,
+          sparePartsUrl: 'https://bonhoeffermachines.com/en/public/pdfs/BON-P-WP4.0-272.pdf',
+          warrantyTime: 36,
+          isFMTTI: false,
+          specifications: [
+            { label: "Pump Type", value: "Centrifugal Self Priming, Monoblock Horizontal With Mechanical Seal" },
+            { label: "Displacement", value: "272 CC" },
+            { label: "Engine Power", value: "9 HP" },
+            { label: "Start System", value: "Recoil" },
+            { label: "Suction Port Diameter", value: "4 inches" },
+            { label: "Discharge Port Diameter", value: "4 inches" },
+            { label: "Total Head (m)", value: "25" },
+            { label: "Suction Lift (m)", value: "6" },
+            { label: "Maximum Discharge (Litre Per Hour)", value: "105000" },
+            { label: "Dry Weight (kg)", value: "37" },
+            { label: "Impeller", value: "4 Vane Cast Iron" },
+            { label: "Compression Ratio", value: "8.5:1" },
+            { label: "Volute", value: "Rigid Mounted Cast Iron" },
+            { label: "Mechanical Seal(Pump case)", value: "Silicon Carbide" }
+          ],
+          features: [
+            "OHV design enhances combustion efficiency",
+            "Durable silicon carbide mechanical seal",
+            "4 vane high efficiency impeller",
+            "Cast iron volute",
+            "Heavy duty full frame protection",
+            "Protected by bonhoeffer Oil Alert®",
+            "Easy starting bonhoeffer mini 4-stroke commercial engine"
+          ]
+        },
+
+        "BON-P-WP1.5-224HL": {
+          name: "Petrol Water Pump",
+          model: "BON-P-WP1.5-224HL",
+          description: [
+            {
+              title: "High Performance and Efficient Gasoline Water Pump",
+              text: "The BON-P-WP1.5-224HL from Bonhoeffer is a self-priming, high-lift water pump engineered for efficiency and reliability. With a powerful 8.0 HP engine operating at 3800 RPM, this pump can achieve a maximum pumping capacity of 15,000 liters per hour. Its robust design includes a 1.5-inch suction diameter and versatile discharge options (1.5/1.0/1.0 inches), making it suitable for various water transfer needs. The pump is capable of lifting water to a total elevation of 75 meters and has a suction height of 7 meters, ensuring excellent performance even in challenging conditions."
+            },
+            {
+              title: "Durable and Easy to Use",
+              text: "Built to last, the BON-P-WP1.5-224HL features a durable 4 vane cast iron impeller and a rigid mounted cast iron volute. The silicon carbide mechanical seal in the pump case enhances its durability, ensuring long-term, trouble-free operation. The retractable starting system makes it easy to get the pump up and running quickly, and the 2.6-liter fuel tank allows for extended operation without frequent refueling. For optimal performance, the pump is recommended to use SAE10W-30 oil. Whether for agricultural, industrial, or commercial use, the BON-P-WP1.5-224HL is a reliable choice for all your high-lift water pumping needs."
+            }
+          ],
+          descriptionImage: "https://bonhoeffermachines.com/en/public/machines/specification_dark_1720594381_1fb0be26be82fd12e695.webp",
+          showcaseImages: [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-wp1.5-224hl.webp"
+          ],
+          isBannerImage: false,
+          bannerImage: "",
+          isVideo: true,
+          videoUrls: [
+            {
+              title: "Troubleshooting",
+              url: "https://www.youtube.com/embed/KDoZQKhpj00"
+            }
+          ],
+          isCatalogueLeft: true,
+          isCatalogueRight: true,
+          catalougeLeft: "https://bonhoeffermachines.com/en/public/machines/specification_left_1721805316_68bc2641381ad723589b.webp",
+          catalougeRight: "https://bonhoeffermachines.com/en/public/machines/specification_light_1721805328_ccdae88af42d575f0833.webp",
+          isWorkshopManual: true,
+          workshopManualUrl: 'https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-water-pump.pdf',
+          isUserManual: true,
+          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-WP.pdf',
+          isBrochure: true,
+          brochureUrl: 'https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-WP1.5-224HL.pdf',
+          isSpareParts: true,
+          sparePartsUrl: 'https://bonhoeffermachines.com/en/public/pdfs/BON-P-WP1.5-224HL.pdf',
+          warrantyTime: 36,
+          isFMTTI: false,
+          specifications: [
+            { label: "Pump Type", value: "Self-Priming (High Lift)" },
+            { label: "Maximum power", value: "8.0 HP / 3800 rpm" },
+            { label: "Maximum pumping capacity", value: "15000 liters per hour" },
+            { label: "Starting system", value: "Retractable" },
+            { label: "Suction diameter", value: "1.5 inch" },
+            { label: "Discharge Diameter", value: "1.5/1.0/1.0 Inch" },
+            { label: "Total elevation", value: "75 Meters" },
+            { label: "Suction height", value: "7 Meters" },
+            { label: "Fuel tank size", value: "2.6 Liters" },
+            { label: "Recommended oil", value: "SAE10W-30" },
+            { label: "Impeller", value: "4 Vane Cast Iron" },
+            { label: "Compression Ratio", value: "8.5:1" },
+            { label: "Volute", value: "Rigid Mounted Cast Iron" },
+            { label: "Mechanical Seal(Pump case)", value: "Silicon Carbide" }
+          ],
+          features: [
+            "OHV design enhances combustion efficiency",
+            "Durable silicon carbide mechanical seal",
+            "4 vane high efficiency impeller",
+            "Cast iron volute",
+            "Heavy duty full frame protection",
+            "Protected by bonhoeffer Oil Alert®",
+            "Easy starting Bonhoeffer OHV commercial engine"
+          ]
+        },
+
+        "BON-P-WP6.0-420": {
+          name: "Petrol Water Pump",
+          model: "BON-P-WP6.0-420",
+          description: [
+            {
+              title: "High-Powered Self-Priming Water Pump",
+              text: "The Bonhoeffer BON-P-WP6.0-420 water pump is a powerful self-priming pump designed for high-volume water transfer tasks. Boasting a maximum power of 14.0 HP at 3600 rpm, this pump offers an exceptional maximum pumping capacity of 150,000 litres per hour. The retractable starting system ensures reliable and effortless starts, while the 6-inch suction and discharge diameters facilitate efficient water flow. With a total elevation capacity of 20 meters and a suction height of 5 meters, the BON-P-WP6.0-420 is equipped to handle a variety of demanding applications."
+            },
+            {
+              title: "Robust Construction for Reliable Performance",
+              text: "Equipped with a 6-liter fuel tank, the BON-P-WP6.0-420 provides extended operational periods, minimizing the need for frequent refuelling. Recommended to use SAE10W-30 oil for optimal performance, this pump features a 4-vane cast iron impeller and a rigid mounted cast iron volute, ensuring durability and efficiency. The mechanical seal of the pump case is made from silicon carbide, offering enhanced longevity and reliability. Designed for industrial and agricultural applications, this water pump combines high performance with robust construction to deliver dependable service in challenging environments."
+            }
+          ],
+          descriptionImage: "https://bonhoeffermachines.com/en/public/machines/specification_dark_1721128958_163f7aa8e96ba47ac2f5.webp",
+          showcaseImages: [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-wp6.0-420.webp"
+          ],
+          isBannerImage: false,
+          bannerImage: "",
+          isVideo: true,
+          videoUrls: [
+            {
+              title: "Troubleshooting",
+              url: "https://www.youtube.com/embed/KDoZQKhpj00"
+            }
+          ],
+          isCatalogueLeft: false,
+          isCatalogueRight: false,
+          catalougeLeft: "",
+          catalougeRight: "",
+          isWorkshopManual: true,
+          workshopManualUrl: 'https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-water-pump.pdf',
+          isUserManual: true,
+          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-WP.pdf',
+          isBrochure: false,
+          brochureUrl: '',
+          isSpareParts: true,
+          sparePartsUrl: 'https://bonhoeffermachines.com/en/public/pdfs/BON-P-WP6.0-420.pdf',
+          warrantyTime: 36,
+          isFMTTI: false,
+          specifications: [
+            { label: "Pump type", value: "Self-priming" },
+            { label: "Maximum power", value: "14.0 HP/ 3600 rpm" },
+            { label: "Starting system", value: "Retractable" },
+            { label: "Maximum pumping capacity", value: "150,000 liters per hour" },
+            { label: "Suction diameter", value: "6 inches" },
+            { label: "Discharge diameter", value: "6 inches" },
+            { label: "Total elevation", value: "20 Meters" },
+            { label: "Suction height", value: "5 Meters" },
+            { label: "Fuel tank size", value: "6 Liters" },
+            { label: "Recommended oil", value: "SAE10W-30" },
+            { label: "Impeller", value: "4 Vane Cast Iron" },
+            { label: "Compression Ratio", value: "8.5:1" },
+            { label: "Volute", value: "Rigid Mounted Cast Iron" },
+            { label: "Mechanical Seal(Pump case)", value: "Silicon Carbide" }
+          ],
+          features: [
+            "OHV design enhances combustion efficiency",
+            "Durable silicon carbide mechanical seal",
+            "4 vane high efficiency impeller",
+            "Cast iron volute",
+            "Heavy duty full frame protection",
+            "Protected by bonhoeffer Oil Alert®",
+            "Easy starting bonhoeffer mini 4-stroke commercial engine"
+          ]
+        },
+        
+        "BON-P-WP2.0-224HL": {
+          name: "Petrol Water Pump",
+          model: "BON-P-WP2.0-224HL",
+          description: [
+            {
+              title: "Powerful Pumping with Self-Priming Design",
+              text: "The BON-P-WP2.0-224HL gasoline water pump is designed for strong performance with its 8.0 HP engine running at 3800 rpm. This self-priming pump is perfect for moving water over long distances or heights. It can pump up to 18,000 liters of water per hour, making it ideal for heavy-duty tasks."
+            },
+            {
+              title: "Built to Last with Durable Components",
+              text: "The BON-P-WP2.0-224HL is made for durability, featuring a sturdy cast iron impeller and volute. The pump's mechanical seal is made from silicon carbide, which helps prevent leaks and extends the pump's life. With an easy-to-use retractable starting system, this pump is reliable and built to handle tough jobs for years to come."
+            }
+          ],
+          descriptionImage: "https://bonhoeffermachines.com/en/public/machines/specification_dark_1720598093_51e2b5405410ef8b2b5a.webp",
+          showcaseImages: [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-showcase-3-bon-p-wp2.0-224hl.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-showcase-2-bon-p-wp2.0-224hl.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-wp2.0-224hl.webp"
+          ],
+          isBannerImage: false,
+          bannerImage: "",
+          isVideo: true,
+          videoUrls: [
+            {
+              title: "Unboxing & Assembly",
+              url: "https://www.youtube.com/embed/DyqfBm_sjBU"
+            },
+            {
+              title: "Troubleshooting",
+              url: "https://www.youtube.com/embed/KDoZQKhpj00"
+            }
+          ],
+          isCatalogueLeft: true,
+          isCatalogueRight: true,
+          catalougeLeft: "https://bonhoeffermachines.com/en/public/machines/specification_left_1718186727_a58f7da1313fb1dda57c.webp",
+          catalougeRight: "https://bonhoeffermachines.com/en/public/machines/specification_light_1718186738_d0bdc441c976b894a39a.webp",
+          isWorkshopManual: true,
+          workshopManualUrl: 'https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-water-pump.pdf',
+          isUserManual: true,
+          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-WP.pdf',
+          isBrochure: true,
+          brochureUrl: 'https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-WP2.0-224HL.pdf',
+          isSpareParts: true,
+          sparePartsUrl: 'https://bonhoeffermachines.com/en/public/pdfs/BON-P-WP2.0-224HL.pdf',
+          warrantyTime: 36,
+          isFMTTI: false,
+          specifications: [
+            { label: "Pump Type", value: "Self-Priming (High Lift)" },
+            { label: "Maximum power", value: "8.0 HP / 3800 rpm" },
+            { label: "Maximum pumping capacity", value: "18000 liters per hour / 16000 liters per hour" },
+            { label: "Starting system", value: "Retractable" },
+            { label: "Suction diameter", value: "2 inches" },
+            { label: "Discharge diameter", value: "2.0/1.5/1.5 inches" },
+            { label: "Total elevation", value: "80 Meters" },
+            { label: "Suction height", value: "7 meters" },
+            { label: "Fuel tank size", value: "2.6 Liters" },
+            { label: "Recommended oil", value: "SAE10W-30" },
+            { label: "Impeller", value: "4 Vane Cast Iron" },
+            { label: "Compression Ratio", value: "8.5:1" },
+            { label: "Volute", value: "Rigid Mounted Cast Iron" },
+            { label: "Mechanical Seal(Pump case)", value: "Silicon Carbide" }
+          ],
+          features: [
+            "OHV design enhances combustion efficiency",
+            "Durable silicon carbide mechanical seal",
+            "4 vane high efficiency impeller",
+            "Cast iron volute",
+            "Heavy duty full frame protection",
+            "Protected by bonhoeffer Oil Alert®",
+            "Easy starting bonhoeffer mini 4-stroke commercial engine"
+          ]
+        },
+
+        "BON-P-WP2.0-420HL": {
+          name: "Petrol Water Pump",
+          model: "BON-P-WP2.0-420HL",
+          description: [
+            {
+              title: "Robust and Efficient Self-Priming Water Pump",
+              text: "The BON-P-WP2.0-420HL is a robust and efficient cast iron self-priming water pump designed for high lift applications. Powered by a 14 HP engine operating at 3600 rpm, this pump boasts an impressive maximum pumping capacity of 30,000 litres per hour. The retractable starting system ensures ease of operation, while the 2.0-inch suction and discharge diameters make it suitable for a variety of demanding tasks. With a total elevation capacity of 95 meters and a suction height of 7 meters, the BON-P-WP2.0-420HL is built to handle substantial water transfer needs with precision and reliability."
+            },
+            {
+              title: "Durable and Resistance Water Pump",
+              text: "This water pump features a durable 4-vane cast iron impeller and a rigid mounted cast iron volute, enhancing its longevity and performance. The mechanical seal, made from silicon carbide, ensures superior durability and resistance to wear. The 6-liter fuel tank allows for extended operation periods, while the recommended SAE10W-30 oil ensures optimal engine performance. The BON-P-WP2.0-420HL is engineered for efficiency and reliability, making it an excellent choice for agricultural, industrial, and emergency water transfer applications."
+            }
+          ],
+          descriptionImage: "https://bonhoeffermachines.com/en/public/machines/specification_dark_1724394011_3b2c0f5488501e861df0.webp",
+          showcaseImages: [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-wp2.0-420hl.webp"
+          ],
+          isBannerImage: false,
+          bannerImage: "",
+          isVideo: true,
+          videoUrls: [
+            {
+              title: "Troubleshooting",
+              url: "https://www.youtube.com/embed/KDoZQKhpj00"
+            }
+          ],
+          isCatalogueLeft: true,
+          isCatalogueRight: true,
+          catalougeLeft: "https://bonhoeffermachines.com/en/public/machines/specification_left_1718186823_a84fa27f797e5114150f.webp",
+          catalougeRight: "https://bonhoeffermachines.com/en/public/machines/specification_light_1718186836_3270e8fe57460e3517dd.webp",
+          isWorkshopManual: true,
+          workshopManualUrl: 'https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-water-pump.pdf',
+          isUserManual: true,
+          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-WP.pdf',
+          isBrochure: true,
+          brochureUrl: 'https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-WP2.0-420HL.pdf',
+          isSpareParts: true,
+          sparePartsUrl: 'https://bonhoeffermachines.com/en/public/pdfs/BON-P-WP2.0-420HL.pdf',
+          warrantyTime: 36,
+          isFMTTI: false,
+          specifications: [
+            { label: "Pump Type", value: "Cast Iron Self-Priming (High Lift)" },
+            { label: "Maximum power", value: "14 HP/ 3600 rpm" },
+            { label: "Maximum pumping capacity", value: "30000 liters per hour" },
+            { label: "Starting system", value: "Retractable" },
+            { label: "Suction diameter", value: "2.0 inches" },
+            { label: "Discharge diameter", value: "2.0 inches" },
+            { label: "Total elevation", value: "95 Meters" },
+            { label: "Suction height", value: "7 meters" },
+            { label: "Fuel tank size", value: "6 Liters" },
+            { label: "Recommended oil", value: "SAE10W-30" },
+            { label: "Impeller", value: "4 Vane Cast Iron" },
+            { label: "Compression Ratio", value: "8.5:1" },
+            { label: "Volute", value: "Rigid Mounted Cast Iron" },
+            { label: "Mechanical Seal(Pump case)", value: "Silicon Carbide" }
+          ],
+          features: [
+            "OHV design enhances combustion efficiency",
+            "Durable silicon carbide mechanical seal",
+            "4 vane high efficiency impeller",
+            "Cast iron volute",
+            "Heavy duty full frame protection",
+            "Protected by bonhoeffer Oil Alert®",
+            "Easy starting bonhoeffer mini 4-stroke commercial engine"
+          ]
+        },
+
+        'BON-P-WP3.0-420HL': {
+          name: 'Petrol Water Pump',
+          model: 'BON-P-WP3.0-420HL',
+          description: [
+            {
+              title: "BON-P-WP3.0-420HL: High-Performance Self-Priming Water Pump",
+              text: "BON-P-WP3.0-420HL is one of the superior models of gasoline water pumps which is high-lift water pump from Bonhoeffer. Bonhoeffer is among the best brand of gasoline water pumps and our pumps are known for the best performance and reliability. The cast-iron self-pricing pump is mainly designed to meet the demanding needs of different water transfer applications. Because of the maximum pumping capacity of 45,000 litres per hour, this pump is ideal for commercial, industrial and agricultural applications. The high-lift feature ensures the efficient water transfer even from the long distances."
+            },
+            {
+              title: "Durable and Ease of Maintenance",
+              text: "This pump built with the robust cast iron components which includes 4 vane impeller and rigid mounted volute, this pump is engineered for longevity. The silicon carbide mechanical seal provides excellent resistance to wear and tear, ensuring a longer service life. The retractable starting system and 6-liter fuel tank make it user-friendly and capable of long operational periods without frequent refuelling."
+            }
+          ],
+          descriptionImage: "https://bonhoeffermachines.com/en/public/machines/specification_dark_1720596255_08c17c4973c05dca42ae.webp",
+          showcaseImages: [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-wp3.0-420hl.webp"
+          ],
+          isBannerImage: true,
+          bannerImage: "https://www.youtube.com/embed/KDoZQKhpj00",
+          isVideo: true,
+          videoUrls: [
+            {
+              title: "Troubleshooting",
+              url: "https://www.youtube.com/embed/KDoZQKhpj00"
+            }
+          ],
+          isCatalogueLeft: true,
+          isCatalogueRight: true,
+          catalougeLeft: "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-WP3.0-420HL.pdf",
+          catalougeRight: "https://bonhoeffermachines.com/en/public/pdfs/BON-P-WP3.0-420HL.pdf",
+          isWorkshopManual: true,
+          workshopManualUrl: "https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-water-pump.pdf",
+          isUserManual: true,
+          userManualUrl: "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-WP.pdf",
+          isBrochure: true,
+          brochureUrl: "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-WP3.0-420HL.pdf",
+          isSpareParts: true,
+          sparePartsUrl: "https://bonhoeffermachines.com/en/public/pdfs/BON-P-WP3.0-420HL.pdf",
+          warrantyTime: 36,
+          isFMTTI: false,
+          specifications: [
+            { label: "Pump Type", value: "Cast Iron Self-Priming (High Lift)" },
+            { label: "Maximum power", value: "14 HP/ 3600 rpm" },
+            { label: "Maximum pumping capacity", value: "45,000 liters per hour" },
+            { label: "Starting system", value: "Retractable" },
+            { label: "Suction diameter", value: "3 inches" },
+            { label: "Discharge diameter", value: "2.5/1.5/1.5 inches" },
+            { label: "Total elevation", value: "75 Meters" },
+            { label: "Suction height", value: "7 meters" },
+            { label: "Fuel tank size", value: "6 Liters" },
+            { label: "Recommended oil", value: "SAE10W-30" },
+            { label: "Impeller", value: "4 Vane Cast Iron" },
+            { label: "Compression Ratio", value: "8.5:1" },
+            { label: "Volute", value: "Rigid Mounted Cast Iron" },
+            { label: "Mechanical Seal (Pump case)", value: "Silicon Carbide" }
+          ],
+          features: [
+            "OHV design enhances combustion efficiency",
+            "Durable silicon carbide mechanical seal",
+            "4 vane high efficiency impeller",
+            "Cast iron volute",
+            "Heavy duty full frame protection",
+            "Protected by bonhoeffer Oil Alert®",
+            "Easy starting bonhoeffer mini 4-stroke commercial engine"
+          ]
+        },
+
+
+        "BON-P-WP2.0-196CH": {
+          name: "Petrol Water Pump",
+          model: "BON-P-WP2.0-196CH",
+          description: [
+            {
+              title: "High-Performance Chemical Water Pump",
+              text: "The Bonhoeffer BON-P-WP2.0-196CH water pump is a specialized, plastic self-priming chemical pump designed for handling corrosive liquids safely and efficiently. With a maximum power output of 6.5 HP at 3900 rpm, this pump can achieve a maximum pumping capacity of 35,000 liters per hour. Its retractable starting system ensures quick and reliable starts, while the 2-inch suction and discharge diameters facilitate smooth and effective fluid transfer. Capable of a total elevation of 30 meters and a suction height of 7 meters, this pump is well-suited for various industrial and agricultural chemical applications."
+            },
+            {
+              title: "Reliable and Durable for Corrosive Environments",
+              text: "Equipped with a 2.6-liter fuel tank, the BON-P-WP2.0-196CH allows for extended operation with minimal refuelling. Using SAE10W-30 oil is recommended to maintain optimal performance and longevity. The plastic construction of this self-priming pump ensures resistance to corrosive substances, making it ideal for handling chemicals in demanding environments. Whether used for agricultural irrigation or industrial processes, this chemical pump combines high capacity and robust design to deliver dependable performance in managing corrosive liquids."
+            }
+          ],
+          descriptionImage: "https://bonhoeffermachines.com/en/public/machines/specification_dark_1720595280_67192a58b7e6439752b6.webp",
+          showcaseImages: [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-wp2.0-196ch.webp"
+          ],
+          isBannerImage: false,
+          bannerImage: "",
+          isVideo: true,
+          videoUrls: [
+            {
+              title: "Unboxing & Assembly",
+              url: "https://www.youtube.com/embed/rQz9cBmZ0Fo"
+            },
+            {
+              title: "Troubleshooting",
+              url: "https://www.youtube.com/embed/KDoZQKhpj00"
+            }
+          ],
+          isCatalogueLeft: false,
+          isCatalogueRight: false,
+          catalougeLeft: "",
+          catalougeRight: "",
+          isWorkshopManual: true,
+          workshopManualUrl: 'https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-water-pump.pdf',
+          isUserManual: true,
+          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-WP.pdf',
+          isBrochure: false,
+          brochureUrl: '',
+          isSpareParts: true,
+          sparePartsUrl: 'https://bonhoeffermachines.com/en/public/pdfs/BON-P-WP2.0-196CH.pdf',
+          warrantyTime: 36,
+          isFMTTI: false,
+          specifications: [
+            { label: "Pump type", value: "Plastic self-priming (Chemical Pump)" },
+            { label: "Maximum power", value: "6.5 HP/ 3900 rpm" },
+            { label: "Maximum pumping capacity", value: "35,000 liters per hour" },
+            { label: "Starting system", value: "Retractable" },
+            { label: "Suction diameter", value: "2 inches" },
+            { label: "Discharge diameter", value: "2 inches" },
+            { label: "Total elevation", value: "30 Meters" },
+            { label: "Suction height", value: "7 Meters" },
+            { label: "Fuel tank size", value: "2.6 Liters" },
+            { label: "Recommended oil", value: "SAE10W-30" }
+          ],
+          features: [
+            "OHV design enhances combustion efficiency",
+            "Suitable for pumping chemical products such as agricultural fertiliser or industrial chemicals",
+            "Oil-Alert Technology will automatically switch off the ignition if the oil drops below a safe level",
+            "The ultimate pump for professionals shifting volatile chemicals.",
+            "Our Chemical pump has parts made of thermoplastic",
+            "Easy starting Bonhoeffer OHV commercial engine"
+          ]
+        },
+
+        "BON-P-WP2.0-196TR": {
+          name: "Petrol Water Pump",
+          model: "BON-P-WP2.0-196TR",
+          description: [
+            {
+              title: "High-Performance Self-Priming Trash Water Pump",
+              text: "The Bonhoeffer BON-P-WP2.0-196TR trash water pump is a robust and efficient self-priming garbage pump designed for demanding applications. With a maximum power output of 6.5 HP at 3900 rpm, this pump delivers an impressive pumping capacity of up to 35,000 liters per hour. Its retractable starting system ensures quick and reliable starts, while the 2-inch suction and discharge diameters facilitate efficient water flow. This pump can handle a total elevation of 30 meters and a suction height of 6 meters, making it suitable for a variety of challenging pumping tasks."
+            },
+            {
+              title: "Reliable and Durable for Heavy-Duty Applications",
+              text: "Equipped with a 2.6-liter fuel tank, the BON-P-WP2.0-196TR offers extended operation times, reducing the need for frequent refuelling. It is recommended to use SAE10W-30 oil to ensure optimal performance and longevity of the pump. Whether you're dealing with floodwater, construction site drainage, or agricultural irrigation, this trash water pump provides reliable and high-capacity performance to meet your needs. Its durable construction and powerful capabilities make it an essential tool for heavy-duty water pumping requirements."
+            }
+          ],
+          descriptionImage: "https://bonhoeffermachines.com/en/public/machines/specification_dark_1726649462_cd1b6c847e9fcc2a53ca.webp",
+          showcaseImages: [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-wp2.0-196tr.webp"
+          ],
+          isBannerImage: false,
+          bannerImage: "",
+          isVideo: true,
+          videoUrls: [
+            {
+              title: "Troubleshooting",
+              url: "https://www.youtube.com/embed/KDoZQKhpj00"
+            }
+          ],
+          isCatalogueLeft: true,
+          isCatalogueRight: true,
+          catalougeLeft: "https://bonhoeffermachines.com/en/public/machines/specification_left_1723532324_205edaa1aa9a4c735f81.webp",
+          catalougeRight: "https://bonhoeffermachines.com/en/public/machines/specification_light_1723532334_2da41d28c8ac0aba231f.webp",
+          isWorkshopManual: true,
+          workshopManualUrl: 'https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-water-pump.pdf',
+          isUserManual: true,
+          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-WP.pdf',
+          isBrochure: true,
+          brochureUrl: 'https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-WP2.0-196TR.pdf',
+          isSpareParts: true,
+          sparePartsUrl: 'https://bonhoeffermachines.com/en/public/pdfs/BON-P-WP2.0-196TR.pdf',
+          warrantyTime: 36,
+          isFMTTI: false,
+          specifications: [
+            { label: "Pump type", value: "Self-priming (Garbage Pump)" },
+            { label: "Maximum power", value: "6.5 HP/ 3900 rpm" },
+            { label: "Maximum pumping capacity", value: "35,000 liters per hour" },
+            { label: "Starting system", value: "Retractable" },
+            { label: "Suction diameter", value: "2 inches" },
+            { label: "Discharge diameter", value: "2 inches" },
+            { label: "Total elevation", value: "30 Meters" },
+            { label: "Suction height", value: "6 Meters" },
+            { label: "Fuel tank size", value: "2.6 Liters" },
+            { label: "Recommended oil", value: "SAE10W-30" }
+          ],
+          features: [
+            "OHV design enhances combustion efficiency",
+            "Durable silicon carbide mechanical seal",
+            "2 vane high efficiency impeller",
+            "Cast iron volute",
+            "Heavy duty full frame protection",
+            "Protected by Bonhoeffer Oil Alert®",
+            "Easy starting Bonhoeffer mini 4-stroke commercial engine"
+          ]
+        },
+
+        "BON-P-WP3.0-196TR": {
+          name: "Gasoline Water Pump",
+          model: "BON-P-WP3.0-196TR",
+          description: [
+            {
+              title: "Powerful and Efficient Trash Water Pump",
+              text: "The Bonhoeffer BON-P-WP3.0-196TR trash water pump is a high-capacity, self-priming pump designed for efficient waste and debris handling. With a powerful 6.5 HP engine running at 3900 rpm, this pump boasts an impressive maximum pumping capacity of 55,000 liters per hour. The retractable starting system ensures easy and reliable operation, while the 3-inch suction and discharge diameters allow for smooth and efficient water flow. With a total lift of 25 meters and a suction height of 6 meters, this pump is well-suited for various heavy-duty applications."
+            },
+            {
+              title: "Durable Design for Demanding Applications",
+              text: "The BON-P-WP3.0-196TR features a 2.6-liter fuel tank, enabling extended operation periods with less frequent refuelling. To ensure optimal performance and longevity, SAE10W-30 oil is recommended for use. Ideal for flood control, construction site dewatering, and agricultural irrigation, this trash pump is built to handle tough conditions and large volumes of water mixed with debris. Its durable construction and high pumping capacity make it a reliable choice for any demanding water pumping task."
+            }
+          ],
+          descriptionImage: "https://bonhoeffermachines.com/en/public/machines/specification_dark_1720594878_3ecf340184667be97ba7.webp",
+          showcaseImages: [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-wp3.0-196tr-1.webp"
+          ],
+          isBannerImage: false,
+          bannerImage: "",
+          isVideo: true,
+          videoUrls: [
+            {
+              title: "Troubleshooting",
+              url: "https://www.youtube.com/embed/KDoZQKhpj00"
+            }
+          ],
+          isCatalogueLeft: true,
+          isCatalogueRight: true,
+          catalougeLeft: "https://bonhoeffermachines.com/en/public/machines/specification_left_1722411212_f439d6e6f6b62bab49af.webp",
+          catalougeRight: "https://bonhoeffermachines.com/en/public/machines/specification_light_1722411227_b9ce92ceee2facc2240b.webp",
+          isWorkshopManual: true,
+          workshopManualUrl: 'https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-water-pump.pdf',
+          isUserManual: true,
+          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-WP.pdf',
+          isBrochure: true,
+          brochureUrl: 'https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-WP3.0-196TR_1.pdf',
+          isSpareParts: true,
+          sparePartsUrl: 'https://bonhoeffermachines.com/en/public/pdfs/BON-P-WP3.0-196TR.pdf',
+          warrantyTime: 36,
+          isFMTTI: false,
+          specifications: [
+            { label: "Pump type", value: "Self-priming (Trash Pump)" },
+            { label: "Maximum power", value: "6.5 HP/ 3900 rpm" },
+            { label: "Maximum pumping capacity", value: "55,000 liters per hour" },
+            { label: "Starting system", value: "Retractable" },
+            { label: "Suction diameter", value: "3 inches" },
+            { label: "Discharge diameter", value: "3 inches" },
+            { label: "Total lift", value: "25 meters" },
+            { label: "Suction height", value: "6 meters" },
+            { label: "Fuel tank size", value: "2.6 liters" },
+            { label: "Recommended oil", value: "SAE10W-30" }
+          ],
+          features: [
+            "OHV design enhances combustion efficiency",
+            "Durable silicon carbide mechanical seal",
+            "2 vane high efficiency impeller",
+            "Cast iron volute",
+            "Heavy duty full frame protection",
+            "Protected by Bonhoeffer Oil Alert®",
+            "Easy starting Bonhoeffer mini 4-stroke commercial engine"
+          ]
         },
       },
     };
@@ -593,7 +1356,7 @@ function ModelSpecificPage() {
             href={modelDetails.userManualUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300 flex items-center"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-lg font-medium transition-colors duration-300 flex items-center"
           >
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -614,7 +1377,7 @@ function ModelSpecificPage() {
             Brochure
           </a>
         )}
-        {modelDetails.isSpareParts && (
+        {modelDetails.isSpareParts && modelDetails.sparePartsUrl && (
           <a
             href={modelDetails.sparePartsUrl}
             target="_blank"
@@ -623,10 +1386,10 @@ function ModelSpecificPage() {
           >
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-          </svg>
-          Spare Parts
-        </a>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            Spare Parts
+          </a>
         )}
         {modelDetails.isWorkshopManual && (
           <a
@@ -671,7 +1434,7 @@ function ModelSpecificPage() {
               className="object-contain"
             />
           </div>
-          <p className="text-xs text-gray-300">{modelDetails.warrantyTime} Month Warranty</p>
+          {/* <p className="text-xs text-gray-300">{modelDetails.warrantyTime} Month Warranty</p> */}
         </div>
         {modelDetails.isFMTTI && (
           <div className="text-center">
@@ -684,7 +1447,7 @@ function ModelSpecificPage() {
                 className="object-contain"
               />
             </div>
-            <p className="text-xs text-gray-300">FMTTI Certified</p>
+            {/* <p className="text-xs text-gray-300">FMTTI Certified</p> */}
           </div>
         )}
         <div className="text-center">
@@ -697,7 +1460,7 @@ function ModelSpecificPage() {
               className="object-contain"
             />
           </div>
-          <p className="text-xs text-gray-300">ISO Company</p>
+          {/* <p className="text-xs text-gray-300">ISO Company</p> */}
         </div>
       </motion.div>
     );
@@ -711,7 +1474,7 @@ function ModelSpecificPage() {
       {/* Product Info & Download Buttons */}
       <section className="py-12 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="flex gap-40 ">
+          <div className="flex justify-between gap-50 px-5">
             {/* Left - Product Name */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -720,7 +1483,7 @@ function ModelSpecificPage() {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                {modelDetails.name}
+                {modelDetails.model}
               </h2>
               {/* <p className="text-[#989b2e] text-lg font-medium">{modelDetails.power}</p> */}
             </motion.div>
@@ -732,36 +1495,42 @@ function ModelSpecificPage() {
       </section>
 
       {/* Product Leaflet Image */}
-      <section className="py-8 px-6">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            className="flex flex-col md:flex-row gap-4 md:gap-8 rounded-2xl overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10 p-4 md:p-8 items-center justify-center"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="relative w-full aspect-[2492/3508] h-full ">
-              <Image
-                src={modelDetails.catalougeLeft}
-                alt={`${modelDetails.name} Leaflet Left`}
-                fill
-                className="object-contain bg-white rounded-xl shadow-md"
-                priority
-              />
-            </div>
-            <div className="relative w-full aspect-[2492/3508] h-full ">
-              <Image
-                src={modelDetails.catalougeRight}
-                alt={`${modelDetails.name} Leaflet Right`}
-                fill
-                className="object-contain bg-white rounded-xl shadow-md"
-                priority
-              />
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      {(modelDetails.isCatalogueLeft || modelDetails.isCatalogueRight) && (
+        <section className="py-8 px-6">
+          <div className="max-w-6xl mx-auto">
+            <motion.div
+              className="flex flex-col md:flex-row gap-4 md:gap-8 rounded-2xl overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10 p-4 md:p-6 items-center justify-center"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              {modelDetails.isCatalogueLeft && (
+                <div className="relative w-full aspect-[2492/3508] h-full ">
+                  <Image
+                    src={modelDetails.catalougeLeft}
+                    alt={`${modelDetails.name} Leaflet Left`}
+                    fill
+                    className="object-contain bg-white rounded-xl shadow-md"
+                    priority
+                  />
+                </div>
+              )}
+              {modelDetails.isCatalogueRight && (
+                <div className="relative w-full aspect-[2492/3508] h-full ">
+                  <Image
+                    src={modelDetails.catalougeRight}
+                    alt={`${modelDetails.name} Leaflet Right`}
+                    fill
+                    className="object-contain bg-white rounded-xl shadow-md"
+                    priority
+                  />
+                </div>
+              )}
+            </motion.div>
+          </div>
+        </section>
+      )}
 
       {/* Specifications/Features Toggle & Certification Seals */}
       <section className="pt-12 px-6">
@@ -873,24 +1642,7 @@ function ModelSpecificPage() {
       <section className="py-12 px-6 ">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Left - Labeled Product Image */}
-            <motion.div
-              className="relative h-96 rounded-2xl overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10"
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-              <Image
-                src={modelDetails.descriptionImage}
-                alt={`${modelDetails.name} labeled view`}
-                fill
-                className="object-contain p-8 bg-white"
-              />
-              {/* You can add labeled callouts here */}
-            </motion.div>
-
-            {/* Right - Product & Model Descriptions */}
+            {/* Left - Product & Model Descriptions */}
             <motion.div
               className="space-y-8"
               initial={{ opacity: 0, x: 50 }}
@@ -903,11 +1655,28 @@ function ModelSpecificPage() {
                   {modelDetails.description.map((desc, idx) => (
                     <div key={idx}>
                       {desc.title && <h3 className="text-2xl font-bold text-[#989b2e] mb-4">{desc.title}</h3>}
-                      <p className="text-gray-300 leading-relaxed">{desc.text}</p>
+                      <p className="text-gray-100 leading-relaxed">{desc.text}</p>
                     </div>
                   ))}
                 </div>
               </div>
+            </motion.div>
+
+            {/* Right - Labeled Product Image */}
+            <motion.div
+              className="relative h-full rounded-2xl overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <Image
+                src={modelDetails.descriptionImage}
+                alt={`${modelDetails.name} labeled view`}
+                fill
+                className="object-contain p-8 bg-white"
+              />
+              {/* You can add labeled callouts here */}
             </motion.div>
           </div>
         </div>
@@ -991,7 +1760,7 @@ function ModelSpecificPage() {
             {otherModels.map((otherModel, index) => (
               <Link
                 key={index}
-                href={`/product/${slug}/${otherModel.name.toLowerCase()}`}
+                href={`/product/${slug}/${otherModel.name}`}
                 className="group"
               >
                 <motion.div

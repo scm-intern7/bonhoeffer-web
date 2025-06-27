@@ -109,7 +109,7 @@ function Header() {
   const links = [
     { href: "/", label: "Home" },
     { href: "/about-us", label: "About Us" },
-    { href: "/product", label: "Products", hasDropdown: true },
+    { href: "/product", label: "Products", hasDropdown: false },
     { href: "/spare-parts", label: "Spare Parts" },
     { href: "/events", label: "Fair" },
     // { href: "/gallery", label: "Gallery", hasDropdown: true },
