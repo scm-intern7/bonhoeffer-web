@@ -962,6 +962,1417 @@ function ModelSpecificPage() {
           ]
         },
       },
+      'gasoline-engine': {
+        'BON-P-GE-3.0HP': {
+          name: 'Gasoline Engine',
+          model: 'BON-P-GE-3.0HP',
+          description: [
+            {
+              title: 'Extremely Powerful 4 Stroke 3 HP Gasoline Engine',
+              text: 'Are you looking for an extremely efficient gasoline engine in the 4-stroke range? This is the right place for you to know more about the Bonhoeffer Gasoline Engine range. This is the 3 HP model under the 4-Stroke range. We use OHV overhead valve technology in our engines to make them more efficient and powerful. The fuel tank capacity of this machine is 1.2L, and the oil tank capacity is 500ml. The starting system of the engine is retractable, and the recommended oil to use the machine is SAE10W-30.'
+            },
+            {
+              title: 'We Deal in Best Quality Gasoline Engines',
+              text: 'Our gasoline engine range is extensive, and this range allows you to find the perfect gasoline engine for your requirements. We have different gasoline engine products with other capabilities. The 4-stroke engine is the most popular range right now in the market and is appropriate for various operations.'
+            }
+          ],
+          descriptionImage: 'https://bonhoeffermachines.com/en/public/machines/specification_dark_1716960288_78a35a70f48a44492569.webp',
+          showcaseImages: [
+            'https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-ge-3.0hp.webp',
+            'https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-3.0-2.webp',
+            'https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-3.0-3.webp'
+          ],
+          isBannerImage: false,
+          bannerImage: '',
+          isVideo: true,
+          videoUrls: [
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/_sLPGCn5tfE' },
+            { title: 'Air Cleaner Troubleshooting', url: 'https://www.youtube.com/embed/SStI7hj9cTU' },
+            { title: 'Carburetor Troubleshooting', url: 'https://www.youtube.com/embed/vvHkyxUs2yM' }
+          ],
+          isCatalogueLeft: true,
+          isCatalogueRight: true,
+          catalougeLeft: 'https://bonhoeffermachines.com/en/public/machines/specification_left_1716892944_7678b3e7e9035c703576.webp',
+          catalougeRight: 'https://bonhoeffermachines.com/en/public/machines/specification_light_1716892953_b764ba64ad4692e1a03d.webp',
+          isWorkshopManual: true,
+          workshopManualUrl: 'https://bonhoeffermachines.com/en/public/workshop_pdf/BON-P-GE-3.0HP.pdf',
+          isUserManual: true,
+          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-GE-3.0HP.pdf',
+          isBrochure: true,
+          brochureUrl: 'https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-GE-3.0HP.pdf',
+          isSpareParts: true,
+          sparePartsUrl: 'https://bonhoeffermachines.com/en/public/pdfs/BON-P-GE-3.0HP.pdf',
+          warrantyTime: 36,
+          isFMTTI: false,
+          specifications: [
+            { label: 'Engine', value: '3.0 HP' },
+            { label: 'Technology', value: 'OHV, overhead valves' },
+            { label: 'Type', value: '4 Stroke' },
+            { label: 'Cooling system', value: 'Air' },
+            { label: 'Cylinder diameter', value: '51*38.8 mm' },
+            { label: 'Maximum power', value: '4000 Rpm' },
+            { label: 'Torque', value: '3.7 Nm' },
+            { label: 'Fuel tank capacity', value: '1.2 Liters' },
+            { label: 'Oil tank capacity', value: '500 ml' },
+            { label: 'Starting system', value: 'Retractable' },
+            { label: 'Recommended oil', value: 'SAE10W-30' }
+          ],
+          features: [
+            'OHV design enhances combustion efficiency',
+            'High power-to-displacement ratio',
+            'Easy starting with an automatic decompression system and an easy-to-grip soft recoil starter handle',
+            'High quality materials and purpose-built components which ensure reliable, long-term use',
+            'Meets world\'s most stringent environmental legislation',
+            'High Fuel Efficient Engine',
+            'Low Oil Consumption'
+          ]
+        },
+        "BON-P-GE-3.5HP": {
+          "name": "Gasoline Engine",
+          "model": "BON-P-GE-3.5HP",
+          "description": [
+            {
+              "title": "BON-P-GE-3.5HP - Best Gasoline Engines for Agriculture",
+              "text": "Gasoline engines are widely used in different industries, such as agriculture, construction, etc. This engine is a type of internal combustion engine that generates power by burning a volatile liquid fuel. The gas engine includes engine block, spark plug, crankshaft, pistons, and cylinders. We can divide these engines based on their types and various factors, including fuel management, ignition, rotor arrangement, piston and cylinder, strokes per cycle, cooling system and valve type and location."
+            },
+            {
+              "title": "4000 RPM and 1.25 Litre Capacity",
+              "text": "BON-P-GE-3.5HP is a 4-Stroke Gasoline Engine by Bonhoeffer with an air-cooling feature and a 4000 maximum RPM capability. The fuel tank capacity is 1.25 Litres, and the oil tank capacity is 500 ml. The recommended oil for this product is SAE10W-30. The model is one of the best gas engines for power generation."
+            }
+          ],
+          "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1716960316_c6c38ce4e288e832ea8e.webp",
+          "showcaseImages": [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-ge-3.5hp.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-3.0-2.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-3.0-3.webp"
+          ],
+          "isBannerImage": false,
+          "bannerImage": "",
+          "isVideo": true,
+          "videoUrls": [
+            { "title": "Troubleshooting", "url": "https://www.youtube.com/embed/_sLPGCn5tfE" },
+            { "title": "Air Cleaner Troubleshooting", "url": "https://www.youtube.com/embed/SStI7hj9cTU" },
+            { "title": "Carburetor Troubleshooting", "url": "https://www.youtube.com/embed/vvHkyxUs2yM" }
+          ],
+          "isCatalogueLeft": true,
+          "isCatalogueRight": true,
+          "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1716892485_bb8bf38b5ead7da6f327.webp",
+          "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1716892494_b70309b52753b0c5b291.webp",
+          "isWorkshopManual": true,
+          "workshopManualUrl": "https://bonhoeffermachines.com/en/public/workshop_pdf/BON-P-GE-3.5HP.pdf",
+          "isUserManual": true,
+          "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-GE-3.5HP.pdf",
+          "isBrochure": true,
+          "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-GE-3.5HP.pdf",
+          "isSpareParts": true,
+          "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-GE-3.5HP.pdf",
+          "warrantyTime": 36,
+          "isFMTTI": false,
+          "specifications": [
+            { "label": "Engine", "value": "3.5 HP" },
+            { "label": "Technology", "value": "OHV, overhead valves" },
+            { "label": "Type", "value": "4 Stroke" },
+            { "label": "Cooling system", "value": "Air" },
+            { "label": "Cylinder diameter", "value": "57*38.8 mm" },
+            { "label": "Maximum power", "value": "4000 Rpm" },
+            { "label": "Torque", "value": "4.4 Nm" },
+            { "label": "Fuel tank capacity", "value": "1.25 Liters" },
+            { "label": "Oil tank capacity", "value": "500 ml" },
+            { "label": "Starting System", "value": "Retractable" },
+            { "label": "Recommended oil", "value": "SAE10W-30" }
+          ],
+          "features": [
+            "OHV design enhances combustion efficiency",
+            "High power-to-displacement ratio",
+            "Easy starting with an automatic decompression system and an easy-to-grip soft recoil starter handle",
+            "High quality materials and purpose-built components which ensure reliable, long-term use",
+            "Meets world's most stringent environmental legislation",
+            "High Fuel Efficient Engine",
+            "Low Oil Consumption"
+          ]
+        },
+        "BON-P-GE-4.0HP": {
+          "name": "Gasoline Engine",
+          "model": "BON-P-GE-4.0HP",
+          "description": [
+            {
+              "title": "Bonhoeffer 4-Stroke 4 HP Gasoline Engine – Powerful and Reliable",
+              "text": "A gasoline engine is a heat engine powered by gas. These engines are commonly used to move motor vehicles and agricultural equipment. A gasoline engine is a piston-driven gasoline engine. Gasoline Engines by Bonhoeffer Machines are powerful and available in an extensive range. OHV is the technology of the engine with 4-stroke capability. 500ml is the oil tank capacity of the engine."
+            },
+            {
+              "title": "Powerful Gas Engines for Operations",
+              "text": "We at Bonhoeffer Machines design and deliver the best quality machinery range, and our gasoline engines are extremely powerful for different operations. BON-P-GE-4.0HP is a 4-stroke 4 HP gasoline engine that powers many other machines, including cars and trucks. They are the most popular option for moving large quantities of people and goods. Basically, a gasoline engine is a mix of fuel and air that is compressed and ignited. This is the gas law process."
+            }
+          ],
+          "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1716960347_6cf70b5d11eadcf84c68.webp",
+          "showcaseImages": [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-ge-4.0hp.webp"
+          ],
+          "isBannerImage": false,
+          "bannerImage": "",
+          "isVideo": true,
+          "videoUrls": [
+            { "title": "Troubleshooting", "url": "https://www.youtube.com/embed/_sLPGCn5tfE" },
+            { "title": "Air Cleaner Troubleshooting", "url": "https://www.youtube.com/embed/SStI7hj9cTU" },
+            { "title": "Carburetor Troubleshooting", "url": "https://www.youtube.com/embed/vvHkyxUs2yM" }
+          ],
+          "isCatalogueLeft": true,
+          "isCatalogueRight": true,
+          "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1716886948_1dabda7d7b9cee395bba.webp",
+          "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1716886964_4e8c0a1a8c853e5972bd.webp",
+          "isWorkshopManual": true,
+          "workshopManualUrl": "https://bonhoeffermachines.com/en/public/workshop_pdf/BON-P-GE-4.0HP.pdf",
+          "isUserManual": true,
+          "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-GE-4.0HP.pdf",
+          "isBrochure": true,
+          "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-GE-4.0HP.pdf",
+          "isSpareParts": true,
+          "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-GE-4.0HP.pdf",
+          "warrantyTime": 36,
+          "isFMTTI": false,
+          "specifications": [
+            { "label": "Engine", "value": "4.0 HP" },
+            { "label": "Technology", "value": "OHV, overhead valves" },
+            { "label": "Type", "value": "4 Stroke" },
+            { "label": "Cooling system", "value": "Air" },
+            { "label": "Cylinder diameter", "value": "61*45 mm" },
+            { "label": "Maximum power", "value": "4000 Rpm" },
+            { "label": "Torque", "value": "6.5 Nm" },
+            { "label": "Fuel tank capacity", "value": "1.2 Liters" },
+            { "label": "Oil tank capacity", "value": "500 ml" },
+            { "label": "Starting System", "value": "Retractable" },
+            { "label": "Recommended oil", "value": "SAE10W-30" }
+          ],
+          "features": [
+            "OHV design enhances combustion efficiency",
+            "High power-to-displacement ratio",
+            "Easy starting with an automatic decompression system and an easy-to-grip soft recoil starter handle",
+            "High quality materials and purpose-built components which ensure reliable, long-term use",
+            "Meets world's most stringent environmental legislation",
+            "High Fuel Efficient Engine",
+            "Low Oil Consumption"
+          ]
+        },
+        "BON-P-GE-5.0HP": {
+          "name": "Gasoline Engine",
+          "model": "BON-P-GE-5.0HP",
+          "description": [
+            {
+              "title": "BON-P-GE-5.0HP – Best Gasoline Engines by Bonhoeffer",
+              "text": "Gasoline engines are ideal for high-power applications because they burn a volatile liquid fuel with ignition powered by an electric spark. These engines are built to meet the requirements for power-plant applications. Gas engines are widely used in automobiles, small trucks, general aviation aircraft, outboard and inboard marine units, moderate-sized stationary pumping, lighting plants, machine tools, and power tools."
+            },
+            {
+              "title": "4-Stroke 5 HP Engine with 500ml Oil Tank Capacity",
+              "text": "BON-P-GE-5.0HP is the ultimate gasoline engine for high-power operations with OHV overhead valve technology. This is a 4-stroke gas engine with an air-cooling system, and the fuel tank capacity of the model is 1.2L. 500ml is the oil tank capacity with a retractable starting system. Bonhoeffer gasoline engines range is best in the market."
+            }
+          ],
+          "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1716960438_6a4d87a5f24a910353bb.webp",
+          "showcaseImages": [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-ge-5.0hp.webp"
+          ],
+          "isBannerImage": false,
+          "bannerImage": "",
+          "isVideo": true,
+          "videoUrls": [
+            { "title": "Troubleshooting", "url": "https://www.youtube.com/embed/_sLPGCn5tfE" },
+            { "title": "Air Cleaner Troubleshooting", "url": "https://www.youtube.com/embed/SStI7hj9cTU" },
+            { "title": "Carburetor Troubleshooting", "url": "https://www.youtube.com/embed/vvHkyxUs2yM" }
+          ],
+          "isCatalogueLeft": true,
+          "isCatalogueRight": true,
+          "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1716888731_d7fe66da037788fefa7b.webp",
+          "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1716888745_75614748e240f33324d2.webp",
+          "isWorkshopManual": true,
+          "workshopManualUrl": "https://bonhoeffermachines.com/en/public/workshop_pdf/BON-P-GE-5.0HP.pdf",
+          "isUserManual": true,
+          "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-GE-5.0HP.pdf",
+          "isBrochure": true,
+          "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-GE-5.0HP.pdf",
+          "isSpareParts": true,
+          "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-GE-5.0HP.pdf",
+          "warrantyTime": 36,
+          "isFMTTI": false,
+          "specifications": [
+            { "label": "Engine", "value": "5.0 HP" },
+            { "label": "Technology", "value": "OHV, overhead valves" },
+            { "label": "Type", "value": "4 Stroke" },
+            { "label": "Cooling system", "value": "Air" },
+            { "label": "Cylinder diameter", "value": "65*45 mm" },
+            { "label": "Maximum power", "value": "4000 Rpm" },
+            { "label": "Torque", "value": "7.2 Nm" },
+            { "label": "Fuel tank capacity", "value": "1.2 Liters" },
+            { "label": "Oil tank capacity", "value": "500 ml" },
+            { "label": "Starting System", "value": "Retractable" },
+            { "label": "Recommended oil", "value": "SAE10W-30" }
+          ],
+          "features": [
+            "OHV design enhances combustion efficiency",
+            "High power-to-displacement ratio",
+            "Easy starting with an automatic decompression system and an easy-to-grip soft recoil starter handle",
+            "High quality materials and purpose-built components which ensure reliable, long-term use",
+            "Meets world's most stringent environmental legislation",
+            "High Fuel Efficient Engine",
+            "Low Oil Consumption"
+          ]
+        },
+        "BON-P-GE-7.0HP": {
+          "name": "Gasoline Engine",
+          "model": "BON-P-GE-7.0HP",
+          "description": [
+            {
+              "title": "BON-P-GE-7.0HP – Best Gas Power 4-Stroke Engine",
+              "text": "A gas engine is ideal for the high energy operations. When you are looking for the best quality gasoline engines, only a few brands are credible, and Bonhoeffer is one of them. Bonhoeffer Gasoline Engines are reliable, efficient, and powerful for the various operations in agriculture and other industries. BON-P-GE-7.0HP is a model of the gas engine by Bonhoeffer, which is a 4-stroke gas engine with 4000 maximum RPM. A gas engine consists of different types of systems through which fuel is converted into energy. This process is the result of various actions such as combustion, compression, intake, and power. Combustion is an important process that occurs inside the engine cylinders in which air and fuel are mixed and combusted by an electric spark. Pistons will automatically move up and down inside the cylinder with the heat and pressure."
+            },
+            {
+              "title": "Air Cooling System with 600 ml Oil Tank Capacity",
+              "text": "This is a 7 HP gas engine with OHV overhead valve technology and a 4-stroke engine with an air cooling system. 208 cc displacement of the engine is ideal for operations, and the 600ml oil tank capacity. The machine's starting system is retractable."
+            }
+          ],
+          "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1717060579_ada5171a0e66aa81adba.webp",
+          "showcaseImages": [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-7.0hp.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-7.0hp-2.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-7.0hp-3.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-7.0hp-4.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-7.0hp-5.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-7.0-1.webp"
+          ],
+          "isBannerImage": false,
+          "bannerImage": "",
+          "isVideo": true,
+          "videoUrls": [
+            { "title": "Unboxing Gasoline Engine", "url": "https://www.youtube.com/embed/41C1p4dkqYY" },
+            { "title": "Troubleshooting", "url": "https://www.youtube.com/embed/SStI7hj9cTU" },
+            { "title": "Carburetor Troubleshooting", "url": "https://www.youtube.com/embed/vvHkyxUs2yM" }
+          ],
+          "isCatalogueLeft": true,
+          "isCatalogueRight": true,
+          "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1716889104_dab7f3ccdbf92878b256.webp",
+          "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1716889112_957989c917d65c256914.webp",
+          "isWorkshopManual": true,
+          "workshopManualUrl": "https://bonhoeffermachines.com/en/public/workshop_pdf/BON-P-GE-7.0HP.pdf",
+          "isUserManual": true,
+          "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-GE-7.0HP-and-BON-P-GE-9.0HP-and-BON-P-GE-14.0HP-ENGLISH-MANUAL.pdf",
+          "isBrochure": true,
+          "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-GE-7.0HP.pdf",
+          "isSpareParts": true,
+          "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-GE-7.0HP-and-GB210.pdf",
+          "warrantyTime": 36,
+          "isFMTTI": false,
+          "specifications": [
+            { "label": "Engine Power", "value": "7.0HP" },
+            { "label": "Displacement", "value": "208cc" },
+            { "label": "Technology", "value": "OHV, Overhead valves" },
+            { "label": "Type", "value": "4 Stroke" },
+            { "label": "Cooling System", "value": "Air" },
+            { "label": "Cylinder Diameter", "value": "70x54mm" },
+            { "label": "Torque", "value": "11.5 N m" },
+            { "label": "Fuel Tank Capacity", "value": "4.2 Liters" },
+            { "label": "Oil Tank Capacity", "value": "600 ml" },
+            { "label": "Starting System", "value": "Retractable" }
+          ],
+          "features": [
+            "OHV design enhances combustion efficiency",
+            "High power-to-displacement ratio",
+            "Easy starting with an automatic decompression system and an easy-to-grip soft recoil starter handle",
+            "High quality materials and purpose-built components which ensure reliable, long-term use",
+            "Meets world's most stringent environmental legislation",
+            "High Fuel Efficient Engine",
+            "Low Oil Consumption"
+          ]
+        },
+        "BON-P-GE-9.0HP": {
+          "name": "Gasoline Engine",
+          "model": "BON-P-GE-9.0HP",
+          "description": [
+            {
+              "title": "BON-P-GE-9.0HP – Durable and Low-Maintenance Gas Engine",
+              "text": "Gas engines are the most popular engines nowadays because of their many advantages. Bonhoeffer presents the most potent and premium gasoline engine range in the industry. We have different models with different power and capacity features. BON-P-GE-9.0HP is a 9 HP gas engine with a 7.5-litre fuel tank capacity. This is a four-stroke engine with 270 cc displacement. This engine range is durable and works on low maintenance requirements. This engine is designed to withstand rigorous requirements and have a longer lifespan."
+            },
+            {
+              "title": "High-Performance Versatile Engines",
+              "text": "There is no doubt that gas engines excel in their versatility and performance, and that\'s why Bonhoeffer Gasoline Engines are the best engines and suitable for a wide range of applications. These engines have high-energy output and are efficient. Therefore these machines can convert a high percentage of fuel energy into power."
+            }
+          ],
+          "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1717060781_88fbc260f8b52547fdf7.webp",
+          "showcaseImages": [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-9.0hp.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-9.0hp-2.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-9.0hp-3.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-9.0hp-4.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-9.0hp-5.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-7.0-1.webp"
+          ],
+          "isBannerImage": false,
+          "bannerImage": "",
+          "isVideo": true,
+          "videoUrls": [
+            { "title": "Unboxing & Assembly", "url": "https://www.youtube.com/embed/bc9WpuGpLfI" },
+            { "title": "Air Cleaner Troubleshooting", "url": "https://www.youtube.com/embed/SStI7hj9cTU" },
+            { "title": "Carburetor Troubleshooting", "url": "https://www.youtube.com/embed/vvHkyxUs2yM" }
+          ],
+          "isCatalogueLeft": true,
+          "isCatalogueRight": true,
+          "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1716891442_454a046af8af8d24a3b5.webp",
+          "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1716891452_4e3c47a1b3ccf516a7a9.webp",
+          "isWorkshopManual": true,
+          "workshopManualUrl": "https://bonhoeffermachines.com/en/public/workshop_pdf/BON-P-GE-9.0HP.pdf",
+          "isUserManual": true,
+          "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-GE-7.0HP-and-BON-P-GE-9.0HP-and-BON-P-GE-14.0HP-ENGLISH-MANUAL.pdf",
+          "isBrochure": true,
+          "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-GE-9.0HP.pdf",
+          "isSpareParts": true,
+          "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-GE-9.0HP.pdf",
+          "warrantyTime": 36,
+          "isFMTTI": false,
+          "specifications": [
+            { "label": "Engine Power", "value": "9.0HP" },
+            { "label": "Displacement", "value": "270cc" },
+            { "label": "Technology", "value": "OHV, Overhead valves" },
+            { "label": "Type", "value": "4 Stroke" },
+            { "label": "Cooling System", "value": "Air" },
+            { "label": "Cylinder Diameter", "value": "70x58mm" },
+            { "label": "Torque", "value": "17.5 Nm" },
+            { "label": "Fuel Tank Capacity", "value": "7.5 Liters" },
+            { "label": "Oil Tank Capacity", "value": "1100 ml" },
+            { "label": "Starting System", "value": "Retractable" }
+          ],
+          "features": [
+            "OHV design enhances combustion efficiency",
+            "High power-to-displacement ratio",
+            "Easy starting with an automatic decompression system and an easy-to-grip soft recoil starter handle",
+            "High quality materials and purpose-built components which ensure reliable, long-term use",
+            "Meets world's most stringent environmental legislation",
+            "High Fuel Efficient Engine",
+            "Low Oil Consumption"
+          ]
+        },
+        "BON-P-GE-13.0HP": {
+          "name": "Gasoline Engine",
+          "model": "BON-P-GE-13.0HP",
+          "description": [
+            {
+              "title": "BON-P-GE-13.0HP – Powerhouse of Efficiency and Energy",
+              "text": "Among the wide gasoline engines range, we have one of the best models for the customers which is BON-P-GE-13.0HP. It is a Bonhoeffer 13HP 4 Stroke gasoline engine with OHV and Overhead valve technology. If you are looking for the most reliable and efficient gasoline engine for your requirements, then this model offers you a 1100 ml oil tank capacity."
+            },
+            {
+              "title": "Reliable Power with Rapid Start-Up and 7.5L Fuel Capacity",
+              "text": "Gas engines are ideal for their high energy output and efficiency in converting fuel into power. This model of Bonhoeffer is capable of rapid start-up and adjusting to load changes. Hence, all these features make this model efficient in various operational tasks. Starting system of the model is Retractable and fuel tank capacity is 7.5 litres."
+            }
+          ],
+          "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1717060001_757e6a63120420200402.webp",
+          "showcaseImages": [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-9.0hp.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-13.0hp-2.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-13.0hp-3.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-13.0hp-4.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-13.0hp-5.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-13-1.webp"
+          ],
+          "isBannerImage": false,
+          "bannerImage": "",
+          "isVideo": true,
+          "videoUrls": [
+            { "title": "Unboxing and Assembly", "url": "https://www.youtube.com/embed/slbT6mchH8w" },
+            { "title": "Air Cleaner Troubleshooting", "url": "https://www.youtube.com/embed/SStI7hj9cTU" },
+            { "title": "Carburetor Troubleshooting", "url": "https://www.youtube.com/embed/vvHkyxUs2yM" }
+          ],
+          "isCatalogueLeft": true,
+          "isCatalogueRight": true,
+          "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1716896577_c4f373f5ed0ef194af25.webp",
+          "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1716896590_e7e095eb397ddc2a9d63.webp",
+          "isWorkshopManual": true,
+          "workshopManualUrl": "https://bonhoeffermachines.com/en/public/workshop_pdf/BON-P-GE-13.0HP.pdf",
+          "isUserManual": true,
+          "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-GE-7.0HP-and-BON-P-GE-9.0HP-and-BON-P-GE-14.0HP-ENGLISH-MANUAL.pdf",
+          "isBrochure": true,
+          "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-GE-13.0HP.pdf",
+          "isSpareParts": true,
+          "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-GE-13.0HP-and-GB390.pdf",
+          "warrantyTime": 36,
+          "isFMTTI": false,
+          "specifications": [
+            { "label": "Engine Power", "value": "13.0HP" },
+            { "label": "Displacement", "value": "389cc" },
+            { "label": "Technology", "value": "OHV, Overhead valves" },
+            { "label": "Type", "value": "4 Stroke" },
+            { "label": "Cooling System", "value": "Air" },
+            { "label": "Cylinder Diameter", "value": "88x64mm" },
+            { "label": "Torque", "value": "26.0 N-m" },
+            { "label": "Fuel Tank Capacity", "value": "7.5 Liters" },
+            { "label": "Oil Tank Capacity", "value": "1100 ml" },
+            { "label": "Starting System", "value": "Retractable" }
+          ],
+          "features": [
+            "OHV design enhances combustion efficiency",
+            "High power-to-displacement ratio",
+            "Easy starting with an automatic decompression system and an easy-to-grip soft recoil starter handle",
+            "High quality materials and purpose-built components which ensure reliable, long-term use",
+            "Meets world's most stringent environmental legislation",
+            "High Fuel Efficient Engine",
+            "Low Oil Consumption"
+          ]
+        },
+        "BON-P-GE-14.0HP": {
+          "name": "Gasoline Engine",
+          "model": "BON-P-GE-14.0HP",
+          "description": [
+            {
+              "title": "BON-P-GE-14.0HP",
+              "text": "Gasoline engines have now become the new example in the modern energy landscape and are known for their efficiency and durability. The versatility in these engines represents the significant evolution and adds different technology advancements and environmental needs. A gas engine is a machine that operates by burning fuel. Bonhoeffer engine models are vast, and the 14 HP model is the popular gasoline engine ideal for various industries operations."
+            },
+            {
+              "title": "1100ml Oil Tank Capacity",
+              "text": "BON-P-GE-14.0HP is one of the best gasoline engines in the market because of various reasons and features. The 1100ml oil tank capacity with the 7.5-liter fuel tank capacity makes this engine ideal for heavy-duty applications."
+            }
+          ],
+          "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1717060694_91a16ce8b9987af30ab5.webp",
+          "showcaseImages": [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-9.0hp.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-13.0hp-2.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-13.0hp-3.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-13.0hp-4.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-13.0hp-5.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-13-1.webp"
+          ],
+          "isBannerImage": false,
+          "bannerImage": "",
+          "isVideo": true,
+          "videoUrls": [
+            { "title": "Unboxing and Installation", "url": "https://www.youtube.com/embed/slbT6mchH8w" },
+            { "title": "Air Cleaner Troubleshooting", "url": "https://www.youtube.com/embed/SStI7hj9cTU" },
+            { "title": "Carburetor Troubleshooting", "url": "https://www.youtube.com/embed/vvHkyxUs2yM" }
+          ],
+          "isCatalogueLeft": true,
+          "isCatalogueRight": true,
+          "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1716896252_0f40c1dbb7e7a34b2df2.webp",
+          "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1716896263_a3f29f26dabe73fa0995.webp",
+          "isWorkshopManual": true,
+          "workshopManualUrl": "https://bonhoeffermachines.com/en/public/workshop_pdf/BON-P-GE-14.0HP.pdf",
+          "isUserManual": true,
+          "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-GE-7.0HP-and-BON-P-GE-9.0HP-and-BON-P-GE-14.0HP-ENGLISH-MANUAL.pdf",
+          "isBrochure": true,
+          "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-GE-14.0HP.pdf",
+          "isSpareParts": true,
+          "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-GE-14.0HP-and-GB390.pdf",
+          "warrantyTime": 36,
+          "isFMTTI": false,
+          "specifications": [
+            { "label": "Engine Power", "value": "14.0HP" },
+            { "label": "Displacement", "value": "420cc" },
+            { "label": "Technology", "value": "OHV, Overhead valves" },
+            { "label": "Type", "value": "4 Stroke" },
+            { "label": "Cooling System", "value": "Air" },
+            { "label": "Cylinder Diameter", "value": "70x58mm" },
+            { "label": "Torque", "value": "27.0 N-m" },
+            { "label": "Fuel Tank Capacity", "value": "7.5 Liters" },
+            { "label": "Oil Tank Capacity", "value": "1100 ml" },
+            { "label": "Starting System", "value": "Retractable" }
+          ],
+          "features": [
+            "OHV design enhances combustion efficiency",
+            "High power-to-displacement ratio",
+            "Easy starting with an automatic decompression system and an easy-to-grip soft recoil starter handle",
+            "High quality materials and purpose-built components which ensure reliable, long-term use",
+            "Meets world's most stringent environmental legislation",
+            "High Fuel Efficient Engine",
+            "Low Oil Consumption"
+          ]
+        },
+        "BON-P-GE-16.0HP": {
+          "name": "Gasoline Engine",
+          "model": "BON-P-GE-16.0HP",
+          "description": [
+            {
+              "title": "BON-P-GE-16.0HP Premium Gasoline Engine",
+              "text": "Gas engines are powerful and used for internal combustion. In this type of engine, air enters and is combined with fuel and is converted into energy. Bonhoeffer represents the gasoline engines' premium range, and we have extensive models of engines, and a 16HP gas engine is one of them. BON-P-GE-16.0HP is an OHV technology-based 4-stroke engine with an air cooling system. The cylinder diameter of the engine is 92x69mm, and the maximum power of the engine is 16.0 HP and 3900 RPM. Fuel tank capacity is 7.5 liters."
+            },
+            {
+              "title": "Gas Engines Have Economical Advantages",
+              "text": "Gas engines also have environmental benefits and economic advantages. These engines are cost-effective options and ideal for operation and maintenance. Bonhoeffer Engines can enhance durability and be cost-effective for different applications."
+            }
+          ],
+          "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1716982091_73620cda4882b517bfcc.webp",
+          "showcaseImages": [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-16.0hp.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-16.0hp-2.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-16.0hp-3.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-16.0hp-4.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-16.0hp-5.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-13-1.webp"
+          ],
+          "isBannerImage": false,
+          "bannerImage": "",
+          "isVideo": true,
+          "videoUrls": [
+            { "title": "Unboxing and Installation", "url": "https://www.youtube.com/embed/slbT6mchH8w" },
+            { "title": "Air Cleaner Troubleshooting", "url": "https://www.youtube.com/embed/SStI7hj9cTU" },
+            { "title": "Carburetor Troubleshooting", "url": "https://www.youtube.com/embed/vvHkyxUs2yM" }
+          ],
+          "isCatalogueLeft": true,
+          "isCatalogueRight": true,
+          "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1716896252_0f40c1dbb7e7a34b2df2.webp",
+          "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1716896263_a3f29f26dabe73fa0995.webp",
+          "isWorkshopManual": true,
+          "workshopManualUrl": "https://bonhoeffermachines.com/en/public/workshop_pdf/BON-P-GE-16.0HP.pdf",
+          "isUserManual": true,
+          "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-GE-7.0HP-and-BON-P-GE-9.0HP-and-BON-P-GE-14.0HP-ENGLISH-MANUAL.pdf",
+          "isBrochure": true,
+          "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-GE-16.0HP.pdf",
+          "isSpareParts": true,
+          "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-GE-16.0HP.pdf",
+          "warrantyTime": 36,
+          "isFMTTI": false,
+          "specifications": [
+            { "label": "Engine", "value": "16.0 HP" },
+            { "label": "Displacement", "value": "420cc" },
+            { "label": "Technology", "value": "OHV, Overhead valves" },
+            { "label": "Type", "value": "4 Stroke" },
+            { "label": "Cooling System", "value": "Air" },
+            { "label": "Cylinder Diameter", "value": "92x69mm" },
+            { "label": "Maximum Power", "value": "16.0 HP / 3900 RPM" },
+            { "label": "Torque", "value": "29 Nm" },
+            { "label": "Fuel Tank Capacity", "value": "7.5 Liters" },
+            { "label": "Oil Tank Capacity", "value": "1100 ml" },
+            { "label": "Starting System", "value": "Retractable" },
+            { "label": "Recommended Oil", "value": "SAE10W-30" }
+          ],
+          "features": [
+            "OHV design enhances combustion efficiency",
+            "High power-to-displacement ratio",
+            "Easy starting with an automatic decompression system and an easy-to-grip soft recoil starter handle",
+            "High quality materials and purpose-built components which ensure reliable, long-term use",
+            "Meets world's most stringent environmental legislation",
+            "High Fuel Efficient Engine",
+            "Low Oil Consumption"
+          ]
+        },
+        "BON-P-GE-24.0HP": {
+          "name": "Gasoline Engine",
+          "model": "BON-P-GE-24.0HP",
+          "description": [
+            {
+              "title": "Electric Starting System Gasoline Engine with 24 HP Power",
+              "text": "This is one of the best models of gas engines by Bonhoeffer Machines. The engine power is 24 HP which is very impressive and V Twin Motor 2 Cylinder technology used in this machine. This is a 4-stroke machine and frame quality are very professional of this gasoline engine. This comes in the heavy-duty coil and maximum power of the engine 24 HP and torque of the machine is 47 Nm. The oil tank capacity of the machine is 1500ml and starting system is electric."
+            },
+            {
+              "title": "BON-P-GE-24.0HP: Reliable Power for Your Needs",
+              "text": "The model is constructed with a professional-quality frame and heavy-duty coil, the BON-P-GE-24.0HP is built to withstand tough conditions and ensure long-lasting durability. The engine features a gasoline alternator and an optimized cylinder diameter of 82x71 mm, which contribute to its high efficiency and performance. With a torque of 47 Nm and a 1500 ml oil tank capacity, this engine offers powerful performance and extended running times. The electric starting system provides quick and easy start-ups, while the recommended SAE10W-30 oil ensures optimal performance and longevity."
+            }
+          ],
+          "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1721301338_c026d54a9e430e0c1750.webp",
+          "showcaseImages": [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-24.0hp.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-24.0hp-2.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-24.0hp-3.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-24.0hp-4.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-24.0hp-5.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-13-1.webp"
+          ],
+          "isBannerImage": false,
+          "bannerImage": "",
+          "isVideo": true,
+          "videoUrls": [
+            { "title": "Air Cleaner Troubleshooting", "url": "https://www.youtube.com/embed/SStI7hj9cTU" },
+            { "title": "Carburetor Troubleshooting", "url": "https://www.youtube.com/embed/vvHkyxUs2yM" }
+          ],
+          "isCatalogueLeft": true,
+          "isCatalogueRight": true,
+          "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1716893308_01475680772c9f754f87.webp",
+          "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1716893317_fc3ad6beae67a3b6dac2.webp",
+          "isWorkshopManual": false,
+          "isUserManual": false,
+          "isBrochure": true,
+          "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-GE-24.0HP.pdf",
+          "isSpareParts": true,
+          "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-GE-24.0HP.pdf",
+          "warrantyTime": 36,
+          "isFMTTI": false,
+          "specifications": [
+            { "label": "Engine", "value": "24.0 HP" },
+            { "label": "Technology", "value": "V TWIN - MOTOR 2 Cylinder" },
+            { "label": "Type", "value": "4 Stroke" },
+            { "label": "Frame", "value": "Professional quality" },
+            { "label": "Coil type", "value": "Heavy duty" },
+            { "label": "Alternator Material", "value": "Gasoline" },
+            { "label": "Cylinder Diameter", "value": "82x71mm" },
+            { "label": "Maximum Power", "value": "24.0 HP / 3900 RPM" },
+            { "label": "Torque", "value": "47 Nm" },
+            { "label": "Oil Tank Capacity", "value": "1500 ml" },
+            { "label": "Starting System", "value": "Electric" },
+            { "label": "Recommended Oil", "value": "SAE 10W-30" }
+          ],
+          "features": [
+            "OHV design enhances combustion efficiency",
+            "High power-to-displacement ratio",
+            "Easy starting with an automatic decompression system and an easy-to-grip soft recoil starter handle",
+            "High quality materials and purpose-built components which ensure reliable, long-term use",
+            "Meets world's most stringent environmental legislation",
+            "High Fuel Efficient Engine",
+            "Low Oil Consumption"
+          ]
+        },
+        "BON-P-GE-34.0HP": {
+          "name": "Gasoline Engine",
+          "model": "BON-P-GE-34.0HP",
+          "description": [
+            {
+              "title": "BON-P-GE-34.0HP: Powerful and Efficient Engine for Your Needs",
+              "text": "The engine model of BON-P-GE-34.0HP by Bonhoeffer is the amazing in terms of strength and reliability because it is designed to meet the demands of heavy-duty applications with ease. This high-performance engine delivers a robust 34.0 HP, ensuring you have the power you need for even the most challenging tasks. With its advanced V-TWIN, 2-cylinder technology and smooth 4-stroke operation, the BON-P-GE-34.0HP provides superior performance and efficiency, making it ideal for a variety of industrial, agricultural, and commercial uses."
+            },
+            {
+              "title": "Quick and Hassle-Free Operations",
+              "text": "The Bonhoeffer 34 HP gasoline engine built to last, this engine features a professional-grade frame and a heavy-duty coil, ensuring durability and reliable operation in tough conditions. The efficient alternator and optimized 90*78.5 mm cylinder design maximize power output and efficiency, while the 2500 ml oil tank allows for extended running times. The electric starting system ensures quick and hassle-free startups, and the recommended SAE10W-30 oil keeps the engine running smoothly."
+            }
+          ],
+          "showcaseImages": [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-34.0hp.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-34.0hp-2.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-34.0hp-3.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-34.0hp-4.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ge-34.0hp-5.webp"
+          ],
+          "bannerImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1721301366_272dadd4c382457aeded.webp",
+          "videoUrls": [
+            { "title": "Air Cleaner Troubleshooting", "url": "https://www.youtube.com/embed/SStI7hj9cTU" },
+            { "title": "Carburetor Troubleshooting", "url": "https://www.youtube.com/embed/vvHkyxUs2yM" }
+          ],
+          "isBrochure": true,
+          "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-GE-34.0HP.pdf",
+          "isSpareParts": true,
+          "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-GE-34.0HP.pdf",
+          "warrantyTime": 36,
+          "specifications": [
+            { "label": "Engine", "value": "34.0 HP" },
+            { "label": "Technology", "value": "V TWIN - 2 Cylinder ENGINE" },
+            { "label": "Type", "value": "4 Stroke" },
+            { "label": "Frame", "value": "Professional quality" },
+            { "label": "Coil type", "value": "Heavy duty" },
+            { "label": "Alternator Material", "value": "Gasoline Diameter" },
+            { "label": "Cylinder", "value": "90*78.5 mm" },
+            { "label": "Maximum Power", "value": "34.0 HP" },
+            { "label": "Torque", "value": "71 Nm" },
+            { "label": "Oil Tank Capacity", "value": "2500 ml" },
+            { "label": "Starting System", "value": "Electric" },
+            { "label": "Recommended Oil", "value": "SAE10W-30" }
+          ],
+          "features": [
+            "OHV design enhances combustion efficiency",
+            "High power-to-displacement ratio",
+            "Easy starting with an automatic decompression system and an easy-to-grip soft recoil starter handle",
+            "High quality materials and purpose-built components which ensure reliable, long-term use",
+            "Meets world's most stringent environmental legislation",
+            "High Fuel Efficient Engine",
+            "Low Oil Consumption"
+          ]
+        },
+      },
+
+      'gasoline-generator': {
+        'BON-P-GG-2.8KW': {
+          name: 'Gasoline Generator',
+          model: 'BON-P-GG-2.8KW',
+          description: [
+            {
+              title: "High-Efficiency Power Generation with Bonhoeffer Gasoline Generator",
+              text: "The Bonhoeffer Gasoline Generator delivers a maximum power output of 2.8 KW and a rated power of 2.5 KW, making it a reliable choice for various power needs. Featuring a 100% copper stator coil, this generator ensures efficient and stable power generation with a frequency range of 50 to 60 Hz. Its dual voltage capability (120V/240V) offers versatility, suitable for a wide range of applications. Powered by a robust 7 HP engine utilizing OHV (overhead valve) technology, the generator operates smoothly and efficiently, adhering to modern performance standards."
+            },
+            {
+              title: "Durable and Long-Lasting Performance",
+              text: "This 4-stroke gasoline generator is designed for durability and long-lasting performance. With an impressive execution time of 11.5 hours at 50% load and a substantial fuel tank capacity of 15 liters, it is perfect for extended use without frequent refueling. The retractable starting system ensures easy and reliable start-ups, while the 600 ml oil tank capacity supports optimal engine lubrication. Ideal for both residential and commercial use, the Bonhoeffer Gasoline Generator is a dependable power source that combines advanced technology with robust construction."
+            }
+          ],
+          descriptionImage: 'https://bonhoeffermachines.com/en/public/machines/specification_dark_1722942262_5761ff55958740ee7697.webp',
+          showcaseImages: [
+            'https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-gg-2.8kw.webp'
+          ],
+          isBannerImage: false,
+          bannerImage: '',
+          isVideo: true,
+          videoUrls: [
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/MtPUNBrBfTM' },
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/APK3obMIT5w' },
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/c5O_RQgAx4Q' }
+          ],
+          isCatalogueLeft: true,
+          isCatalogueRight: true,
+          catalougeLeft: 'https://bonhoeffermachines.com/en/public/machines/specification_left_1724495423_b5b048612df06428371c.webp',
+          catalougeRight: 'https://bonhoeffermachines.com/en/public/machines/specification_light_1724495433_fb00c2e1a769de9d99a2.webp',
+          isWorkshopManual: true,
+          workshopManualUrl: 'https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-manual-gasoline-generator.pdf',
+          isUserManual: true,
+          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-GG-2.8-3.7-5.0-7.5-9.0.pdf',
+          isBrochure: true,
+          brochureUrl: 'https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-GG-2.8KW_1.pdf',
+          isSpareParts: true,
+          sparePartsUrl: 'https://bonhoeffermachines.com/en/public/pdfs/BON-P-GG-2.8KW.pdf',
+          warrantyTime: 36,
+          isFMTTI: false,
+          specifications: [
+            { label: 'Maximum power', value: '2.8 KW' },
+            { label: 'Rated Power', value: '2.5 KW' },
+            { label: 'Stator coil', value: '100% Copper' },
+            { label: 'Frequency', value: '50 o 60 Hz' },
+            { label: 'Voltage', value: '120V/240V Dual voltage' },
+            { label: 'Engine', value: '7 HP' },
+            { label: 'Technology', value: 'OHV, overhead valves' },
+            { label: 'Type', value: '4 Stroke' },
+            { label: 'Execution time at 50% load', value: '11.5 Hour' },
+            { label: 'Fuel tank capacity', value: '15 Liters' },
+            { label: 'Starting System', value: 'Retractable' },
+            { label: 'Oil tank capacity', value: '600 ml' }
+          ],
+          features: [
+            'OHV design enhances combustion efficiency',
+            'Easy starting with an automatic decompression system and an easy-to-grip soft recoil starter handle',
+            'High quality materials and purpose-built components which ensure reliable, long-term use',
+            'Easy Start with Bonhoeffer world-class Bonhoeffer Engine',
+            'Fuel Efficient & Environmentally Friendly',
+            'Automatic Voltage Regulator (AVR) Technology',
+            'Highly Heat Conductivity Product\'s with 100% cooper winding',
+            'Super Quiet operation'
+          ]
+        },
+        'BON-P-GG-3.7KW': {
+          name: 'Gasoline Generator',
+          model: 'BON-P-GG-3.7KW',
+          description: [
+            {
+              title: "Power Through Any Task with the BON-P-GG-3.7KW Generator",
+              text: "The BON-P-GG-3.7KW gasoline generator is engineered to deliver reliable power wherever you need it. With a maximum output of 3.7 KW and a rated power of 3.3 KW, this generator ensures consistent energy for your tools and appliances. Its stator coil, made from 100% copper, enhances durability and performance. Whether you're on a job site or need backup power at home, the dual voltage of 120V/240V provides the flexibility to power various devices with ease."
+            },
+            {
+              title: "Robust Performance Meets Long-Lasting Reliability",
+              text: "Designed with an 8 HP OHV engine and 4-stroke technology, the BON-P-GG-3.7KW generator offers powerful performance with exceptional efficiency. It boasts a generous 15-liter fuel tank, allowing up to 10 hours of execution time at 50% load. The retractable starting system ensures easy operation, while the 600 ml oil tank capacity keeps the engine running smoothly. Whether for work or emergency use, this generator is built to keep you powered up, hour after hour."
+            }
+          ],
+          descriptionImage: 'https://bonhoeffermachines.com/en/public/machines/specification_dark_1722942298_85f04a36e939d469b00b.webp',
+          showcaseImages: [
+            'https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-gg-3.7kw.webp'
+          ],
+          isBannerImage: false,
+          bannerImage: '',
+          isVideo: true,
+          videoUrls: [
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/MtPUNBrBfTM' },
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/APK3obMIT5w' },
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/c5O_RQgAx4Q' }
+          ],
+          isCatalogueLeft: true,
+          isCatalogueRight: true,
+          catalougeLeft: 'https://bonhoeffermachines.com/en/public/machines/specification_left_1724496393_7715a9d07db64d21d148.webp',
+          catalougeRight: 'https://bonhoeffermachines.com/en/public/machines/specification_light_1724496408_69aaac17ba9aa7859106.webp',
+          isWorkshopManual: true,
+          workshopManualUrl: 'https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-manual-gasoline-generator.pdf',
+          isUserManual: true,
+          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-GG-2.8-3.7-5.0-7.5-9.0.pdf',
+          isBrochure: true,
+          brochureUrl: 'https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-GG-3.7KW_1.pdf',
+          isSpareParts: true,
+          sparePartsUrl: 'https://bonhoeffermachines.com/en/public/pdfs/BON-P-GG-3.7KW.pdf',
+          warrantyTime: 36,
+          isFMTTI: false,
+          specifications: [
+            { label: 'Maximum power', value: '3.7 KW' },
+            { label: 'Rated Power', value: '3.3 KW' },
+            { label: 'Stator coil', value: '100% Copper' },
+            { label: 'Frequency', value: '50 o 60 Hz' },
+            { label: 'Voltage', value: '120V/240V Dual voltage' },
+            { label: 'Engine', value: '8 HP' },
+            { label: 'Technology', value: 'OHV, overhead valves' },
+            { label: 'Type', value: '4 Stroke' },
+            { label: 'Execution time at 50% load', value: '10.0 Hour' },
+            { label: 'Fuel tank capacity', value: '15 Liters' },
+            { label: 'Starting System', value: 'Retractable' },
+            { label: 'Oil tank capacity', value: '600 ml' }
+          ],
+          features: [
+            'OHV design enhances combustion efficiency',
+            'Easy starting with an automatic decompression system and an easy-to-grip soft recoil starter handle',
+            'High quality materials and purpose-built components which ensure reliable, long-term use',
+            'Easy Start with Bonhoeffer world-class Bonhoeffer Engine',
+            'Fuel Efficient & Environmentally Friendly',
+            'Automatic Voltage Regulator (AVR) Technology',
+            'Highly Heat Conductivity Product\'s with 100% cooper winding',
+            'Super Quiet operation'
+          ]
+        },
+        'BON-P-GG-5.0KW': {
+          name: 'Gasoline Generator',
+          model: 'BON-P-GG-5.0KW',
+          description: [
+            {
+              title: 'Experience Superior Power with the BON-P-GG-5.0KW Generator',
+              text: 'The BON-P-GG-5.0KW gasoline generator delivers robust and reliable power with a maximum output of 5.0 KW and a rated power of 4.5 KW. Built with a 100% copper stator coil, this generator ensures long-lasting performance and efficiency. The dual voltage capability of 120V/240V provides the versatility needed to power a wide range of tools and appliances, making it an essential companion for both work sites and home backup.'
+            },
+            {
+              title: 'Engineered for Efficiency and Durability',
+              text: 'Powered by a 9 HP OHV engine with 4-stroke technology, the BON-P-GG-5.0KW is designed for dependable performance. It features a 15-liter fuel tank, offering up to 7 hours of runtime at 50% load, ideal for extended operations. The retractable starting system ensures easy and reliable startups, while the 1100 ml oil tank capacity supports the engine\'s longevity. This generator is your go-to solution for consistent and powerful energy, whenever and wherever you need it.'
+            }
+          ],
+          descriptionImage: 'https://bonhoeffermachines.com/en/public/machines/specification_dark_1722942342_57625f860a1715610327.webp',
+          showcaseImages: [
+            'https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-gg-5.0kw.webp'
+          ],
+          isBannerImage: false,
+          bannerImage: '',
+          isVideo: true,
+          videoUrls: [
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/MtPUNBrBfTM' },
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/APK3obMIT5w' },
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/c5O_RQgAx4Q' }
+          ],
+          isCatalogueLeft: true,
+          isCatalogueRight: true,
+          catalougeLeft: 'https://bonhoeffermachines.com/en/public/machines/specification_left_1724497098_45d7779b64f23cdf86bd.webp',
+          catalougeRight: 'https://bonhoeffermachines.com/en/public/machines/specification_light_1724497109_27678957b9071c1e8fbd.webp',
+          isWorkshopManual: true,
+          workshopManualUrl: 'https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-manual-gasoline-generator.pdf',
+          isUserManual: true,
+          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-GG-2.8-3.7-5.0-7.5-9.0.pdf',
+          isBrochure: true,
+          brochureUrl: 'https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-GG-5.0KW_1.pdf',
+          isSpareParts: true,
+          sparePartsUrl: 'https://bonhoeffermachines.com/en/public/pdfs/BON-P-GG-5.0KW.pdf',
+          warrantyTime: 36,
+          isFMTTI: false,
+          specifications: [
+            { label: 'Maximum power', value: '5.0 KW' },
+            { label: 'Rated Power', value: '4.5 KW' },
+            { label: 'Stator coil', value: '100% Copper' },
+            { label: 'Frequency', value: '50 o 60 Hz' },
+            { label: 'Voltage', value: '120V/240V dual voltage' },
+            { label: 'Engine', value: '9 HP' },
+            { label: 'Technology', value: 'OHV, overhead valves' },
+            { label: 'Type', value: '4 Stroke' },
+            { label: 'Execution time at 50% load', value: '7 Hour' },
+            { label: 'Fuel tank capacity', value: '15 Liters' },
+            { label: 'Starting System', value: 'Retractable' },
+            { label: 'Oil tank capacity', value: '1100 ml' }
+          ],
+          features: [
+            'OHV design enhances combustion efficiency',
+            'Easy starting with an automatic decompression system and an easy-to-grip soft recoil starter handle',
+            'High quality materials and purpose-built components which ensure reliable, long-term use',
+            'Easy Start with Bonhoeffer world-class Bonhoeffer Engine',
+            'Fuel Efficient & Environmentally Friendly',
+            'Automatic Voltage Regulator (AVR) Technology',
+            'Highly Heat Conductivity Product\'s with 100% cooper winding',
+            'Super Quiet operation'
+          ]
+        },
+        'BON-P-GG-7.5KW': {
+          name: 'Gasoline Generator',
+          model: 'BON-P-GG-7.5KW',
+          description: [
+            {
+              title: 'Reliable Power for Various Needs - BON-P-GG-7.5KW',
+              text: 'The BON-P-GG-7.5KW generator offers a maximum power output of 7.5 KW, making it perfect for powering essential tools and machines. The generator has 14 HP engine and OHV technology, this generator delivers consistent and efficient performance, ensuring you have power when you need it.'
+            },
+            {
+              title: 'Efficient Operation with Extended Runtime',
+              text: 'The generator equipped with a 27-liter fuel tank, the Bonhoeffer gasoline generator can run for up to 8 hours at 50% load, providing long-lasting power during outages or remote work. The 100% copper stator coil and electric start system further enhance its reliability and ease of use.'
+            }
+          ],
+          descriptionImage: 'https://bonhoeffermachines.com/en/public/machines/specification_dark_1722942455_20ed51b37fc7b0cc2a99.webp',
+          showcaseImages: [
+            'https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-gg-7.5kw.webp'
+          ],
+          isBannerImage: false,
+          bannerImage: '',
+          isVideo: true,
+          videoUrls: [
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/MtPUNBrBfTM' },
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/APK3obMIT5w' },
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/c5O_RQgAx4Q' }
+          ],
+          isCatalogueLeft: true,
+          isCatalogueRight: true,
+          catalougeLeft: 'https://bonhoeffermachines.com/en/public/machines/specification_left_1724497721_e57b1896dfbd748c03a6.webp',
+          catalougeRight: 'https://bonhoeffermachines.com/en/public/machines/specification_light_1724497731_6aba5a207cb0facc0ab7.webp',
+          isWorkshopManual: true,
+          workshopManualUrl: 'https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-manual-gasoline-generator.pdf',
+          isUserManual: true,
+          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-GG-2.8-3.7-5.0-7.5-9.0.pdf',
+          isBrochure: true,
+          brochureUrl: 'https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-GG-7.5KW_1.pdf',
+          isSpareParts: true,
+          sparePartsUrl: 'https://bonhoeffermachines.com/en/public/pdfs/BON-P-GG-7.5KW.pdf',
+          warrantyTime: 36,
+          isFMTTI: false,
+          specifications: [
+            { label: 'Maximum power', value: '7.5 KW' },
+            { label: 'Rated Power', value: '7.0 KW' },
+            { label: 'Stator coil', value: '100% Copper' },
+            { label: 'Frequency', value: '50 o 60 Hz' },
+            { label: 'Voltage', value: '120V/240V dual voltage' },
+            { label: 'Engine', value: '14 HP' },
+            { label: 'Technology', value: 'OHV, overhead valves' },
+            { label: 'Type', value: '4 Stroke' },
+            { label: 'Execution time at 50% load', value: '8 Hour' },
+            { label: 'Fuel tank capacity', value: '27 Liters' },
+            { label: 'Starting system', value: 'Electric' },
+            { label: 'Oil tank capacity', value: '1100 ml' }
+          ],
+          features: [
+            'OHV design enhances combustion efficiency',
+            'Easy starting with an automatic decompression system and an easy-to-grip soft recoil starter handle',
+            'High quality materials and purpose-built components which ensure reliable, long-term use',
+            'Easy Start with Bonhoeffer world-class Bonhoeffer Engine',
+            'Fuel Efficient & Environmentally Friendly',
+            'Automatic Voltage Regulator (AVR) Technology',
+            'Highly Heat Conductivity Product\'s with 100% cooper winding',
+            'Super Quiet operation'
+          ]
+        },
+        'BON-P-GG-9.0KW': {
+          name: 'Gasoline Generator',
+          model: 'BON-P-GG-9.0KW',
+          description: [
+            {
+              title: 'High-Power Output with Reliable Performance',
+              text: 'The Bonhoeffer 9.0 KW gasoline generator delivers a maximum power of 9.0 KW and a rated power of 8.5 KW, making it a robust solution for various power needs. Equipped with a 16 HP engine utilizing OHV (overhead valve) technology, this generator ensures efficient fuel combustion and enhanced durability. Whether it\'s for residential backup or industrial use, the dual voltage (120V/240V) capability and 50-60 Hz frequency adaptability make it versatile for different applications.'
+            },
+            {
+              title: 'Extended Operation with Efficient Fuel Management',
+              text: 'Designed for prolonged operation, the Bonhoeffer generator features a 27-liter fuel tank that supports up to 9 hours of continuous runtime. The 4-stroke engine, paired with an electric starting system, ensures easy and reliable start-up every time. Additionally, the generator is equipped with a 100% copper stator coil, offering superior conductivity and heat resistance, which contributes to its long-lasting performance and efficiency.'
+            }
+          ],
+          descriptionImage: 'https://bonhoeffermachines.com/en/public/machines/specification_dark_1722942486_ac903d346f7b2d2bfa32.webp',
+          showcaseImages: [
+            'https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-gg-9.0kw.webp'
+          ],
+          isBannerImage: false,
+          bannerImage: '',
+          isVideo: true,
+          videoUrls: [
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/MtPUNBrBfTM' },
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/APK3obMIT5w' },
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/c5O_RQgAx4Q' }
+          ],
+          isCatalogueLeft: true,
+          isCatalogueRight: true,
+          catalougeLeft: 'https://bonhoeffermachines.com/en/public/machines/specification_left_1722494194_9a6a99a293e0b88fb2d2.webp',
+          catalougeRight: 'https://bonhoeffermachines.com/en/public/machines/specification_light_1722494207_170ad87bb7357bd83f6a.webp',
+          isWorkshopManual: true,
+          workshopManualUrl: 'https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-manual-gasoline-generator.pdf',
+          isUserManual: true,
+          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-GG-2.8-3.7-5.0-7.5-9.0.pdf',
+          isBrochure: true,
+          brochureUrl: 'https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-GG-9.0KW.pdf',
+          isSpareParts: true,
+          sparePartsUrl: 'https://bonhoeffermachines.com/en/public/pdfs/BON-P-GG-9.0KW.pdf',
+          warrantyTime: 36,
+          isFMTTI: false,
+          specifications: [
+            { label: 'Maximum power', value: '9.0 KW' },
+            { label: 'Rated Power', value: '8.5 KW' },
+            { label: 'Stator coil', value: '100% Copper' },
+            { label: 'Frequency', value: '50 o 60 Hz' },
+            { label: 'Voltage', value: '120V/240V Dual voltage' },
+            { label: 'Engine', value: '16 HP' },
+            { label: 'Technology', value: 'OHV, overhead valves' },
+            { label: 'Type', value: '4 Tiempos' },
+            { label: 'Execution time at 50% load', value: '9.0 Hour' },
+            { label: 'Fuel tank capacity', value: '27 Liters' },
+            { label: 'Starting system', value: 'Electric' },
+            { label: 'Oil tank capacity', value: '1100 ml' }
+          ],
+          features: [
+            'OHV design enhances combustion efficiency',
+            'Easy starting with an automatic decompression system and an easy-to-grip soft recoil starter handle',
+            'High quality materials and purpose-built components which ensure reliable, long-term use',
+            'Easy Start with Bonhoeffer world-class Bonhoeffer Engine',
+            'Fuel Efficient & Environmentally Friendly',
+            'Automatic Voltage Regulator (AVR) Technology',
+            'Highly Heat Conductivity Product\'s with 100% cooper winding',
+            'Super Quiet operation'
+          ]
+        },
+        'BON-P-GG-9.5KW': {
+          name: 'Gasoline Generator',
+          model: 'BON-P-GG-9.5KW',
+          description: [
+            {
+              title: 'High-Performance Power Solution',
+              text: 'The BON-P-GG-9.5KW generator delivers a maximum power of 9.5 KW, making it a top choice for heavy-duty applications. With a powerful 18.5 HP engine and OHV technology, this generator ensures efficient and reliable power output, capable of handling demanding tasks with ease.'
+            },
+            {
+              title: 'Extended Runtime for Continuous Operation',
+              text: 'Designed for long-lasting performance, the Bonhoeffer generator features a large 55-liter fuel tank, allowing it to run for up to 12.5 hours at 50% load. The 100% copper stator coil ensures durability, while the retractable starting system offers ease of use, making it a dependable choice for extended power needs.'
+            }
+          ],
+          descriptionImage: 'https://bonhoeffermachines.com/en/public/machines/specification_dark_1728559275_f42290a23c6223637387.webp',
+          showcaseImages: [
+            'https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-gg-9.5kw.webp'
+          ],
+          isBannerImage: false,
+          bannerImage: '',
+          isVideo: true,
+          videoUrls: [
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/MtPUNBrBfTM' },
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/APK3obMIT5w' },
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/c5O_RQgAx4Q' }
+          ],
+          isCatalogueLeft: true,
+          isCatalogueRight: true,
+          catalougeLeft: 'https://bonhoeffermachines.com/en/public/machines/specification_left_1724499820_5b5df9bf38353c3f9e0c.webp',
+          catalougeRight: 'https://bonhoeffermachines.com/en/public/machines/specification_light_1724499829_41979e188168862bcb5a.webp',
+          isWorkshopManual: true,
+          workshopManualUrl: 'https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-manual-gasoline-generator.pdf',
+          isUserManual: true,
+          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-GG-2.8-3.7-5.0-7.5-9.0.pdf',
+          isBrochure: true,
+          brochureUrl: 'https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-GG-9.5KW_1.pdf',
+          isSpareParts: true,
+          sparePartsUrl: 'https://bonhoeffermachines.com/en/public/pdfs/BON-P-GG-9.5KW.pdf',
+          warrantyTime: 36,
+          isFMTTI: false,
+          specifications: [
+            { label: 'Maximum power', value: '9.5 KW' },
+            { label: 'Rated Power', value: '9.2 KW' },
+            { label: 'Stator coil', value: '100% Copper' },
+            { label: 'Frequency', value: '50 o 60 Hz' },
+            { label: 'Voltage', value: '120V/240V Dual voltage' },
+            { label: 'Engine', value: '18.5 HP' },
+            { label: 'Technology', value: 'OHV, overhead valves' },
+            { label: 'Type', value: '4 Stroke' },
+            { label: 'Execution time at 50% load', value: '12.5 hours' },
+            { label: 'Fuel tank capacity', value: '55 Liters' },
+            { label: 'Starting system', value: 'Electric start' },
+            { label: 'Oil tank capacity', value: '1400 ml' }
+          ],
+          features: [
+            'OHV design enhances combustion efficiency',
+            'Easy starting with an automatic decompression system and an easy-to-grip soft recoil starter handle',
+            'High quality materials and purpose-built components which ensure reliable, long-term use',
+            'Easy Start with Bonhoeffer world-class Bonhoeffer Engine',
+            'Fuel Efficient & Environmentally Friendly',
+            'Automatic Voltage Regulator (AVR) Technology',
+            'Highly Heat Conductivity Product\'s with 100% cooper winding',
+            'Super Quiet operation'
+          ]
+        },
+        'BON-P-GG-12.0KW': {
+          name: 'Gasoline Generator',
+          model: 'BON-P-GG-12.0KW',
+          description: [
+            {
+              title: 'High-Capacity Dual Cylinder Generator for Demanding Use',
+              text: 'The BON-P-GG-12.0KW is a high-performance gasoline generator designed for industrial and heavy-duty applications. With a 20 HP engine featuring OHV technology and two cylinders, it offers powerful and efficient performance, capable of sustaining large energy loads with a maximum output of 12.0 KW and rated output of 11.0 KW.'
+            },
+            {
+              title: 'Optimized for Long Runtime and Versatility',
+              text: 'Equipped with a 55-liter fuel tank and 1500 ml oil capacity, this 4-stroke generator can run up to 11.5 hours at 50% load. Its electric starting system ensures quick startups, and dual voltage (120V/240V) support provides compatibility for diverse devices. The 100% copper stator coil ensures excellent conductivity and long-term durability.'
+            }
+          ],
+          descriptionImage: 'https://bonhoeffermachines.com/en/public/machines/specification_dark_1722942673_723e389eed0c41c40340.webp',
+          showcaseImages: [
+            'https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-gg-12.0kw.webp'
+          ],
+          isBannerImage: false,
+          bannerImage: '',
+          isVideo: true,
+          videoUrls: [
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/MtPUNBrBfTM' },
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/APK3obMIT5w' },
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/c5O_RQgAx4Q' }
+          ],
+          isCatalogueLeft: false,
+          isCatalogueRight: false,
+          catalougeLeft: '',
+          catalougeRight: '',
+          isWorkshopManual: true,
+          workshopManualUrl: 'https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-manual-gasoline-generator.pdf',
+          isUserManual: true,
+          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-GG-2.8-3.7-5.0-7.5-9.0.pdf',
+          isBrochure: false,
+          brochureUrl: '',
+          isSpareParts: true,
+          sparePartsUrl: 'https://bonhoeffermachines.com/en/public/pdfs/BON-P-GG-12.0KW.pdf',
+          warrantyTime: 36,
+          isFMTTI: false,
+          specifications: [
+            { label: 'Maximum power', value: '12.0 KW' },
+            { label: 'Rated power', value: '11.0 KW' },
+            { label: 'Stator coil', value: '100% Copper' },
+            { label: 'Frequency', value: '50 o 60 Hz' },
+            { label: 'Voltage', value: '120V/240V Dual voltage' },
+            { label: 'Engine', value: '20 HP' },
+            { label: 'Technology', value: 'OHV, overhead valves, 2 cylinders' },
+            { label: 'Type', value: '4 Stroke' },
+            { label: 'Execution time at 50% load', value: '11.5 Hour' },
+            { label: 'Fuel tank capacity', value: '55 Liters' },
+            { label: 'Starting system', value: 'Electric' },
+            { label: 'Oil tank capacity', value: '1500 ml' }
+          ],
+          features: [
+            'OHV design enhances combustion efficiency',
+            'Easy starting with an automatic decompression system and an easy-to-grip soft recoil starter handle',
+            'High quality materials and purpose-built components which ensure reliable, long-term use',
+            'Easy Start with Bonhoeffer world-class Bonhoeffer Engine',
+            'Fuel Efficient & Environmentally Friendly',
+            'Automatic Voltage Regulator (AVR) Technology',
+            'Highly Heat Conductivity Product\'s with 100% cooper winding',
+            'Super Quiet operation'
+          ]
+        },
+        'BON-P-GG-13.5KW': {
+          name: 'Gasoline Generator',
+          model: 'BON-P-GG-13.5KW',
+          description: [
+            {
+              title: 'Heavy-Duty Generator for Industrial Applications',
+              text: 'The BON-P-GG-13.5KW is a high-powered gasoline generator designed to handle intensive electrical demands. With a 24 HP OHV engine and dual-cylinder configuration, it delivers a maximum power output of 13.5 KW and rated power of 13.0 KW, ensuring dependable energy supply for critical operations.'
+            },
+            {
+              title: 'Built for Durability and Long Runtime',
+              text: 'Equipped with a 55-liter fuel tank and an oil capacity of 1500 ml, this 4-stroke generator can run for up to 9 hours at 50% load. Its electric start mechanism ensures ease of use, while the 100% copper stator coil provides consistent performance and thermal conductivity. Suitable for high-demand environments with dual-voltage support.'
+            }
+          ],
+          descriptionImage: 'https://bonhoeffermachines.com/en/public/machines/specification_dark_1722942711_dabf32893e4f4262ac5a.webp',
+          showcaseImages: [
+            'https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-gg-13.5kw.webp'
+          ],
+          isBannerImage: false,
+          bannerImage: '',
+          isVideo: true,
+          videoUrls: [
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/MtPUNBrBfTM' },
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/APK3obMIT5w' },
+            { title: 'Troubleshooting', url: 'https://www.youtube.com/embed/c5O_RQgAx4Q' }
+          ],
+          isCatalogueLeft: false,
+          isCatalogueRight: false,
+          catalougeLeft: '',
+          catalougeRight: '',
+          isWorkshopManual: true,
+          workshopManualUrl: 'https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-manual-gasoline-generator.pdf',
+          isUserManual: true,
+          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-GG-2.8-3.7-5.0-7.5-9.0.pdf',
+          isBrochure: false,
+          brochureUrl: '',
+          isSpareParts: true,
+          sparePartsUrl: 'https://bonhoeffermachines.com/en/public/pdfs/BON-P-GG-13.5KW.pdf',
+          warrantyTime: 36,
+          isFMTTI: false,
+          specifications: [
+            { label: 'Maximum power', value: '13.5 KW' },
+            { label: 'Rated Power', value: '13.0 KW' },
+            { label: 'Stator coil', value: '100% Copper' },
+            { label: 'Frequency', value: '50 o 60 Hz' },
+            { label: 'Voltage', value: '120V/240V Dual voltage' },
+            { label: 'Engine', value: '24 HP' },
+            { label: 'Technology', value: 'OHV, overhead valves, 2 cylinders' },
+            { label: 'Type', value: '4 Stroke' },
+            { label: 'Execution time at 50% load', value: '9.0 Hour' },
+            { label: 'Fuel tank capacity', value: '55 Litros' },
+            { label: 'Starting system', value: 'Electric' },
+            { label: 'Oil tank capacity', value: '1500 ml' }
+          ],
+          features: [
+            'OHV design enhances combustion efficiency',
+            'Easy starting with an automatic decompression system and an easy-to-grip soft recoil starter handle',
+            'High quality materials and purpose-built components which ensure reliable, long-term use',
+            'Easy Start with Bonhoeffer world-class Bonhoeffer Engine',
+            'Fuel Efficient & Environmentally Friendly',
+            'Automatic Voltage Regulator (AVR) Technology',
+            'Highly Heat Conductivity Product\'s with 100% cooper winding',
+            'Super Quiet operation'
+          ]
+        },
+        'BON-P-GG-16.0KW': {
+          name: 'Gasoline Generator',
+          model: 'BON-P-GG-16.0KW',
+          description: [
+            {
+              title: "High-Power Performance for Demanding Applications",
+              text: "The Bonhoeffer BON-P-GG-16.0KW gasoline generator delivers a maximum power of 16.0 KW and rated power of 15.0 KW, making it ideal for heavy-duty industrial, commercial, and emergency backup uses. Equipped with a powerful 34 HP engine and dual-cylinder OHV technology, this 4-stroke generator supports both 120V and 240V outputs, running smoothly at 50 or 60 Hz frequencies. Its 100% copper stator coil ensures efficient power transmission and durability."
+            },
+            {
+              title: "Built for Endurance and Efficiency",
+              text: "With an electric starting system, a 55-liter fuel tank, and an execution time of 7.5 hours at 50% load, the BON-P-GG-16.0KW is designed for uninterrupted long-duration performance. Its 1500 ml oil tank capacity and high-grade construction ensure reduced maintenance, improved efficiency, and long service life. Whether used for workshops, construction sites, or remote operations, this generator delivers unmatched reliability and performance."
+            }
+          ],
+          descriptionImage: "https://bonhoeffermachines.com/en/public/machines/specification_dark_1722943220_4a211d11a382efaabbd4.webp",
+          showcaseImages: [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-gg-16.0kw.webp"
+          ],
+          isBannerImage: false,
+          bannerImage: "",
+          isVideo: true,
+          videoUrls: [
+            { title: "Troubleshooting", url: "https://www.youtube.com/embed/MtPUNBrBfTM" },
+            { title: "Troubleshooting", url: "https://www.youtube.com/embed/APK3obMIT5w" },
+            { title: "Troubleshooting", url: "https://www.youtube.com/embed/c5O_RQgAx4Q" }
+          ],
+          isCatalogueLeft: false,
+          isCatalogueRight: false,
+          catalougeLeft: "",
+          catalougeRight: "",
+          isWorkshopManual: true,
+          workshopManualUrl: "https://bonhoeffermachines.com/en/public/workshop_pdf/workshop-manual-gasoline-generator.pdf",
+          isUserManual: false,
+          userManualUrl: "",
+          isBrochure: false,
+          brochureUrl: "",
+          isSpareParts: true,
+          sparePartsUrl: "https://bonhoeffermachines.com/en/public/pdfs/BON-P-GG-16.0KW.pdf",
+          warrantyTime: 36,
+          isFMTTI: false,
+          specifications: [
+            { label: "Maximum power", value: "16.0 KW" },
+            { label: "Rated Power", value: "15.0 KW" },
+            { label: "Stator coil", value: "100% Copper" },
+            { label: "Frequency", value: "50 o 60 Hz" },
+            { label: "Voltage", value: "120V/240V Dual voltage" },
+            { label: "Engine", value: "34 HP" },
+            { label: "Technology", value: "OHV, overhead valves, 2 cylinders" },
+            { label: "Type", value: "4 Stroke" },
+            { label: "Execution time at 50% load", value: "7.5 Hour" },
+            { label: "Fuel tank capacity", value: "55 Liters" },
+            { label: "Starting System", value: "Electric" },
+            { label: "Oil tank capacity", value: "1500 ml" }
+          ],
+          features: [
+            "OHV design enhances combustion efficiency",
+            "Easy starting with an automatic decompression system and an easy-to-grip soft recoil starter handle",
+            "High quality materials and purpose-built components which ensure reliable, long-term use",
+            "Easy Start with Bonhoeffer world-class Bonhoeffer Engine",
+            "Fuel Efficient & Environmentally Friendly",
+            "Automatic Voltage Regulator (AVR) Technology",
+            "Highly Heat Conductivity Product\'s with 100% cooper winding",
+            "Super Quiet operation"
+          ]
+        },
+      },
+
+      'gasoline-inverter': {
+
+      },
+
+      'tiller': {
+
+      },
+      
+      'brush-cutter':{
+        'BON-P-BC36': {
+          name: 'Brush Cutter',
+          model: 'BON-P-BC36',
+          description: [
+            {
+              title: 'Why Brush Cutter is an Essential Tool for Cutting Grass?',
+              text: 'A brush cutter is a heavy-duty tool designed to clear tough vegetation that standard mowers struggle with. Perfect for cutting through dense grass, resilient weeds, and small saplings, this powerful machine easily handles overgrown areas. Its versatility and precision make it ideal for maintaining spaces that are difficult to access, providing effective control over unruly landscapes. You can get one of the best brush cutters from Bonhoeffer.'
+            },
+            {
+              title: 'Tool Designed for Versatility and Precision',
+              text: 'BON-P-BC36 is a hand-held brush cutter, equipped with a high-performance 2-stroke engine, delivering 1.2 kW of power at 7,500 rpm. It has a fuel ratio of 50:1 and a 720 cm³ fuel tank, ensuring extended use between refills. With an engine displacement of 35.3 cm³ and a maximum speed of 9,200 rpm. The idle speed of 3,000 rpm provides smooth operation, while the clutch engages at 4,200 rpm for better control. Weighing just 7.2 kg (without attachments), this machine offers the perfect balance of power and mobility, making it an essential tool for professional trimming tasks.'
+            }
+          ],
+          descriptionImage: 'https://bonhoeffermachines.com/en/public/machines/specification_dark_1724761899_7ddd1769a97975f5ad37.webp',
+          showcaseImages: [
+            'https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-bc33.webp',
+            'https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-bc33.webp',
+            'https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-bc33.webp'
+          ],
+          isBannerImage: true,
+          bannerImage: 'https://bonhoeffermachines.com/en/public/product_banner/brush-cutter-banner.webp',
+          isVideo: false,
+          videoUrls: [],
+          isCatalogueLeft: true,
+          isCatalogueRight: true,
+          catalougeLeft: 'https://bonhoeffermachines.com/en/public/machines/specification_left_1727179453_951a0534a64f19831f63.webp',
+          catalougeRight: 'https://bonhoeffermachines.com/en/public/machines/specification_light_1727179463_c72a35323b97517a555d.webp',
+          isWorkshopManual: false,
+          workshopManualUrl: '',
+          isUserManual: true,
+          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-BC36-ENGLISH-MANUAL.pdf',
+          isBrochure: true,
+          brochureUrl: 'https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-BC36.pdf',
+          isSpareParts: true,
+          sparePartsUrl: 'https://bonhoeffermachines.com/en/public/pdfs/BON-P-BC36.pdf',
+          warrantyTime: 15,
+          isFMTTI: true,
+          specifications: [
+            { label: 'Equipment mobility', value: 'Hand-held' },
+            { label: 'Engine type', value: '2-stroke' },
+            { label: 'Maximum power', value: '1.2 kW / 7500 min⁻¹' },
+            { label: 'Fuel ratio', value: '50:1' },
+            { label: 'Volumes of fuel tank', value: '720 cm³' },
+            { label: 'Engine displacement', value: '35.3 cm³' },
+            { label: 'Max engine speed for grass trimmer', value: '9200 min⁻¹' },
+            { label: 'Gear ratio', value: '19:14' },
+            { label: 'Engine idling speed', value: '3000 min⁻¹ ±300' },
+            { label: 'Clutch engagement speed', value: '4200 min⁻¹' },
+            { label: 'Unit mass (empty tanks without cutting attachment)', value: '7.2 kg' }
+          ],
+          features: [
+            'BRUSH CUTTER is a powered garden or agriculture tool used to trim weeds, small trees, and other foliage.',
+            'Brush cutter is a tool that is used to harvest crops, trim grass, as well as clear/remove unwanted crop. Catering to the needs and demands of farmers.',
+            'It is used to cut weeds, trim crops, small trees, grass, parthenium etc.',
+            'Various blades or trimmer heads can be attached to the machine for specific applications.',
+            'It is typically used to cut tall grass (grass taller than 6”–8”), weeds, brush, shrubs and woody material such as stalks and saplings.',
+            'This machine is started with recoil.',
+            'Petrol engines, either two stroke, are used on the more powerful units.'
+          ]
+        },
+      },
+
+      'backpack-brush-cutter': {
+        'BON-P-BP-BC45': {
+          name: 'Backpack Brush Cutter',
+          model: 'BON-P-BP-BC45',
+          description: [
+            {
+              title: 'Achieve Effortless Grass Cutting with the Backpack Brush Cutter',
+              text: 'Take the hassle out of grass-cutting with the Backpack Brush Cutter. Designed for comfort and efficiency, this lightweight, handheld tool provides superior performance for trimming grass and brush in any terrain. Its ergonomic backpack design ensures balanced weight distribution for reduced strain during extended use. Whether managing a large yard or tackling overgrown fields, this brush cutter delivers professional-grade results with minimal effort. Trust Bonhoeffer to make landscaping tasks easier and more efficient every time.'
+            },
+            {
+              title: 'Exceptional Power and Durability for Heavy-Duty Grass Cutting',
+              text: 'The BON-P-BP-BC45 combines a powerful 2-stroke engine with precision engineering for top-tier performance. With an engine displacement of 44.8cm³, it achieves a maximum output of 1.6kW at 7500min-1, making it ideal for heavy-duty tasks. The fuel tank has a generous 920cm³ capacity, ensuring longer operation times, while its lightweight 11.1kg frame enhances mobility. Whether using the brush cutter at speeds up to 10,500min-1 or the grass trimmer at 9500min-1, this unit handles every challenge with ease.'
+            }
+          ],
+          descriptionImage: 'https://bonhoeffermachines.com/en/public/machines/specification_dark_1725523109_a0eb51a6c7aae116e15e.webp',
+          showcaseImages: [
+            'https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-bp-bc45.webp'
+          ],
+          isBannerImage: false,
+          bannerImage: '',
+          isVideo: true,
+          videoUrls: [
+            { title: 'Working Video', url: 'https://www.youtube.com/embed/t3BJT22yUGA' }
+          ],
+          isCatalogueLeft: false,
+          isCatalogueRight: false,
+          catalougeLeft: '',
+          catalougeRight: '',
+          isWorkshopManual: false,
+          workshopManualUrl: '',
+          isUserManual: true,
+          userManualUrl: 'https://bonhoeffermachines.com/en/public/pdfs_usermanual/English-Manual-BON-P-BP-BC45.pdf',
+          isBrochure: true,
+          brochureUrl: 'https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-BP-BC45.pdf',
+          isSpareParts: true,
+          sparePartsUrl: 'https://bonhoeffermachines.com/en/public/pdfs/BON-P-BP-BC45.pdf',
+          warrantyTime: 15,
+          isFMTTI: true,
+          specifications: [
+            { label: 'Equipment mobility', value: 'Hand-held' },
+            { label: 'Engine type', value: '2-stroke' },
+            { label: 'Engine displacement', value: '44.8 cm³' },
+            { label: 'Maximum engine performance', value: '1.6 kW / 7500 min⁻¹' },
+            { label: 'Volumes of fuel tank', value: '920 cm³' },
+            { label: 'Max engine speed for brush cutter', value: '10500 min⁻¹' },
+            { label: 'Max engine speed for grass trimmer', value: '9500 min⁻¹' },
+            { label: 'Gear ratio', value: '19:14' },
+            { label: 'Engine idling speed', value: '3000 min⁻¹ ± 300 min' },
+            { label: 'Clutch engagement speed', value: '4200 min⁻¹' },
+            { label: 'Fuel ratio', value: '50:1' },
+            { label: 'Unit mass (empty tanks without cutting attachment)', value: '11.1 kg' }
+          ],
+          features: []
+        },
+      },
     };
 
     // Default model details
@@ -1056,6 +2467,47 @@ function ModelSpecificPage() {
         { name: 'BON-P-WP2.0-196TR', feature: 'INLET/OUTLET- 2 IN- 196 CC- TR', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-WP2.0-196TR.webp' },
         { name: 'BON-P-WP3.0-196TR', feature: 'INLET / OUTLET- 3 INCHES- 196 CC- TR', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-WP3.0-196TR.webp' }
       ],
+
+      'gasoline-engine': [
+        { name: 'BON-P-GE-3.0HP', feature: 'POTENCIA 3.0 HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-GE-3.0HP.webp' },
+        { name: 'BON-P-GE-3.5HP', feature: 'POTENCIA 3.5 HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-GE-3.5HP.webp' },
+        { name: 'BON-P-GE-4.0HP', feature: 'POTENCIA 4.0 HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-GE-4.0HP.webp' },
+        { name: 'BON-P-GE-5.0HP', feature: 'POTENCIA 5.0 HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-GE-5.0HP.webp' },
+        { name: 'BON-P-GE-7.0HP', feature: 'Engine Power : 7.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-GE-7.0HP.webp' },
+        { name: 'BON-P-GE-9.0HP', feature: 'Engine Power : 9.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-GE-9.0HP.webp' },
+        { name: 'BON-P-GE-13.0HP', feature: 'Engine Power : 13.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-GE-13.0HP.webp' },
+        { name: 'BON-P-GE-14.0HP', feature: 'Engine Power : 14.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-GE-14.0HP.webp' },
+        { name: 'BON-P-GE-16.0HP', feature: 'POTENCIA 16.0 HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-GE-16.0HP.webp' },
+        { name: 'BON-P-GE-24.0HP', feature: 'POWER 24.0 HP- V DOBLE CILINDRO', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-GE-24.0HP.webp' },
+        { name: 'BON-P-GE-34.0HP', feature: 'POTENCIA 34.0 HP- V DOBLE CILINDRO', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-GE-34.0HP.webp' }
+      ],
+
+      'gasoline-generator': [
+        { name: 'BON-P-GG-2.8KW', feature: 'MAX . POWER 2.8 KW', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-GG-2.8KW.webp' },
+        { name: 'BON-P-GG-3.7KW', feature: 'MAX . POWER 3.7 KW', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-GG-3.7KW.webp' },
+        { name: 'BON-P-GG-5.0KW', feature: 'MAX . POWER 5.0 KW', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-GG-5.0KW.webp' },
+        { name: 'BON-P-GG-7.5KW', feature: 'MAX . POWER 7.5 KW', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-GG-7.5KW.webp' },
+        { name: 'BON-P-GG-9.0KW', feature: 'MAX . POWER 9.0 KW', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-GG-9.0KW.webp' },
+        { name: 'BON-P-GG-9.5KW', feature: 'MAX . POWER 9.5 KW', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-GG-9.5KW.webp' },
+        { name: 'BON-P-GG-12.0KW', feature: 'MAX . POWER 12.0 KW', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-GG-12KW.webp' },
+        { name: 'BON-P-GG-13.5KW', feature: 'MAX . POWER 13.5 KW', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-GG-13.5KW.webp' },
+        { name: 'BON-P-GG-16.0KW', feature: 'MAX . POWER 16.0 KW', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-GG-16KW.webp' },
+        { name: 'BON-P-GG-18.5KW', feature: 'MAX . POWER 18.5 KW', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-GG-18KW.webp' }
+      ],
+
+      'gasoline-inverter': [
+
+      ],
+
+      'gasoline-tiller': [
+
+      ],
+
+      'brush-cutter': [
+        { name: 'BON-P-BC36', feature: 'Displacement 36 CC', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-BC36.webp' },
+        { name: 'BON-ET-BC53', feature: 'DISPLACEMENT 53 CC', image: 'https://bonhoeffermachines.com/en/public/machines/BON-ET-BC53.webp' },
+        { name: 'BON-P-BC45', feature: 'DISPLACEMENT 45 CC', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-BC45.webp' }
+      ],
     };
 
     const models = allModels[productSlug] || [
@@ -1089,7 +2541,7 @@ function ModelSpecificPage() {
         },
         {
           question: 'What fuel should I use in my Bonhoeffer water pump?',
-          answer: 'Bonhoeffer water pumps are designed and certified to run on regular unleaded gasoline containing no more than 5% ethanol (E10). Always refer to the owner’s manual for your Bonhoeffer to get a list of recommended fuel and the current approved additives. For more information, see our Fuel Recommendations Link. Download or print a handout on how to avoid fuel-related problems for your Bonhoeffer general purpose water pump.'
+          answer: 'Bonhoeffer water pumps are designed and certified to run on regular unleaded gasoline containing no more than 5% ethanol (E10). Always refer to the owner\'s manual for your Bonhoeffer to get a list of recommended fuel and the current approved additives. For more information, see our Fuel Recommendations Link. Download or print a handout on how to avoid fuel-related problems for your Bonhoeffer general purpose water pump.'
         },
         {
           question: 'What should I do if I didn\'t receive all the parts or materials when I purchased my Bonhoeffer Product?',
@@ -1103,8 +2555,87 @@ function ModelSpecificPage() {
           question: 'What actions do I take when the Water pump is running poorly?',
           answer: 'If a problem occurs with the spark plug: Check the spark plug HT wire and connect it if necessary. Remove the spark plug cap. Clean any dirt from around the spark plug base, and then remove the spark plug. Grounding the side electrode to the engine, pull the recoil starter to see if sparks jump across the gap. If there is no spark, replace the plug. If there is a spark, reinstall the spark plug and start again. If the air cleaner is clogged, clean or replace the air cleaner. If the carburetor is clogged, clean the carburetor (see our carburettor workshop sheet). Check if the valve clearance is correct. If not, readjust the valve clearance to the correct setting with a filler gauge. Check if the governor is out of adjustment. If so, readjust the governor. If the problem is not solved, take your water pump to an authorised Bonhoeffer dealer.'
         }
-
       ],
+      'gasoline-engine': [
+        {
+          question: 'Can I use synthetic oil in my Bonhoeffer engine?',
+          answer: 'Bonhoeffer engines are developed, tested and certified with petroleum based motor oils as a lubricant. Synthetic oils may be used; however, any motor oil used in our engines must meet all oil requirements as stated in the owner Manual. In addition, recommended oil change intervals must be followed.'
+        },
+        {
+          question: 'How do I clean the carburettor of a Bonhoeffer engine?',
+          answer: 'See our <a href="https://bonhoeffermachines.com/en/public/carburettor/carburettor-workshop.pdf" target="_blank"><strong>Carburettor workshop Sheet</strong></a> to learn more about cleaning carburettors. Please be aware that the engine should be serviced by an Bonhoeffer Authorized Dealer unless the owner has proper tools, service data and the necessary technical skills.'
+        },
+        {
+          question: 'What fuel should I use in my Bonhoeffer Engine?',
+          answer: 'Bonhoeffer engines are designed and certified to run on regular unleaded gasoline containing no more than 5% ethanol (E10). Gasoline is allowed, by regulation, to contain a variety of additives. The same regulation limits how much of some additives, such as alcohol, can be included in the fuel and still allow it to be sold as gasoline. If you look in a Bonhoeffer product owner’s manual, you will see that a maximum of 5% ethanol is allowed (other oxygenates are also listed). Bonhoeffer engines are designed for good performance and efficient operation using gasoline containing from 0 to 5% ethanol. Always refer to the owner’s manual for your Bonhoeffer to get a list of recommended fuel and the current approved additives. For more information, see our <a href="https://bonhoeffermachines.com/en/public/carburettor/Fuel-Related-Problem.pdf" target="_blank"><strong>Fuel Recommendations Link</strong></a>. Download or print a handout on how to avoid fuel-related problems for your Bonhoeffer general purpose engine.'
+        },
+        {
+          question: 'What should I do if I didn\'t receive all the parts or materials when I purchased my Bonhoeffer Product?',
+          answer: 'If you purchased a new piece of equipment and are missing parts or manuals, you need to contact your selling dealer. If you have further questions, you may contact our Customer Relations office at Manuals and Brochures.'
+        },
+        {
+          question: 'How can I get an Owner\'s Manual?',
+          answer: 'Owner\'s Manuals for General Purpose Engines can be downloaded from our website. <a href="https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-GE-7.0HP-and-BON-P-GE-9.0HP-and-BON-P-GE-14.0HP-ENGLISH-MANUAL.pdf" target="_blank"><strong>Find link</strong></a>.'
+        },
+        {
+          question: 'What actions do I take when the engine is running poorly?',
+          answer: 'If a problem occurs with the spark plug: Check the spark plug HT wire and connect it if necessary. Remove the spark plug cap. Clean any dirt from around the spark plug base, and then remove the spark plug. Grounding the side electrode to the engine, pull the recoil starter to see if sparks jump across the gap. If there is no spark, replace the plug. If there is a spark, reinstall the spark plug and start again. If the air cleaner is clogged, clean or replace the air cleaner. If the carburetor is clogged, clean the carburetor (see our <a href="https://bonhoeffermachines.com/en/public/carburettor/carburettor-workshop.pdf" target="_blank"><strong>carburettor workshop sheet</strong></a>). Check if the valve clearance is correct. If not, readjust the valve clearance to the correct setting by the help of filler gauge. Check if the governor is out of adjustment. If so, readjust the governor. If the problem is not solved, take your engine to an authorised <strong>Bonhoeffer</strong> dealer.'
+        }
+      ],
+      'gasoline-generator': [
+        {
+          question: 'How do I clean the carburettor of a Bonhoeffer engine?',
+          answer: 'See our Carburettor workshop Sheet to learn more about cleaning carburettors. Please be aware that the engine should be serviced by an Bonhoeffer Authorized Dealer unless the owner has proper tools, service data and the necessary technical skills.'
+        },
+        {
+          question: 'What fuel should I use in my Bonhoeffer Engine?',
+          answer: 'Bonhoeffer engines are designed and certified to run on regular unleaded gasoline containing no more than 5% ethanol (E10). Gasoline is allowed, by regulation, to contain a variety of additives. The same regulation limits how much of some additives, such as alcohol, can be included in the fuel and still allow it to be sold as gasoline. If you look in a Bonhoeffer product owner’s manual, you will see that a maximum of 5% ethanol is allowed (other oxygenates are also listed). Bonhoeffer engines are designed for good performance and efficient operation using gasoline containing from 0 to 5% ethanol. Always refer to the owner’s manual for your Bonhoeffer to get a list of recommended fuel and the current approved additives. For more information, see our <a href="https://bonhoeffermachines.com/en/public/carburettor/Fuel-Related-Problem.pdf" target="_blank"><strong>Fuel Recommendations Link</strong></a>. Download or print a handout on how to avoid fuel-related problems for your Bonhoeffer general purpose engine.'
+        },
+        {
+          question: 'How can I get an Owner\'s Manual?',
+          answer: 'Owner\'s Manuals for General Purpose Engines can be downloaded from our website. <strong>Find link.</strong>'
+        },
+        {
+          question: 'What size Bonhoeffer Generator do I need to run an air conditioner .?',
+          answer: 'As there are so many different air conditioner models on the market today, and with all different start up specs, the right size Bonhoeffer generator will depend on your air conditioners start-up load. Refer to your air conditioners specifications to find this, then the right size generator can be recommended.'
+        },
+        {
+          question: 'What is the difference between Maximum and Continuous (or rated) output?',
+          answer: 'A generator will have a maximum output that it can produce before it will trip the overload. The continuous rating is what the generator can do for long periods of time. Normally the continuous rating is 90% of its maximum output.'
+        },
+        {
+          question: 'I don\'t know the wattage but I know the amps?',
+          answer: 'To get the watts from the amp rating is as follows: amps x voltage = watts. So a 9 amp tool will be 9 x 220 = 1980 watts.'
+        },
+        {
+          question: 'Can I run Eco-Throttle all of the time?',
+          answer: 'Eco-Throttle should only be used for short duration and for low wattage draw. It is recommended to run the generator at a high load for a period of time after extended Eco-Throttle use to clear carbon deposits and prevent poor running. Continuous use of Eco-Throttle with high loads can lead to damage of the inverter unit.'
+        }
+      ],
+      'gasoline-tiller': [
+        {
+          question: 'Bonhoeffer power weeders suitable for organic farming?',
+          answer: 'While Bonhoeffer power weeders can be used for weed control in organic farming, it\'s crucial to choose methods that minimize soil disturbance and avoid damaging beneficial organisms. Consulting with agricultural experts and organic farming resources is recommended.'
+        },
+        {
+          question: 'Are there any government subsidies for Bonhoeffer power weeders in India?',
+          answer: 'Yes, several government schemes offer subsidies for purchasing agricultural machinery, including Bonhoeffer power weeders. The specific schemes and eligibility criteria may vary depending on the state.'
+        },
+        {
+          question: 'How can I avoid frequent breakdowns in Bonhoeffer Power weeder?',
+          answer: 'Use high-quality fuel and lubricants. Store the equipment in a dry, sheltered place. Follow the maintenance schedule in the user manual.'
+        },
+        {
+          question: 'Why is the Bonhoeffer Power weeder not cutting properly?',
+          answer: 'The blades may be dull—sharpen or replace them. Soil conditions might require adjustments in blade depth.'
+        },
+        {
+          question: 'How do I operate a Bonhoeffer power weeder?',
+          answer: 'Assemble the tool as per the user manual. Adjust the blades and depth to suit the soil type and crop spacing. Start the motor and guide the tool along the crop rows.'
+        }
+      ],
+
+      'backpack-brush-cutter': [],
     };
 
     return faqs[productSlug] || [
