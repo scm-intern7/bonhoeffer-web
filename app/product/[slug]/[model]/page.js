@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
-import ReactImageMagnify from 'react-image-magnify';
 
 function ModelSpecificPage() {
   const params = useParams();
