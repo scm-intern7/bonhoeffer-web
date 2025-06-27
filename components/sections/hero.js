@@ -165,24 +165,34 @@ function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <div className="px-6 py-6 sm:px-12 sm:py-8 mb-6 sm:mb-10 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-              <h1 className='text-4xl sm:text-5xl md:text-7xl font-bold mb-2 text-[#989b2e]'>Global</h1>
-              <h2 className='text-3xl sm:text-4xl md:text-6xl font-bold text-white'>Presence</h2>
+            <div className="px-6 py-6 sm:px-12 sm:py-8 mb-3 sm:mb-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+              <h1 className='text-3xl sm:text-4xl md:text-6xl font-bold mb-2 text-[#989b2e]'>Global</h1>
+              <h2 className='text-2xl sm:text-3xl md:text-5xl font-bold text-white'>Presence</h2>
             </div>
-            <div className="space-y-6 sm:space-y-10">
+            <div className="space-y-3 sm:space-y-5">
               <div className="p-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
                 <h3 className='text-2xl sm:text-2xl md:text-3xl font-semibold text-white'>
-                  <AnimatedCounter end={3} suffix="+" delay={0.5} /> Continents
+                  <AnimatedCounter end={5} suffix=" Mn+" delay={0.5} /> Clients
                 </h3>
               </div>
               <div className="p-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
                 <h3 className='text-2xl sm:text-2xl md:text-3xl font-semibold text-white'>
-                  <AnimatedCounter end={17} suffix="+" delay={0.8} /> Countries
+                  <AnimatedCounter end={21} suffix="+" delay={0.8} /> Countries
                 </h3>
               </div>
               <div className="p-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
                 <h3 className='text-2xl sm:text-2xl md:text-3xl font-semibold text-white'>
                   <AnimatedCounter end={4500} suffix="+" delay={0.5} /> Products
+                </h3>
+              </div>
+              <div className="p-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
+                <h3 className='text-2xl sm:text-2xl md:text-3xl font-semibold text-white'>
+                  <AnimatedCounter end={5000} suffix="+" delay={0.5} /> Distributors
+                </h3>
+              </div>
+              <div className="p-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
+                <h3 className='text-2xl sm:text-2xl md:text-3xl font-semibold text-white'>
+                  <AnimatedCounter end={15000} suffix="+" delay={0.5} /> Retail Points
                 </h3>
               </div>
             </div>

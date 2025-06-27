@@ -286,14 +286,14 @@ function Events() {
           </motion.div>
 
           {/* Title */}
-          <motion.h1 
-            className="text-4xl xs:text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-2 sm:mb-4"
+          <motion.h2 
+            className="text-4xl xs:text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-2 sm:mb-4"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={inView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             Events
-          </motion.h1>
+          </motion.h2>
 
           {/* Subtitle */}
           <motion.p

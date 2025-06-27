@@ -64,7 +64,7 @@ function Page() {
       <div className="block lg:hidden" style={{ height: '4em' }} aria-hidden="true" />
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden mt-5 px-4 sm:px-6 lg:px-8">
+      <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden mt-5 px-4 sm:px-6 lg:px-8">
         <div className="absolute inset-0">
           <Image
             src="https://bonhoeffermachines.com/public/images/about-new/About-us-new-banner.webp"
@@ -73,11 +73,13 @@ function Page() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-black/50" />
+          {/* <div className="absolute inset-0 bg-black/50" /> */}
         </div>
-        
+      </section>
+
+      <section>  
         <motion.div 
-          className="relative z-10 text-center text-white px-2 sm:px-6"
+          className="relative mt-5 z-10 text-center text-white px-2 sm:px-6"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -88,7 +90,7 @@ function Page() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
           >
-            About Us
+            About <span className='text-[#989b2e]'>Us</span>
           </motion.h1>
           <motion.p 
             className="text-lg xs:text-xl sm:text-2xl md:text-3xl max-w-2xl sm:max-w-3xl mx-auto"

@@ -480,14 +480,14 @@ function Social() {
               />
             </div>
             {/* Main Title */}
-            <motion.h1
+            <motion.h2
               initial={{ opacity: 0, scale: 0.9 }}
               animate={isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white px-6"
             >
-              Digital Platforms
-            </motion.h1>
+              Digital <span className='text-[#989b2e]'>Platforms</span>
+            </motion.h2>
             {/* Right Arrow */}
             <div className="absolute right-0 translate-x-full items-center sm:flex hidden" style={{ marginLeft: '10px', maxWidth: 'calc(100vw/8)' }}>
               <FloatingArrow 

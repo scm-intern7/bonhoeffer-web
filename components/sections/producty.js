@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 // Full product list from products.js
 const products = [
@@ -45,9 +46,41 @@ const products = [
   { id: 40, name: 'Power Trowel', image: 'https://bonhoeffermachines.com/public/product_banner/39-power-trovel.webp', description: 'Smooth concrete finishing for professional results' },
   { id: 41, name: 'Welding Set', image: 'https://bonhoeffermachines.com/public/product_banner/40-welding-set.webp', description: 'Complete welding solution for metal fabrication' },
   { id: 42, name: 'Bench Grinder', image: 'https://bonhoeffermachines.com/public/product_banner/41-bench-grinder.webp', description: 'Precision grinding and sharpening workstation' },
-  { id: 43, name: 'Drill Press', image: 'https://bonhoeffermachines.com/public/product_banner/42-Drill-Press.webp', description: 'Precise drilling with professional accuracy' },
-  { id: 44, name: 'Silent Generator', image: 'https://bonhoeffermachines.com/public/product_banner/43-silent-generator.webp', description: 'Quiet power generation for noise-sensitive environments' },
+  { id: 43, name: 'Silent Generator', image: 'https://bonhoeffermachines.com/public/product_banner/43-silent-generator.webp', description: 'Quiet power generation for noise-sensitive environments' },
 ];
+
+const FloatingArrow = ({ direction, className = "", sizeClass = "w-20 h-2" }) => {
+  return (
+    <motion.div
+      className={`relative overflow-hidden ${className}`}
+      initial={{ opacity: 0, x: direction === 'right' ? -20 : 20 }}
+      animate={{ 
+        opacity: [0.5, 1, 0.5],
+        x: direction === 'right' ? [0, 10, 0] : [0, -10, 0]
+      }}
+      transition={{
+        duration: 2,
+        repeat: Infinity,
+        ease: "easeInOut"
+      }}
+    >
+      <svg
+        width="40" height="8"
+        className={`min-w-0 max-w-[32px] max-h-[8px] sm:max-w-[48px] sm:max-h-[10px] md:max-w-[64px] md:max-h-[12px] lg:max-w-[80px] lg:max-h-[16px] ${sizeClass}`}
+        viewBox="0 0 80 8" fill="none"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <path
+          d={direction === 'right' 
+            ? "M0 4L6 0.5V2.5H79V5.5H6V7.5L0 4Z"
+            : "M80 4L74 7.5V5.5H1V2.5H74V0.5L80 4Z"
+          }
+          fill="#989b2e"
+        />
+      </svg>
+    </motion.div>
+  )
+}
 
 // Helper to create slugs from product names
 const slugify = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
@@ -55,19 +88,59 @@ const slugify = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace
 function Producty() {
   return (
     <div className="w-full overflow-hidden">
-      {/* Sticky section title with arrows */}
-      <div className="sticky top-0 z-50 flex flex-col xs:flex-row items-center justify-center bg-transparent py-6 sm:py-8 px-2 sm:px-0 gap-2 sm:gap-0">
-        {/* Left Arrow (different style, pointing right) */}
-        <svg className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 text-[#9a9c30] mr-0 xs:mr-2 md:mr-4" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10 20h20M20 10l10 10-10 10" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
-        <h1 className="text-3xl xs:text-5xl sm:text-6xl md:text-8xl font-bold text-white bg-clip-text text-center drop-shadow-lg mx-2">
-          Our <span className="text-[#9a9c30]">Products</span>
-        </h1>
-        {/* Right Arrow (different style, pointing left) */}
-        <svg className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 text-[#9a9c30] ml-0 xs:ml-2 md:ml-4 rotate-180" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10 20h20M20 10l10 10-10 10" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
+      <div className="relative">
+        {/* Sticky section title with arrows */}
+        <div className="sticky top-0 z-50 flex flex-col xs:flex-row items-center justify-center bg-transparent py-6 sm:py-8 px-2 sm:px-0 gap-2 sm:gap-0">
+          {/* Left Arrow */}
+          <div className="absolute left-150 flex items-center" style={{ marginRight: '10px', maxWidth: 'calc(100vw/8)' }}>
+            <motion.div
+              className="relative overflow-hidden"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: [0.5, 1, 0.5], x: [0, -10, 0] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <svg
+                width="40" height="8"
+                className="min-w-0 max-w-[32px] max-h-[8px] sm:max-w-[48px] sm:max-h-[10px] md:max-w-[64px] md:max-h-[12px] lg:max-w-[80px] lg:max-h-[16px] w-8 h-2 sm:w-12 sm:h-2 md:w-16 md:h-2 lg:w-20 lg:h-2"
+                viewBox="0 0 80 8" fill="none"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <path
+                  d="M80 4L74 7.5V5.5H1V2.5H74V0.5L80 4Z"
+                  fill="#989b2e"
+                />
+              </svg>
+            </motion.div>
+          </div>
+          <motion.h2
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white px-6"
+          >
+            Our <span className='text-[#9a9c30]'>Products</span>
+          </motion.h2>
+          <div className="absolute right-150 flex items-center" style={{ marginLeft: '10px', maxWidth: 'calc(100vw/8)' }}>
+            <motion.div
+              className="relative overflow-hidden"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: [0.5, 1, 0.5], x: [0, 10, 0] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <svg
+                width="40" height="8"
+                className="min-w-0 max-w-[32px] max-h-[8px] sm:max-w-[48px] sm:max-h-[10px] md:max-w-[64px] md:max-h-[12px] lg:max-w-[80px] lg:max-h-[16px] w-8 h-2 sm:w-12 sm:h-2 md:w-16 md:h-2 lg:w-20 lg:h-2"
+                viewBox="0 0 80 8" fill="none"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <path
+                  d="M0 4L6 0.5V2.5H79V5.5H6V7.5L0 4Z"
+                  fill="#989b2e"
+                />
+              </svg>
+            </motion.div>
+          </div>
+        </div>
       </div>
       {products.map((product, idx) => (
         <section
