@@ -104,7 +104,7 @@ function ProductSpecificPage() {
       ],
       'diesel-engine': [
         { id: 1, name: 'BON-P-DE-5.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DE-5.5HP.webp', feature: 'POWER 5.5 HP', link: '/product/diesel-engine/BON-P-DE-5.5HP' },
-        { id: 2, name: 'BON-P-DE-5.0 HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DE-5.5HP.webp', feature: 'POWER 5.0 HP', link: '/product/diesel-engine/BON-P-DE-5.0 HP' },
+        { id: 2, name: 'BON-P-DE-5.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DE-5.5HP.webp', feature: 'POWER 5.0 HP', link: '/product/diesel-engine/BON-P-DE-5.0 HP' },
         { id: 3, name: 'BON-P-DE-6.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DE-6.0HP.webp', feature: 'POWER 6.0 HP', link: '/product/diesel-engine/BON-P-DE-6.0HP' },
         { id: 4, name: 'BON-P-DE-9.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DE-9.0HP.webp', feature: 'POWER 9.0 HP', link: '/product/diesel-engine/BON-P-DE-9.0HP' },
         { id: 5, name: 'BON-P-DE-10.2HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DE-10.2HP.png', feature: 'POWER 10.2 HP', link: '/product/diesel-engine/BON-P-DE-10.2HP' },
@@ -112,12 +112,12 @@ function ProductSpecificPage() {
         { id: 7, name: 'BON-P-DE-13.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DE-13.0HP.png', feature: 'POWER 13.0 HP', link: '/product/diesel-engine/BON-P-DE-13.0HP' }
       ],
       'diesel-generator': [
-        { id: 1, name: 'BON-P-DG-3.5 KW', image: 'https://bonhoeffermachines.com/en/public/machines/DIESEL-GENERATOR-1.png', feature: 'MAX POWER 3.5 KW', link: '/product/diesel-generator/BON-P-DG-3.5 KW' },
+        // { id: 1, name: 'BON-P-DG-3.5 KW', image: 'https://bonhoeffermachines.com/en/public/machines/DIESEL-GENERATOR-1.png', feature: 'MAX POWER 3.5 KW', link: '/product/diesel-generator/BON-P-DG-3.5KW' },
+        { id: 1, name: 'BON-P-DG-3.0KW', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DG-3.0KW.webp', feature: 'MAX POWER 3.0 KW', link: '/product/diesel-generator/BON-P-DG-3.0KW' },
         { id: 2, name: 'BON-P-DG-6.0KW', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DG-6.0KW.webp', feature: 'MAX POWER 6.0 KW', link: '/product/diesel-generator/BON-P-DG-6.0KW' },
         { id: 3, name: 'BON-P-DG-6.5KW', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DG-6.5KW.webp', feature: 'MAX POWER 6.5 KW', link: '/product/diesel-generator/BON-P-DG-6.5KW' },
-        { id: 4, name: 'BON-P-DG-3.0KW', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DG-3.0KW.webp', feature: 'MAX POWER 3.0 KW', link: '/product/diesel-generator/BON-P-DG-3.0KW' },
-        { id: 5, name: 'BON-P-DG-9.0KW', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DG-9.0KW.webp', feature: 'MAX POWER 9.0 KW', link: '/product/diesel-generator/BON-P-DG-9.0KW' },
-        { id: 6, name: 'BON-P-DG-10.0KW', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DG-10KW.webp', feature: 'MAX POWER 10.0 KW', link: '/product/diesel-generator/BON-P-DG-10.0KW' }
+        { id: 4, name: 'BON-P-DG-9.0KW', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DG-9.0KW.webp', feature: 'MAX POWER 9.0 KW', link: '/product/diesel-generator/BON-P-DG-9.0KW' },
+        { id: 5, name: 'BON-P-DG-10.0KW', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DG-10KW.webp', feature: 'MAX POWER 10.0 KW', link: '/product/diesel-generator/BON-P-DG-10.0KW' }
       ],
       'diesel-water-pump': [
         { id: 1, name: 'BON-P-DWP2.0-5.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DW2.0-5HP-front.webp', feature: 'INLET / OUTLET- 2 INCHES- 5 HP', link: '/product/diesel-water-pump/BON-P-DWP2.0-5.0HP' },
@@ -160,8 +160,8 @@ function ProductSpecificPage() {
         { id: 6, name: 'BON-GT-950C', image: 'https://bonhoeffermachines.com/en/public/machines/BON-GT-950C.webp', feature: 'POWER 14.0 HP', link: '/product/gasoline-tiller/BON-GT-950C' }
       ],
       'knapsack-sprayer': [
-        { id: 1, name: 'BON-P-KS26', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-KS26.webp', feature: 'DISPLACEMENT 26 CC' },
-        { id: 2, name: 'BON-P-KS37', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-KS37.webp', feature: 'DISPLACEMENT 37 CC - 4 STROKE' }
+        { id: 1, name: 'BON-P-KS26', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-KS26.webp', feature: 'DISPLACEMENT 26 CC', link: '/product/knapsack-sprayer/BON-P-KS26' },
+        { id: 2, name: 'BON-P-KS37', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-KS37.webp', feature: 'DISPLACEMENT 37 CC - 4 STROKE', link: '/product/knapsack-sprayer/BON-P-KS37' },
       ],
       'electric-motor': [
         { id: 1, name: 'BON-EM-LRPM-1.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-LRPM-1.0HP.webp', feature: '' },
@@ -184,40 +184,40 @@ function ProductSpecificPage() {
         { id: 3, name: 'BON-WM-DUAL-160A', image: 'https://bonhoeffermachines.com/en/public/machines/BON-WM-DUAL-160A.webp', feature: 'MAXIMUM CURRENT 160A' }
       ],
       'tamping-rammer': [
-        { id: 1, name: 'BON-P-TR-13.7KN-4.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-TR-13.7KN-4.0HP.webp', feature: 'IMPACT FORCE 13.7 KN' },
-        { id: 2, name: 'BON-P-TR-10KN-4.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-TR-13.7KN-4.0HP.webp', feature: 'IMPACT FORCE 10 KN' }
+        { id: 1, name: 'BON-P-TR-13.7KN-4.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-TR-13.7KN-4.0HP.webp', feature: 'IMPACT FORCE 13.7 KN', link: '/product/tamping-rammer/BON-P-TR-13.7KN-4.0HP' },
+        { id: 2, name: 'BON-P-TR-10KN-4.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-TR-13.7KN-4.0HP.webp', feature: 'IMPACT FORCE 10 KN', link: '/product/tamping-rammer/BON-P-TR-10KN-4.0HP' },
       ],
       'plate-compactor': [
-        { id: 1, name: 'BON-P-PC-10.5KN-6.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PC-10.5KN-6.5HP.webp', feature: 'IMPACT FORCE 13.7 KN' },
-        { id: 2, name: 'BON-P-PC-11KN-6.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PC-11KN-6.5HP.webp', feature: 'IMPACT FORCE 11 KN' },
-        { id: 3, name: 'BON-P-PC-15KN-6.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PC-15KN-6.5HP.webp', feature: 'IMPACT FORCE 13.7 KN' }
+        { id: 1, name: 'BON-P-PC-10.5KN-6.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PC-10.5KN-6.5HP.webp', feature: 'IMPACT FORCE 13.7 KN', link: '/product/plate-compactor/BON-P-PC-10.5KN-6.5HP' },
+        { id: 2, name: 'BON-P-PC-11KN-6.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PC-11KN-6.5HP.webp', feature: 'IMPACT FORCE 11 KN', link: '/product/plate-compactor/BON-P-PC-11KN-6.5HP' },
+        { id: 3, name: 'BON-P-PC-15KN-6.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PC-15KN-6.5HP.webp', feature: 'IMPACT FORCE 13.7 KN', link: '/product/plate-compactor/BON-P-PC-15KN-6.5HP' },
       ],
       'concrete-cutter': [
-        { id: 1, name: 'BON-P-CC-14CM-13HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-CC-14CM-13HP.webp', feature: 'DEPTH CUT 14 CM' },
-        { id: 2, name: 'BON-P-CC-15CM-13HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-CC-15CM-13HP.webp', feature: 'DEPTH CUT 15 CM' }
+        { id: 1, name: 'BON-P-CC-14CM-13HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-CC-14CM-13HP.webp', feature: 'DEPTH CUT 14 CM', link: '/product/concrete-cutter/BON-P-CC-14CM-13HP' },
+        { id: 2, name: 'BON-P-CC-15CM-13HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-CC-15CM-13HP.webp', feature: 'DEPTH CUT 15 CM', link: '/product/concrete-cutter/BON-P-CC-15CM-13HP' },
       ],
       'concrete-vibrator': [
-        { id: 1, name: 'BON-P-CV-6M-6.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-CV-6M-6.5HP.webp', feature: 'POWER 6.5 HP' }
+        { id: 1, name: 'BON-P-CV-6M-6.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-CV-6M-6.5HP.webp', feature: 'POWER 6.5 HP', link: '/product/concrete-vibrator/BON-P-CV-6M-6.5HP' },
       ],
       'concrete-power-trowel': [
-        { id: 1, name: 'BON-PT-6.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/02345.png', feature: 'POWER 6.5 HP' },
-        { id: 2, name: 'BON-SFS-38CC', image: 'https://bonhoeffermachines.com/en/public/machines/BON-SFS-38CC.webp', feature: 'DISPLACEMENT 38 CC' }
+        { id: 1, name: 'BON-PT-6.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/02345.png', feature: 'POWER 6.5 HP', link: '/product/concrete-power-trowel/BON-PT-6.5HP' },
+        { id: 2, name: 'BON-SFS-38CC', image: 'https://bonhoeffermachines.com/en/public/machines/BON-SFS-38CC.webp', feature: 'DISPLACEMENT 38 CC', link: '/product/concrete-power-trowel/BON-SFS-38CC' },
       ],
       'manual-sprayer': [
-        { id: 1, name: 'BON-P-MS20L-JB', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MS20L-JB.webp', feature: 'CAPACITY 20L - BRASS PUMP' },
-        { id: 2, name: 'BON-P-MS5L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MS5L.webp', feature: 'CAPACITY 5L' },
-        { id: 3, name: 'BON-P-MS20L-JP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MS20L-JP.webp', feature: 'CAPACITY 20L' },
-        { id: 4, name: 'BON-P-EMS-20', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-EMS-20.webp', feature: '20L BATTERY SPRAYER' },
-        { id: 5, name: 'BON-P-MS2L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MS2L.webp', feature: 'CAPACITY 2L' }
+        { id: 1, name: 'BON-P-MS20L-JB', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MS20L-JB.webp', feature: 'CAPACITY 20L - BRASS PUMP', link: '/product/manual-sprayer/BON-P-MS20L-JB' },
+        { id: 2, name: 'BON-P-MS5L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MS5L.webp', feature: 'CAPACITY 5L', link: '/product/manual-sprayer/BON-P-MS5L' },
+        { id: 3, name: 'BON-P-MS20L-JP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MS20L-JP.webp', feature: 'CAPACITY 20L', link: '/product/manual-sprayer/BON-P-MS20L-JP' },
+        { id: 4, name: 'BON-P-EMS-20', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-EMS-20.webp', feature: '20L BATTERY SPRAYER', link: '/product/manual-sprayer/BON-P-EMS-20' },
+        { id: 5, name: 'BON-P-MS2L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MS2L.webp', feature: 'CAPACITY 2L', link: '/product/manual-sprayer/BON-P-MS2L' }
       ],
       'mistduster': [
-        { id: 1, name: 'BON-P-MD42', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MD42.webp', feature: 'DISPLACEMENT 42 CC' },
-        { id: 2, name: 'BON-P-MD52', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MD52.webp', feature: 'DISPLACEMENT 52 CC' },
-        { id: 3, name: 'BON-P-MD82', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MD82.webp', feature: 'DISPLACEMENT 82 CC' }
+        { id: 1, name: 'BON-P-MD42', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MD42.webp', feature: 'DISPLACEMENT 42 CC', link: '/product/mistduster/BON-P-MD42' },
+        { id: 2, name: 'BON-P-MD52', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MD52.webp', feature: 'DISPLACEMENT 52 CC', link: '/product/mistduster/BON-P-MD52' },
+        { id: 3, name: 'BON-P-MD82', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MD82.webp', feature: 'DISPLACEMENT 82 CC', link: '/product/mistduster/BON-P-MD82' }
       ],
       'thermal-fogger': [
-        { id: 1, name: 'BON-P-TF6L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-TF6L.webp', feature: 'CAPACITY 6L' },
-        { id: 2, name: 'BON-P-TF2L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-TF2L.webp', feature: 'CAPACITY 2L' }
+        { id: 1, name: 'BON-P-TF6L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-TF6L.webp', feature: 'CAPACITY 6L', link: '/product/thermal-fogger/BON-P-TF6L' },
+        { id: 2, name: 'BON-P-TF2L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-TF2L.webp', feature: 'CAPACITY 2L', link: '/product/thermal-fogger/BON-P-TF2L' }
       ],
       'gasoline-pressure-washer': [
         { id: 1, name: 'BON-P-PW-G6.5HP-AP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PW-G6.5KW-AP.webp', feature: 'POWER 6.5 HP-AP' },
@@ -231,9 +231,9 @@ function ProductSpecificPage() {
         { id: 2, name: 'BON-E-PW-1600W', image: 'https://bonhoeffermachines.com/en/public/machines/BON-E-PW-1600W.webp', feature: 'POWER 1600 W' },
         { id: 3, name: 'BON-E-PW-2000W', image: 'https://bonhoeffermachines.com/en/public/machines/BON-E-PW-2000W.webp', feature: 'POWER 2000 W' }
       ],
-      'air-compressor': [
-        { id: 1, name: 'BON-P-DDAC-25L', image: '', feature: 'CAPACITY 25L' },
-        { id: 2, name: 'BON-P-DDAC-50L', image: '', feature: 'CAPACITY 50L' }
+      'direct-driven-air-compressor': [
+        { id: 1, name: 'BON-P-DDAC-25L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DDAC-25L.webp', feature: 'CAPACITY 25L' },
+        { id: 2, name: 'BON-P-DDAC-50L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DDAC-50L.webp', feature: 'CAPACITY 50L' }
       ],
       'vacuum-cleaner': [
         { id: 1, name: 'BON-VC-1400W-30L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-VC-1400W-30L.webp', feature: 'CAPACITY 30L' },
@@ -273,7 +273,7 @@ function ProductSpecificPage() {
       'electric': 'Electric Lawn Mower',
       'electric-pressure-washer': 'Electric Pressure Washer',
       'electric-motor': 'Electric Motors',
-      'air-compressor': 'Air Compressor',
+      'direct-driven-air-compressor': 'Air Compressor',
       'solar-panel': 'Solar Panel',
       'solar-water-pump': 'Solar Water Pump',
       'gasoline-sprayer': 'Gasoline Sprayer',
@@ -319,7 +319,6 @@ function ProductSpecificPage() {
       'thermal-fogger': 'Thermal Fogger',
       'gasoline-pressure-washer': 'Gasoline Pressure Washer',
       'pressure-washer-home-use': 'Pressure Washer for Home Use',
-      'air-compressor': 'Air Compressor',
       'vacuum-cleaner': 'Vacuum Cleaner',
       'solar-panel': 'Solar Panel',
       'submersible-pump': 'Submersible Pump',
@@ -352,11 +351,11 @@ function ProductSpecificPage() {
       'diesel-engine': 'https://bonhoeffermachines.com/en/public/product_banner/diesel-engine-banner.webp',
       'pressure-washer': 'https://bonhoeffermachines.com/en/public/product_banner/gasoline-pressure-washer-banner.webp',
       'pressure-washer-home-use': 'https://bonhoeffermachines.com/en/public/product_banner/pressure-washer-home-use-banner.webp',
-      'air-compressor': 'https://bonhoeffermachines.com/en/public/product_banner/direct-driven-air-compressor-banner.webp',
+      'direct-driven-air-compressor': 'https://bonhoeffermachines.com/en/public/product_banner/direct-driven-air-compressure-banner.webp',
       'commercial-vacuum': 'https://bonhoeffermachines.com/en/public/product_banner/vaCCum-cleaner-banner.webp',
       'manual-sprayer': 'https://bonhoeffermachines.com/en/public/product_banner/manual-sprayers-banner.webp',
       'electric-pressure-washer': 'https://bonhoeffermachines.com/en/public/product_banner/28-electric-pressure-washer.webp',
-      'mistduster': 'https://bonhoeffermachines.com/en/public/product_banner/mistduster-banner.webp',
+      'mistduster': 'https://bonhoeffermachines.com/en/public/product_banner/mist-duster-banner.webp',
       'centrifugal-pump': 'https://bonhoeffermachines.com/en/public/product_banner/centrifugal-pump-banner.webp',
       'submersible-pump': 'https://bonhoeffermachines.com/public/product_banner/32-Submersible-Pump.webp',
       'solar-water-pump': 'https://bonhoeffermachines.com/public/product_banner/33-Solar-Submersible-Pump.webp',

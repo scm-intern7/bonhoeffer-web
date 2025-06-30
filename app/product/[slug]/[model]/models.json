@@ -1071,7 +1071,7 @@
           "model": "BON-P-GE-4.0HP",
           "description": [
             {
-              "title": "Bonhoeffer 4-Stroke 4 HP Gasoline Engine – Powerful and Reliable",
+              "title": "Bonhoeffer 4-Stroke 4 HP Gasoline Engine - Powerful and Reliable",
               "text": "A gasoline engine is a heat engine powered by gas. These engines are commonly used to move motor vehicles and agricultural equipment. A gasoline engine is a piston-driven gasoline engine. Gasoline Engines by Bonhoeffer Machines are powerful and available in an extensive range. OHV is the technology of the engine with 4-stroke capability. 500ml is the oil tank capacity of the engine."
             },
             {
@@ -1133,7 +1133,7 @@
           "model": "BON-P-GE-5.0HP",
           "description": [
             {
-              "title": "BON-P-GE-5.0HP – Best Gasoline Engines by Bonhoeffer",
+              "title": "BON-P-GE-5.0HP - Best Gasoline Engines by Bonhoeffer",
               "text": "Gasoline engines are ideal for high-power applications because they burn a volatile liquid fuel with ignition powered by an electric spark. These engines are built to meet the requirements for power-plant applications. Gas engines are widely used in automobiles, small trucks, general aviation aircraft, outboard and inboard marine units, moderate-sized stationary pumping, lighting plants, machine tools, and power tools."
             },
             {
@@ -2740,7 +2740,7 @@
                 { "label": "Fuel Type", "value": "Diesel" },
                 { "label": "Engine oil capacity (L)", "value": "1.65" },
                 { "label": "Engine oil type", "value": "SAE10W30" },
-                { "label": "Rotational speed (min/max)", "value": "62–145 rpm" },
+                { "label": "Rotational speed (min/max)", "value": "62-145 rpm" },
                 { "label": "Transmission type", "value": "Direct Clutch" },
                 { "label": "Transmission steps forward", "value": "2" },
                 { "label": "Transmission steps reverse", "value": "1" },
@@ -3108,7 +3108,7 @@
             "Brush cutter is a tool that is used to harvest crops, trim grass, as well as clear/remove unwanted crop. Catering to the needs and demands of farmers.",
             "It is used to cut weeds, trim crops, small trees, grass, parthenium etc.",
             "Various blades or trimmer heads can be attached to the machine for specific applications.",
-            "It is typically used to cut tall grass (grass taller than 6”–8”), weeds, brush, shrubs and woody material such as stalks and saplings.",
+            "It is typically used to cut tall grass (grass taller than 6”-8”), weeds, brush, shrubs and woody material such as stalks and saplings.",
             "This machine is started with recoil.",
             "Petrol engines, either two stroke, are used on the more powerful units."
           ]
@@ -3173,7 +3173,7 @@
                 "Capable of cutting weeds, trimming crops, small trees, grass, and parthenium.",
                 "Consumes only 500 ml of fuel in 1 hour, making it fuel efficient.",
                 "Various blades or trimmer heads can be attached for specific applications.",
-                "Typically used to cut tall grass (over 6\"–8\"), weeds, brush, shrubs, and woody material like stalks and saplings.",
+                "Typically used to cut tall grass (over 6\"-8\"), weeds, brush, shrubs, and woody material like stalks and saplings.",
                 "Equipped with a recoil start system.",
                 "Uses a petrol 2-stroke engine for powerful performance.",
                 "Optional accessories include a rotary weeder attachment."
@@ -4111,7 +4111,7 @@
                 },
                 {
                 "title": "Optimized for Smooth Starting and Consistent Output",
-                "text": "Featuring a recoil starter with an Easy Start feature, the BON-E-2S-23 ensures quick ignition and ease of use. It supports high-speed operation up to 10,000 RPM ± 500, and delivers torque between 1.1–1.2 Nm. Its 550 ml fuel tank ensures adequate runtime for residential and professional users alike."
+                "text": "Featuring a recoil starter with an Easy Start feature, the BON-E-2S-23 ensures quick ignition and ease of use. It supports high-speed operation up to 10,000 RPM ± 500, and delivers torque between 1.1-1.2 Nm. Its 550 ml fuel tank ensures adequate runtime for residential and professional users alike."
                 }
             ],
             "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-e-2s-23.webp",
@@ -4168,7 +4168,7 @@
                 },
                 {
                 "title": "Reliable Performance with Compact Efficiency",
-                "text": "Featuring a single-cylinder, air-cooled design and a recoil starter with Easy Start functionality, this engine ensures smooth ignition and long-lasting operation. It operates at speeds up to 10,000 RPM and delivers maximum torque of 1.3–1.4 Nm. Its 550 ml fuel tank provides adequate runtime, while a dry air filter ensures clean airflow and efficient combustion."
+                "text": "Featuring a single-cylinder, air-cooled design and a recoil starter with Easy Start functionality, this engine ensures smooth ignition and long-lasting operation. It operates at speeds up to 10,000 RPM and delivers maximum torque of 1.3-1.4 Nm. Its 550 ml fuel tank provides adequate runtime, while a dry air filter ensures clean airflow and efficient combustion."
                 }
             ],
             "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-e-2s-26.webp",
@@ -4199,7 +4199,7 @@
                 { "label": "Engine Type", "value": "Single Cylinder, Air Cooled, 2 Stroke, Gasoline Engine" },
                 { "label": "Diameter x Stroke", "value": "34 x 28 mm" },
                 { "label": "Maximum Speed", "value": "10000 ± 500 rpm" },
-                { "label": "Maximum Torque", "value": "1.3–1.4 Nm" },
+                { "label": "Maximum Torque", "value": "1.3-1.4 Nm" },
                 { "label": "Fuel Tank Capacity", "value": "550 ml" },
                 { "label": "Air Filter", "value": "Dry" },
                 { "label": "Spark plug", "value": "BM6A" },
@@ -4274,6 +4274,2215 @@
                 "Petrol Lawn Mower is the self-propelled solution to your lawn mowing problems.",
                 "Powerful lawn mower with 4-wing blade and 1600 Watt motor, featuring central height adjustment and 65 Litre grass collector capacity.",
                 "Heavy-duty self-propelled lawn mower with robust steel chassis, ideal for mowing large lawns."
+            ]
+        }
+    },
+    "diesel-water-pump":{
+        "BON-P-DWP2.0-5.0HP": {
+            "name": "Diesel Water Pump",
+            "model": "BON-P-DWP2.0-5.0HP",
+            "description": [
+                {
+                "title": "Self-Priming Diesel Water Pump for Powerful Water Transfer",
+                "text": "The BON-P-DWP2.0-5.0HP is a self-priming diesel water pump designed for high-efficiency water transfer. Whether you’re irrigating agricultural fields, draining waterlogged areas, or supplying water in remote locations, this pump delivers dependable performance. With its easy-to-start retractable system and compact design, it’s ideal for both rural and industrial usage. Bonhoeffer ensures quality engineering for powerful operation and long-lasting durability."
+                },
+                {
+                "title": "Robust Specifications for Reliable Operation",
+                "text": "Equipped with a powerful 5 HP diesel engine operating at 3600 RPM, this self-priming pump can deliver up to 16,000 liters of water per hour. It features a 2-inch suction and discharge diameter, supporting a total elevation of up to 12 meters. The BON-P-DWP2.0-5.0HP is perfect for high-demand water transfer needs, offering strong performance, simple maintenance, and rugged design for long-term reliability."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dw2.0-5hp2.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dw2.0-5hp1.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dw2.0-5hp3.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dw2.0-5hp2.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dw2.0-5hp4.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/diesel-water-pump-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1718628140_6ca65c25f156e09aab39.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1718628149_0f4d4464f3448b5401cd.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-DWP2.0-5.0HP.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-DWP2.0-5.0HP.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Pump type", "value": "Self Priming" },
+                { "label": "Maximum power", "value": "5 HP / 3600 RPM" },
+                { "label": "Starting system", "value": "Retractable" },
+                { "label": "Maximum pumping capacity", "value": "16000 liters per hour" },
+                { "label": "Suction diameter", "value": "2 inches" },
+                { "label": "Discharge diameter", "value": "2 inches" },
+                { "label": "Total elevation", "value": "12 Meters" }
+            ],
+            "features": [
+                "Self-priming diesel pump ideal for field irrigation and drainage tasks.",
+                "Delivers high flow rate of 16000 L/H for large-scale water transfer.",
+                "2\" inlet and outlet supports wide hose compatibility.",
+                "Retractable start ensures quick ignition with minimal effort.",
+                "Compact, portable design for ease of movement and installation.",
+                "Durable construction with long-lasting diesel engine performance.",
+                "Suitable for agricultural, construction, and industrial water needs."
+            ]
+        },
+        "BON-P-DWP3.0-5.5HP": {
+            "name": "Diesel Water Pump",
+            "model": "BON-P-DWP3.0-5.5HP",
+            "description": [
+                {
+                "title": "Heavy-Duty Diesel Water Pump for Powerful Water Discharge",
+                "text": "The BON-P-DWP3.0-5.5HP is a robust diesel-powered self-priming water pump built for high-capacity water movement. Designed for farm irrigation, floodwater control, and construction site water removal, it delivers superior performance and reliability. Its retractable start system with optional electric start makes it easy to operate, and its rugged construction ensures durability even in tough environments."
+                },
+                {
+                "title": "Advanced Features for Maximum Efficiency",
+                "text": "This 5.5 HP diesel water pump operates at 3600 RPM, delivering a maximum flow rate of 30,000 liters per hour. With a suction and discharge diameter of 3 inches, it supports wide pipe compatibility and delivers water across elevations up to 13 meters. It also features an 8-meter suction height, making it ideal for deep draw operations. Whether you’re draining fields or filling tanks, this pump is engineered for peak performance."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dw3.0-5.5hp-4.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dw3.0-5.5hp-2.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dw3.0-5.5hp-1.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dw3.0-5.5hp-3.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dw3.0-5.5hp-4.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/diesel-water-pump-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1718713308_d6759119cf8a4f36c0f6.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1718713318_41de84fb15bdad9868f3.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-DWP3.0-5.5HP.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-DWP3.0-5.5HP.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Pump type", "value": "Self-priming" },
+                { "label": "Maximum power", "value": "5.5 HP / 3600 RPM" },
+                { "label": "Starting system", "value": "Retractable (Optional Electric)" },
+                { "label": "Maximum pumping capacity", "value": "30000 liters per hour" },
+                { "label": "Suction diameter", "value": "3 inches" },
+                { "label": "Discharge diameter", "value": "3 inches" },
+                { "label": "Total elevation", "value": "13 Meters" },
+                { "label": "Suction height", "value": "8 Meters" }
+            ],
+            "features": [
+                "High-performance 5.5 HP diesel engine for demanding water transfer jobs.",
+                "Self-priming mechanism for quick operation without manual priming.",
+                "Delivers 30,000 L/H water flow ideal for farms and construction sites.",
+                "3-inch suction and discharge ports compatible with large hoses.",
+                "Retractable starting system with optional electric start for convenience.",
+                "Durable frame construction built to withstand rugged conditions.",
+                "Efficient pumping at up to 13 meters elevation and 8 meters suction depth."
+            ]
+        },
+        "BON-P-DWP4.0-10.0HP": {
+            "name": "Diesel Water Pump",
+            "model": "BON-P-DWP4.0-10.0HP",
+            "description": [
+                {
+                "title": "High-Capacity Diesel Water Pump for Agricultural and Industrial Use",
+                "text": "The BON-P-DWP4.0-10.0HP diesel water pump is engineered for maximum performance in high-demand water transfer applications. Whether used for irrigation, flood control, or industrial drainage, this self-priming pump delivers unmatched power and durability. With a 4-inch inlet and outlet, it ensures rapid flow rates, making it the perfect solution for large-scale water movement."
+                },
+                {
+                "title": "Top Performance with Rugged Engineering",
+                "text": "Featuring an 8.6 HP engine operating at 3600 RPM, this pump handles up to 50,000 liters per hour. With a suction height of 8 meters and total elevation capability of 15 meters, it’s ideal for transferring water over long distances or from deep sources. The retractable start system is complemented by optional electric ignition for added convenience and efficiency."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dw4.0-10hp-1.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dw4.0-10hp-4.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dw4.0-10hp-3.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dw4.0-10hp-2.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dw4.0-10hp-1.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/diesel-water-pump-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1718627608_c1ba789cbc4549c752b7.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1718627616_ee2578bcaba56a4f169f.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-DWP4.0-10.0HP.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-DWP4.0-8.6HP.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Pump type", "value": "Self-priming" },
+                { "label": "Maximum power", "value": "8.6 HP / 3600 RPM" },
+                { "label": "Starting system", "value": "Retractable (Optional Electric)" },
+                { "label": "Maximum pumping capacity", "value": "50,000 liters per hour" },
+                { "label": "Suction diameter", "value": "4 inches" },
+                { "label": "Discharge diameter", "value": "4 inches" },
+                { "label": "Total elevation", "value": "15 Meters" },
+                { "label": "Suction height", "value": "8 Meters" }
+            ],
+            "features": [
+                "Massive 50,000 L/H water discharge for large-scale applications.",
+                "Rugged 8.6 HP diesel engine ensures powerful, long-lasting performance.",
+                "Self-priming function for quick startup with no manual priming needed.",
+                "Retractable starter with optional electric start for user convenience.",
+                "4-inch inlet and outlet suitable for high-volume pipe connections.",
+                "Durable frame and body built to withstand challenging environments.",
+                "Ideal for agriculture, construction, and emergency water management."
+            ]
+        },
+        "BON-P-DWP2.0-10.0HP": {
+            "name": "Diesel Water Pump",
+            "model": "BON-P-DWP2.0-10.0HP",
+            "description": [
+                {
+                "title": "High-Pressure Diesel Water Pump for Elevated Flow Requirements",
+                "text": "BON-P-DWP2.0-10.0HP is designed for high-lift irrigation and water transfer operations requiring significant head pressure. Built with a non-self-priming mechanism and a 10 HP engine, this pump provides outstanding elevation capacity and efficiency in professional agricultural and industrial applications."
+                },
+                {
+                "title": "Engineered for Extreme Head Pressure and Efficient Flow",
+                "text": "This model features an electric start system (battery not included) and operates at 3600 RPM. With a maximum pumping capacity of 25,000 liters per hour and an elevation height of up to 68 meters, it excels in lifting water from deep sources or covering long pipeline distances. Its 2-inch suction and discharge diameter makes it versatile and easy to integrate with common piping systems."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dw2.0-10hp3.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dw2.0-10hp5.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dw2.0-10hp1.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dw2.0-10hp2.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dw2.0-10hp3.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dw2.0-10hp4.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/diesel-water-pump-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1718713730_ff4851fa44bb54c4008f.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1718713740_c74fe81dace759ad5016.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-DWP2.0-10.0HP.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-DWP3.0-10.5HP.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Pump Type", "value": "Non Self-Priming" },
+                { "label": "Maximum power", "value": "10 HP / 3600 rpm" },
+                { "label": "Starting system", "value": "Electric (WITHOUT BATTERY)" },
+                { "label": "Maximum pumping capacity", "value": "25,000 liters per hour" },
+                { "label": "Suction diameter", "value": "2 inches" },
+                { "label": "Discharge diameter", "value": "2 inches" },
+                { "label": "Total elevation", "value": "68 Meters" },
+                { "label": "Suction height", "value": "8 Meters" }
+            ],
+            "features": [
+                "10 HP diesel engine delivers strong performance in high-head conditions.",
+                "Electric start system for easy and quick ignition (battery not included).",
+                "Capable of pumping water up to 68 meters of vertical elevation.",
+                "25,000 L/H flow ideal for agriculture, construction, or remote irrigation.",
+                "Non-self-priming design best suited for consistent and clear water sources.",
+                "Sturdy construction and durable parts ensure reliable, long-term use.",
+                "2” inlet/outlet compatible with standard piping systems."
+            ]
+        },
+        "BON-P-DWP3.0-10.5HP": {
+            "name": "Diesel Water Pump",
+            "model": "BON-P-DWP3.0-10.5HP",
+            "description": [
+                {
+                "title": "High-Lift Diesel Water Pump for Demanding Irrigation Tasks",
+                "text": "The BON-P-DWP3.0-10.5HP is a powerful non-self-priming diesel water pump engineered for high-head and long-distance water transfer. Designed with a cast iron centrifugal pump, it is capable of delivering strong performance in challenging agricultural and industrial settings."
+                },
+                {
+                "title": "Robust Build and Maximum Efficiency",
+                "text": "With a 10.5 HP engine operating at 3600 RPM, this pump achieves a total elevation of up to 90 meters and a flow rate of 45,000 liters per hour. It features a 3-inch suction and discharge port, retractable manual start with optional electric ignition, and durable cast iron pump housing. Built for endurance and power, it's the perfect choice for deep well extraction and high-pressure transfer."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dwp3.0-10.5hp.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dwp3.0-10.5hp.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/diesel-water-pump-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1718713057_2be90a12bbe51728d109.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1718713069_8f9ac4aee456530fdc01.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-DWP3.0-10.5HP.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-DWP3.0-10.5HP_1.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Pump type", "value": "Non Self Priming" },
+                { "label": "Maximum power", "value": "10.5 HP / 3600 RPM" },
+                { "label": "Starting system", "value": "Retractable (Optional Electric)" },
+                { "label": "Maximum pumping capacity", "value": "45,000 liters per hour" },
+                { "label": "Suction diameter", "value": "3 inches" },
+                { "label": "Discharge diameter", "value": "3 inches" },
+                { "label": "Total elevation", "value": "90 Meters" },
+                { "label": "Pump material", "value": "Cast iron centrifugal pump" },
+                { "label": "Suction height", "value": "8 Meters" }
+            ],
+            "features": [
+                "Cast iron centrifugal pump ensures durability under high-pressure usage.",
+                "Designed for maximum elevation up to 90 meters - ideal for hilly regions.",
+                "Delivers 45,000 LPH making it efficient for field irrigation or drainage.",
+                "10.5 HP diesel engine provides consistent and powerful performance.",
+                "Retractable manual start system with electric start option.",
+                "Compatible with 3” standard piping for flexible deployment.",
+                "Built for long-term operation in rugged field conditions."
+            ]
+        }
+    },
+    
+    "diesel-generator":{
+        "BON-P-DG-6.0KW": {
+            "name": "Diesel Generator",
+            "model": "BON-P-DG-6.0KW",
+            "description": [
+                {
+                "title": "Power You Can Rely On Anywhere, Anytime",
+                "text": "The BON-P-DG-6.0KW diesel generator is built for dependable backup power. Whether for commercial, residential, or agricultural use, its 9 HP engine and 6.0KW peak output ensure that your operations continue uninterrupted during power cuts. It’s the perfect portable powerhouse to tackle energy outages with ease."
+                },
+                {
+                "title": "Durable, Efficient, and Built for Performance",
+                "text": "Featuring a robust 4-stroke engine and 12.5-liter fuel tank, this generator offers extended runtime with minimal refueling. It delivers a rated power of 5.5KW and runs at 50 or 60 Hz frequency. Designed for versatility and convenience, the unit includes a retractable starting system with optional electric start and a 1.65-liter oil capacity for prolonged durability."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dg-6.0kw.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dg-6.0kw.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/diesel-generator-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Maximum power", "value": "6.0 KW" },
+                { "label": "Rated power", "value": "5.5 KW" },
+                { "label": "Frequency", "value": "50 or 60 Hz" },
+                { "label": "Engine", "value": "9 HP" },
+                { "label": "Engine type", "value": "4 Stroke" },
+                { "label": "Fuel tank capacity", "value": "12.5 Liters" },
+                { "label": "Oil tank capacity", "value": "1.65 Liters" },
+                { "label": "Starting system", "value": "Retractable (Optional Electric)" }
+            ],
+            "features": [
+                "9 HP diesel engine ensures high performance under load.",
+                "Long runtime with 12.5L fuel tank.",
+                "Optional electric start for ease of use.",
+                "Built for industrial and home backup needs.",
+                "Durable 4-stroke design for longer engine life.",
+                "Compact design for easy transport and storage.",
+                "Low maintenance requirements.",
+                "Suitable for appliances, machinery, and emergency backup."
+            ]
+        },
+        "BON-P-DG-6.5KW": {
+            "name": "Diesel Generator",
+            "model": "BON-P-DG-6.5KW",
+            "description": [
+                {
+                "title": "Reliable Diesel Generator for Heavy-Duty Backup",
+                "text": "The BON-P-DG-6.5KW diesel generator is engineered to provide powerful, long-lasting backup power in both rural and urban environments. With a 13 HP engine and 6.5 KW peak power, it ensures your home, business, or farm stays operational during outages or in off-grid setups."
+                },
+                {
+                "title": "Robust Construction for Extended Performance",
+                "text": "Featuring a 4-stroke engine and electric start system, this generator delivers a rated 6.0 KW output and runs on a 12.5-liter fuel tank for prolonged usage. With an oil tank capacity of 1.65 liters and frequency support of 50 or 60 Hz, the generator is built for high performance and ease of use in demanding conditions."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-2sdfasdfasfasdfdfasdfasdf.png",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2sdfasdfasfasdfdfasdfasdf.png"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/diesel-generator-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Maximum power", "value": "6.5 KW" },
+                { "label": "Rated power", "value": "6.0 KW" },
+                { "label": "Frequency", "value": "50 or 60 Hz" },
+                { "label": "Engine", "value": "13 HP" },
+                { "label": "Engine type", "value": "4 Stroke" },
+                { "label": "Fuel tank capacity", "value": "12.5 Liters" },
+                { "label": "Oil tank capacity", "value": "1.65 Liters" },
+                { "label": "Starting system", "value": "Electric" }
+            ],
+            "features": [
+                "High-performance 13 HP diesel engine delivers reliable output.",
+                "6.5 KW peak and 6.0 KW rated power ensure stable operation for heavy loads.",
+                "Electric start system for hassle-free ignition.",
+                "Large 12.5L fuel tank provides extended runtime without interruptions.",
+                "Durable 4-stroke engine design enhances longevity.",
+                "Oil capacity of 1.65L supports prolonged use with minimal maintenance.",
+                "Ideal for agricultural, residential, and industrial applications.",
+                "Compact and transportable for flexible deployment."
+            ]
+        },
+        "BON-P-DG-3.0KW": {
+            "name": "Diesel Generator",
+            "model": "BON-P-DG-3.0KW",
+            "description": [
+                {
+                "title": "Compact Diesel Generator for Reliable Backup Power",
+                "text": "The BON-P-DG-3.0KW diesel generator is designed to deliver stable and efficient power for residential and small-scale commercial use. Its compact build and robust 6 HP engine make it ideal for powering essential appliances and tools during outages or in off-grid setups."
+                },
+                {
+                "title": "Efficient Performance with Flexible Start Options",
+                "text": "Powered by a 4-stroke engine and producing 3.0 KW peak power (2.8 KW rated), this generator features a 12.5-liter fuel tank and 1.1-liter oil capacity for extended operation. It offers a retractable start system with an optional electric start, making it convenient and easy to operate in any environment."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dg-3.0kw.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dg-3.0kw.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/diesel-generator-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Maximum power", "value": "3.0 KW" },
+                { "label": "Rated power", "value": "2.8 KW" },
+                { "label": "Frequency", "value": "50 or 60 Hz" },
+                { "label": "Engine", "value": "6 HP" },
+                { "label": "Engine type", "value": "4 Stroke" },
+                { "label": "Fuel tank capacity", "value": "12.5 Liters" },
+                { "label": "Oil tank capacity", "value": "1.1 Liters" },
+                { "label": "Starting system", "value": "Retractable (Optional Electric)" }
+            ],
+            "features": [
+                "Delivers 3.0 KW peak and 2.8 KW rated power for essential equipment.",
+                "Reliable 6 HP 4-stroke diesel engine for consistent operation.",
+                "Retractable manual start with optional electric start for convenience.",
+                "12.5-liter fuel tank allows extended run time between refills.",
+                "Compact and portable design suitable for homes and small businesses.",
+                "Ideal backup solution during power outages or for off-grid use.",
+                "Durable build ensures long-term performance in tough conditions."
+            ]
+        },
+        "BON-P-DG-9.0KW": {
+            "name": "Diesel Generator",
+            "model": "BON-P-DG-9.0KW",
+            "description": [
+                {
+                "title": "Heavy-Duty Diesel Generator for Industrial and Agricultural Power Needs",
+                "text": "The BON-P-DG-9.0KW diesel generator is designed for demanding environments where high-output backup power is essential. With a maximum output of 9.0 KW and an 18.3 HP engine, it offers reliable energy for farms, construction sites, and large facilities during outages or off-grid operations."
+                },
+                {
+                "title": "Powerful 18.3 HP Engine with Extended Fuel Capacity",
+                "text": "This generator features a robust 4-stroke engine with electric start and a massive 25-liter fuel tank for long runtimes. With a 3.15-liter oil capacity and support for both 50 and 60 Hz frequencies, the BON-P-DG-9.0KW provides flexibility, performance, and resilience under heavy load conditions."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dg-9.0kw.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dg-9.0kw.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/diesel-generator-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Maximum power", "value": "9.0 KW" },
+                { "label": "Rated power", "value": "8.0 KW" },
+                { "label": "Frequency", "value": "50 or 60 Hz" },
+                { "label": "Engine", "value": "18.3 HP" },
+                { "label": "Engine type", "value": "4 Stroke" },
+                { "label": "Fuel tank capacity", "value": "25 Liters" },
+                { "label": "Oil tank capacity", "value": "3.15 Liters" },
+                { "label": "Starting system", "value": "Electric" }
+            ],
+            "features": [
+                "Delivers 9.0 KW peak and 8.0 KW rated power for high-demand applications.",
+                "Heavy-duty 18.3 HP diesel engine ensures strong and stable performance.",
+                "Electric start system allows quick and effortless ignition.",
+                "25-liter fuel tank supports long-duration operation with fewer refills.",
+                "3.15-liter oil tank enhances durability and thermal protection.",
+                "Ideal for use in agricultural, industrial, and remote area settings.",
+                "Rugged 4-stroke engine provides efficient and reliable energy output.",
+                "Built to perform under continuous usage and harsh conditions."
+            ]
+        },
+        "BON-P-DG-10.0KW": {
+            "name": "Diesel Generator",
+            "model": "BON-P-DG-10.0KW",
+            "description": [
+                {
+                "title": "High-Power Diesel Generator for Industrial Use",
+                "text": "The BON-P-DG-10.0KW diesel generator is built to deliver powerful and uninterrupted electricity for heavy-duty applications. Whether used on a farm, at a construction site, or for backup in industrial settings, this 10.0 KW unit provides robust and consistent performance."
+                },
+                {
+                "title": "Electric Start and Long Runtime for Convenience and Efficiency",
+                "text": "With an 18.3 HP 4-stroke engine, the generator runs smoothly and quietly. It features a 25-liter fuel tank for extended operation, a 3.15-liter oil tank for enhanced lubrication, and a user-friendly electric starting system. The BON-P-DG-10.0KW supports both 50 Hz and 60 Hz output, offering flexibility for global use."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dg-10kw.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-dg-10kw.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/diesel-generator-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Maximum power", "value": "10.0 KW" },
+                { "label": "Rated power", "value": "9.5 KW" },
+                { "label": "Frequency", "value": "50 or 60 Hz" },
+                { "label": "Engine", "value": "18.3 HP" },
+                { "label": "Engine type", "value": "4 Stroke" },
+                { "label": "Fuel tank capacity", "value": "25 Liters" },
+                { "label": "Oil tank capacity", "value": "3.15 Liters" },
+                { "label": "Starting system", "value": "Electric" }
+            ],
+            "features": [
+                "Delivers 10.0 KW peak and 9.5 KW rated power for high-load equipment.",
+                "Equipped with a durable 18.3 HP 4-stroke diesel engine.",
+                "Electric start ensures easy and reliable ignition every time.",
+                "25-liter fuel tank supports extended operation hours.",
+                "3.15-liter oil tank ensures optimal lubrication and engine health.",
+                "Suitable for farms, industrial sites, and remote operations.",
+                "Runs on standard 50 or 60 Hz for global compatibility.",
+                "Built to handle continuous power demand with ease."
+            ]
+        }
+    },
+    "diesel-engine":{
+        "BON-P-DE-5.5HP": {
+            "name": "Diesel Engine",
+            "model": "BON-P-DE-5.5HP",
+            "description": [
+                {
+                "title": "Compact Diesel Engine for Light to Medium Applications",
+                "text": "The BON-P-DE-5.5HP is a versatile and compact 4-stroke diesel engine ideal for powering small machines and agricultural equipment. It delivers stable output for everyday use in irrigation, generators, or mobile tools."
+                },
+                {
+                "title": "Durable 5.5 HP Engine with Air Cooling System",
+                "text": "Equipped with a 5.5 HP engine running at 3600 RPM, this model features a durable air-cooled system, cylinder diameter of 73x59 mm, and an efficient retractable start (with optional electric start). The 2.5-liter fuel tank and 0.75-liter oil capacity ensure long, uninterrupted operations with minimal maintenance."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-4-bon-p-de-5.5hp.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-de-5.5hp.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-de-5.5hp.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-3-bon-p-de-5.5hp.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-4-bon-p-de-5.5hp.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/diesel-engine-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Engine", "value": "5.5 HP" },
+                { "label": "Engine type", "value": "4 Stroke" },
+                { "label": "Cooling system", "value": "Air" },
+                { "label": "Cylinder diameter", "value": "73*59 mm" },
+                { "label": "Maximum power", "value": "5.5 HP / 3600 RPM" },
+                { "label": "Fuel tank capacity", "value": "2.5 Liters" },
+                { "label": "Oil tank capacity", "value": "0.75 Liters" },
+                { "label": "Starting system", "value": "Retractable (Optional Electric)" }
+            ],
+            "features": [
+                "Air-cooled 4-stroke diesel engine designed for continuous use.",
+                "Delivers 5.5 HP of reliable power at 3600 RPM.",
+                "Compact design with a lightweight build for easy installation.",
+                "Retractable manual start system with optional electric start available.",
+                "Fuel-efficient 2.5-liter tank supports longer operations without interruption.",
+                "Built with durable components for low maintenance.",
+                "Perfect for small irrigation pumps, generators, and agricultural tools.",
+                "Cylinder diameter 73x59 mm ensures smooth engine operation."
+            ]
+        },
+        "BON-P-DE-5.0HP": {
+            "name": "Diesel Engine",
+            "model": "BON-P-DE-5.0HP",
+            "description": [
+                {
+                "title": "Durable 5.0 HP Diesel Engine for General-Purpose Use",
+                "text": "The BON-P-DE-5.0HP is a robust air-cooled diesel engine suitable for agricultural, industrial, and utility applications. Its vertical, single-cylinder configuration ensures stable performance in compact setups."
+                },
+                {
+                "title": "Reliable and Efficient Power Output",
+                "text": "Delivering 5.0 HP at 3600 RPM, this 4-stroke engine features a dry filter, recoil starting system, and a 0.227-liter displacement. It is designed for long operating hours and consistent output in rugged environments."
+                }
+            ],
+            "descriptionImage": "",
+            "showcaseImages": [],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/diesel-engine-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/DIESEL%20ENGINE%20HIGH%20ROTATION%20PARTS.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Type of engine", "value": "Air Cooled Single Cylinder Vertical 4 Stroke Diesel Engines" },
+                { "label": "Engine", "value": "5.00 HP" },
+                { "label": "Starting system", "value": "Recoil starter" },
+                { "label": "Filter type", "value": "Dry Filter" },
+                { "label": "Displacement", "value": "0.227" },
+                { "label": "Speed [rpm]", "value": "3600" }
+            ],
+            "features": [
+                "Compact and vertical single-cylinder layout for small-scale equipment.",
+                "Air-cooled design enhances cooling efficiency and eliminates water requirements.",
+                "5.0 HP engine delivers reliable power at 3600 RPM for daily operations.",
+                "Dry filter keeps intake air clean, improving engine performance and lifespan.",
+                "Recoil starter provides quick ignition in remote or non-electric environments.",
+                "Ideal for agricultural machinery, water pumps, and backup generators.",
+                "Engineered for endurance in hot and dusty conditions."
+            ]
+        },
+        "BON-P-DE-6.0HP": {
+            "name": "Diesel Engine",
+            "model": "BON-P-DE-6.0HP",
+            "description": [
+                {
+                "title": "Heavy-Duty 6.0 HP Diesel Engine for Rugged Applications",
+                "text": "BON-P-DE-6.0HP is designed to deliver high performance with reliable efficiency for demanding agricultural and industrial uses. Its 4-stroke air-cooled engine provides durable power in a compact structure."
+                },
+                {
+                "title": "Efficient Operation with Enhanced Fuel Capacity",
+                "text": "Powered by a 6.0 HP engine running at 3600 RPM, it features a cylinder bore of 78x62 mm, 3.5-liter fuel tank, and 1.1-liter oil capacity. The recoil start system (optional electric start) ensures easy ignition even in remote environments."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-4-bon-p-de-6.0hp.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-de-6.0hp.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-de-6.0hp.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-3-bon-p-de-6.0hp.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-4-bon-p-de-6.0hp.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/diesel-engine-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Engine", "value": "6.0 HP" },
+                { "label": "Engine type", "value": "4 Stroke" },
+                { "label": "Cooling system", "value": "Air" },
+                { "label": "Cylinder diameter", "value": "78*62 mm" },
+                { "label": "Maximum power", "value": "6.0 HP / 3600 RPM" },
+                { "label": "Fuel tank capacity", "value": "3.5 Liters" },
+                { "label": "Oil tank capacity", "value": "1.1 Liters" },
+                { "label": "Starting system", "value": "Retractable (Optional Electric)" }
+            ],
+            "features": [
+                "High-performance 6.0 HP diesel engine for agricultural and mechanical equipment.",
+                "Air-cooled 4-stroke design for enhanced durability and simplified maintenance.",
+                "Cylinder bore 78x62 mm provides powerful combustion efficiency.",
+                "Large 3.5-liter fuel tank enables extended continuous operation.",
+                "1.1-liter oil capacity for improved lubrication and engine longevity.",
+                "Recoil starter with optional electric start for convenient ignition.",
+                "Reliable choice for pumps, small machinery, and backup systems."
+            ]
+        },
+        "BON-P-DE-9.0HP": {
+            "name": "Diesel Engine",
+            "model": "BON-P-DE-9.0HP",
+            "description": [
+                {
+                "title": "High-Capacity Diesel Engine for Agricultural & Industrial Demands",
+                "text": "The BON-P-DE-9.0HP delivers powerful, reliable diesel performance tailored for high-demand applications. With a 4-stroke air-cooled system, this engine is ideal for equipment needing consistent and rugged output."
+                },
+                {
+                "title": "Durability and Power in a Compact Build",
+                "text": "Featuring a robust 9.0 HP output at 3600 RPM and a large 86x70 mm bore size, this engine offers enhanced combustion and endurance. A 5.5-liter fuel tank and 1.65-liter oil tank ensure extended use, while the recoil starter with optional electric ignition adds convenience."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-4-bon-p-de-9.0hp.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-de-9.0hp.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-de-9.0hp.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-3-bon-p-de-9.0hp.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-4-bon-p-de-9.0hp.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/diesel-engine-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Engine", "value": "9.0 HP" },
+                { "label": "Engine type", "value": "4 Stroke" },
+                { "label": "Cooling system", "value": "Air" },
+                { "label": "Cylinder diameter", "value": "86*70 mm" },
+                { "label": "Maximum power", "value": "9.0 HP / 3600 RPM" },
+                { "label": "Fuel tank capacity", "value": "5.5 Liters" },
+                { "label": "Oil tank capacity", "value": "1.65 Liters" },
+                { "label": "Starting system", "value": "Retractable (Optional Electric)" }
+            ],
+            "features": [
+                "High-power 9.0 HP diesel engine built for rugged field conditions.",
+                "4-stroke air-cooled design for long-lasting and efficient operation.",
+                "86x70 mm cylinder configuration for optimal combustion performance.",
+                "Large 5.5-liter fuel tank for longer uninterrupted use.",
+                "1.65-liter oil capacity ensures adequate engine lubrication.",
+                "Retractable recoil starter with optional electric start functionality.",
+                "Ideal for powering tillers, pumps, generators, and industrial machinery."
+            ]
+        },
+        "BON-P-DE-10.2HP": {
+            "name": "Diesel Engine",
+            "model": "BON-P-DE-10.2HP",
+            "description": [
+                {
+                "title": "Potente Motor Diésel de 10.2 HP para Aplicaciones Exigentes",
+                "text": "El BON-P-DE-10.2HP está diseñado para ofrecer una alta potencia en condiciones de uso intensivo. Su sistema de 4 tiempos con refrigeración por aire lo convierte en una opción ideal para maquinaria agrícola, generadores y equipos industriales."
+                },
+                {
+                "title": "Desempeño Robusto con Gran Capacidad de Combustible",
+                "text": "Este motor ofrece una potencia máxima de 10,2 HP a 3600 RPM, con un diámetro de cilindro de 88x75 mm. Cuenta con un tanque de combustible de 5,5 litros, depósito de aceite de 1,65 litros y sistema de arranque retráctil con opción eléctrica, asegurando rendimiento prolongado y arranque fiable."
+                }
+            ],
+            "descriptionImage": "",
+            "showcaseImages": [],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/diesel-engine-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 15,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Motor", "value": "10,2 HP" },
+                { "label": "Tipo de motor", "value": "4 Tiempos" },
+                { "label": "Sistema de refrigeracion", "value": "Aire" },
+                { "label": "Diámetro del cilindro", "value": "88*75 mm" },
+                { "label": "Potencia máxima", "value": "10,2 HP / 3600 RPM" },
+                { "label": "Capacidad tanque combustible", "value": "5,5 Litros" },
+                { "label": "Capacidad deposito aceite", "value": "1,65 Litros" },
+                { "label": "Sistema de arranque", "value": "Retráctil (Opcional Eléctrico)" }
+            ],
+            "features": [
+                "Motor diésel de 10,2 HP ideal para entornos agrícolas e industriales.",
+                "Diseño de 4 tiempos con refrigeración por aire para mayor durabilidad.",
+                "Diámetro de cilindro de 88x75 mm que proporciona eficiencia de combustión.",
+                "Tanque de combustible de 5,5 L que permite funcionamiento prolongado.",
+                "Depósito de aceite de 1,65 L para mejor lubricación del motor.",
+                "Sistema de arranque retráctil con opción eléctrica para mayor comodidad.",
+                "Construcción robusta para condiciones de trabajo exigentes."
+            ]
+        },
+        "BON-P-DE-11.0HP": {
+            "name": "Diesel Engine",
+            "model": "BON-P-DE-11.0HP",
+            "description": [
+                {
+                "title": "High-Performance Diesel Engine for Heavy-Duty Applications",
+                "text": "The BON-P-DE-11.0HP is built to handle tough agricultural and industrial tasks with its powerful 11 HP 4-stroke engine. Designed for durability and consistent performance, it is ideal for use in pumps, generators, and other high-demand equipment."
+                },
+                {
+                "title": "Durable Air-Cooled System with Enhanced Fuel Efficiency",
+                "text": "With a cylinder diameter of 92x75 mm and running at 3600 RPM, this engine delivers robust power while maintaining fuel efficiency. It features a 5.5-liter fuel tank, 1.65-liter oil tank, and a reliable retractable start system with an electric option for user convenience."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-4-bon-p-de-11.0hp.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-de-11.0hp.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-de-11.0hp.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-3-bon-p-de-11.0hp.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-4-bon-p-de-11.0hp.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/diesel-engine-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Engine", "value": "11.0 HP" },
+                { "label": "Engine type", "value": "4 Stroke" },
+                { "label": "Cooling system", "value": "Air" },
+                { "label": "Cylinder diameter", "value": "92*75 mm" },
+                { "label": "Maximum power", "value": "11 HP / 3600 RPM" },
+                { "label": "Fuel tank capacity", "value": "5.5 Liters" },
+                { "label": "Oil tank capacity", "value": "1.65 Liters" },
+                { "label": "Starting system", "value": "Retractable (Optional Electric)" }
+            ],
+            "features": [
+                "11 HP air-cooled 4-stroke engine ideal for agricultural and industrial use.",
+                "Large 92x75 mm cylinder for efficient power delivery.",
+                "Fuel-efficient operation with a 5.5L tank for extended runtime.",
+                "High-capacity 1.65L oil tank ensures smooth operation.",
+                "Retractable start system with optional electric start for convenience.",
+                "Durable design suitable for tough working conditions.",
+                "Built for compatibility with generators, water pumps, and tillers."
+            ]
+        },
+        "BON-P-DE-13.0HP": {
+            "name": "Diesel Engine",
+            "model": "BON-P-DE-13.0HP",
+            "description": [
+                {
+                "title": "Heavy-Duty Diesel Engine Built for Rugged Performance",
+                "text": "The BON-P-DE-13.0HP is engineered for reliability and strength. With its 13 HP 4-stroke design and air-cooled system, it is ideal for powering high-performance agricultural and industrial equipment."
+                },
+                {
+                "title": "Maximum Output with Long Runtime Support",
+                "text": "This engine features a 95x75 mm cylinder size, delivering a maximum of 13 HP at 3600 RPM. Equipped with a 6-liter fuel tank and 1.65-liter oil capacity, it ensures sustained operation. The retractable starter offers dependable ignition, with an optional electric start for added convenience."
+                }
+            ],
+            "descriptionImage": "",
+            "showcaseImages": [],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/diesel-engine-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 15,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Motor", "value": "13,0 HP" },
+                { "label": "Tipo de motor", "value": "4 Tiempos" },
+                { "label": "Sistema de refrigeracion", "value": "Aire" },
+                { "label": "Diámetro del cilindro", "value": "95*75 mm" },
+                { "label": "Potencia máxima", "value": "13 HP / 3600 RPM" },
+                { "label": "Capacidad tanque combustible", "value": "6 Litros" },
+                { "label": "Capacidad deposito aceite", "value": "1,65 Litros" },
+                { "label": "Sistema de arranque", "value": "Retráctil (Opcional Eléctrico)" }
+            ],
+            "features": [
+                "13 HP 4-stroke diesel engine delivers top-tier power for industrial and farming applications.",
+                "Air-cooled system ensures operational stability in hot or dusty environments.",
+                "High-performance 95x75 mm cylinder for excellent combustion efficiency.",
+                "Large 6-liter fuel tank supports extended usage without frequent refills.",
+                "1.65-liter oil capacity enables longer maintenance intervals.",
+                "Retractable start system with electric start option for convenience.",
+                "Perfect for powering generators, pumps, and tillers in demanding conditions."
+            ]
+        },
+        "BON-P-DE-18.3HP": {
+            "name": "Diesel Engine",
+            "model": "BON-P-DE-18.3HP",
+            "description": [
+                {
+                "title": "High-Torque Diesel Engine for Demanding Applications",
+                "text": "The BON-P-DE-18.3HP diesel engine is engineered for maximum output and efficiency in tough field conditions. With a powerful 18.3 HP rating, this engine is suited for industrial, agricultural, and generator applications requiring sustained, high-performance operation."
+                },
+                {
+                "title": "Large Fuel and Oil Capacity for Extended Operation",
+                "text": "With a 97x75 mm cylinder and operating at 3600 RPM, this engine features a generous 7-liter fuel tank and 3.15-liter oil capacity. It’s equipped with an air-cooled system and retractable starter, with optional electric ignition for added convenience—ideal for continuous heavy-duty use."
+                }
+            ],
+            "descriptionImage": "",
+            "showcaseImages": [],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/diesel-engine-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 15,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Motor", "value": "18,3 HP" },
+                { "label": "Tipo de Motor", "value": "4 Tiempos" },
+                { "label": "Sistema de refrigeracion", "value": "Aire" },
+                { "label": "Diámetro del cilindro", "value": "97*75 mm" },
+                { "label": "Potencia máxima", "value": "18,3 HP / 3600 RPM" },
+                { "label": "Capacidad tanque combustible", "value": "7 Litros" },
+                { "label": "Capacidad deposito aceite", "value": "3,15 Litros" },
+                { "label": "Sistema de arranque", "value": "Retráctil (Opcional Eléctrico)" }
+            ],
+            "features": [
+                "18.3 HP 4-stroke diesel engine designed for intensive workloads.",
+                "Large 97x75 mm cylinder for high power output and torque.",
+                "Air-cooled system ensures consistent operation in harsh environments.",
+                "7-liter fuel tank supports long hours of uninterrupted use.",
+                "3.15-liter oil tank extends service intervals and improves lubrication.",
+                "Retractable start system with optional electric start.",
+                "Perfect for pumps, generators, and industrial machinery needing high endurance."
+            ]
+        }
+    },
+    "tamping-rammer":{
+        "BON-P-TR-13.7KN-4.0HP": {
+            "name": "Tamping Rammer",
+            "model": "BON-P-TR-13.7KN-4.0HP",
+            "description": [
+                {
+                "title": "Tamping Rammer: Elevate Your Compaction Efficiency",
+                "text": "The BON-P-TR-13.7KN-4.0HP is engineered to deliver exceptional compaction performance, making it an essential tool for construction and landscaping projects. With its robust design and powerful capabilities, this machine simplifies the process of soil compaction, ensuring a solid foundation for any project. The user-friendly features allow operators to achieve optimal results with ease, while its compact size enhances manoeuvrability in tight spaces."
+                },
+                {
+                "title": "A Powerful Machine Built for Reliable Performance and Versatility",
+                "text": "With a maximum impact force of 13.7 kN, the BON-P-TR-13.7KN-4.0HP provides superior compaction efficiency. The 4.0 HP gasoline engine, combined with a durable 4-stroke motor, ensures consistent performance across various applications. The manual starting system allows for quick operation, while the maximum jumping stroke of 8.5 cm enhances its effectiveness in compacting soil. This machine is designed for optimal productivity on any job site."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1728564572_db45ba3d5329de69de85.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-tr-13.7kn-4.0hp.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-tr-13.7kn-4.0hp.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/tamping-rammer-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1727697156_f84595cffff8a66cf8a7.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1727697163_d254a6a483c96fcb3ffa.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-TR-13.7KN-4.0HP.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-TR-13.7KN-4.0HP.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Impact force (max)", "value": "13.7 kN" },
+                { "label": "Engine", "value": "4.0 HP Gasoline" },
+                { "label": "Motor Type", "value": "4 Stroke" },
+                { "label": "Starting System", "value": "Manual" },
+                { "label": "Jumping stroke (max)", "value": "8.5 cm" },
+                { "label": "Diameter", "value": "34.5 * 28.5 cm" },
+                { "label": "Impact (blows per min)", "value": "640-680 VPM" }
+            ],
+            "features": [
+                "High Impact Force generates significant compaction energy to handle cohesive and semi-cohesive soils.",
+                "Heavy-Duty Tamping Foot with a compact, well-balanced structure for easy maneuverability in tight spaces.",
+                "Shock-Absorbing System reduces the impact of vibrations on the operator.",
+                "Ideal for road repair, trench backfilling, foundation preparation, and landscaping.",
+                "Portability: Lightweight and compact design for easy transport and storage."
+            ]
+        },
+        "BON-P-TR-10KN-4.0HP": {
+            "name": "Tamping Rammer",
+            "model": "BON-P-TR-10KN-4.0HP",
+            "description": [
+                {
+                "title": "Reliable Tamping Rammer for Compacting Performance",
+                "text": "The BON-P-TR-10KN-4.0HP is designed to deliver consistent compaction results for various soil types, especially cohesive and semi-cohesive terrain. With its gasoline-powered 4.0 HP engine and compact frame, it's ideal for construction sites, road work, and landscaping tasks."
+                },
+                {
+                "title": "Powerful Performance for Versatile Site Applications",
+                "text": "Delivering up to 10 kN of impact force and 450-650 blows per minute, this tamping rammer ensures effective soil compression. Its 4-stroke gasoline engine, combined with a manual start system, makes it easy to operate and maintain. The durable build, optimal jumping stroke of 6.5 cm, and foot size of 34.5*28.5 cm offer efficiency in both large and confined spaces."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1728564616_812aa5a8c85b6dcabcf8.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-tr-10kn-4.0hp.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-tr-10kn-4.0hp.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/tamping-rammer-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-TR-10KN-4.0HP.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Impact force (max)", "value": "10 kN" },
+                { "label": "Engine", "value": "4.0 HP Gasoline" },
+                { "label": "Engine Type", "value": "4 Stroke" },
+                { "label": "Starting System", "value": "Manual" },
+                { "label": "Jumping blow (max)", "value": "6.5 cm" },
+                { "label": "Diameter", "value": "34.5 * 28.5 cm" },
+                { "label": "Impact (blows per min)", "value": "450-650 VPM" }
+            ],
+            "features": [
+                "High Impact Force for compacting cohesive and semi-cohesive soils.",
+                "Heavy-duty tamping foot for stability and effective compaction.",
+                "Shock-absorbing system to minimize operator fatigue.",
+                "Ideal for applications including trench backfilling, foundation prep, and pothole repairs.",
+                "Portable design for ease of movement on job sites."
+            ]
+        }
+    },
+    "plate-compactor":{
+        "BON-P-PC-10.5KN-6.5HP": {
+            "name": "Plate Compactor",
+            "model": "BON-P-PC-10.5KN-6.5HP",
+            "description": [
+                {
+                "title": "Powerful Plate Compactor for Efficient Soil and Asphalt Compaction",
+                "text": "The BON-P-PC-10.5KN-6.5HP is a rugged plate compactor designed to deliver high performance in compacting soil, sand, gravel, and asphalt. Powered by a 6.5 HP 4-stroke petrol engine with a fuel gauge, this unit ensures maximum efficiency in heavy-duty compaction applications."
+                },
+                {
+                "title": "Designed for Productivity and Operator Comfort",
+                "text": "This compactor delivers a centrifugal force of 10.5 kN and operates at a frequency of 5600 VPM, compacting up to 20 cm deep at a speed of 40 cm/s. The 50×36 cm base, foldable handle, and protective frame make it convenient to transport and operate, while covering up to 450 m²/hr. It’s ideal for use on job sites requiring speed, power, and precision."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-pc-10.5kn-6.5hp.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-pc-10.5kn-6.5hp.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/plate-compactor-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Centrifugal Force", "value": "10.5 kN" },
+                { "label": "Engine", "value": "6.5 HP Petrol (With Fuel Gauge)" },
+                { "label": "Engine Type", "value": "4 Stroke" },
+                { "label": "Frequency", "value": "5600 VPM" },
+                { "label": "Compaction Depth", "value": "20 cm" },
+                { "label": "Speed", "value": "40 cm/s" },
+                { "label": "Efficiency", "value": "450 m²/hr" },
+                { "label": "Base Size", "value": "50×36 cm" },
+                { "label": "Features", "value": "Foldable Handle and Protective Frame" }
+            ],
+            "features": [
+                "High centrifugal force of 10.5 kN for excellent compaction results.",
+                "Powered by a durable 6.5 HP petrol engine with built-in fuel gauge.",
+                "Foldable handle and protective frame for ease of storage and durability.",
+                "Base plate size optimized for mobility and surface coverage.",
+                "Ideal for compacting soil, gravel, sand, and asphalt in road and construction work."
+            ]
+        },
+        "BON-P-PC-11KN-6.5HP": {
+            "name": "Plate Compactor",
+            "model": "BON-P-PC-11KN-6.5HP",
+            "description": [
+                {
+                "title": "Heavy-Duty Plate Compactor for Professional Compaction Results",
+                "text": "The BON-P-PC-11KN-6.5HP delivers powerful compaction performance with 11 kN of centrifugal force and a 6.5 HP petrol engine. Built to tackle a wide range of soil and surface types, it is ideal for contractors and landscapers requiring deep and efficient compaction over large areas."
+                },
+                {
+                "title": "Robust Build with Smart Design Features",
+                "text": "Operating at 5700 VPM with a compaction depth of up to 25 cm, this machine covers 462 m²/hr. The compact base size of 45×35 cm, foldable handle, and protective frame improve maneuverability and portability. Its fuel gauge-equipped petrol engine adds operational ease, making this a smart investment for heavy-duty jobs."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-pc-11kn-6.5hp.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-pc-11kn-6.5hp.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/plate-compactor-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-PC-11KN-6.5HP.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Centrifugal Force", "value": "11 kN" },
+                { "label": "Engine", "value": "6.5 HP Petrol (With Fuel Gauge)" },
+                { "label": "Engine Type", "value": "4 Stroke" },
+                { "label": "Frequency", "value": "5700 VPM" },
+                { "label": "Compaction Depth", "value": "25 cm" },
+                { "label": "Speed", "value": "36.7 cm/s" },
+                { "label": "Efficiency", "value": "462 m²/hr" },
+                { "label": "Features", "value": "Foldable Handle And Protective Frame" },
+                { "label": "Base Size", "value": "45×35 cm" }
+            ],
+            "features": [
+                "Delivers 11 kN centrifugal force for deep and consistent compaction.",
+                "Equipped with a 6.5 HP 4-stroke petrol engine and integrated fuel gauge.",
+                "Compact base plate with foldable handle ensures ease of transport and storage.",
+                "Protective frame shields the machine from on-site impacts and wear.",
+                "Ideal for roadwork, landscaping, paving, and trench compaction."
+            ]
+        },
+        "BON-P-PC-15KN-6.5HP": {
+            "name": "Plate Compactor",
+            "model": "BON-P-PC-15KN-6.5HP",
+            "description": [
+                {
+                "title": "Powerful Plate Compactor for Deep and Reliable Compaction",
+                "text": "The BON-P-PC-15KN-6.5HP is a high-performance plate compactor designed to deliver powerful compaction with a centrifugal force of 15 kN. Its robust 6.5 HP petrol engine makes it suitable for intensive construction and landscaping applications, providing solid ground preparation over large areas."
+                },
+                {
+                "title": "Built for Strength, Stability, and Operator Comfort",
+                "text": "With a 4-stroke engine running at 4200 VPM, this model compacts up to 30 cm deep. The base size of 55×44 cm covers ground efficiently, while a folding handle and protective frame improve maneuverability and machine safety. A built-in fuel gauge adds convenience, ensuring seamless operation across job sites."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-pc-15kn-6.5hp.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-pc-15kn-6.5hp.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/plate-compactor-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-PC-15KN-6.5HP.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Centrifugal Force", "value": "15 kN" },
+                { "label": "Engine", "value": "6.5 HP Petrol (With Fuel Gauge)" },
+                { "label": "Engine Type", "value": "4 Stroke" },
+                { "label": "Frequency", "value": "4200 VPM" },
+                { "label": "Compaction Depth", "value": "30 cm" },
+                { "label": "Base Size", "value": "55×44 cm" },
+                { "label": "Features", "value": "Folding Handle And Protective Frame" }
+            ],
+            "features": [
+                "Delivers a powerful 15 kN centrifugal force for deep compaction.",
+                "Powered by a 6.5 HP 4-stroke petrol engine with integrated fuel gauge.",
+                "Large 55×44 cm base plate for efficient surface coverage.",
+                "Foldable handle design ensures portability and storage convenience.",
+                "Protective frame adds safety and durability on construction sites.",
+                "Suitable for heavy-duty compaction tasks in roadwork and landscaping."
+            ]
+        }
+    },
+    "concrete-cutter":{
+        "BON-P-CC-14CM-13HP": {
+            "name": "Concrete Cutter",
+            "model": "BON-P-CC-14CM-13HP",
+            "description": [
+                {
+                "title": "Heavy-Duty Concrete Cutter for Deep Precision Cuts",
+                "text": "The BON-P-CC-14CM-13HP is engineered for high-performance concrete and asphalt cutting applications. Equipped with a 13 HP engine, it delivers consistent power for deep cuts, making it ideal for road maintenance, construction joints, and pavement slicing."
+                },
+                {
+                "title": "Operator-Friendly Design and Maximum Efficiency",
+                "text": "With a cutting depth of up to 14–15 cm and adjustable via handle rotation, this cutter is built for precision. It features a 30–45 cm sheet capacity and a 35-liter water tank to minimize dust. The manual push drive ensures user control, while its robust frame supports long-lasting performance."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-cc-14cm-13hp.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-cc-14cm-13hp.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/concrete-cutter-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Engine", "value": "13 HP" },
+                { "label": "Starting System", "value": "Manual" },
+                { "label": "Maximum Cutting Depth", "value": "14–15 cm" },
+                { "label": "Sheet Size", "value": "30–45 cm" },
+                { "label": "Depth Adjustment", "value": "Handle Rotation" },
+                { "label": "Driving", "value": "Manual Push" },
+                { "label": "Water Tank Capacity", "value": "35 L" }
+            ],
+            "features": [
+                "Powerful 13 HP engine designed for efficient concrete and asphalt cutting.",
+                "Cutting depth adjustable up to 14–15 cm using rotating handle.",
+                "Compatible with blade sizes ranging from 30 cm to 45 cm.",
+                "35-liter water tank for effective dust suppression during operation.",
+                "Manual push design ensures better operator control on-site.",
+                "Ideal for joint cutting, trenching, and pavement work in construction zones."
+            ]
+        },
+        "BON-P-CC-15CM-13HP": {
+            "name": "Concrete Cutter",
+            "model": "BON-P-CC-15CM-13HP",
+            "description": [
+                {
+                "title": "Professional-Grade Concrete Cutter for Deep Surface Cutting",
+                "text": "The BON-P-CC-15CM-13HP is designed for professionals who need a powerful, reliable concrete cutter for roads, bridges, and industrial applications. Its robust 13 HP engine ensures deep and consistent cuts, while its ergonomic design enables easy operation in demanding environments."
+                },
+                {
+                "title": "Precision Cutting with Efficient Water Management",
+                "text": "This model supports blade sizes ranging from 30 to 45 cm and allows cutting depths up to 15 cm. Featuring a 30-liter water tank and a handle rotation depth adjustment mechanism, the BON-P-CC-15CM-13HP ensures minimal dust and exact depth control. Manual push operation offers flexible control during cutting."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-cc-15cm-13hp.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-cc-15cm-13hp.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/concrete-cutter-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/brochure-BON-P-CC-15CM-13HP.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-CC-15CM-13HP.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Engine", "value": "13 HP" },
+                { "label": "Starting System", "value": "Manual" },
+                { "label": "Maximum cutting depth", "value": "15 cm" },
+                { "label": "Sheet size", "value": "30 ~ 45 cm" },
+                { "label": "Depth adjustment", "value": "Handle rotation" },
+                { "label": "Driving", "value": "Manual push" },
+                { "label": "Water tank capacity", "value": "30 L" }
+            ],
+            "features": [
+                "13 HP gasoline engine provides robust performance for heavy-duty cutting.",
+                "Cutting depth of up to 15 cm handles thick concrete slabs with ease.",
+                "Supports blade sizes from 30 to 45 cm for varied cutting needs.",
+                "Manual push control ensures precision and flexibility during operation.",
+                "Handle rotation mechanism allows smooth and accurate depth adjustment.",
+                "30-liter water tank minimizes dust and cools the blade during use.",
+                "Ideal for cutting asphalt, reinforced concrete, and road surfaces."
+            ]
+        }
+    },
+    "concrete-vibrator":{
+        "BON-P-CV-6M-6.5HP": {
+            "name": "Concrete Vibrator",
+            "model": "BON-P-CV-6M-6.5HP",
+            "description": [
+                {
+                "title": "Enhance Your Concrete Work with Bonhoeffer’s Efficient Vibrator",
+                "text": "A concrete vibrator is a crucial tool in construction, used to consolidate freshly poured concrete. It eliminates air bubbles and voids, ensuring maximum density and strength. Available in handheld and larger models, it features a motor that generates rapid vibrations. These vibrations help the concrete settle evenly, preventing cracking and enhancing durability. Bonhoeffer provides reliable concrete vibrators for efficient and effective concrete finishing."
+                },
+                {
+                "title": "Achieve Smooth Concrete Finishes with a Reliable Concrete Vibrator",
+                "text": "The BON-P-CV-6M-6.5HP concrete vibrator features an impressive 6-meter vibrating head length, making it ideal for large-scale projects. Powered by a robust 6.5HP gasoline engine with an oil gauge, this 4-stroke machine ensures reliable performance and easy maintenance. The vibrating head has a diameter range of 28-70 mm, allowing for versatility in various concrete applications. This powerful tool is essential for achieving high-quality concrete finishes and structural integrity in any construction project."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1722257286_c36a4e7bb6bc6a4d8421.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-cv-6m-6.5hp.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/concrete-vibrator-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1727694818_641e7c8816abac6bff97.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1727694826_276d39658bf6eb5df5fb.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-CV-6M-6.5HP.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-CV-6M-6.5HP.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Vibrating Head Length", "value": "6m" },
+                { "label": "Engine", "value": "6.5HP Gasoline (With oil gauge)" },
+                { "label": "Engine Type", "value": "4 Stroke" },
+                { "label": "Vibrating Head Diameter", "value": "¢28-70mm" },
+                { "label": "Prices are without vibrator", "value": "poker" }
+            ],
+            "features": [
+                "Powerful 6.5HP gasoline engine with built-in oil gauge ensures strong performance.",
+                "6-meter vibrating head provides excellent reach and coverage for large pours.",
+                "Vibrating head diameter range (28–70mm) accommodates various concrete forms.",
+                "Durable 4-stroke engine design for long-lasting use and minimal maintenance.",
+                "Ideal for consolidating concrete slabs, footings, and columns.",
+                "Significantly reduces air pockets and voids in concrete.",
+                "Efficient compaction ensures better bonding and structural strength."
+            ]
+        }
+    },
+    "concrete-power-trowel": {
+        "BON-PT-6.5HP": {
+            "name": "Concrete Power Trowel",
+            "model": "BON-PT-6.5HP",
+            "description": [
+                {
+                "title": "Smooth and Efficient Concrete Finishing",
+                "text": "The BON-PT-6.5HP concrete power trowel is engineered for high-performance surface finishing on concrete slabs. Its robust design, powered by a 6.5 HP 4-stroke air-cooled engine, ensures smooth, consistent, and durable concrete surfaces in construction projects of all sizes."
+                },
+                {
+                "title": "Precision Control and Durability for Professional Results",
+                "text": "Equipped with a 91 cm (36 in) rotor diameter and 4 durable blades, this trowel provides efficient coverage and superior finishing quality. With blade dimensions of 35 x 15 cm, a floating tray option, and a weight of 78 kg, it balances maneuverability and stability—making it ideal for both residential and commercial use."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-pt-6.5hp.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-pt-6.5hp.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/power-trovel-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "ENGINE TYPE", "value": "196 cc (OPTIONAL: HONDA GX160)" },
+                { "label": "ENGINE", "value": "4-STROKE AIR-COOLED, SINGLE CYLINDER" },
+                { "label": "POWER KW (HP)", "value": "4.1 (6.5)" },
+                { "label": "WEIGHT KG (LBS)", "value": "78 (171)" },
+                { "label": "ROTOR DIAMETER CM (INCH)", "value": "91 (136)" },
+                { "label": "NUMBER OF BLADES", "value": "4" },
+                { "label": "BLADES FINISHING CM (IN)", "value": "35 x 15 (13.8 x 5.9)" },
+                { "label": "OPTIONS", "value": "FLOATING TRAY" }
+            ],
+            "features": [
+                "Powerful 6.5 HP engine ideal for heavy-duty surface finishing.",
+                "91 cm rotor diameter ensures wide coverage and fast operation.",
+                "Four finishing blades sized 35 x 15 cm for precise smoothing.",
+                "Optional floating tray available for increased versatility.",
+                "78 kg build provides excellent stability while operating.",
+                "Suitable for professional-grade concrete floor finishing.",
+                "Optional upgrade to Honda GX160 engine."
+            ]
+        },
+        "BON-SFS-38CC": {
+            "name": "Concrete Power Trowel",
+            "model": "BON-SFS-38CC",
+            "description": [
+                {
+                "title": "Portable Concrete Surface Finishing with Versatile Blade Options",
+                "text": "The BON-SFS-38CC power trowel offers efficient concrete surface finishing with a compact 2-stroke 37.7cc engine. Lightweight and easy to operate, it supports multiple blade sizes for smooth and level finishes on floors, pavements, and construction slabs."
+                },
+                {
+                "title": "Customizable Blade Sizes for Any Job Site",
+                "text": "Featuring a low-power 1.2 HP air-cooled engine and multiple blade sizes ranging from 1.22 to 4.88 meters, this trowel delivers flexibility and precision. Optional Honda GX35 engine upgrade is available for increased performance. Ideal for small to medium surface jobs requiring mobility and simplicity."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-sfs-38cc.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-sfs-38cc.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/power-trovel-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "ENGINE TYPE", "value": "37.7 cc (OPTIONAL: HONDA GX35)" },
+                { "label": "ENGINE", "value": "2 STROKE AIR COOLED" },
+                { "label": "POWER KW (HP)", "value": "0.9 (1.2)" },
+                { "label": "OPTIONS", "value": "SHEET SIZE" },
+                { "label": "BLADE", "value": "1.22 M" },
+                { "label": "BLADE", "value": "1.88 M" },
+                { "label": "BLADE", "value": "2.44 M" },
+                { "label": "BLADE", "value": "3.00 M" },
+                { "label": "BLADE", "value": "3.66 M" },
+                { "label": "BLADE", "value": "4.47 M" },
+                { "label": "BLADE", "value": "4.88 M" }
+            ],
+            "features": [
+                "Compact 2-stroke 37.7cc engine for lightweight mobility.",
+                "Generates 1.2 HP for consistent power in small surface jobs.",
+                "Supports multiple blade sizes from 1.22 to 4.88 meters.",
+                "Easy to transport and ideal for tight working areas.",
+                "Optional Honda GX35 engine upgrade for improved durability.",
+                "Perfect for concrete surface leveling and finishing on slabs and driveways."
+            ]
+        }
+    },
+    "knapsack-sprayer":{
+        "BON-P-KS26": {
+            "name": "Knapsack Sprayer",
+            "model": "BON-P-KS26",
+            "description": [
+                {
+                "title": "Efficient and Versatile Spraying Solution",
+                "text": "The Knapsack Sprayer is designed to make spraying tasks easier and more efficient. Whether you are working in agriculture, horticulture, or pest control, this sprayer delivers the power and performance needed to cover large areas with minimal effort. With a sturdy build and ergonomic design, it’s an essential tool for professionals who require precision and durability in their equipment. Bonhoeffer provides Knapsack Sprayer with high-capacity tank allows for extended use, making it ideal for large-scale operations."
+                },
+                {
+                "title": "Designed and Engineered for Maximum Performance",
+                "text": "Powered by a 1.2 HP 2-stroke engine, the Bonhoeffer Knapsack Sprayer BON-P-KS26 offers strong and consistent performance. Its 25-liter tank capacity ensures fewer refills, while the 0.6-liter oil tank supports efficient engine operation. With a working pressure range of 73-363 PSI and a maximum pressure of 508 PSI, this sprayer is capable of handling demanding tasks. The high-pressure plunger pump, made from durable brass nylon, ensures a spray volume of 5-8 litres per minute, with a suction pressure of 10 litres per minute. Weighing just 9.5 kg, it’s lightweight yet powerful, equipped with a retractable start system for easy operation."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1723463401_38ec100ebd8797b84c8f.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-ks26.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-3-bon-p-ks26.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/knapsack-sprayer-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1723461044_79e99f2064081108fb5c.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1723461059_9564a31d5acf8b30a2c0.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-KS26.pdf",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-KS26.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-KS26.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Engine", "value": "1.2 HP (2 Stroke)" },
+                { "label": "Tank capacity", "value": "25 liters" },
+                { "label": "Oil tank capacity", "value": "0.6 liters" },
+                { "label": "Working pressure", "value": "73-363 PSI" },
+                { "label": "Maximum pressure", "value": "508 PSI" },
+                { "label": "Suction pressure", "value": "10 Liters / min" },
+                { "label": "Spray volume", "value": "5-8 Liters / min" },
+                { "label": "Pump type", "value": "High pressure plunger pump" },
+                { "label": "Pump material", "value": "Brass Nylon" },
+                { "label": "Start System", "value": "Retractable" },
+                { "label": "Weight", "value": "9.5 KG" }
+            ],
+            "features": [
+                "Power Source: Uses a gasoline-oil mix for fuel, providing high power output with minimal weight.",
+                "Automatic Pressure Generation: The engine drives the pump, maintaining consistent pressure.",
+                "Ergonomic Design: Padded, adjustable straps for user comfort during prolonged use.",
+                "Throttle Control: Allows adjustment of engine speed for precise spraying.",
+                "Multiple Nozzle Attachments: Adjustable nozzles (mist, jet, fan, or cone) for different spraying needs."
+            ]
+        },
+        "BON-P-KS37": {
+            "name": "Knapsack Sprayer",
+            "model": "BON-P-KS37",
+            "description": [
+                {
+                "title": "Power-Packed Performance for Precision Spraying",
+                "text": "The Knapsack Sprayer is built to deliver high efficiency and accuracy in all your spraying tasks. Designed for agricultural, landscaping, and pest control applications, this sprayer offers reliable performance with minimal downtime. Its durable construction and ergonomic design make it an essential tool for professionals handling large-scale operations. Bonhoeffer’s Knapsack Sprayer ensures that you can cover extensive areas without frequent refills, boosting productivity and reducing strain during long jobs."
+                },
+                {
+                "title": "High Efficiency with Superior Features",
+                "text": "Equipped with a 1.6 HP 4-stroke engine, BON-P-KS37 model of the Knapsack Sprayer offers enhanced power for tackling tough tasks. The robust 25-liter tank supports longer spraying sessions, while the 0.65-liter oil tank keeps the engine running smoothly. Operating within a pressure range of 73-363 PSI, and reaching a maximum of 508 PSI, this sprayer delivers the force needed for precise and efficient application. The high-pressure plunger pump, crafted from brass nylon, provides a spray volume of 5-8 litres per minute, ensuring consistent performance."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1723463433_623f8c6c0f0ea6604465.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-ks37.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-ks37.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/knapsack-sprayer-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1723461362_55c85289ffd43fa0a127.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1723461377_e705ef8483ada861bc87.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-KS37.pdf",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-KS37.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-KS37.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Engine", "value": "1.6 HP (4 Stroke)" },
+                { "label": "Water Tank capacity", "value": "25 liters" },
+                { "label": "Pump Oil tank capacity", "value": "0.65 liters" },
+                { "label": "Working pressure", "value": "73-363 PSI" },
+                { "label": "Maximum pressure", "value": "508 PSI" },
+                { "label": "Spray volume", "value": "5-8 Liters / min" },
+                { "label": "Pump type", "value": "High pressure plunger pump" },
+                { "label": "Pump material", "value": "Brass Nylon" },
+                { "label": "Start System", "value": "Retractable" },
+                { "label": "Weight", "value": "12.30 KG" }
+            ],
+            "features": [
+                "Engine Type: Equipped with a four-stroke engine, offering better fuel efficiency and lower emissions compared to two-stroke engines.",
+                "Durability: Known for longer lifespan due to reduced engine wear and tear.",
+                "Low Noise & Vibration: Operates with less noise and vibration, providing user comfort during prolonged use.",
+                "Tank Capacity: Typically ranges between 15 to 25 liters, suitable for medium to large areas.",
+                "Consistent Spray Pressure: Delivers steady, reliable pressure for uniform spraying.",
+                "Easy Maintenance: Requires less frequent maintenance than two-stroke models."
+            ]
+        }
+    },
+    "manual-sprayer":{
+        "BON-P-MS20L-JB": {
+            "name": "Manual Sprayer",
+            "model": "BON-P-MS20L-JB",
+            "description": [
+                {
+                "title": "BON-P-MS20L-JB Manual Sprayer with Brass Pump - 20 Litres",
+                "text": "Elevate your spraying tasks with the BON-P-MS20L-JB Manual Sprayer, boasting a substantial 20-litre capacity and a high-quality brass pump for enhanced durability and performance. Designed for extensive use, this sprayer is ideal for large-scale applications such as agricultural work or extensive cleaning projects. The manual operation provides precise control, while the working pressure range of 0.3-0.4 MPA ensures a steady and reliable spray, tailored to meet your specific needs."
+                },
+                {
+                "title": "Efficient and Easy Maintenance",
+                "text": "Crafted from robust polypropylene (PP), the BON-P-MS20L-JB is built to endure the demands of frequent use and resist corrosion. Its design is geared towards efficiency and ease of maintenance, making it a dependable tool for various tasks. Whether you're managing large areas or tackling heavy-duty applications, this sprayer combines capacity and functionality to deliver excellent results."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1724837991_180d857dd284681e294d.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-ms20l-jb.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-ms20l-jb.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-3-bon-p-ms20l-jb.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/manual-sprayers-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1723639107_2f327b9daff070d40334.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1723639117_7a57db96895348e1ec0d.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-MS20L-JB.pdf",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-MS20L-JB.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-MS20L-JB.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Capacity", "value": "20 Litres (WITH BRASS PUMP)" },
+                { "label": "Operation", "value": "Manual" },
+                { "label": "Working Pressure", "value": "0.3-0.4MPA" },
+                { "label": "Material", "value": "PP. PHYSICAL EDUCATION" }
+            ],
+            "features": [
+                "Hand-Powered Operation: Uses a pump handle to create pressure.",
+                "Lightweight and Portable: Suitable for small-scale tasks.",
+                "Low Cost: Economical and easy to maintain.",
+                "Adjustable Nozzles: Allows various spray patterns.",
+                "Simple Design: Easy to use and repair."
+            ]
+        },
+        "BON-P-MS5L": {
+            "name": "Manual Sprayer",
+            "model": "BON-P-MS5L",
+            "description": [
+                {
+                "title": "BON-P-MS5L Manual Sprayer - 5 Litres",
+                "text": "The BON-P-MS5L Manual Sprayer combines ample capacity with reliable performance, featuring a generous 5-litre tank that reduces the need for frequent refills. Its manual operation allows for precise control and adaptability across various applications, whether you're tending to your garden, managing cleaning tasks, or applying solutions. The adjustable working pressure of 2-4 PA ensures a steady and consistent spray, tailored to your needs."
+                },
+                {
+                "title": "User-Friendly Functionality",
+                "text": "Constructed from durable polypropylene (PP), the BON-P-MS5L is built to withstand the rigors of regular use and resist corrosion. Its robust design and user-friendly functionality make it a practical choice for both professional and home use, delivering efficiency and ease of maintenance in one versatile tool."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-ms5l.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-ms5l.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-ms5l.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/manual-sprayers-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1724756732_4264be7f18303f67587f.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1724756745_88d7886f31906f95080b.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-MS5L.pdf",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-MS5L.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-MS5L.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Capacity", "value": "5 Litres" },
+                { "label": "Operation", "value": "Manual" },
+                { "label": "Working Pressure", "value": "2-4PA" },
+                { "label": "Material", "value": "PP" }
+            ],
+            "features": [
+                "Hand-Powered Operation: Uses a pump handle to create pressure.",
+                "Lightweight and Portable: Suitable for small-scale tasks.",
+                "Low Cost: Economical and easy to maintain.",
+                "Adjustable Nozzles: Allows various spray patterns.",
+                "Simple Design: Easy to use and repair."
+            ]
+        },
+        "BON-P-MS20L-JP": {
+            "name": "Manual Sprayer",
+            "model": "BON-P-MS20L-JP",
+            "description": [
+                {
+                "title": "Elevate Your Farming with Bonhoeffer Manual Sprayers",
+                "text": "A manual sprayer is a handheld device used for applying pesticides, herbicides, or fertilizers to crops and plants. It operates through a simple pump mechanism that generates pressure, allowing for even distribution of liquids. Ideal for small to medium-sized farms, it offers precision and control in targeting specific areas. Manual sprayers are lightweight, portable, and cost-effective, making them a popular choice among farmers. Bonhoeffer provides high-quality manual sprayers to enhance your farming efficiency."
+                },
+                {
+                "title": "Manual sprayers are perfect for efficient, precise crop treatment.",
+                "text": "The BON-P-MS20L-JP manual sprayer boasts a generous 20-liter capacity, making it perfect for efficiently covering larger areas without the need for constant refills. Its manual operation ensures simplicity and ease of use, allowing farmers to maintain precise control during application. Equipped with a durable plastic pump, it offers reliable performance while remaining lightweight for comfortable handling. Operating at a working pressure of 0.3-0.4 MPA, this sprayer ensures effective and even distribution of liquids, making it an essential tool for crop protection and nourishment."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1724838792_9de48003a3a770dbee1b.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-ms5l.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-ms5l.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/manual-sprayers-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1724757804_10eacc762b917c506988.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1724757814_46c6bd041477ce4c69d0.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-MS20L-JP.pdf",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-MS20L-JP.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-MS20L-JP.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Capacity", "value": "20 Liters" },
+                { "label": "Operation", "value": "Manual" },
+                { "label": "Pump Type", "value": "Plastic" },
+                { "label": "Working Pressure", "value": "0.3-0.4MPA" },
+                { "label": "Material", "value": "PP" }
+            ],
+            "features": [
+                "Hand-Powered Operation: Uses a pump handle to create pressure.",
+                "Lightweight and Portable: Suitable for small-scale tasks.",
+                "Low Cost: Economical and easy to maintain.",
+                "Adjustable Nozzles: Allows various spray patterns.",
+                "Simple Design: Easy to use and repair."
+            ]
+        },
+        "BON-P-EMS-20": {
+            "name": "Manual / Electric Sprayer - 2 in 1",
+            "model": "BON-P-EMS-20",
+            "description": [
+                {
+                "title": "Elevate Your Farming with Bonhoeffer Manual/Electric Sprayer - 2 in 1",
+                "text": "A manual/electric Sprayer is an essential tool for precision spraying, combining manual and electric operation for versatile use. Ideal for large-scale agricultural operations, it allows for flexibility in application, ensuring an even and consistent spray across varying landscapes. This tool is particularly efficient for pest control, fertilizing crops, or general spraying tasks."
+                },
+                {
+                "title": "The Perfect Blend of Manual and Electric Power",
+                "text": "The BON-P-EMS-20 Sprayer combines both manual and electric operation, offering enhanced flexibility. With its electric pump system powered by rechargeable batteries, it ensures less manual effort while maintaining consistent spray pressure. The ergonomic design and quiet operation make it ideal for medium to large-scale applications, delivering power and precision for all your spraying needs."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ems-20-1.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ems-20-1.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/manual-sprayers-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-EMS-20.pdf",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-EMS-20.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-EMS-20.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Tank Capacity", "value": "20 Lts" },
+                { "label": "Max Pressure", "value": "4.5 Bar" },
+                { "label": "Max Liquid Flow", "value": "2.9 L/Min" },
+                { "label": "Bivil Transformer Source", "value": "127/220V" },
+                { "label": "Lead Acid Battery", "value": "12V8AH 2.2kgs" },
+                { "label": "Bush", "value": "1.2 meter" }
+            ],
+            "features": [
+                "Electric Pump System: Powered by rechargeable batteries, reducing manual effort.",
+                "Consistent Pressure: Ensures uniform spraying.",
+                "Quiet Operation: Minimal noise compared to motorized sprayers.",
+                "Longer Spray Duration: Ideal for medium to large areas.",
+                "Ergonomic Design: Comfortable for prolonged use with padded straps."
+            ]
+        },
+        "BON-P-MS2L": {
+            "name": "Manual Sprayer",
+            "model": "BON-P-MS2L",
+            "description": [
+            {
+                "title": "BON-P-MS2L Manual Sprayer - 2 Litres",
+                "text": "Efficient and user-friendly, the BON-P-MS2L Manual Sprayer offers a 2-litre capacity for versatile applications. Operating within a pressure range of 2-4 PA, this sprayer is crafted from durable polypropylene (PP), ensuring reliable performance and longevity for various tasks. Ideal for gardening, cleaning, and more, its manual operation makes it a practical choice for precise control and ease of use."
+            }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ms2l.webp",
+            "showcaseImages": [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ms2l.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/manual-sprayers-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1724755783_c26da3f5022751cecd4f.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1724755794_5001f923173b48342b06.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-MS2L.pdf",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-MS2L.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-MS2L.pdf",
+            "warrantyTime": 15,
+            "specifications": [
+            { "label": "Capacity", "value": "2 Litres" },
+            { "label": "Operation", "value": "Manual" },
+            { "label": "Working Pressure", "value": "2-4PA" },
+            { "label": "Material", "value": "PP" }
+            ],
+            "features": [
+            "Hand-Powered Operation: Uses a pump handle to create pressure.",
+            "Lightweight and Portable: Suitable for small-scale tasks.",
+            "Low Cost: Economical and easy to maintain.",
+            "Adjustable Nozzles: Allows various spray patterns.",
+            "Simple Design: Easy to use and repair."
+            ]
+        }
+    },
+    "mistduster":{
+        "BON-P-MD42": {
+            "name": "Mist Duster",
+            "model": "BON-P-MD42",
+            "description": [
+            {
+                "title": "Mist Duster: Precision Spraying for Large Areas",
+                "text": "A mist duster is an essential tool for efficient and widespread spraying in agricultural and pest control applications. Designed to handle large areas, it allows users to cover significant ground with minimal effort. Ideal for tasks such as applying fertilizers, pesticides, or water to crops, the mist duster ensures even and controlled distribution. Its high-capacity tank and ergonomic design make it user-friendly, allowing operators to spray for longer periods without interruption."
+            },
+            {
+                "title": "Built for Precision, Durability, and Efficiency: BON-P-MD52",
+                "text": "Equipped with a robust 4 HP engine, the BON-P-MD52 offers 6500 r/min power, ensuring effective spraying over a range of 12 meters or more. Its 1.5-liter gasoline tank allows for extended use, while the 14-liter spray tank minimizes the need for frequent refills. Designed for reliability, this mist duster features a manual starting system for easy operation. The speed control of 6500 ± 320 ensures consistent and accurate application in diverse environments. Bonhoeffer provides one of the best mist dusters you can choose from."
+            }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1726056987_e336a9e8dd0e41510342.webp",
+            "showcaseImages": [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-md42.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/mist-duster-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1736334708_6e750adcc95d55efb314.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1736334718_931f38c7ecba4cc9ebd2.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-MD42.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-MD42.pdf",
+            "warrantyTime": 15,
+            "specifications": [
+            { "label": "Maximum Power", "value": "3HP / 7800r/min" },
+            { "label": "Maximum Range", "value": "12 m" },
+            { "label": "Liquid Output", "value": "0 - 7 L/min" },
+            { "label": "Gas Tank Capacity", "value": "1.3L" },
+            { "label": "Starting System", "value": "Manual" },
+            { "label": "Tank Capacity", "value": "20 Liters" }
+            ],
+            "features": [
+            "Mist Blower Function: Capable of atomizing liquids into fine particles for effective coverage",
+            "Multiple Applications: Suitable for spraying pesticides, herbicides, fungicides, and even fertilizers.",
+            "Adjustable Carburetor: Allows users to fine-tune the engine for optimal performance in different conditions, such as varying altitudes or temperatures.",
+            "Lightweight and Compact Design: Easier to handle and maneuver, especially for extended use or in tight spaces.",
+            "Easy-Start System: Features like a spring-assisted starter or decompression valve make starting the engine more effortless."
+            ]
+        },
+        "BON-P-MD52": {
+            "name": "Mist Duster",
+            "model": "BON-P-MD52",
+            "description": [
+            {
+                "title": "Mist Duster: Precision Spraying for Large Areas",
+                "text": "A mist duster is an essential tool for efficient and widespread spraying in agricultural and pest control applications. Designed to handle large areas, it allows users to cover significant ground with minimal effort. Ideal for tasks such as applying fertilizers, pesticides, or water to crops, the mist duster ensures even and controlled distribution. Its high-capacity tank and ergonomic design make it user-friendly, allowing operators to spray for longer periods without interruption."
+            },
+            {
+                "title": "Built for Precision, Durability, and Efficiency: BON-P-MD52",
+                "text": "Equipped with a robust 4 HP engine, the BON-P-MD52 offers 6500 r/min power, ensuring effective spraying over a range of 12 meters or more. Its 1.5-liter gasoline tank allows for extended use, while the 14-liter spray tank minimizes the need for frequent refills. Designed for reliability, this mist duster features a manual starting system for easy operation. The speed control of 6500 ± 320 ensures consistent and accurate application in diverse environments. Bonhoeffer provides one of the best mist dusters you can choose from."
+            }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1726057020_2f2f9a33942f49c6902a.webp",
+            "showcaseImages": [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-md52.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-md52.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-3-bon-p-md52.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/mist-duster-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1727262311_f93a96e65b5fc57b4155.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1727262320_b445598460a5de9b5bcb.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-MD52.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-MD52.pdf",
+            "warrantyTime": 15,
+            "specifications": [
+            { "label": "Engine", "value": "4 HP" },
+            { "label": "Power", "value": "6500 r/min" },
+            { "label": "Gasoline Tank Capacity", "value": "1.5 Liters" },
+            { "label": "Starting System", "value": "Manual" },
+            { "label": "Tank Capacity", "value": "14 Liters" },
+            { "label": "Range (m)", "value": "≥12" },
+            { "label": "Speed", "value": "6500 ± 320" }
+            ],
+            "features": [
+            "Mist Blower Function: Capable of atomizing liquids into fine particles for effective coverage.",
+            "Multiple Applications: Suitable for spraying pesticides, herbicides, fungicides, and even fertilizers.",
+            "Adjustable Carburetor: Allows users to fine-tune the engine for optimal performance in different conditions, such as varying altitudes or temperatures.",
+            "Lightweight and Compact Design: Easier to handle and maneuver, especially for extended use or in tight spaces.",
+            "Easy-Start System: Features like a spring-assisted starter or decompression valve make starting the engine more effortless."
+            ]
+        },
+        "BON-P-MD82": {
+            "name": "Mist Duster",
+            "model": "BON-P-MD82",
+            "description": [
+            {
+                "title": "Mist Duster: Powerful and Efficient Spraying for Wide Coverage",
+                "text": "A mist duster is essential for large-scale spraying, offering both precision and efficiency for various agricultural and horticultural tasks. Whether you're applying pesticides, fertilizers, or water, this tool ensures an even spread over vast areas with minimal effort. With its high-capacity tank and user-friendly design, a mist duster allows for longer, uninterrupted operation, saving time and energy. Perfect for farms, gardens, and greenhouses, it delivers reliable performance for professionals and hobbyists alike. One of the finest Mist Dusters are available at Bonhoeffer Machines."
+            },
+            {
+                "title": "Unmatched Power and Reach: BON-P-MD82",
+                "text": "The BON-P-MD82 packs a punch with a 5.5 HP engine running at 7000 r/min, delivering outstanding spraying performance. Its maximum horizontal reach of 20 meters and vertical reach of 18 meters make it ideal for covering large spaces efficiently. The liquid output ranges from 0 to 7 litters per minute, offering precise control over application. Featuring a 2-liter gas tank and a 20-liter spray tank, this mist duster is designed for extended use without constant refuelling. With its durable build and manual starting system, the BON-P-MD82 is built to tackle the toughest spraying tasks with ease."
+            }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1726057085_6bcec32f5226e8a17ed4.webp",
+            "showcaseImages": [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-md82.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-md82.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-3-bon-p-md82.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-4-bon-p-md82.webp"
+            ],
+            "isBannerImage": false,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/mist-duster-banner.webp",
+            "isVideo": true,
+            "videoUrls": [
+            {
+                "url": "https://www.youtube.com/embed/P2nTdzvd_Mk",
+                "title": "Unboxing & Installation"
+            },
+            {
+                "url": "https://www.youtube.com/embed/fD2GuTl3ueE",
+                "title": "Working Video"
+            }
+            ],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1727262311_f93a96e65b5fc57b4155.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1727262320_b445598460a5de9b5bcb.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-MD82.pdf",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-MD82.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-MD82.pdf",
+            "warrantyTime": 15,
+            "specifications": [
+            { "label": "Engine", "value": "5.5HP" },
+            { "label": "Power", "value": "7000r/min" },
+            { "label": "Maximum Vertical Reach", "value": "18 m" },
+            { "label": "Maximum Horizontal Reach", "value": "20 m" },
+            { "label": "Liquid Output", "value": "0 - 7 L/min" },
+            { "label": "Gas Tank Capacity", "value": "2.0L" },
+            { "label": "Starting System", "value": "Manual" },
+            { "label": "Tank Capacity", "value": "20 Liters" }
+            ],
+            "features": [
+            "Mist Blower Function: Capable of atomizing liquids into fine particles for effective coverage.",
+            "Multiple Applications: Suitable for spraying pesticides, herbicides, fungicides, and even fertilizers.",
+            "Adjustable Carburetor: Allows users to fine-tune the engine for optimal performance in different conditions, such as varying altitudes or temperatures.",
+            "Lightweight and Compact Design: Easier to handle and maneuver, especially for extended use or in tight spaces.",
+            "Easy-Start System: Features like a spring-assisted starter or decompression valve make starting the engine more effortless."
+            ]
+        }
+    },
+    "thermal-fogger":{
+        "BON-P-TF6L": {
+            "name": "Thermal Fogger",
+            "model": "BON-P-TF6L",
+            "description": [
+            {
+                "title": "BON-P-TF6L Thermal Fogger",
+                "text": "The BON-P-TF6L Thermal Fogger is designed for efficient and versatile fogging applications. It uses heat to convert liquid solutions into a fine fog, providing effective coverage for pest control, disinfection, and odor neutralization. With a fuel-efficient design, this thermal fogger ensures high performance for large-scale applications."
+            }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1726212090_3e43b01e9f5c360f9b84.webp",
+            "showcaseImages": [
+            "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-tf6l.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-tf6l.webp",
+            "https://bonhoeffermachines.com/en/public/machines/showcase-3-bon-p-tf6l.webp"
+            ],
+            "isBannerImage": false,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/thermal-fogger-banner.webp",
+            "isVideo": true,
+            "videoUrls": [
+            {
+                "url": "https://www.youtube.com/embed/P2nTdzvd_Mk",
+                "title": "Unboxing & Installation"
+            },
+            {
+                "url": "https://www.youtube.com/embed/fD2GuTl3ueE",
+                "title": "Working Video"
+            }
+            ],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1723633052_49161727b73d527ca8a8.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1723633062_e94db1fcdb6b3cdc4f65.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-TF6L.pdf",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-TF6L.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-TF6L.pdf",
+            "warrantyTime": 15,
+            "specifications": [
+            { "label": "Chemical Tank", "value": "6.0 Liters" },
+            { "label": "Fuel Tank Capacity", "value": "1.2 Liters" },
+            { "label": "Spray Capacity", "value": "25 Liters / hr" },
+            { "label": "Fuel Consumption", "value": "2 Liters/hour" },
+            { "label": "Weight", "value": "9.7 kg" }
+            ],
+            "features": [
+            "Fogging Technology: Uses heat to vaporize a liquid solution, converting it into a dense, visible fog of fine particles.",
+            "Versatility: Compatible with a variety of solutions, such as pesticides, disinfectants, fungicides, and odor neutralizers.",
+            "High Coverage Efficiency: Produces a dense fog that spreads quickly and reaches tight corners, crevices, and under dense foliage.",
+            "Portable Design: The machine is lightweight and handheld, designed for comfortable use.",
+            "Adjustable Fog Output: Allows users to control the density and output rate of the fog for specific applications."
+            ]
+        },
+        "BON-P-TF2L": {
+            "name": "Thermal Fogger",
+            "model": "BON-P-TF2L",
+            "description": [
+                {
+                "title": "Compact and Efficient Thermal Fogging Machine",
+                "text": "The BON-P-TF2L thermal fogger is a lightweight, handheld solution for effective fogging in various environments. It uses heat to vaporize liquids into a dense fog, ideal for sanitization, pest control, and disinfection."
+                },
+                {
+                "title": "High Performance with Precision Control",
+                "text": "Equipped with a 2-liter tank, this machine offers a fog output of 1.5 to 2 liters per hour. With a fuel consumption rate of just 225gm/hr and weighing only 1.4kg, it's optimized for portability and extended use. Adjustable fogging output allows tailored application across different spaces."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-3-bon-p-tf2l.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-tf2l.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-tf2l.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-3-bon-p-tf2l.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/thermal-fogger-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1723632640_7aacbb271b1920023be3.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1723632650_6026bc09a03bb72a0fce.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-TF2L.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-TF2L.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Tank capacity", "value": "2.0 Liters" },
+                { "label": "Pump Flow", "value": "1.2 Liters" },
+                { "label": "Fuel consumption", "value": "225gm/hr" },
+                { "label": "Solution Out Put", "value": "1.5 to 2L/hr" },
+                { "label": "Weight", "value": "1.4kg" }
+            ],
+            "features": [
+                "Fogging Technology: Uses heat to vaporize liquid into a fine fog.",
+                "Versatility: Works with pesticides, disinfectants, and more.",
+                "High Coverage Efficiency: Penetrates hard-to-reach areas with dense fog.",
+                "Portable Design: Lightweight and handheld for ease of use.",
+                "Adjustable Fog Output: Control fog density for different needs."
             ]
         }
     }
