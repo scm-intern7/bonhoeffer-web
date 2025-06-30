@@ -159,12 +159,119 @@ function ProductPage() {
     };
   }, [dropdownTimeout]);
 
-  // Product Categories Sections
-  const [sliderIndices, setSliderIndices] = React.useState(
+  const [responsive, setResponsive] = React.useState({ productsPerView: 3, cardWidth: 340, cardHeight: 510, imageHeight: 440, imageWidth: 280 });
+
+  // Infinite Slider Logic
+  const [sliderPositions, setSliderPositions] = React.useState(
     productCategories.map(() => 0)
   );
-  const productsPerView = 3;
+  const [isTransitioning, setIsTransitioning] = React.useState(
+    productCategories.map(() => true)
+  );
   const autoSlideInterval = React.useRef([]);
+  const sliderRefs = React.useRef([]);
+
+  // Create extended product lists for infinite scrolling
+  const getExtendedProducts = (products, productsPerView) => {
+    if (products.length <= productsPerView) return products;
+    
+    // Clone products for seamless infinite scroll
+    // Add enough clones at the beginning and end
+    const cloneCount = Math.max(productsPerView, 3);
+    const startClones = products.slice(-cloneCount);
+    const endClones = products.slice(0, cloneCount);
+    
+    return [...startClones, ...products, ...endClones];
+  };
+
+  // Infinite scroll navigation functions
+  const handleNext = React.useCallback((catIdx) => {
+    setSliderPositions(prev => {
+      const category = productCategories[catIdx];
+      if (category.products.length <= responsive.productsPerView) return prev;
+
+      const updated = [...prev];
+      const newPosition = prev[catIdx] - (responsive.cardWidth + 16);
+      updated[catIdx] = newPosition;
+      
+      // Check if we need to reset position for infinite scroll
+      const cloneCount = Math.max(responsive.productsPerView, 3);
+      const totalOriginalWidth = category.products.length * (responsive.cardWidth + 16);
+      const currentPos = Math.abs(newPosition);
+      
+      if (currentPos >= totalOriginalWidth + (cloneCount * (responsive.cardWidth + 16))) {
+        // Reset to beginning seamlessly after a brief delay
+        setTimeout(() => {
+          setIsTransitioning(current => {
+            const updatedTransition = [...current];
+            updatedTransition[catIdx] = false;
+            return updatedTransition;
+          });
+          
+          setSliderPositions(current => {
+            const updatedPos = [...current];
+            updatedPos[catIdx] = -(cloneCount * (responsive.cardWidth + 16));
+            return updatedPos;
+          });
+
+          // Re-enable transition after position reset
+          setTimeout(() => {
+            setIsTransitioning(current => {
+              const updatedTransition = [...current];
+              updatedTransition[catIdx] = true;
+              return updatedTransition;
+            });
+          }, 50);
+        }, 500);
+      }
+      
+      return updated;
+    });
+  }, [responsive.productsPerView, responsive.cardWidth]);
+
+  const handlePrev = React.useCallback((catIdx) => {
+    setSliderPositions(prev => {
+      const category = productCategories[catIdx];
+      if (category.products.length <= responsive.productsPerView) return prev;
+
+      const updated = [...prev];
+      const newPosition = prev[catIdx] + (responsive.cardWidth + 16);
+      updated[catIdx] = newPosition;
+      
+      // Check if we need to reset position for infinite scroll
+      const cloneCount = Math.max(responsive.productsPerView, 3);
+      const resetPosition = -(cloneCount * (responsive.cardWidth + 16));
+      
+      if (newPosition > resetPosition) {
+        // Reset to end seamlessly after a brief delay
+        setTimeout(() => {
+          setIsTransitioning(current => {
+            const updatedTransition = [...current];
+            updatedTransition[catIdx] = false;
+            return updatedTransition;
+          });
+          
+          const totalOriginalWidth = category.products.length * (responsive.cardWidth + 16);
+          setSliderPositions(current => {
+            const updatedPos = [...current];
+            updatedPos[catIdx] = -(totalOriginalWidth);
+            return updatedPos;
+          });
+
+          // Re-enable transition after position reset
+          setTimeout(() => {
+            setIsTransitioning(current => {
+              const updatedTransition = [...current];
+              updatedTransition[catIdx] = true;
+              return updatedTransition;
+            });
+          }, 50);
+        }, 500);
+      }
+      
+      return updated;
+    });
+  }, [responsive.productsPerView, responsive.cardWidth]);
 
   React.useEffect(() => {
     // Clear all intervals on unmount
@@ -174,44 +281,76 @@ function ProductPage() {
   }, []);
 
   React.useEffect(() => {
-    // Set up auto-slide for each category
+    // Clear existing intervals
+    autoSlideInterval.current.forEach(clearInterval);
+    autoSlideInterval.current = [];
+    
+    // Set up auto-slide for each category with infinite scroll
     productCategories.forEach((cat, catIdx) => {
-      if (cat.products.length > productsPerView) {
-        if (autoSlideInterval.current[catIdx]) clearInterval(autoSlideInterval.current[catIdx]);
+      if (cat.products.length > responsive.productsPerView) {
         autoSlideInterval.current[catIdx] = setInterval(() => {
-          setSliderIndices(prev => {
+          setSliderPositions(prev => {
+            const category = productCategories[catIdx];
+            if (category.products.length <= responsive.productsPerView) return prev;
+
             const updated = [...prev];
-            const maxIdx = Math.max(0, cat.products.length - productsPerView);
-            updated[catIdx] = prev[catIdx] >= maxIdx ? 0 : prev[catIdx] + 1;
+            const newPosition = prev[catIdx] - (responsive.cardWidth + 16);
+            updated[catIdx] = newPosition;
+            
+            // Check if we need to reset position for infinite scroll
+            const cloneCount = Math.max(responsive.productsPerView, 3);
+            const totalOriginalWidth = category.products.length * (responsive.cardWidth + 16);
+            const currentPos = Math.abs(newPosition);
+            
+            if (currentPos >= totalOriginalWidth + (cloneCount * (responsive.cardWidth + 16))) {
+              // Reset to beginning seamlessly after a brief delay
+              setTimeout(() => {
+                setIsTransitioning(current => {
+                  const updatedTransition = [...current];
+                  updatedTransition[catIdx] = false;
+                  return updatedTransition;
+                });
+                
+                setSliderPositions(current => {
+                  const updatedPos = [...current];
+                  updatedPos[catIdx] = -(cloneCount * (responsive.cardWidth + 16));
+                  return updatedPos;
+                });
+
+                // Re-enable transition after position reset
+                setTimeout(() => {
+                  setIsTransitioning(current => {
+                    const updatedTransition = [...current];
+                    updatedTransition[catIdx] = true;
+                    return updatedTransition;
+                  });
+                }, 50);
+              }, 500);
+            }
+            
             return updated;
           });
         }, 4000);
       }
     });
+    
     // Cleanup on category/product change
     return () => {
       autoSlideInterval.current.forEach(clearInterval);
     };
-  }, [productCategories, productsPerView]);
+  }, [responsive.productsPerView, responsive.cardWidth]);
 
-  // Move these functions above the return statement so they are defined before use
-  const handleNext = (catIdx, maxIdx) => {
-    setSliderIndices(prev => {
-      const updated = [...prev];
-      updated[catIdx] = prev[catIdx] >= maxIdx ? 0 : prev[catIdx] + 1;
-      return updated;
+  // Initialize positions when responsive changes
+  React.useEffect(() => {
+    const cloneCount = Math.max(responsive.productsPerView, 3);
+    const initialPositions = productCategories.map((category) => {
+      if (category.products.length <= responsive.productsPerView) return 0;
+      return -(cloneCount * (responsive.cardWidth + 16));
     });
-  };
-  const handlePrev = (catIdx, maxIdx) => {
-    setSliderIndices(prev => {
-      const updated = [...prev];
-      updated[catIdx] = prev[catIdx] <= 0 ? maxIdx : prev[catIdx] - 1;
-      return updated;
-    });
-  };
+    setSliderPositions(initialPositions);
+  }, [responsive.productsPerView, responsive.cardWidth]);
 
   // Responsive state for products per view and card width
-  const [responsive, setResponsive] = React.useState({ productsPerView: 3, cardWidth: 340, cardHeight: 510, imageHeight: 440, imageWidth: 280 });
 
   React.useEffect(() => {
     function handleResize() {
@@ -322,7 +461,7 @@ function ProductPage() {
                           <h3 className="font-bold text-gray-100 mb-2 sm:mb-4">
                             {productCategories.find(cat => cat.id === hoveredCategory)?.name} Products
                           </h3>
-                          <div className="grid grid-cols-1 xs:grid-cols-2 gap-2 sm:gap-3">
+                          <div className="grid grid-cols-2 xs:grid-cols-1 gap-2 sm:gap-3">
                             {productCategories
                               .find(cat => cat.id === hoveredCategory)
                               ?.products.map((product, index) => (
@@ -377,8 +516,10 @@ function ProductPage() {
 
       {/* Product Categories Sections */}
       {productCategories.map((category, categoryIndex) => {
-        const maxIndex = Math.max(0, category.products.length - responsive.productsPerView);
-        const currentIndex = sliderIndices[categoryIndex] || 0;
+        const extendedProducts = getExtendedProducts(category.products, responsive.productsPerView);
+        const currentPosition = sliderPositions[categoryIndex] || 0;
+        const hasInfiniteScroll = category.products.length > responsive.productsPerView;
+        
         return (
           <section key={category.id} className={`py-6 sm:py-10 px-2 sm:px-6`}>
             <div className="max-w-7xl mx-auto">
@@ -393,13 +534,14 @@ function ProductPage() {
                   {category.name}
                 </h2>
               </motion.div>
+              
               {/* Product Slider */}
               <div className="relative">
                 {/* Navigation Arrows */}
-                {category.products.length > responsive.productsPerView && (
+                {hasInfiniteScroll && (
                   <div className="absolute right-0 -top-10 flex space-x-2 z-10">
                     <button
-                      onClick={() => handlePrev(categoryIndex, maxIndex)}
+                      onClick={() => handlePrev(categoryIndex)}
                       className="bg-[#989b2e] hover:bg-[#7a7d24] text-white p-2 sm:p-3 rounded-full shadow-lg transition-colors duration-300"
                       aria-label="Previous"
                     >
@@ -408,7 +550,7 @@ function ProductPage() {
                       </svg>
                     </button>
                     <button
-                      onClick={() => handleNext(categoryIndex, maxIndex)}
+                      onClick={() => handleNext(categoryIndex)}
                       className="bg-[#989b2e] hover:bg-[#7a7d24] text-white p-2 sm:p-3 rounded-full shadow-lg transition-colors duration-300"
                       aria-label="Next"
                     >
@@ -418,53 +560,83 @@ function ProductPage() {
                     </button>
                   </div>
                 )}
+                
                 <div className="overflow-hidden py-4">
                   <div
-                    className="flex transition-transform duration-500"
+                    ref={el => sliderRefs.current[categoryIndex] = el}
+                    className="flex"
                     style={{
-                      width: `${category.products.length * responsive.cardWidth + (category.products.length - 1) * 16}px`,
-                      transform: `translateX(-${currentIndex * (responsive.cardWidth + 16)}px)`
+                      width: hasInfiniteScroll 
+                        ? `${extendedProducts.length * (responsive.cardWidth + 16) - 16}px`
+                        : `${category.products.length * (responsive.cardWidth + 16) - 16}px`,
+                      transform: `translateX(${currentPosition}px)`,
+                      transition: isTransitioning[categoryIndex] ? 'transform 0.5s ease-in-out' : 'none'
                     }}
                   >
-                    {category.products.map((product, index) => (
-                      <Link
-                        key={index}
-                        href={`/product/${product.slug}`}
-                        className="flex-shrink-0 mr-4 last:mr-0"
-                        style={{ width: `${responsive.cardWidth}px`, height: `${responsive.cardHeight}px` }}
-                      >
-                        <motion.div
-                          className="group backdrop-blur-sm border border-white/10 rounded-2xl p-4 sm:p-6 hover:bg-white/10 transition-all duration-300 cursor-pointer h-full flex flex-col"
-                          initial={{ opacity: 0, x: 50 }}
-                          whileInView={{ opacity: 1, x: 0 }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 0.3, delay: index * 0.01 }}
-                          whileHover={{ scale: 1.02, boxShadow: '0 20px 40px rgba(152, 155, 46, 0.1)' }}
+                    {(hasInfiniteScroll ? extendedProducts : category.products).map((product, index) => {
+                      // For infinite scroll, we need to determine the actual product for linking
+                      let actualProduct = product;
+                      let keyIndex = index;
+                      
+                      if (hasInfiniteScroll) {
+                        const cloneCount = Math.max(responsive.productsPerView, 3);
+                        const originalProducts = category.products;
+                        
+                        if (index < cloneCount) {
+                          // Start clones
+                          actualProduct = originalProducts[originalProducts.length - cloneCount + index];
+                          keyIndex = `start-${index}`;
+                        } else if (index >= cloneCount + originalProducts.length) {
+                          // End clones
+                          actualProduct = originalProducts[index - cloneCount - originalProducts.length];
+                          keyIndex = `end-${index}`;
+                        } else {
+                          // Original products
+                          actualProduct = originalProducts[index - cloneCount];
+                          keyIndex = `orig-${index}`;
+                        }
+                      }
+                      
+                      return (
+                        <Link
+                          key={keyIndex}
+                          href={`/product/${actualProduct.slug}`}
+                          className="flex-shrink-0 mr-4 last:mr-0"
+                          style={{ width: `${responsive.cardWidth}px`, height: `${responsive.cardHeight}px` }}
                         >
-                          <div className="relative mb-4 sm:mb-6 rounded-xl overflow-hidden bg-white flex-1 flex items-center justify-center"
-                            style={{ height: `${responsive.imageHeight}px`, width: `${responsive.imageWidth}px`, margin: '0 auto' }}>
-                            <Image
-                              src={product.image}
-                              alt={product.name}
-                              fill
-                              className="object-contain p-2 group-hover:scale-110 transition-transform duration-300"
-                              style={{ objectFit: 'contain' }}
-                            />
-                          </div>
-                          <h3 className="text-base sm:text-xl font-bold text-white my-2 sm:my-4 group-hover:text-[#989b2e] transition-colors text-center">
-                            {product.name}
-                          </h3>
-                          <div className="text-center">
-                            <span className="inline-flex items-center text-[#989b2e] font-medium text-xs sm:text-base">
-                              View Models
-                              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                              </svg>
-                            </span>
-                          </div>
-                        </motion.div>
-                      </Link>
-                    ))}
+                          <motion.div
+                            className="group backdrop-blur-sm border border-white/10 rounded-2xl p-4 sm:p-6 hover:bg-white/10 transition-all duration-300 cursor-pointer h-full flex flex-col"
+                            initial={{ opacity: 0, x: 50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.3, delay: (index % 10) * 0.01 }}
+                            whileHover={{ scale: 1.02, boxShadow: '0 20px 40px rgba(152, 155, 46, 0.1)' }}
+                          >
+                            <div className="relative mb-4 sm:mb-6 rounded-xl overflow-hidden bg-white flex-1 flex items-center justify-center"
+                              style={{ height: `${responsive.imageHeight}px`, width: `${responsive.imageWidth}px`, margin: '0 auto' }}>
+                              <Image
+                                src={actualProduct.image}
+                                alt={actualProduct.name}
+                                fill
+                                className="object-contain p-2 group-hover:scale-110 transition-transform duration-300"
+                                style={{ objectFit: 'contain' }}
+                              />
+                            </div>
+                            <h3 className="text-base sm:text-xl font-bold text-white my-2 sm:my-4 group-hover:text-[#989b2e] transition-colors text-center">
+                              {actualProduct.name}
+                            </h3>
+                            <div className="text-center">
+                              <span className="inline-flex items-center text-[#989b2e] font-medium text-xs sm:text-base">
+                                View Models
+                                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                </svg>
+                              </span>
+                            </div>
+                          </motion.div>
+                        </Link>
+                      );
+                    })}
                   </div>
                 </div>
               </div>
