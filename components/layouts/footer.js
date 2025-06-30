@@ -9,16 +9,16 @@ function Footer() {
       { href: "/about", label: "About Us" },
       { href: "/contact", label: "Contact Us" },
       { href: "/careers", label: "Careers" },
-      { href: "/news", label: "News & Press" }
+      // { href: "/news", label: "News & Press" }
     ],
     products: [
       { href: "/products", label: "All Products" },
       { href: "/spare-parts", label: "Spare Parts" },
       { href: "/services", label: "Services" },
-      { href: "/warranty", label: "Warranty" }
+      // { href: "/warranty", label: "Warranty" }
     ],
     events: [
-      { href: "/events", label: "All Events" },
+      // { href: "/events", label: "All Events" },
       { href: "/gallery", label: "Gallery" },
       { href: "/blog", label: "Success Stories" },
       { href: "/fair", label: "Trade Fairs" }
@@ -27,7 +27,7 @@ function Footer() {
       { href: "/support", label: "Support" },
       { href: "/certifications", label: "Certifications" },
       { href: "/downloads", label: "Downloads" },
-      { href: "/faq", label: "FAQ" }
+      // { href: "/faq", label: "FAQ" }
     ]
   }
 
@@ -89,7 +89,7 @@ function Footer() {
             <img
               src="/logo.png"
               alt="Bonhoeffer Machines Logo"
-              className="h-24 mb-3"
+              className="h-20 mb-3"
             />
             <p className="text-gray-300 text-xs leading-relaxed mb-3">
               Leading manufacturer of agricultural machinery worldwide.
@@ -190,7 +190,7 @@ function Footer() {
               {/* Social Media */}
               <div>
                 <h4 className="text-white font-semibold mb-2 text-lg">Follow Us</h4>
-                <div className="flex space-x-3">
+                <div className="flex space-x-5">
                   {socialLinks.map((social, index) => (
                     <a
                       key={index}
@@ -200,7 +200,7 @@ function Footer() {
                       className="text-gray-400 hover:text-[#989b2e] transition-colors duration-200 p-1 hover:bg-gray-800 rounded-full"
                       aria-label={social.name}
                     >
-                      <div className="w-5 h-5">
+                      <div className="w-3 h-3">
                         {social.icon}
                       </div>
                     </a>

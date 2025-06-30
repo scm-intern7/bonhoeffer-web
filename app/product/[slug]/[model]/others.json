@@ -1,0 +1,59 @@
+{
+    "gasoline-water-pump": [
+        { "name": "BON-P-WP1.0-31", "feature": "INLET/OUTLET- 1 INCH -31 CC", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-WP1.0-31.webp" },
+        { "name": "BON-P-WP1.5-79", "feature": "Engine Power : 79 CC", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-WP1.5-79.webp" },
+        { "name": "BON-P-WP2.0-149", "feature": "INLET/OUTLET- 2 INCHES- 149 CC", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-WP2.0-149.webp" },
+        { "name": "BON-P-WP2.0-196", "feature": "Engine Power : 196 Cc", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-WP2.0-196.webp" },
+        { "name": "BON-P-WP3.0-196", "feature": "Engine Power : 196 Cc", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-WP3.0-196.webp" },
+        { "name": "BON-P-WP4.0-272", "feature": "Engine Power : 272 Cc", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-WP4.0-272.webp" },
+        { "name": "BON-P-WP1.5-224HL", "feature": "INLET/OUTLET- 1.5 INCH-224 CC- HL", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-WP1.5-224HL.webp" },
+        { "name": "BON-P-WP6.0-420", "feature": "INLET / OUTLET- 6 INCHES- 420 CC", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-WP6.0-420.webp" },
+        { "name": "BON-P-WP2.0-224HL", "feature": "Engine Power : 224 Cc", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-WP2.0-224HL.webp" },
+        { "name": "BON-P-WP2.0-420HL", "feature": "INLET/OUTLET- 2.0 INCH-420 CC- HL", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-WP2.0-420HL.png" },
+        { "name": "BON-P-WP3.0-420HL", "feature": "INLET/OUTLET- 3.0 IN- 420 CC- HL", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-WP3.0-420HL.png" },
+        { "name": "BON-P-WP2.0-196CH", "feature": "INLET/OUTLET- 2 IN- 196 CC- CH", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-WP2.0-196CH.webp" },
+        { "name": "BON-P-WP2.0-196TR", "feature": "INLET/OUTLET- 2 IN- 196 CC- TR", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-WP2.0-196TR.webp" },
+        { "name": "BON-P-WP3.0-196TR", "feature": "INLET / OUTLET- 3 INCHES- 196 CC- TR", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-WP3.0-196TR.webp" }
+    ],
+
+    "gasoline-engine": [
+        { "name": "BON-P-GE-3.0HP", "feature": "POTENCIA 3.0 HP", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-GE-3.0HP.webp" },
+        { "name": "BON-P-GE-3.5HP", "feature": "POTENCIA 3.5 HP", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-GE-3.5HP.webp" },
+        { "name": "BON-P-GE-4.0HP", "feature": "POTENCIA 4.0 HP", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-GE-4.0HP.webp" },
+        { "name": "BON-P-GE-5.0HP", "feature": "POTENCIA 5.0 HP", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-GE-5.0HP.webp" },
+        { "name": "BON-P-GE-7.0HP", "feature": "Engine Power : 7.0HP", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-GE-7.0HP.webp" },
+        { "name": "BON-P-GE-9.0HP", "feature": "Engine Power : 9.0HP", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-GE-9.0HP.webp" },
+        { "name": "BON-P-GE-13.0HP", "feature": "Engine Power : 13.0HP", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-GE-13.0HP.webp" },
+        { "name": "BON-P-GE-14.0HP", "feature": "Engine Power : 14.0HP", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-GE-14.0HP.webp" },
+        { "name": "BON-P-GE-16.0HP", "feature": "POTENCIA 16.0 HP", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-GE-16.0HP.webp" },
+        { "name": "BON-P-GE-24.0HP", "feature": "POWER 24.0 HP- V DOBLE CILINDRO", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-GE-24.0HP.webp" },
+        { "name": "BON-P-GE-34.0HP", "feature": "POTENCIA 34.0 HP- V DOBLE CILINDRO", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-GE-34.0HP.webp" }
+    ],
+
+    "gasoline-generator": [
+        { "name": "BON-P-GG-2.8KW", "feature": "MAX . POWER 2.8 KW", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-GG-2.8KW.webp" },
+        { "name": "BON-P-GG-3.7KW", "feature": "MAX . POWER 3.7 KW", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-GG-3.7KW.webp" },
+        { "name": "BON-P-GG-5.0KW", "feature": "MAX . POWER 5.0 KW", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-GG-5.0KW.webp" },
+        { "name": "BON-P-GG-7.5KW", "feature": "MAX . POWER 7.5 KW", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-GG-7.5KW.webp" },
+        { "name": "BON-P-GG-9.0KW", "feature": "MAX . POWER 9.0 KW", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-GG-9.0KW.webp" },
+        { "name": "BON-P-GG-9.5KW", "feature": "MAX . POWER 9.5 KW", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-GG-9.5KW.webp" },
+        { "name": "BON-P-GG-12.0KW", "feature": "MAX . POWER 12.0 KW", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-GG-12KW.webp" },
+        { "name": "BON-P-GG-13.5KW", "feature": "MAX . POWER 13.5 KW", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-GG-13.5KW.webp" },
+        { "name": "BON-P-GG-16.0KW", "feature": "MAX . POWER 16.0 KW", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-GG-16KW.webp" },
+        { "name": "BON-P-GG-18.5KW", "feature": "MAX . POWER 18.5 KW", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-GG-18KW.webp" }
+    ],
+
+    "gasoline-inverter": [
+
+    ],
+
+    "gasoline-tiller": [
+
+    ],
+
+    "brush-cutter": [
+        { "name": "BON-P-BC36", "feature": "Displacement 36 CC", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-BC36.webp" },
+        { "name": "BON-ET-BC53", "feature": "DISPLACEMENT 53 CC", "image": "https://bonhoeffermachines.com/en/public/machines/BON-ET-BC53.webp" },
+        { "name": "BON-P-BC45", "feature": "DISPLACEMENT 45 CC", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-BC45.webp" }
+    ]
+}
