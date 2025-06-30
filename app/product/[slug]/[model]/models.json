@@ -2223,11 +2223,833 @@
       },
 
       "gasoline-inverter": {
+        "BON-P-GI-1.8KW": {
+            "name": "Gasoline Inverter",
+            "model": "BON-P-GI-1.8KW",
+            "description": [
+                {
+                "title": "Gasoline Inverter: Reliable Power for Every Need",
+                "text": "The Gasoline Inverter is your dependable source of portable power, designed to meet a variety of energy needs at home or on the go. Whether you're camping, working on a job site, or need backup power during an outage, this inverter delivers consistent performance and efficiency. Engineered for ease of use, it ensures that you can enjoy reliable electricity wherever you are. Bonhoeffer offers one of the best gasoline inverters."
+                },
+                {
+                "title": "A High-Performance Inverter Built for Efficiency and Longevity",
+                "text": "This BON-P-GI-1.8KW gasoline inverter features impressive specifications tailored for optimal performance. Operating at a voltage of 120 volts and a frequency of 50 or 60 Hz, it provides versatile power options to suit your requirements. With a lifespan of 500 hours, this unit is built to last, ensuring you get value from your investment. The maximum fuel tank size of 4 litres allows for extended use, providing an operating time of up to 7 hours at 50% load."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1722941959_31a50a2596c52b5ecafc.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-gi-1.8kw.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-gi-1.8kw.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/gasoline-inverter-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1727695216_babadf12feebf502582a.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1727695227_9e04343de675355f1540.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-GI-1.8KW.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-GI-1.8KW.pdf",
+            "warrantyTime": 36,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Voltage", "value": "120V" },
+                { "label": "Lifespan", "value": "500 hours" },
+                { "label": "Frequency", "value": "50 or 60 Hz" },
+                { "label": "Maximum fuel tank size", "value": "4 Liters" },
+                { "label": "Operating time at 50% load", "value": "7 hours" },
+                { "label": "Alternator material", "value": "Permanent Magnet" },
+                { "label": "Displacement", "value": "3 HP" },
+                { "label": "Oil capacity", "value": "0.5 Liters" },
+                { "label": "Starting System", "value": "Manual" }
+            ],
+            "features": [
+                "OHV design enhances combustion efficiency",
+                "More power. Same legendary quality",
+                "Power for refrigerators, hair dryer, small AC units, and much more",
+                "Lightweight and compact",
+                "Fuel Efficient & Environmentally Friendly",
+                "Highly Heat Conductivity Product's with 100% copper winding",
+                "Super Quiet operation"
+            ]
+        },
 
+        "BON-P-GI-2.1KW": {
+            "name": "Gasoline Inverter",
+            "model": "BON-P-GI-2.1KW",
+            "description": [
+                {
+                "title": "Portable and Reliable Power with the Gasoline Inverter",
+                "text": "Looking for a portable and dependable power source? Gasoline Inverter delivers stable energy, perfect for outdoor activities, remote worksites, and backup power during emergencies. Its compact design makes it easy to transport, while its quiet operation ensures minimal disturbance in any setting. Ideal for charging sensitive electronics or running essential tools, this inverter provides unmatched versatility for a variety of applications. Backed by Bonhoeffer’s trusted commitment to performance, this unit is a must-have for reliable power wherever you go."
+                },
+                {
+                "title": "Power-Packed Features for Unmatched Performance",
+                "text": "The BON-P-GI-2.1KW Gasoline Inverter is engineered for top performance, featuring a 79cc displacement engine with a maximum power output of 2.1kW. It runs for up to 5.7 hours at 50% load, thanks to its 4-liter fuel tank and efficient design. The inverter produces clean, stable energy at 50/60 Hz, with voltage options of 230V or 120V. Designed for durability, it includes a permanent magnet alternator, low-oil shutdown, and a 0.5L oil capacity. Tested rigorously with 500 hours of continuous use, waterproof, UV resistance, vibration, and tilt tests, this inverter ensures reliability in every condition."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/BON-P-GI-2.1KW-en.png",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-gi-2.1kw.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-gi-2.1kw.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/gasoline-inverter-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": true,
+            "workshopManualUrl": "https://bonhoeffermachines.com/en/public/workshop_pdf/gasoline-inverter-workshop-manual.pdf",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 36,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Lifespan", "value": "500 hours" },
+                { "label": "Frequency", "value": "50 Hz / 60 Hz" },
+                { "label": "Maximum power", "value": "2.1 KW" },
+                { "label": "Voltage", "value": "230V / 120V" },
+                { "label": "Maximum fuel tank size", "value": "4 Liters" },
+                { "label": "Operating time at 50% load", "value": "5.7 hours" },
+                { "label": "Alternator material", "value": "Permanent Magnet" },
+                { "label": "Displacement", "value": "79 cc" },
+                { "label": "Oil capacity", "value": "0.5 Liters" },
+                { "label": "Test run at rated power", "value": "500 hours" },
+                { "label": "Waterproof test", "value": "Yes" },
+                { "label": "Power-on test", "value": "10,000 times" },
+                { "label": "UV test resistance", "value": "Yes" },
+                { "label": "Tilt test", "value": "Yes" },
+                { "label": "Vibration test", "value": "Yes" }
+            ],
+            "features": [
+                "OHV design enhances combustion efficiency",
+                "More power. Same legendary quality",
+                "Power for refrigerators, hair dryer, small AC units, and much more",
+                "Lightweight and compact",
+                "Fuel Efficient & Environmentally Friendly",
+                "Highly heat conductivity products with 100% copper winding",
+                "Super quiet operation"
+            ]
+        },
+        "BON-P-GI-2.5KW": {
+            "name": "Gasoline Inverter",
+            "model": "BON-P-GI-2.5KW",
+            "description": [
+                {
+                "title": "Portable Power for Versatile Applications",
+                "text": "The BON-P-GI-2.5KW Gasoline Inverter is a compact and efficient power solution designed for users who need reliable energy on the move. Whether you're powering small appliances like refrigerators, AC units, or essential electronics, this inverter delivers stable output and consistent performance. Its sleek design ensures portability, and the low-noise operation makes it ideal for residential, outdoor, or emergency use."
+                },
+                {
+                "title": "Durability and Performance You Can Count On",
+                "text": "Powered by a 5 HP OHV air-cooled engine and equipped with a permanent magnet alternator, this inverter ensures dependable operation. It offers a 4.5-liter fuel tank capacity and can operate for up to 4.5 hours at 50% load. It’s been rigorously tested for waterproofing, UV exposure, vibrations, and even cold-start conditions, making it ideal for tough environments. The inverter also features a low oil shutdown and a manual start system with an optional electric start upgrade."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-gi-2.5kw-1.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-gi-2.5kw-1.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/gasoline-inverter-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 36,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Voltage", "value": "120-60 Hz" },
+                { "label": "Frequency", "value": "50 or 60 Hz" },
+                { "label": "Maximum fuel tank size", "value": "4.5 Liters" },
+                { "label": "Operating time at 50% load", "value": "4.5 hours" },
+                { "label": "Alternator material", "value": "Permanent Magnet" },
+                { "label": "Engine", "value": "5 HP (OHV, air cooled)" },
+                { "label": "Oil capacity", "value": "0.58 Liters" },
+                { "label": "Starting system", "value": "Manual (Optional Electric)" },
+                { "label": "Noise level at 7 m", "value": "≤72 dB(A)" },
+                { "label": "Operating test at rated power", "value": "500 hours" },
+                { "label": "Ignition test", "value": "10,000 times" },
+                { "label": "Waterproof test", "value": "Yes" },
+                { "label": "UV resistance test", "value": "Yes" },
+                { "label": "Tilt test", "value": "Yes" },
+                { "label": "Low temperature test", "value": "15-5 electric start" }
+            ],
+            "features": [
+                "OHV design enhances combustion efficiency",
+                "More power. Same legendary quality",
+                "Power for refrigerators, hair dryer, small AC units, and much more",
+                "Lightweight and compact",
+                "Fuel Efficient & Environmentally Friendly",
+                "Highly heat conductivity products with 100% copper winding",
+                "Super quiet operation"
+            ]
+        },
+        "BON-P-GI-2.9KW": {
+            "name": "Gasoline Inverter",
+            "model": "BON-P-GI-2.9KW",
+            "description": [
+                {
+                "title": "Compact, Powerful, and Reliable",
+                "text": "The BON-P-GI-2.9KW Gasoline Inverter is built for users needing robust and portable power. Whether you're powering tools, small appliances, or backup essentials, this inverter delivers consistent performance with quiet operation and fuel efficiency. Ideal for both home and outdoor use, it brings reliable energy in a lightweight package."
+                },
+                {
+                "title": "Engineered for Endurance and Efficiency",
+                "text": "Equipped with a 5 HP OHV air-cooled engine and a permanent magnet alternator, the BON-P-GI-2.9KW is designed for durability and long life. It features a 4.5-liter fuel tank offering 4.2 hours of operation at 50% load. The manual starting system with optional electric start ensures ease of use, and the engine is protected with a 0.58-liter oil capacity for optimal lubrication."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-gi-2.9kw-1.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-gi-2.9kw-1.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/gasoline-inverter-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": true,
+            "workshopManualUrl": "https://bonhoeffermachines.com/en/public/workshop_pdf/gasoline-inverter-workshop-manual.pdf",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 36,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Voltage", "value": "120-60 Hz" },
+                { "label": "Frequency", "value": "50 or 60 Hz" },
+                { "label": "Maximum fuel tank size", "value": "4.5 Liters" },
+                { "label": "Operating time at 50% load", "value": "4.2 hours" },
+                { "label": "Alternator material", "value": "Permanent Magnet" },
+                { "label": "Engine", "value": "5 HP (OHV, air-cooled)" },
+                { "label": "Oil capacity", "value": "0.58 Liters" },
+                { "label": "Starting system", "value": "Manual (Optional Electric)" }
+            ],
+            "features": [
+                "OHV design enhances combustion efficiency",
+                "More power. Same legendary quality",
+                "Power for refrigerators, hair dryer, small AC units, and much more",
+                "Lightweight and compact",
+                "Fuel Efficient & Environmentally Friendly",
+                "Highly heat conductivity products with 100% copper winding",
+                "Super quiet operation"
+            ]
+        },
+        "BON-P-GI-3.5KW": {
+            "name": "Gasoline Inverter",
+            "model": "BON-P-GI-3.5KW",
+            "description": [
+                {
+                "title": "High-Capacity, Quiet Power Solution",
+                "text": "The BON-P-GI-3.5KW gasoline inverter generator is built for users seeking a compact yet powerful and efficient energy source. Whether you're using it for outdoor activities, emergency backup, or worksite power, this inverter delivers excellent runtime and reliability in a highly portable design."
+                },
+                {
+                "title": "Enhanced Efficiency and Durability",
+                "text": "Equipped with a 7.5 HP OHV air-cooled engine and a permanent magnet alternator, the BON-P-GI-3.5KW provides stable energy at 120V 60Hz. Its 7.8-liter fuel tank supports up to 7.5 hours of runtime at 50% load. The generator starts manually by default with optional electric start capability and is designed to remain fuel-efficient and environmentally friendly while ensuring long-term durability."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-gi-3.5kw-1.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-gi-3.5kw-1.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/gasoline-inverter-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": true,
+            "workshopManualUrl": "https://bonhoeffermachines.com/en/public/workshop_pdf/gasoline-inverter-workshop-manual.pdf",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 36,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Voltage", "value": "120-60 Hz" },
+                { "label": "Frequency", "value": "50 or 60 Hz" },
+                { "label": "Maximum fuel tank size", "value": "7.8 Liters" },
+                { "label": "Operating time at 50% load", "value": "7.5 hours" },
+                { "label": "Alternator material", "value": "Permanent Magnet" },
+                { "label": "Engine", "value": "7.5 HP (OHV, air cooled)" },
+                { "label": "Oil capacity", "value": "0.60 Liters" },
+                { "label": "Starting system", "value": "Manual (Optional Electric)" }
+            ],
+            "features": [
+                "OHV design enhances combustion efficiency",
+                "More power. Same legendary quality",
+                "Power for refrigerators, hair dryer, small AC units, and much more",
+                "Lightweight and compact",
+                "Fuel Efficient & Environmentally Friendly",
+                "Highly heat conductivity products with 100% copper winding",
+                "Super quiet operation"
+            ]
+        },
+        "BON-P-GI-3.8KW": {
+            "name": "Gasoline Inverter",
+            "model": "BON-P-GI-3.8KW",
+            "description": [
+                {
+                "title": "Portable Inverter for Powerful and Silent Operation",
+                "text": "The BON-P-GI-3.8KW gasoline inverter generator offers robust performance in a compact and quiet design. With a strong 7.5 HP OHV air-cooled engine and permanent magnet alternator, this generator delivers dependable power while maintaining fuel efficiency and low noise levels."
+                },
+                {
+                "title": "Tested Reliability with Advanced Features",
+                "text": "This inverter features a 7.8-liter fuel tank offering up to 7.5 hours of runtime at 50% load. It has been tested for durability with 500-hour operating tests, 10,000 ignition cycles, waterproofing, vibration resistance, and low temperature starting. It starts manually by default with optional electric start and maintains low noise at ≤70 dB from 7 meters, making it ideal for both indoor and outdoor applications."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1746535420_39249f08558bb85b82e4.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-showcase-bon-p-gi-3.8kw-1.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/gasoline-inverter-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1739257792_430619f9868b10edc1cd.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1739257806_65fbc0540471d74c114a.webp",
+            "isWorkshopManual": true,
+            "workshopManualUrl": "https://bonhoeffermachines.com/en/public/workshop_pdf/gasoline-inverter-workshop-manual.pdf",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-GI-3.8KW.pdf",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 36,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Voltage", "value": "120-60 Hz" },
+                { "label": "Frequency", "value": "50 or 60 Hz" },
+                { "label": "Maximum fuel tank size", "value": "7.8 Liters" },
+                { "label": "Operating time at 50% load", "value": "7.5 hours" },
+                { "label": "Alternator material", "value": "Permanent Magnet" },
+                { "label": "Engine", "value": "7.5 HP (OHV, air cooled)" },
+                { "label": "Oil capacity", "value": "0.60 Liters" },
+                { "label": "Starting system", "value": "Manual (Optional Electric)" },
+                { "label": "Noise dB (A) (7 m)", "value": "≤70" },
+                { "label": "Operating test at rated power", "value": "500 h" },
+                { "label": "Ignition test", "value": "10000 times" },
+                { "label": "Waterproof test", "value": "YES" },
+                { "label": "Tilt test", "value": "YES" },
+                { "label": "Vibration test", "value": "YES" },
+                { "label": "Low temperature test", "value": "15-5 electric start" }
+            ],
+            "features": [
+                "OHV design enhances combustion efficiency",
+                "More power. Same legendary quality",
+                "Power for refrigerators, hair dryer, small AC units, and much more",
+                "Lightweight and compact",
+                "Fuel Efficient & Environmentally Friendly",
+                "Highly heat conductivity products with 100% copper winding",
+                "Super quiet operation"
+            ]
+        },
+        "BON-P-GI-5.5KW": {
+            "name": "Gasoline Inverter",
+            "model": "BON-P-GI-5.5KW",
+            "description": [
+                {
+                "title": "Heavy-Duty Inverter Generator for Versatile Applications",
+                "text": "The BON-P-GI-5.5KW inverter generator from Bonhoeffer offers a powerful 10 HP OHV air-cooled engine capable of delivering reliable energy for a variety of demanding tasks. Ideal for backup, commercial, or field use, it runs quietly and efficiently, making it a dependable solution where portable power is needed."
+                },
+                {
+                "title": "Extended Runtime and Efficient Operation",
+                "text": "This generator features a 17.5-liter fuel tank, allowing it to run for up to 5.3 hours at 50% load. Its electric start system enhances user convenience, and the permanent magnet alternator ensures stable performance. Built with efficiency and endurance in mind, this inverter is suitable for both indoor and outdoor use."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-gi-5.5kw-1.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-gi-5.5kw-1.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/gasoline-inverter-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": true,
+            "workshopManualUrl": "https://bonhoeffermachines.com/en/public/workshop_pdf/gasoline-inverter-workshop-manual.pdf",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 36,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Voltage", "value": "120-60 Hz" },
+                { "label": "Frequency", "value": "50 or 60 Hz" },
+                { "label": "Maximum fuel tank size", "value": "17.5 Liters" },
+                { "label": "Operating time at 50% load", "value": "5.3 hours" },
+                { "label": "Alternator material", "value": "Permanent Magnet" },
+                { "label": "Engine", "value": "10 HP (OHV, air cooled)" },
+                { "label": "Oil capacity", "value": "0.60 Liters" },
+                { "label": "Starting system", "value": "Electric" }
+            ],
+            "features": [
+                "OHV design enhances combustion efficiency",
+                "More power. Same legendary quality",
+                "Power for refrigerators, hair dryer, small AC units, and much more",
+                "Lightweight and compact",
+                "Fuel Efficient & Environmentally Friendly",
+                "Highly heat conductivity products with 100% copper winding",
+                "Super quiet operation"
+            ]
+        },
+        "BON-P-GI-7.5KW": {
+            "name": "Gasoline Inverter",
+            "model": "BON-P-GI-7.5KW",
+            "description": [
+                {
+                "title": "Powerful and Reliable Inverter Generator for High Demands",
+                "text": "The BON-P-GI-7.5KW from Bonhoeffer is engineered to handle larger power needs with ease. With a 16 HP OHV air-cooled engine and a large 26-liter fuel tank, it delivers stable and uninterrupted power for up to 8 hours at 50% load. Ideal for both home and heavy-duty applications, this unit offers long runtime and robust performance."
+                },
+                {
+                "title": "Built for Endurance and Quiet Operation",
+                "text": "Featuring a permanent magnet alternator, electric start, and a noise level of ≤77 dB(A) at 7 meters, the BON-P-GI-7.5KW combines functionality with comfort. Its OHV engine ensures efficient combustion, and the design supports high thermal conductivity with 100% copper winding for enhanced durability and safety."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-gi-7.5kw.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-gi-7.5kw.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/gasoline-inverter-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": true,
+            "workshopManualUrl": "https://bonhoeffermachines.com/en/public/workshop_pdf/gasoline-inverter-workshop-manual.pdf",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 36,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Voltage", "value": "120-60 Hz" },
+                { "label": "Frequency", "value": "50 or 60 Hz" },
+                { "label": "Maximum fuel tank size", "value": "26 Liters" },
+                { "label": "Running time at 50% load", "value": "8 hours" },
+                { "label": "Alternator material", "value": "Permanent Magnet" },
+                { "label": "Engine", "value": "16 HP (OHV, air cooled)" },
+                { "label": "Oil capacity", "value": "0.60 Liters" },
+                { "label": "Starting system", "value": "Electric" },
+                { "label": "Noise dB(A) (7 m)", "value": "≤77" }
+            ],
+            "features": [
+                "OHV design enhances combustion efficiency",
+                "More power. Same legendary quality",
+                "Power for refrigerators, hair dryer, small AC units, and much more",
+                "Lightweight and compact",
+                "Fuel Efficient & Environmentally Friendly",
+                "Highly heat conductivity products with 100% copper winding",
+                "Super quiet operation"
+            ]
+        }
       },
 
-      "tiller": {
-
+      "gasoline-tiller": {
+        "BON-DI-950": {
+            "name": "Power Weeder And Tiller",
+            "model": "BON-DI-950",
+            "description": [
+                {
+                "title": "Power Weeder: Efficient Tilling and Cultivating Made Easy",
+                "text": "A power weeder is an indispensable tool for anyone looking to simplify the process of tilling and cultivating soil in gardens or fields. Designed to enhance productivity, it allows for efficient weed control and soil preparation with minimal physical effort. With a robust engine and user-friendly design, this machine can tackle tough soil conditions while ensuring even and effective cultivation. Perfect for both small and large-scale gardening, a power weeder saves time and effort, making it a must-have for farmers and garden enthusiasts alike."
+                },
+                {
+                "title": "Powerful Performance and Versatility: BON-DI-950",
+                "text": "The BON-DI-950 features the Bonhoeffer Engine, providing an impressive 5.8 KW of net power at 3600 rpm, perfect for demanding tasks. Its 418 cm³ cylinder displacement and oil bath air filter enhance efficiency and longevity, while the 6-liter fuel tank ensures extended operation without frequent refuelling. The weeder operates at a rotational speed ranging from 62 to 145 rpm, allowing for precise control. With a direct clutch transmission offering two forward and one reverse step, along with a front-tine cultivator, this power weeder is designed for versatility and ease of use."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1728993439_2bc6972b77c1cbe9aca6.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-di-950.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-potatoes-harvesting-plough.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-ditching-blade.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-showcase-bon-tiller-950_silde_1.png",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-showcase-bon-tiller-950_silde_2.png"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/gasoline-tiller-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1727262862_e9ec9f4bafc7367a8af4.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1727262875_cb2a1398a121e84285c0.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-DI-950.pdf",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-DI-950.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-DI-950.pdf",
+            "warrantyTime": 36,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Engine name", "value": "Bonhoeffer Engine" },
+                { "label": "Cylinder displacement", "value": "418cm³ / 25.51 cu.inch" },
+                { "label": "Net power at preset rpm", "value": "5.8 KW @ 3600 rpm" },
+                { "label": "Air filter type", "value": "Oil bath" },
+                { "label": "Fuel tank volume", "value": "6 lit / 1.58 gal." },
+                { "label": "Fuel Type", "value": "Diesel" },
+                { "label": "Engine oil capacity (L)", "value": "1.65" },
+                { "label": "Engine oil type", "value": "SAE10W30" },
+                { "label": "Rotational speed (min/max)", "value": "62–145 rpm" },
+                { "label": "Transmission type", "value": "Direct Clutch" },
+                { "label": "Transmission steps forward", "value": "2" },
+                { "label": "Transmission steps reverse", "value": "1" },
+                { "label": "Transmission oil capacity (L)", "value": "3" },
+                { "label": "Transmission oil type", "value": "SAE10W30" },
+                { "label": "Cultivator type", "value": "Front-tine" }
+            ],
+            "features": [
+                "Reliable Bonhoeffer diesel engine ensures powerful performance.",
+                "AUX PTO enables use of accessories like pumps, generators, and sprayers.",
+                "Vertical height handle adjustment for operator comfort.",
+                "Front lifting handle for easy movement in hilly areas.",
+                "Convenient wheel kit enhances accessory use and transport.",
+                "Dual wet air filter supplies clean air, extending maintenance intervals.",
+                "Robust gearbox ensures performance in varying conditions with added housing cover.",
+                "Large working width and high depth for efficient inter-cultivation and soil preparation."
+            ]
+        },
+        "BON-GT-500B": {
+            "name": "Power Weeder And Tiller",
+            "model": "BON-GT-500B",
+            "description": [
+                {
+                "title": "Compact and Efficient Power Weeder",
+                "text": "The BON-GT-500B is an efficient gasoline tiller designed for soil cultivation, weeding, and inter-cropping operations. It features a powerful Bonhoeffer 4-stroke OHV petrol engine, optimized for high performance and fuel efficiency. Compact yet durable, it is suitable for use in a wide variety of agricultural and gardening tasks, making it a reliable companion for farmers and landscapers."
+                },
+                {
+                "title": "Smart Engineering with Advanced Features",
+                "text": "This machine comes with a transparent 1.1L fuel tank for easy level monitoring and a robust chain/manual transmission with two forward gears. Equipped with a vertical handle adjustment system, front lifting handle, and a double air filtration system, the BON-GT-500B ensures operational comfort and long service life. Its adjustable working width and 18-tine configuration support precision tilling for different crop and soil needs."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1742968311_63d03d1426c7a3ac04c5.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-gt-500b.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-ditching-blade.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-potatoes-harvesting-plough.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/gasoline-tiller-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1727335912_71bc6ad29288a8f2e193.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1727335928_6c7bc20d80ecae1fbc40.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-GT-500B-ENGLISH-MANUAL.pdf",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-GT-500B.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-GT-500B.pdf",
+            "warrantyTime": 36,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Engine manufacturer", "value": "Bonoeffer Engine" },
+                { "label": "Engine type", "value": "OHV" },
+                { "label": "Engine name", "value": "BONHOEFFER" },
+                { "label": "Cylinder displacement", "value": "149 cm³ / 2.99 cu.inch" },
+                { "label": "Net power at preset rpm", "value": "2.7kW / 3.5HP @ 3600 rpm" },
+                { "label": "Fuel tank volume", "value": "1.1 lit / 0.29 gal." },
+                { "label": "Fuel Type", "value": "Gasoline" },
+                { "label": "Engine oil capacity (L)", "value": "0.5" },
+                { "label": "Transmission type", "value": "Chain/Manual" },
+                { "label": "Transmission steps forward", "value": "2" },
+                { "label": "Cultivator type", "value": "Front-tine" },
+                { "label": "Number of tines", "value": "18" }
+            ],
+            "features": [
+                "Reliable Bonhoeffer 4 Stroke OHV air-cooled petrol engine for powerful performance.",
+                "Transparent fuel tank enables quick and easy monitoring of fuel levels.",
+                "Vertical height handle adjustment for customized operator comfort.",
+                "Front lifting handle allows convenient handling in hilly terrain.",
+                "Convenient wheel kit enhances mobility and accessory usage.",
+                "Double air filtration system ensures clean intake for extended engine life.",
+                "Robust gearbox supports performance in challenging working conditions.",
+                "Adjustable working width and depth allows precision tilling between 10-20 inches."
+            ]
+        },
+        "BON-GT-500S": {
+            "name": "Power Weeder And Tiller",
+            "model": "BON-GT-500S",
+            "description": [
+                {
+                "title": "Simplify Your Farming with an Efficient Power Weeder",
+                "text": "A power weeder is an essential tool designed to make farming easier by automating weed removal and preparing the soil for planting. It reduces the physical strain of manual weeding, saving time and effort while promoting healthier crop growth. Whether you're managing a small or medium-sized plot, a power weeder delivers consistent and reliable results. It is an invaluable addition to your farming equipment. For dependable performance and long-lasting quality, Bonhoeffer's Power Weeder is the right choice for your fields."
+                },
+                {
+                "title": "Compact Design for Precise Performance",
+                "text": "The BON-GT-500S is a mini gasoline cultivator tailored for precision and efficiency. Its adjustable tillage width of 300-500 mm and a tillage depth of 100 mm make it perfect for small to medium plots, offering flexibility to suit various soil conditions. With a robust belt and chain transmission system, it ensures smooth operation and durability. This compact and easy-to-handle machine is ideal for navigating tight spaces and achieving thorough soil preparation. Built for reliability, the BON-GT-500S is your trusted partner in farming."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1747312191_fda786ba8ac33feb599f.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-gt-500s.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/gasoline-tiller-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1738152757_944dafb79b9df3960a4f.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1738152765_20705e18c88db6bd569d.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-GT-500S.pdf",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 36,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Product", "value": "Mini gasoline cultivator" },
+                { "label": "Tillage width", "value": "300" },
+                { "label": "Tillage depth", "value": "80" },
+                { "label": "Transmission type", "value": "Belt + Chain" },
+                { "label": "Handle Adjustment", "value": "Up & Down" },
+                { "label": "Motor", "value": "5HP" },
+                { "label": "Max Fuel Tank Size", "value": "1.2(L)" },
+                { "label": "Gearbox oil capacity", "value": "0.15 Liters" },
+                { "label": "Engine oil capacity", "value": "0.5 Litres" },
+                { "label": "Blade type", "value": "3-3 dry - Land blade" }
+            ],
+            "features": [
+                "Reliable Bonhoeffer 4 Stroke OHV air cooled Petrol Engine ensures powerful performance.",
+                "Transparent fuel tank allows effortless visibility of fuel levels for uninterrupted operation.",
+                "Vertical height handle adjustment for operator convenience.",
+                "Front lifting handle assists with lifting and shifting on uneven terrain.",
+                "Convenient wheel kit improves accessory usage and transport efficiency.",
+                "Double air filtration system supplies fresh, dust-free air to the carburetor for superior performance.",
+                "Robust gearbox supports smooth performance in various working conditions.",
+                "Adjustable working width & depth suitable for inter-cultivation and soil prep between 10-20 inches."
+            ]
+        },
+        "BON-GT-900": {
+            "name": "Power Weeder And Tiller",
+            "model": "BON-GT-900",
+            "description": [
+                {
+                "title": "Boost Your Productivity with a Reliable Power Weeder",
+                "text": "A power weeder is a versatile tool designed to reduce the effort of weeding and soil preparation, making farming tasks more manageable. It replaces the manual strain of weeding with an efficient and faster alternative, ensuring better soil health and crop growth. Ideal for fields of all sizes, a power weeder increases productivity and helps farmers save valuable time. Bonhoeffer's Power Weeder is built to provide dependable performance that meets the needs of hardworking farmers."
+                },
+                {
+                "title": "Built for High Efficiency and Durability",
+                "text": "The BON-GT-900 is a mini gasoline cultivator designed to handle demanding tasks with ease. Featuring an impressive tillage width of 950 mm and a tillage depth of 100 mm, it covers larger areas in less time, making it ideal for medium to large fields. Its all-gear transmission system ensures maximum durability and smooth performance, even in challenging soil conditions. With its robust design and user-friendly operation, the BON-GT-900 is a reliable partner for efficient farming."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1747312173_1c652045c204b58d2bd6.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-gt-900.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-gt-900.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/gasoline-tiller-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1738153043_14a4a101ac12aee45124.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1738153051_fcd64718b5c5054df742.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-GT-900.pdf",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 36,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Product", "value": "Mini gasoline cultivator" },
+                { "label": "Tillage width", "value": "950" },
+                { "label": "Tillage depth", "value": "100" },
+                { "label": "Transmission Type", "value": "All Gear" }
+            ],
+            "features": [
+                "Reliable Bonhoeffer 4 Stroke OHV air cooled Petrol Engine ensures powerful performance.",
+                "Transparent fuel tank allows effortless visibility of fuel levels for uninterrupted operation.",
+                "Vertical height handle adjustment for operator convenience.",
+                "Front lifting handle assists with lifting and shifting on uneven terrain.",
+                "Convenient wheel kit improves accessory usage and transport efficiency.",
+                "Double air filtration system supplies fresh, dust-free air to the carburetor for superior performance.",
+                "Robust gear box ensures consistent drivability in various conditions.",
+                "Adjustable working width & depth suitable for inter-cultivation and soil prep between 10-20 inches."
+            ]
+        },
+        "BON-GT-950T": {
+            "name": "Power Weeder And Tiller",
+            "model": "BON-GT-950T",
+            "description": [
+                {
+                "title": "Unleashing the Power of Efficient Weeding for Farming Needs",
+                "text": "A power weeder is a versatile agricultural tool designed to efficiently remove weeds from fields and gardens. It uses a powerful engine to drive rotating blades or tines that cut through soil and uproot unwanted plants. This machine saves time and labour compared to manual weeding, making it ideal for farmers. Power weeders can also improve soil aeration and promote healthy crop growth. Bonhoeffer Machines offers top-quality power weeders that combine durability and ease of use, helping farmers efficiently manage weeds and boost crop productivity."
+                },
+                {
+                "title": "Transform Your Farming Experience with Advanced Weeding Solutions",
+                "text": "The Bonhoeffer BON-GT-950T gasoline power weeder is designed for exceptional performance and ease of use in various farming tasks. Equipped with a powerful engine, it delivers robust torque for efficient soil cultivation and weed management. Its adjustable tilling depth allows for tailored soil preparation, ensuring optimal conditions for crop growth. The ergonomic handle design enhances comfort during operation, reducing fatigue for users. Additionally, its durable construction ensures longevity, making it a reliable choice for both small-scale and larger farming operations."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1732703652_59d08d6c4778aceb611f.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-6-bon-gt-1050t.png",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-ditching-blade.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-potatoes-harvesting-plough.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/gasoline-tiller-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1727336237_212b6664febd956db74a.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1727336248_4bd9991fb43dfd316399.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-GT-950T-ENGLISH-MANUAL.pdf",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-GT-950T.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-GT-950T.pdf",
+            "warrantyTime": 36,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Engine name", "value": "BONHOEFFER ENGINE" },
+                { "label": "Cylinder displacement", "value": "208cm³ / 12.69 cu.inch" },
+                { "label": "Net power at preset rpm", "value": "5.22 kW @ 3200 rpm" },
+                { "label": "Air filter type", "value": "Dry & Oil bath" },
+                { "label": "Fuel tank volume", "value": "2.5 lit / 0.66 gal." },
+                { "label": "Fuel Type", "value": "Gasoline" },
+                { "label": "Engine oil capacity (L)", "value": "0.6" },
+                { "label": "Engine oil type", "value": "SAE10W30" },
+                { "label": "Rotational speed m/s", "value": "0.1- 0.3" },
+                { "label": "Transmission type", "value": "Gear Transmission" },
+                { "label": "Transmission steps forward", "value": "2" },
+                { "label": "Transmission steps reverse", "value": "1" },
+                { "label": "Transmission oil capacity (L)", "value": "1.6" },
+                { "label": "Transmission oil type", "value": "SAE10W30" },
+                { "label": "Cultivator type", "value": "Front-tine" }
+            ],
+            "features": [
+                "Reliable Bonhoeffer 4 Stroke OHV air cooled Petrol Engine ensures powerful performance.",
+                "Transparent fuel tank allows effortless visibility of fuel levels for uninterrupted operation.",
+                "Vertical height handle adjustment for operator convenience.",
+                "Front lifting handle assists with lifting and shifting on uneven terrain.",
+                "Convenient wheel kit improves accessory usage and transport efficiency.",
+                "Double air filtration system supplies fresh, dust-free air to the carburetor for superior performance.",
+                "Robust gear box ensures consistent drivability in various conditions.",
+                "Adjustable working width & depth suitable for inter-cultivation and soil prep between 10-20 inches."
+            ]
+        },
+        "BON-GT-950C": {
+            "name": "Power Weeder And Tiller",
+            "model": "BON-GT-950C",
+            "description": [
+                {
+                "title": "Power Weeder: Revolutionizing Your Farming Experience",
+                "text": "The Power Weeder is a cutting-edge mini gasoline cultivator designed to enhance farming productivity and soil management. With its robust performance, it simplifies the weeding process, making it an essential tool for both small and large-scale agricultural operations. This machine is engineered for ease of use, allowing farmers to achieve optimal tillage results with minimal effort. Its compact design ensures manoeuvrability in tight spaces, making it ideal for diverse farming environments. One of the most efficient power weeders in the market place are provided by Bonhoeffer."
+                },
+                {
+                "title": "A Robust Machine Built for Efficiency and Versatility in Agriculture",
+                "text": "The BON-GT-950C boasts impressive technical specifications that make it a standout choice for modern farming needs. It features a tillage width of 1350 mm, enabling efficient coverage of larger areas in a single pass. With a tillage depth of 100 mm, it effectively aerates the soil, promoting healthy crop growth. The machine is equipped with a shifter system that allows for easy adjustments, ensuring versatility and adaptability to various soil conditions. This combination of features makes the BON-GT-950C an invaluable asset for enhancing agricultural productivity."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1734950036_8956225490a736c63652.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-gt-950c.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-gt-950c.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/gasoline-tiller-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1737634868_08f4c11348acd517ac44.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1737634876_73dc043aedfd2930f35e.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-GT-950C.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-GT-950C.pdf",
+            "warrantyTime": 36,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Product", "value": "Mini gasoline cultivator" },
+                { "label": "Tillage width", "value": "1350 mm" },
+                { "label": "Tillage depth", "value": "100 mm" },
+                { "label": "Shifter", "value": "-1.0.2.1" }
+            ],
+            "features": [
+                "Reliable Bonhoeffer 4 Stroke OHV air cooled Petrol Engine ensures powerful performance.",
+                "Transparent fuel tank allows effortless visibility of fuel levels for uninterrupted operation.",
+                "Vertical height handle adjustment for operator convenience.",
+                "Front lifting handle assists with lifting and shifting on uneven terrain.",
+                "Convenient wheel kit improves accessory usage and transport efficiency.",
+                "Double air filtration system supplies fresh, dust-free air to the carburetor for superior performance.",
+                "Robust gear box ensures consistent drivability in various conditions.",
+                "Adjustable working width & depth suitable for inter-cultivation and soil prep between 10-20 inches."
+            ]
+        }
       },
 
       "brush-cutter":{
@@ -2290,10 +3112,141 @@
             "This machine is started with recoil.",
             "Petrol engines, either two stroke, are used on the more powerful units."
           ]
+        },
+        "BON-P-BC45": {
+            "name": "Brush Cutter",
+            "model": "BON-P-BC45",
+            "description": [
+                {
+                "title": "Brush Cutter: Simplify Your Land Clearing Tasks",
+                "text": "A brush cutter is a robust tool built to handle the kind of tough vegetation that regular mowers can’t manage. Whether you’re dealing with thick grass, hardy weeds, or even small trees, this machine cuts through overgrowth with ease. Its ability to reach tight spots and deliver precise results makes it an excellent choice for keeping challenging areas neat and under control, offering dependable performance where it’s needed most. You can trust Bonhoeffer for one of the most reliable brush cutters."
+                },
+                {
+                "title": "Built to handle the tough vegetation that regular mowers can’t manage",
+                "text": "BON-P-BC45 is a hand-held brush cutter, powered by a 2-stroke engine with a maximum output of 1.6 kW at 7,500 rpm, ensuring reliable performance in heavy-duty tasks. The 920 cm³ fuel tank allows for longer operation with fewer refills. The machine reaches a maximum speed of 9,500 rpm, making it capable of cutting through dense vegetation. A gear ratio of 19:14, idle speed of 3,000 rpm, and clutch engagement at 4,200 rpm provide smooth operation and control. Weighing 8.7 kg, this model strikes the perfect balance between power and portability for professional-grade trimming tasks."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1724761858_b44bc49f86b9c82829f8.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-bc45.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-bc45.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/brush-cutter-banner.webp",
+            "isVideo": true,
+            "videoUrls": [
+                {
+                "title": "Unboxing & Installing",
+                "url": "https://www.youtube.com/embed/uXi0qvATLUM"
+                }
+            ],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1727179223_27bbff31c64fb4700951.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1727179232_2b5f4eb25d6a699b9070.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-BC45-ENGLISH-MANUAL.pdf",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-BC45.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-BC45.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Equipment mobility", "value": "Hand-held" },
+                { "label": "Engine type", "value": "2-stroke" },
+                { "label": "Maximum power", "value": "1.6 kW/7500min-1" },
+                { "label": "Fuel ratio", "value": "50:1" },
+                { "label": "Volumes of fuel tank", "value": "920cm³" },
+                { "label": "Engine displacement", "value": "44.8cm³" },
+                { "label": "Max engine speed for grass trimmer", "value": "9500 min-1" },
+                { "label": "Gear ratio", "value": "19:14" },
+                { "label": "Engine idling speed", "value": "3000min-1±300 min-1" },
+                { "label": "Clutch engagement speed", "value": "4200min-1" },
+                { "label": "Unit mass (empty tanks without cutting attachment)", "value": "8.7kg" }
+            ],
+            "features": [
+                "Brush cutter is a powered garden or agriculture tool used to trim weeds, small trees, and other foliage.",
+                "Used to harvest crops, trim grass, as well as clear/remove unwanted crops, catering to farmers' needs.",
+                "Capable of cutting weeds, trimming crops, small trees, grass, and parthenium.",
+                "Consumes only 500 ml of fuel in 1 hour, making it fuel efficient.",
+                "Various blades or trimmer heads can be attached for specific applications.",
+                "Typically used to cut tall grass (over 6\"–8\"), weeds, brush, shrubs, and woody material like stalks and saplings.",
+                "Equipped with a recoil start system.",
+                "Uses a petrol 2-stroke engine for powerful performance.",
+                "Optional accessories include a rotary weeder attachment."
+            ]
+        },
+
+        "BON-ET-BC53": {
+            "name": "Brush Cutter",
+            "model": "BON-ET-BC53",
+            "description": [
+                {
+                "title": "Brush Cutters: A Powerful Tool for Efficient Land Clearing",
+                "text": "A brush cutter is a rugged, high-performance tool crafted to tackle thick vegetation that regular mowers can’t handle. Ideal for trimming dense grass, stubborn weeds, and even small saplings, this versatile machine effortlessly powers through overgrown areas, offering precision and control in places that are hard to reach. Bonhoeffer provides one of the best brush cutters you can get in the market place."
+                },
+                {
+                "title": "Built for Reliability and Performance",
+                "text": "BON-ET-BC53 is powered by a robust 2-stroke, single-cylinder, air-cooled engine with a full crankshaft, delivering a displacement of 52.8cc. It boasts a maximum power of 1.85kW, making it capable of reaching up to 9500 rpm with a blade and 9300 rpm with a spool, providing efficient cutting speed. Equipped with a 950ml fuel tank and a 50:1 petrol-to-oil mix ratio, it ensures long runtime and optimal fuel usage."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1724761787_f50a855c16f072332602.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-et-bc53.webp"
+            ],
+            "isBannerImage": false,
+            "bannerImage": "",
+            "isVideo": true,
+            "videoUrls": [
+                {
+                "title": "Unboxing and Assembly",
+                "url": "https://www.youtube.com/embed/uXi0qvATLUM"
+                }
+            ],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/English-Manual-BON-ET-BC53.pdf",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-ET-BC53.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Engine", "value": "2 stroke, single cylinder, air cooled, full crankshaft" },
+                { "label": "Displacement (petrol)", "value": "52.8cc" },
+                { "label": "Maximum Power", "value": "2.7 HP" },
+                { "label": "Max engine speed (blade)", "value": "9500 rpm" },
+                { "label": "Max engine speed (spool)", "value": "9300 rpm" },
+                { "label": "Fuel tank capacity (petrol)", "value": "950 ml" },
+                { "label": "Fuel mix % (petrol)", "value": "50:1, petrol : oil" },
+                { "label": "Ignition coil (petrol)", "value": "Professional" },
+                { "label": "Flywheel", "value": "Professional" },
+                { "label": "Cylinder", "value": "Professional" },
+                { "label": "Spark plug type (petrol)", "value": "NGK - BPMR7A" },
+                { "label": "Starter (petrol)", "value": "Nikkari" },
+                { "label": "Sound Level", "value": "104 db" },
+                { "label": "Weight", "value": "7.5 kg" }
+            ],
+            "features": [
+                "Durable Construction: Rugged components and materials withstand demanding cutting environments, from forestry to landscaping tasks",
+                "Chain Brake Safety Feature: Provides an immediate stop to the chain during kickback, enhancing user safety",
+                "Adjustable Carburetor: Allows users to fine-tune the engine for optimal performance in different conditions, such as varying altitudes or temperatures",
+                "Lightweight and Compact Design: Easier to handle and maneuver, especially for extended use or in tight spaces",
+                "Easy-Start System: Features like a spring-assisted starter or decompression valve make starting the engine more effortless"
+            ]
         }
       },
 
-      "backpack-brush-cutter": {
+    "backpack-brush-cutter": {
         "BON-P-BP-BC45": {
           "name": "Backpack Brush Cutter",
           "model": "BON-P-BP-BC45",
@@ -2347,5 +3300,981 @@
           ],
           "features": []
         }
-      }
+    },
+
+    "multi-tool": {
+        "BON-P-MT45": {
+            "name": "Multi Tool",
+            "model": "BON-P-MT45",
+            "description": [
+                {
+                "title": "Powerful Multi-Tool for Diverse Gardening Needs",
+                "text": "BON-P-MT45 is a highly versatile garden multi-tool that combines the capabilities of several machines into one. With a powerful 44.8cc engine delivering 1.6kW at 7500rpm, it ensures strong performance whether trimming, cutting, or pruning. Its ergonomic design makes it efficient for both professional and domestic users. The machine supports multiple attachments, making it suitable for brush cutting, pole trimming, hedge trimming, and chainsaw work."
+                },
+                {
+                "title": "Designed for Efficiency and Versatility",
+                "text": "Equipped with a 920ml fuel tank and a fuel mixture ratio of 50:1, this tool ensures long runtime with minimal refueling. It features durable components like a 10-inch chain and bar, Φ26mm shaft, and a strong nylon head. The pole trimmer cuts with precision, while the brush cutter handles thick grass and small trees with ease. It is truly an all-in-one solution for demanding landscaping tasks."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/BON-P-MT33-en.png",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-mt45.webp"
+            ],
+            "isBannerImage": false,
+            "bannerImage": "",
+            "isVideo": true,
+            "videoUrls": [
+                {
+                "title": "Unboxing & Assembly",
+                "url": "https://www.youtube.com/embed/SONtEfIKfKc"
+                }
+            ],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1738585474_8dcf973bc35ecafc0bd2.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1738585486_10676b7c5d8320a3407b.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/English-Manual-BON-P-MT45.pdf",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-MT45.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-MT33-and-BON-P-MT45.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Engine displacement", "value": "44.8 cc" },
+                { "label": "Rated motor power", "value": "1.6KW/7500min-1" },
+                { "label": "Volumes of fuel tank", "value": "920ml" },
+                { "label": "Shaft diameter", "value": "Φ26mm" },
+                { "label": "Nylon head line", "value": "Dia.3.0mm*4m" },
+                { "label": "Nylon head cutting diameter", "value": "450mm" },
+                { "label": "3T blade", "value": "Thickness 2.0mm" },
+                { "label": "2T cutting dia.", "value": "305mm" },
+                { "label": "Pole trimmer cutting length", "value": "24mm" },
+                { "label": "Chain&Bar", "value": "10\"" },
+                { "label": "Chain pitch", "value": "1/4\"" },
+                { "label": "Chain guage", "value": "1.3mm" },
+                { "label": "Oil tank capacity", "value": "125ml" },
+                { "label": "Cutting dia", "value": "254mm" },
+                { "label": "Fuel mixture ratio", "value": "50:1" }
+            ],
+            "features": [
+                "High-powered 2-stroke engine for versatile applications.",
+                "All-in-one multi-tool for brush cutting, pole trimming, chainsaw tasks, and hedge trimming.",
+                "Professional-grade ignition coil, flywheel, and cylinder for reliable performance.",
+                "Compact design with Φ26mm shaft for ease of maneuverability.",
+                "Includes 10-inch chain saw attachment for pruning tasks.",
+                "Durable nylon head with 450mm cutting diameter for grass trimming.",
+                "Fuel-efficient with 920ml tank and 50:1 petrol-oil mix.",
+                "Chain pitch 1/4\" and gauge 1.3mm for efficient wood cutting.",
+                "Perfect tool for gardeners, landscapers, and farmers."
+            ]
+        }
+    },
+
+    "chainsaw":{
+        "BON-P-CS40": {
+            "name": "Chainsaw",
+            "model": "BON-P-CS40",
+            "description": [
+                {
+                "title": "Powerful Chainsaw for Professional Wood Cutting",
+                "text": "The BON-P-CS40 chainsaw is designed for both professionals and homeowners who demand performance and reliability. Powered by a 40cc single-cylinder, air-cooled, 2-stroke petrol engine delivering 2.1 HP, this chainsaw provides the power needed to tackle challenging tasks like felling trees, trimming branches, and cutting firewood. Its 16-inch bar and robust chain offer superior cutting capacity, while the lightweight 5 kg design ensures maneuverability without fatigue."
+                },
+                {
+                "title": "Lightweight, Reliable, and Easy to Use",
+                "text": "With a recoil starter for quick ignition and a diaphragm-type carburettor for consistent fuel delivery, the BON-P-CS40 ensures hassle-free operation. It includes safety features like a chain brake to protect users during kickbacks. Designed to operate at a maximum speed of 12,100 RPM, this chainsaw combines efficiency with user safety. Its durable construction, lightweight design, and easy-start system make it ideal for forestry, landscaping, and home use."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1724330022_31159d8f72727010f621.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-cs40-1.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-cs40-2.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-cs40-3.webp"
+            ],
+            "isBannerImage": false,
+            "bannerImage": "",
+            "isVideo": true,
+            "videoUrls": [
+                {
+                "title": "Unboxing & Assembly",
+                "url": "https://www.youtube.com/embed/liWqkRWv1NA"
+                }
+            ],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1727179965_a64292bd5ac0eb33ae4f.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1727179976_399cb90b809fb7b63295.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-CS40-ENGLISH-MANUAL.pdf",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-CS40.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-CS40.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Engine", "value": "Single Cylinder, Air-Cooled, 2-Stroke, PETROL, 40cc" },
+                { "label": "Output Power", "value": "2.1 HP" },
+                { "label": "Chain Oil", "value": "SAE 10W30" },
+                { "label": "Carburettor", "value": "Diaphragm Type" },
+                { "label": "Rotor Direction", "value": "Counter Clockwise" },
+                { "label": "Method of Starting", "value": "Recoil Starter" },
+                { "label": "Chain (Pitch x Gauge)", "value": "3/8" },
+                { "label": "Bar Length", "value": "16\"" },
+                { "label": "Weight", "value": "5 Kg" },
+                { "label": "Max Speed", "value": "12100 RPM" },
+                { "label": "Fuel mixture ratio", "value": "50:1" }
+            ],
+            "features": [
+                "Durable construction for heavy-duty tasks.",
+                "Chain Brake Safety Feature provides immediate chain stop during kickback.",
+                "Adjustable diaphragm carburetor for optimal performance in varying conditions.",
+                "Lightweight and compact for easier handling over extended use.",
+                "Recoil Starter with spring-assisted mechanism for easy start.",
+                "16-inch bar paired with 3/8-inch pitch chain for efficient wood cutting.",
+                "Maximum speed of 12100 RPM for fast and clean cuts.",
+                "Robust engine delivering 2.1 HP output power for tough jobs.",
+                "Ideal for forestry, landscaping, or domestic wood cutting tasks."
+            ]
+        },
+        "BON-P-CS55": {
+            "name": "Chainsaw",
+            "model": "BON-P-CS55",
+            "description": [
+                {
+                "title": "Chainsaw: The Ultimate Solution for Quick and Precise Wood Cutting",
+                "text": "The BON-P-CS55 Chainsaw is an essential tool for professionals and homeowners who need powerful, reliable cutting. Powered by a 54.6 cc, single-cylinder, air-cooled, 2-stroke petrol engine, it delivers a strong 3.4 HP to tackle demanding tasks like tree felling, trimming, and firewood preparation. The 20-inch bar paired with a 3/8 chain ensures precise, clean cuts even in the toughest conditions."
+                },
+                {
+                "title": "Power-Packed Precision for Every Cut",
+                "text": "With a maximum speed of 12,500 RPM and a robust recoil starter, the BON-P-CS55 offers quick ignition and smooth operation. It features a diaphragm-type carburettor for reliable fuel delivery, durable construction, and safety measures like a chain brake for enhanced user protection. Weighing only 6 kg, this chainsaw is lightweight yet durable, designed for efficiency, control, and long-term use in both professional and domestic tasks."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1743157980_819df75f0aa1d26a80b5.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-cs55-1.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-cs55-2.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-cs55-3.webp"
+            ],
+            "isBannerImage": false,
+            "bannerImage": "",
+            "isVideo": true,
+            "videoUrls": [
+                {
+                "title": "Unboxing & Assembly",
+                "url": "https://www.youtube.com/embed/0LgroT7-yT0"
+                }
+            ],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-CS55.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Engine", "value": "Single Cylinder, Air-Cooled, 2-Stroke, PETROL, 54.6 cc" },
+                { "label": "Output Power", "value": "3.4 HP" },
+                { "label": "Chain Oil", "value": "SAE 10W30" },
+                { "label": "Carburettor", "value": "Diaphragm Type" },
+                { "label": "Rotor Direction", "value": "Counter Clockwise" },
+                { "label": "Method of Starting", "value": "Recoil Starter" },
+                { "label": "Chain (Pitch x Gauge)", "value": "3/8" },
+                { "label": "Bar Length", "value": "20\"" },
+                { "label": "Weight", "value": "6 Kg" },
+                { "label": "Max Speed", "value": "12500 RPM" },
+                { "label": "Fuel mixture ratio", "value": "50:1" },
+                { "label": "Displacement", "value": "55cc" }
+            ],
+            "features": [
+                "Durable construction for heavy-duty forestry and landscaping work.",
+                "Chain Brake Safety Feature ensures immediate stop during kickback.",
+                "Adjustable diaphragm carburetor for optimal performance in various conditions.",
+                "Lightweight and compact for easy handling and maneuverability.",
+                "Easy-start recoil system for reliable starting every time.",
+                "High output power of 3.4 HP for demanding cutting jobs.",
+                "20-inch bar paired with a 3/8 pitch chain for efficient and precise cuts.",
+                "Max speed of 12500 RPM offers faster and smoother cutting experience."
+            ]
+        },
+        "BON-P-CS65": {
+            "name": "Chainsaw",
+            "model": "BON-P-CS65",
+            "description": [
+                {
+                "title": "Chainsaw: Your Go-To Tool for Fast and Accurate Woodwork",
+                "text": "The BON-P-CS65 Chainsaw is a robust, high-performance machine designed to handle tasks like tree felling, branch trimming, and firewood cutting with precision and ease. Whether you are a professional or a homeowner, this chainsaw is engineered to offer reliable cutting power with minimal effort."
+                },
+                {
+                "title": "Unmatched Power and Durability for Heavy-Duty Tasks",
+                "text": "Powered by a 65 cc, single-cylinder, air-cooled, 2-stroke petrol engine, the BON-P-CS65 delivers an outstanding 4.6 HP output. Equipped with a 24-inch bar length and 3/8 chain pitch, it provides maximum cutting efficiency. With a max speed of 13,000 RPM and weighing just 7 kg, it balances performance with manoeuvrability, making it an ideal choice for heavy-duty forestry and landscaping jobs."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1724330116_9e8d988e70b6b4d762f9.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-cs55-1.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-cs55-2.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-cs55-3.webp"
+            ],
+            "isBannerImage": false,
+            "bannerImage": "",
+            "isVideo": true,
+            "videoUrls": [
+                {
+                "title": "Unboxing & Assembling",
+                "url": "https://www.youtube.com/embed/rAvvLhWMtoo"
+                }
+            ],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1727246067_261acf38915f7ae47fb2.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1727246077_d71f6e323ed8b528d917.webp",
+            "isWorkshopManual": true,
+            "workshopManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-CS65-ENGLISH-MANUAL.pdf",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-CS65-ENGLISH-MANUAL.pdf",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-CS65.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-CS65.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Engine", "value": "Single Cylinder, Air-Cooled, 2-Stroke, PETROL, 65 cc" },
+                { "label": "Output Power", "value": "4.6 HP" },
+                { "label": "Chain Oil", "value": "SAE 10W30" },
+                { "label": "Carburettor", "value": "Diaphragm Type" },
+                { "label": "Rotor Direction", "value": "Counter Clockwise" },
+                { "label": "Method of Starting", "value": "Recoil Starter" },
+                { "label": "Chain (Pitch x Gauge)", "value": "3/8" },
+                { "label": "Bar Length", "value": "24\"" },
+                { "label": "Weight", "value": "7 Kg" },
+                { "label": "Max Speed", "value": "13000 RPM" },
+                { "label": "Fuel mixture ratio", "value": "50:1" }
+            ],
+            "features": [
+                "Durable construction built for rigorous forestry and landscaping work.",
+                "Chain Brake Safety Feature enhances operator protection against kickback.",
+                "Adjustable diaphragm carburettor for peak engine efficiency across varying conditions.",
+                "Lightweight and compact design for enhanced manoeuvrability.",
+                "Easy-start system featuring a recoil starter for quick ignition.",
+                "High power output of 4.6 HP for handling tough cutting tasks.",
+                "24-inch bar and 3/8 pitch chain for optimal cutting performance.",
+                "Reaches a maximum speed of 13000 RPM, delivering fast, efficient cuts."
+            ]
+        },
+        "BON-P-CS92": {
+            "name": "Chainsaw",
+            "model": "BON-P-CS92",
+            "description": [
+                {
+                "title": "Chainsaw: Enhance Your Tree Cutting and Woodwork Efficiency",
+                "text": "The BON-P-CS92 Chainsaw is designed for serious tree cutting and woodwork tasks, offering unmatched power and reliability. Whether you are a professional logger, landscaper, or property owner, this machine simplifies tasks like tree felling, trimming, and firewood cutting with ease."
+                },
+                {
+                "title": "Why Bonhoeffer Chainsaws are Perfect for Heavy-Duty Cutting Tasks?",
+                "text": "With a powerful 7.1 HP motor, a massive 36-inch guide bar, and a 3/8 saw chain, the BON-P-CS92 chainsaw is engineered to handle the toughest jobs. It features an 825 ml fuel tank and a 360 ml engine oil tank for extended operations. Its maximum revolution speed of 12,500 RPM ensures quick, efficient cuts, while the adjustable automatic chain lubrication keeps it running smoothly throughout."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1724330168_7ceecc52bb170d56a3ec.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-cs92-2.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/chainsaw-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1737117034_f5c80df013d67f825923.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1737360574_7a35b96ba784e8bfd49a.webp",
+            "isWorkshopManual": true,
+            "workshopManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-CS92.pdf",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-CS92.pdf",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-CS92.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-CS92.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Motor", "value": "7.1 HP" },
+                { "label": "Guide bar", "value": "36\"" },
+                { "label": "Saw chain", "value": "3/8" },
+                { "label": "Fuel tank capacity", "value": "825 ml" },
+                { "label": "Engine oil tank capacity", "value": "360 ml" },
+                { "label": "Maximum revolution", "value": "12500 RPM" },
+                { "label": "Fuel mixture ratio", "value": "50:1" },
+                { "label": "Lubrication", "value": "Adjustable automatic chain lubrication" },
+                { "label": "Instruction manual", "value": "1 piece" },
+                { "label": "Tool kit", "value": "1 set" },
+                { "label": "Fuel mixture bottle", "value": "1 piece x 2 liters" }
+            ],
+            "features": [
+                "Durable construction built to withstand the most demanding forestry and landscaping tasks.",
+                "Chain brake safety feature for instant stopping during kickback situations.",
+                "Adjustable carburetor for fine-tuning engine performance based on various conditions.",
+                "Lightweight and ergonomic design for easier handling despite the large guide bar.",
+                "Easy-start system with recoil starter and optional decompression for reduced starting effort.",
+                "Massive 36-inch guide bar for cutting large trees with precision.",
+                "Powerful 7.1 HP motor delivers unmatched performance for professional-grade cutting.",
+                "Automatic chain lubrication with adjustable settings enhances durability and efficiency."
+            ]
+        }
+    },
+    "hedge-trimmer":{
+        "BON-P-HT-23": {
+            "name": "Hedge Trimmer",
+            "model": "BON-P-HT23",
+            "description": [
+                {
+                "title": "Efficient and Easy Hedge Trimming",
+                "text": "The BON-P-HT23 Hedge Trimmer is designed to handle all your trimming needs with ease. Whether shaping hedges, cutting branches, or managing garden boundaries, this lightweight and powerful trimmer delivers superior performance with minimal effort."
+                },
+                {
+                "title": "Compact, Quiet, and User-Friendly",
+                "text": "Powered by a 1.2 HP engine with a 22.5 cm³ capacity, this trimmer offers an optimal balance between power and control. Its low noise level of 95 dB(A) and effective anti-vibration dampeners provide a comfortable and fatigue-free experience. The Smart Start feature and fuel pump ensure hassle-free starting every time."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-ht23.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-ht23.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-ht23.webp"
+            ],
+            "isBannerImage": false,
+            "bannerImage": "",
+            "isVideo": true,
+            "videoUrls": [
+                {
+                "title": "Unboxing & Assembly",
+                "url": "https://www.youtube.com/embed/YQF1CTd3Zeo"
+                }
+            ],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-HT23.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Capacity", "value": "22.5 cm³" },
+                { "label": "Power", "value": "1.2 HP" },
+                { "label": "Fuel mixture ratio", "value": "50:1" },
+                { "label": "Tank capacity", "value": "450 ml" },
+                { "label": "Trimming length", "value": "600 mm" },
+                { "label": "Weight", "value": "6 kg" },
+                { "label": "Measurement uncertainty (sound)", "value": "3 dB(A)" },
+                { "label": "Measured sound power level", "value": "95 dB(A)" },
+                { "label": "Measurement uncertainty (vibration)", "value": "1.5 m/s²" }
+            ],
+            "features": [
+                "Quiet engine minimizes noise for a peaceful working environment.",
+                "Smart Start technology reduces starter cord resistance by 40% for easier starts.",
+                "Auto return stop switch resets to ON for hassle-free restarting.",
+                "Integrated fuel pump for simple and quick starting.",
+                "Effective anti-vibration dampeners reduce strain on hands and arms.",
+                "Lightweight design with powerful performance for precision trimming."
+            ]
+        }
+    },
+    "blower":{
+        "BON-P-BBL53": {
+            "name": "Backpack Blower",
+            "model": "BON-P-BBL53",
+            "description": [
+                {
+                "title": "Backpack blowers: perfect for all your outdoor cleaning needs",
+                "text": "A backpack blower is a powerful gardening tool designed for efficiently clearing leaves, debris, and grass clippings from lawns, driveways, and gardens. It features a comfortable harness that distributes weight evenly across the back, allowing for extended use without fatigue. The blower operates with a high-speed fan that generates strong air currents, making it easy to move even heavy debris. Ideal for both residential and commercial use, backpack blowers are versatile and can handle various outdoor cleaning tasks with ease. Bonhoeffer offers high-quality backpack blowers to enhance your landscaping efficiency."
+                },
+                {
+                "title": "Built for durability and high performance in outdoor tasks",
+                "text": "The BON-P-BBL53 backpack blower is equipped with a robust 3 HP, 2-stroke engine that delivers exceptional performance for all your outdoor cleaning needs. With a maximum air volume of 1450 m³/h and an impressive air speed of 78 m/s, it efficiently clears leaves and debris in no time. The engine operates at a maximum speed of 6700 rpm, ensuring powerful airflow for effective cleaning. With a fuel tank capacity of 1300 ml and a guaranteed sound power level of 114 dB (A), this blower combines power and convenience, making it an essential tool for any landscaping task."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1727333637_1e35b9cfaa06ec5a3795.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-bbl53.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-bbl53.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-3-bon-p-bbl53.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/blower-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1727334784_606774fdcc7d63dca7b9.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1727334792_45106de0d1c85a5b03ad.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/English-Manual-BON-P-BBL53.pdf",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-BBL53.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-BBL53.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Engine", "value": "3 HP" },
+                { "label": "Engine type", "value": "2-stroke" },
+                { "label": "Maximum air volume", "value": "1450 m³/h" },
+                { "label": "Maximum air speed", "value": "78 m/s" },
+                { "label": "Maximum engine speed", "value": "6700 rpm" },
+                { "label": "Starter", "value": "Easy Starter" },
+                { "label": "Spark Plug", "value": "NGK BPMR7A" },
+                { "label": "Guaranteed sound power LwA", "value": "114 dB(A)" },
+                { "label": "Fuel tank", "value": "1300 ml" }
+            ],
+            "features": [
+                "Low Vib® Technology: Engine dampeners reduce vibrations for added comfort.",
+                "Impressive blowing power with a high-efficiency fan and X-Torq® engine.",
+                "Ergonomically designed handle with adjustable position and rubber grip for comfort.",
+                "Powerful and reliable 3 HP 2-stroke engine with easy starting feature.",
+                "Large 1300 ml fuel tank supports longer operations without frequent refueling."
+            ]
+        },
+        "BON-P-BL26": {
+            "name": "Handheld Blower",
+            "model": "BON-P-BL26",
+            "description": [
+                {
+                "title": "Handheld Blower: Compact and Efficient",
+                "text": "The BON-P-BL26 handheld blower is designed for lightweight and efficient outdoor cleaning tasks. Ideal for clearing leaves, dust, and debris from small gardens, patios, and driveways, this compact blower provides powerful air output while being easy to handle."
+                },
+                {
+                "title": "High Air Speed in a Compact Form",
+                "text": "Powered by a 3 HP, 2-stroke air-cooled engine, the BON-P-BL26 delivers a maximum airspeed of 78 m/s and 900W power at 6700 rpm. With a fuel tank capacity of 1300 ml, it is efficient for short to medium cleaning jobs. The ergonomic design supports comfortable operation with the option of using a round or flat nozzle."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-bl26.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-bl26.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-bl26.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-3-bon-p-bl26.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/blower-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-BL26.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Engine", "value": "1.2 HP" },
+                { "label": "Product Description", "value": "Blower" },
+                { "label": "Engine type", "value": "2-stroke, single-cylinder, air-cooled" },
+                { "label": "Maximum power", "value": "900W @ 8200rpm" },
+                { "label": "Maximum air speed", "value": "250 km/h" },
+                { "label": "Suction capacity", "value": "N.A" },
+                { "label": "Guaranteed sound power LwA", "value": "110 dB (A)" },
+                { "label": "Fuel tank", "value": "400 ml" },
+                { "label": "Mulch ratio", "value": "N.A" },
+                { "label": "Dust bag capacity", "value": "N.A" },
+                { "label": "Features", "value": "Blower only, can fit round nozzle or flat nozzle" }
+            ],
+            "features": [
+                "Compact and lightweight design for easy handling.",
+                "Powerful air speed of 250 km/h ideal for leaves and dust.",
+                "Ergonomic handle with vibration reduction for comfort.",
+                "Option to use with either a round or flat nozzle for different tasks.",
+                "Low fuel consumption with 400 ml tank, perfect for small areas."
+            ]
+        },
+        "BON-P-BLV26": {
+            "name": "Vacuum, Mulcher & Blower",
+            "model": "BON-P-BLV26",
+            "description": [
+                {
+                "title": "Efficient Outdoor Maintenance with Bonhoeffer Blowers",
+                "text": "A blower is a versatile gardening tool designed for clearing leaves, debris, and dust from various surfaces. Unlike backpack blowers, normal blowers are lightweight and easy to manoeuvre, ideal for smaller tasks around the yard. Bonhoeffer offers reliable blowers that combine power and convenience for effective outdoor maintenance."
+                },
+                {
+                "title": "Bonhoeffer 3-in-1 Vacuum, Mulcher & Blower: Versatile Power for Outdoor Clean-up",
+                "text": "The BON-P-BLV26 is a versatile 3-in-1 tool with blower, vacuum, and mulching functions. It has a piston displacement of 25.4 cm³ and power output of 0.9 KW. With a maximum airspeed of 260 km/h and suction capacity of 810 m³/h, it handles heavy-duty tasks easily. Its 10:1 mulching ratio and 50L dust bag efficiently reduce waste. Lightweight at 5.8 kg, it’s designed for both convenience and performance."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-showcase-bon-p-blv26.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-showcase-bon-p-blv26.webp"
+            ],
+            "isBannerImage": false,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/blower-banner.webp",
+            "isVideo": true,
+            "videoUrls": [
+                {
+                "url": "https://www.youtube.com/embed/ZqO5vS1sXgU",
+                "title": "Unboxing and Assembly"
+                },
+                {
+                "url": "https://www.youtube.com/embed/wlQdNJid3iE",
+                "title": "Working Video"
+                }
+            ],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1727692050_14eb8eb5cdd50b105d18.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1727692057_1ef1276e43b3e1faf4d7.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-BLV26.pdf",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-BLV26.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-BLV26.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Product Name", "value": "Vacuum & blower (3 in 1)" },
+                { "label": "Piston displacement cm³", "value": "25.4" },
+                { "label": "Power KW", "value": "0.9" },
+                { "label": "Fuel tank volume ml", "value": "400" },
+                { "label": "Maximum air speed km/h", "value": "260" },
+                { "label": "Petrol/oil ratio", "value": "40:1" },
+                { "label": "Suction capacity (for vacuum) m³/h", "value": "810" },
+                { "label": "Mulching ratio (for vacuum)", "value": "10:1" },
+                { "label": "Dust bag (for vacuum) L", "value": "50" },
+                { "label": "Noise dB(A)", "value": "110" },
+                { "label": "N.W. kgs", "value": "5.8" }
+            ],
+            "features": [
+                "The fan housing's clever design ensures the air stream aligns with the handle, greatly enhancing maneuverability.",
+                "3-in-1 Functionality: Blower, Vacuum, and Mulcher for versatile yard maintenance.",
+                "High suction power with a 50L dust bag capacity.",
+                "Powerful air speed of 260 km/h for efficient debris clearing.",
+                "Effective 10:1 mulching ratio reduces debris volume significantly."
+            ]
+        }
+    },
+    "earth-auger":{
+        "BON-P-EA63": {
+            "name": "Earth Auger",
+            "model": "BON-P-EA63",
+            "description": [
+                {
+                "title": "Drill Through the Toughest Grounds with Earth Auger",
+                "text": "Digging holes in hard surfaces is often labour-intensive and time-consuming. The Earth Auger is designed to efficiently drill through both soft and rocky terrains. Featuring a powerful engine and circular blades, it generates sufficient torque to penetrate tough surfaces. Ideal for forestry, construction, plantation, and farming, Bonhoeffer’s Earth Auger offers exceptional durability and performance."
+                },
+                {
+                "title": "Earth Auger is Engineered for the Toughest Tasks",
+                "text": "The BON-P-EA63 Earth Auger is powered by a 3HP engine delivering 9,600 RPM, driven by a 63cc motor. It features a 2-stroke engine with a 1000 ml fuel tank, enabling long-lasting operation. Compatible with drill bit sizes from 50mm to 300mm, it provides excellent versatility. Its air-cooled single-cylinder system ensures smooth, efficient, and durable performance."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1726059116_5d0b5c6d9b4dbc6e80db.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-ea68.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-ea68.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/earth-auger-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/BON-P-EA63.pdf",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 15,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Maximum power Output", "value": "3.0 HP" },
+                { "label": "Maximum output speed", "value": "9600 ± 300 rpm" },
+                { "label": "Maximum drill bit rotation speed", "value": "360 RPM" },
+                { "label": "Fuel tank capacity", "value": "1000 ml" },
+                { "label": "Transmission ratio", "value": "26.4:1" },
+                { "label": "Sprocket structure", "value": "Helical (rounded corner)" },
+                { "label": "Drill Bit Size", "value": "φ 50mm - 300mm" },
+                { "label": "Top Tip Type", "value": "Twist Type Top" },
+                { "label": "Displacement", "value": "68 CC" },
+                { "label": "Weight", "value": "9.5 Kg" }
+            ],
+            "features": [
+                "Earth Augers are highly powerful machines with strong torque, capable of handling roots or rocks in the ground.",
+                "Features a robust 2-stroke engine for maximum efficiency.",
+                "Designed for drilling holes in ground and soil using rotating metal pipes or rods with blades.",
+                "Powered by a 63cc motor with excellent fuel efficiency.",
+                "Consumes only 1300 ml of fuel per hour, making it economical.",
+                "Equipped with an air-cooled single-cylinder engine ensuring smooth and efficient operation."
+            ]
+        },
+        "BON-P-EA52": {
+            "name": "Earth Auger",
+            "model": "BON-P-EA52",
+            "description": [
+                {
+                "title": "High-Performance Earth Auger for Efficient Drilling",
+                "text": "An earth auger is a powerful tool designed to drill precise holes in various terrains, from soft soil to rocky surfaces. It simplifies labour-intensive tasks like digging for fence posts, tree planting, and construction projects, making it an essential tool for professionals in landscaping, agriculture, and construction. Engineered for efficiency, the Earth Auger allows for faster, more accurate digging with minimal effort. Bonhoeffer earth augers are built and tested for a range of tasks."
+                },
+                {
+                "title": "Durable Design with Helical Sprocket and Twisted Drill Bit",
+                "text": "The BON-P-EA52 is powered by a 3.0 HP engine, delivering impressive performance with a maximum output speed of 9600 ± 300 RPM and a drill rotation speed of 360 RPM. Equipped with a 1000 ml fuel tank, it provides ample runtime for demanding tasks. The auger features a transmission ratio of 26.4:1 and a durable helical sprocket structure, ensuring smooth operation. Designed with a standard drill bit size and a twisted-type upper tip, this machine is ideal for precise and efficient digging across a range of terrains."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1726059034_c21cffda614d3e85adc2.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-ea52.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/earth-auger-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": true,
+            "isCatalogueRight": true,
+            "catalougeLeft": "https://bonhoeffermachines.com/en/public/machines/specification_left_1725448296_56b49edad85d67021903.webp",
+            "catalougeRight": "https://bonhoeffermachines.com/en/public/machines/specification_light_1725448355_17b1701e8d95add8f68c.webp",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": true,
+            "brochureUrl": "https://bonhoeffermachines.com/en/public/pdfs_brochure/BON-P-EA52.pdf",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-EA52.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Motor", "value": "3.0 HP" },
+                { "label": "Maximum output speed", "value": "9600 ± 300 rpm" },
+                { "label": "Maximum drill rotation speed", "value": "360 RPM" },
+                { "label": "Fuel tank capacity", "value": "1000 ml" },
+                { "label": "Transmission ratio", "value": "26.4:1" },
+                { "label": "Sprocket structure", "value": "Helical (rounded corner)" },
+                { "label": "Drill bit size (standard)", "value": "φ 200 mm * 800mm" },
+                { "label": "Type of upper tip", "value": "Twisted type upper part" }
+            ],
+            "features": [
+                "Enhanced Engine Technology: Engines designed to consume less fuel while maintaining high performance.",
+                "Versatile Drill Bits with Quick-Change Mechanisms: Tools for faster and easier bit swaps.",
+                "Power Transmission: Provides better control and prevents overloading or stalling during operation.",
+                "Dual Handles: Ensures stability and easier control, especially for larger, heavier models.",
+                "Two-Stroke Engine: Most earth augers come with a gasoline-powered engine. Two-stroke engines are lightweight and powerful."
+            ]
+        },
+        "BON-P-EA159-4S": {
+            "name": "Earth Auger",
+            "model": "BON-P-EA159-4S",
+            "description": [
+                {
+                "title": "Drill Through the Toughest Grounds with Earth Auger",
+                "text": "Digging holes in challenging surfaces can be demanding and time-consuming. The Earth Auger is specifically designed to tackle both soft and rocky terrains with ease. Featuring a robust engine and advanced components, this device delivers the torque required to penetrate even the most stubborn surfaces. Perfect for forestry, construction, plantation, and farming, the Earth Auger is a vital tool for professionals. Bonhoeffer provides one of the most dependable earth augers available, engineered for superior durability and high performance."
+                },
+                {
+                "title": "Earth Auger Engineered for High Performance",
+                "text": "The BON-P-EA159-4S Earth Auger is equipped with a powerful 5 HP engine that delivers a maximum output speed of 3,800 RPM. This machine is built for efficiency, featuring a high-torque design with a maximum torque of 7 NM and an idle speed of 1,800 RPM. With a 1,600 ml fuel tank, you can complete your tasks with fewer refuelling interruptions. The auger supports drill bit sizes up to 500 mm, providing versatility for various applications. The device’s sprocket structure features helical (rounded corner) teeth, and the main gear contacts the output shaft via a spline. Earth auger by Bonhoeffer is engineered for durability and smooth operations."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/specification_dark_1726059034_c21cffda614d3e85adc2.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-p-ea159-4s.png"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/earth-auger-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-P-EA159-4S.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Engine", "value": "5 HP" },
+                { "label": "Maximum output speed", "value": "3800 rpm" },
+                { "label": "Fuel tank capacity", "value": "1600 ml" },
+                { "label": "Maximum torque", "value": "7 N.m" },
+                { "label": "Idle speed", "value": "1800 ± 200 rpm" },
+                { "label": "System startup", "value": "rollback" },
+                { "label": "Engine oil tank capacity", "value": "0.55L" },
+                { "label": "Recommended oil", "value": "SAE 10W-30" },
+                { "label": "Engine fuel tank capacity", "value": "1.3L" },
+                { "label": "Specific fuel consumption rate at rated power", "value": "410 g / kw.h" },
+                { "label": "Sprocket structure", "value": "helical (rounded corner)" },
+                { "label": "Main gear contact with output shaft", "value": "spline" },
+                { "label": "Output ratio", "value": "25 : 1" },
+                { "label": "Maximum driving capacity", "value": "drill bit ≤ φ 500 mm" },
+                { "label": "Recommend unit", "value": "auger bit de ≤φ 400 mm" }
+            ],
+            "features": [
+                "Enhanced Engine Technology: Engines designed to consume less fuel while maintaining high performance.",
+                "Versatile Drill Bits with Quick-Change Mechanisms: Tools for faster and easier bit swaps.",
+                "Power Transmission: Provides better control and prevents overloading or stalling during operation.",
+                "Dual Handles: Ensures stability and easier control, especially for larger, heavier models.",
+                "Two-Stroke Engine: Most earth augers come with a gasoline-powered engine. Two-stroke engines are lightweight and powerful."
+            ]
+        }
+    },
+    "water-pump-2-stroke":{
+        "BON-WP1.0-52-2S": {
+            "name": "Water Pump 2 Stroke",
+            "model": "BON-WP1.0-52-2S",
+            "description": [
+                {
+                "title": "Reliable Water Pump for Efficient Water Transfer",
+                "text": "The BON-WP1.0-52-2S is a compact and powerful 2-stroke water pump designed to handle water transfer tasks effectively. Whether you're irrigating farmland, draining water from construction sites, or managing garden water systems, this pump delivers consistent performance with a maximum flow of 10 m³/hour and a lift height of 26 meters. Its lightweight design and manual start make it easy to operate even in remote locations."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-wp1.0-52-2s.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-wp1.0-52-2s.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-wp1.0-52-2s.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-3-bon-wp1.0-52-2s.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-4-bon-wp1.0-52-2s.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-e-2s-26.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/waterpump-2stroke-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/BON-WP1.0-52-2S.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Engine", "value": "2.5 HP" },
+                { "label": "Engine type", "value": "2-stroke gasoline, air-cooled, single cylinder" },
+                { "label": "Flow", "value": "10 m³/hour" },
+                { "label": "Suction and discharge", "value": "1 INCH / 25.4 MM" },
+                { "label": "Pump lift", "value": "26 meters" },
+                { "label": "Suction height", "value": "6 meters" },
+                { "label": "Fuel tank capacity", "value": "1 liter" },
+                { "label": "Starting System", "value": "Manual" }
+            ],
+            "features": []
+        }
+    },
+    "engine-2-stroke":{
+        "BON-E-2S-23": {
+            "name": "2-Stroke Engine",
+            "model": "BON-E-2S-23",
+            "description": [
+                {
+                "title": "Compact 2-Stroke Engine for Hedge Trimmers",
+                "text": "The BON-E-2S-23 is a lightweight and efficient 2-stroke gasoline engine specifically designed for hedge trimmer applications. With 1 HP of power and a compact single-cylinder, air-cooled design, this engine delivers dependable performance in garden maintenance and trimming tasks."
+                },
+                {
+                "title": "Optimized for Smooth Starting and Consistent Output",
+                "text": "Featuring a recoil starter with an Easy Start feature, the BON-E-2S-23 ensures quick ignition and ease of use. It supports high-speed operation up to 10,000 RPM ± 500, and delivers torque between 1.1–1.2 Nm. Its 550 ml fuel tank ensures adequate runtime for residential and professional users alike."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-e-2s-23.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-e-2s-23.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/2-stroke-engine-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/ENGINE%202%20STROKE%20HIGH%20ROTATION%20PARTS.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Engine", "value": "1 HP" },
+                { "label": "Application", "value": "Suitable for hedge trimmers" },
+                { "label": "Engine Type", "value": "Single Cylinder, Air Cooled, 2 Stroke, Gasoline Engine" },
+                { "label": "Diameter x Stroke", "value": "33 x 28 mm" },
+                { "label": "Maximum Speed", "value": "10000 ± 500 rpm" },
+                { "label": "Maximum Torque", "value": "1.1-1.2 Nm" },
+                { "label": "Fuel Tank Capacity", "value": "550 ml" },
+                { "label": "Air Filter", "value": "Dry" },
+                { "label": "Spark plug", "value": "BM6A" },
+                { "label": "Boot", "value": "Recoil Start with Easy Start Feature" }
+            ],
+            "features": [
+                "Compact and lightweight engine ideal for hedge trimmers.",
+                "Recoil starter with Easy Start for hassle-free ignition.",
+                "High-speed performance with up to 10,000 RPM operation.",
+                "Dry air filter for better airflow and engine protection.",
+                "Designed for fuel efficiency and extended runtime.",
+                "Compatible with BM6A spark plugs for reliable firing.",
+                "Built to meet professional and residential trimming needs."
+            ]
+        },
+        "BON-E-2S-26": {
+            "name": "2-Stroke Engine",
+            "model": "BON-E-2S-26",
+            "description": [
+                {
+                "title": "Versatile Engine for Sprayers and Brush Cutters",
+                "text": "The BON-E-2S-26 is a powerful 2-stroke gasoline engine designed to deliver optimal performance in both brush cutters and backpack sprayers. With a 1.20 HP output, it offers the reliability and strength needed for intensive garden and agricultural tasks."
+                },
+                {
+                "title": "Reliable Performance with Compact Efficiency",
+                "text": "Featuring a single-cylinder, air-cooled design and a recoil starter with Easy Start functionality, this engine ensures smooth ignition and long-lasting operation. It operates at speeds up to 10,000 RPM and delivers maximum torque of 1.3–1.4 Nm. Its 550 ml fuel tank provides adequate runtime, while a dry air filter ensures clean airflow and efficient combustion."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-bon-e-2s-26.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-bon-e-2s-26.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/2-stroke-engine-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": false,
+            "userManualUrl": "",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": true,
+            "sparePartsUrl": "https://bonhoeffermachines.com/en/public/pdfs/ENGINE%202%20STROKE%20HIGH%20ROTATION%20PARTS.pdf",
+            "warrantyTime": 15,
+            "isFMTTI": false,
+            "specifications": [
+                { "label": "Engine", "value": "1.20 HP" },
+                { "label": "Application", "value": "Suitable for brush cutter, backpack sprayer" },
+                { "label": "Engine Type", "value": "Single Cylinder, Air Cooled, 2 Stroke, Gasoline Engine" },
+                { "label": "Diameter x Stroke", "value": "34 x 28 mm" },
+                { "label": "Maximum Speed", "value": "10000 ± 500 rpm" },
+                { "label": "Maximum Torque", "value": "1.3–1.4 Nm" },
+                { "label": "Fuel Tank Capacity", "value": "550 ml" },
+                { "label": "Air Filter", "value": "Dry" },
+                { "label": "Spark plug", "value": "BM6A" },
+                { "label": "Boot", "value": "Recoil Start with Easy Start Feature" }
+            ],
+            "features": [
+                "Compact 2-stroke engine designed for sprayers and brush cutters.",
+                "Delivers 1.20 HP power for medium-duty agricultural work.",
+                "Recoil Start with Easy Start for convenient ignition.",
+                "High-speed performance with up to 10,000 RPM operation.",
+                "Dry air filter ensures clean airflow and reduced maintenance.",
+                "Built for reliability and smooth power delivery in field use."
+            ]
+        }
+    },
+    "lawn-mower":{
+        "BON-P-LM22": {
+            "name": "Lawn Mower",
+            "model": "BON-P-LM22",
+            "description": [
+                {
+                "title": "Heavy-Duty Self-Propelled Lawn Mower",
+                "text": "The BON-P-LM22 is a self-propelled petrol lawn mower designed for efficient mowing of large lawns. Powered by the reliable Y170V OHV EURO V engine, this mower offers smooth operation with a cutting width of 508mm (20 inches). It features a robust steel deck, central height adjustment, and multiple discharge options, including rear discharge, side discharge, and mulching. The 65-litre grass collector and ergonomic design make it the perfect tool for both residential and commercial landscaping."
+                }
+            ],
+            "descriptionImage": "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-lm22.webp",
+            "showcaseImages": [
+                "https://bonhoeffermachines.com/en/public/machines/showcase-1-bon-p-lm22.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-2-bon-p-lm22.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-3-bon-p-lm22.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-4-bon-p-lm22.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-5-bon-p-lm22.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-6-bon-p-lm22.webp",
+                "https://bonhoeffermachines.com/en/public/machines/showcase-7-bon-p-lm22.webp"
+            ],
+            "isBannerImage": true,
+            "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/lawn-mower-banner.webp",
+            "isVideo": false,
+            "videoUrls": [],
+            "isCatalogueLeft": false,
+            "isCatalogueRight": false,
+            "catalougeLeft": "",
+            "catalougeRight": "",
+            "isWorkshopManual": false,
+            "workshopManualUrl": "",
+            "isUserManual": true,
+            "userManualUrl": "https://bonhoeffermachines.com/en/public/pdfs_usermanual/LAWN-MOWER-BON-P-LM-22-MANUAL.pdf",
+            "isBrochure": false,
+            "brochureUrl": "",
+            "isSpareParts": false,
+            "sparePartsUrl": "",
+            "warrantyTime": 15,
+            "isFMTTI": true,
+            "specifications": [
+                { "label": "Drive system", "value": "Self-propelled" },
+                { "label": "Engine model", "value": "Y170V OHV EURO V" },
+                { "label": "Engine power info (cc/kw/rpm)", "value": "170/3.6/2800" },
+                { "label": "Blade", "value": "4 WINGS BLADE" },
+                { "label": "Fuel tank volume (l)", "value": "0.9" },
+                { "label": "Oil volume (l)", "value": "0.5" },
+                { "label": "Deck material", "value": "Steel" },
+                { "label": "Cutting width (mm/inches)", "value": "508mm/20inches" },
+                { "label": "Cutting height adjustment", "value": "Central Height Adjustment" },
+                { "label": "Cutting height (mm)", "value": "25-75mm with 6 positions" },
+                { "label": "Wheel size (inches) (Front/rear)", "value": "8 inch (front)/11 inch (rear)" },
+                { "label": "Gearbox", "value": "General Transmissions" },
+                { "label": "Plastic front handle", "value": "Yes" },
+                { "label": "Function", "value": "Rear discharge, Side-discharge, Mulching" },
+                { "label": "Grass collector capacity (l)", "value": "65L" }
+            ],
+            "features": [
+                "Petrol Lawn Mower is the self-propelled solution to your lawn mowing problems.",
+                "Powerful lawn mower with 4-wing blade and 1600 Watt motor, featuring central height adjustment and 65 Litre grass collector capacity.",
+                "Heavy-duty self-propelled lawn mower with robust steel chassis, ideal for mowing large lawns."
+            ]
+        }
+    }
 }

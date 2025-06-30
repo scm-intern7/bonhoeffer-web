@@ -20,7 +20,7 @@ function ProductPage() {
         { name: "Gasoline Engine", slug: "gasoline-engine", image: "https://bonhoeffermachines.com/public/images/segment/2_MOTOR-DE-GASOLINA.webp" },
         { name: "Gasoline Generator", slug: "gasoline-generator", image: "https://bonhoeffermachines.com/public/images/segment/3_GENERADOR-DE-GASOLINA.webp" },
         { name: "Gasoline Inverter", slug: "gasoline-inverter", image: "https://bonhoeffermachines.com/public/images/segment/4_INVERSOR-DE-GASOLINA.webp" },
-        { name: "Tiller", slug: "tiller", image: "https://bonhoeffermachines.com/public/images/segment/5_MINI-CULTIVADOR-DE-GASOLIN.webp" }
+        { name: "Tiller", slug: "gasoline-tiller", image: "https://bonhoeffermachines.com/public/images/segment/5_MINI-CULTIVADOR-DE-GASOLIN.webp" }
       ]
     },
     {

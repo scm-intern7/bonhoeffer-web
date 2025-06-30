@@ -280,38 +280,67 @@ function ModelSpecificPage() {
         ? modelDetails.bannerImage[0]
         : modelDetails.bannerImage;
       return (
-        <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden mt-5">
-          <div className="absolute inset-0">
-            <Image
-              src={bannerSrc}
-              alt="Product Banner"
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="absolute inset-0 bg-black/70" />
-          </div>
-          <motion.div 
-            className="relative z-10 text-center text-white px-6"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
+        // <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden mt-5">
+        //   <div className="absolute inset-0">
+        //     <Image
+        //       src={bannerSrc}
+        //       alt="Product Banner"
+        //       fill
+        //       className="object-cover"
+        //       priority
+        //     />
+        //     <div className="absolute inset-0 bg-black/70" />
+        //   </div>
+        //   <motion.div 
+        //     className="relative z-10 text-center text-white px-6"
+        //     initial={{ opacity: 0, y: 50 }}
+        //     animate={{ opacity: 1, y: 0 }}
+        //     transition={{ duration: 1 }}
+        //   >
+        //     <motion.h1 
+        //       className="text-3xl md:text-5xl font-bold mb-4"
+        //       initial={{ opacity: 0, scale: 0.8 }}
+        //       animate={{ opacity: 1, scale: 1 }}
+        //       transition={{ duration: 1, delay: 0.3 }}
+        //     >
+        //       <span className="text-[#989b2e]">{modelDetails.name}</span>
+        //     </motion.h1>
+        //   </motion.div>
+        // </section>
+      <section className="relative h-[22vh] xs:h-[26vh] sm:h-[32vh] md:h-[38vh] lg:h-[44vh] min-h-[160px] sm:min-h-[200px] md:min-h-[260px] lg:min-h-[320px] flex items-center overflow-hidden mt-4 md:mt-5">
+        <div className="absolute inset-0">
+          <Image
+            src={bannerSrc}
+            alt="Product Banner"
+            fill
+            className="object-cover object-left md:object-center"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/10" />
+        </div>
+        <motion.div
+          className="relative z-10 text-white px-3 xs:px-4 sm:px-6 flex items-center h-full justify-start w-full"
+          style={{ left: 0 }}
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <motion.h1
+            className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-left w-full max-w-[90%] xs:max-w-[80%] md:max-w-[40%] pl-1 xs:pl-2 sm:pl-4 md:pl-12"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            style={{ maxWidth: '25%' }}
           >
-            <motion.h1 
-              className="text-3xl md:text-5xl font-bold mb-4"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: 0.3 }}
-            >
-              <span className="text-[#989b2e]">{modelDetails.name}</span>
-            </motion.h1>
-          </motion.div>
-        </section>
+            <span className="text-[#989b2e]">{modelDetails.name}</span>
+          </motion.h1>
+        </motion.div>
+      </section>
       );
     } else if (modelDetails.isVideo && Array.isArray(modelDetails.videoUrls) && modelDetails.videoUrls.length > 0) {
       // Video banner (YouTube embed) - handles multiple videos
       return (
-        <section className="relative min-h-[70vh] flex flex-col items-center justify-center overflow-hidden mt-5 py-12">
+        <section className="relative min-h-[70vh] flex flex-col items-center justify-center overflow-hidden mt-5 pt-12">
           
           <div className={`grid gap-6 w-full max-w-7xl px-6 ${
             modelDetails.videoUrls.length === 1 ? 'grid-cols-1 max-w-4xl' :
@@ -600,7 +629,7 @@ function ModelSpecificPage() {
               <div className="flex space-x-4 mb-8">
                 <button
                   onClick={() => setActiveView('specifications')}
-                  className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
+                  className={`px-6 py-3 rounded-lg font-medium transition-all cursor-pointer duration-300 ${
                     activeView === 'specifications'
                       ? 'bg-[#989b2e] text-white'
                       : 'bg-white/10 text-gray-300 hover:bg-white/20'
@@ -608,16 +637,18 @@ function ModelSpecificPage() {
                 >
                   Technical Specifications
                 </button>
-                <button
-                  onClick={() => setActiveView('features')}
-                  className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
-                    activeView === 'features'
-                      ? 'bg-[#989b2e] text-white'
-                      : 'bg-white/10 text-gray-300 hover:bg-white/20'
-                  }`}
-                >
-                  Special Features
-                </button>
+                {modelDetails.features && modelDetails.features.length > 0 && (
+                  <button
+                    onClick={() => setActiveView('features')}
+                    className={`px-6 py-3 rounded-lg font-medium transition-all cursor-pointer duration-300 ${
+                      activeView === 'features'
+                        ? 'bg-[#989b2e] text-white'
+                        : 'bg-white/10 text-gray-300 hover:bg-white/20'
+                    }`}
+                  >
+                    Special Features
+                  </button>
+                )}
               </div>
             </motion.div>
 
