@@ -689,7 +689,7 @@ function ModelSpecificPage() {
                   {modelDetails.specifications.map((spec, index) => (
                     <motion.div
                       key={index}
-                      className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4"
+                      className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-3"
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}

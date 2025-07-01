@@ -56,8 +56,8 @@ function ProductSpecificPage() {
       ],
       'brush-cutter': [
         { id: 1, name: 'BON-P-BC36', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-BC36.webp', feature: 'DISPLACEMENT 36 CC', link: '/product/brush-cutter/BON-P-BC36' },
-        { id: 2, name: 'BON-ET-BC53', image: 'https://bonhoeffermachines.com/en/public/machines/BON-ET-BC53.webp', feature: 'DISPLACEMENT 53 CC', link: '/product/brush-cutter/BON-ET-BC53' },
-        { id: 3, name: 'BON-P-BC45', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-BC45.webp', feature: 'DISPLACEMENT 45 CC', link: '/product/brush-cutter/BON-P-BC45' }
+        { id: 2, name: 'BON-P-BC45', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-BC45.webp', feature: 'DISPLACEMENT 45 CC', link: '/product/brush-cutter/BON-P-BC45' },
+        { id: 3, name: 'BON-ET-BC53', image: 'https://bonhoeffermachines.com/en/public/machines/BON-ET-BC53.webp', feature: 'DISPLACEMENT 53 CC', link: '/product/brush-cutter/BON-ET-BC53' }
       ],
       'multi-tool': [
         { id: 1, name: 'BON-P-MT45', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-MT45.webp', feature: 'Multi Tool', link: '/product/multi-tool/BON-P-MT45' }
@@ -103,8 +103,8 @@ function ProductSpecificPage() {
         { id: 3, name: 'BON-P-BLV26', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-BLV26.webp', feature: 'DISPLACEMENT 26 CC', link: '/product/blower/BON-P-BLV26' }
       ],
       'diesel-engine': [
-        { id: 1, name: 'BON-P-DE-5.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DE-5.5HP.webp', feature: 'POWER 5.5 HP', link: '/product/diesel-engine/BON-P-DE-5.5HP' },
-        { id: 2, name: 'BON-P-DE-5.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DE-5.5HP.webp', feature: 'POWER 5.0 HP', link: '/product/diesel-engine/BON-P-DE-5.0 HP' },
+        { id: 1, name: 'BON-P-DE-5.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DE-5.5HP.webp', feature: 'POWER 5.0 HP', link: '/product/diesel-engine/BON-P-DE-5.0 HP' },
+        { id: 2, name: 'BON-P-DE-5.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DE-5.5HP.webp', feature: 'POWER 5.5 HP', link: '/product/diesel-engine/BON-P-DE-5.5HP' },
         { id: 3, name: 'BON-P-DE-6.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DE-6.0HP.webp', feature: 'POWER 6.0 HP', link: '/product/diesel-engine/BON-P-DE-6.0HP' },
         { id: 4, name: 'BON-P-DE-9.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DE-9.0HP.webp', feature: 'POWER 9.0 HP', link: '/product/diesel-engine/BON-P-DE-9.0HP' },
         { id: 5, name: 'BON-P-DE-10.2HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DE-10.2HP.png', feature: 'POWER 10.2 HP', link: '/product/diesel-engine/BON-P-DE-10.2HP' },
@@ -127,8 +127,8 @@ function ProductSpecificPage() {
         { id: 5, name: 'BON-P-DWP3.0-10.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DW3.0-10.5HP-front.webp', feature: 'INLET / OUTLET- 3 INCHES- 10.5 HP', link: '/product/diesel-water-pump/BON-P-DWP3.0-10.5HP' }
       ],
       'earth-auger': [
-        { id: 1, name: 'BON-P-EA63', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-EA68.webp', feature: 'DISPLACEMENT 63 CC', link: '/product/earth-auger/BON-P-EA63' },
-        { id: 2, name: 'BON-P-EA52', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-EA52.webp', feature: 'DISPLACEMENT 52 CC', link: '/product/earth-auger/BON-P-EA52' },
+        { id: 1, name: 'BON-P-EA52', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-EA52.webp', feature: 'DISPLACEMENT 52 CC', link: '/product/earth-auger/BON-P-EA52' },
+        { id: 2, name: 'BON-P-EA63', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-EA68.webp', feature: 'DISPLACEMENT 63 CC', link: '/product/earth-auger/BON-P-EA63' },
         { id: 3, name: 'BON-P-EA159-4S', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-EA159-4S.webp', feature: 'DISPLACEMENT 159 CC- 4 STROKE', link: '/product/earth-auger/BON-P-EA159-4S' }
       ],
       'electric-pressure-washer': [
@@ -147,9 +147,9 @@ function ProductSpecificPage() {
       'submersible-pump': [
         { id: 1, name: 'BON-P-SP-0.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-SP-0.5HP.webp', feature: 'POWER 0.5 HP', link: '/product/submersible-pump/BON-P-SP-0.5HP' },
         { id: 2, name: 'BON-P-SP-1.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-SP-1.0HP.webp', feature: 'POWER 1.0 HP', link: '/product/submersible-pump/BON-P-SP-1.0HP' },
-        { id: 3, name: 'BON-P-SP-3.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-SP-3.0HP.webp', feature: 'POWER 3.0 HP', link: '/product/submersible-pump/BON-P-SP-3.0HP' },
+        { id: 3, name: 'BON-P-SP-1.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-SP-1.5HP.webp', feature: 'POWER 1.5 HP', link: '/product/submersible-pump/BON-P-SP-1.5HP' },
         { id: 4, name: 'BON-P-SP-2.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-SP-2.0HP.webp', feature: 'POWER 2.0 HP', link: '/product/submersible-pump/BON-P-SP-2.0HP' },
-        { id: 5, name: 'BON-P-SP-1.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-SP-1.5HP.webp', feature: 'POWER 1.5 HP', link: '/product/submersible-pump/BON-P-SP-1.5HP' }
+        { id: 5, name: 'BON-P-SP-3.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-SP-3.0HP.webp', feature: 'POWER 3.0 HP', link: '/product/submersible-pump/BON-P-SP-3.0HP' }
       ],
       'gasoline-tiller': [
         { id: 1, name: 'BON-DI-950', image: 'https://bonhoeffermachines.com/en/public/machines/BON-DI-950.webp', feature: 'POWER 10.0 HP', link: '/product/gasoline-tiller/BON-DI-950' },
@@ -164,24 +164,24 @@ function ProductSpecificPage() {
         { id: 2, name: 'BON-P-KS37', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-KS37.webp', feature: 'DISPLACEMENT 37 CC - 4 STROKE', link: '/product/knapsack-sprayer/BON-P-KS37' },
       ],
       'electric-motor': [
-        { id: 1, name: 'BON-EM-LRPM-1.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-LRPM-1.0HP.webp', feature: '' },
-        { id: 2, name: 'BON-EM-LRPM-2.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-LRPM-2.0HP.webp', feature: '' },
-        { id: 3, name: 'BON-EM-LRPM-3.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-LRPM-3.0HP.webp', feature: '' },
-        { id: 4, name: 'BON-EM-LRPM-4.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-LRPM-4.0HP.webp', feature: '' },
-        { id: 5, name: 'BON-EM-HRPM-1.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-HRPM-1.0HP.webp', feature: '' },
-        { id: 6, name: 'BON-EM-HRPM-2.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-HRPM-2.0HP.webp', feature: '' },
-        { id: 7, name: 'BON-EM-HRPM-3.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-HRPM-3.0HP.webp', feature: '' },
-        { id: 8, name: 'BON-EM-HRPM-4.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-HRPM-4.0HP.webp', feature: '' }
+        { id: 1, name: 'BON-EM-LRPM-1.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-LRPM-1.0HP.webp', feature: '', link: '/product/electric-motor/BON-EM-LRPM-1.0HP' },
+        { id: 2, name: 'BON-EM-LRPM-2.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-LRPM-2.0HP.webp', feature: '', link: '/product/electric-motor/BON-EM-LRPM-2.0HP' },
+        { id: 3, name: 'BON-EM-LRPM-3.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-LRPM-3.0HP.webp', feature: '', link: '/product/electric-motor/BON-EM-LRPM-3.0HP' },
+        { id: 4, name: 'BON-EM-LRPM-4.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-LRPM-4.0HP.webp', feature: '', link: '/product/electric-motor/BON-EM-LRPM-4.0HP' },
+        { id: 5, name: 'BON-EM-HRPM-1.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-HRPM-1.0HP.webp', feature: '', link: '/product/electric-motor/BON-EM-HRPM-1.0HP' },
+        { id: 6, name: 'BON-EM-HRPM-2.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-HRPM-2.0HP.webp', feature: '', link: '/product/electric-motor/BON-EM-HRPM-2.0HP' },
+        { id: 7, name: 'BON-EM-HRPM-3.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-HRPM-3.0HP.webp', feature: '', link: '/product/electric-motor/BON-EM-HRPM-3.0HP' },
+        { id: 8, name: 'BON-EM-HRPM-4.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-EM-HRPM-4.0HP.webp', feature: '', link: '/product/electric-motor/BON-EM-HRPM-4.0HP' },
       ],
       'centrifugal-pump': [
-        { id: 1, name: 'BON-P-CP-0.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-CP-0.50HP.webp', feature: 'POWER 0.5 HP' },
-        { id: 2, name: 'BON-P-CP-2.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-CP-2.0HP.webp', feature: 'POWER 2.0 HP' },
-        { id: 3, name: 'BON-P-CP-1.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/%20BON-P-CP-1.0HP.webp', feature: 'POWER 1.0 HP' }
+        { id: 1, name: 'BON-P-CP-0.5HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-CP-0.50HP.webp', feature: 'POWER 0.5 HP', link: '/product/centrifugal-pump/BON-P-CP-0.5HP' },
+        { id: 2, name: 'BON-P-CP-1.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/%20BON-P-CP-1.0HP.webp', feature: 'POWER 1.0 HP', link: '/product/centrifugal-pump/BON-P-CP-1.0HP' },
+        { id: 3, name: 'BON-P-CP-2.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-CP-2.0HP.webp', feature: 'POWER 2.0 HP', link: '/product/centrifugal-pump/BON-P-CP-2.0HP' },
       ],
       'welding-machines': [
-        { id: 1, name: 'BON-WM-DUAL-200A', image: 'https://bonhoeffermachines.com/en/public/machines/BON-WM-DUAL-200A.webp', feature: 'MAXIMUM CURRENT 200A' },
-        { id: 2, name: 'BON-WM-DUAL-130A', image: 'https://bonhoeffermachines.com/en/public/machines/BON-WM-DUAL-130A.webp', feature: 'MAXIMUM CURRENT 130A' },
-        { id: 3, name: 'BON-WM-DUAL-160A', image: 'https://bonhoeffermachines.com/en/public/machines/BON-WM-DUAL-160A.webp', feature: 'MAXIMUM CURRENT 160A' }
+        { id: 1, name: 'BON-WM-DUAL-130A', image: 'https://bonhoeffermachines.com/en/public/machines/BON-WM-DUAL-130A.webp', feature: 'MAXIMUM CURRENT 130A', link: '/product/welding-machines/BON-WM-DUAL-130A' },
+        { id: 2, name: 'BON-WM-DUAL-160A', image: 'https://bonhoeffermachines.com/en/public/machines/BON-WM-DUAL-160A.webp', feature: 'MAXIMUM CURRENT 160A', link: '/product/welding-machines/BON-WM-DUAL-160A' },
+        { id: 3, name: 'BON-WM-DUAL-200A', image: 'https://bonhoeffermachines.com/en/public/machines/BON-WM-DUAL-200A.webp', feature: 'MAXIMUM CURRENT 200A', link: '/product/welding-machines/BON-WM-DUAL-200A' },
       ],
       'tamping-rammer': [
         { id: 1, name: 'BON-P-TR-13.7KN-4.0HP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-TR-13.7KN-4.0HP.webp', feature: 'IMPACT FORCE 13.7 KN', link: '/product/tamping-rammer/BON-P-TR-13.7KN-4.0HP' },
@@ -220,24 +220,24 @@ function ProductSpecificPage() {
         { id: 2, name: 'BON-P-TF2L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-TF2L.webp', feature: 'CAPACITY 2L', link: '/product/thermal-fogger/BON-P-TF2L' }
       ],
       'gasoline-pressure-washer': [
-        { id: 1, name: 'BON-P-PW-G6.5HP-AP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PW-G6.5KW-AP.webp', feature: 'POWER 6.5 HP-AP' },
-        { id: 2, name: 'BON-P-PW-6.5HP-TP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PW-6.5HP-TP.webp', feature: 'POWER 6.5 HP' },
-        { id: 3, name: 'BON-P-PW-G6.5HP-TP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PW-G6.5HP-TP.webp', feature: 'POWER 6.5 HP' },
-        { id: 4, name: 'BON-P-PW-G9.0HP-TP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PW-G9.0HP-TP.webp', feature: 'POWER 9.0 HP' },
-        { id: 5, name: 'BON-P-PW-G13.0HP-TP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PW-G13.0HP-TP.webp', feature: 'POWER 13.0 HP' }
+        { id: 1, name: 'BON-P-PW-G6.5HP-AP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PW-G6.5KW-AP.webp', feature: 'POWER 6.5 HP-AP', link: '/product/gasoline-pressure-washer/BON-P-PW-G6.5HP-AP' },
+        { id: 2, name: 'BON-P-PW-6.5HP-TP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PW-6.5HP-TP.webp', feature: 'POWER 6.5 HP', link: '/product/gasoline-pressure-washer/BON-P-PW-6.5HP-TP' },
+        { id: 3, name: 'BON-P-PW-G6.5HP-TP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PW-G6.5HP-TP.webp', feature: 'POWER 6.5 HP', link: '/product/gasoline-pressure-washer/BON-P-PW-G6.5HP-TP' },
+        { id: 4, name: 'BON-P-PW-G9.0HP-TP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PW-G9.0HP-TP.webp', feature: 'POWER 9.0 HP', link: '/product/gasoline-pressure-washer/BON-P-PW-G9.0HP-TP' },
+        { id: 5, name: 'BON-P-PW-G13.0HP-TP', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-PW-G13.0HP-TP.webp', feature: 'POWER 13.0 HP', link: '/product/gasoline-pressure-washer/BON-P-PW-G13.0HP-TP' }
       ],
       'pressure-washer-home-use': [
-        { id: 1, name: 'BON-E-PW-1400W', image: 'https://bonhoeffermachines.com/en/public/machines/BON-E-PW-1400W.webp', feature: 'POWER 1400 W' },
-        { id: 2, name: 'BON-E-PW-1600W', image: 'https://bonhoeffermachines.com/en/public/machines/BON-E-PW-1600W.webp', feature: 'POWER 1600 W' },
-        { id: 3, name: 'BON-E-PW-2000W', image: 'https://bonhoeffermachines.com/en/public/machines/BON-E-PW-2000W.webp', feature: 'POWER 2000 W' }
+        { id: 1, name: 'BON-E-PW-1400W', image: 'https://bonhoeffermachines.com/en/public/machines/BON-E-PW-1400W.webp', feature: 'POWER 1400 W', link: '/product/pressure-washer-home-use/BON-E-PW-1400W' },
+        { id: 2, name: 'BON-E-PW-1600W', image: 'https://bonhoeffermachines.com/en/public/machines/BON-E-PW-1600W.webp', feature: 'POWER 1600 W', link: '/product/pressure-washer-home-use/BON-E-PW-1600W' },
+        { id: 3, name: 'BON-E-PW-2000W', image: 'https://bonhoeffermachines.com/en/public/machines/BON-E-PW-2000W.webp', feature: 'POWER 2000 W', link: '/product/pressure-washer-home-use/BON-E-PW-2000W' }
       ],
       'direct-driven-air-compressor': [
-        { id: 1, name: 'BON-P-DDAC-25L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DDAC-25L.webp', feature: 'CAPACITY 25L' },
-        { id: 2, name: 'BON-P-DDAC-50L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DDAC-50L.webp', feature: 'CAPACITY 50L' }
+        { id: 1, name: 'BON-P-DDAC-25L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DDAC-25L.webp', feature: 'CAPACITY 25L', link: '/product/direct-driven-air-compressor/BON-P-DDAC-25L' },
+        { id: 2, name: 'BON-P-DDAC-50L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-DDAC-50L.webp', feature: 'CAPACITY 50L', link: '/product/direct-driven-air-compressor/BON-P-DDAC-50L' },
       ],
       'vacuum-cleaner': [
-        { id: 1, name: 'BON-VC-1400W-30L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-VC-1400W-30L.webp', feature: 'CAPACITY 30L' },
-        { id: 2, name: 'BON-VC-1400W-50L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-VC-1400W-50L.webp', feature: 'CAPACITY 50L' }
+        { id: 1, name: 'BON-VC-1400W-30L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-VC-1400W-30L.webp', feature: 'CAPACITY 30L', link: '/product/vacuum-cleaner/BON-VC-1400W-30L' },
+        { id: 2, name: 'BON-VC-1400W-50L', image: 'https://bonhoeffermachines.com/en/public/machines/BON-VC-1400W-50L.webp', feature: 'CAPACITY 50L', link: '/product/vacuum-cleaner/BON-VC-1400W-50L' },
       ],
       'hedge-trimmer': [
         { id: 1, name: 'BON-P-HT-23CC', image: 'https://bonhoeffermachines.com/en/public/machines/BON-P-HT23.webp', feature: 'DISPLACEMENT 23 CC', link: '/product/hedge-trimmer/BON-P-HT-23' },
@@ -318,7 +318,7 @@ function ProductSpecificPage() {
       'mistduster': 'Mistduster',
       'thermal-fogger': 'Thermal Fogger',
       'gasoline-pressure-washer': 'Gasoline Pressure Washer',
-      'pressure-washer-home-use': 'Pressure Washer for Home Use',
+      'pressure-washer-home-use': 'Pressure Washer - Home',
       'vacuum-cleaner': 'Vacuum Cleaner',
       'solar-panel': 'Solar Panel',
       'submersible-pump': 'Submersible Pump',
@@ -349,7 +349,7 @@ function ProductSpecificPage() {
       'diesel-water-pump': 'https://bonhoeffermachines.com/en/public/product_banner/diesel-water-pump-banner.webp',
       'diesel-generator': 'https://bonhoeffermachines.com/en/public/product_banner/diesel-generator-banner.webp',
       'diesel-engine': 'https://bonhoeffermachines.com/en/public/product_banner/diesel-engine-banner.webp',
-      'pressure-washer': 'https://bonhoeffermachines.com/en/public/product_banner/gasoline-pressure-washer-banner.webp',
+      'gasoline-pressure-washer': 'https://bonhoeffermachines.com/en/public/product_banner/gasoline-pressure-washer-banner.webp',
       'pressure-washer-home-use': 'https://bonhoeffermachines.com/en/public/product_banner/pressure-washer-home-use-banner.webp',
       'direct-driven-air-compressor': 'https://bonhoeffermachines.com/en/public/product_banner/direct-driven-air-compressure-banner.webp',
       'commercial-vacuum': 'https://bonhoeffermachines.com/en/public/product_banner/vaCCum-cleaner-banner.webp',
@@ -388,7 +388,7 @@ function ProductSpecificPage() {
       'concrete-cutter': 'https://bonhoeffermachines.com/en/public/product_banner/concrete-cutter-banner.webp',
       'concrete-vibrator': 'https://bonhoeffermachines.com/en/public/product_banner/concrete-vibrator-banner.webp',
       'concrete-power-trowel': 'https://bonhoeffermachines.com/en/public/product_banner/power-trovel-banner.webp',
-      'vacuum-cleaner': 'https://bonhoeffermachines.com/en/public/product_banner/vaCCum-cleaner-banner.webp',
+      'vacuum-cleaner': 'https://bonhoeffermachines.com/en/public/product_banner/vaccum-cleaner-banner.webp',
       'thermal-fogger': 'https://bonhoeffermachines.com/en/public/product_banner/thermal-fogger-banner.webp',
     };
     return imageMap[slug] || 'https://bonhoeffermachines.com/public/product_banner/1-gasoline-water-pump.webp';
