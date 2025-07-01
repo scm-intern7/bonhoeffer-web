@@ -24,10 +24,10 @@ function Footer() {
       { href: "/fair", label: "Trade Fairs" }
     ],
     support: [
-      { href: "/support", label: "Support" },
+      { href: "/warranty-registration", label: "Warranty" },
       { href: "/certifications", label: "Certifications" },
       { href: "/downloads", label: "Downloads" },
-      // { href: "/faq", label: "FAQ" }
+      { href: "/sponsorship", label: "Sponsorship" }
     ]
   }
 

@@ -64,7 +64,7 @@ function Page() {
       <div className="block lg:hidden" style={{ height: '4em' }} aria-hidden="true" />
 
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden mt-5 px-4 sm:px-6 lg:px-8">
+      <section className="relative min-h-[65vh] flex items-center justify-center overflow-hidden mt-5 px-4 sm:px-6 lg:px-8">
         <div className="absolute inset-0">
           <Image
             src="https://bonhoeffermachines.com/public/images/about-new/About-us-new-banner.webp"
@@ -75,6 +75,20 @@ function Page() {
           />
           {/* <div className="absolute inset-0 bg-black/50" /> */}
         </div>
+
+        {/* Scroll Indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.2 }}
+          className="absolute bottom-1 left-1/2 -translate-x-1/2"
+        >
+          <div className="animate-bounce">
+            <svg className="w-10 h-10 text-[#989b2e]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </div>
+        </motion.div>
       </section>
 
       <section>  
