@@ -283,7 +283,7 @@ function ModelSpecificPage() {
                   {modelDetails.name}
                 </h2>
                 <div className="flex items-center space-x-4 mb-6">
-                  <span className="text-2xl font-bold text-[#989b2e]">{modelDetails.price}</span>
+                  {/* <span className="text-2xl font-bold text-[#989b2e]">{modelDetails.price}</span> */}
                   <span className="text-sm text-gray-400 bg-[#989b2e]/20 px-3 py-1 rounded-full">
                     {modelDetails.code}
                   </span>

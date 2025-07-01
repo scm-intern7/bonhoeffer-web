@@ -55,9 +55,9 @@ const fairCategories = [
 		]
 	},
 	{
-		name: 'India Fair',
-		slug: 'indian-fair',
-		location: 'India',
+		name: 'Rudrapur Fair',
+		slug: 'rudrapur-fair',
+		location: 'Rudrapur, India',
 		coverImage: 'https://bonhoeffermachines.com/en/public/events/webp/india-fair1.webp',
 		imageCount: 10,
 		images: [
@@ -78,14 +78,13 @@ const fairCategories = [
 		slug: 'coimbatore-fair',
 		location: 'Coimbatore, India',
 		coverImage: 'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider1.webp',
-		imageCount: 7,
+		imageCount: 6,
 		images: [
 			'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider1.webp',
 			'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider2.webp',
 			'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider3.webp',
 			'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider4.webp',
 			'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider5.webp',
-			'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider6.webp',
 			'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider7.webp'
 		]
 	},
@@ -197,12 +196,12 @@ export default function EventsPage() {
 					transition={{ duration: 0.8 }}
 				>
 					<motion.h1
-						className="text-3xl xs:text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-2 sm:mb-4"
+						className="text-3xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 sm:mb-4"
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ duration: 0.8, delay: 0.2 }}
 					>
-						Fairs Gallery
+						Fairs <span className='text-[#989b2e]'>Gallery</span>
 					</motion.h1>
 					<motion.p
 						className="text-base sm:text-lg text-gray-300 max-w-2xl sm:max-w-3xl mx-auto"

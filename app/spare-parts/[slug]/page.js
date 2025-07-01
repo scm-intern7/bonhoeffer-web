@@ -264,9 +264,9 @@ function PartSpecificPage() {
                   {model.compatible}
                 </p>
                 
-                <div className="flex items-center justify-between mb-4">
+                {/* <div className="flex items-center justify-between mb-4">
                   <span className="text-[#989b2e] font-bold text-lg">{model.price}</span>
-                </div>
+                </div> */}
                 
                 <Link 
                   href={`/spare-parts/${slug}/${model.code.toLowerCase()}`}

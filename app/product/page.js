@@ -382,7 +382,7 @@ function ProductPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-black/60" />
+          <div className="absolute inset-0 bg-black/70" />
         </div>
         
         <motion.div 
@@ -392,7 +392,7 @@ function ProductPage() {
           transition={{ duration: 1 }}
         >
           <motion.h1 
-            className="text-3xl xs:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6"
+            className="text-3xl xs:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
@@ -401,7 +401,7 @@ function ProductPage() {
           </motion.h1>
           
           <motion.p 
-            className="text-base xs:text-lg md:text-2xl max-w-2xl md:max-w-4xl mx-auto text-gray-300"
+            className="text-base md:text-2xl max-w-2xl md:max-w-4xl mx-auto text-gray-300"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
@@ -496,7 +496,7 @@ function ProductPage() {
       </section>
 
       {/* Introduction Text */}
-      <section className="py-8 sm:py-16 px-2 sm:px-6">
+      <section className="py-8 sm:pb-8 px-2 sm:px-6">
         <div className="max-w-6xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -524,7 +524,7 @@ function ProductPage() {
           <section key={category.id} className={`py-6 sm:py-10 px-2 sm:px-6`}>
             <div className="max-w-7xl mx-auto">
               <motion.div
-                className="text-center mb-6 sm:mb-12"
+                className="text-center mb-6 sm:mb-6"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -662,7 +662,7 @@ function ProductPage() {
             </p>
             <Link
               href="/contact-us"
-              className="inline-flex items-center bg-[#989b2e] hover:bg-[#8a8c20] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium text-base sm:text-lg transition-all duration-300"
+              className="inline-flex items-center bg-[#989b2e] hover:bg-[#8a8c20] text-white px-6 sm:px-4 py-3 sm:py-3 rounded-full font-medium text-base sm:text-lg transition-all duration-300"
             >
               Contact Our Experts
               <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

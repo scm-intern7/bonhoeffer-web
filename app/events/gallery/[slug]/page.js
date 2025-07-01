@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/navigation';
-import Header from '@/components/layouts/header';
 import BgLayout from '@/components/templates/bgLayout';
 
 // Fair data (same as in events page)
@@ -54,8 +53,8 @@ const fairCategories = [
     ]
   },
   {
-    name: 'India Fair',
-    slug: 'indian-fair',
+    name: 'Rudrapur Fair',
+    slug: 'rudrapur-fair',
     location: 'India',
     coverImage: 'https://bonhoeffermachines.com/en/public/events/webp/india-fair1.webp',
     imageCount: 10,
@@ -77,15 +76,14 @@ const fairCategories = [
     slug: 'coimbatore-fair',
     location: 'Coimbatore, India',
     coverImage: 'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider1.webp',
-    imageCount: 7,
+    imageCount: 6,
     images: [
       'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider1.webp',
       'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider2.webp',
       'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider3.webp',
       'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider4.webp',
       'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider5.webp',
-      'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider6.webp',
-      'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider7.webp'
+      'https://bonhoeffermachines.com/en/public/events/webp/coimbatore-slider7.webp',
     ]
   },
   {
@@ -191,7 +189,7 @@ const Lightbox = ({ images, currentIndex, onClose, onNext, onPrev }) => {
 
         {/* Navigation Arrows */}
         <button
-          className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 text-white p-2 sm:p-3 hover:bg-white/20 rounded-full transition-colors"
+          className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 text-white p-2 sm:p-3 bg-[#989b2e] hover:bg-[#989b2e]/70 cursor-pointer rounded-full transition-colors"
           onClick={(e) => { e.stopPropagation(); onPrev(); }}
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -200,7 +198,7 @@ const Lightbox = ({ images, currentIndex, onClose, onNext, onPrev }) => {
         </button>
 
         <button
-          className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 text-white p-2 sm:p-3 hover:bg-white/20 rounded-full transition-colors"
+          className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 text-white p-2 sm:p-3 bg-[#989b2e] hover:bg-[#989b2e]/70 cursor-pointer rounded-full transition-colors"
           onClick={(e) => { e.stopPropagation(); onNext(); }}
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -248,7 +246,7 @@ export default function FairGallery({ params }) {
             <h1 className="text-4xl font-bold mb-4">Fair Gallery Not Found</h1>
             <button 
               onClick={() => router.push('/events')}
-              className="bg-[#989b2e] hover:bg-[#7a7d24] px-6 py-3 rounded-lg transition-colors"
+              className="bg-[#989b2e] hover:bg-[#7a7d24] cursor-pointer px-6 py-3 rounded-lg transition-colors"
             >
               Back to Events
             </button>
@@ -293,7 +291,7 @@ export default function FairGallery({ params }) {
         >
           <button 
             onClick={() => router.push('/events')}
-            className="flex items-center space-x-2 text-white hover:text-[#989b2e] transition-colors"
+            className="flex items-center space-x-2 cursor-pointer text-white hover:text-[#989b2e] transition-colors"
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
               <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/>
@@ -304,7 +302,7 @@ export default function FairGallery({ params }) {
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
               {fair.name}
             </h1>
-            <p className="text-gray-300 mt-1 text-sm sm:text-base">{fair.location}</p>
+            <p className="text-[#989b2e] mt-1 text-sm sm:text-base">{fair.location}</p>
           </div>
           <div className="text-right text-gray-300">
             <p className="text-xs sm:text-sm">{fair.imageCount} Photos</p>
