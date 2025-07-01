@@ -85,7 +85,7 @@ function Page() {
           transition={{ duration: 1 }}
         >
           <motion.h1 
-            className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-4 sm:mb-6"
+            className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
@@ -93,7 +93,7 @@ function Page() {
             About <span className='text-[#989b2e]'>Us</span>
           </motion.h1>
           <motion.p 
-            className="text-lg xs:text-xl sm:text-2xl md:text-3xl max-w-2xl sm:max-w-3xl mx-auto"
+            className="text-lg xs:text-xl sm:text-xl md:text-2xl max-w-2xl sm:max-w-3xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
@@ -104,7 +104,7 @@ function Page() {
       </section>
 
       {/* Company Introduction */}
-      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-7 sm:py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div 
             className="grid gap-y-10 md:grid-cols-2 md:gap-12 items-center"
@@ -114,7 +114,7 @@ function Page() {
             transition={{ duration: 0.8 }}
           >
             <div className="text-white">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
+              <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
                 Welcome to Bonhoeffer Machines - Your Partner in Progress!
               </h2>
               <p className="text-base sm:text-lg text-gray-300 mb-4 sm:mb-6 leading-relaxed">
@@ -141,7 +141,7 @@ function Page() {
       </section>
 
       {/* Founder's Desk */}
-      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-7 sm:py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div 
             className="grid gap-y-10 md:grid-cols-2 md:gap-12 items-center"
@@ -163,7 +163,7 @@ function Page() {
               />
             </motion.div>
             <div className="text-white order-1 md:order-2">
-              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
                 From the Founder&apos;s Desk
               </h2>
               <div className="space-y-4 text-base sm:text-md text-gray-300 leading-relaxed">
@@ -187,17 +187,17 @@ function Page() {
       </section>
 
       {/* Company Overview */}
-      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-7 sm:py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div 
             className="grid gap-y-10 md:grid-cols-2 md:gap-12 items-center"
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
             <div className="text-white">
-              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
                 Company Overview
               </h2>
               <div className="space-y-4 text-base sm:text-md text-gray-300 leading-relaxed">
@@ -228,7 +228,7 @@ function Page() {
       </section>
 
       {/* Our Presence */}
-      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-7 sm:py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div 
             className="grid gap-y-10 md:grid-cols-2 md:gap-12 items-center"
@@ -250,7 +250,7 @@ function Page() {
               />
             </motion.div>
             <div className="text-white order-1 md:order-2">
-              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
                 Our Global Presence
               </h2>
               <div className="space-y-4 text-base sm:text-md text-gray-300 leading-relaxed">
@@ -267,7 +267,7 @@ function Page() {
       </section>
 
       {/* Leadership Team */}
-      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-7 sm:py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div
             className="text-center mb-10 sm:mb-16"
@@ -276,10 +276,10 @@ function Page() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
               Leadership Team
             </h2>
-            <p className="text-lg sm:text-xl text-gray-300 max-w-2xl sm:max-w-3xl mx-auto">
+            <p className="text-lg sm:text-lg text-gray-300 max-w-2xl sm:max-w-3xl mx-auto">
               Meet the visionary leaders driving our company&apos;s success and innovation
             </p>
           </motion.div>
@@ -316,7 +316,7 @@ function Page() {
       </section>
 
       {/* What Makes Us Different */}
-      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 ">
+      <section className="py-7 sm:py-10 px-4 sm:px-6 lg:px-8 ">
         <div className="max-w-7xl mx-auto">
           <motion.div
             className="text-center mb-10 sm:mb-16"
@@ -325,7 +325,7 @@ function Page() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
               What Makes Us Different
             </h2>
             <p className="text-lg sm:text-xl text-gray-300 max-w-2xl sm:max-w-3xl mx-auto">
@@ -357,7 +357,7 @@ function Page() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-7 sm:py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid gap-y-10 md:grid-cols-2 md:gap-16">
             {/* Vision */}
@@ -390,7 +390,7 @@ function Page() {
 
             {/* Mission */}
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
@@ -419,17 +419,17 @@ function Page() {
         </div>
       </section>
 
-      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-7 sm:py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div 
             className="grid gap-y-10 md:grid-cols-2 md:gap-12 items-center"
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
             <div className="text-white">
-              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
                 How We Produce
               </h2>
               <div className="space-y-3 sm:space-y-4 text-base sm:text-lg text-gray-300 leading-relaxed">
@@ -465,7 +465,7 @@ function Page() {
       </section>
 
       {/* FAQs */}
-      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 ">
+      <section className="py-7 sm:py-10 px-4 sm:px-6 lg:px-8 ">
         <div className="max-w-4xl mx-auto">
           <motion.div
             className="text-center mb-10 sm:mb-16"
@@ -474,7 +474,7 @@ function Page() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
               Frequently Asked Questions
             </h2>
             <p className="text-lg sm:text-xl text-gray-300">
@@ -493,7 +493,7 @@ function Page() {
                 transition={{ duration: 0.3, delay: index * 0.01 }}
               >
                 <button
-                  className="w-full p-4 sm:p-6 text-left flex justify-between items-center hover:bg-white/5 transition-colors duration-200"
+                  className="w-full p-2 sm:p-4 text-left flex justify-between items-center hover:bg-white/5 transition-colors duration-200"
                   onClick={() => setExpandedFaq(expandedFaq === index ? null : index)}
                 >
                   <h3 className="text-base sm:text-lg font-semibold text-white pr-2 sm:pr-4">
@@ -515,7 +515,7 @@ function Page() {
                   transition={{ duration: 0.3 }}
                   className="overflow-hidden"
                 >
-                  <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                  <div className="px-4 sm:px-6 pb-4 pt-2 sm:pb-6 sm:pt-4">
                     <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                       {faq.answer}
                     </p>
@@ -528,7 +528,7 @@ function Page() {
       </section>
 
       {/* Global Offices */}
-      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-7 sm:py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div
             className="text-center mb-10 sm:mb-16"
@@ -537,7 +537,7 @@ function Page() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[#989b2e]">
               Our Global Offices
             </h2>
             <p className="text-lg sm:text-xl text-gray-300 max-w-2xl sm:max-w-3xl mx-auto">

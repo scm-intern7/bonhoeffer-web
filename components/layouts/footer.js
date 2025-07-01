@@ -81,7 +81,7 @@ function Footer() {
 
   return (
     <footer className="text-white relative overflow-hidden">
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-20 py-16">
         {/* Main Footer Content - Single Row */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-6">
           {/* Company Info */}
@@ -102,16 +102,16 @@ function Footer() {
           </div>
 
           {/* Navigation Links - Compact Columns */}
-          <div className="lg:col-span-6 grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="lg:col-span-6 grid grid-cols-2 md:grid-cols-4 gap-2">
             {/* Company Links */}
             <div>
-              <h4 className="text-white font-semibold mb-6 text-lg">Company</h4>
-              <ul className="space-y-2">
+              <h4 className="text-white font-semibold mb-4 text-base">Company</h4>
+              <ul className="space-y-1">
                 {footerLinks.company.map((link, index) => (
                   <li key={index}>
                     <Link
                       href={link.href}
-                      className="text-gray-400 hover:text-[#989b2e] transition-colors duration-200 text-s"
+                      className="text-gray-400 hover:text-[#989b2e] transition-colors duration-200 text-xs"
                     >
                       {link.label}
                     </Link>
@@ -122,13 +122,13 @@ function Footer() {
 
             {/* Products Links */}
             <div>
-              <h4 className="text-white font-semibold mb-6 text-lg">Products</h4>
-              <ul className="space-y-2">
+              <h4 className="text-white font-semibold mb-4 text-base">Products</h4>
+              <ul className="space-y-1">
                 {footerLinks.products.map((link, index) => (
                   <li key={index}>
                     <Link
                       href={link.href}
-                      className="text-gray-400 hover:text-[#989b2e] transition-colors duration-200 text-s"
+                      className="text-gray-400 hover:text-[#989b2e] transition-colors duration-200 text-xs"
                     >
                       {link.label}
                     </Link>
@@ -139,13 +139,13 @@ function Footer() {
 
             {/* Events Links */}
             <div>
-              <h4 className="text-white font-semibold mb-6 text-lg">Events</h4>
-              <ul className="space-y-2">
+              <h4 className="text-white font-semibold mb-4 text-base">Events</h4>
+              <ul className="space-y-1">
                 {footerLinks.events.map((link, index) => (
                   <li key={index}>
                     <Link
                       href={link.href}
-                      className="text-gray-400 hover:text-[#989b2e] transition-colors duration-200 text-s"
+                      className="text-gray-400 hover:text-[#989b2e] transition-colors duration-200 text-xs"
                     >
                       {link.label}
                     </Link>
@@ -156,13 +156,13 @@ function Footer() {
 
             {/* Support Links */}
             <div>
-              <h4 className="text-white font-semibold mb-6 text-lg">Support</h4>
-              <ul className="space-y-2">
+              <h4 className="text-white font-semibold mb-4 text-base">Support</h4>
+              <ul className="space-y-1">
                 {footerLinks.support.map((link, index) => (
                   <li key={index}>
                     <Link
                       href={link.href}
-                      className="text-gray-400 hover:text-[#989b2e] transition-colors duration-200 text-s"
+                      className="text-gray-400 hover:text-[#989b2e] transition-colors duration-200 text-xs"
                     >
                       {link.label}
                     </Link>
@@ -177,7 +177,7 @@ function Footer() {
             <div className="grid grid-cols-1 gap-4">
               {/* Contact Info */}
               <div>
-                <h4 className="text-white font-semibold mb-6 text-lg">Contact</h4>
+                <h4 className="text-white font-semibold mb-4 text-base">Contact</h4>
                 <p className="text-gray-400 text-xs mb-2">+91 96675 15523</p>
                 <Link href="mailto:support@bonhoeffermachines.com">
                     <p className="text-gray-400 text-xs mb-2">support@bonhoeffermachines.com</p>
@@ -189,7 +189,7 @@ function Footer() {
 
               {/* Social Media */}
               <div>
-                <h4 className="text-white font-semibold mb-2 text-lg">Follow Us</h4>
+                <h4 className="text-white font-semibold mb-2 text-base">Follow Us</h4>
                 <div className="flex space-x-5">
                   {socialLinks.map((social, index) => (
                     <a
