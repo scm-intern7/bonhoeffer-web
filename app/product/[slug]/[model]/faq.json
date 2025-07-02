@@ -89,6 +89,9 @@
             "answer": "Eco-Throttle should only be used for short duration and for low wattage draw. It is recommended to run the generator at a high load for a period of time after extended Eco-Throttle use to clear carbon deposits and prevent poor running. Continuous use of Eco-Throttle with high loads can lead to damage of the inverter unit."
         }
     ],
+    "gasoline-inverter":[
+
+    ],
     "gasoline-tiller": [
         {
             "question": "Bonhoeffer power weeders suitable for organic farming?",

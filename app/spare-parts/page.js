@@ -4,423 +4,10 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
+import sparePartsData from './products.json'
 
 function SparePage() {
-  // Spare parts data extracted from Spanish filenames and converted to English
-  const sparePartsData = [
-    // SPARE PARTS SECTION
-    {
-      id: 1,
-      name: "Piston Kit",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/1_kit-de-piston.png",
-      slug: "piston-kit",
-      category: "spare-parts",
-      label: "Engine Components"
-    },
-    {
-      id: 2,
-      name: "Piston Rings",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/2_anillos-de-piston.png",
-      slug: "piston-rings",
-      category: "spare-parts",
-      label: "Engine Components"
-    },
-    {
-      id: 3,
-      name: "Carburetor",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/3_carburetor.png",
-      slug: "carburetor",
-      category: "spare-parts",
-      label: "Fuel System"
-    },
-    {
-      id: 4,
-      name: "Carburetor Repair Kit",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/4_kit-de-reparacion-del-carburetor-.png",
-      slug: "carburetor-repair-kit",
-      category: "spare-parts",
-      label: "Fuel System"
-    },
-    {
-      id: 5,
-      name: "Chainsaw Chain",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/5_cadena-de-motosierra.png",
-      slug: "chainsaw-chain",
-      category: "spare-parts",
-      label: "Cutting Components"
-    },
-    {
-      id: 6,
-      name: "Fuel Hose & Primer Bulb",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/5_manguera-combustible-_-bulbo-de-imprimacion.png",
-      slug: "fuel-hose-primer-bulb",
-      category: "spare-parts",
-      label: "Fuel System"
-    },
-    {
-      id: 7,
-      name: "Cylinder Kit",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/7_kit-de-cilindro.png",
-      slug: "cylinder-kit", 
-      category: "spare-parts",
-      label: "Engine Components"
-    },
-    {
-      id: 8,
-      name: "Brush Cutter Head",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/8_cabezal-de-motoguadana.png",
-      slug: "brush-cutter-head",
-      category: "spare-parts",
-      label: "Cutting Components"
-    },
-    {
-      id: 9,
-      name: "Head Spare Parts",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/9_repuestos-de-cabezal.png",
-      slug: "head-spare-parts",
-      category: "spare-parts",
-      label: "Cutting Components"
-    },
-    {
-      id: 10,
-      name: "Brush Cutter Nylon",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/10_nyon-de-motoguadana.png",
-      slug: "brush-cutter-nylon",
-      category: "spare-parts",
-      label: "Cutting Components"
-    },
-    {
-      id: 11,
-      name: "Chainsaw Bar",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/11_espada-de-motosierra.png",
-      slug: "chainsaw-bar",
-      category: "spare-parts",
-      label: "Cutting Components"
-    },
-    {
-      id: 12,
-      name: "Hard Tip Bar",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/12_espada-con-punta-dura.png",
-      slug: "hard-tip-bar",
-      category: "spare-parts",
-      label: "Cutting Components"
-    },
-    {
-      id: 13,
-      name: "Starter",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/13_arrancador.png",
-      slug: "starter",
-      category: "spare-parts",
-      label: "Starting System"
-    },
-    {
-      id: 14,
-      name: "Starter Rope",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/14_cuerda-de-arranque.png",
-      slug: "starter-rope",
-      category: "spare-parts",
-      label: "Starting System"
-    },
-    {
-      id: 15,
-      name: "Metal Wire Rope",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/15_cuerda-metallica-cuerda.png",
-      slug: "metal-wire-rope",
-      category: "spare-parts",
-      label: "Starting System"
-    },
-    {
-      id: 16,
-      name: "Air Filter",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/16_filtro-de-aire.png",
-      slug: "air-filter",
-      category: "spare-parts",
-      label: "Filtration System"
-    },
-    {
-      id: 17,
-      name: "Fuel Filter",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/17_filtro-de-combustible.png",
-      slug: "fuel-filter",
-      category: "spare-parts",
-      label: "Filtration System"
-    },
-    {
-      id: 18,
-      name: "Oil Pump",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/18_bomba-de-aciete.png",
-      slug: "oil-pump",
-      category: "spare-parts",
-      label: "Lubrication System"
-    },
-    {
-      id: 19,
-      name: "Pinion",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/19_pinion.png",
-      slug: "pinion",
-      category: "spare-parts",
-      label: "Drive System"
-    },
-    {
-      id: 20,
-      name: "Pinion with Rim",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/20_pinion-con-rim.png",
-      slug: "pinion-with-rim",
-      category: "spare-parts",
-      label: "Drive System"
-    },
-    {
-      id: 21,
-      name: "Clutch Drum",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/21_emberague-tambor-de-emberague.png",
-      slug: "clutch-drum",
-      category: "spare-parts",
-      label: "Drive System"
-    },
-    {
-      id: 22,
-      name: "Clutch Bell",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/22_campana-de-clutch.png",
-      slug: "clutch-bell",
-      category: "spare-parts",
-      label: "Drive System"
-    },
-    {
-      id: 23,
-      name: "Gearbox",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/23_caja-de-engranaje.png",
-      slug: "gearbox",
-      category: "spare-parts",
-      label: "Drive System"
-    },
-    {
-      id: 24,
-      name: "Gearbox Parts",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/24_repuestos-de-caja-de-engranaje.png",
-      slug: "gearbox-parts",
-      category: "spare-parts",
-      label: "Drive System"
-    },
-    {
-      id: 25,
-      name: "Mounting",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/25_montaje.png",
-      slug: "mounting",
-      category: "spare-parts",
-      label: "Assembly Parts"
-    },
-    {
-      id: 26,
-      name: "Ignition Coil",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/26_bobina-de-encendido.png",
-      slug: "ignition-coil",
-      category: "spare-parts",
-      label: "Ignition System"
-    },
-    {
-      id: 27,
-      name: "Crankshaft",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/27_ciguenal.png",
-      slug: "crankshaft",
-      category: "spare-parts",
-      label: "Engine Components"
-    },
-    {
-      id: 28,
-      name: "Brush Cutter Shaft",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/28_eje-para-motoguadana.png",
-      slug: "brush-cutter-shaft",
-      category: "spare-parts",
-      label: "Drive System"
-    },
-    {
-      id: 29,
-      name: "2-3 Teeth Blades",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/29_cuchillas-de-2-3-dientes-para-motoguadana.png",
-      slug: "2-3-teeth-blades",
-      category: "spare-parts",
-      label: "Cutting Components"
-    },
-    {
-      id: 30,
-      name: "Round Blades",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/30_cuchillas-redondas-para-motoguadana.png",
-      slug: "round-blades",
-      category: "spare-parts",
-      label: "Cutting Components"
-    },
-    {
-      id: 31,
-      name: "Rubber Parts",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/31_partes-de-goma-motosierra-china.png",
-      slug: "rubber-parts",
-      category: "spare-parts",
-      label: "Sealing & Gaskets"
-    },
-    {
-      id: 40,
-      name: "Bearings",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/40_rodamientos-baleeros.png",
-      slug: "bearings",
-      category: "spare-parts",
-      label: "Drive System"
-    },
-    {
-      id: 41,
-      name: "Chain Accessories",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/41_accesorios-de-cadena-de-motosierra.png",
-      slug: "chain-accessories",
-      category: "spare-parts",
-      label: "Cutting Components"
-    },
-    {
-      id: 42,
-      name: "Spark Plugs",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/42_bujias.png",
-      slug: "spark-plugs",
-      category: "spare-parts",
-      label: "Ignition System"
-    },
-
-    // ACCESSORIES SECTION
-    {
-      id: 32,
-      name: "Irrigation Hose",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/32_manguera-de-riego.png",
-      slug: "irrigation-hose",
-      category: "accessories",
-      label: "Garden Accessories"
-    },
-    {
-      id: 33,
-      name: "Expandable Garden Hose",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/33_mangeura-de-jardin-expandible.png",
-      slug: "expandable-garden-hose",
-      category: "accessories",
-      label: "Garden Accessories"
-    },
-    {
-      id: 34,
-      name: "Aluminum Couplings",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/34_acoples-aluminio.png",
-      slug: "aluminum-couplings",
-      category: "accessories",
-      label: "Connection Parts"
-    },
-    {
-      id: 35,
-      name: "Aluminum Coupling Joint",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/35_junta-de-acoplamiento-de-aluminio.png",
-      slug: "aluminum-coupling-joint",
-      category: "accessories",
-      label: "Connection Parts"
-    },
-    {
-      id: 36,
-      name: "Professional Harness",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/36_arnes-profesional-para-motoguadana.png",
-      slug: "professional-harness",
-      category: "accessories",
-      label: "Safety Equipment"
-    },
-    {
-      id: 37,
-      name: "Lawn Mower Wheels",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/37_llantas-para-cortacesped.png",
-      slug: "lawn-mower-wheels",
-      category: "accessories",
-      label: "Mower Parts"
-    },
-    {
-      id: 38,
-      name: "High Pressure Spray Hose",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/38_manguera-de-fumigacion-de-alta-presion.png",
-      slug: "high-pressure-spray-hose",
-      category: "accessories",
-      label: "Spraying Equipment"
-    },
-    {
-      id: 39,
-      name: "Spraying Parts",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/39_repuestos-de-fumigacion.png",
-      slug: "spraying-parts",
-      category: "accessories",
-      label: "Spraying Equipment"
-    },
-    {
-      id: 44,
-      name: "Air Gun",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/44_pistola-de-aire.png",
-      slug: "air-gun",
-      category: "accessories",
-      label: "Tools"
-    },
-    {
-      id: 47,
-      name: "Garden Tools",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/47_herramient-as-de-jardin.png",
-      slug: "garden-tools",
-      category: "accessories",
-      label: "Garden Accessories"
-    },
-    {
-      id: 48,
-      name: "Long Tail Propeller",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/48_helice-de-cola-larga.png",
-      slug: "long-tail-propeller",
-      category: "accessories",
-      label: "Boat Parts"
-    },
-    {
-      id: 49,
-      name: "Eye Protection",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/50_proteccion-para-los-ojos.png",
-      slug: "eye-protection",
-      category: "accessories",
-      label: "Safety Equipment"
-    },
-    {
-      id: 50,
-      name: "Head Protection & Helmet",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/51_proteccion-para-la-cabeza-combinacion-de-casco.png",
-      slug: "head-protection-helmet",
-      category: "accessories",
-      label: "Safety Equipment"
-    },
-    {
-      id: 51,
-      name: "Drill",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/52_drill.png",
-      slug: "drill",
-      category: "accessories",
-      label: "Tools"
-    },
-    {
-      id: 52,
-      name: "Respiratory Protection",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/52_proteccion-respiratoria.png",
-      slug: "respiratory-protection",
-      category: "accessories",
-      label: "Safety Equipment"
-    },
-    {
-      id: 53,
-      name: "Electrodes & Wire",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/53_electrodes-and-wire.png",
-      slug: "electrodes-wire",
-      category: "accessories",
-      label: "Welding Equipment"
-    },
-    {
-      id: 54,
-      name: "Face Protection",
-      image: "https://bonhoeffermachines.com/en/public/parts-category/54_proteccio%CC%81n-facial.png",
-      slug: "face-protection",
-      category: "accessories",
-      label: "Safety Equipment"
-    }
-  ];
-
+  // Filter spare parts and accessories from imported data
   const sparePartsItems = sparePartsData.filter(item => item.category === 'spare-parts');
   const accessoriesItems = sparePartsData.filter(item => item.category === 'accessories');
 
@@ -469,7 +56,7 @@ function SparePage() {
       </section>
 
       {/* Spare Parts Section */}
-      <section className="py-20 px-6">
+      <section className="py-10 px-6">
         <div className="max-w-7xl mx-auto">
           <motion.div
             className="text-center mb-16"
@@ -478,8 +65,8 @@ function SparePage() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#989b2e]">
-              Spare Parts
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+              Spare <span className='text-[#989b2e]'>Parts</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               High-quality replacement parts to keep your machinery running at peak performance
@@ -489,7 +76,7 @@ function SparePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {sparePartsItems.map((part, index) => (
               <motion.div
-                key={part.id}
+                key={`spare-${part.slug}-${index}`}
                 className="group bg-white/5 backdrop-blur-sm flex flex-col items-center border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -532,7 +119,7 @@ function SparePage() {
       </section>
 
       {/* Accessories Section */}
-      <section className="py-20 px-6">
+      <section className="py-10 px-6">
         <div className="max-w-7xl mx-auto">
           <motion.div
             className="text-center mb-16"
@@ -552,7 +139,7 @@ function SparePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {accessoriesItems.map((accessory, index) => (
               <motion.div
-                key={accessory.id}
+                key={`accessory-${accessory.slug}-${index}`}
                 className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}

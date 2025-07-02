@@ -1,0 +1,359 @@
+[
+  {
+    "name": "Piston Kit",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/1_kit-de-piston.png",
+    "slug": "piston-kit",
+    "category": "spare-parts",
+    "label": "Engine Components"
+  },
+  {
+    "name": "Piston Rings",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/2_anillos-de-piston.png",
+    "slug": "piston-rings",
+    "category": "spare-parts",
+    "label": "Engine Components"
+  },
+  {
+    "name": "Carburetor",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/3_carburetor.png",
+    "slug": "carburetor",
+    "category": "spare-parts",
+    "label": "Fuel System"
+  },
+  {
+    "name": "Carburetor Repair Kit",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/4_kit-de-reparacion-del-carburetor-.png",
+    "slug": "carburetor-repair-kit",
+    "category": "spare-parts",
+    "label": "Fuel System"
+  },
+  {
+    "name": "Fuel Hose & Primer Bulb",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/5_manguera-combustible-_-bulbo-de-imprimacion.png",
+    "slug": "fuel-hose-primer-bulb",
+    "category": "spare-parts",
+    "label": "Fuel System"
+  },
+  {
+    "name": "Cylinder Kit",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/7_kit-de-cilindro.png",
+    "slug": "cylinder-kit",
+    "category": "spare-parts",
+    "label": "Engine Components"
+  },
+  {
+    "name": "Trimmer Head Spare Parts",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/9_repuestos-de-cabezal.png",
+    "slug": "trimmer-head-spare-parts",
+    "category": "spare-parts",
+    "label": "Cutting Components"
+  },
+  {
+    "name": "Starter Assembly",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/13_arrancador.png",
+    "slug": "starter-assembly",
+    "category": "spare-parts",
+    "label": "Starting System"
+  },
+  {
+    "name": "Starter Rope",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/14_cuerda-de-arranque.png",
+    "slug": "starter-rope",
+    "category": "spare-parts",
+    "label": "Starting System"
+  },
+  {
+    "name": "Recoil Starter Spring",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/15_cuerda-metallica-cuerda.png",
+    "slug": "recoil-starter-spring",
+    "category": "spare-parts",
+    "label": "Starting System"
+  },
+  {
+    "name": "Air Filter",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/16_filtro-de-aire.png",
+    "slug": "air-filter",
+    "category": "spare-parts",
+    "label": "Filtration System"
+  },
+  {
+    "name": "Fuel Filter",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/17_filtro-de-combustible.png",
+    "slug": "fuel-filter",
+    "category": "spare-parts",
+    "label": "Filtration System"
+  },
+  {
+    "name": "Chainsaw Oil Pump",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/18_bomba-de-aciete.png",
+    "slug": "chainsaw-oil-pump",
+    "category": "spare-parts",
+    "label": "Lubrication System"
+  },
+  {
+    "name": "Chainsaw Sprocket (Pinion)",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/19_pinion.png",
+    "slug": "pinion",
+    "category": "spare-parts",
+    "label": "Drive System"
+  },
+  {
+    "name": "Rim Sprocket Kit",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/20_pinion-con-rim.png",
+    "slug": "pinion-with-rim",
+    "category": "spare-parts",
+    "label": "Drive System"
+  },
+  {
+    "name": "Clutch",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/21_emberague-tambor-de-emberague.png",
+    "slug": "clutch",
+    "category": "spare-parts",
+    "label": "Drive System"
+  },
+  {
+    "name": "Brushcutter Clutch Housing Assembly",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/22_campana-de-clutch.png",
+    "slug": "brushcutter-clutch-housing-assembly",
+    "category": "spare-parts",
+    "label": "Drive System"
+  },
+  {
+    "name": "Brush Cutter Gear Head",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/23_caja-de-engranaje.png",
+    "slug": "brush-cutter-gear-head",
+    "category": "spare-parts",
+    "label": "Drive System"
+  },
+  {
+    "name": "Spare Parts of Gearbox",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/24_repuestos-de-caja-de-engranaje.png",
+    "slug": "spare-parts-of-gearbox",
+    "category": "spare-parts",
+    "label": "Drive System"
+  },
+  {
+    "name": "Mounting",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/25_montaje.png",
+    "slug": "mounting",
+    "category": "spare-parts",
+    "label": "Assembly Parts"
+  },
+  {
+    "name": "Ignition Coil",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/26_bobina-de-encendido.png",
+    "slug": "ignition-coil",
+    "category": "spare-parts",
+    "label": "Ignition System"
+  },
+  {
+    "name": "Crankshaft",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/27_ciguenal.png",
+    "slug": "crankshaft",
+    "category": "spare-parts",
+    "label": "Engine Components"
+  },
+  {
+    "name": "Axle for Brushcutter",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/28_eje-para-motoguadana.png",
+    "slug": "axle-for-brushcutter",
+    "category": "spare-parts",
+    "label": "Drive System"
+  },
+  {
+    "name": "Chinese Chainsaw Rubber Parts",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/31_partes-de-goma-motosierra-china.png",
+    "slug": "chinese-chainsaw-rubber-parts",
+    "category": "spare-parts",
+    "label": "Sealing & Gaskets"
+  },
+  {
+    "name": "Irrigation Hose",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/32_manguera-de-riego.png",
+    "slug": "irrigation-hose",
+    "category": "spare-parts",
+    "label": "Garden Accessories"
+  },
+  {
+    "name": "Expandable Garden Handle",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/33_mangeura-de-jardin-expandible.png",
+    "slug": "expandable-garden-handle",
+    "category": "spare-parts",
+    "label": "Garden Accessories"
+  },
+  {
+    "name": "Aluminum Couplings",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/34_acoples-aluminio.png",
+    "slug": "aluminum-couplings",
+    "category": "spare-parts",
+    "label": "Connection Parts"
+  },
+  {
+    "name": "Aluminum Coupling Joint",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/35_junta-de-acoplamiento-de-aluminio.png",
+    "slug": "aluminum-coupling-joint",
+    "category": "spare-parts",
+    "label": "Connection Parts"
+  },
+  {
+    "name": "Lawn Mower Wheels",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/37_llantas-para-cortacesped.png",
+    "slug": "lawn-mower-wheels",
+    "category": "spare-parts",
+    "label": "Mower Parts"
+  },
+  {
+    "name": "Spraying Spare Parts",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/39_repuestos-de-fumigacion.png",
+    "slug": "spraying-spare-parts",
+    "category": "spare-parts",
+    "label": "Spraying Equipment"
+  },
+  {
+    "name": "Bearings",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/40_rodamientos-baleeros.png",
+    "slug": "bearings",
+    "category": "spare-parts",
+    "label": "Drive System"
+  },
+  {
+    "name": "Spark Plugs",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/42_bujias.png",
+    "slug": "spark-plug",
+    "category": "spare-parts",
+    "label": "Ignition System"
+  },
+  {
+    "name": "Chainsaw Chain",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/5_cadena-de-motosierra.png",
+    "slug": "chainsaw-chain",
+    "category": "accessories",
+    "label": "Cutting Components"
+  },
+  {
+    "name": "Trimmer Head",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/8_cabezal-de-motoguadana.png",
+    "slug": "trimmer-head",
+    "category": "accessories",
+    "label": "Cutting Components"
+  },
+  {
+    "name": "Trimmer Line",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/10_nyon-de-motoguadana.png",
+    "slug": "trimmer-line",
+    "category": "accessories",
+    "label": "Cutting Components"
+  },
+  {
+    "name": "Chainsaw Bar",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/11_espada-de-motosierra.png",
+    "slug": "chainsaw-bar",
+    "category": "accessories",
+    "label": "Cutting Components"
+  },
+  {
+    "name": "Hardnose Bar",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/12_espada-con-punta-dura.png",
+    "slug": "hardnose-bar",
+    "category": "accessories",
+    "label": "Cutting Components"
+  },
+  {
+    "name": "2/3 Teeth Blades for Brushcutter",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/29_cuchillas-de-2-3-dientes-para-motoguadana.png",
+    "slug": "2-3-teeth-blades-for-brushcutter",
+    "category": "accessories",
+    "label": "Cutting Components"
+  },
+  {
+    "name": "Circular Saw Blades",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/30_cuchillas-redondas-para-motoguadana.png",
+    "slug": "circular-saw-blades",
+    "category": "accessories",
+    "label": "Cutting Components"
+  },
+  {
+    "name": "Professional Harness for Brushcutter",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/36_arnes-profesional-para-motoguadana.png",
+    "slug": "professional-harness-for-brushcutter",
+    "category": "accessories",
+    "label": "Safety Equipment"
+  },
+  {
+    "name": "High Pressure Spray Hose",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/38_manguera-de-fumigacion-de-alta-presion.png",
+    "slug": "high-pressure-spray-hose",
+    "category": "accessories",
+    "label": "Spraying Equipment"
+  },
+  {
+    "name": "Chainsaw Accessories",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/41_accesorios-de-cadena-de-motosierra.png",
+    "slug": "chainsaw-accessories",
+    "category": "accessories",
+    "label": "Cutting Components"
+  },
+  {
+    "name": "Air Gun",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/44_pistola-de-aire.png",
+    "slug": "air-gun",
+    "category": "accessories",
+    "label": "Tools"
+  },
+  {
+    "name": "Garden Tools",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/47_herramient-as-de-jardin.png",
+    "slug": "garden-tools",
+    "category": "accessories",
+    "label": "Garden Accessories"
+  },
+  {
+    "name": "Long Tail Propeller",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/48_helice-de-cola-larga.png",
+    "slug": "long-tail-propeller",
+    "category": "accessories",
+    "label": "Boat Parts"
+  },
+  {
+    "name": "Eye Protection",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/50_proteccion-para-los-ojos.png",
+    "slug": "eye-protection",
+    "category": "accessories",
+    "label": "Safety Equipment"
+  },
+  {
+    "name": "Head Protection & Helmet",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/51_proteccion-para-la-cabeza-combinacion-de-casco.png",
+    "slug": "head-protection-helmet",
+    "category": "accessories",
+    "label": "Safety Equipment"
+  },
+  {
+    "name": "Respiratory Protection",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/52_proteccion-respiratoria.png",
+    "slug": "respiratory-protection",
+    "category": "accessories",
+    "label": "Safety Equipment"
+  },
+  {
+    "name": "Drill",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/52_drill.png",
+    "slug": "drill",
+    "category": "accessories",
+    "label": "Tools"
+  },
+  {
+    "name": "Electrodes and Wire",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/53_electrodes-and-wire.png",
+    "slug": "electrodes-and-wire",
+    "category": "accessories",
+    "label": "Welding Equipment"
+  },
+  {
+    "name": "Face Protection",
+    "image": "https://bonhoeffermachines.com/en/public/parts-category/54_proteccio%CC%81n-facial.png",
+    "slug": "face-protection",
+    "category": "accessories",
+    "label": "Safety Equipment"
+  }
+]

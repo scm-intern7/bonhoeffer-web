@@ -18,7 +18,6 @@ function ModelSpecificPage() {
         'pk-45-001': {
           name: 'Universal Piston Kit 45mm',
           compatible: 'Chainsaw Models: CS-4500, CS-5200',
-          price: '$45',
           code: 'PK-45-001',
           details: [
             { label: 'Cylinder Bore', value: '45mm' },
@@ -32,7 +31,6 @@ function ModelSpecificPage() {
         'pk-52-002': {
           name: 'Heavy Duty Piston Kit 52mm',
           compatible: 'Chainsaw Models: CS-5800, CS-6200',
-          price: '$65',
           code: 'PK-52-002',
           details: [
             { label: 'Cylinder Bore', value: '52mm' },
@@ -48,7 +46,6 @@ function ModelSpecificPage() {
         'cb-std-001': {
           name: 'Standard Carburetor',
           compatible: 'Brush Cutters: BC-260, BC-330',
-          price: '$35',
           code: 'CB-STD-001',
           details: [
             { label: 'Type', value: 'Diaphragm Carburetor' },
@@ -66,7 +63,6 @@ function ModelSpecificPage() {
     const defaultDetails = {
       name: `${getPartName(partSlug)} Model`,
       compatible: 'Compatible with most machinery models',
-      price: '$50',
       code: modelCode.toUpperCase(),
       details: [
         { label: 'Material', value: 'High Quality Steel/Aluminum' },
