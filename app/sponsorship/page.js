@@ -1,9 +1,9 @@
-'use client'
+"use client"
 import BgLayout from "@/components/templates/bgLayout"
-import React, { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import Image from 'next/image'
-import Link from 'next/link'
+import React, { useState, useEffect } from "react"
+import { motion, AnimatePresence } from "framer-motion"
+import Image from "next/image"
+import Link from "next/link"
 
 // Image Slider Component
 function ImageSlider({ images, title }) {
@@ -81,8 +81,8 @@ function ImageSlider({ images, title }) {
             onClick={() => setCurrentImageIndex(index)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
               index === currentImageIndex 
-                ? 'bg-[#989b2e] scale-125' 
-                : 'bg-white/50 hover:bg-white/70'
+                ? "bg-[#989b2e] scale-125" 
+                : "bg-white/50 hover:bg-white/70"
             }`}
             onMouseEnter={() => setIsAutoPlaying(false)}
             onMouseLeave={() => setIsAutoPlaying(true)}
@@ -153,7 +153,7 @@ function SponsorPage() {
   return (
     <BgLayout>
      {/* Mobile header spacer for fixed header on mobile/tablet */}
-      <div className="block lg:hidden" style={{ height: '4em' }} aria-hidden="true" />
+      <div className="block lg:hidden" style={{ height: "4em" }} aria-hidden="true" />
 
       {/* Hero Section */}
       <section className="relative min-h-[65vh] flex items-center justify-center overflow-hidden mt-5 px-4 sm:px-6 lg:px-8">
@@ -305,7 +305,7 @@ function SponsorPage() {
                   Bonhoeffer Machines Partners with Club Deportivo Marathón to Support Honduran Football
                 </h4>
                 <p className="text-gray-300 leading-relaxed text-lg">
-                  Bonhoeffer Machines is thrilled to announce its official partnership with Club Deportivo Marathón, one of Honduras's most celebrated football clubs with a rich 96-year history. As a proud sponsor, we are dedicated to supporting the team's pursuit of excellence on the field and helping them achieve their ambitious goals. Our company values of dedication, hard work, and teamwork align perfectly with the spirit of football, making this partnership a natural fit. We eagerly anticipate a successful collaboration that not only enhances the club's performance but also contributes to the growth and development of the sport in Honduras.
+                  Bonhoeffer Machines is thrilled to announce its official partnership with Club Deportivo Marathón, one of Honduras&apos;s most celebrated football clubs with a rich 96-year history. As a proud sponsor, we are dedicated to supporting the team&apos;s pursuit of excellence on the field and helping them achieve their ambitious goals. Our company values of dedication, hard work, and teamwork align perfectly with the spirit of football, making this partnership a natural fit. We eagerly anticipate a successful collaboration that not only enhances the club&apos;s performance but also contributes to the growth and development of the sport in Honduras.
                 </p>
               </div>
             </motion.div>
