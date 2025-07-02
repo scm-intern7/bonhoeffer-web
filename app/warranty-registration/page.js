@@ -488,10 +488,10 @@ function WarrantyRegistrationPage() {
                 <div>
                   <h5 className="text-white font-semibold mb-2">CUSTOMER RESPONSIBILITIES</h5>
                   <ul className="space-y-2 list-disc ml-6">
-                    <li>The Customer has the right to submit his product for warranty service consideration to any authorized company's Dealer of his choice within the country.</li>
-                    <li>The Customer must furnish to the authorized company's Dealer proof of purchase information such as invoice, properly filled warranty card and duly signed.</li>
-                    <li>The product must exhibit reasonable care in the maintenance, operation, storage, and general upkeep practices as explained in the maintenance section of the Owner's/Operator's Manual.</li>
-                    <li>Any costs incurred to obtain warranty consideration or services is the Customer's responsibility, including shipping and handling, travel expense, lost time, lost production, or pickup and delivery.</li>
+                    <li>The Customer has the right to submit his product for warranty service consideration to any authorized company&apos;s Dealer of his choice within the country.</li>
+                    <li>The Customer must furnish to the authorized company&apos;s Dealer proof of purchase information such as invoice, properly filled warranty card and duly signed.</li>
+                    <li>The product must exhibit reasonable care in the maintenance, operation, storage, and general upkeep practices as explained in the maintenance section of the Owner&apos;s/Operator&apos;s Manual.</li>
+                    <li>Any costs incurred to obtain warranty consideration or services is the Customer&apos;s responsibility, including shipping and handling, travel expense, lost time, lost production, or pickup and delivery.</li>
                   </ul>
                 </div>
 
