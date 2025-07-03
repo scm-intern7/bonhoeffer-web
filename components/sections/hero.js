@@ -2,6 +2,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, useScroll, useTransform, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { useRouter } from 'next/navigation';
+import sparePartsData from '../../app/spare-parts/products.json';
 
 // Custom hook for counting animation
 const useCountUp = (end, duration = 2, delay = 0) => {
@@ -70,8 +72,149 @@ function Hero() {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.2]);
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
-  const [searchValue, setSearchValue] = useState('');
-  const [isSearchFocused, setIsSearchFocused] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
+  const [showSearchResults, setShowSearchResults] = useState(false);
+  
+  const router = useRouter();
+
+  // --- Product & Spare Part Data (for search) ---
+  const allProducts = [
+    // Agro Industrial Products
+    { name: 'Gasoline Water Pump', slug: 'gasoline-water-pump', type: 'product', link: '/product/gasoline-water-pump' },
+    { name: 'Gasoline Engine', slug: 'gasoline-engine', type: 'product', link: '/product/gasoline-engine' },
+    { name: 'Gasoline Generator', slug: 'gasoline-generator', type: 'product', link: '/product/gasoline-generator' },
+    { name: 'Gasoline Inverter', slug: 'gasoline-inverter', type: 'product', link: '/product/gasoline-inverter' },
+    { name: 'Tiller', slug: 'gasoline-tiller', type: 'product', link: '/product/gasoline-tiller' },
+    
+    // Garden And Forestry Products
+    { name: 'Earth Auger', slug: 'earth-auger', type: 'product', link: '/product/earth-auger' },
+    { name: 'Water Pump 2 Stroke', slug: 'water-pump-2-stroke', type: 'product', link: '/product/water-pump-2-stroke' },
+    { name: 'Engine 2 Strokes', slug: 'engine-2-stroke', type: 'product', link: '/product/engine-2-stroke' },
+    { name: 'Lawn Mower', slug: 'lawn-mower', type: 'product', link: '/product/lawn-mower' },
+    { name: 'Brush Cutter', slug: 'brush-cutter', type: 'product', link: '/product/brush-cutter' },
+    { name: 'Backpack Brush Cutter', slug: 'backpack-brush-cutter', type: 'product', link: '/product/backpack-brush-cutter' },
+    { name: 'Multi Tool', slug: 'multi-tool', type: 'product', link: '/product/multi-tool' },
+    { name: 'Chainsaw', slug: 'chainsaw', type: 'product', link: '/product/chainsaw' },
+    { name: 'Hedge Trimmer', slug: 'hedge-trimmer', type: 'product', link: '/product/hedge-trimmer' },
+    { name: 'Blower', slug: 'blower', type: 'product', link: '/product/blower' },
+    
+    // Diesel Machines Products
+    { name: 'Diesel Water Pump', slug: 'diesel-water-pump', type: 'product', link: '/product/diesel-water-pump' },
+    { name: 'Diesel Generator', slug: 'diesel-generator', type: 'product', link: '/product/diesel-generator' },
+    { name: 'Diesel Engine', slug: 'diesel-engine', type: 'product', link: '/product/diesel-engine' },
+    
+    // Electric Machine Products
+    { name: 'Electric Lawn Mower', slug: 'electric', type: 'product', link: '/product/electric' },
+    { name: 'Electric Pressure Washer', slug: 'electric-pressure-washer', type: 'product', link: '/product/electric-pressure-washer' },
+    
+    // Solar Products
+    { name: 'Panel Solar', slug: 'solar-panel', type: 'product', link: '/product/solar-panel' },
+    { name: 'Submersible Pump', slug: 'submersible-pump', type: 'product', link: '/product/submersible-pump' },
+    
+    // Sprayers And Fumigation Products
+    { name: 'Knapsack Sprayer', slug: 'knapsack-sprayer', type: 'product', link: '/product/knapsack-sprayer' },
+    { name: 'Manual Sprayer', slug: 'manual-sprayer', type: 'product', link: '/product/manual-sprayer' },
+    { name: 'Mist Duster', slug: 'mistduster', type: 'product', link: '/product/mistduster' },
+    { name: 'Thermal Fogger', slug: 'thermal-fogger', type: 'product', link: '/product/thermal-fogger' },
+    
+    // Domestic And Commercial Products
+    { name: 'Gasoline Pressure Washer', slug: 'gasoline-pressure-washer', type: 'product', link: '/product/gasoline-pressure-washer' },
+    { name: 'Pressure Washer Home Use', slug: 'pressure-washer-home-use', type: 'product', link: '/product/pressure-washer-home-use' },
+    { name: 'Direct Driven Air Compressor', slug: 'direct-driven-air-compressor', type: 'product', link: '/product/direct-driven-air-compressor' },
+    { name: 'Vacuum Cleaner Commercial Grade', slug: 'vacuum-cleaner', type: 'product', link: '/product/vacuum-cleaner' },
+    
+    // Industrial Products
+    { name: 'Electric Motors', slug: 'electric-motor', type: 'product', link: '/product/electric-motor' },
+    { name: 'Centrifugal Pump', slug: 'centrifugal-pump', type: 'product', link: '/product/centrifugal-pump' },
+    { name: 'Welding Machines', slug: 'welding-machines', type: 'product', link: '/product/welding-machines' },
+    
+    // Construction Products
+    { name: 'Plate Compactor', slug: 'plate-compactor', type: 'product', link: '/product/plate-compactor' },
+    { name: 'Concrete Cutter', slug: 'concrete-cutter', type: 'product', link: '/product/concrete-cutter' },
+    { name: 'Concrete Vibrator', slug: 'concrete-vibrator', type: 'product', link: '/product/concrete-vibrator' },
+    { name: 'Concrete Power Trowel', slug: 'concrete-power-trowel', type: 'product', link: '/product/concrete-power-trowel' },
+    { name: 'Tamping Rammer', slug: 'tamping-rammer', type: 'product', link: '/product/tamping-rammer' },
+    
+    // Tools Products
+    { name: 'Power Tools', slug: 'power-tools', type: 'product', link: '/product/power-tools' },
+    { name: 'Hand Tools', slug: 'hand-tools', type: 'product', link: '/product/hand-tools' },
+    { name: 'Garden Tools', slug: 'garden-tools', type: 'product', link: '/product/garden-tools' },
+    
+    // Wood Chipper And Chaff Cutter Products
+    { name: 'Wood Chipper', slug: 'wood-chipper', type: 'product', link: '/product/wood-chipper' },
+    { name: 'Corn Thresher & Chaff Cutter', slug: 'corn-thresher-chaff-cutter', type: 'product', link: '/product/corn-thresher-chaff-cutter' },
+    
+    // Special Segment Products
+    { name: 'Trencher', slug: 'trencher', type: 'product', link: '/product/trencher' },
+    { name: 'Leaf Blower', slug: 'leaf-blower', type: 'product', link: '/product/leaf-blower' },
+    { name: 'Mini Dumper', slug: 'mini-dumper', type: 'product', link: '/product/mini-dumper' },
+    { name: 'Log Splitter', slug: 'log-splitter', type: 'product', link: '/product/log-splitter' },
+  ];
+
+  // Map spare parts data from JSON
+  const allSpareParts = sparePartsData.map(part => ({
+    name: part.name,
+    slug: part.slug,
+    type: 'spare-part',
+    link: `/spare-parts/${part.slug}`
+  }));
+
+  function fuzzyMatch(str, query) {
+    if (!str || !query) return false;
+    return str.toLowerCase().includes(query.toLowerCase());
+  }
+
+  function handleSearchInputChange(e) {
+    const value = e.target.value;
+    setSearchQuery(value);
+    if (value.trim().length === 0) {
+      setSearchResults([]);
+      setShowSearchResults(false);
+      return;
+    }
+    // Search both products and spare parts
+    const results = [
+      ...allProducts.filter(p => fuzzyMatch(p.name, value)),
+      ...allSpareParts.filter(s => fuzzyMatch(s.name, value)),
+    ];
+    setSearchResults(results);
+    setShowSearchResults(true);
+  }
+
+  function handleSearchSubmit(e) {
+    e.preventDefault();
+    if (searchResults.length === 1) {
+      router.push(searchResults[0].link);
+      setShowSearchResults(false);
+      setSearchQuery('');
+    } else if (searchResults.length > 1) {
+      setShowSearchResults(true);
+    } else {
+      // Optionally show 'no results found'
+      setShowSearchResults(true);
+    }
+  }
+
+  function handleResultClick(result) {
+    router.push(result.link);
+    setShowSearchResults(false);
+    setSearchQuery('');
+  }
+
+  // Close search results when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (!event.target.closest('.search-container')) {
+        setShowSearchResults(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
   return (
     <>
       {/* Mobile header spacer for fixed header on mobile/tablet */}
@@ -106,27 +249,60 @@ function Hero() {
             </motion.p>
           </motion.div>
 
-          {/* Search Bar - Responsive */}
+          {/* Search Bar - Responsive with Results */}
           <motion.div 
-            className='flex flex-col sm:flex-row mt-8 relative w-full max-w-lg'
+            className='flex flex-col sm:flex-row mt-8 relative w-full max-w-lg search-container'
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7 }}
           >
-            <input 
-              type='text' 
-              placeholder='Search our products...' 
-              value={searchValue}
-              onChange={(e) => setSearchValue(e.target.value)}
-              onFocus={() => setIsSearchFocused(true)}
-              onBlur={() => setIsSearchFocused(false)}
-              className='w-full sm:w-96 p-3 rounded-t-lg sm:rounded-t-none sm:rounded-l-lg bg-white/10 backdrop-blur-md text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#989b2e] transition-all duration-300 border border-white/20'
-            />
-            <button 
-              className='w-full sm:w-auto px-6 py-3 bg-[#989b2e] rounded-b-lg sm:rounded-l-none sm:rounded-r-lg transition-all duration-300 font-semibold hover:bg-[#7a7d24]'
-            >
-              Search
-            </button>
+            <form onSubmit={handleSearchSubmit} className="flex flex-col sm:flex-row w-full relative">
+              <input 
+                type='text' 
+                placeholder='Search our products and spare parts...' 
+                value={searchQuery}
+                onChange={handleSearchInputChange}
+                className='w-full sm:w-96 p-3 rounded-t-lg sm:rounded-t-none sm:rounded-l-lg bg-white/10 backdrop-blur-md text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#989b2e] transition-all duration-300 border border-white/20'
+              />
+              <button 
+                type="submit"
+                className='w-full sm:w-auto px-6 py-3 bg-[#989b2e] rounded-b-lg sm:rounded-l-none sm:rounded-r-lg transition-all duration-300 font-semibold hover:bg-[#7a7d24]'
+              >
+                Search
+              </button>
+              
+              {/* Search Results Dropdown */}
+              {showSearchResults && (
+                <div className="absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md border border-white/30 rounded-lg mt-2 max-h-64 overflow-y-auto z-50 shadow-xl">
+                  <div className="p-2">
+                    {searchResults.length > 0 ? (
+                      <>
+                        {searchResults.map((result, idx) => (
+                          <div
+                            key={idx}
+                            onClick={() => handleResultClick(result)}
+                            className="px-3 py-2 hover:bg-[#989b2e]/20 cursor-pointer rounded text-gray-800 flex items-center space-x-2"
+                          >
+                            <span className={`text-xs px-2 py-1 rounded ${
+                              result.type === 'product' 
+                                ? 'bg-blue-100 text-blue-800' 
+                                : 'bg-green-100 text-green-800'
+                            }`}>
+                              {result.type === 'product' ? 'Product' : 'Spare Part'}
+                            </span>
+                            <span>{result.name}</span>
+                          </div>
+                        ))}
+                      </>
+                    ) : (
+                      <div className="px-3 py-2 text-gray-600 text-center">
+                        No results found for "{searchQuery}"
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
+            </form>
           </motion.div>
         </div>
 

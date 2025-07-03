@@ -27,6 +27,9 @@ function WarrantyRegistrationPage() {
     if (isTermsModalOpen || showSuccessModal) {
       // Reduce header and footer z-index when modals are open
       style.textContent = `
+        * {
+          cursor: none !important;
+        }
         header {
           z-index: 10 !important;
         }
@@ -45,9 +48,9 @@ function WarrantyRegistrationPage() {
       document.body.style.overflow = 'hidden'
     } else {
       // Remove the style when modals are closed
-      const existingStyle = document.getElementById('warranty-modal-style')
-      if (existingStyle) {
-        document.head.removeChild(existingStyle)
+      const existingModalStyle = document.getElementById('warranty-modal-style')
+      if (existingModalStyle && existingModalStyle !== style) {
+        document.head.removeChild(existingModalStyle)
       }
       // Restore body scroll
       document.body.style.overflow = 'unset'
@@ -193,7 +196,7 @@ function WarrantyRegistrationPage() {
   return (
     <BgLayout>
       {/* Hero Banner Section */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[60vh] mt-5 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src={bannerImage}
