@@ -296,7 +296,7 @@ function Hero() {
                       </>
                     ) : (
                       <div className="px-3 py-2 text-gray-600 text-center">
-                        No results found for "{searchQuery}"
+                        No results found for &quot;{searchQuery}&quot;
                       </div>
                     )}
                   </div>
