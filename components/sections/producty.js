@@ -92,7 +92,7 @@ function Producty() {
         {/* Sticky section title with arrows */}
         <div className="sticky top-0 z-50 flex flex-col xs:flex-row items-center justify-center bg-transparent py-6 sm:py-8 px-2 sm:px-0 gap-2 sm:gap-0">
           {/* Left Arrow */}
-          <div className="absolute left-150 flex items-center" style={{ marginRight: '10px', maxWidth: 'calc(100vw/8)' }}>
+          <div className="absolute left-90 flex items-center" style={{ marginRight: '10px', maxWidth: 'calc(100vw/8)' }}>
             <motion.div
               className="relative overflow-hidden"
               initial={{ opacity: 0, x: 20 }}
@@ -120,7 +120,7 @@ function Producty() {
           >
             Our <span className='text-[#9a9c30]'>Products</span>
           </motion.h2>
-          <div className="absolute right-150 flex items-center" style={{ marginLeft: '10px', maxWidth: 'calc(100vw/8)' }}>
+          <div className="absolute right-90 flex items-center" style={{ marginLeft: '10px', maxWidth: 'calc(100vw/8)' }}>
             <motion.div
               className="relative overflow-hidden"
               initial={{ opacity: 0, x: -20 }}
