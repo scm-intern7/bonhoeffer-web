@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useRouter } from 'next/navigation';
 import sparePartsData from '../../app/spare-parts/products.json';
+import { GlobeDemo } from './globe';
 
 // Custom hook for counting animation
 const useCountUp = (end, duration = 2, delay = 0) => {
@@ -376,17 +377,18 @@ function Hero() {
 
           {/* GIF Section - Responsive, desktop untouched */}
           <motion.div
-            className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
+            className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <img 
+            {/* <img 
               src="https://bonhoeffermachines.com/en/public/index_files/Global%20Presence.gif" 
               alt="Hero Animation"
               className="w-full object-cover rounded-2xl border-2 border-[#989b2e]/30 shadow-lg"
-            />
+            /> */}
+            <GlobeDemo/>
           </motion.div>
         </motion.div>
       </section>
