@@ -320,7 +320,7 @@ function PartSpecificPage() {
                 </div> */}
                 
                 <Link 
-                  href={`/spare-parts/${slug}/${model.code?.toLowerCase() || model.id}`}
+                  href={`/spare-parts/${slug}/${model.code || model.id}`}
                   className="inline-flex items-center justify-center w-full bg-[#989b2e] hover:bg-[#8a8c20] text-white px-6 py-3 rounded-full font-medium transition-all duration-300 group-hover:scale-105"
                 >
                   View Details

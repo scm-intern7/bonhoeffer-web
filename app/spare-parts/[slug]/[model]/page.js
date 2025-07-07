@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
+import modelData from './modelData.json'
 
 function ModelSpecificPage() {
   const params = useParams();
@@ -13,51 +14,10 @@ function ModelSpecificPage() {
 
   // Get model details based on slug and model code
   const getModelDetails = (partSlug, modelCode) => {
-    const modelDetails = {
-      'piston-kit': {
-        'pk-45-001': {
-          name: 'Universal Piston Kit 45mm',
-          compatible: 'Chainsaw Models: CS-4500, CS-5200',
-          code: 'PK-45-001',
-          details: [
-            { label: 'Cylinder Bore', value: '45mm' },
-            { label: 'Material', value: 'High-Grade Aluminum' },
-            { label: 'Ring Type', value: 'Chrome Plated' },
-            { label: 'Warranty', value: '12 Months' },
-            { label: 'Application', value: 'Professional Use' },
-            { label: 'Weight', value: '280g' }
-          ]
-        },
-        'pk-52-002': {
-          name: 'Heavy Duty Piston Kit 52mm',
-          compatible: 'Chainsaw Models: CS-5800, CS-6200',
-          code: 'PK-52-002',
-          details: [
-            { label: 'Cylinder Bore', value: '52mm' },
-            { label: 'Material', value: 'Forged Aluminum' },
-            { label: 'Ring Type', value: 'Ceramic Coated' },
-            { label: 'Warranty', value: '18 Months' },
-            { label: 'Application', value: 'Heavy Duty' },
-            { label: 'Weight', value: '320g' }
-          ]
-        }
-      },
-      'carburetor': {
-        'cb-std-001': {
-          name: 'Standard Carburetor',
-          compatible: 'Brush Cutters: BC-260, BC-330',
-          code: 'CB-STD-001',
-          details: [
-            { label: 'Type', value: 'Diaphragm Carburetor' },
-            { label: 'Fuel Type', value: 'Gasoline Mix' },
-            { label: 'Adjustment', value: 'High/Low Speed' },
-            { label: 'Warranty', value: '6 Months' },
-            { label: 'Application', value: 'Standard Use' },
-            { label: 'Weight', value: '150g' }
-          ]
-        }
-      }
-    };
+    // Check if the part category exists in modelData
+    if (modelData[partSlug] && modelData[partSlug][modelCode]) {
+      return modelData[partSlug][modelCode];
+    }
 
     // Default model details
     const defaultDetails = {
@@ -74,7 +34,7 @@ function ModelSpecificPage() {
       ]
     };
 
-    return modelDetails[partSlug]?.[modelCode] || defaultDetails;
+    return defaultDetails;
   };
 
   const getPartName = (slug) => {
@@ -245,7 +205,7 @@ function ModelSpecificPage() {
       </section>
 
       {/* Product Details Section */}
-      <section className="py-20 px-6">
+      <section className="py-10 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left Side - Product Image */}
@@ -258,10 +218,11 @@ function ModelSpecificPage() {
             >
               <div className="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10">
                 <Image
-                  src={partImage}
+                  // src={"https://bonhoeffermachines.com/en/public/parts/"+slug+"/"+model.toUpperCase()+".webp"}
+                  src={modelDetails.image || partImage}
                   alt={modelDetails.name}
                   fill
-                  className="object-contain p-8"
+                  className="object-contain p-8 bg-white"
                 />
               </div>
             </motion.div>
@@ -275,36 +236,53 @@ function ModelSpecificPage() {
               transition={{ duration: 0.3 }}
             >
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                <h2 className="text-3xl md:text-4xl font-bold text-white">
                   {modelDetails.name}
                 </h2>
                 <div className="flex items-center space-x-4 mb-6">
                   {/* <span className="text-2xl font-bold text-[#989b2e]">{modelDetails.price}</span> */}
-                  <span className="text-sm text-gray-400 bg-[#989b2e]/20 px-3 py-1 rounded-full">
+                  {/* <span className="text-sm text-gray-400 bg-[#989b2e]/20 px-3 py-1 rounded-full">
                     {modelDetails.code}
-                  </span>
+                  </span> */}
                 </div>
-                <p className="text-lg text-gray-300 mb-8">
+                <p className="text-lg text-gray-300">
                   {modelDetails.compatible}
                 </p>
               </div>
 
               {/* Product Details Cards */}
-              <div className="grid grid-cols-2 gap-4">
-                {modelDetails.details.map((detail, index) => (
-                  <motion.div
-                    key={index}
-                    className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: index * 0.01 }}
-                  >
-                    <h4 className="text-[#989b2e] text-sm font-medium mb-2">{detail.label}</h4>
-                    <p className="text-white font-semibold">{detail.value}</p>
-                  </motion.div>
-                ))}
-              </div>
+              {Array.isArray(modelDetails.details) ? (
+                <div className="grid grid-cols-2 gap-4">
+                  {modelDetails.details.map((detail, index) => (
+                    <motion.div
+                      key={index}
+                      className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.3, delay: index * 0.01 }}
+                    >
+                      <h4 className="text-[#989b2e] text-sm font-medium mb-2">{detail.label}</h4>
+                      <p className="text-white font-semibold">{detail.value}</p>
+                    </motion.div>
+                  ))}
+                </div>
+              ) : (
+                <div className="grid grid-cols-2 gap-4">
+                  {modelDetails.brand && (
+                    <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4">
+                      <h4 className="text-[#989b2e] text-sm font-medium mb-2">Brand</h4>
+                      <p className="text-white font-semibold">{modelDetails.brand}</p>
+                    </div>
+                  )}
+                  {modelDetails.application && (
+                    <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4">
+                      <h4 className="text-[#989b2e] text-sm font-medium mb-2">Application</h4>
+                      <p className="text-white font-semibold">{modelDetails.application}</p>
+                    </div>
+                  )}
+                </div>
+              )}
 
               {/* Contact Button */}
               <motion.div
@@ -328,7 +306,7 @@ function ModelSpecificPage() {
       </section>
 
       {/* Similar Spare Parts Infinite Scroller */}
-      <section className="py-20 px-6 ">
+      <section className="py-10 px-6 ">
         <div className="max-w-7xl mx-auto">
           <motion.div
             className="text-center mb-12"
@@ -351,7 +329,7 @@ function ModelSpecificPage() {
       </section>
 
       {/* Navigation */}
-      <section className="py-10 px-6 text-center">
+      <section className="pt-5 px-6 text-center">
         <div className="flex justify-center space-x-8">
           <Link 
             href={`/spare-parts/${slug}`}
