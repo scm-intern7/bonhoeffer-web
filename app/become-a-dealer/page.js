@@ -25,10 +25,38 @@ function DealerPage() {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = e => {
-    e.preventDefault()
+  const handleSubmit = async e => {
+    e.preventDefault();
     if (!agree) return;
-    setSubmitted(true)
+    setSubmitted(true);
+
+    // Submit to formsubmit.co without redirect/reload
+    try {
+      const formData = new FormData();
+      formData.append('company', form.company);
+      formData.append('email', form.email);
+      formData.append('phone', form.phone);
+      formData.append('address', form.address);
+      formData.append('postal', form.postal);
+      formData.append('city', form.city);
+      formData.append('country', form.country);
+      formData.append('brands', form.brands);
+      formData.append('_subject', 'New Dealer Lead from Bonhoeffer Website');
+      formData.append('_template', 'table');
+      formData.append('_next', window.location.href); // disables redirect, stays on page
+      formData.append('_captcha', 'false');
+
+      await fetch('https://formsubmit.co/amit@bonhoeffermachines.com', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json',
+        },
+      });
+      // No redirect, UI stays as is
+    } catch (err) {
+      // Optionally handle error
+    }
   }
 
   // Redirect to home after 10s or when modal is closed

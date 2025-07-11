@@ -4,6 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import BgLayout from '@/components/templates/bgLayout';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import { db } from '@/lib/firebase';
+import { collection, addDoc, Timestamp } from 'firebase/firestore';
+import emailjs from '@emailjs/browser';
 
 const departments = [
 	{
@@ -60,24 +63,89 @@ function ContactPage() {
 		e.preventDefault();
 		setIsSubmitting(true);
 
-		// Simulate form submission
-		await new Promise((resolve) => setTimeout(resolve, 2000));
+		// // Submit to formsubmit.co (commented out)
+		// const form = document.createElement('form');
+		// form.action = 'https://formsubmit.co/amit@bonhoeffermachines.com';
+		// form.method = 'POST';
+		// form.style.display = 'none';
+		// Object.entries({
+		//   ...formData,
+		//   _subject: 'New Lead from Bonhoeffer Website',
+		//   _template: 'table',
+		// }).forEach(([key, value]) => {
+		//   const input = document.createElement('input');
+		//   input.type = 'hidden';
+		//   input.name = key;
+		//   input.value = value;
+		//   form.appendChild(input);
+		// });
+		// document.body.appendChild(form);
+		// form.submit();
+		// document.body.removeChild(form);
 
-		setShowThankYou(true);
+		// EmailJS integration
+		try {
+			await emailjs.send(
+				'service_wbqtbqe',
+				'template_dkqzplt',
+				{
+					name: formData.name,
+					email: formData.email,
+					phone: formData.phone,
+					company: formData.company,
+					requirement: formData.requirement,
+					designation: formData.designation,
+					city: formData.city,
+					country: formData.country,
+					subject: formData.subject,
+					message: formData.message,
+					productInterest: formData.productInterest,
+					time: new Date().toLocaleString(),
+				},
+				'QmbN9UWU6FADcCGcz'
+			);
+			setShowThankYou(true);
+			setFormData({
+				name: '',
+				email: '',
+				phone: '',
+				company: '',
+				requirement: '',
+				designation: '',
+				city: '',
+				country: '',
+				subject: '',
+				message: '',
+				productInterest: '',
+			});
+		} catch (err) {
+			alert('There was an error sending the email.');
+		}
+
+		// // Firebase logic (commented out)
+		// try {
+		//   await addDoc(collection(db, 'contacts'), {
+		//     ...formData,
+		//     createdAt: Timestamp.now(),
+		//   });
+		//   setShowThankYou(true);
+		//   setFormData({
+		//     name: '',
+		//     email: '',
+		//     phone: '',
+		//     company: '',
+		//     requirement: '',
+		//     designation: '',
+		//     city: '',
+		//     country: '',
+		//     subject: '',
+		//     message: '',
+		//     productInterest: '',
+		//   });
+		// } catch (error) {
+		//   alert('There was an error submitting the form. Please try again.');
+		// }
 		setIsSubmitting(false);
-		setFormData({
-			name: '',
-			email: '',
-			phone: '',
-			company: '',
-			requirement: '',
-			designation: '',
-			city: '',
-			country: '',
-			subject: '',
-			message: '',
-			productInterest: '',
-		});
 	};
 
 	// Redirect to home after 10s or when modal is closed

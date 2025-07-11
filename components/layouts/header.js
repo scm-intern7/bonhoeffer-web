@@ -1142,25 +1142,6 @@ function Header() {
         )}
       </AnimatePresence>
 
-      {/* Statistics capsules - Right side sticky */}
-      <div className="fixed right-3 top-1/3 transform -translate-y-1/2 z-40 hidden lg:block">
-        <div className="flex flex-col gap-3 bg-gradient-to-b from-gray-900/95 via-gray-800/95 to-gray-900/95 backdrop-blur-lg rounded-2xl shadow-2xl px-1 py-2 border border-gray-700/50">
-          <div className="text-center px-1 py-1">
-            <div className="text-2xl font-bold text-[#989b2e]">5 Mn+</div>
-            <div className="text-base font-medium text-white">Clients</div>
-          </div>
-          <div className="h-px mx-2 bg-gray-600/50"></div>
-          <div className="text-center px-1 py-1">
-            <div className="text-2xl font-bold text-[#989b2e]">21+</div>
-            <div className="text-base font-medium text-white">Countries</div>
-          </div>
-          <div className="h-px mx-2 bg-gray-600/50"></div>
-          <div className="text-center px-1 py-1">
-            <div className="text-2xl font-bold text-[#989b2e]">5000+</div>
-            <div className="text-base font-medium text-white">Distributors</div>
-          </div>
-        </div>
-      </div>
 
       <style jsx global>{`
         .custom-scrollbar {
