@@ -241,7 +241,7 @@ function Hero() {
             </motion.h1>
             
             <motion.p
-              className="text-base xs:text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto"
+              className="text-base xs:text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.5 }}

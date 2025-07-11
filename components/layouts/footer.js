@@ -81,7 +81,7 @@ function Footer() {
 
   return (
     <footer className="text-white relative overflow-hidden">
-      <div className="relative z-10 max-w-7xl mx-auto px-20 py-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-20 py-16">
         {/* Main Footer Content - Single Row */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-6">
           {/* Company Info */}

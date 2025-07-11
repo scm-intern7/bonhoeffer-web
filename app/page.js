@@ -6,6 +6,7 @@ import Products from "@/components/sections/products";
 import BgLayout from "@/components/templates/bgLayout";
 import Producty from "@/components/sections/producty";
 import { GlobeDemo } from "@/components/sections/globe";
+import Cta from "@/components/sections/cta";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Social/>
       {/* <Products/> */}
       <Producty/>
+      <Cta/>
     </BgLayout>
   );
 }

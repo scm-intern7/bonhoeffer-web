@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import BgLayout from '@/components/templates/bgLayout'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
-import galleryUrls from '../../../gallery-urls.json'
+import galleryUrls from '../../../data/gallery-urls.json'
 
 function PhotosPage() {
   const [selectedImage, setSelectedImage] = useState(null)
