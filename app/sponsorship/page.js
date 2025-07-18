@@ -15,7 +15,7 @@ function ImageSlider({ images, title }) {
 
     const interval = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % images.length)
-    }, 4000)
+    }, 3000)
 
     return () => clearInterval(interval)
   }, [isAutoPlaying, images.length])
@@ -148,6 +148,17 @@ function SponsorPage() {
     "https://bonhoeffermachines.com/public/media/event-7july7.webp",
     "https://bonhoeffermachines.com/public/media/event-7july8.webp",
     "https://bonhoeffermachines.com/public/media/event-7july9.webp"
+  ]
+
+  const images4 = [
+    "https://en-blog.bonhoeffermachines.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-25-at-13.01.07.jpeg",
+    "https://en-blog.bonhoeffermachines.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-25-at-13.01.03.jpeg",
+    "https://en-blog.bonhoeffermachines.com/wp-content/uploads/2025/04/Juan-Carlos-1.jpeg",
+    "https://en-blog.bonhoeffermachines.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-23-at-16.14.53.jpeg",
+    "https://en-blog.bonhoeffermachines.com/wp-content/uploads/2025/04/car1.webp",
+    "https://en-blog.bonhoeffermachines.com/wp-content/uploads/2025/04/car2.webp",
+    "https://en-blog.bonhoeffermachines.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-23-at-16.14.50.jpeg",
+    "https://en-blog.bonhoeffermachines.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-23-at-16.14.55.jpeg"
   ]
 
   return (
@@ -404,6 +415,48 @@ function SponsorPage() {
         </div>
       </section>
 
+      {/* Another Section */}
+      <section className="py-10 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="lg:order-1"
+            >
+              <ImageSlider images={images4} title="Cycling Competition" />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="lg:order-2"
+            >
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8">
+                <div className="flex items-center mb-6">
+                  <div className="bg-[#989b2e] rounded-full p-3 mr-4">
+                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2zM8 12.5l4 2.5 4-2.5V10l-4 2.5L8 10v2.5z"/>
+                    </svg>
+                  </div>
+                  <h3 className="text-3xl font-bold text-white">Partnership Success</h3>
+                </div>
+                <h4 className="text-2xl font-semibold text-[#989b2e] mb-4">
+                  From Service Bay to Sales Success: How Juan Carlos and Bonhoeffer Built a Winning Partnership in Peru
+                </h4>
+                <p className="text-gray-300 leading-relaxed text-lg">
+                  Before Juan Carlos became the owner of Maquinaria Jaen — now one of Bonhoeffer&apos;s most valued dealers in Peru — he was known for something else entirely: his skill with a wrench. Starting as a mechanic for one of the distributors, Juan Carlos earned a reputation for getting the job done right. His expertise didn&apos;t just serve customers — it earned him the trust of other distributors. When he opened his own service center, these distributors didn&apos;t hesitate. They aligned with him, sending machines to his shop for technical service. Some even placed stock there, knowing customers would trust his advice.
+                </p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action Section */}
       <section className="py-10 px-6">
         <div className="max-w-4xl mx-auto text-center">
@@ -425,7 +478,7 @@ function SponsorPage() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-[#989b2e] hover:bg-[#7a7f25] text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="bg-[#989b2e] hover:bg-[#7a7f25] text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 shadow-lg hover:shadow-xl cursor-pointer"
                 >
                 Contact Us for Partnerships
                 </motion.button>
