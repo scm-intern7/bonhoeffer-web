@@ -181,10 +181,10 @@ function ModelSpecificPage() {
 
     return (
       <div className="w-full flex flex-col items-center relative">
-        <div className="relative" style={{ width: 500, height: 500 }}>
+        {/* Main image container - responsive */}
+        <div className="relative w-full max-w-lg aspect-square">
           <div
-            className="rounded-2xl overflow-visible bg-white/5 border border-white/10 flex items-center justify-center relative"
-            style={{ width: 500, height: 500, background: '#fff', zIndex: 10 }}
+            className="rounded-2xl overflow-visible bg-white border border-white/10 flex items-center justify-center relative w-full h-full"
             onMouseEnter={() => setIsZoomed(true)}
             onMouseLeave={() => setIsZoomed(false)}
             onMouseMove={handleMouseMove}
@@ -198,16 +198,10 @@ function ModelSpecificPage() {
               draggable={false}
               priority
             />
-            {/* Zoomed overlay */}
+            {/* Zoomed overlay - only on desktop */}
             {isZoomed && (
-              <div
-                className="fixed lg:absolute top-0 left-full ml-6 z-50 hidden lg:block"
-                style={{ width: 480, height: 480 }}
-              >
-                <div
-                  className="rounded-2xl border border-[#989b2e] shadow-2xl overflow-hidden bg-white"
-                  style={{ width: 480, height: 480, position: 'relative' }}
-                >
+              <div className="fixed lg:absolute top-0 left-full ml-6 z-50 hidden xl:block w-96 h-96">
+                <div className="rounded-2xl border border-[#989b2e] shadow-2xl overflow-hidden bg-white w-full h-full relative">
                   <Image
                     src={images[currentIndex]}
                     alt={alt + ' zoomed'}
@@ -224,35 +218,33 @@ function ModelSpecificPage() {
               </div>
             )}
           </div>
-          {/* Prev/Next buttons */}
+          {/* Prev/Next buttons - responsive positioning */}
           <button
-            className="absolute cursor-pointer left-0 top-1/2 -translate-y-1/2 bg-[#989b2e] hover:bg-[#7a7d24] text-white rounded-full w-10 h-10 flex items-center justify-center z-20"
+            className="absolute cursor-pointer left-0 sm:-left-12 top-1/2 -translate-y-1/2 bg-[#989b2e] hover:bg-[#7a7d24] text-white rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center z-20"
             onClick={handlePrev}
             aria-label="Previous image"
-            style={{ left: -60 }}
           >
-            <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="sm:w-6 sm:h-6">
               <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
             </svg>
           </button>
           <button
-            className="absolute cursor-pointer right-0 top-1/2 -translate-y-1/2 bg-[#989b2e] hover:bg-[#7a7d24] text-white rounded-full w-10 h-10 flex items-center justify-center z-20"
+            className="absolute cursor-pointer right-0 sm:-right-12 top-1/2 -translate-y-1/2 bg-[#989b2e] hover:bg-[#7a7d24] text-white rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center z-20"
             onClick={handleNext}
             aria-label="Next image"
-            style={{ right: -60 }}
           >
-            <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="sm:w-6 sm:h-6">
               <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
             </svg>
           </button>
         </div>
-        {/* Thumbnails */}
-        <div className="flex space-x-3 mt-4">
+        {/* Thumbnails - responsive */}
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mt-4 px-4">
           {images.map((img, idx) => (
             <button
               key={idx}
               onClick={() => setCurrentIndex(idx)}
-              className={`relative w-20 h-20 rounded-lg overflow-hidden border-2 transition-all duration-300 ${
+              className={`relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-lg overflow-hidden border-2 transition-all duration-300 ${
                 currentIndex === idx ? 'border-[#989b2e]' : 'border-white/20 hover:border-white/40'
               }`}
               aria-label={`View image ${idx + 1}`}
@@ -261,7 +253,7 @@ function ModelSpecificPage() {
                 src={img}
                 alt={alt + ' thumbnail ' + (idx + 1)}
                 fill
-                className="object-contain p-2 bg-white"
+                className="object-contain p-1 sm:p-2 bg-white"
                 draggable={false}
               />
             </button>
@@ -428,7 +420,7 @@ function ModelSpecificPage() {
   function DocumentButtons() {
     return (
       <motion.div
-        className="flex flex-wrap gap-4 lg:justify-end"
+        className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 lg:justify-end"
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
@@ -439,9 +431,9 @@ function ModelSpecificPage() {
             href={modelDetails.userManualUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-lg font-medium transition-colors duration-300 flex items-center"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 text-sm sm:text-base rounded-lg font-medium transition-colors duration-300 flex items-center justify-center"
           >
-            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 sm:w-5 sm:h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
             User Manual
@@ -452,9 +444,9 @@ function ModelSpecificPage() {
             href={modelDetails.brochureUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300 flex items-center"
+            className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-lg font-medium transition-colors duration-300 flex items-center justify-center"
           >
-            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 sm:w-5 sm:h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
             </svg>
             Brochure
@@ -465,9 +457,9 @@ function ModelSpecificPage() {
             href={modelDetails.sparePartsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#989b2e] hover:bg-[#8a8c20] text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300 flex items-center"
+            className="bg-[#989b2e] hover:bg-[#8a8c20] text-white px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-lg font-medium transition-colors duration-300 flex items-center justify-center"
           >
-            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 sm:w-5 sm:h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
@@ -479,9 +471,9 @@ function ModelSpecificPage() {
             href={modelDetails.workshopManualUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300 flex items-center"
+            className="bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-lg font-medium transition-colors duration-300 flex items-center justify-center"
           >
-            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 sm:w-5 sm:h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
             </svg>
             Workshop Manual
@@ -496,14 +488,14 @@ function ModelSpecificPage() {
   function WarrantyCertifications() {
     return (
       <motion.div
-        className="flex justify-end space-x-6"
+        className="flex justify-center lg:justify-end space-x-4 sm:space-x-6"
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
       >
         <div className="text-center">
-          <div className="w-20 h-20 rounded-full flex items-center justify-center mb-2 bg-white/10">
+          <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mb-2 bg-white/10">
             <Image
               src={
                 modelDetails.warrantyTime === 36 ? warranty36 :
@@ -512,35 +504,35 @@ function ModelSpecificPage() {
                 warranty12
               }
               alt="Warranty Seal"
-              width={64}
-              height={64}
-              className="object-contain"
+              width={48}
+              height={48}
+              className="object-contain sm:w-16 sm:h-16"
             />
           </div>
           {/* <p className="text-xs text-gray-300">{modelDetails.warrantyTime} Month Warranty</p> */}
         </div>
         {modelDetails.isFMTTI && (
           <div className="text-center">
-            <div className="w-20 h-20 rounded-full flex items-center justify-center mb-2 bg-white/10">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mb-2 bg-white/10">
               <Image
                 src={fmttiImage}
                 alt="FMTTI Seal"
-                width={64}
-                height={64}
-                className="object-contain"
+                width={48}
+                height={48}
+                className="object-contain sm:w-16 sm:h-16"
               />
             </div>
             {/* <p className="text-xs text-gray-300">FMTTI Certified</p> */}
           </div>
         )}
         <div className="text-center">
-          <div className="w-20 h-20 rounded-full flex items-center justify-center mb-2 bg-white/10">
+          <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mb-2 bg-white/10">
             <Image
               src={isoImage}
               alt="ISO Seal"
-              width={64}
-              height={64}
-              className="object-contain"
+              width={48}
+              height={48}
+              className="object-contain sm:w-16 sm:h-16"
             />
           </div>
           {/* <p className="text-xs text-gray-300">ISO Company</p> */}
@@ -555,31 +547,34 @@ function ModelSpecificPage() {
       {renderBannerSection()}
 
       {/* Product Info & Download Buttons */}
-      <section className="py-12 px-6">
+      <section className="py-8 sm:py-12 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="flex justify-between gap-50 px-5">
+          <div className="flex flex-col lg:flex-row lg:justify-between gap-6 lg:gap-12 px-2 sm:px-5">
             {/* Left - Product Name */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
+              className="flex-1"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2">
                 {modelDetails.model}
               </h2>
               {/* <p className="text-[#989b2e] text-lg font-medium">{modelDetails.power}</p> */}
             </motion.div>
 
             {/* Right - Download Buttons */}
-            <DocumentButtons />
+            <div className="flex-shrink-0">
+              <DocumentButtons />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Product Leaflet Image */}
       {(modelDetails.isCatalogueLeft || modelDetails.isCatalogueRight) && (
-        <section className="py-8 px-6">
+        <section className="py-6 sm:py-8 px-4 sm:px-6">
           <div className="max-w-6xl mx-auto">
             <motion.div
               className="flex flex-col md:flex-row gap-4 md:gap-8 rounded-2xl overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10 p-4 md:p-6 items-center justify-center"
@@ -589,7 +584,7 @@ function ModelSpecificPage() {
               transition={{ duration: 0.8 }}
             >
               {modelDetails.isCatalogueLeft && (
-                <div className="relative w-full aspect-[2492/3508] h-full ">
+                <div className="relative w-full aspect-[2492/3508] h-full max-h-96 sm:max-h-[500px] md:max-h-[600px]">
                   <Image
                     src={modelDetails.catalougeLeft}
                     alt={`${modelDetails.name} Leaflet Left`}
@@ -600,7 +595,7 @@ function ModelSpecificPage() {
                 </div>
               )}
               {modelDetails.isCatalogueRight && (
-                <div className="relative w-full aspect-[2492/3508] h-full ">
+                <div className="relative w-full aspect-[2492/3508] h-full max-h-96 sm:max-h-[500px] md:max-h-[600px]">
                   <Image
                     src={modelDetails.catalougeRight}
                     alt={`${modelDetails.name} Leaflet Right`}
@@ -616,20 +611,21 @@ function ModelSpecificPage() {
       )}
 
       {/* Specifications/Features Toggle & Certification Seals */}
-      <section className="pt-12 px-6">
+      <section className="pt-8 sm:pt-12 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Left - Toggle Buttons */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
+              className="order-1"
             >
-              <div className="flex space-x-4 mb-8">
+              <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 mb-8">
                 <button
                   onClick={() => setActiveView('specifications')}
-                  className={`px-6 py-3 rounded-lg font-medium transition-all cursor-pointer duration-300 ${
+                  className={`px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-lg font-medium transition-all cursor-pointer duration-300 ${
                     activeView === 'specifications'
                       ? 'bg-[#989b2e] text-white'
                       : 'bg-white/10 text-gray-300 hover:bg-white/20'
@@ -640,7 +636,7 @@ function ModelSpecificPage() {
                 {modelDetails.features && modelDetails.features.length > 0 && (
                   <button
                     onClick={() => setActiveView('features')}
-                    className={`px-6 py-3 rounded-lg font-medium transition-all cursor-pointer duration-300 ${
+                    className={`px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-lg font-medium transition-all cursor-pointer duration-300 ${
                       activeView === 'features'
                         ? 'bg-[#989b2e] text-white'
                         : 'bg-white/10 text-gray-300 hover:bg-white/20'
@@ -653,21 +649,24 @@ function ModelSpecificPage() {
             </motion.div>
 
             {/* Right - Certification Seals */}
-            <WarrantyCertifications />
+            <div className="order-2 lg:order-none">
+              <WarrantyCertifications />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Main Content Section */}
-      <section className="py-12 px-6">
+      <section className="py-8 sm:py-12 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Left - Image Slider */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
+              className="order-2 lg:order-1"
             >
               <ExZoomGallery
                 images={modelDetails.showcaseImages}
@@ -683,37 +682,38 @@ function ModelSpecificPage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
+              className="order-1 lg:order-2"
             >
               {activeView === 'specifications' ? (
-                <div className="grid grid-cols-1 gap-4">
+                <div className="grid grid-cols-1 gap-3 sm:gap-4">
                   {modelDetails.specifications.map((spec, index) => (
                     <motion.div
                       key={index}
-                      className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-3"
+                      className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-3 sm:p-4"
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.3, delay: index * 0.005 }}
                     >
-                      <div className="flex justify-between items-center">
-                        <h4 className="text-[#989b2e] font-medium">{spec.label}</h4>
-                        <p className="text-white font-semibold">{spec.value}</p>
+                      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-0">
+                        <h4 className="text-[#989b2e] font-medium text-sm sm:text-base">{spec.label}</h4>
+                        <p className="text-white font-semibold text-sm sm:text-base">{spec.value}</p>
                       </div>
                     </motion.div>
                   ))}
                 </div>
               ) : (
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                   {modelDetails.features.map((feature, index) => (
                     <motion.div
                       key={index}
-                      className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4"
+                      className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-3 sm:p-4"
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.3, delay: index * 0.01 }}
                     >
-                      <p className="text-gray-300 leading-relaxed">{feature}</p>
+                      <p className="text-gray-300 leading-relaxed text-sm sm:text-base">{feature}</p>
                     </motion.div>
                   ))}
                 </div>
@@ -724,12 +724,12 @@ function ModelSpecificPage() {
       </section>
 
       {/* Product Description & Model Description */}
-      <section className="py-12 px-6 ">
+      <section className="py-8 sm:py-12 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             {/* Left - Product & Model Descriptions */}
             <motion.div
-              className="space-y-8"
+              className="space-y-6 sm:space-y-8 order-2 lg:order-1"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -739,8 +739,8 @@ function ModelSpecificPage() {
                 <div className="space-y-4">
                   {modelDetails.description.map((desc, idx) => (
                     <div key={idx}>
-                      {desc.title && <h3 className="text-2xl font-bold text-[#989b2e] mb-4">{desc.title}</h3>}
-                      <p className="text-gray-100 leading-relaxed">{desc.text}</p>
+                      {desc.title && <h3 className="text-xl sm:text-2xl font-bold text-[#989b2e] mb-3 sm:mb-4">{desc.title}</h3>}
+                      <p className="text-gray-100 leading-relaxed text-sm sm:text-base">{desc.text}</p>
                     </div>
                   ))}
                 </div>
@@ -749,7 +749,7 @@ function ModelSpecificPage() {
 
             {/* Right - Labeled Product Image */}
             <motion.div
-              className="relative h-full rounded-2xl overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10"
+              className="relative h-64 sm:h-80 lg:h-full rounded-2xl overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10 order-1 lg:order-2"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -759,7 +759,7 @@ function ModelSpecificPage() {
                 src={modelDetails.descriptionImage}
                 alt={`${modelDetails.name} labeled view`}
                 fill
-                className="object-contain p-8 bg-white"
+                className="object-contain p-4 sm:p-8 bg-white"
               />
               {/* You can add labeled callouts here */}
             </motion.div>
@@ -768,21 +768,21 @@ function ModelSpecificPage() {
       </section>
 
       {/* FAQs */}
-      <section className="py-20 px-6">
+      <section className="py-12 sm:py-20 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
           <motion.div
-            className="text-center mb-16"
+            className="text-center mb-12 sm:mb-16"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-white">
               Frequently Asked <span className='text-[#989b2e]'>Questions</span>
             </h2>
           </motion.div>
 
-          <div className="space-y-4">
+          <div className="space-y-3 sm:space-y-4">
             {faqs.map((faq, index) => {
               const isOpen = openFaqIndex === index;
               return (
@@ -795,13 +795,13 @@ function ModelSpecificPage() {
                   transition={{ duration: 0.3, delay: index * 0.01 }}
                 >
                   <button
-                    className="w-full flex justify-between items-center text-left p-6 focus:outline-none"
+                    className="w-full flex justify-between items-center text-left p-4 sm:p-6 focus:outline-none"
                     onClick={() => setOpenFaqIndex(isOpen ? -1 : index)}
                     aria-expanded={isOpen}
                   >
-                    <span className="text-lg font-semibold text-white">{faq.question}</span>
+                    <span className="text-base sm:text-lg font-semibold text-white pr-4">{faq.question}</span>
                     <svg
-                      className={`w-6 h-6 ml-4 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+                      className={`w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -810,14 +810,14 @@ function ModelSpecificPage() {
                     </svg>
                   </button>
                   <div
-                    className="transition-all duration-300 px-6"
+                    className="transition-all duration-300 px-4 sm:px-6"
                     style={{
                       maxHeight: isOpen ? '500px' : '0px',
                       opacity: isOpen ? 1 : 0,
                       pointerEvents: isOpen ? 'auto' : 'none',
                     }}
                   >
-                    <p className="text-gray-300 leading-relaxed mb-2">{faq.answer}</p>
+                    <p className="text-gray-300 leading-relaxed mb-2 text-sm sm:text-base">{faq.answer}</p>
                   </div>
                 </motion.div>
               );
@@ -827,21 +827,21 @@ function ModelSpecificPage() {
       </section>
 
       {/* Other Models */}
-      <section className="pb-20 px-6">
+      <section className="pb-12 sm:pb-20 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <motion.div
-            className="text-center mb-16"
+            className="text-center mb-12 sm:mb-16"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-white">
               Other <span className='text-[#989b2e]'>Models</span>
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {otherModels.map((otherModel, index) => (
               <Link
                 key={index}
@@ -849,14 +849,14 @@ function ModelSpecificPage() {
                 className="group"
               >
                 <motion.div
-                  className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300"
+                  className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 sm:p-6 hover:bg-white/10 transition-all duration-300"
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.3, delay: index * 0.01 }}
                   whileHover={{ scale: 1.02 }}
                 >
-                  <div className="relative h-60 mb-4 rounded-xl overflow-hidden bg-white">
+                  <div className="relative h-48 sm:h-60 mb-4 rounded-xl overflow-hidden bg-white">
                     <Image
                       src={otherModel.image || getProductImage(slug)}
                       alt={otherModel.name}
@@ -864,7 +864,7 @@ function ModelSpecificPage() {
                       className="object-contain p-2 scale-130 transition-transform duration-300"
                     />
                   </div>
-                  <h3 className="text-lg font-bold text-white mb-0 group-hover:text-[#989b2e] transition-colors text-center">
+                  <h3 className="text-base sm:text-lg font-bold text-white mb-0 group-hover:text-[#989b2e] transition-colors text-center">
                     {otherModel.name}
                   </h3>
                   {/* <p className="text-gray-300 text-center">{otherModel.power}</p> */}
@@ -876,22 +876,22 @@ function ModelSpecificPage() {
       </section>
 
       {/* Navigation */}
-      <section className="pb-5 px-6 text-center">
-        <div className="flex justify-center space-x-8">
+      <section className="pb-5 px-4 sm:px-6 text-center">
+        <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
           <Link 
             href={`/product/${slug}`}
-            className="inline-flex items-center text-[#989b2e] hover:text-white transition-colors"
+            className="inline-flex items-center text-[#989b2e] hover:text-white transition-colors text-sm sm:text-base"
           >
-            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 sm:w-5 sm:h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
             Back to {getProductName(slug)} Models
           </Link>
           <Link 
             href="/product"
-            className="inline-flex items-center text-[#989b2e] hover:text-white transition-colors"
+            className="inline-flex items-center text-[#989b2e] hover:text-white transition-colors text-sm sm:text-base"
           >
-            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 sm:w-5 sm:h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z" />
             </svg>
             All Products
