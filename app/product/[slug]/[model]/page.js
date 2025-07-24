@@ -299,7 +299,7 @@ function ModelSpecificPage() {
         //     </motion.h1>
         //   </motion.div>
         // </section>
-      <section className="relative h-[22vh] xs:h-[26vh] sm:h-[32vh] md:h-[38vh] lg:h-[44vh] min-h-[160px] sm:min-h-[200px] md:min-h-[260px] lg:min-h-[320px] flex items-center overflow-hidden mt-4 md:mt-5">
+      <section className="relative h-[22vh] xs:h-[26vh] sm:h-[32vh] md:h-[38vh] lg:h-[44vh] min-h-[160px] sm:min-h-[200px] md:min-h-[260px] lg:min-h-[320px] flex items-center overflow-hidden mt-20 md:mt-20">
         <div className="absolute inset-0">
           <Image
             src={bannerSrc}
@@ -332,8 +332,8 @@ function ModelSpecificPage() {
     } else if (modelDetails.isVideo && Array.isArray(modelDetails.videoUrls) && modelDetails.videoUrls.length > 0) {
       // Video banner (YouTube embed) - handles multiple videos
       return (
-        <section className="relative min-h-[70vh] flex flex-col items-center justify-center overflow-hidden mt-5 pt-12">
-          
+        <section className="relative min-h-[50vh] lg:min-h-[70vh] flex flex-col items-center justify-center overflow-hidden mt-5 pt-19 lg:pt-12">
+
           <div className={`grid gap-6 w-full max-w-7xl px-6 ${
             modelDetails.videoUrls.length === 1 ? 'grid-cols-1 max-w-4xl' :
             modelDetails.videoUrls.length === 2 ? 'grid-cols-1 md:grid-cols-2' :
@@ -371,7 +371,7 @@ function ModelSpecificPage() {
             transition={{ duration: 1 }}
           >
             <motion.h1 
-              className="text-3xl md:text-5xl font-bold mb-4"
+              className="text-3xl md:text-5xl font-bold md:mb-4"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 0.3 }}
@@ -730,7 +730,7 @@ function ModelSpecificPage() {
             {/* Left - Product & Model Descriptions */}
             <motion.div
               className="space-y-6 sm:space-y-8 order-2 lg:order-1"
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
@@ -749,7 +749,7 @@ function ModelSpecificPage() {
 
             {/* Right - Labeled Product Image */}
             <motion.div
-              className="relative h-64 sm:h-80 lg:h-full rounded-2xl overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10 order-1 lg:order-2"
+              className="relative h-full rounded-2xl overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10 order-1 lg:order-2"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -801,7 +801,7 @@ function ModelSpecificPage() {
                   >
                     <span className="text-base sm:text-lg font-semibold text-white pr-4">{faq.question}</span>
                     <svg
-                      className={`w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+                      className={`w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 text-white transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
