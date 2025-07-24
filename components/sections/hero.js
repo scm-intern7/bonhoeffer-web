@@ -236,7 +236,7 @@ function Hero() {
             </div>
             <div className="h-px mx-2 bg-gray-600/50"></div>
             <div className="text-center px-1 py-1">
-              <div className="text-2xl font-bold text-white animate-bounce">5000+</div>
+              <div className="text-2xl font-bold text-white animate-bounce">5743+</div>
               <div className="text-base font-medium text-[#989b2e]">Distributors</div>
             </div>
           </div>
@@ -378,17 +378,17 @@ function Hero() {
               </div>
               <div className="p-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
                 <h3 className='text-2xl sm:text-2xl md:text-3xl font-semibold text-white'>
-                  <AnimatedCounter end={4500} suffix="+" delay={0.5} /> Products
+                  <AnimatedCounter end={4535} suffix="+" delay={0.5} /> Products
                 </h3>
               </div>
               <div className="p-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
                 <h3 className='text-2xl sm:text-2xl md:text-3xl font-semibold text-white'>
-                  <AnimatedCounter end={5000} suffix="+" delay={0.5} /> Distributors
+                  <AnimatedCounter end={5743} suffix="+" delay={0.5} /> Distributors
                 </h3>
               </div>
               <div className="p-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
                 <h3 className='text-2xl sm:text-2xl md:text-3xl font-semibold text-white'>
-                  <AnimatedCounter end={15000} suffix="+" delay={0.5} /> Retail Points
+                  <AnimatedCounter end={15347} suffix="+" delay={0.5} /> Retail Points
                 </h3>
               </div>
             </div>
