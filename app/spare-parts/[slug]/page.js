@@ -234,7 +234,7 @@ function PartSpecificPage() {
             className="object-cover"
             priority
           />
-          {/* <div className="absolute inset-0 bg-black/70" /> */}
+          <div className="absolute inset-0 bg-black/10" />
         </div>
         
         {/* <motion.div 
