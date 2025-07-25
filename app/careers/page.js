@@ -429,10 +429,10 @@ Note: Resume/CV file is stored in Firebase database.`;
                 <div className="text-6xl mb-4">🔍</div>
                 <h3 className="text-2xl font-bold text-white mb-4">No Current Openings</h3>
                 <p className="text-gray-300 mb-6">
-                  We don't have any open positions at the moment, but we're always looking for talented individuals to join our team.
+                  We don&apos;t have any open positions at the moment, but we&apos;re always looking for talented individuals to join our team.
                 </p>
                 <p className="text-gray-300">
-                  Feel free to submit your application below and we'll keep your profile for future opportunities.
+                  Feel free to submit your application below and we&apos;ll keep your profile for future opportunities.
                 </p>
               </div>
             </motion.div>
@@ -495,7 +495,7 @@ Note: Resume/CV file is stored in Firebase database.`;
               Ready to <span className="text-[#989b2e]">Join Us?</span>
             </h2>
             <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto">
-              Take the first step towards an exciting career with Bonhoeffer Machines. Fill out the form below and let's start this journey together.
+              Take the first step towards an exciting career with Bonhoeffer Machines. Fill out the form below and let&apos;s start this journey together.
             </p>
           </motion.div>
 
