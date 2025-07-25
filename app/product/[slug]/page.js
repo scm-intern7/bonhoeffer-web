@@ -506,7 +506,7 @@ function ProductSpecificPage() {
       <section className="pt-10 xs:pt-14 md:pt-20 px-3 xs:px-4 sm:px-6">
         <div className="max-w-2xl sm:max-w-4xl md:max-w-6xl lg:max-w-7xl mx-auto">
           <div
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6 md:gap-8"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8"
           >
             {models.map((model, index) => (
               <motion.div
@@ -518,11 +518,11 @@ function ProductSpecificPage() {
                 transition={{ duration: 0.3, delay: index * 0.01 }}
                 whileHover={{ scale: 1.02, boxShadow: '0 20px 40px rgba(152, 155, 46, 0.1)' }}
               >
-                <div className="relative w-full h-36 xs:h-40 sm:h-44 md:h-48 mb-4 xs:mb-6 rounded-xl overflow-hidden bg-white flex items-center justify-center">
-                  <Image
+                <div className="relative w-full  mb-4 xs:mb-6 rounded-xl overflow-hidden bg-white flex items-center justify-center">
+                  <img
                     src={model.image}
                     alt={model.name}
-                    fill
+                    // fill
                     className="object-contain p-2 transition-transform duration-300"
                   />
                 </div>
@@ -536,7 +536,7 @@ function ProductSpecificPage() {
                 </div>
                 <Link
                   href={model.link || `/product/${slug}/${model.name.toLowerCase()}`}
-                  className="inline-flex items-center justify-center w-full bg-[#989b2e] hover:bg-[#8a8c20] text-white px-4 xs:px-6 py-2 xs:py-3 rounded-full font-medium transition-all duration-300 group-hover:scale-105 cursor-pointer text-sm xs:text-base mt-auto"
+                  className="inline-flex  items-center justify-center w-full bg-[#989b2e] hover:bg-[#8a8c20] text-white px-4 xs:px-6 py-2 xs:py-3 rounded-full font-medium transition-all duration-300 group-hover:scale-105 cursor-pointer text-sm xs:text-base mt-auto"
                 >
                   View Details
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
