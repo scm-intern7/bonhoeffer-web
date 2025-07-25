@@ -225,14 +225,14 @@ function PartSpecificPage() {
       <div className="block lg:hidden" style={{ height: '4em' }} aria-hidden="true" />
 
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden mt-5">
-        <div className="absolute inset-0">
-          <Image
+      <section className="flex items-center justify-center overflow-hidden mt-5">
+        <div className="">
+          <img
             src="https://bonhoeffermachines.com/en/public/images/spare-parts-banner-india.webp"
             alt="Spare Parts Banner"
-            fill
+            // fill
             className="object-cover"
-            priority
+            // priority
           />
           <div className="absolute inset-0 bg-black/10" />
         </div>
@@ -264,7 +264,7 @@ function PartSpecificPage() {
       </section>
 
       {/* Models Grid Section */}
-      <section className="py-20 px-6">
+      <section className="pb-20 pt-5 px-6">
         <div className="max-w-7xl mx-auto">
           <motion.div
             className="text-center mb-16"
@@ -273,7 +273,7 @@ function PartSpecificPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">
               Available <span className="text-[#989b2e]">Models</span>
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">

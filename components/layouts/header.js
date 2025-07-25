@@ -370,7 +370,7 @@ function Header() {
     { href: "/about-us", label: "About Us" },
     { href: "/product", label: "Products", hasDropdown: false },
     { href: "/spare-parts", label: "Spare Parts" },
-    { href: "/events", label: "Fair" },
+    { href: "/events", label: "Fairs" },
     // { href: "/gallery", label: "Gallery", hasDropdown: true },
     // { href: "/blog", label: "Success Stories" },
     { href: "/contact-us", label: "Contact Us" }
@@ -774,96 +774,6 @@ function Header() {
               </div>
             </div>
         </div>
-        
-        {isSearchOpen && (
-            <div className="fixed inset-0 bg-black/70 z-50 flex items-start justify-center pt-24 px-2">
-                <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 border border-[#989b2e] shadow-2xl rounded-2xl w-full max-w-2xl mx-auto relative">
-                    <form onSubmit={handleSearchSubmit} className="p-0">
-                        <div className="flex items-center space-x-4 px-6 py-6">
-                            <div className="flex-1 relative">
-                                <input
-                                    id="search-input"
-                                    type="text"
-                                    value={searchQuery}
-                                    onChange={handleSearchInputChange}
-                                    placeholder="Search for products, models, or spare parts..."
-                                    className="w-full px-6 py-3 text-white text-lg bg-gray-900 border border-[#989b2e] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#989b2e] focus:border-transparent placeholder-gray-400"
-                                    autoComplete="off"
-                                />
-                                <svg 
-                                    className="absolute right-2 top-1/2 transform -translate-y-1/2 w-5 h-5 text-[#989b2e]" 
-                                    fill="none" 
-                                    stroke="currentColor" 
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path 
-                                        strokeLinecap="round" 
-                                        strokeLinejoin="round" 
-                                        strokeWidth={2} 
-                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" 
-                                    />
-                                </svg>
-                            </div>
-                            <button
-                                type="submit"
-                                className="px-6 py-3 bg-[#989b2e] text-white rounded-xl hover:bg-[#7a7d24] transition-colors duration-200 font-semibold cursor-pointer shadow"
-                            >
-                                Search
-                            </button>
-                            <button
-                                type="button"
-                                onClick={toggleSearch}
-                                className="p-3 text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer"
-                                aria-label="Close search"
-                            >
-                                <svg 
-                                    className="w-5 h-5" 
-                                    fill="none" 
-                                    stroke="currentColor" 
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path 
-                                        strokeLinecap="round" 
-                                        strokeLinejoin="round" 
-                                        strokeWidth={2} 
-                                        d="M6 18L18 6M6 6l12 12" 
-                                    />
-                                </svg>
-                            </button>
-                        </div>
-                        {showSearchResults && (
-                          <div className="mt-2 pb-6 px-6 max-h-80 overflow-y-auto custom-scrollbar">
-                            {/*
-                              To use a styled scrollbar instead of hiding, replace 'scrollbar-hide' with 'custom-scrollbar' and define the class in your global CSS.
-                              Example for gold/dark theme:
-                              .custom-scrollbar::-webkit-scrollbar { width: 6px; background: #232323; }
-                              .custom-scrollbar::-webkit-scrollbar-thumb { background: #989b2e; border-radius: 8px; }
-                              .custom-scrollbar { scrollbar-width: thin; scrollbar-color: #989b2e #232323; }
-                            */}
-                            {searchResults.length > 0 ? (
-                              <ul className="divide-y divide-gray-800">
-                                {searchResults.map((result, idx) => (
-                                  <li key={result.link + idx}>
-                                    <Link
-                                      href={result.link}
-                                      className="block px-3 py-4 hover:bg-[#989b2e] hover:text-white rounded-xl transition-colors text-white/90 text-lg font-medium"
-                                      onClick={() => { setIsSearchOpen(false); setShowSearchResults(false); setSearchQuery(''); }}
-                                    >
-                                      <span className="font-semibold text-white">{result.name}</span>
-                                      <span className="ml-2 text-xs text-[#989b2e]">({result.type.replace('-', ' ')})</span>
-                                    </Link>
-                                  </li>
-                                ))}
-                              </ul>
-                            ) : (
-                              <div className="text-gray-400 px-3 py-4 text-center">No results found.</div>
-                            )}
-                          </div>
-                        )}
-                    </form>
-                </div>
-            </div>
-        )}
       </section>
 
       {/* Capsule Sticky Header (untouched, just add responsive tweaks) */}
@@ -1048,7 +958,79 @@ function Header() {
         <Link href="/">
           <img src="/logo.png" alt="Bonhoeffer Machines Logo" className="h-15" />
         </Link>
-        <Hamburger open={mobileMenuOpen} toggle={() => setMobileMenuOpen((v) => !v)} />
+        
+        {/* Mobile Search and Language Switcher */}
+        <div className="flex items-center space-x-3">
+          {/* Mobile Search Icon */}
+          <button 
+            onClick={toggleSearch}
+            className="text-white hover:text-[#989b2e] transition-colors duration-200 p-2 cursor-pointer"
+            aria-label="Open search"
+          >
+            <svg 
+              className="w-6 h-6" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" 
+              />
+            </svg>
+          </button>
+
+          {/* Mobile Language Switcher */}
+          <div className="relative">
+            <button
+              onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
+              className="flex items-center space-x-1 text-white hover:text-[#989b2e] transition-colors duration-200 p-2 cursor-pointer"
+              aria-label="Change language"
+            >
+              <span className="text-lg font-medium">
+                {currentLanguage.toUpperCase()}
+              </span>
+              <svg 
+                className={`w-4 h-4 transition-transform duration-200 ${isLanguageDropdownOpen ? 'rotate-180' : ''}`}
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M19 9l-7 7-7-7" 
+                />
+              </svg>
+            </button>
+
+            {isLanguageDropdownOpen && (
+              <div className="absolute top-full right-0 mt-1 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-lg shadow-lg border border-[#989b2e] py-2 z-50 min-w-[12px]">
+                {languages.map((language) => (
+                  <button
+                    key={language.code}
+                    onClick={() => handleLanguageChange(language.code)}
+                    className={`w-full flex items-center justify-between px-4 py-2 text-left hover:bg-[#989b2e] transition-colors cursor-pointer duration-150 ${
+                      currentLanguage === language.code ? 'bg-[#989b2e] text-white font-medium' : 'text-gray-100'
+                    }`}
+                  >
+                    <span className="text-base font-medium">{language.code.toUpperCase()}</span>
+                    {currentLanguage === language.code && (
+                      <svg className="w-4 h-4 ml-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    )}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <Hamburger open={mobileMenuOpen} toggle={() => setMobileMenuOpen((v) => !v)} />
+        </div>
       </div>
       {/* Animated Mobile Menu Drawer */}
       <AnimatePresence>
@@ -1077,50 +1059,6 @@ function Header() {
                   </svg>
                 </button>
               </div>
-              {/* Mobile Search */}
-              <form
-                onSubmit={e => {
-                  e.preventDefault();
-                  if (mobileSearch.trim()) {
-                    // Implement your search logic here
-                    setMobileMenuOpen(false);
-                    setIsSearchOpen(false);
-                    setSearchQuery(mobileSearch);
-                    // You can redirect or handle search as needed
-                  }
-                }}
-                className="mb-6"
-              >
-                <div className="flex items-center bg-gray-800 rounded-lg px-3 py-2">
-                  <input
-                    type="text"
-                    value={mobileSearch}
-                    onChange={e => setMobileSearch(e.target.value)}
-                    placeholder="Search..."
-                    className="flex-1 bg-transparent text-white placeholder-gray-400 outline-none border-none text-base"
-                  />
-                  <button type="submit" className="ml-2 text-[#989b2e] hover:text-white">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                  </button>
-                </div>
-              </form>
-              {/* Mobile Language Switcher */}
-              <div className="mb-6">
-                <div className="text-xs text-gray-400 mb-2">Language</div>
-                <div className="flex gap-2">
-                  {languages.map(lang => (
-                    <button
-                      key={lang.code}
-                      onClick={() => { setCurrentLanguage(lang.code); setIsLanguageDropdownOpen(false); setMobileMenuOpen(false); }}
-                      className={`px-3 py-1 rounded-full text-sm font-medium border transition-colors duration-150 ${currentLanguage === lang.code ? 'bg-[#989b2e] text-white border-[#989b2e]' : 'bg-gray-800 text-gray-200 border-gray-700 hover:bg-[#989b2e] hover:text-white'}`}
-                    >
-                      {lang.name}
-                    </button>
-                  ))}
-                </div>
-              </div>
               {/* Mobile Nav Links */}
               <ul className="flex flex-col gap-5">
                 {links.map((item) => (
@@ -1141,6 +1079,90 @@ function Header() {
           </motion.nav>
         )}
       </AnimatePresence>
+
+      {/* Global Search Overlay - Works for both desktop and mobile */}
+      {isSearchOpen && (
+        <div className="fixed inset-0 bg-black/70 z-50 flex items-start justify-center pt-16 lg:pt-24 px-2">
+          <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 border border-[#989b2e] shadow-2xl rounded-2xl w-full max-w-2xl mx-auto relative">
+            <form onSubmit={handleSearchSubmit} className="p-0">
+              <div className="flex items-center space-x-4 px-4 lg:px-6 py-4 lg:py-6">
+                <div className="flex-1 relative">
+                  <input
+                    id="search-input"
+                    type="text"
+                    value={searchQuery}
+                    onChange={handleSearchInputChange}
+                    placeholder="Search for products, models, or spare parts..."
+                    className="w-full px-4 lg:px-6 py-3 text-white text-base lg:text-lg bg-gray-900 border border-[#989b2e] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#989b2e] focus:border-transparent placeholder-gray-400"
+                    autoComplete="off"
+                  />
+                  <svg 
+                    className="absolute right-2 top-1/2 transform -translate-y-1/2 w-5 h-5 text-[#989b2e]" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth={2} 
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" 
+                    />
+                  </svg>
+                </div>
+                <button
+                  type="submit"
+                  className="px-4 lg:px-6 py-3 bg-[#989b2e] text-white rounded-xl hover:bg-[#7a7d24] transition-colors duration-200 font-semibold cursor-pointer shadow text-sm lg:text-base"
+                >
+                  Search
+                </button>
+                <button
+                  type="button"
+                  onClick={toggleSearch}
+                  className="p-2 lg:p-3 text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer"
+                  aria-label="Close search"
+                >
+                  <svg 
+                    className="w-5 h-5" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth={2} 
+                      d="M6 18L18 6M6 6l12 12" 
+                    />
+                  </svg>
+                </button>
+              </div>
+              {showSearchResults && (
+                <div className="mt-2 pb-4 lg:pb-6 px-4 lg:px-6 max-h-60 lg:max-h-80 overflow-y-auto custom-scrollbar">
+                  {searchResults.length > 0 ? (
+                    <ul className="divide-y divide-gray-800">
+                      {searchResults.map((result, idx) => (
+                        <li key={result.link + idx}>
+                          <Link
+                            href={result.link}
+                            className="block px-3 py-3 lg:py-4 hover:bg-[#989b2e] hover:text-white rounded-xl transition-colors text-white/90 text-base lg:text-lg font-medium"
+                            onClick={() => { setIsSearchOpen(false); setShowSearchResults(false); setSearchQuery(''); }}
+                          >
+                            <span className="font-semibold text-white">{result.name}</span>
+                            <span className="ml-2 text-xs text-[#989b2e]">({result.type.replace('-', ' ')})</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <div className="text-gray-400 px-3 py-3 lg:py-4 text-center text-sm lg:text-base">No results found.</div>
+                  )}
+                </div>
+              )}
+            </form>
+          </div>
+        </div>
+      )}
 
 
       <style jsx global>{`

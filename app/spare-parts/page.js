@@ -17,14 +17,14 @@ function SparePage() {
       <div className="block lg:hidden" style={{ height: '4em' }} aria-hidden="true" />
 
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden mt-5">
-        <div className="absolute inset-0">
-          <Image
+      <section className="flex items-center justify-center overflow-hidden mt-5">
+        <div className="">
+          <img
             src="https://bonhoeffermachines.com/en/public/images/spare-parts-banner-india.webp"
             alt="Spare Parts Banner"
-            fill
+            // fill
             className="object-cover"
-            priority
+            // priority
           />
           <div className="absolute inset-0 bg-black/10" />
         </div>
@@ -56,7 +56,7 @@ function SparePage() {
       </section>
 
       {/* Spare Parts Section */}
-      <section className="py-10 px-6">
+      <section className="pb-10 pt-5 px-6">
         <div className="max-w-7xl mx-auto">
           <motion.div
             className="text-center mb-16"
