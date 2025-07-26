@@ -53,59 +53,170 @@ function CareersPage() {
     setIsSubmitting(true);
     
     try {
-      // Prepare form data for Firebase submission (without file upload)
-      const submissionData = {
-        fullName: formData.fullName,
-        profileInterested: formData.profileInterested,
-        contactNumber: formData.contactNumber,
-        email: formData.email,
-        message: formData.message,
-        resumeFileName: formData.resume ? formData.resume.name : null,
-        resumeSize: formData.resume ? formData.resume.size : null,
-        submissionTime: new Date().toISOString(),
-        hasResume: formData.resume ? 'Yes' : 'No',
-        note: 'Resume file sent via email through formsubmit.co'
-      };
+      // FIREBASE FUNCTIONALITY COMMENTED OUT FOR TESTING
+      // // Prepare form data for Firebase submission (without file upload)
+      // const submissionData = {
+      //   fullName: formData.fullName,
+      //   profileInterested: formData.profileInterested,
+      //   contactNumber: formData.contactNumber,
+      //   email: formData.email,
+      //   message: formData.message,
+      //   resumeFileName: formData.resume ? formData.resume.name : null,
+      //   resumeSize: formData.resume ? formData.resume.size : null,
+      //   resumeType: formData.resume ? formData.resume.type : null,
+      //   resumeSizeKB: formData.resume ? (formData.resume.size / 1024).toFixed(2) : null,
+      //   submissionTime: new Date().toISOString(),
+      //   submissionDate: new Date().toLocaleDateString(),
+      //   submissionTimeFormatted: new Date().toLocaleString(),
+      //   hasResume: formData.resume ? 'Yes' : 'No',
+      //   emailStatus: 'Pending',
+      //   note: 'Resume file details stored. Check Firebase for complete application. Email sent via FormSubmit + EmailJS backup.'
+      // };
 
-      // Submit to Firebase (form data only)
-      try {
-        const response = await fetch('/api/firebase-submit', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(submissionData)
-        });
+      // // Submit to Firebase (form data only)
+      // try {
+      //   const response = await fetch('/api/firebase-submit', {
+      //     method: 'POST',
+      //     headers: {
+      //       'Content-Type': 'application/json',
+      //     },
+      //     body: JSON.stringify(submissionData)
+      //   });
         
-        const result = await response.json();
-        if (response.ok) {
-          console.log('Firebase submission successful:', result);
-        } else {
-          console.error('Firebase submission failed:', result);
-        }
-      } catch (firebaseError) {
-        console.error('Firebase submission failed:', firebaseError);
-      }
+      //   const result = await response.json();
+      //   if (response.ok) {
+      //     console.log('Firebase submission successful:', result);
+      //   } else {
+      //     console.error('Firebase submission failed:', result);
+      //   }
+      // } catch (firebaseError) {
+      //   console.error('Firebase submission failed:', firebaseError);
+      // }
 
-      // Submit to formsubmit.co (with file)
-      const formSubmitData = new FormData();
-      formSubmitData.append('name', formData.fullName);
-      formSubmitData.append('email', formData.email);
-      formSubmitData.append('phone', formData.contactNumber);
-      formSubmitData.append('position', formData.profileInterested);
-      formSubmitData.append('message', formData.message || 'No additional message provided');
-      formSubmitData.append('_subject', `Career Application: ${formData.profileInterested} - ${formData.fullName}`);
+      // Focus on formsubmit.co only for testing
+      let emailSent = false;
       
-      if (formData.resume) {
-        formSubmitData.append('resume', formData.resume);
+      try {
+        // Submit to formsubmit.co (with file)
+        const formSubmitData = new FormData();
+        formSubmitData.append('name', formData.fullName);
+        formSubmitData.append('email', formData.email);
+        formSubmitData.append('phone', formData.contactNumber);
+        formSubmitData.append('position', formData.profileInterested);
+        formSubmitData.append('message', formData.message || 'No additional message provided');
+        formSubmitData.append('_subject', `Career Application: ${formData.profileInterested} - ${formData.fullName}`);
+        formSubmitData.append('_captcha', 'false');
+        formSubmitData.append('_template', 'table');
+        formSubmitData.append('_autoresponse', 'Thank you for your application. We will review it and get back to you soon.');
+        
+        // Simplified - just add resume file without modifying message
+        if (formData.resume) {
+          console.log('Adding resume file:', formData.resume.name, formData.resume.size, 'bytes');
+          formSubmitData.append('resume', formData.resume, formData.resume.name);
+        }
+
+        console.log('Submitting to formsubmit.co...');
+        console.log('Form data contents:');
+        for (let [key, value] of formSubmitData.entries()) {
+          if (value instanceof File) {
+            console.log(`${key}: ${value.name} (${value.size} bytes, ${value.type})`);
+          } else {
+            console.log(`${key}: ${value}`);
+          }
+        }
+
+        const formSubmitResponse = await fetch('https://formsubmit.co/scmintern7@gmail.com', {
+          method: 'POST',
+          body: formSubmitData,
+          signal: AbortSignal.timeout(30000) // Increased timeout to 30 seconds for file upload
+        });
+
+        console.log('FormSubmit response status:', formSubmitResponse.status);
+        console.log('FormSubmit response headers:', formSubmitResponse.headers);
+
+        if (formSubmitResponse.ok) {
+          emailSent = true;
+          console.log('FormSubmit successful');
+          
+          // EMAILJS BACKUP FUNCTIONALITY COMMENTED OUT FOR TESTING
+          // // If we have a resume but FormSubmit might not have sent it, use EmailJS as backup for file notification
+          // if (formData.resume) {
+          //   try {
+          //     console.log('Sending resume notification via EmailJS...');
+          //     const emailjs = await import('@emailjs/browser');
+              
+          //     const fileNotificationData = {
+          //       from_name: formData.fullName,
+          //       from_email: formData.email,
+          //       subject: `RESUME FILE NOTIFICATION - ${formData.profileInterested} - ${formData.fullName}`,
+          //       message: `This is a notification that a resume file was uploaded with the career application.
+                
+          //     Application Details:
+          //     - Name: ${formData.fullName}
+          //     - Email: ${formData.email}
+          //     - Phone: ${formData.contactNumber}
+          //     - Position: ${formData.profileInterested}
+
+          //     Resume File Details:
+          //     - File Name: ${formData.resume.name}
+          //     - File Size: ${(formData.resume.size / 1024).toFixed(2)} KB
+          //     - File Type: ${formData.resume.type}
+          //     - Upload Time: ${new Date().toLocaleString()}
+
+          //     The resume file has been saved to the Firebase database. Please check the career-applications collection for the complete application with file details.
+
+          //     Note: This is a backup notification in case the resume file didn't come through in the main application email.`
+          //     };
+
+          //     await emailjs.send(
+          //       'service_wbqtbqe',
+          //       'template_dkqzplt',  
+          //       fileNotificationData,
+          //       'QmbN9UWU6FADcCGcz'
+          //     );
+              
+          //     console.log('Resume notification sent via EmailJS');
+          //   } catch (emailjsError) {
+          //     console.error('EmailJS file notification failed:', emailjsError);
+          //   }
+          // }
+        } else {
+          throw new Error(`FormSubmit failed with status: ${formSubmitResponse.status}`);
+        }
+      } catch (formSubmitError) {
+        console.error('FormSubmit failed:', formSubmitError);
+        emailSent = false;
+        
+        // EMAILJS FALLBACK COMMENTED OUT FOR TESTING
+        // // Fall back to EmailJS
+        // try {
+        //   console.log('Trying EmailJS backup...');
+        //   const emailjs = await import('@emailjs/browser');
+          
+        //   const emailData = {
+        //     from_name: formData.fullName,
+        //     from_email: formData.email,
+        //     phone: formData.contactNumber,
+        //     position: formData.profileInterested,
+        //     message: formData.message || 'No additional message provided',
+        //     resume_note: formData.resume ? `Resume file: ${formData.resume.name} (${(formData.resume.size / 1024).toFixed(2)} KB)` : 'No resume uploaded'
+        //   };
+
+        //   await emailjs.send(
+        //     'service_wbqtbqe',
+        //     'template_dkqzplt',  
+        //     emailData,
+        //     'QmbN9UWU6FADcCGcz'
+        //   );
+
+        //   emailSent = true;
+        //   console.log('EmailJS backup successful');
+        // } catch (emailjsError) {
+        //   console.error('EmailJS backup also failed:', emailjsError);
+        // }
       }
 
-      const formSubmitResponse = await fetch('https://formsubmit.co/scmintern7@gmail.com', {
-        method: 'POST',
-        body: formSubmitData
-      });
-
-      if (formSubmitResponse.ok) {
+      if (emailSent) {
         // Success message
         alert('Application submitted successfully! We will get back to you soon.');
         
@@ -124,9 +235,10 @@ function CareersPage() {
         if (fileInput) {
           fileInput.value = '';
         }
-        
       } else {
-        throw new Error('Form submission failed');
+        // If FormSubmit fails, show error
+        console.warn('FormSubmit failed - no backup email services active for testing');
+        alert('There was an error submitting your application. Please try again or contact us directly.');
       }
     } catch (error) {
       console.error('Submission error:', error);
