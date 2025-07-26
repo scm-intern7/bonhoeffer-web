@@ -53,18 +53,21 @@ function CareersPage() {
     setIsSubmitting(true);
     
     try {
-      // Prepare form data for both submissions
+      // Prepare form data for Firebase submission (without file upload)
       const submissionData = {
         fullName: formData.fullName,
         profileInterested: formData.profileInterested,
         contactNumber: formData.contactNumber,
         email: formData.email,
         message: formData.message,
+        resumeFileName: formData.resume ? formData.resume.name : null,
+        resumeSize: formData.resume ? formData.resume.size : null,
         submissionTime: new Date().toISOString(),
-        hasResume: formData.resume ? 'Yes' : 'No'
+        hasResume: formData.resume ? 'Yes' : 'No',
+        note: 'Resume file sent via email through formsubmit.co'
       };
 
-      // Submit to Firebase (without file)
+      // Submit to Firebase (form data only)
       try {
         const response = await fetch('/api/firebase-submit', {
           method: 'POST',
@@ -74,8 +77,11 @@ function CareersPage() {
           body: JSON.stringify(submissionData)
         });
         
+        const result = await response.json();
         if (response.ok) {
-          console.log('Firebase submission successful');
+          console.log('Firebase submission successful:', result);
+        } else {
+          console.error('Firebase submission failed:', result);
         }
       } catch (firebaseError) {
         console.error('Firebase submission failed:', firebaseError);
@@ -88,25 +94,7 @@ function CareersPage() {
       formSubmitData.append('phone', formData.contactNumber);
       formSubmitData.append('position', formData.profileInterested);
       formSubmitData.append('message', formData.message || 'No additional message provided');
-      formSubmitData.append('_subject', `New Career Application - ${formData.profileInterested} - ${formData.fullName}`);
-      formSubmitData.append('_next', 'https://in.linkedin.com/company/bonhoeffer-machines');
-      formSubmitData.append('_cc', 'scmintern7@gmail.com');
-      formSubmitData.append('_template', 'table');
-      
-      // Add note about Firebase
-      const noteMessage = `Please check Firebase database for the complete application details including resume/CV file. 
-
-Application Details:
-- Name: ${formData.fullName}
-- Email: ${formData.email}
-- Phone: ${formData.contactNumber}
-- Position: ${formData.profileInterested}
-- Resume Uploaded: ${formData.resume ? 'Yes - Check Firebase' : 'No'}
-- Message: ${formData.message || 'No additional message'}
-
-Note: Resume/CV file is stored in Firebase database.`;
-      
-      formSubmitData.append('firebase_note', noteMessage);
+      formSubmitData.append('_subject', `Career Application: ${formData.profileInterested} - ${formData.fullName}`);
       
       if (formData.resume) {
         formSubmitData.append('resume', formData.resume);
@@ -118,8 +106,10 @@ Note: Resume/CV file is stored in Firebase database.`;
       });
 
       if (formSubmitResponse.ok) {
-        // Redirect will happen automatically via formsubmit
+        // Success message
         alert('Application submitted successfully! We will get back to you soon.');
+        
+        // Reset form
         setFormData({
           fullName: '',
           profileInterested: '',
@@ -128,6 +118,13 @@ Note: Resume/CV file is stored in Firebase database.`;
           resume: null,
           message: ''
         });
+        
+        // Reset file input
+        const fileInput = document.getElementById('resume');
+        if (fileInput) {
+          fileInput.value = '';
+        }
+        
       } else {
         throw new Error('Form submission failed');
       }
@@ -198,7 +195,7 @@ Note: Resume/CV file is stored in Firebase database.`;
       <div className="block lg:hidden" style={{ height: '4em' }} aria-hidden="true" />
 
       {/* Hero Section */}
-      <section className="relative min-h-[40vh] md:min-h-[60vh] flex items-center justify-center">
+      <section className="relative min-h-[40vh] md:min-h-[60vh] flex items-center justify-center mt-5">
         <div className="absolute inset-0">
           <Image
             src="https://bonhoeffermachines.com/en/public/images/about/career-banner-new.webp"
@@ -233,6 +230,20 @@ Note: Resume/CV file is stored in Firebase database.`;
           >
             Join our innovative team and be part of the future of agricultural machinery
           </motion.p>
+        </motion.div>
+
+        {/* Scroll Indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.2 }}
+          className="absolute bottom-1 left-1/2 -translate-x-1/2"
+        >
+          <div className="animate-bounce">
+            <svg className="w-10 h-10 text-[#989b2e]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </div>
         </motion.div>
       </section>
 
@@ -458,11 +469,11 @@ Note: Resume/CV file is stored in Firebase database.`;
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid [@media(max-width:400px)]:grid-cols-1 [@media(min-width:401px)_and_(max-width:639px)]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
             {benefits.map((benefit, index) => (
               <motion.div
                 key={index}
-                className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:border-[#989b2e]/50 hover:scale-105 transition-all duration-300 text-center"
+                className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 backdrop-blur-sm border border-white/10 rounded-xl p-5 hover:border-[#989b2e]/50 hover:scale-105 transition-all duration-300 text-center"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
@@ -586,7 +597,7 @@ Note: Resume/CV file is stored in Firebase database.`;
                   onChange={handleFileChange}
                   accept=".pdf,.doc,.docx"
                   required
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-[#989b2e] file:text-white hover:file:bg-[#7a7d24] focus:outline-none focus:border-[#989b2e] focus:ring-1 focus:ring-[#989b2e] transition-colors"
+                  className="w-full px-4 py-3 cursor-pointer bg-gray-900 border border-gray-700 rounded-lg text-white file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-[#989b2e] file:text-white hover:file:bg-[#7a7d24] focus:outline-none focus:border-[#989b2e] focus:ring-1 focus:ring-[#989b2e] transition-colors"
                 />
                 <p className="text-gray-400 text-sm mt-1">
                   Upload your resume in PDF, DOC, or DOCX format (Max 5MB)
@@ -612,7 +623,7 @@ Note: Resume/CV file is stored in Firebase database.`;
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="bg-[#989b2e] hover:bg-[#7a7d24] text-white px-8 py-3 rounded-lg font-semibold text-lg transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center space-x-2"
+                  className="bg-[#989b2e] hover:bg-[#7a7d24] cursor-pointer text-white px-8 py-3 rounded-lg font-semibold text-lg transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center space-x-2"
                 >
                   {isSubmitting ? (
                     <>
