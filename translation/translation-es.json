@@ -1,0 +1,137 @@
+{
+  "header": {
+    "navigation": {
+      "home": "Inicio",
+      "about": "Acerca de Nosotros",
+      "products": "Productos",
+      "spareparts": "Repuestos",
+      "gallery": "Galería",
+      "photos": "Fotos",
+      "videos": "Videos",
+      "events": "Eventos",
+      "careers": "Carreras",
+      "contact": "Contáctanos",
+      "fair": "Ferias Comerciales",
+      "certifications": "Certificaciones",
+      "warranty": "Registro de Garantía",
+      "sponsorship": "Patrocinio"
+    },
+    "search": {
+      "placeholder": "Buscar productos, repuestos...",
+      "noResults": "No se encontraron resultados",
+      "searchResults": "Resultados de Búsqueda"
+    },
+    "language": {
+      "english": "English",
+      "spanish": "Español",
+      "portuguese": "Português"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "Empresa",
+      "about": "Acerca de Nosotros",
+      "contact": "Contáctanos",
+      "careers": "Carreras",
+      "news": "Noticias y Prensa"
+    },
+    "products": {
+      "title": "Productos",
+      "all": "Todos los Productos",
+      "spareParts": "Repuestos",
+      "services": "Servicios",
+      "warranty": "Garantía"
+    },
+    "events": {
+      "title": "Eventos",
+      "all": "Todos los Eventos",
+      "gallery": "Galería",
+      "blog": "Historias de Éxito",
+      "fair": "Ferias Comerciales"
+    },
+    "support": {
+      "title": "Soporte",
+      "warranty": "Garantía",
+      "certifications": "Certificaciones",
+      "downloads": "Descargas",
+      "sponsorship": "Patrocinio"
+    },
+    "contact": {
+      "title": "Contacto",
+      "phone": "+91 96675 15523",
+      "email": "support@bonhoeffermachines.com",
+      "address": "Plot No. 756, 2nd Floor, Udyog Vihar Phase -5, Gurugram, Haryana India"
+    },
+    "social": {
+      "title": "Síguenos"
+    },
+    "legal": {
+      "copyright": "Bonhoeffer Machines. Todos los derechos reservados.",
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Servicio",
+      "cookies": "Política de Cookies"
+    },
+    "cta": {
+      "becomeDealer": "Conviértete en Nuestro Distribuidor",
+      "description": "Fabricante líder de maquinaria agrícola a nivel mundial."
+    }
+  },
+  "careers": {
+    "hero": {
+      "title": "Construye Tu Carrera Con Nosotros",
+      "subtitle": "Únete a nuestro equipo innovador y sé parte del futuro de la maquinaria agrícola"
+    },
+    "form": {
+      "title": "¿Listo para Unirte a Nosotros?",
+      "subtitle": "Da el primer paso hacia una carrera emocionante con Bonhoeffer Machines. Completa el formulario a continuación y comencemos este viaje juntos.",
+      "fullName": "Nombre Completo",
+      "position": "Perfil de Interés",
+      "phone": "Número de Contacto",
+      "email": "Dirección de Correo Electrónico",
+      "resume": "CV/Currículum",
+      "message": "Mensaje (Si tienes alguno)",
+      "submit": "Enviar Solicitud",
+      "submitting": "Enviando...",
+      "required": "Requerido",
+      "optional": "Opcional",
+      "placeholders": {
+        "fullName": "Ingresa tu nombre completo",
+        "position": "ej., Ingeniero de Software, Gerente de Marketing, etc.",
+        "phone": "Ingresa tu número de contacto",
+        "email": "Ingresa tu dirección de correo electrónico",
+        "message": "Cuéntanos por qué te gustaría unirte a nuestro equipo..."
+      },
+      "fileUpload": {
+        "instruction": "Sube tu currículum en formato PDF, DOC o DOCX (Máx. 5MB)"
+      },
+      "validation": {
+        "required": "Este campo es requerido",
+        "email": "Por favor ingresa una dirección de correo válida",
+        "phone": "Por favor ingresa un número de teléfono válido"
+      },
+      "success": "¡Solicitud enviada exitosamente vía FormSubmit! Te contactaremos pronto.",
+      "error": "Hubo un error al enviar tu solicitud vía FormSubmit. Por favor intenta de nuevo o contáctanos directamente."
+    }
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "retry": "Reintentar",
+    "close": "Cerrar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "view": "Ver",
+    "download": "Descargar",
+    "upload": "Subir",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "more": "Más",
+    "less": "Menos"
+  }
+}

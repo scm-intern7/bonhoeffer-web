@@ -1,0 +1,137 @@
+{
+  "header": {
+    "navigation": {
+      "home": "Home",
+      "about": "About Us",
+      "products": "Products",
+      "spareparts": "Spare Parts",
+      "gallery": "Gallery",
+      "photos": "Photos",
+      "videos": "Videos",
+      "events": "Events",
+      "careers": "Careers",
+      "contact": "Contact Us",
+      "fair": "Trade Fairs",
+      "certifications": "Certifications",
+      "warranty": "Warranty Registration",
+      "sponsorship": "Sponsorship"
+    },
+    "search": {
+      "placeholder": "Search products, spare parts...",
+      "noResults": "No results found",
+      "searchResults": "Search Results"
+    },
+    "language": {
+      "english": "English",
+      "spanish": "Español",
+      "portuguese": "Português"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "contact": "Contact Us",
+      "careers": "Careers",
+      "news": "News & Press"
+    },
+    "products": {
+      "title": "Products",
+      "all": "All Products",
+      "spareParts": "Spare Parts",
+      "services": "Services",
+      "warranty": "Warranty"
+    },
+    "events": {
+      "title": "Events",
+      "all": "All Events",
+      "gallery": "Gallery",
+      "blog": "Success Stories",
+      "fair": "Trade Fairs"
+    },
+    "support": {
+      "title": "Support",
+      "warranty": "Warranty",
+      "certifications": "Certifications",
+      "downloads": "Downloads",
+      "sponsorship": "Sponsorship"
+    },
+    "contact": {
+      "title": "Contact",
+      "phone": "+91 96675 15523",
+      "email": "support@bonhoeffermachines.com",
+      "address": "Plot No. 756, 2nd Floor, Udyog Vihar Phase -5, Gurugram, Haryana India"
+    },
+    "social": {
+      "title": "Follow Us"
+    },
+    "legal": {
+      "copyright": "Bonhoeffer Machines. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy"
+    },
+    "cta": {
+      "becomeDealer": "Become Our Dealer",
+      "description": "Leading manufacturer of agricultural machinery worldwide."
+    }
+  },
+  "careers": {
+    "hero": {
+      "title": "Build Your Career With Us",
+      "subtitle": "Join our innovative team and be part of the future of agricultural machinery"
+    },
+    "form": {
+      "title": "Ready to Join Us?",
+      "subtitle": "Take the first step towards an exciting career with Bonhoeffer Machines. Fill out the form below and let's start this journey together.",
+      "fullName": "Full Name",
+      "position": "Profile Interested In",
+      "phone": "Contact Number",
+      "email": "Email Address",
+      "resume": "Resume/CV",
+      "message": "Message (If any)",
+      "submit": "Submit Application",
+      "submitting": "Submitting...",
+      "required": "Required",
+      "optional": "Optional",
+      "placeholders": {
+        "fullName": "Enter your full name",
+        "position": "e.g., Software Engineer, Marketing Manager, etc.",
+        "phone": "Enter your contact number",
+        "email": "Enter your email address",
+        "message": "Tell us why you'd like to join our team..."
+      },
+      "fileUpload": {
+        "instruction": "Upload your resume in PDF, DOC, or DOCX format (Max 5MB)"
+      },
+      "validation": {
+        "required": "This field is required",
+        "email": "Please enter a valid email address",
+        "phone": "Please enter a valid phone number"
+      },
+      "success": "Application submitted successfully via FormSubmit! We will get back to you soon.",
+      "error": "There was an error submitting your application via FormSubmit. Please try again or contact us directly."
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "close": "Close",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "view": "View",
+    "download": "Download",
+    "upload": "Upload",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "next": "Next",
+    "previous": "Previous",
+    "more": "More",
+    "less": "Less"
+  }
+}

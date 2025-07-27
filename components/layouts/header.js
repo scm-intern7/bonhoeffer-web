@@ -3,12 +3,13 @@ import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/navigation';
+import { useTranslation } from '../../translation/useTranslation';
 import '../../app/globals.css';
 
 function Header() {
+  const { t, currentLocale, switchLocale, isLoading } = useTranslation();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
-  const [currentLanguage, setCurrentLanguage] = useState('es'); // Default to Spanish
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
   const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false);
   const [productDropdownTimeout, setProductDropdownTimeout] = useState(null);
@@ -360,20 +361,20 @@ function Header() {
   const [showSearchResults, setShowSearchResults] = useState(false);
 
   const languages = [
-    { code: 'en', name: 'English' },
-    { code: 'es', name: 'Español'},
-    { code: 'pt', name: 'Português'}
+    { code: 'en', name: t('header.language.english', 'English') },
+    { code: 'es', name: t('header.language.spanish', 'Español')},
+    { code: 'pt', name: t('header.language.portuguese', 'Português')}
   ];
 
   const links = [
-    { href: "/", label: "Home" },
-    { href: "/about-us", label: "About Us" },
-    { href: "/product", label: "Products", hasDropdown: false },
-    { href: "/spare-parts", label: "Spare Parts" },
-    { href: "/events", label: "Fairs" },
-    // { href: "/gallery", label: "Gallery", hasDropdown: true },
+    { href: "/", label: t('header.navigation.home', 'Home') },
+    { href: "/about-us", label: t('header.navigation.about', 'About Us') },
+    { href: "/product", label: t('header.navigation.products', 'Products'), hasDropdown: false },
+    { href: "/spare-parts", label: t('header.navigation.spareparts', 'Spare Parts') },
+    { href: "/events", label: t('header.navigation.fair', 'Trade Fairs') },
+    // { href: "/gallery", label: t('header.navigation.gallery', 'Gallery'), hasDropdown: true },
     // { href: "/blog", label: "Success Stories" },
-    { href: "/contact-us", label: "Contact Us" }
+    { href: "/contact-us", label: t('header.navigation.contact', 'Contact Us') }
   ]
 
   // Product categories for dropdown
@@ -473,52 +474,11 @@ function Header() {
     }
   }
 
-  const detectLanguageByLocation = () => {
-    if ("geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const { latitude, longitude } = position.coords;
-          
-          // Fetch country info based on coordinates
-          fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`)
-            .then(response => response.json())
-            .then(data => {
-              const countryCode = data.countryCode;
-              let detectedLanguage = 'es'; // Default to Spanish
-              
-              if (countryCode === 'BR') {
-                detectedLanguage = 'pt'; // Portuguese for Brazil
-              } else if (countryCode === 'US' || countryCode === 'CA' || countryCode === 'GB' || 
-                        countryCode === 'AU' || countryCode === 'NZ' || countryCode === 'IE' ||
-                        countryCode === 'ZA' || countryCode === 'IN' || countryCode === 'SG' ||
-                        countryCode === 'MY' || countryCode === 'PH' || countryCode === 'NG') {
-                detectedLanguage = 'en'; // English for these countries
-              }
-              // All other countries in Americas default to Spanish
-              // All other countries worldwide default to English, but we'll keep Spanish as default
-              
-              setCurrentLanguage(detectedLanguage);
-            })
-            .catch(() => {
-              // If API fails, keep default Spanish
-              setCurrentLanguage('es');
-            });
-        },
-        () => {
-          // If geolocation fails, keep default Spanish
-          setCurrentLanguage('es');
-        }
-      );
-    } else {
-      // If geolocation not supported, keep default Spanish
-      setCurrentLanguage('es');
-    }
+  // Language switching function
+  const handleLanguageChange = (langCode) => {
+    switchLocale(langCode);
+    setIsLanguageDropdownOpen(false);
   };
-
-  // Detect language on component mount
-  React.useEffect(() => {
-    detectLanguageByLocation();
-  }, []);
 
   // Handle scroll events for header transformation
   useEffect(() => {
@@ -530,13 +490,6 @@ function Header() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const handleLanguageChange = (languageCode) => {
-    setCurrentLanguage(languageCode);
-    setIsLanguageDropdownOpen(false);
-    // Here you can implement language switching logic
-    console.log('Language changed to:', languageCode);
-  };
 
   const toggleSearch = () => {
     setIsSearchOpen(!isSearchOpen);
@@ -730,10 +683,10 @@ function Header() {
                       aria-label="Change language"
                   >
                       <span className="text-xl">
-                          {languages.find(lang => lang.code === currentLanguage)?.flag}
+                          {languages.find(lang => lang.code === currentLocale)?.flag}
                       </span>
                       <span className="text-xl font-medium">
-                          {languages.find(lang => lang.code === currentLanguage)?.name}
+                          {languages.find(lang => lang.code === currentLocale)?.name}
                       </span>
                       <svg 
                           className={`w-4 h-4 transition-transform duration-200 ${isLanguageDropdownOpen ? 'rotate-180' : ''}`}
@@ -757,12 +710,12 @@ function Header() {
                                   key={language.code}
                                   onClick={() => handleLanguageChange(language.code)}
                                   className={`w-full flex items-center space-x-3 px-4 py-2 text-left hover:bg-[#989b2e] transition-colors cursor-pointer duration-150 ${
-                                      currentLanguage === language.code ? 'bg-[#989b2e] text-white font-medium' : 'text-gray-100'
+                                      currentLocale === language.code ? 'bg-[#989b2e] text-white font-medium' : 'text-gray-100'
                                   }`}
                               >
                                   <span className="text-xl">{language.flag}</span>
                                   <span className="text-lg">{language.name}</span>
-                                  {currentLanguage === language.code && (
+                                  {currentLocale === language.code && (
                                       <svg className="w-4 h-4 ml-auto text-white" fill="currentColor" viewBox="0 0 20 20">
                                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                                       </svg>
@@ -907,7 +860,7 @@ function Header() {
                   aria-label="Change language"
                 >
                   <span className="text-lg font-medium">
-                    {languages.find(lang => lang.code === currentLanguage)?.name}
+                    {languages.find(lang => lang.code === currentLocale)?.name}
                   </span>
                   <svg 
                     className={`w-3 h-3 transition-transform duration-200 ${isLanguageDropdownOpen ? 'rotate-180' : ''}`}
@@ -931,12 +884,12 @@ function Header() {
                         key={language.code}
                         onClick={() => handleLanguageChange(language.code)}
                         className={`w-full flex items-center space-x-3 px-4 py-2 text-left hover:bg-[#989b2e] transition-colors cursor-pointer duration-150 ${
-                          currentLanguage === language.code ? 'bg-[#989b2e] text-white font-medium' : 'text-gray-100'
+                          currentLocale === language.code ? 'bg-[#989b2e] text-white font-medium' : 'text-gray-100'
                         }`}
                       >
                         {/* <span className="text-xl">{language.flag}</span> */}
                         <span className="text-lg">{language.name}</span>
-                        {currentLanguage === language.code && (
+                        {currentLocale === language.code && (
                           <svg className="w-4 h-4 ml-auto text-white" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
@@ -990,7 +943,7 @@ function Header() {
               aria-label="Change language"
             >
               <span className="text-lg font-medium">
-                {currentLanguage.toUpperCase()}
+                {currentLocale.toUpperCase()}
               </span>
               <svg 
                 className={`w-4 h-4 transition-transform duration-200 ${isLanguageDropdownOpen ? 'rotate-180' : ''}`}
@@ -1014,11 +967,11 @@ function Header() {
                     key={language.code}
                     onClick={() => handleLanguageChange(language.code)}
                     className={`w-full flex items-center justify-between px-4 py-2 text-left hover:bg-[#989b2e] transition-colors cursor-pointer duration-150 ${
-                      currentLanguage === language.code ? 'bg-[#989b2e] text-white font-medium' : 'text-gray-100'
+                      currentLocale === language.code ? 'bg-[#989b2e] text-white font-medium' : 'text-gray-100'
                     }`}
                   >
                     <span className="text-base font-medium">{language.code.toUpperCase()}</span>
-                    {currentLanguage === language.code && (
+                    {currentLocale === language.code && (
                       <svg className="w-4 h-4 ml-2 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
@@ -1092,7 +1045,7 @@ function Header() {
                     type="text"
                     value={searchQuery}
                     onChange={handleSearchInputChange}
-                    placeholder="Search for products, models, or spare parts..."
+                    placeholder={t('header.search.placeholder', 'Search for products, models, or spare parts...')}
                     className="w-full px-4 lg:px-6 py-3 text-white text-base lg:text-lg bg-gray-900 border border-[#989b2e] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#989b2e] focus:border-transparent placeholder-gray-400"
                     autoComplete="off"
                   />

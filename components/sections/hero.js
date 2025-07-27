@@ -3,6 +3,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { motion, useScroll, useTransform, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useRouter } from 'next/navigation';
+import { useTranslation } from '../../translation/useTranslation';
 import sparePartsData from '../../app/spare-parts/products.json';
 import { GlobeDemo } from './globe';
 
@@ -62,6 +63,7 @@ const AnimatedCounter = ({ end, suffix = "", prefix = "", delay = 0 }) => {
 };
 
 function Hero() {
+  const { t } = useTranslation();
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -227,17 +229,17 @@ function Hero() {
           <div className="flex flex-col gap-3 bg-gradient-to-b from-gray-900/95 via-gray-800/95 to-gray-900/95 backdrop-blur-lg rounded-2xl shadow-2xl px-1 py-2 border border-gray-700/50">
             <div className="text-center px-1 py-1">
               <div className="text-2xl font-bold text-white animate-bounce">5 Mn+</div>
-              <div className="text-base font-medium text-[#989b2e]">Clients</div>
+              <div className="text-base font-medium text-[#989b2e]">{t('hero.stats.clients', 'Clients')}</div>
             </div>
             <div className="h-px mx-2 bg-gray-600/50"></div>
             <div className="text-center px-1 py-1">
               <div className="text-2xl font-bold text-white animate-">21+</div>
-              <div className="text-base font-medium text-[#989b2e]">Countries</div>
+              <div className="text-base font-medium text-[#989b2e]">{t('hero.stats.countries', 'Countries')}</div>
             </div>
             <div className="h-px mx-2 bg-gray-600/50"></div>
             <div className="text-center px-1 py-1">
               <div className="text-2xl font-bold text-white animate-bounce">5743+</div>
-              <div className="text-base font-medium text-[#989b2e]">Distributors</div>
+              <div className="text-base font-medium text-[#989b2e]">{t('hero.stats.distributors', 'Distributors')}</div>
             </div>
           </div>
         </div>
@@ -256,7 +258,7 @@ function Hero() {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.3 }}
             >
-              Welcome to Bonhoeffer Machines
+              {t('hero.title', 'Welcome to Bonhoeffer Machines')}
             </motion.h1>
             
             <motion.p
@@ -265,7 +267,7 @@ function Hero() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
-              Innovating the future of industrial machinery with cutting-edge technology
+              {t('hero.subtitle', 'Innovating the future of industrial machinery with cutting-edge technology')}
             </motion.p>
           </motion.div>
 
@@ -279,7 +281,7 @@ function Hero() {
             <form onSubmit={handleSearchSubmit} className="flex flex-col sm:flex-row w-full relative">
               <input 
                 type='text' 
-                placeholder='Search our products and spare parts...' 
+                placeholder={t('hero.search.placeholder', 'Search our products and spare parts...')}
                 value={searchQuery}
                 onChange={handleSearchInputChange}
                 className='w-full sm:w-96 p-3 rounded-t-lg sm:rounded-t-none sm:rounded-l-lg bg-white/10 backdrop-blur-md text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#989b2e] transition-all duration-300 border border-white/20'
@@ -288,7 +290,7 @@ function Hero() {
                 type="submit"
                 className='w-full sm:w-auto px-6 py-3 bg-[#989b2e] rounded-b-lg sm:rounded-l-none sm:rounded-r-lg transition-all duration-300 font-semibold hover:bg-[#7a7d24]'
               >
-                Search
+                {t('hero.search.button', 'Search')}
               </button>
               
               {/* Search Results Dropdown */}
@@ -308,7 +310,7 @@ function Hero() {
                                 ? 'bg-blue-100 text-blue-800' 
                                 : 'bg-green-100 text-green-800'
                             }`}>
-                              {result.type === 'product' ? 'Product' : 'Spare Part'}
+                              {result.type === 'product' ? t('hero.search.productTag', 'Product') : t('hero.search.sparePartTag', 'Spare Part')}
                             </span>
                             <span>{result.name}</span>
                           </div>
@@ -316,7 +318,8 @@ function Hero() {
                       </>
                     ) : (
                       <div className="px-3 py-2 text-gray-600 text-center">
-                        No results found for &quot;{searchQuery}&quot;
+                        {t('hero.search.noResults', 'No results found for')}{" "}
+                        <span className="font-semibold">&quot;{searchQuery}&quot;</span>
                       </div>
                     )}
                   </div>
@@ -362,33 +365,33 @@ function Hero() {
             viewport={{ once: true }}
           >
             <div className="px-6 py-6 sm:px-12 sm:py-8 mb-3 sm:mb-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-              <h1 className='text-3xl sm:text-4xl md:text-6xl font-bold mb-2 text-[#989b2e]'>Global</h1>
-              <h2 className='text-2xl sm:text-3xl md:text-5xl font-bold text-white'>Presence</h2>
+              <h1 className='text-3xl sm:text-4xl md:text-6xl font-bold mb-2 text-[#989b2e]'>{t('hero.stats.global', 'Global')}</h1>
+              <h2 className='text-2xl sm:text-3xl md:text-5xl font-bold text-white'>{t('hero.stats.presence', 'Presence')}</h2>
             </div>
             <div className="space-y-3 sm:space-y-5">
               <div className="p-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
                 <h3 className='text-2xl sm:text-2xl md:text-3xl font-semibold text-white'>
-                  <AnimatedCounter end={5} suffix=" Mn+" delay={0.5} /> Clients
+                  <AnimatedCounter end={5} suffix=" Mn+" delay={0.5} /> {t('hero.stats.clients', 'Clients')}
                 </h3>
               </div>
               <div className="p-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
                 <h3 className='text-2xl sm:text-2xl md:text-3xl font-semibold text-white'>
-                  <AnimatedCounter end={21} suffix="+" delay={0.8} /> Countries
+                  <AnimatedCounter end={21} suffix="+" delay={0.8} /> {t('hero.stats.countries', 'Countries')}
                 </h3>
               </div>
               <div className="p-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
                 <h3 className='text-2xl sm:text-2xl md:text-3xl font-semibold text-white'>
-                  <AnimatedCounter end={4535} suffix="+" delay={0.5} /> Products
+                  <AnimatedCounter end={4535} suffix="+" delay={0.5} /> {t('hero.stats.products', 'Products')}
                 </h3>
               </div>
               <div className="p-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
                 <h3 className='text-2xl sm:text-2xl md:text-3xl font-semibold text-white'>
-                  <AnimatedCounter end={5743} suffix="+" delay={0.5} /> Distributors
+                  <AnimatedCounter end={5743} suffix="+" delay={0.5} /> {t('hero.stats.distributors', 'Distributors')}
                 </h3>
               </div>
               <div className="p-3 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
                 <h3 className='text-2xl sm:text-2xl md:text-3xl font-semibold text-white'>
-                  <AnimatedCounter end={15347} suffix="+" delay={0.5} /> Retail Points
+                  <AnimatedCounter end={15347} suffix="+" delay={0.5} /> {t('hero.stats.retailPoints', 'Retail Points')}
                 </h3>
               </div>
             </div>

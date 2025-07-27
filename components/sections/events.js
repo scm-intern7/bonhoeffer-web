@@ -2,6 +2,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { useTranslation } from '../../translation/useTranslation';
 
 // Event images data
 const eventImages = [
@@ -47,7 +48,7 @@ const FloatingArrow = ({ direction = "down", className = "" }) => {
 };
 
 // Image Slider Component - Same mechanism as Social carousel
-const ImageSlider = ({ posts }) => {
+const ImageSlider = ({ posts, t }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
   const [postsPerView, setPostsPerView] = useState(4)
@@ -166,7 +167,7 @@ const ImageSlider = ({ posts }) => {
                           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                         </svg>
                       </div>
-                      <p className="text-sm font-medium">View Event</p>
+                      <p className="text-sm font-medium">{t('events.viewEvent', 'View Event')}</p>
                     </div>
                   </div>
                 </div>
@@ -251,6 +252,7 @@ const ImageSlider = ({ posts }) => {
 };
 
 function Events() {
+  const { t } = useTranslation();
   const [ref, inView] = useInView({
     threshold: 0.2,
     triggerOnce: true,
@@ -292,7 +294,7 @@ function Events() {
             animate={inView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            Events
+            {t('events.title', 'Events')}
           </motion.h2>
 
           {/* Subtitle */}
@@ -302,7 +304,7 @@ function Events() {
             animate={inView ? { opacity: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            Explore our global presence and participation in industry events worldwide
+            {t('events.subtitle', 'Explore our global presence and participation in industry events worldwide')}
           </motion.p>
 
           {/* Bottom Arrow */}
@@ -322,7 +324,7 @@ function Events() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: 0.6 }}
         >
-          <ImageSlider posts={eventPosts} />
+          <ImageSlider posts={eventPosts} t={t} />
         </motion.div>
       </div>
     </section>

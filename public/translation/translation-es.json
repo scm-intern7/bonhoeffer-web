@@ -1,0 +1,333 @@
+{
+  "header": {
+    "navigation": {
+      "home": "Inicio",
+      "about": "Acerca de Nosotros",
+      "products": "Productos",
+      "spareparts": "Repuestos",
+      "gallery": "Galería",
+      "photos": "Fotos",
+      "videos": "Videos",
+      "events": "Eventos",
+      "careers": "Carreras",
+      "contact": "Contáctanos",
+      "fair": "Ferias",
+      "certifications": "Certificaciones",
+      "warranty": "Registro de Garantía",
+      "sponsorship": "Patrocinio"
+    },
+    "search": {
+      "placeholder": "Buscar productos, repuestos...",
+      "noResults": "No se encontraron resultados",
+      "searchResults": "Resultados de Búsqueda"
+    },
+    "language": {
+      "english": "English",
+      "spanish": "Español",
+      "portuguese": "Português"
+    }
+  },
+  "hero": {
+    "title": "Bienvenido a Bonhoeffer Machines",
+    "subtitle": "Ingeniería de Vanguardia para la Agricultura Moderna",
+    "search": {
+      "placeholder": "Buscar productos o repuestos...",
+      "button": "Buscar",
+      "productTag": "Producto",
+      "sparePartTag": "Repuesto",
+      "noResults": "No se encontraron resultados. Intenta buscar con palabras clave diferentes."
+    },
+    "stats": {
+      "global": "Presencia",
+      "presence": "Global",
+      "clients": "Clientes",
+      "countries": "Países",
+      "products": "Productos",
+      "distributors": "Distribuidores",
+      "retailPoints": "Puntos de Venta"
+    }
+  },
+  "cta": {
+    "title": "¿Listo para Transformar tus Operaciones Agrícolas?",
+    "subtitle": "Únete a miles de agricultores en todo el mundo que confían en Bonhoeffer Maschinen para sus necesidades agrícolas.",
+    "button": "Comenzar Hoy"
+  },
+  "events": {
+    "title": "Eventos",
+    "subtitle": "Explora nuestra presencia global y participación en eventos industriales en todo el mundo",
+    "viewEvent": "Ver Evento"
+  },
+  "social": {
+    "digital": "Plataformas",
+    "platforms": "Digitales",
+    "viewOnInstagram": "Ver en Instagram",
+    "addInstagramLink": "Agregar enlace de Instagram aquí",
+    "description": "Mantente conectado con nuestras últimas actualizaciones, momentos detrás de escena y destacados de la comunidad en nuestras plataformas de redes sociales."
+  },
+  "products": {
+    "our": "Nuestros",
+    "products": "Productos",
+    "exploreProduct": "Explorar Producto",
+    "items": {
+      "1": {
+        "name": "Bomba de Agua a Gasolina",
+        "description": "Bomba de agua de alto rendimiento para uso industrial y residencial"
+      },
+      "2": {
+        "name": "Motor a Gasolina",
+        "description": "Motor a gasolina confiable con potencia superior"
+      },
+      "3": {
+        "name": "Generador a Gasolina",
+        "description": "Solución de energía portátil para todas sus necesidades energéticas"
+      },
+      "4": {
+        "name": "Inversor a Gasolina",
+        "description": "Energía limpia y estable para electrónicos sensibles"
+      },
+      "5": {
+        "name": "Cultivador a Gasolina",
+        "description": "Equipo de cultivo de suelo de grado profesional"
+      },
+      "7": {
+        "name": "Desbrozadora",
+        "description": "Poder de corte resistente para vegetación difícil"
+      },
+      "8": {
+        "name": "Desbrozadora de Mochila",
+        "description": "Diseño ergonómico para uso profesional extendido"
+      },
+      "9": {
+        "name": "Herramienta Múltiple",
+        "description": "Herramienta versátil para múltiples aplicaciones de jardinería"
+      },
+      "10": {
+        "name": "Motosierra",
+        "description": "Motosierra profesional para silvicultura y construcción"
+      },
+      "11": {
+        "name": "Cortasetos",
+        "description": "Recorte de precisión para mantenimiento perfecto de setos"
+      },
+      "12": {
+        "name": "Soplador",
+        "description": "Movimiento de aire potente para limpieza y mantenimiento"
+      },
+      "13": {
+        "name": "Cortacésped a Gasolina",
+        "description": "Cuidado profesional del césped con corte de precisión"
+      },
+      "14": {
+        "name": "Barrena de Tierra",
+        "description": "Solución de perforación potente para hoyos de postes y plantación"
+      },
+      "15": {
+        "name": "Segmento Eléctrico",
+        "description": "Soluciones de energía eléctrica ecológicas"
+      },
+      "17": {
+        "name": "Bomba de Agua 2 Tiempos",
+        "description": "Bomba de agua ligera de 2 tiempos para operación eficiente"
+      },
+      "18": {
+        "name": "Motor 2 Tiempos",
+        "description": "Motor compacto de 2 tiempos para máxima relación potencia-peso"
+      },
+      "19": {
+        "name": "Bomba de Agua Diésel",
+        "description": "Bomba de agua diésel resistente para aplicaciones industriales"
+      },
+      "20": {
+        "name": "Generador Diésel",
+        "description": "Generación de energía diésel confiable para operación continua"
+      },
+      "21": {
+        "name": "Motor Diésel",
+        "description": "Motor diésel robusto con eficiencia de combustible excepcional"
+      },
+      "22": {
+        "name": "Lavadora a Presión a Gasolina",
+        "description": "Poder de limpieza de alta presión para trabajos difíciles"
+      },
+      "23": {
+        "name": "Lavadora a Presión para Casa",
+        "description": "Solución perfecta de lavado a presión para mantenimiento del hogar"
+      },
+      "24": {
+        "name": "Compresor de Aire de Transmisión Directa",
+        "description": "Compresión de aire eficiente para herramientas neumáticas"
+      },
+      "25": {
+        "name": "Aspiradora",
+        "description": "Sistema de limpieza por aspiración de grado industrial"
+      },
+      "26": {
+        "name": "Fumigadora de Mochila",
+        "description": "Solución de fumigación portátil para aplicaciones agrícolas"
+      },
+      "27": {
+        "name": "Fumigadora Manual",
+        "description": "Fumigación manual de precisión para aplicaciones específicas"
+      },
+      "28": {
+        "name": "Lavadora a Presión Eléctrica",
+        "description": "Lavado a presión eléctrico para limpieza ecológica"
+      },
+      "30": {
+        "name": "Nebulizador",
+        "description": "Aplicación de niebla fina para protección de cultivos"
+      },
+      "31": {
+        "name": "Nebulizador Térmico",
+        "description": "Nebulización térmica para control de plagas de área amplia"
+      },
+      "32": {
+        "name": "Bomba Centrífuga",
+        "description": "Sistema de bombeo centrífugo de alta eficiencia"
+      },
+      "33": {
+        "name": "Bomba Sumergible",
+        "description": "Solución de bombeo subacuático para pozos profundos"
+      },
+      "34": {
+        "name": "Bomba Sumergible Solar",
+        "description": "Bomba sumergible solar para acceso sostenible al agua"
+      },
+      "35": {
+        "name": "Panel Solar",
+        "description": "Paneles solares de alta eficiencia para energía renovable"
+      },
+      "36": {
+        "name": "Apisonadora",
+        "description": "Herramienta de compactación de suelo para proyectos de construcción"
+      },
+      "37": {
+        "name": "Compactador de Placa",
+        "description": "Compactación de superficie para pavimentación y construcción"
+      },
+      "38": {
+        "name": "Cortador de Concreto",
+        "description": "Corte de precisión a través de concreto y piedra"
+      },
+      "39": {
+        "name": "Vibrador de Concreto",
+        "description": "Equipo profesional de consolidación de concreto"
+      },
+      "40": {
+        "name": "Llana Mecánica de Concreto",
+        "description": "Acabado suave de concreto para resultados profesionales"
+      },
+      "41": {
+        "name": "Equipo de Soldadura",
+        "description": "Solución completa de soldadura para fabricación de metales"
+      }
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "Empresa",
+      "about": "Acerca de Nosotros",
+      "contact": "Contáctanos",
+      "careers": "Carreras",
+      "news": "Noticias y Prensa"
+    },
+    "products": {
+      "title": "Productos",
+      "all": "Todos los Productos",
+      "spareParts": "Repuestos",
+      "services": "Servicios",
+      "warranty": "Garantía"
+    },
+    "events": {
+      "title": "Eventos",
+      "all": "Todos los Eventos",
+      "gallery": "Galería",
+      "blog": "Historias de Éxito",
+      "fair": "Ferias Comerciales"
+    },
+    "support": {
+      "title": "Soporte",
+      "warranty": "Garantía",
+      "certifications": "Certificaciones",
+      "downloads": "Descargas",
+      "sponsorship": "Patrocinio"
+    },
+    "contact": {
+      "title": "Contacto",
+      "phone": "+91 96675 15523",
+      "email": "support@bonhoeffermachines.com",
+      "address": "Plot No. 756, 2nd Floor, Udyog Vihar Phase -5, Gurugram, Haryana India"
+    },
+    "social": {
+      "title": "Síguenos"
+    },
+    "legal": {
+      "copyright": "Bonhoeffer Machines. Todos los derechos reservados.",
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Servicio",
+      "cookies": "Política de Cookies"
+    },
+    "cta": {
+      "becomeDealer": "Conviértete en Nuestro Distribuidor",
+      "description": "Fabricante líder de maquinaria agrícola a nivel mundial."
+    }
+  },
+  "careers": {
+    "hero": {
+      "title": "Construye Tu Carrera Con Nosotros",
+      "subtitle": "Únete a nuestro equipo innovador y sé parte del futuro de la maquinaria agrícola"
+    },
+    "form": {
+      "title": "¿Listo para Unirte a Nosotros?",
+      "subtitle": "Da el primer paso hacia una carrera emocionante con Bonhoeffer Machines. Completa el formulario a continuación y comencemos este viaje juntos.",
+      "fullName": "Nombre Completo",
+      "position": "Perfil de Interés",
+      "phone": "Número de Contacto",
+      "email": "Dirección de Correo Electrónico",
+      "resume": "CV/Currículum",
+      "message": "Mensaje (Si tienes alguno)",
+      "submit": "Enviar Solicitud",
+      "submitting": "Enviando...",
+      "required": "Requerido",
+      "optional": "Opcional",
+      "placeholders": {
+        "fullName": "Ingresa tu nombre completo",
+        "position": "ej., Ingeniero de Software, Gerente de Marketing, etc.",
+        "phone": "Ingresa tu número de contacto",
+        "email": "Ingresa tu dirección de correo electrónico",
+        "message": "Cuéntanos por qué te gustaría unirte a nuestro equipo..."
+      },
+      "fileUpload": {
+        "instruction": "Sube tu currículum en formato PDF, DOC o DOCX (Máx. 5MB)"
+      },
+      "validation": {
+        "required": "Este campo es requerido",
+        "email": "Por favor ingresa una dirección de correo válida",
+        "phone": "Por favor ingresa un número de teléfono válido"
+      },
+      "success": "¡Solicitud enviada exitosamente vía FormSubmit! Te contactaremos pronto.",
+      "error": "Hubo un error al enviar tu solicitud vía FormSubmit. Por favor intenta de nuevo o contáctanos directamente."
+    }
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "retry": "Reintentar",
+    "close": "Cerrar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "view": "Ver",
+    "download": "Descargar",
+    "upload": "Subir",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "more": "Más",
+    "less": "Menos"
+  }
+}

@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
+import { useTranslation } from '../../translation/useTranslation';
 
 // FloatingArrow component for horizontal arrows
 const FloatingArrow = ({ direction, className = "", sizeClass = "w-20 h-2" }) => {
@@ -37,7 +38,7 @@ const FloatingArrow = ({ direction, className = "", sizeClass = "w-20 h-2" }) =>
 }
 
 // SocialSlider component for Instagram carousel
-const SocialSlider = ({ posts }) => {
+const SocialSlider = ({ posts, t }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
   const [postsPerView, setPostsPerView] = useState(3)
@@ -157,7 +158,7 @@ const SocialSlider = ({ posts }) => {
                         <svg className="w-12 h-12 mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                         </svg>
-                        <p className="text-sm font-medium">View on Instagram</p>
+                        <p className="text-sm font-medium">{t('social.viewOnInstagram', 'View on Instagram')}</p>
                       </div>
                     </div>
                   </a>
@@ -185,7 +186,7 @@ const SocialSlider = ({ posts }) => {
                     {/* No link overlay */}
                     <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                       <div className="text-white text-center">
-                        <p className="text-sm bg-black/50 px-3 py-1 rounded">Add Instagram link here</p>
+                        <p className="text-sm bg-black/50 px-3 py-1 rounded">{t('social.addInstagramLink', 'Add Instagram link here')}</p>
                       </div>
                     </div>
                   </div>
@@ -271,6 +272,7 @@ const SocialSlider = ({ posts }) => {
 }
 
 function Social() {
+  const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef(null)
 
@@ -486,7 +488,7 @@ function Social() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white px-6"
             >
-              Digital <span className='text-[#989b2e]'>Platforms</span>
+              {t('social.digital', 'Digital')} <span className='text-[#989b2e]'>{t('social.platforms', 'Platforms')}</span>
             </motion.h2>
             {/* Right Arrow */}
             <div className="absolute right-0 translate-x-full items-center sm:flex hidden" style={{ marginLeft: '10px', maxWidth: 'calc(100vw/8)' }}>
@@ -506,7 +508,7 @@ function Social() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="social-media-embed"
         >
-          <SocialSlider posts={instagramPosts} />
+          <SocialSlider posts={instagramPosts} t={t} />
         </motion.div>
 
         {/* Description Text */}
@@ -517,7 +519,7 @@ function Social() {
           className="text-center mt-12"
         >
           <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-            Stay connected with our latest updates, behind-the-scenes moments, and community highlights across our social media platforms.
+            {t('social.description', 'Stay connected with our latest updates, behind-the-scenes moments, and community highlights across our social media platforms.')}
           </p>
         </motion.div>
       </div>

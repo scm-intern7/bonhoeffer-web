@@ -1,33 +1,36 @@
+"use client";
 import React from 'react'
 import Link from 'next/link'
+import { useTranslation } from '../../translation/useTranslation'
 
 function Footer() {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear()
 
   const footerLinks = {
     company: [
-      { href: "/about", label: "About Us" },
-      { href: "/contact", label: "Contact Us" },
-      { href: "/careers", label: "Careers" },
-      // { href: "/news", label: "News & Press" }
+      { href: "/about", label: t('footer.company.about', 'About Us') },
+      { href: "/contact", label: t('footer.company.contact', 'Contact Us') },
+      { href: "/careers", label: t('footer.company.careers', 'Careers') },
+      // { href: "/news", label: t('footer.company.news', 'News & Press') }
     ],
     products: [
-      { href: "/products", label: "All Products" },
-      { href: "/spare-parts", label: "Spare Parts" },
-      { href: "/services", label: "Services" },
-      // { href: "/warranty", label: "Warranty" }
+      { href: "/products", label: t('footer.products.all', 'All Products') },
+      { href: "/spare-parts", label: t('footer.products.spareParts', 'Spare Parts') },
+      { href: "/services", label: t('footer.products.services', 'Services') },
+      // { href: "/warranty", label: t('footer.products.warranty', 'Warranty') }
     ],
     events: [
-      // { href: "/events", label: "All Events" },
-      { href: "/gallery", label: "Gallery" },
-      { href: "/blog", label: "Success Stories" },
-      { href: "/fair", label: "Trade Fairs" }
+      // { href: "/events", label: t('footer.events.all', 'All Events') },
+      { href: "/gallery", label: t('footer.events.gallery', 'Gallery') },
+      { href: "/blog", label: t('footer.events.blog', 'Success Stories') },
+      { href: "/fair", label: t('footer.events.fair', 'Trade Fairs') }
     ],
     support: [
-      { href: "/warranty-registration", label: "Warranty" },
-      { href: "/certifications", label: "Certifications" },
-      { href: "/downloads", label: "Downloads" },
-      { href: "/sponsorship", label: "Sponsorship" }
+      { href: "/warranty-registration", label: t('footer.support.warranty', 'Warranty') },
+      { href: "/certifications", label: t('footer.support.certifications', 'Certifications') },
+      { href: "/downloads", label: t('footer.support.downloads', 'Downloads') },
+      { href: "/sponsorship", label: t('footer.support.sponsorship', 'Sponsorship') }
     ]
   }
 
@@ -92,11 +95,11 @@ function Footer() {
               className="h-20 mb-3"
             />
             <p className="text-gray-300 text-xs leading-relaxed mb-3">
-              Leading manufacturer of agricultural machinery worldwide.
+              {t('footer.cta.description', 'Leading manufacturer of agricultural machinery worldwide.')}
             </p>
             <div className="bg-[#989b2e] px-3 py-1 rounded-md inline-block">
               <Link href="/become-a-dealer">
-                <span className="text-white text-xs font-bold">Become Our Dealer</span>
+                <span className="text-white text-xs font-bold">{t('footer.cta.becomeDealer', 'Become Our Dealer')}</span>
               </Link>
             </div>
           </div>
@@ -105,7 +108,7 @@ function Footer() {
           <div className="lg:col-span-6 grid grid-cols-2 md:grid-cols-4 gap-2">
             {/* Company Links */}
             <div>
-              <h4 className="text-white font-semibold mb-4 text-base">Company</h4>
+              <h4 className="text-white font-semibold mb-4 text-base">{t('footer.company.title', 'Company')}</h4>
               <ul className="space-y-1">
                 {footerLinks.company.map((link, index) => (
                   <li key={index}>
@@ -122,7 +125,7 @@ function Footer() {
 
             {/* Products Links */}
             <div>
-              <h4 className="text-white font-semibold mb-4 text-base">Products</h4>
+              <h4 className="text-white font-semibold mb-4 text-base">{t('footer.products.title', 'Products')}</h4>
               <ul className="space-y-1">
                 {footerLinks.products.map((link, index) => (
                   <li key={index}>
@@ -139,7 +142,7 @@ function Footer() {
 
             {/* Events Links */}
             <div>
-              <h4 className="text-white font-semibold mb-4 text-base">Events</h4>
+              <h4 className="text-white font-semibold mb-4 text-base">{t('footer.events.title', 'Events')}</h4>
               <ul className="space-y-1">
                 {footerLinks.events.map((link, index) => (
                   <li key={index}>
@@ -156,7 +159,7 @@ function Footer() {
 
             {/* Support Links */}
             <div>
-              <h4 className="text-white font-semibold mb-4 text-base">Support</h4>
+              <h4 className="text-white font-semibold mb-4 text-base">{t('footer.support.title', 'Support')}</h4>
               <ul className="space-y-1">
                 {footerLinks.support.map((link, index) => (
                   <li key={index}>
@@ -177,19 +180,19 @@ function Footer() {
             <div className="grid grid-cols-1 gap-4">
               {/* Contact Info */}
               <div>
-                <h4 className="text-white font-semibold mb-4 text-base">Contact</h4>
-                <p className="text-gray-400 text-xs mb-2">+91 96675 15523</p>
+                <h4 className="text-white font-semibold mb-4 text-base">{t('footer.contact.title', 'Contact')}</h4>
+                <p className="text-gray-400 text-xs mb-2">{t('footer.contact.phone', '+91 96675 15523')}</p>
                 <Link href="mailto:support@bonhoeffermachines.com">
-                    <p className="text-gray-400 text-xs mb-2">support@bonhoeffermachines.com</p>
+                    <p className="text-gray-400 text-xs mb-2">{t('footer.contact.email', 'support@bonhoeffermachines.com')}</p>
                 </Link>
                 <Link href={"https://maps.app.goo.gl/DjTLjeWXfqEtgAsq5"} target="_blank">
-                    <p className="text-gray-400 text-xs">Plot No. 756, 2nd Floor, Udyog Vihar Phase -5, Gurugram, Haryana India</p>
+                    <p className="text-gray-400 text-xs">{t('footer.contact.address', 'Plot No. 756, 2nd Floor, Udyog Vihar Phase -5, Gurugram, Haryana India')}</p>
                 </Link>
               </div>
 
               {/* Social Media */}
               <div>
-                <h4 className="text-white font-semibold mb-2 text-base">Follow Us</h4>
+                <h4 className="text-white font-semibold mb-2 text-base">{t('footer.social.title', 'Follow Us')}</h4>
                 <div className="flex space-x-5">
                   {socialLinks.map((social, index) => (
                     <a
@@ -215,17 +218,17 @@ function Footer() {
         <div className="border-t border-gray-800 pt-4">
           <div className="flex flex-col md:flex-row justify-between items-center text-xs">
             <div className="text-gray-500 mb-2 md:mb-0">
-              © {currentYear} Bonhoeffer Machines. All rights reserved.
+              © {currentYear} {t('footer.legal.copyright', 'Bonhoeffer Machines. All rights reserved.')}
             </div>
             <div className="flex space-x-4">
               <Link href="/privacy" className="text-gray-500 hover:text-[#989b2e] transition-colors duration-200">
-                Privacy Policy
+                {t('footer.legal.privacy', 'Privacy Policy')}
               </Link>
               <Link href="/terms" className="text-gray-500 hover:text-[#989b2e] transition-colors duration-200">
-                Terms of Service
+                {t('footer.legal.terms', 'Terms of Service')}
               </Link>
               <Link href="/cookies" className="text-gray-500 hover:text-[#989b2e] transition-colors duration-200">
-                Cookie Policy
+                {t('footer.legal.cookies', 'Cookie Policy')}
               </Link>
             </div>
           </div>

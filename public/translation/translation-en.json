@@ -1,0 +1,333 @@
+{
+  "header": {
+    "navigation": {
+      "home": "Home",
+      "about": "About Us",
+      "products": "Products",
+      "spareparts": "Spare Parts",
+      "gallery": "Gallery",
+      "photos": "Photos",
+      "videos": "Videos",
+      "events": "Events",
+      "careers": "Careers",
+      "contact": "Contact Us",
+      "fair": "Fairs",
+      "certifications": "Certifications",
+      "warranty": "Warranty Registration",
+      "sponsorship": "Sponsorship"
+    },
+    "search": {
+      "placeholder": "Search products, spare parts...",
+      "noResults": "No results found",
+      "searchResults": "Search Results"
+    },
+    "language": {
+      "english": "English",
+      "spanish": "Español",
+      "portuguese": "Português"
+    }
+  },
+  "hero": {
+    "title": "Welcome to Bonhoeffer Machines",
+    "subtitle": "Cutting-Edge Engineering for Modern Agriculture",
+    "search": {
+      "placeholder": "Search products or spare parts...",
+      "button": "Search",
+      "productTag": "Product",
+      "sparePartTag": "Spare Part",
+      "noResults": "No results found. Try searching with different keywords."
+    },
+    "stats": {
+      "global": "Global",
+      "presence": "Presence",
+      "clients": "Clients",
+      "countries": "Countries",
+      "products": "Products",
+      "distributors": "Distributors",
+      "retailPoints": "Retail Points"
+    }
+  },
+  "cta": {
+    "title": "Ready to Transform Your Agricultural Operations?",
+    "subtitle": "Join thousands of farmers worldwide who trust Bonhoeffer Maschinen for their agricultural needs.",
+    "button": "Get Started Today"
+  },
+  "events": {
+    "title": "Events",
+    "subtitle": "Explore our global presence and participation in industry events worldwide",
+    "viewEvent": "View Event"
+  },
+  "social": {
+    "digital": "Digital",
+    "platforms": "Platforms",
+    "viewOnInstagram": "View on Instagram",
+    "addInstagramLink": "Add Instagram link here",
+    "description": "Stay connected with our latest updates, behind-the-scenes moments, and community highlights across our social media platforms."
+  },
+  "products": {
+    "our": "Our",
+    "products": "Products",
+    "exploreProduct": "Explore Product",
+    "items": {
+      "1": {
+        "name": "Gasoline Water Pump",
+        "description": "High-performance water pump for industrial and residential use"
+      },
+      "2": {
+        "name": "Gasoline Engine",
+        "description": "Reliable gasoline engine with superior power output"
+      },
+      "3": {
+        "name": "Gasoline Generator",
+        "description": "Portable power solution for all your energy needs"
+      },
+      "4": {
+        "name": "Gasoline Inverter",
+        "description": "Clean, stable power for sensitive electronics"
+      },
+      "5": {
+        "name": "Gasoline Tiller",
+        "description": "Professional-grade soil cultivation equipment"
+      },
+      "7": {
+        "name": "Brush Cutter",
+        "description": "Heavy-duty cutting power for tough vegetation"
+      },
+      "8": {
+        "name": "Backpack Brushcutter",
+        "description": "Ergonomic design for extended professional use"
+      },
+      "9": {
+        "name": "Multi Tool",
+        "description": "Versatile tool for multiple landscaping applications"
+      },
+      "10": {
+        "name": "Chain Saw",
+        "description": "Professional chainsaw for forestry and construction"
+      },
+      "11": {
+        "name": "Hedge Trimmer",
+        "description": "Precision trimming for perfect hedge maintenance"
+      },
+      "12": {
+        "name": "Blower",
+        "description": "Powerful air movement for cleaning and maintenance"
+      },
+      "13": {
+        "name": "Gasoline Lawn Mower",
+        "description": "Professional lawn care with precision cutting"
+      },
+      "14": {
+        "name": "Earth Auger",
+        "description": "Powerful drilling solution for post holes and planting"
+      },
+      "15": {
+        "name": "Electric Segment",
+        "description": "Eco-friendly electric power solutions"
+      },
+      "17": {
+        "name": "Water Pump 2-Stroke",
+        "description": "Lightweight 2-stroke water pump for efficient operation"
+      },
+      "18": {
+        "name": "Engine 2-Stroke",
+        "description": "Compact 2-stroke engine for maximum power-to-weight ratio"
+      },
+      "19": {
+        "name": "Diesel Water Pump",
+        "description": "Heavy-duty diesel water pump for industrial applications"
+      },
+      "20": {
+        "name": "Diesel Generator",
+        "description": "Reliable diesel power generation for continuous operation"
+      },
+      "21": {
+        "name": "Diesel Engine",
+        "description": "Robust diesel engine with exceptional fuel efficiency"
+      },
+      "22": {
+        "name": "Gasoline Pressure Washer",
+        "description": "High-pressure cleaning power for tough jobs"
+      },
+      "23": {
+        "name": "Pressure Washer Home Use",
+        "description": "Perfect pressure washing solution for home maintenance"
+      },
+      "24": {
+        "name": "Direct Driven Air Compressor",
+        "description": "Efficient air compression for pneumatic tools"
+      },
+      "25": {
+        "name": "Vacuum Cleaner",
+        "description": "Industrial-grade vacuum cleaning system"
+      },
+      "26": {
+        "name": "Knapsack Sprayer",
+        "description": "Portable spraying solution for agricultural applications"
+      },
+      "27": {
+        "name": "Manual Sprayer",
+        "description": "Precision manual spraying for targeted applications"
+      },
+      "28": {
+        "name": "Electric Pressure Washer",
+        "description": "Electric-powered pressure washing for eco-friendly cleaning"
+      },
+      "30": {
+        "name": "Mist Duster",
+        "description": "Fine mist application for crop protection"
+      },
+      "31": {
+        "name": "Thermal Fogger",
+        "description": "Thermal fogging for wide-area pest control"
+      },
+      "32": {
+        "name": "Centrifugal Pump",
+        "description": "High-efficiency centrifugal pumping system"
+      },
+      "33": {
+        "name": "Submersible Pump",
+        "description": "Underwater pumping solution for deep wells"
+      },
+      "34": {
+        "name": "Solar Submersible Pump",
+        "description": "Solar-powered submersible pump for sustainable water access"
+      },
+      "35": {
+        "name": "Solar Panel",
+        "description": "High-efficiency solar panels for renewable energy"
+      },
+      "36": {
+        "name": "Tamping Rammer",
+        "description": "Soil compaction tool for construction projects"
+      },
+      "37": {
+        "name": "Plate Compactor",
+        "description": "Surface compaction for paving and construction"
+      },
+      "38": {
+        "name": "Concrete Cutter",
+        "description": "Precision cutting through concrete and stone"
+      },
+      "39": {
+        "name": "Concrete Vibrator",
+        "description": "Professional concrete consolidation equipment"
+      },
+      "40": {
+        "name": "Concrete Power Trowel",
+        "description": "Smooth concrete finishing for professional results"
+      },
+      "41": {
+        "name": "Welding Set",
+        "description": "Complete welding solution for metal fabrication"
+      }
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "contact": "Contact Us",
+      "careers": "Careers",
+      "news": "News & Press"
+    },
+    "products": {
+      "title": "Products",
+      "all": "All Products",
+      "spareParts": "Spare Parts",
+      "services": "Services",
+      "warranty": "Warranty"
+    },
+    "events": {
+      "title": "Events",
+      "all": "All Events",
+      "gallery": "Gallery",
+      "blog": "Success Stories",
+      "fair": "Trade Fairs"
+    },
+    "support": {
+      "title": "Support",
+      "warranty": "Warranty",
+      "certifications": "Certifications",
+      "downloads": "Downloads",
+      "sponsorship": "Sponsorship"
+    },
+    "contact": {
+      "title": "Contact",
+      "phone": "+91 96675 15523",
+      "email": "support@bonhoeffermachines.com",
+      "address": "Plot No. 756, 2nd Floor, Udyog Vihar Phase -5, Gurugram, Haryana India"
+    },
+    "social": {
+      "title": "Follow Us"
+    },
+    "legal": {
+      "copyright": "Bonhoeffer Machines. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy"
+    },
+    "cta": {
+      "becomeDealer": "Become Our Dealer",
+      "description": "Leading manufacturer of agricultural machinery worldwide."
+    }
+  },
+  "careers": {
+    "hero": {
+      "title": "Build Your Career With Us",
+      "subtitle": "Join our innovative team and be part of the future of agricultural machinery"
+    },
+    "form": {
+      "title": "Ready to Join Us?",
+      "subtitle": "Take the first step towards an exciting career with Bonhoeffer Machines. Fill out the form below and let's start this journey together.",
+      "fullName": "Full Name",
+      "position": "Profile Interested In",
+      "phone": "Contact Number",
+      "email": "Email Address",
+      "resume": "Resume/CV",
+      "message": "Message (If any)",
+      "submit": "Submit Application",
+      "submitting": "Submitting...",
+      "required": "Required",
+      "optional": "Optional",
+      "placeholders": {
+        "fullName": "Enter your full name",
+        "position": "e.g., Software Engineer, Marketing Manager, etc.",
+        "phone": "Enter your contact number",
+        "email": "Enter your email address",
+        "message": "Tell us why you'd like to join our team..."
+      },
+      "fileUpload": {
+        "instruction": "Upload your resume in PDF, DOC, or DOCX format (Max 5MB)"
+      },
+      "validation": {
+        "required": "This field is required",
+        "email": "Please enter a valid email address",
+        "phone": "Please enter a valid phone number"
+      },
+      "success": "Application submitted successfully via FormSubmit! We will get back to you soon.",
+      "error": "There was an error submitting your application via FormSubmit. Please try again or contact us directly."
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "close": "Close",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "view": "View",
+    "download": "Download",
+    "upload": "Upload",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "next": "Next",
+    "previous": "Previous",
+    "more": "More",
+    "less": "Less"
+  }
+}

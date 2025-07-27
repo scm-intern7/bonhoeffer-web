@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { useTranslation } from '../../translation/useTranslation';
 
 // Full product list from products.js
 const products = [
@@ -86,6 +87,14 @@ const FloatingArrow = ({ direction, className = "", sizeClass = "w-20 h-2" }) =>
 const slugify = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
 function Producty() {
+  const { t } = useTranslation();
+  
+  // Function to get translated product name and description
+  const getProductTranslation = (product) => ({
+    name: t(`products.items.${product.id}.name`, product.name),
+    description: t(`products.items.${product.id}.description`, product.description)
+  });
+  
   return (
     <div className="w-full overflow-hidden">
       <div className="relative">
@@ -118,7 +127,7 @@ function Producty() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white px-6"
           >
-            Our <span className='text-[#9a9c30]'>Products</span>
+            {t('products.our', 'Our')} <span className='text-[#9a9c30]'>{t('products.products', 'Products')}</span>
           </motion.h2>
           <div className="absolute right-90 flex items-center" style={{ marginLeft: '10px', maxWidth: 'calc(100vw/8)' }}>
             <motion.div
@@ -142,7 +151,9 @@ function Producty() {
           </div>
         </div>
       </div>
-      {products.map((product, idx) => (
+      {products.map((product, idx) => {
+        const translatedProduct = getProductTranslation(product);
+        return (
         <section
           key={product.id}
           className="w-full min-h-screen flex flex-col sm:flex-row items-center justify-start relative bg-fixed bg-cover bg-center px-2 sm:px-0"
@@ -156,19 +167,20 @@ function Producty() {
             mb-4 sm:mb-0"
           >
             <h2 className="text-lg sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-4 text-white">
-              {product.name}
+              {translatedProduct.name}
             </h2>
             <p className="text-xs sm:text-sm md:text-base text-green-100 mb-4 sm:mb-6 leading-relaxed">
-              {product.description}
+              {translatedProduct.description}
             </p>
             <Link href={`/product/${slugify(product.name)}`} passHref >
               <button className="w-full px-4 py-2 sm:px-8 sm:py-3 bg-white text-[#9a9c30] font-semibold rounded-full hover:bg-green-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer block text-center text-sm sm:text-base">
-                Explore Product
+                {t('products.exploreProduct', 'Explore Product')}
               </button>
             </Link>
           </div>
         </section>
-      ))}
+        )
+      })}
     </div>
   )
 }
