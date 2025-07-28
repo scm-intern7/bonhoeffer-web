@@ -113,6 +113,54 @@
       "error": "There was an error submitting your application via FormSubmit. Please try again or contact us directly."
     }
   },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: July 28, 2025",
+    "heroSubtitle": "Your privacy matters to us. Learn how we protect and use your information.",
+    "tableOfContents": "Table of Contents",
+    "bottomCta": {
+      "title": "Questions About Our Privacy Policy?",
+      "subtitle": "We're committed to transparency and protecting your privacy. If you have any questions or concerns, we're here to help.",
+      "button": "Contact Us"
+    },
+    "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "content": "At Bonhoeffer Machines, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, use our services, or interact with us."
+      },
+      "informationCollection": {
+        "title": "Information We Collect",
+        "content": "We collect information you provide directly to us, such as when you register for warranty, contact us, apply for careers, or subscribe to updates. We also automatically collect certain information when you visit our website, including your IP address, browser type, and usage data."
+      },
+      "informationUse": {
+        "title": "How We Use Your Information",
+        "content": "We use your information to provide and maintain our services, process warranty registrations, respond to inquiries, send updates about products and services, improve our website, comply with legal obligations, and protect our rights and prevent fraud."
+      },
+      "informationSharing": {
+        "title": "Information Sharing",
+        "content": "We do not sell, trade, or rent your personal information to third parties. We may share your information with authorized dealers, service providers, when required by law, in business transfers, or with your explicit consent."
+      },
+      "dataSecurity": {
+        "title": "Data Security",
+        "content": "We implement appropriate technical and organizational security measures including encryption, regular security assessments, access controls, and secure data storage. However, no method of transmission over the internet is 100% secure."
+      },
+      "cookies": {
+        "title": "Cookies & Tracking",
+        "content": "Our website uses cookies to enhance your browsing experience, analyze website performance, and personalize content. You can control cookie settings through your browser preferences."
+      },
+      "yourRights": {
+        "title": "Your Privacy Rights",
+        "content": "Depending on your location, you may have rights to access, rectify, erase, port, object to, or restrict processing of your personal data. Contact us to exercise these rights."
+      },
+      "contact": {
+        "title": "Contact Information",
+        "content": "If you have questions about this Privacy Policy, please contact us at privacy@bonhoeffermachines.com, call +91 96675 15523, or write to us at Plot No. 756, 2nd Floor, Udyog Vihar Phase -5, Gurugram, Haryana, India.",
+        "email": "privacy@bonhoeffermachines.com",
+        "phone": "+91 96675 15523",
+        "address": "Plot No. 756, 2nd Floor, Udyog Vihar Phase -5, Gurugram, Haryana, India"
+      }
+    }
+  },
   "common": {
     "loading": "Loading...",
     "error": "Error",
