@@ -249,7 +249,7 @@ const SocialSlider = ({ posts, t }) => {
         <>
           <button
             onClick={prevSlide}
-            className="absolute left-[-45px] top-1/2 transform -translate-y-1/2 z-10 bg-[#989b2e] hover:bg-[#7a7d24] text-white p-3 rounded-full transition-colors duration-300 shadow-lg hidden md:block"
+            className="absolute cursor-pointer right-15 bottom-110 transform -translate-y-1/2 z-10 bg-[#989b2e] hover:bg-[#7a7d24] text-white p-3 rounded-full transition-colors duration-300 shadow-lg hidden md:block"
             aria-label="Previous slide"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -258,7 +258,7 @@ const SocialSlider = ({ posts, t }) => {
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-[-45px] top-1/2 transform -translate-y-1/2 z-10 bg-[#989b2e] hover:bg-[#7a7d24] text-white p-3 rounded-full transition-colors duration-300 shadow-lg hidden md:block"
+            className="absolute cursor-pointer right-1 bottom-110 transform -translate-y-1/2 z-10 bg-[#989b2e] hover:bg-[#7a7d24] text-white p-3 rounded-full transition-colors duration-300 shadow-lg hidden md:block"
             aria-label="Next slide"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
