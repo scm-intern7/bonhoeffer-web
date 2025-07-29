@@ -253,7 +253,7 @@ function Hero() {
             className="text-center w-full"
           >
             <motion.h1 
-              className='text-3xl xs:text-4xl sm:text-4xl md:text-4xl xl:text-6xl font-bold mb-4 text-white break-words'
+              className='text-3xl xs:text-4xl sm:text-4xl md:text-4xl xl:text-6xl font-bold mb-4 text-white break-words [@media(min-width:1280px)_and_(max-width:1350px)]:text-5xl'
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.3 }}
