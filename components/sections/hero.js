@@ -225,7 +225,7 @@ function Hero() {
 
       <section ref={containerRef} className="relative min-h-screen overflow-hidden">
         {/* Statistics capsules - Right side sticky */}
-          <div className="fixed right-3 top-1/3 transform -translate-y-1/2 z-40 hidden lg:block">
+          <div className="fixed right-3 top-2/5 transform -translate-y-1/2 z-40 hidden lg:block">
           <div className="flex flex-col gap-3 bg-gradient-to-b from-gray-900/95 via-gray-800/95 to-gray-900/95 backdrop-blur-lg rounded-2xl shadow-2xl px-1 py-2 border border-gray-700/50">
             <div className="text-center px-1 py-1">
               <div className="text-2xl font-bold text-white animate-bounce">5 Mn+</div>
