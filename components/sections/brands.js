@@ -106,7 +106,7 @@ const Brands = () => {
           >
             Brands Powered by{' '}
             <span className="bg-gradient-to-r from-[#989b2e] to-[#989b2e] bg-clip-text text-transparent">
-              Bonhoeffer's Legacy
+              Bonhoeffer&apos;s Legacy
             </span>
           </motion.h2>
           
@@ -117,7 +117,7 @@ const Brands = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            From Mechnova's machines for light jobs to Bonhoeffer's powerhouse machines built for nonstop work, 
+            From Mechnova&apos;s machines for light jobs to Bonhoeffer&apos;s powerhouse machines built for nonstop work, 
             each brand serves a different kind of user. Stronwell is the steady choice for everyday pros, while 
             Stevron brings precise and reliable power tools. Each brand is driven by shared values and a commitment 
             to deeply understand and solve challenges at every level—because those who choose Bonhoeffer expect nothing less.
