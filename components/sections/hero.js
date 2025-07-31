@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import { useTranslation } from '../../translation/useTranslation';
 import sparePartsData from '../../app/spare-parts/products.json';
 import { GlobeDemo } from './globe';
+import Brands from './brands';
 
 // Custom hook for counting animation
 const useCountUp = (end, duration = 2, delay = 0) => {
@@ -244,7 +245,7 @@ function Hero() {
           </div>
         </div>
         {/* Main Content */}
-        <div className='flex flex-col items-center text-white pt-16 sm:pt-20 relative z-10 w-full px-4'>
+        <div className='flex flex-col items-center text-white pt-10 relative z-10 w-full px-4'>
           {/* Hero Title - Simplified Animation */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -331,7 +332,7 @@ function Hero() {
 
         {/* Video Section - Parallax, desktop untouched */}
         <motion.div 
-          className='flex justify-center mt-16 relative w-full px-2 sm:px-0'
+          className='flex justify-center mt-8 relative w-full px-2 sm:px-0'
           style={{ y }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -348,9 +349,11 @@ function Hero() {
           </video>
         </motion.div>
 
+        <Brands/>
+
         {/* Statistics Section - Responsive, desktop untouched */}
         <motion.div 
-          className='flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 mt-10 sm:mt-50 mb-5 w-full px-2'
+          className='flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 w-full px-2'
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -399,7 +402,7 @@ function Hero() {
 
           {/* GIF Section - Responsive, desktop untouched */}
           <motion.div
-            className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl"
+            className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-2xl"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
