@@ -329,17 +329,16 @@ function ProductSpecificPage() {
       </section>
 
       {/* Paragraph Section for SEO */}
-      <section className="fixed top-0 z-1 pt-10 xs:pt-14 md:pt-20 px-3 xs:px-4 sm:px-6">
+      {/* <section className="pt-10 xs:pt-14 md:pt-20 px-3 xs:px-4 sm:px-6">
         <div className="max-w-2xl sm:max-w-4xl md:max-w-6xl lg:max-w-7xl mx-auto">
-          {/* <h2 className="text-lg xs:text-xl md:text-2xl font-bold text-white mb-4">Why Choose Bonhoeffer's Petrol Water Pumps?</h2> */}
           {getParaDetails(slug).map((paragraph, index) => (
-          <p key={index} className="text-base xs:text-lg md:text-xl text-transparent leading-relaxed max-w-3xl sm:max-w-4xl md:max-w-6xl mx-auto py-2">
-                {paragraph}
-                {index < getParaDetails(slug).length - 1 && <br />}
+            <p key={index} className="text-base xs:text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl sm:max-w-4xl md:max-w-6xl mx-auto py-2">
+              {paragraph}
+              {index < getParaDetails(slug).length - 1 && <br />}
             </p>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Back Navigation */}
       <section className="pt-6 xs:pt-8 md:pt-10 px-3 xs:px-4 sm:px-6 text-center">
