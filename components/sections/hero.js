@@ -402,7 +402,7 @@ function Hero() {
 
           {/* GIF Section - Responsive, desktop untouched */}
           <motion.div
-            className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-2xl"
+            className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}

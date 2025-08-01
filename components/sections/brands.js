@@ -67,7 +67,7 @@ const Brands = () => {
   };
 
   const logoVariants = {
-    hidden: { scale: 0, rotate: -180 },
+    hidden: { scale: 0 },
     visible: {
       scale: 1,
       rotate: 0,
@@ -139,7 +139,7 @@ const Brands = () => {
               className="group relative"
             >
               <Link href={brand.website} target="_blank">
-                <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 hover:border-[#989b2e]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#989b2e]/10 transform hover:-translate-y-2">
+                <div className="bg-gray-100/10 backdrop-blur-sm rounded-2xl pb-8 border border-gray-700/50 hover:border-[#989b2e]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#989b2e]/10 transform hover:-translate-y-2">
                     {/* Category Badge */}
                     {/* <div className={`inline-block px-4 py-2 rounded-full text-sm font-semibold mb-6 bg-gradient-to-r ${brand.gradient} text-white`}>
                     {brand.category}
@@ -150,12 +150,12 @@ const Brands = () => {
                     variants={logoVariants}
                     className="flex justify-center mb-6"
                     >
-                    <div className="relative w-full h-32 group-hover:scale-110 transition-transform duration-500">
+                    <div className="relative rounded-t-2xl bg-white/10 w-full h-52  ">
                         <Image
                         src={brand.logo}
                         alt={`${brand.name} Logo`}
                         fill
-                        className="object-contain"
+                        className="object-contain px-2 group-hover:scale-95 transition-transform duration-500"
                         />
                     </div>
                     </motion.div>
