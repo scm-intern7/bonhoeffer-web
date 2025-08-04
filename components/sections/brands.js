@@ -11,8 +11,8 @@ const Brands = () => {
       logo: "/logos/mechnova_logo.png",
       letterLogo: "/logos/mechnova_letter.png",
       website: "https://mechnovamachines.com",
-      description: "Light-duty machines for occasional use",
-      category: "Occasionally Use",
+      description: "Light-duty machines for home use",
+      category: "Home Use",
       tagline: "Perfect for light jobs and occasional work",
       gradient: "from-blue-500 to-cyan-500"
     },
@@ -104,9 +104,9 @@ const Brands = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Brands Powered by{' '}
-            <span className="bg-gradient-to-r from-[#989b2e] to-[#989b2e] bg-clip-text text-transparent">
-              Bonhoeffer&apos;s Legacy
+            Find Your Perfect Fit{' '}
+            <span className="block bg-gradient-to-r from-[#989b2e] to-[#989b2e] bg-clip-text text-transparent">
+              Meet the Brands Built for You
             </span>
           </motion.h2>
           
@@ -117,10 +117,7 @@ const Brands = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            From Mechnova&apos;s machines for light jobs to Bonhoeffer&apos;s powerhouse machines built for nonstop work, 
-            each brand serves a different kind of user. Stronwell is the steady choice for everyday pros, while 
-            Stevron brings precise and reliable power tools. Each brand is driven by shared values and a commitment 
-            to deeply understand and solve challenges at every level—because those who choose Bonhoeffer expect nothing less.
+            Wondering how these brands differ when they all come from the same Bonhoeffer family? Each one serves a unique purpose and audience—from the everyday home gardener to the heavy-duty industrial operator.
           </motion.p>
         </motion.div>
 
@@ -139,7 +136,7 @@ const Brands = () => {
               className="group relative"
             >
               <Link href={brand.website} target="_blank">
-                <div className=" backdrop-blur-sm rounded-2xl pb-8  hover:border-[#989b2e]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#989b2e]/10 transform hover:-translate-y-2">
+                <div className=" backdrop-blur-sm rounded-2xl pb-8 transition-all duration-500  transform hover:-translate-y-2">
                     {/* Category Badge */}
                     {/* <div className={`inline-block px-4 py-2 rounded-full text-sm font-semibold mb-6 bg-gradient-to-r ${brand.gradient} text-white`}>
                     {brand.category}
@@ -148,25 +145,25 @@ const Brands = () => {
                     {/* Logo Section */}
                     <motion.div
                     variants={logoVariants}
-                    className="flex justify-center mb-6"
+                    className="flex justify-center mb-4"
                     >
-                    <div className="relative rounded-2xl bg-white/20 w-full h-50 ">
+                    <div className="relative rounded-2xl bg-white/90 w-full h-50 ">
                         <Image
                         src={brand.logo}
                         alt={`${brand.name} Logo`}
                         fill
-                        className="object-contain px-2 group-hover:scale-95 transition-transform duration-500"
+                        className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
                         />
                     </div>
                     </motion.div>
 
                     {/* Brand Info */}
                     <div className="text-center">
-                    <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-[#989b2e] transition-colors duration-300">
+                    {/* <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-[#989b2e] transition-colors duration-300">
                         {brand.name}
-                    </h3>
+                    </h3> */}
                     
-                    <p className="text-gray-400 mb-2 font-medium">
+                    <p className="text-gray-400 mb-4 text-xl font-bold">
                         {brand.category}
                     </p>
                     
@@ -179,14 +176,14 @@ const Brands = () => {
                         // href={brand.website}
                         // target="_blank"
                         // rel="noopener noreferrer"
-                        className={`inline-flex items-center px-6 py-3 rounded-xl font-semibold text-white bg-gradient-to-r ${brand.gradient} hover:shadow-lg hover:shadow-current/25 transform hover:scale-105 transition-all duration-300 group-hover:animate-pulse`}
+                        className={`inline-flex items-center px-6 py-3 rounded-xl font-semibold text-white bg-gradient-to-r ${brand.gradient} hover:shadow-lg hover:shadow-current/25 transform hover:scale-105 transition-all duration-300 group-hover:scale-110`}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      {brand.name}
+                      <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                        Visit Website
+                      </svg>
                     </motion.p>
                     </div>
 

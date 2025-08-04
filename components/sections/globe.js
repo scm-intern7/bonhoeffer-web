@@ -13,7 +13,7 @@ export function GlobeDemo() {
     globeColor: "#062056",
     showAtmosphere: true,
     atmosphereColor: "#989b2e",
-    atmosphereAltitude: 0.4,
+    atmosphereAltitude: 0.1,
     emissive: "#0d40a8",
     emissiveIntensity: 0.1,
     shininess: 0.9,
