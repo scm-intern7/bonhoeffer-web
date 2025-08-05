@@ -51,6 +51,7 @@
             "description": "We didn't overthink it. We just built it right. The Bonhoeffer Gasoline Water Pump is for the doers — the folks who show up early, stay late, and never let a challenge slow them down.\nIf that sounds like you, then this is your pump.\nYou bring the grit. We bring the gear."
         }
     ],
+    
     "gasoline-generator": [
   {
     "title": "Bonhoeffer Gasoline Generators — Power That Follows You Anywhere",
@@ -85,6 +86,7 @@
     "description": "When you choose Bonhoeffer, you’re not just buying a generator.\nYou’re investing in confidence — that when the lights go out, your world keeps moving.\nYou’re choosing control — power that’s yours, anywhere, anytime.\nYou’re getting performance — smart engineering, sturdy construction, and no-nonsense reliability.\nBonhoeffer Gasoline Generators — Because when power is non-negotiable, you deserve one that won’t let you down."
   }
 ],
+    
     "gasoline-inverter": [
   {
     "title": "Gasoline Inverter — Quiet, Portable Power with a Purpose",
@@ -115,6 +117,7 @@
     "description": "When you choose a Bonhoeffer Gasoline Inverter, you’re choosing more than just portable electricity.\nYou’re choosing quiet confidence — power that performs without the noise.\nYou’re choosing mobility — energy that goes where you go.\nYou’re choosing engineering that endures — crafted for real-world use, not just perfect conditions.\nBonhoeffer Gasoline Inverter — For Power That Never Feels Like a Burden.\nBecause when the world goes dark, this is the light, the charge, and the quiet force you can rely on."
   }
 ],
+    
    "gasoline-tiller": [
   {
     "title": "Gasoline Tiller – Rugged Power for Every Patch of Land",
@@ -149,6 +152,7 @@
     "description": "The Bonhoeffer Gasoline Tiller combines high-performance engineering, user-friendly design, and true adaptability. It’s a go-to solution for landowners, small-scale farmers, and professionals who need a machine that works as hard as they do — in dry soil, wet patches, or anywhere in between."
   }
 ],
+    
     "efi-gasoline-engine": [
   {
     "title": "EFI Gasoline Engine — Where Smart Technology Meets Reliable Power",
@@ -221,6 +225,7 @@
     "description": "The Bonhoeffer Brush Cutter combines powerful engine performance, durable construction, and ergonomic handling in a machine built to tackle outdoor cutting tasks with ease. With 30% more engine power, a 20 CRMO crankshaft, and a 200-hour tested gearbox, it offers unmatched efficiency, reliability, and operator comfort.\nBonhoeffer Brush Cutter — Built Strong. Designed Smart. Made for Every Cut."
   }
 ],
+    
 "backpack-brush-cutter": [
   {
     "title": "Power, Comfort, and Durability in Every Step",
@@ -280,6 +285,7 @@
     "description": "The Bonhoeffer Multi-Tool combines smart engine technology, high-quality engineering, and versatile attachments into one practical, reliable machine. With its 30% more powerful engine, heavy-duty gearbox, durable crankshaft, and multiple tool heads, it delivers the performance of four machines in one compact system.\nBonhoeffer Multi-Tool – Maximum Utility. Minimal Effort. One Tool for All Tasks."
   }
 ],
+    
     "chainsaw": [
   {
     "title": "Power Meets Precision",
