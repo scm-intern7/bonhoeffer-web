@@ -396,7 +396,7 @@ function ProductSpecificPage() {
       <section className="pt-10 xs:pt-14 md:pt-20 px-3 xs:px-4 sm:px-6">
         <div className="max-w-2xl sm:max-w-4xl md:max-w-6xl lg:max-w-7xl mx-auto">
           <motion.h2 
-            className="text-3xl xs:text-4xl md:text-5xl font-bold text-white mb-8 md:mb-12 text-center"
+            className="text-2xl xs:text-3xl md:text-4xl font-bold text-white mb-8 md:mb-12 text-center"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -412,17 +412,67 @@ function ProductSpecificPage() {
         </div>
       </section>
 
-      {/* Paragraph Section for SEO */}
-      {/* <section className="pt-10 xs:pt-14 md:pt-20 px-3 xs:px-4 sm:px-6">
-        <div className="max-w-2xl sm:max-w-4xl md:max-w-6xl lg:max-w-7xl mx-auto">
-          {getParaDetails(slug).map((paragraph, index) => (
-            <p key={index} className="text-base xs:text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl sm:max-w-4xl md:max-w-6xl mx-auto py-2">
-              {paragraph}
-              {index < getParaDetails(slug).length - 1 && <br />}
-            </p>
-          ))}
-        </div>
-      </section> */}
+      {/* Detailed Information Section */}
+      {getParaDetails(slug).length > 0 && (
+        <section className="pt-10 xs:pt-14 md:pt-20 px-3 xs:px-4 sm:px-6">
+          <motion.h2 
+            className="text-2xl xs:text-3xl md:text-4xl font-bold text-white mb-8 md:mb-12 text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            Detailed Information About <span className="text-[#989b2e]">{productName}</span>
+          </motion.h2>
+          <div className="max-w-2xl sm:max-w-4xl md:max-w-6xl lg:max-w-7xl mx-auto space-y-8">
+            {getParaDetails(slug).map((section, index) => (
+              <motion.div
+                key={index}
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: true }}
+              >
+                <h3 className="text-xl xs:text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6">
+                  {section.title}
+                </h3>
+                <div className="text-base xs:text-lg md:text-xl text-gray-300 leading-relaxed">
+                  {section.description.split('\n').map((paragraph, pIndex) => {
+                    if (paragraph.trim() === '') return null;
+                    
+                    // Check if it's a numbered list item
+                    if (paragraph.match(/^\d+\./)) {
+                      return (
+                        <div key={pIndex} className="mb-3">
+                          <strong className="text-[#989b2e] font-semibold">{paragraph}</strong>
+                        </div>
+                      );
+                    }
+                    
+                    // Check if it's a feature list (contains colons)
+                    if (paragraph.includes(':') && paragraph.trim().length < 100) {
+                      const [feature, ...descParts] = paragraph.split(':');
+                      return (
+                        <div key={pIndex} className="mb-2">
+                          <span className="text-[#989b2e] font-semibold">{feature}:</span>
+                          <span className="ml-1">{descParts.join(':')}</span>
+                        </div>
+                      );
+                    }
+                    
+                    return (
+                      <p key={pIndex} className="mb-4 last:mb-0">
+                        {paragraph}
+                      </p>
+                    );
+                  })}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Back Navigation */}
       <section className="pt-6 xs:pt-8 md:pt-10 px-3 xs:px-4 sm:px-6 text-center">
