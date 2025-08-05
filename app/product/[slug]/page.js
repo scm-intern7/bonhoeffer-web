@@ -393,7 +393,7 @@ function ProductSpecificPage() {
       </section>
 
       {/* FAQ Section for SEO */}
-      <section className="pt-10 xs:pt-14 md:pt-20 px-3 xs:px-4 sm:px-6">
+      {/* <section className="pt-10 xs:pt-14 md:pt-20 px-3 xs:px-4 sm:px-6">
         <div className="max-w-2xl sm:max-w-4xl md:max-w-6xl lg:max-w-7xl mx-auto">
           <motion.h2 
             className="text-2xl xs:text-3xl md:text-4xl font-bold text-white mb-8 md:mb-12 text-center"
@@ -410,7 +410,7 @@ function ProductSpecificPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Detailed Information Section */}
       {getParaDetails(slug).length > 0 && (
