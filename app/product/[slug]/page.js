@@ -1,12 +1,71 @@
 'use client'
 import BgLayout from '@/components/templates/bgLayout'
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
 import productsData from './products.json'
 import paraData from './para.json'
+import faqs from './faq.json'
+
+// FAQ Item Component
+function FAQItem({ faq, index }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <motion.div
+      className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      viewport={{ once: true }}
+    >
+      <button
+        className="w-full cursor-pointer p-4 md:p-6 text-left flex justify-between items-center hover:bg-white/5 transition-all duration-300"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <h4 className="text-base xs:text-lg md:text-xl font-semibold text-white pr-4">
+          {faq.question}
+        </h4>
+        <motion.div
+          animate={{ rotate: isOpen ? 180 : 0 }}
+          transition={{ duration: 0.3 }}
+          className="flex-shrink-0"
+        >
+          <svg 
+            className="w-5 h-5 text-[#989b2e]" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth={2} 
+              d="M19 9l-7 7-7-7" 
+            />
+          </svg>
+        </motion.div>
+      </button>
+      <motion.div
+        initial={false}
+        animate={{ 
+          height: isOpen ? "auto" : 0,
+          opacity: isOpen ? 1 : 0 
+        }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+        className="overflow-hidden"
+      >
+        <div className="px-4 md:px-6 pb-4 md:pb-6">
+          <p className="text-sm xs:text-base md:text-lg text-gray-300 leading-relaxed">
+            {faq.answer}
+          </p>
+        </div>
+      </motion.div>
+    </motion.div>
+  );
+}
 
 function ProductSpecificPage() {
   const params = useParams();
@@ -14,6 +73,11 @@ function ProductSpecificPage() {
 
   const getParaDetails = (productSlug) => {
     return paraData[productSlug] || [];
+  };
+
+  // Get FAQ details based on slug
+  const getFAQDetails = (productSlug) => {
+    return faqs[productSlug] || [];
   };
 
   // Get product models based on slug
@@ -323,6 +387,26 @@ function ProductSpecificPage() {
                   </svg>
                 </Link>
               </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section for SEO */}
+      <section className="pt-10 xs:pt-14 md:pt-20 px-3 xs:px-4 sm:px-6">
+        <div className="max-w-2xl sm:max-w-4xl md:max-w-6xl lg:max-w-7xl mx-auto">
+          <motion.h2 
+            className="text-3xl xs:text-4xl md:text-5xl font-bold text-white mb-8 md:mb-12 text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            Frequently Asked <span className="text-[#989b2e]">Questions</span>
+          </motion.h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
+            {getFAQDetails(slug).map((faq, index) => (
+              <FAQItem key={index} faq={faq} index={index} />
             ))}
           </div>
         </div>
