@@ -17,6 +17,16 @@ const Brands = () => {
       gradient: "from-[#989b2e] to-green-500"
     },
     {
+      name: "Stronwell",
+      logo: "/logos/stronwell_logo.png",
+      letterLogo: "/logos/stronwell_letter.png",
+      website: "https://stronwell.com",
+      description: "Mid-duty for Regular Use",
+      category: "Frequently Use",
+      tagline: "Built for daily professional use",
+      gradient: "from-orange-500 to-red-500"
+    },
+    {
       name: "Mechnova Machines",
       logo: "/logos/mechnova_logo.png",
       letterLogo: "/logos/mechnova_letter.png",
@@ -25,16 +35,6 @@ const Brands = () => {
       category: "Home Use",
       tagline: "Perfect for light jobs and occasional work",
       gradient: "from-blue-500 to-cyan-500"
-    },
-    {
-      name: "Stronwell",
-      logo: "/logos/stronwell_logo.png",
-      letterLogo: "/logos/stronwell_letter.png",
-      website: "https://stronwell.com",
-      description: "Steady choice for everyday professionals",
-      category: "Frequently Use",
-      tagline: "Built for daily professional use",
-      gradient: "from-orange-500 to-red-500"
     }
   ];
 
@@ -44,7 +44,7 @@ const Brands = () => {
       logo: "/logos/stevron_logo.png",
       letterLogo: "/logos/stevron_letter.png",
       website: "https://stevrontools.com",
-      description: "Precise and reliable power tools",
+      description: "Premium Tools for Professionals",
       category: "Hardware Division",
       tagline: "Bringing precision to your projects",
       gradient: "from-green-500 to-emerald-500"
