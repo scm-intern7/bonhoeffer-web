@@ -7,6 +7,16 @@ import Link from 'next/link'
 const Brands = () => {
   const brands = [
     {
+      name: "Bonhoeffer Machines",
+      logo: "/letter.png",
+      letterLogo: "/letter.png",
+      website: "https://bonhoeffer.in",
+      description: "Heavy-duty machines for industrial use",
+      category: "Parent Company",
+      tagline: "Engineered for the toughest jobs",
+      gradient: "from-[#989b2e] to-green-500"
+    },
+    {
       name: "Mechnova Machines",
       logo: "/logos/mechnova_logo.png",
       letterLogo: "/logos/mechnova_letter.png",
@@ -15,16 +25,6 @@ const Brands = () => {
       category: "Home Use",
       tagline: "Perfect for light jobs and occasional work",
       gradient: "from-blue-500 to-cyan-500"
-    },
-    {
-      name: "Stevron Tools",
-      logo: "/logos/stevron_logo.png",
-      letterLogo: "/logos/stevron_letter.png",
-      website: "https://stevrontools.com",
-      description: "Precise and reliable power tools",
-      category: "Hardware Division",
-      tagline: "Bringing precision to your projects",
-      gradient: "from-green-500 to-emerald-500"
     },
     {
       name: "Stronwell",
@@ -37,6 +37,19 @@ const Brands = () => {
       gradient: "from-orange-500 to-red-500"
     }
   ];
+
+  const hard = [
+    {
+      name: "Stevron Tools",
+      logo: "/logos/stevron_logo.png",
+      letterLogo: "/logos/stevron_letter.png",
+      website: "https://stevrontools.com",
+      description: "Precise and reliable power tools",
+      category: "Hardware Division",
+      tagline: "Bringing precision to your projects",
+      gradient: "from-green-500 to-emerald-500"
+    }
+  ]
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -104,13 +117,14 @@ const Brands = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Find Your Perfect Fit{' '}
-            <span className="block bg-gradient-to-r from-[#989b2e] to-[#989b2e] bg-clip-text text-transparent">
+            {/* Find Your Perfect Fit{' '} */}
+            Garden & <span className="bg-gradient-to-r from-[#989b2e] to-[#989b2e] bg-clip-text text-transparent">Forestry</span>
+            {/* <span className="block bg-gradient-to-r from-[#989b2e] to-[#989b2e] bg-clip-text text-transparent">
               Meet the Brands Built for You
-            </span>
+            </span> */}
           </motion.h2>
           
-          <motion.p 
+          {/* <motion.p 
             className="text-lg md:text-xl text-gray-300 max-w-5xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -118,7 +132,7 @@ const Brands = () => {
             viewport={{ once: true }}
           >
             Wondering how these brands differ when they all come from the same Bonhoeffer family? Each one serves a unique purpose and audience—from the everyday home gardener to the heavy-duty industrial operator.
-          </motion.p>
+          </motion.p> */}
         </motion.div>
 
         {/* Brands Grid */}
@@ -147,7 +161,120 @@ const Brands = () => {
                     variants={logoVariants}
                     className="flex justify-center mb-4"
                     >
-                    <div className="relative rounded-2xl bg-white/90 w-full h-50 ">
+                    <div className="relative rounded-2xl bg-white/90 w-full h-30 ">
+                        <Image
+                        src={brand.logo}
+                        alt={`${brand.name} Logo`}
+                        fill
+                        className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+                        />
+                    </div>
+                    </motion.div>
+
+                    {/* Brand Info */}
+                    <div className="text-center">
+                    {/* <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-[#989b2e] transition-colors duration-300">
+                        {brand.name}
+                    </h3> */}
+                    
+                    <p className="text-gray-400 mb-4 text-xl font-bold">
+                        {brand.category}
+                    </p>
+                    
+                    {/* <p className="text-gray-500 text-sm mb-6">
+                        {brand.description}
+                    </p> */}
+
+                    {/* Visit Website Button */}
+                    <motion.p
+                        // href={brand.website}
+                        // target="_blank"
+                        // rel="noopener noreferrer"
+                        className={`inline-flex items-center px-6 py-3 rounded-xl font-semibold text-white bg-gradient-to-r ${brand.gradient} hover:shadow-lg hover:shadow-current/25 transform hover:scale-105 transition-all duration-300 group-hover:scale-110`}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
+                      {brand.name}
+                      <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </motion.p>
+                    </div>
+
+                    {/* Decorative Elements */}
+                    {/* <div className="absolute top-4 right-4 w-8 h-8 opacity-20">
+                    <Image
+                        src={brand.letterLogo}
+                        alt={`${brand.name} Letter`}
+                        fill
+                        className="object-contain filter brightness-0 invert"
+                    />
+                    </div> */}
+                </div>
+              </Link>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <motion.h2 
+            className="text-3xl md:text-4xl lg:text-5xl max-w-3xl xl:max-w-4xl mx-auto font-bold text-white mb-6"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            {/* Find Your Perfect Fit{' '} */}
+            Hardware <span className="bg-gradient-to-r from-[#989b2e] to-[#989b2e] bg-clip-text text-transparent">Division</span>
+            {/* <span className="block bg-gradient-to-r from-[#989b2e] to-[#989b2e] bg-clip-text text-transparent">
+              Meet the Brands Built for You
+            </span> */}
+          </motion.h2>
+          
+          {/* <motion.p 
+            className="text-lg md:text-xl text-gray-300 max-w-5xl mx-auto leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
+            Wondering how these brands differ when they all come from the same Bonhoeffer family? Each one serves a unique purpose and audience—from the everyday home gardener to the heavy-duty industrial operator.
+          </motion.p> */}
+        </motion.div>
+
+        {/* Brands Grid */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="flex justify-center items-center mx-auto w-[30%] my-12"
+        >
+          {hard.map((brand, index) => (
+            <motion.div
+              key={brand.name}
+              variants={cardVariants}
+              className="group relative w-full"
+            >
+              <Link href={brand.website} target="_blank">
+                <div className=" backdrop-blur-sm rounded-2xl pb-8 transition-all duration-500  transform hover:-translate-y-2">
+                    {/* Category Badge */}
+                    {/* <div className={`inline-block px-4 py-2 rounded-full text-sm font-semibold mb-6 bg-gradient-to-r ${brand.gradient} text-white`}>
+                    {brand.category}
+                    </div> */}
+
+                    {/* Logo Section */}
+                    <motion.div
+                    variants={logoVariants}
+                    className="flex justify-center mb-4"
+                    >
+                    <div className="relative rounded-2xl bg-white/90 w-full h-30 ">
                         <Image
                         src={brand.logo}
                         alt={`${brand.name} Logo`}
