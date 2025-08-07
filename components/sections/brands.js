@@ -8,7 +8,7 @@ const Brands = () => {
   const brands = [
     {
       name: "Bonhoeffer Machines",
-      logo: "/letter.png",
+      logo: "/logos/bon_letter.png",
       letterLogo: "/letter.png",
       website: "https://bonhoeffer.in",
       description: "Heavy-duty machines for industrial use",
@@ -41,7 +41,7 @@ const Brands = () => {
   const hard = [
     {
       name: "Stevron Tools",
-      logo: "/logos/stevron_logo.png",
+      logo: "/logos/stevron_black_logo.png",
       letterLogo: "/logos/stevron_letter.png",
       website: "https://stevrontools.com",
       description: "Premium Tools for Professionals",
@@ -150,7 +150,7 @@ const Brands = () => {
               className="group relative"
             >
               <Link href={brand.website} target="_blank">
-                <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-5 border border-gray-700/50 hover:border-[#989b2e]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#989b2e]/10 transform hover:-translate-y-2">
+                <div className="bg-white backdrop-blur-sm rounded-2xl p-5 border border-gray-700/50 hover:border-[#989b2e]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#989b2e]/10 transform hover:-translate-y-2">
                     {/* Category Badge */}
                     {/* <div className={`inline-block px-4 py-2 rounded-full text-sm font-semibold mb-6 bg-gradient-to-r ${brand.gradient} text-white`}>
                     {brand.category}
@@ -161,7 +161,7 @@ const Brands = () => {
                     variants={logoVariants}
                     className="flex justify-center mb-6"
                     >
-                    <div className="relative bg-white/90 rounded-xl w-full h-32 group-hover:scale-105 transition-transform duration-500">
+                    <div className="relative bg-black/10 rounded-xl w-full h-32 group-hover:scale-105 transition-transform duration-500">
                         <Image
                         src={brand.logo}
                         alt={`${brand.name} Logo`}
@@ -177,7 +177,7 @@ const Brands = () => {
                         {brand.name}
                     </h3> */}
                     
-                    <p className="text-gray-400 mb-4 text-xl font-bold">
+                    <p className="text-gray-900 mb-4 text-xl font-bold">
                         {brand.category}
                     </p>
                     
@@ -263,7 +263,7 @@ const Brands = () => {
               className="group w-full relative"
             >
               <Link href={brand.website} target="_blank">
-                <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-5 border border-gray-700/50 hover:border-[#989b2e]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#989b2e]/10 transform hover:-translate-y-2">
+                <div className="bg-white backdrop-blur-sm rounded-2xl p-5 border border-gray-700/50 hover:border-[#989b2e]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#989b2e]/10 transform hover:-translate-y-2">
                     {/* Category Badge */}
                     {/* <div className={`inline-block px-4 py-2 rounded-full text-sm font-semibold mb-6 bg-gradient-to-r ${brand.gradient} text-white`}>
                     {brand.category}
@@ -274,7 +274,7 @@ const Brands = () => {
                     variants={logoVariants}
                     className="flex justify-center mb-6"
                     >
-                    <div className="relative bg-white/90 rounded-xl w-full h-32 group-hover:scale-105 transition-transform duration-500">
+                    <div className="relative bg-black/10 rounded-xl w-full h-32 group-hover:scale-105 transition-transform duration-500">
                         <Image
                         src={brand.logo}
                         alt={`${brand.name} Logo`}
@@ -290,7 +290,7 @@ const Brands = () => {
                         {brand.name}
                     </h3> */}
                     
-                    <p className="text-gray-400 mb-4 text-xl font-bold">
+                    <p className="text-gray-900 mb-4 text-xl font-bold">
                         {brand.category}
                     </p>
                     
