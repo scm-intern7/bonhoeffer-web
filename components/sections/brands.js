@@ -150,7 +150,7 @@ const Brands = () => {
               className="group relative"
             >
               <Link href={brand.website} target="_blank">
-                <div className=" backdrop-blur-sm rounded-2xl pb-8 transition-all duration-500  transform hover:-translate-y-2">
+                <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-5 border border-gray-700/50 hover:border-[#989b2e]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#989b2e]/10 transform hover:-translate-y-2">
                     {/* Category Badge */}
                     {/* <div className={`inline-block px-4 py-2 rounded-full text-sm font-semibold mb-6 bg-gradient-to-r ${brand.gradient} text-white`}>
                     {brand.category}
@@ -159,14 +159,14 @@ const Brands = () => {
                     {/* Logo Section */}
                     <motion.div
                     variants={logoVariants}
-                    className="flex justify-center mb-4"
+                    className="flex justify-center mb-6"
                     >
-                    <div className="relative rounded-2xl bg-white/90 w-full h-30 ">
+                    <div className="relative bg-white/90 rounded-xl w-full h-32 group-hover:scale-105 transition-transform duration-500">
                         <Image
                         src={brand.logo}
                         alt={`${brand.name} Logo`}
                         fill
-                        className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+                        className="object-contain p-4"
                         />
                     </div>
                     </motion.div>
@@ -190,14 +190,14 @@ const Brands = () => {
                         // href={brand.website}
                         // target="_blank"
                         // rel="noopener noreferrer"
-                        className={`inline-flex items-center px-6 py-3 rounded-xl font-semibold text-white bg-gradient-to-r ${brand.gradient} hover:shadow-lg hover:shadow-current/25 transform hover:scale-105 transition-all duration-300 group-hover:scale-110`}
+                        className={`inline-flex items-center px-6 py-3 rounded-xl font-semibold text-white bg-gradient-to-r ${brand.gradient} hover:shadow-lg hover:shadow-current/25 transform hover:scale-105 transition-all duration-300 group-hover:animate-pulse`}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                      {brand.name}
-                      <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        {brand.name}
+                        <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                      </svg>
+                        </svg>
                     </motion.p>
                     </div>
 
@@ -260,10 +260,10 @@ const Brands = () => {
             <motion.div
               key={brand.name}
               variants={cardVariants}
-              className="group relative w-full"
+              className="group w-full relative"
             >
               <Link href={brand.website} target="_blank">
-                <div className=" backdrop-blur-sm rounded-2xl pb-8 transition-all duration-500  transform hover:-translate-y-2">
+                <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-5 border border-gray-700/50 hover:border-[#989b2e]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#989b2e]/10 transform hover:-translate-y-2">
                     {/* Category Badge */}
                     {/* <div className={`inline-block px-4 py-2 rounded-full text-sm font-semibold mb-6 bg-gradient-to-r ${brand.gradient} text-white`}>
                     {brand.category}
@@ -272,14 +272,14 @@ const Brands = () => {
                     {/* Logo Section */}
                     <motion.div
                     variants={logoVariants}
-                    className="flex justify-center mb-4"
+                    className="flex justify-center mb-6"
                     >
-                    <div className="relative rounded-2xl bg-white/90 w-full h-30 ">
+                    <div className="relative bg-white/90 rounded-xl w-full h-32 group-hover:scale-105 transition-transform duration-500">
                         <Image
                         src={brand.logo}
                         alt={`${brand.name} Logo`}
                         fill
-                        className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+                        className="object-contain p-4"
                         />
                     </div>
                     </motion.div>
@@ -303,14 +303,14 @@ const Brands = () => {
                         // href={brand.website}
                         // target="_blank"
                         // rel="noopener noreferrer"
-                        className={`inline-flex items-center px-6 py-3 rounded-xl font-semibold text-white bg-gradient-to-r ${brand.gradient} hover:shadow-lg hover:shadow-current/25 transform hover:scale-105 transition-all duration-300 group-hover:scale-110`}
+                        className={`inline-flex items-center px-6 py-3 rounded-xl font-semibold text-white bg-gradient-to-r ${brand.gradient} hover:shadow-lg hover:shadow-current/25 transform hover:scale-105 transition-all duration-300 group-hover:animate-pulse`}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                      {brand.name}
-                      <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        {brand.name}
+                        <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                      </svg>
+                        </svg>
                     </motion.p>
                     </div>
 
