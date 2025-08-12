@@ -4,8 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import BgLayout from '@/components/templates/bgLayout';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { db } from '@/lib/firebase';
-import { collection, addDoc, Timestamp } from 'firebase/firestore';
+// Firebase imports commented out since they're not being used
+// import { db } from '@/lib/firebase';
+// import { collection, addDoc, Timestamp } from 'firebase/firestore';
 import emailjs from '@emailjs/browser';
 
 const departments = [
