@@ -254,7 +254,7 @@ const Brands = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="flex justify-center items-center mx-auto w-[30%] my-12"
+          className="flex justify-center items-center mx-auto md:w-[50%] lg:w-[30%] my-12"
         >
           {hard.map((brand, index) => (
             <motion.div
