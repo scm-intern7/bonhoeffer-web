@@ -65,12 +65,10 @@ function Page() {
 
   // HOD data
   const hodData = [
-    { name: "Naveen Bakshi", position: "Head of Supply Chain", image: "/about/hod/Naveen-Bakshi.webp" },
-    { name: "Sachin Sharma", position: "Manager Financial Planning and Accounting", image: "/about/hod/Sachin-Sharma.webp" },
+     { name: "Rajat Sahni", position: "Sales Director", image: "/about/hod/Rajat-Sahni.webp" },
+    { name: "Victor Vargas", position: "Global Head", image: "/about/hod/Victor-Vargas.webp" },
     { name: "Sudhanshu Pandey", position: "CEO India Business", image: "/about/hod/Sudhanshu-Pandey.webp" },
-    { name: "Suparna Chawla", position: "Manager, Human Resource", image: "/about/hod/Suparna-Chawla.webp" },
-    { name: "Rajat Sahni", position: "Head Latin America", image: "/about/hod/Rajat-Sahni.webp" },
-    { name: "Ashwin Tharoor", position: "Sr. Manager Marketing", image: "/about/hod/ashwin-tharoor.webp" }
+    { name: "Sachin Sharma", position: "Manager Financial Planning and Accounting", image: "/about/hod/Sachin-Sharma.webp" }
   ];
 
   // Differentiators data
