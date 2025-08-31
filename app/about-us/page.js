@@ -12,9 +12,9 @@ function Page() {
     // { name: "Naveen Bakshi", position: "Head of Supply Chain", image: "https://bonhoeffermachines.com/public/images/about-new/Naveen-Bakshi.webp" },
     { name: "Sachin Sharma", position: "Manager, Financial Planning", image: "https://bonhoeffermachines.com/public/images/about-new/Sachin-Sharma.webp" },
     { name: "Sudhanshu Pandey", position: "CEO, India Business", image: "https://bonhoeffermachines.com/public/images/about-new/Sudhanshu-Pandey.webp" },
-    { name: "Suparna Chawla", position: "Manager, Human Resource", image: "https://bonhoeffermachines.com/public/images/about-new/Suparna-Chawla.webp" },
-    { name: "Rajat Sahni", position: "Head, Latin America", image: "https://bonhoeffermachines.com/public/images/about-new/Rajat-Sahni.webp" },
-    { name: "Ashwin Tharoor", position: "Sr. Manager, Marketing", image: "https://bonhoeffermachines.com/public/images/about-new/ashwin-tharoor.webp" }
+    { name: "Victor Vargas", position: "Global Head", image: "https://bonhoeffermachines.com/public/images/about-new/Victor-Vargas.webp" },
+    { name: "Rajat Sahni", position: "Sales Director", image: "https://bonhoeffermachines.com/public/images/about-new/Rajat-Sahni.webp" }
+    
   ];
 
   // Differentiators data
