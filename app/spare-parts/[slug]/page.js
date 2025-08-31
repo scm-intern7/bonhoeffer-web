@@ -1,26 +1,47 @@
 'use client'
 import BgLayout from '@/components/templates/bgLayout'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
-import modelsData from './models.json'
 
 function PartSpecificPage() {
   const params = useParams();
   const slug = params.slug;
+  const [models, setModels] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  // Process image placeholders correctly - iterate through categories and their models
-  Object.values(modelsData).forEach(category => {
-    if (typeof category === 'object' && category !== null) {
-      Object.values(category).forEach(model => {
-        if (typeof model.image === 'string' && model.image.includes('${name}')) {
-          model.image = model.image.replace('${name}', model.name);
+  // Fetch models from Notion API
+  useEffect(() => {
+    async function fetchModels() {
+      try {
+        const response = await fetch(`/api/spare-parts/${slug}`);
+        if (!response.ok) {
+          throw new Error('Failed to fetch models data');
         }
-      });
+        const result = await response.json();
+        
+        if (result.success) {
+          setModels(result.data);
+        } else {
+          throw new Error(result.error || 'Failed to fetch data');
+        }
+      } catch (err) {
+        console.error('Error fetching models:', err);
+        setError(err.message);
+        // Set fallback data
+        setModels(getDefaultModels(slug));
+      } finally {
+        setLoading(false);
+      }
     }
-  });
+
+    if (slug) {
+      fetchModels();
+    }
+  }, [slug]);
 
 
   const getPartName = (slug) => {
@@ -209,15 +230,27 @@ function PartSpecificPage() {
     return modelsArray.length > 0 ? modelsArray : getDefaultModels(partSlug);
   };
 
-  const models = getModels(slug);
-
-
-  
-
-
-
   const partName = getPartName(slug);
   const partImage = getPartImage(slug);
+
+  // Loading state
+  if (loading) {
+    return (
+      <BgLayout>
+        <div className="flex items-center justify-center min-h-screen">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-[#989b2e] mx-auto mb-4"></div>
+            <p className="text-white text-xl">Loading models...</p>
+          </div>
+        </div>
+      </BgLayout>
+    );
+  }
+
+  // Error state (still show page with fallback data)
+  if (error) {
+    console.warn('Using fallback data due to error:', error);
+  }
 
   return (
     <BgLayout>
@@ -279,6 +312,11 @@ function PartSpecificPage() {
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               Select the perfect {partName.toLowerCase()} model for your machinery
             </p>
+            {error && (
+              <p className="text-sm text-yellow-400 mt-4 bg-yellow-400/20 px-4 py-2 rounded-full inline-block">
+                Using fallback data - some models may not be current
+              </p>
+            )}
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">

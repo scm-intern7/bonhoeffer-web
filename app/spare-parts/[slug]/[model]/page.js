@@ -5,25 +5,52 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
-import modelData from './modelData.json'
 
 function ModelSpecificPage() {
   const params = useParams();
   const { slug, model } = params;
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [modelDetails, setModelDetails] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  // Get model details based on slug and model code
-  const getModelDetails = (partSlug, modelCode) => {
-    // Check if the part category exists in modelData
-    if (modelData[partSlug] && modelData[partSlug][modelCode]) {
-      return modelData[partSlug][modelCode];
+  // Fetch model details from Notion API
+  useEffect(() => {
+    async function fetchModelDetails() {
+      try {
+        const response = await fetch(`/api/spare-parts/${slug}/${model}`);
+        if (!response.ok) {
+          throw new Error('Failed to fetch model details');
+        }
+        const result = await response.json();
+        
+        if (result.success) {
+          setModelDetails(result.data);
+        } else {
+          throw new Error(result.error || 'Failed to fetch data');
+        }
+      } catch (err) {
+        console.error('Error fetching model details:', err);
+        setError(err.message);
+        // Set fallback data
+        setModelDetails(getDefaultModelDetails(slug, model));
+      } finally {
+        setLoading(false);
+      }
     }
 
-    // Default model details
-    const defaultDetails = {
-      name: `${getPartName(partSlug)} Model`,
+    if (slug && model) {
+      fetchModelDetails();
+    }
+  }, [slug, model]);
+
+  // Fallback function for default model details
+  const getDefaultModelDetails = (partSlug, modelCode) => {
+    return {
+      name: `${getPartName(partSlug)} - ${modelCode}`,
       compatible: 'Compatible with most machinery models',
       code: modelCode.toUpperCase(),
+      image: getPartImage(partSlug),
       details: [
         { label: 'Material', value: 'High Quality Steel/Aluminum' },
         { label: 'Finish', value: 'Corrosion Resistant' },
@@ -33,8 +60,6 @@ function ModelSpecificPage() {
         { label: 'Quality', value: 'OEM Standard' }
       ]
     };
-
-    return defaultDetails;
   };
 
   const getPartName = (slug) => {
@@ -150,7 +175,6 @@ function ModelSpecificPage() {
     return allParts.filter(part => part.slug !== currentSlug);
   };
 
-  const modelDetails = getModelDetails(slug, model);
   const partImage = getPartImage(slug);
   const similarParts = getSimilarParts(slug);
 
@@ -162,6 +186,40 @@ function ModelSpecificPage() {
     
     return () => clearInterval(timer);
   }, [similarParts.length]);
+
+  // Loading state
+  if (loading) {
+    return (
+      <BgLayout>
+        <div className="flex items-center justify-center min-h-screen">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-[#989b2e] mx-auto mb-4"></div>
+            <p className="text-white text-xl">Loading product details...</p>
+          </div>
+        </div>
+      </BgLayout>
+    );
+  }
+
+  // Error state (still show page with fallback data)
+  if (error && !modelDetails) {
+    return (
+      <BgLayout>
+        <div className="flex items-center justify-center min-h-screen">
+          <div className="text-center">
+            <p className="text-red-500 text-xl mb-4">Error loading product details</p>
+            <p className="text-white mb-4">{error}</p>
+            <Link 
+              href={`/spare-parts/${slug}`}
+              className="text-[#989b2e] hover:text-white transition-colors"
+            >
+              Back to {getPartName(slug)} Models
+            </Link>
+          </div>
+        </div>
+      </BgLayout>
+    );
+  }
 
   return (
     <BgLayout>
@@ -221,9 +279,8 @@ function ModelSpecificPage() {
             >
               <div className="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10">
                 <Image
-                  // src={"https://bonhoeffermachines.com/en/public/parts/"+slug+"/"+model.toUpperCase()+".webp"}
-                  src={modelDetails.image || partImage}
-                  alt={modelDetails.name}
+                  src={modelDetails?.image || partImage}
+                  alt={modelDetails?.name || `${getPartName(slug)} - ${model}`}
                   fill
                   className="object-contain p-8 bg-white"
                 />
@@ -240,21 +297,22 @@ function ModelSpecificPage() {
             >
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-white">
-                  {modelDetails.name}
+                  {modelDetails?.name || `${getPartName(slug)} - ${model}`}
                 </h2>
                 <div className="flex items-center space-x-4 mb-6">
-                  {/* <span className="text-2xl font-bold text-[#989b2e]">{modelDetails.price}</span> */}
-                  {/* <span className="text-sm text-gray-400 bg-[#989b2e]/20 px-3 py-1 rounded-full">
-                    {modelDetails.code}
-                  </span> */}
+                  {error && (
+                    <span className="text-sm text-yellow-400 bg-yellow-400/20 px-3 py-1 rounded-full">
+                      Using fallback data
+                    </span>
+                  )}
                 </div>
                 <p className="text-lg text-gray-300">
-                  {modelDetails.compatible}
+                  {modelDetails?.compatible || 'Compatible with most machinery models'}
                 </p>
               </div>
 
               {/* Product Details Cards */}
-              {Array.isArray(modelDetails.details) ? (
+              {modelDetails?.details && Array.isArray(modelDetails.details) && modelDetails.details.length > 0 ? (
                 <div className="grid grid-cols-2 gap-4">
                   {modelDetails.details.map((detail, index) => (
                     <motion.div
@@ -272,16 +330,22 @@ function ModelSpecificPage() {
                 </div>
               ) : (
                 <div className="grid grid-cols-2 gap-4">
-                  {modelDetails.brand && (
+                  {modelDetails?.brand && (
                     <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4">
                       <h4 className="text-[#989b2e] text-sm font-medium mb-2">Brand</h4>
                       <p className="text-white font-semibold">{modelDetails.brand}</p>
                     </div>
                   )}
-                  {modelDetails.application && (
+                  {modelDetails?.application && (
                     <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4">
                       <h4 className="text-[#989b2e] text-sm font-medium mb-2">Application</h4>
                       <p className="text-white font-semibold">{modelDetails.application}</p>
+                    </div>
+                  )}
+                  {/* Fallback message if no details available */}
+                  {(!modelDetails?.details || modelDetails.details.length === 0) && !modelDetails?.brand && !modelDetails?.application && (
+                    <div className="col-span-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 text-center">
+                      <p className="text-gray-300">Product specifications will be available soon.</p>
                     </div>
                   )}
                 </div>
