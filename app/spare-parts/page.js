@@ -1,20 +1,91 @@
 'use client'
 import BgLayout from '@/components/templates/bgLayout'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
-import sparePartsData from './products.json'
 
 function SparePage() {
-  // Filter spare parts and accessories from imported data
-  const sparePartsItems = sparePartsData.filter(item => item.category === 'spare-parts');
-  const accessoriesItems = sparePartsData.filter(item => item.category === 'accessories');
+  const [sparePartsItems, setSparePartsItems] = useState([]);
+  const [accessoriesItems, setAccessoriesItems] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  // Fetch data from Notion API
+  useEffect(() => {
+    async function fetchSparePartsData() {
+      try {
+        const response = await fetch('/api/spare-parts-main');
+        if (!response.ok) {
+          throw new Error('Failed to fetch spare parts data');
+        }
+        const result = await response.json();
+        
+        if (result.success) {
+          const allItems = result.data;
+          
+          // Filter spare parts and accessories
+          const sparePartsFiltered = allItems.filter(item => item.category === 'spare-parts');
+          const accessoriesFiltered = allItems.filter(item => item.category === 'accessories');
+          
+          setSparePartsItems(sparePartsFiltered);
+          setAccessoriesItems(accessoriesFiltered);
+        } else {
+          throw new Error(result.error || 'Failed to fetch data');
+        }
+      } catch (err) {
+        console.error('Error fetching spare parts data:', err);
+        setError(err.message);
+        
+        // Fallback data if API fails
+        setSparePartsItems([
+          {
+            name: 'Piston Kit',
+            slug: 'piston-kit',
+            category: 'spare-parts',
+            label: 'Engine Parts',
+            image: 'https://bonhoeffermachines.com/en/public/parts-category/1_kit-de-piston.png'
+          },
+          {
+            name: 'Chainsaw Chain',
+            slug: 'chainsaw-chain',
+            category: 'spare-parts',
+            label: 'Cutting Parts',
+            image: 'https://bonhoeffermachines.com/en/public/parts-category/5_cadena-de-motosierra.png'
+          }
+        ]);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchSparePartsData();
+  }, []);
+
+  // Loading state
+  if (loading) {
+    return (
+      <BgLayout>
+        <div className="flex items-center justify-center min-h-screen">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-[#989b2e] mx-auto mb-4"></div>
+            <p className="text-white text-xl">Loading spare parts...</p>
+          </div>
+        </div>
+      </BgLayout>
+    );
+  }
 
   return (
     <BgLayout>
       {/* Mobile header spacer for fixed header on mobile/tablet */}
       <div className="block lg:hidden" style={{ height: '4em' }} aria-hidden="true" />
+
+      {error && (
+        <div className="bg-yellow-400/20 border border-yellow-400 text-yellow-400 px-4 py-2 rounded-lg mx-6 mb-4">
+          <p className="text-sm">Using fallback data: {error}</p>
+        </div>
+      )}
 
       {/* Hero Section */}
       <section className="flex items-center justify-center overflow-hidden mt-5">

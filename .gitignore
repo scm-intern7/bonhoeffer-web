@@ -246,3 +246,5 @@ runtime-config.json
 .env*.local
 # /public/
 # /data/
+
+/scripts/

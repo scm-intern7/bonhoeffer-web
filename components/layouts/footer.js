@@ -27,7 +27,7 @@ function Footer() {
       { href: "/fair", label: t('footer.events.fair', 'Trade Fairs') }
     ],
     support: [
-      { href: "/warranty-registration", label: t('footer.support.warranty', 'Warranty') },
+      { href: "/warranty", label: t('footer.support.warranty', 'Warranty') },
       { href: "/certifications", label: t('footer.support.certifications', 'Certifications') },
       { href: "/downloads", label: t('footer.support.downloads', 'Downloads') },
       { href: "/sponsorship", label: t('footer.support.sponsorship', 'Sponsorship') }
@@ -98,7 +98,7 @@ function Footer() {
               {t('footer.cta.description', 'Leading manufacturer of agricultural machinery worldwide.')}
             </p>
             <div className="bg-[#989b2e] px-3 py-1 rounded-md inline-block">
-              <Link href="/become-a-dealer">
+              <Link href="/dealer">
                 <span className="text-white text-xs font-bold">{t('footer.cta.becomeDealer', 'Become Our Dealer')}</span>
               </Link>
             </div>
