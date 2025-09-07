@@ -9,6 +9,8 @@ function ProductPage() {
   const [hoveredCategory, setHoveredCategory] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [hoverTimeout, setHoverTimeout] = useState(null);
+  const [productCategories, setProductCategories] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   // Handle mouse leave with delay
   const handleCategoryLeave = () => {
@@ -42,129 +44,28 @@ function ProductPage() {
     setHoverTimeout(timeout);
   };
 
-  // Product categories and products, hardcoded from product page.csv
-  const productCategories = [
-    {
-      id: 1,
-      name: "Agro Industrial",
-      products: [
-        { name: "Gasoline Water Pump", slug: "gasoline-water-pump", image: "https://bonhoeffermachines.com/public/images/segment/1_bomba-de-agua-gasolina.webp" },
-        { name: "Gasoline Engine", slug: "gasoline-engine", image: "https://bonhoeffermachines.com/public/images/segment/2_MOTOR-DE-GASOLINA.webp" },
-        { name: "Gasoline Generator", slug: "gasoline-generator", image: "https://bonhoeffermachines.com/public/images/segment/3_GENERADOR-DE-GASOLINA.webp" },
-        { name: "Gasoline Inverter", slug: "gasoline-inverter", image: "https://bonhoeffermachines.com/public/images/segment/4_INVERSOR-DE-GASOLINA.webp" },
-        { name: "Tiller", slug: "gasoline-tiller", image: "https://bonhoeffermachines.com/public/images/segment/5_MINI-CULTIVADOR-DE-GASOLIN.webp" }
-      ]
-    },
-    {
-      id: 2,
-      name: "Garden And Forestry",
-      products: [
-        { name: "Earth Auger", slug: "earth-auger", image: "https://bonhoeffermachines.com/public/images/segment/7_BARRENA_DE_TIERRA.webp" },
-        { name: "Water Pump 2 Stroke", slug: "water-pump-2-stroke", image: "https://bonhoeffermachines.com/public/images/segment/8_BOMBA_DE_AGUA_2_TIEMPO.webp" },
-        // { name: "Engine 2 Strokes", slug: "engine-2-stroke", image: "https://bonhoeffermachines.com/public/images/segment/9_MOTOR_DE_2_TIEMPOS.webp" },
-        { name: "Lawn Mower", slug: "lawn-mower", image: "https://bonhoeffermachines.com/public/images/segment/10_CORTAC%E5%BF%83PED.webp" },
-        { name: "Brush Cutter", slug: "brush-cutter", image: "https://bonhoeffermachines.com/public/images/segment/1_DESBROZADORA.webp" },
-        { name: "Backpack Brush Cutter", slug: "backpack-brush-cutter", image: "https://bonhoeffermachines.com/public/images/segment/2_DESBROZADORA_DE_MOCHILA.webp" },
-        { name: "Multi Tool", slug: "multi-tool", image: "https://bonhoeffermachines.com/public/images/segment/3_MULTIFUNCIONAL.webp" },
-        { name: "Chainsaw", slug: "chainsaw", image: "https://bonhoeffermachines.com/public/images/segment/4_MOTOSIERRA.webp" },
-        { name: "Hedge Trimmer", slug: "hedge-trimmer", image: "https://bonhoeffermachines.com/public/images/segment/5_CORTAZETOS.webp" },
-        { name: "Blower", slug: "blower", image: "https://bonhoeffermachines.com/public/images/segment/6_SOPLADORA.webp" }
-      ]
-    },
-    {
-      id: 3,
-      name: "Diesel Machines",
-      products: [
-        { name: "Diesel Water Pump", slug: "diesel-water-pump", image: "https://bonhoeffermachines.com/public/images/segment/1_BOMBA_DE_AGUA_DE_DIESEL.webp" },
-        { name: "Diesel Generator", slug: "diesel-generator", image: "https://bonhoeffermachines.com/public/images/segment/2_GENERADOR_DE_DIESEL.webp" },
-        { name: "Diesel Engine", slug: "diesel-engine", image: "https://bonhoeffermachines.com/public/images/segment/3_MOTOR_DE_DIESEL.webp" }
-      ]
-    },
-    {
-      id: 4,
-      name: "Electric Machine",
-      products: [
-        { name: "Electric Lawn Mower", slug: "electric", image: "https://bonhoeffermachines.com/public/images/segment/10_CORTAC%E5%BF%83PED.webp" },
-        { name: "Electric Pressure Washer", slug: "electric-pressure-washer", image: "https://bonhoeffermachines.com/public/images/segment/1_HIDROLAVADORA-DE-ELECTRICA.webp" }
-      ]
-    },
-    {
-      id: 5,
-      name: "Solar",
-      products: [
-        { name: "Panel Solar", slug: "solar-panel", image: "https://bonhoeffermachines.com/public/images/segment/1_PANEL_SOLAR.webp" },
-        { name: "Submersible Pump", slug: "submersible-pump", image: "https://bonhoeffermachines.com/public/images/segment/2_BOMBA_DE_SOLAR.webp" }
-      ]
-    },
-    {
-      id: 6,
-      name: "Sprayers And Fumigation",
-      products: [
-        { name: "Knapsack Sprayer", slug: "knapsack-sprayer", image: "https://bonhoeffermachines.com/public/images/segment/1_FUMIGADORA_DE_GASOLINA.webp" },
-        { name: "Manual Sprayer", slug: "manual-sprayer", image: "https://bonhoeffermachines.com/public/images/segment/2_FUMIGADORA_MANUAL.webp" },
-        { name: "Mist Duster", slug: "mistduster", image: "https://bonhoeffermachines.com/public/images/segment/4_ATOMIZADOR_DE_MOCHILA.webp" },
-        { name: "Thermal Fogger", slug: "thermal-fogger", image: "https://bonhoeffermachines.com/public/images/segment/5_NEBULIZADOR.webp" }
-      ]
-    },
-    {
-      id: 7,
-      name: "Domestic And Commercial",
-      products: [
-        { name: "Gasoline Pressure Washer", slug: "gasoline-pressure-washer", image: "https://bonhoeffermachines.com/public/images/segment/2_HIDROLAVADORA-DE-GASOLINA.webp" },
-        { name: "Pressure Washer Home Use", slug: "pressure-washer-home-use", image: "https://bonhoeffermachines.com/public/images/segment/3_Domestic-pressure-washer.webp" },
-        { name: "Direct Driven Air Compressor", slug: "direct-driven-air-compressor", image: "https://bonhoeffermachines.com/public/images/segment/4_Direct-driven-air-compressor.webp" },
-        { name: "Vacuum Cleaner Commercial Grade", slug: "vacuum-cleaner", image: "https://bonhoeffermachines.com/public/images/segment/5_ASPIRADORA-GRADO-COMERCIAL.webp" }
-      ]
-    },
-    {
-      id: 8,
-      name: "Industrial",
-      products: [
-        { name: "Electric Motors", slug: "electric-motor", image: "https://bonhoeffermachines.com/en/public/images/segment/2_electric-motors.webp" },
-        { name: "Centrifugal Pump", slug: "centrifugal-pump", image: "https://bonhoeffermachines.com/en/public/images/segment/4_BOMBA-CENTRO%CC%88FUGA.webp" },
-        { name: "Submersible Pump", slug: "submersible-pump", image: "https://bonhoeffermachines.com/public/images/segment/5_BOMBA-DE-SUMERGIBLE.webp" },
-        { name: "Welding Machines", slug: "welding-machines", image: "https://bonhoeffermachines.com/en/public/images/segment/1_MAQUINAS-DE-SOLDAR.webp" }
-      ]
-    },
-    {
-      id: 9,
-      name: "Construction",
-      products: [
-        { name: "Plate Compactor", slug: "plate-compactor", image: "https://bonhoeffermachines.com/public/images/segment/2_PLATO-COMPACTADOR.webp" },
-        { name: "Concrete Cutter", slug: "concrete-cutter", image: "https://bonhoeffermachines.in/public/images/segment/3_concrete-cutter.webp" },
-        { name: "Concrete Vibrator", slug: "concrete-vibrator", image: "https://bonhoeffermachines.in/public/images/segment/4_concrete-vibrator.webp" },
-        { name: "Concrete Power Trowel", slug: "concrete-power-trowel", image: "https://bonhoeffermachines.com/public/images/segment/5_PODER-CONCRETO-PALETA.webp" },
-        { name: "Tamping Rammer", slug: "tamping-rammer", image: "https://bonhoeffermachines.com/public/images/segment/1_MARCOS-DE-APISONAMIENTO.webp" }
-      ]
-    },
-    {
-      id: 10,
-      name: "Tools",
-      products: [
-        { name: "Power Tools", slug: "power-tools", image: "https://bonhoeffermachines.com/public/images/segment/ac-professional-home.webp" },
-        { name: "Hand Tools", slug: "hand-tools", image: "https://bonhoeffermachines.com/public/images/segment/hand-tools-home.webp" },
-        { name: "Garden Tools", slug: "garden-tools", image: "https://bonhoeffermachines.com/public/images/segment/garden-tools.webp" }
-      ]
-    },
-    {
-      id: 11,
-      name: "Wood Chipper And Chaff Cutter",
-      products: [
-        { name: "Wood Chipper", slug: "wood-chipper", image: "https://bonhoeffermachines.com/public/images/segment/wood-chipper-home.webp" },
-        { name: "Corn Thresher & Chaff Cutter", slug: "corn-thresher-chaff-cutter", image: "https://bonhoeffermachines.com/public/images/segment/chaff-cutter.webp" }
-      ]
-    },
-    {
-      id: 12,
-      name: "Special Segment",
-      products: [
-        { name: "Trencher", slug: "trencher", image: "https://bonhoeffermachines.com/public/images/segment/trencher-home.webp" },
-        { name: "Leaf Blower", slug: "leaf-blower", image: "https://bonhoeffermachines.com/public/images/segment/leaf-blower-home.webp" },
-        { name: "Mini Dumper", slug: "mini-dumper", image: "https://bonhoeffermachines.com/public/images/segment/mini-dumper-home.webp" },
-        { name: "Log Splitter", slug: "log-splitter", image: "https://bonhoeffermachines.com/public/images/segment/log-splitter-home.webp" }
-      ]
-    }
-  ];
+  // Fetch product categories from Notion API
+  useEffect(() => {
+    const fetchProductCategories = async () => {
+      try {
+        setLoading(true);
+        const response = await fetch('/api/product-categories');
+        const data = await response.json();
+        
+        if (data.success) {
+          setProductCategories(data.data);
+        } else {
+          console.error('Failed to fetch product categories:', data.error);
+        }
+      } catch (error) {
+        console.error('Error fetching product categories:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProductCategories();
+  }, []);
 
   const [responsive, setResponsive] = React.useState({ productsPerView: 3, cardWidth: 340, cardHeight: 510, imageHeight: 440, imageWidth: 280 });
 
@@ -195,7 +96,7 @@ function ProductPage() {
   const handleNext = React.useCallback((catIdx) => {
     setSliderPositions(prev => {
       const category = productCategories[catIdx];
-      if (category.products.length <= responsive.productsPerView) return prev;
+      if (!category || !category.products || category.products.length <= responsive.productsPerView) return prev;
 
       const updated = [...prev];
       const newPosition = prev[catIdx] - (responsive.cardWidth + 16);
@@ -239,7 +140,7 @@ function ProductPage() {
   const handlePrev = React.useCallback((catIdx) => {
     setSliderPositions(prev => {
       const category = productCategories[catIdx];
-      if (category.products.length <= responsive.productsPerView) return prev;
+      if (!category || !category.products || category.products.length <= responsive.productsPerView) return prev;
 
       const updated = [...prev];
       const newPosition = prev[catIdx] + (responsive.cardWidth + 16);
@@ -297,11 +198,11 @@ function ProductPage() {
     
     // Set up auto-slide for each category with infinite scroll
     productCategories.forEach((cat, catIdx) => {
-      if (cat.products.length > responsive.productsPerView) {
+      if (cat && cat.products && cat.products.length > responsive.productsPerView) {
         autoSlideInterval.current[catIdx] = setInterval(() => {
           setSliderPositions(prev => {
             const category = productCategories[catIdx];
-            if (category.products.length <= responsive.productsPerView) return prev;
+            if (!category || !category.products || category.products.length <= responsive.productsPerView) return prev;
 
             const updated = [...prev];
             const newPosition = prev[catIdx] - (responsive.cardWidth + 16);
@@ -348,17 +249,17 @@ function ProductPage() {
     return () => {
       autoSlideInterval.current.forEach(clearInterval);
     };
-  }, [responsive.productsPerView, responsive.cardWidth]);
+  }, [responsive.productsPerView, responsive.cardWidth, productCategories]);
 
-  // Initialize positions when responsive changes
+  // Initialize positions when responsive changes or when productCategories are loaded
   React.useEffect(() => {
     const cloneCount = Math.max(responsive.productsPerView, 3);
     const initialPositions = productCategories.map((category) => {
-      if (category.products.length <= responsive.productsPerView) return 0;
+      if (!category || !category.products || category.products.length <= responsive.productsPerView) return 0;
       return -(cloneCount * (responsive.cardWidth + 16));
     });
     setSliderPositions(initialPositions);
-  }, [responsive.productsPerView, responsive.cardWidth]);
+  }, [responsive.productsPerView, responsive.cardWidth, productCategories]);
 
   // Responsive state for products per view and card width
 
@@ -376,6 +277,19 @@ function ProductPage() {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  if (loading) {
+    return (
+      <BgLayout>
+        <div className="flex items-center justify-center min-h-screen">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-[#989b2e] mx-auto"></div>
+            <p className="text-white mt-4 text-xl">Loading Products...</p>
+          </div>
+        </div>
+      </BgLayout>
+    );
+  }
 
   return (
     <BgLayout>
@@ -450,7 +364,7 @@ function ProductPage() {
             <div className="relative min-h-[32vh] sm:min-h-[40vh] md:min-h-[65vh] lg:rounded-2xl rounded-none lg:ml-2 flex items-center justify-center overflow-hidden">
               <div className="absolute inset-0">
                 <Image
-                  src="https://bonhoeffermachines.in/public/images/product-banner.webp"
+                  src="/product-banner.avif"
                   alt="Products Banner"
                   fill
                   className="object-cover"
@@ -491,12 +405,12 @@ function ProductPage() {
             {/* Hero Section */}
             <div className="relative min-h-[32vh] flex items-center justify-center overflow-hidden">
               <div className="absolute inset-0">
-                <Image
-                  src="https://bonhoeffermachines.in/public/images/product-banner.webp"
+                <img
+                  src="/product-banner.avif"
                   alt="Products Banner"
-                  fill
+                  // fill
                   className="object-cover"
-                  priority
+                  // priority
                 />
                 <div className="absolute inset-0 bg-black/70" />
               </div>
@@ -553,6 +467,8 @@ function ProductPage() {
 
       {/* Product Categories Sections */}
       {productCategories.map((category, categoryIndex) => {
+        if (!category || !category.products) return null;
+        
         const extendedProducts = getExtendedProducts(category.products, responsive.productsPerView);
         const currentPosition = sliderPositions[categoryIndex] || 0;
         const hasInfiniteScroll = category.products.length > responsive.productsPerView;
@@ -651,10 +567,10 @@ function ProductPage() {
                           >
                             <div className="relative mb-4 sm:mb-6 rounded-xl overflow-hidden bg-white flex-1 flex items-center justify-center"
                               style={{ height: `${responsive.imageHeight}px`, width: `${responsive.imageWidth}px`, margin: '0 auto' }}>
-                              <Image
+                              <img
                                 src={actualProduct?.image || '/placeholder.png'}
                                 alt={actualProduct?.name || 'Product'}
-                                fill
+                                // fill
                                 className="object-contain p-2 group-hover:scale-110 transition-transform duration-300"
                                 style={{ objectFit: 'contain' }}
                               />

@@ -4923,7 +4923,7 @@
                 }
             ],
             "descriptionImage": "",
-            "showcaseImages": [],
+            "showcaseImages": ["https://bonhoeffermachines.com/en/public/machines/BON-P-DE-5.5HP.webp"],
             "isBannerImage": true,
             "bannerImage": "https://bonhoeffermachines.com/en/public/product_banner/diesel-engine-banner.webp",
             "isVideo": false,

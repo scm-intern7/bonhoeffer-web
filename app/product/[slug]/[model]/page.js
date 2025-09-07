@@ -16,6 +16,8 @@ function ModelSpecificPage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isZoomed, setIsZoomed] = useState(false);
   const [openFaqIndex, setOpenFaqIndex] = useState(0); // For FAQ accordion
+  const [loading, setLoading] = useState(true);
+  const [modelExists, setModelExists] = useState(true);
 
   const warranty36 = 'https://bonhoeffermachines.com/en/public/images/36-months.webp';
   const warranty12 = 'https://bonhoeffermachines.com/en/public/images/12-months.webp';
@@ -32,71 +34,8 @@ function ModelSpecificPage() {
       return productModels[modelName];
     }
 
-    // Default model details as fallback
-    const defaultDetails = {
-      name: `${getProductName(productSlug)} ${modelName.toUpperCase()}`,
-      power: '5.5 HP',
-      description: [
-        {
-          title: "Professional Grade Performance",
-          text: `Professional ${getProductName(productSlug).toLowerCase()} designed for heavy-duty applications.`
-        },
-        {
-          title: "Advanced Engineering",
-          text: `The ${modelName.toUpperCase()} model features advanced engineering and premium components for reliable performance in demanding conditions.`
-        }
-      ],
-      descriptionImage: getProductImage(productSlug),
-      showcaseImages: [
-        getProductImage(productSlug),
-        getProductImage(productSlug),
-        getProductImage(productSlug)
-      ],
-      isBannerImage: false,
-      bannerImage: "",
-      isVideo: false,
-      videoUrls: [],
-      isCatalogueLeft: false,
-      isCatalogueRight: false,
-      catalougeLeft: "",
-      catalougeRight: "",
-      isWorkshopManual: false,
-      workshopManualUrl: "",
-      isUserManual: false,
-      userManualUrl: "",
-      isBrochure: false,
-      brochureUrl: "",
-      isSpareParts: false,
-      sparePartsUrl: "",
-      warrantyTime: 36,
-      isFMTTI: false,
-      specifications: [
-        { label: 'Engine Name', value: 'Bonhoeffer Professional' },
-        { label: 'Cylinder Displacement', value: '163cc' },
-        { label: 'Net Power at Preset RPM', value: '5.5 HP @ 3600 RPM' },
-        { label: 'Air Filter Type', value: 'Dry Type Paper Element' },
-        { label: 'Fuel Tank Volume', value: '3.6 L' },
-        { label: 'Fuel Type', value: 'Unleaded Gasoline' },
-        { label: 'Engine Oil Capacity', value: '0.6 L' },
-        { label: 'Engine Oil Type', value: 'SAE 10W-30' },
-        { label: 'Operating Weight', value: '25 kg' },
-        { label: 'Dimensions (L*W*H)', value: '650*450*550 mm' },
-        { label: 'Warranty Period', value: '36 Months' },
-        { label: 'Certification', value: 'ISO 9001:2015' }
-      ],
-      features: [
-        'Reliable Bonhoeffer Engine: Equipped with robust and dependable engine ensuring powerful performance.',
-        'Professional Grade Construction: Built with premium materials for long-lasting durability.',
-        'Easy Operation: User-friendly controls and ergonomic design for comfortable operation.',
-        'Low Maintenance: Designed for minimal maintenance requirements and easy servicing.',
-        'Safety Features: Comprehensive safety systems protect both operator and equipment.',
-        'Efficient Performance: Optimized design delivers maximum efficiency and fuel economy.',
-        'Weather Resistant: Corrosion-resistant coating and weatherproof components.',
-        'Comprehensive Warranty: Backed by 36-month warranty and nationwide service support.'
-      ]
-    };
-
-    return defaultDetails;
+    // Return null if no model found - no fallback data
+    return null;
   };
 
   const getProductName = (slug) => {
@@ -144,15 +83,39 @@ function ModelSpecificPage() {
   // Get FAQ data from imported JSON
   const getFAQs = (productSlug) => {
     return faqData[productSlug] || [
-      { question: 'What is the warranty period?', answer: 'All our products come with a comprehensive 36-month warranty covering manufacturing defects.' },
-      { question: 'Where can I get service support?', answer: 'We have authorized service centers nationwide. Contact our customer support for the nearest location.' },
-      { question: 'What maintenance is required?', answer: 'Regular maintenance includes oil changes, air filter cleaning, and spark plug replacement as per the user manual.' }
+      // { question: 'What is the warranty period?', answer: 'All our products come with a comprehensive 36-month warranty covering manufacturing defects.' },
+      // { question: 'Where can I get service support?', answer: 'We have authorized service centers nationwide. Contact our customer support for the nearest location.' },
+      // { question: 'What maintenance is required?', answer: 'Regular maintenance includes oil changes, air filter cleaning, and spark plug replacement as per the user manual.' }
     ];
   };
 
-  const modelDetails = getModelDetails(slug, model);
-  const otherModels = getOtherModels(slug, model);
-  const faqs = getFAQs(slug);
+  const [modelDetails, setModelDetails] = useState(null);
+  const [otherModels, setOtherModels] = useState([]);
+  const [faqs, setFaqs] = useState([]);
+
+  // Check if model exists and set data
+  useEffect(() => {
+    const fetchModelData = () => {
+      setLoading(true);
+      
+      const details = getModelDetails(slug, model);
+      
+      if (details) {
+        setModelDetails(details);
+        setOtherModels(getOtherModels(slug, model));
+        setFaqs(getFAQs(slug));
+        setModelExists(true);
+      } else {
+        setModelExists(false);
+      }
+      
+      setLoading(false);
+    };
+
+    if (slug && model) {
+      fetchModelData();
+    }
+  }, [slug, model]);
 
   const handleDownload = (type) => {
     // Mock download functionality
@@ -202,17 +165,17 @@ function ModelSpecificPage() {
             {isZoomed && (
               <div className="fixed lg:absolute top-0 left-full ml-6 z-50 hidden xl:block w-96 h-96">
                 <div className="rounded-2xl border border-[#989b2e] shadow-2xl overflow-hidden bg-white w-full h-full relative">
-                  <Image
+                  <img
                     src={images[currentIndex]}
                     alt={alt + ' zoomed'}
-                    fill
+                    // fill
                     className="object-contain"
                     style={{
                       transform: `scale(2.5) translate(${-zoomPos.x * 60 + 30}%, ${-zoomPos.y * 60 + 30}%)`,
                       transition: 'transform 0.1s',
                     }}
                     draggable={false}
-                    priority
+                    // priority
                   />
                 </div>
               </div>
@@ -249,10 +212,10 @@ function ModelSpecificPage() {
               }`}
               aria-label={`View image ${idx + 1}`}
             >
-              <Image
+              <img
                 src={img}
                 alt={alt + ' thumbnail ' + (idx + 1)}
-                fill
+                // fill
                 className="object-contain p-1 sm:p-2 bg-white"
                 draggable={false}
               />
@@ -357,7 +320,7 @@ function ModelSpecificPage() {
                   />
                 </div>
                 {video.title && (
-                  <div className="mt-3 text-center text-white text-base font-semibold">
+                  <div className="mt-3 text-center text-white text-lg font-semibold">
                     {video.title}
                   </div>
                 )}
@@ -371,7 +334,7 @@ function ModelSpecificPage() {
             transition={{ duration: 1 }}
           >
             <motion.h1 
-              className="text-3xl md:text-5xl font-bold md:mb-4"
+              className="text-3xl md:text-5xl font-bold"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 0.3 }}
@@ -387,7 +350,7 @@ function ModelSpecificPage() {
         <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden mt-5">
           <div className="absolute inset-0">
             <Image
-              src="https://bonhoeffermachines.com/public/product_banner/product-banner.webp"
+              src="/product-banner.avif"
               alt="Product Banner"
               fill
               className="object-cover"
@@ -421,7 +384,7 @@ function ModelSpecificPage() {
     return (
       <motion.div
         className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 lg:justify-end"
-        initial={{ opacity: 0, x: 50 }}
+        initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
@@ -541,6 +504,63 @@ function ModelSpecificPage() {
     );
   }
 
+  if (loading) {
+    return (
+      <BgLayout>
+        <div className="flex items-center justify-center min-h-screen">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-[#989b2e] mx-auto mb-4"></div>
+            <p className="text-white text-lg">Loading model information...</p>
+          </div>
+        </div>
+      </BgLayout>
+    );
+  }
+
+  if (!modelExists || !modelDetails) {
+    return (
+      <BgLayout>
+        <div className="flex items-center justify-center py-15">
+          <div className="text-center px-6">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <div className="text-5xl md:text-7xl font-bold text-[#989b2e] mb-4">404</div>
+              <h1 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Model Not Found
+              </h1>
+              <p className="text-lg text-gray-300 mb-8 max-w-md mx-auto">
+                The model "{model}" for "{getProductName(slug)}" doesn't exist or has been moved.
+              </p>
+              <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <Link
+                  href={`/product/${slug}`}
+                  className="inline-flex items-center bg-[#989b2e] hover:bg-[#8a8c20] text-white px-4 py-3 rounded-full font-medium transition-all duration-300 gap-2"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                  Back to {getProductName(slug)} Models
+                </Link>
+                <Link
+                  href="/product"
+                  className="inline-flex items-center text-[#989b2e] hover:text-white border border-[#989b2e] hover:border-white px-6 py-3 rounded-full font-medium transition-all duration-300 gap-2"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z" />
+                  </svg>
+                  All Products
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </BgLayout>
+    );
+  }
+
   return (
     <BgLayout>
       {/* Hero Section */}
@@ -584,24 +604,24 @@ function ModelSpecificPage() {
               transition={{ duration: 0.8 }}
             >
               {modelDetails.isCatalogueLeft && (
-                <div className="relative w-full aspect-[2492/3508] h-full max-h-96 sm:max-h-[500px] md:max-h-[600px]">
-                  <Image
+                <div className="relative w-full aspect-[2492/3508] h-full max-h-110 sm:max-h-[550px] md:max-h-[750px]">
+                  <img
                     src={modelDetails.catalougeLeft}
                     alt={`${modelDetails.name} Leaflet Left`}
-                    fill
+                    // fill
                     className="object-contain bg-white rounded-xl shadow-md"
-                    priority
+                    // priority
                   />
                 </div>
               )}
               {modelDetails.isCatalogueRight && (
-                <div className="relative w-full aspect-[2492/3508] h-full max-h-96 sm:max-h-[500px] md:max-h-[600px]">
-                  <Image
+                <div className="relative w-full aspect-[2492/3508] h-full max-h-110 sm:max-h-[550px] md:max-h-[750px]">
+                  <img
                     src={modelDetails.catalougeRight}
                     alt={`${modelDetails.name} Leaflet Right`}
-                    fill
+                    // fill
                     className="object-contain bg-white rounded-xl shadow-md"
-                    priority
+                    // priority
                   />
                 </div>
               )}
@@ -649,7 +669,7 @@ function ModelSpecificPage() {
             </motion.div>
 
             {/* Right - Certification Seals */}
-            <div className="order-2 lg:order-none">
+            <div className="order-2">
               <WarrantyCertifications />
             </div>
           </div>
@@ -666,7 +686,7 @@ function ModelSpecificPage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="order-2 lg:order-1"
+              className="order-1"
             >
               <ExZoomGallery
                 images={modelDetails.showcaseImages}
@@ -682,7 +702,7 @@ function ModelSpecificPage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="order-1 lg:order-2"
+              className="order-2"
             >
               {activeView === 'specifications' ? (
                 <div className="grid grid-cols-1 gap-3 sm:gap-4">
@@ -726,6 +746,7 @@ function ModelSpecificPage() {
       {/* Product Description & Model Description */}
       <section className="py-8 sm:py-12 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
+          { modelDetails.descriptionImage && (
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             {/* Left - Product & Model Descriptions */}
             <motion.div
@@ -748,6 +769,7 @@ function ModelSpecificPage() {
             </motion.div>
 
             {/* Right - Labeled Product Image */}
+            { modelDetails.descriptionImage && (
             <motion.div
               className="relative h-full rounded-2xl overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10 order-1 lg:order-2"
               initial={{ opacity: 0, x: -50 }}
@@ -763,75 +785,123 @@ function ModelSpecificPage() {
               />
               {/* You can add labeled callouts here */}
             </motion.div>
+            )}
           </div>
+          )}
+
+          { !modelDetails.descriptionImage && (
+          <div className="">
+            {/* Left - Product & Model Descriptions */}
+            <motion.div
+              className=""
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <div>
+                <div className="space-y-4">
+                  {modelDetails.description.map((desc, idx) => (
+                    <div key={idx}>
+                      {desc.title && <h3 className="text-xl sm:text-2xl font-bold text-[#989b2e] mb-3 sm:mb-4">{desc.title}</h3>}
+                      <p className="text-gray-100 text-sm sm:text-base">{desc.text}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Right - Labeled Product Image */}
+            { modelDetails.descriptionImage && (
+            <motion.div
+              className="relative h-full rounded-2xl overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10 order-1 lg:order-2"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <Image
+                src={modelDetails.descriptionImage}
+                alt={`${modelDetails.name} labeled view`}
+                fill
+                className="object-contain p-4 sm:p-8 bg-white"
+              />
+              {/* You can add labeled callouts here */}
+            </motion.div>
+            )}
+          </div>
+          )}
         </div>
       </section>
 
       {/* FAQs */}
-      <section className="py-12 sm:py-20 px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto">
-          <motion.div
-            className="text-center mb-12 sm:mb-16"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-white">
-              Frequently Asked <span className='text-[#989b2e]'>Questions</span>
-            </h2>
-          </motion.div>
+      { faqs.length > 0 && (
+        <section className="py-12 sm:py-20 px-4 sm:px-6">
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              className="text-center mb-12 sm:mb-16"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-white">
+                Frequently Asked <span className='text-[#989b2e]'>Questions</span>
+              </h2>
+            </motion.div>
 
-          <div className="space-y-3 sm:space-y-4">
-            {faqs.map((faq, index) => {
-              const isOpen = openFaqIndex === index;
-              return (
-                <motion.div
-                  key={index}
-                  className={`bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl transition-all duration-300 overflow-hidden ${isOpen ? 'shadow-lg' : ''}`}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.3, delay: index * 0.01 }}
-                >
-                  <button
-                    className="w-full flex justify-between items-center text-left p-4 sm:p-6 focus:outline-none"
-                    onClick={() => setOpenFaqIndex(isOpen ? -1 : index)}
-                    aria-expanded={isOpen}
+            <div className="space-y-3 sm:space-y-4">
+              {faqs.map((faq, index) => {
+                const isOpen = openFaqIndex === index;
+                return (
+                  <motion.div
+                    key={index}
+                    className={`bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl transition-all duration-300 overflow-hidden ${isOpen ? 'shadow-lg' : ''}`}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.3, delay: index * 0.01 }}
                   >
-                    <span className="text-base sm:text-lg font-semibold text-white pr-4">{faq.question}</span>
-                    <svg
-                      className={`w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 text-white transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
+                    <button
+                      className="w-full flex justify-between items-center text-left p-4 sm:p-6 focus:outline-none cursor-pointer"
+                      onClick={() => setOpenFaqIndex(isOpen ? -1 : index)}
+                      aria-expanded={isOpen}
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
-                  <div
-                    className="transition-all duration-300 px-4 sm:px-6"
-                    style={{
-                      maxHeight: isOpen ? '500px' : '0px',
-                      opacity: isOpen ? 1 : 0,
-                      pointerEvents: isOpen ? 'auto' : 'none',
-                    }}
-                  >
-                    <p className="text-gray-300 leading-relaxed mb-2 text-sm sm:text-base">{faq.answer}</p>
-                  </div>
-                </motion.div>
-              );
-            })}
+                      <span className="text-base sm:text-lg font-semibold text-white pr-4">{faq.question}</span>
+                      <svg
+                        className={`w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 text-white transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    <div
+                      className="transition-all duration-300 px-4 sm:px-6"
+                      style={{
+                        maxHeight: isOpen ? '500px' : '0px',
+                        opacity: isOpen ? 1 : 0,
+                        pointerEvents: isOpen ? 'auto' : 'none',
+                      }}
+                    >
+                      <p className="text-gray-300 leading-relaxed mb-2 text-sm sm:text-base">{faq.answer}</p>
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Other Models */}
-      <section className="pb-12 sm:pb-20 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            className="text-center mb-12 sm:mb-16"
-            initial={{ opacity: 0, y: 50 }}
+      {otherModels.length > 1 && (
+        <section className="pb-12 sm:pb-20 px-4 sm:px-6">
+          <div className="max-w-7xl mx-auto">
+            <motion.div
+              className="text-center mb-12 sm:mb-16"
+              initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
@@ -867,13 +937,14 @@ function ModelSpecificPage() {
                   <h3 className="text-base sm:text-lg font-bold text-white mb-0 group-hover:text-[#989b2e] transition-colors text-center">
                     {otherModel.name}
                   </h3>
-                  {/* <p className="text-gray-300 text-center">{otherModel.power}</p> */}
+                  <p className="text-gray-300 text-center">{otherModel.power}</p>
                 </motion.div>
               </Link>
             ))}
           </div>
         </div>
       </section>
+    )}
 
       {/* Navigation */}
       <section className="pb-5 px-4 sm:px-6 text-center">
