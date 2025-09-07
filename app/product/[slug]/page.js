@@ -154,7 +154,7 @@ function ProductSpecificPage() {
                 Product Not Found
               </h1>
               <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-md mx-auto">
-                The product "{slug}" you're looking for doesn't exist or has been moved.
+                The product &quot;{slug}&quot; you&apos;re looking for doesn&apos;t exist or has been moved.
               </p>
               <Link
                 href="/product"

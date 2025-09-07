@@ -532,7 +532,7 @@ function ModelSpecificPage() {
                 Model Not Found
               </h1>
               <p className="text-lg text-gray-300 mb-8 max-w-md mx-auto">
-                The model "{model}" for "{getProductName(slug)}" doesn't exist or has been moved.
+                The model &quot;{model}&quot; for &quot;{getProductName(slug)}&quot; doesn&apos;t exist or has been moved.
               </p>
               <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
                 <Link
