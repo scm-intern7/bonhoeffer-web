@@ -135,7 +135,7 @@ function ProductPage() {
       
       return updated;
     });
-  }, [responsive.productsPerView, responsive.cardWidth]);
+  }, [responsive.productsPerView, responsive.cardWidth, productCategories]);
 
   const handlePrev = React.useCallback((catIdx) => {
     setSliderPositions(prev => {
@@ -179,8 +179,20 @@ function ProductPage() {
       
       return updated;
     });
-  }, [responsive.productsPerView, responsive.cardWidth]);
+  }, [responsive.productsPerView, responsive.cardWidth, productCategories]);
 
+  React.useEffect(() => {
+    const cloneCount = Math.max(responsive.productsPerView, 3);
+    const initialPositions = productCategories.map((category) => {
+      if (!category || !category.products || category.products.length <= responsive.productsPerView) return 0;
+      return -(cloneCount * (responsive.cardWidth + 16));
+    });
+    setSliderPositions(initialPositions);
+
+    // Ensure isTransitioning array matches categories length
+    setIsTransitioning(productCategories.map(() => true));
+  }, [responsive.productsPerView, responsive.cardWidth, productCategories]);
+  
   React.useEffect(() => {
     // Clear all intervals on unmount
     return () => {
@@ -495,7 +507,7 @@ function ProductPage() {
                   <div className="absolute right-0 -top-7 sm:-top-10 flex space-x-2 z-10">
                     <button
                       onClick={() => handlePrev(categoryIndex)}
-                      className="bg-[#989b2e] hover:bg-[#7a7d24] text-white p-2 sm:p-3 rounded-full shadow-lg transition-colors duration-300"
+                      className="bg-[#989b2e] hover:bg-[#7a7d24] text-white p-2 sm:p-3 rounded-full shadow-lg transition-colors duration-300 cursor-pointer"
                       aria-label="Previous"
                     >
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -504,7 +516,7 @@ function ProductPage() {
                     </button>
                     <button
                       onClick={() => handleNext(categoryIndex)}
-                      className="bg-[#989b2e] hover:bg-[#7a7d24] text-white p-2 sm:p-3 rounded-full shadow-lg transition-colors duration-300"
+                      className="bg-[#989b2e] hover:bg-[#7a7d24] text-white p-2 sm:p-3 rounded-full shadow-lg transition-colors duration-300 cursor-pointer"
                       aria-label="Next"
                     >
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
