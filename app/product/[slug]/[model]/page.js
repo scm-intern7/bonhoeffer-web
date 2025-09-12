@@ -5,9 +5,6 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
-import faqData from './faq.json'
-import modelsData from './models.json'
-import otherModelsData from './others.json'
 
 function ModelSpecificPage() {
   const params = useParams();
@@ -26,16 +23,16 @@ function ModelSpecificPage() {
   const isoImage = 'https://bonhoeffermachines.com/en/public/images/iso.png';
   const fmttiImage = 'https://bonhoeffermachines.com/en/public/images/fmtti.webp';
 
-  // Get model details based on slug and model
-  const getModelDetails = (productSlug, modelName) => {
-    // Try to get model details from imported JSON data
-    const productModels = modelsData[productSlug];
-    if (productModels && productModels[modelName]) {
-      return productModels[modelName];
+  // Fetch model details from Notion API
+  const fetchModelDetails = async (productSlug, modelName) => {
+    try {
+      const response = await fetch(`/api/model-details?productSlug=${productSlug}&modelName=${modelName}`);
+      const data = await response.json();
+      return data && Object.keys(data).length > 0 ? data : null;
+    } catch (error) {
+      console.error('Error fetching model details:', error);
+      return null;
     }
-
-    // Return null if no model found - no fallback data
-    return null;
   };
 
   const getProductName = (slug) => {
@@ -71,22 +68,28 @@ function ModelSpecificPage() {
     return imageMap[slug] || 'https://bonhoeffermachines.com/public/product_banner/1-gasoline-water-pump.webp';
   };
 
-  // Get other models for the same product
-  const getOtherModels = (productSlug, currentModel) => {
-    // Use imported others data
-    const productModels = otherModelsData[productSlug] || [];
-    
-    // Filter out the current model and return the others
-    return productModels.filter(m => m.name.toLowerCase() !== currentModel.toLowerCase());
+  // Fetch other models from Notion API
+  const fetchOtherModels = async (productSlug, currentModel) => {
+    try {
+      const response = await fetch(`/api/other-models?productSlug=${productSlug}&currentModel=${currentModel}`);
+      const data = await response.json();
+      return data || [];
+    } catch (error) {
+      console.error('Error fetching other models:', error);
+      return [];
+    }
   };
 
-  // Get FAQ data from imported JSON
-  const getFAQs = (productSlug) => {
-    return faqData[productSlug] || [
-      // { question: 'What is the warranty period?', answer: 'All our products come with a comprehensive 36-month warranty covering manufacturing defects.' },
-      // { question: 'Where can I get service support?', answer: 'We have authorized service centers nationwide. Contact our customer support for the nearest location.' },
-      // { question: 'What maintenance is required?', answer: 'Regular maintenance includes oil changes, air filter cleaning, and spark plug replacement as per the user manual.' }
-    ];
+  // Fetch FAQs from Notion API
+  const fetchFAQs = async (productSlug) => {
+    try {
+      const response = await fetch(`/api/model-faqs?productSlug=${productSlug}`);
+      const data = await response.json();
+      return data || [];
+    } catch (error) {
+      console.error('Error fetching FAQs:', error);
+      return [];
+    }
   };
 
   const [modelDetails, setModelDetails] = useState(null);
@@ -95,17 +98,27 @@ function ModelSpecificPage() {
 
   // Check if model exists and set data
   useEffect(() => {
-    const fetchModelData = () => {
+    const fetchModelData = async () => {
       setLoading(true);
       
-      const details = getModelDetails(slug, model);
-      
-      if (details) {
-        setModelDetails(details);
-        setOtherModels(getOtherModels(slug, model));
-        setFaqs(getFAQs(slug));
-        setModelExists(true);
-      } else {
+      try {
+        // Fetch all data in parallel
+        const [details, otherModelsList, faqsList] = await Promise.all([
+          fetchModelDetails(slug, model),
+          fetchOtherModels(slug, model),
+          fetchFAQs(slug)
+        ]);
+        
+        if (details) {
+          setModelDetails(details);
+          setOtherModels(otherModelsList);
+          setFaqs(faqsList);
+          setModelExists(true);
+        } else {
+          setModelExists(false);
+        }
+      } catch (error) {
+        console.error('Error fetching model data:', error);
         setModelExists(false);
       }
       

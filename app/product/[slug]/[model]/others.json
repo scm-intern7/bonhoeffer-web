@@ -47,13 +47,34 @@
 
     ],
 
-    "gasoline-tiller": [
-
-    ],
-
     "brush-cutter": [
         { "name": "BON-P-BC36", "feature": "Displacement 36 CC", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-BC36.webp" },
         { "name": "BON-ET-BC53", "feature": "DISPLACEMENT 53 CC", "image": "https://bonhoeffermachines.com/en/public/machines/BON-ET-BC53.webp" },
         { "name": "BON-P-BC45", "feature": "DISPLACEMENT 45 CC", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-BC45.webp" }
+    ],
+
+
+    "gasoline-tiller": [
+        { "name": "BON-DI-950", "feature": "Power: 10.0 HP", "image": "https://bonhoeffermachines.com/en/public/machines/BON-DI-950.webp" },
+        { "name": "BON-GT-500B", "feature": "Power: 3.5 HP", "image": "https://bonhoeffermachines.com/en/public/machines/BON-GT-500B.webp" },
+        { "name": "BON-GT-950T", "feature": "Power: 7.0 HP", "image": "https://bonhoeffermachines.com/en/public/machines/BON-GT-950T.webp" }
+    ],
+
+    "multi-tool": [
+        { "name": "BON-P-MT45", "feature": "Multi Tool", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-MT45.webp" }
+    ],
+
+    "chainsaw": [
+        { "name": "BON-P-CS40", "feature": "Displacement 40 CC", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-CS40.webp" },
+        { "name": "BON-P-CS55", "feature": "Displacement 55 CC", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-CS55.webp" },
+        { "name": "BON-P-CS65", "feature": "Displacement 65 CC", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-CS65.webp" }
+    ],
+
+    "backpack-brush-cutter": [
+        { "name": "BON-P-BP-BC45", "feature": "Displacement 45 CC", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-BP-BC45.webp" }
+    ],
+
+    "hedge-trimmer": [
+        { "name": "BON-P-HT-23", "feature": "Displacement 23 CC", "image": "https://bonhoeffermachines.com/en/public/machines/BON-P-HT23.webp" }
     ]
 }

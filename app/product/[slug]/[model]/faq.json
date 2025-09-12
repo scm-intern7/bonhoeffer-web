@@ -114,5 +114,193 @@
             "answer": "Assemble the tool as per the user manual. Adjust the blades and depth to suit the soil type and crop spacing. Start the motor and guide the tool along the crop rows."
         }
     ],
-    "backpack-brush-cutter": []
+
+    "brush-cutter": [
+        {
+            "question": "What is a two-stroke Bonhoeffer machine?",
+            "answer": "A two-stroke Bonhoeffer machine is an engine designed for efficient operation, commonly used in specific industrial applications, utilizing a two-stroke cycle for power generation."
+        },
+        {
+            "question": "What are the benefits of using a Bonhoeffer machine?",
+            "answer": [
+                "Efficiency: Provides high power output relative to size. ",
+                "Compact Design: Takes up less space compared to four-stroke engines. ",
+                "Simplicity: Fewer parts mean easier maintenance and repair. "
+            ]
+        },
+        {
+            "question": "How does a two-stroke Bonhoeffer machine work?",
+            "answer": "It operates on a two-stroke cycle, where the intake and exhaust processes occur in one crankshaft revolution, allowing for a quicker power stroke and improved performance."
+        },
+        {
+            "question": "What maintenance is necessary for optimal performance?",
+            "answer": [
+                "Regular Oil Mixing: Ensure the correct oil-to-fuel ratio.",
+                "Inspect the Spark Plug: Check for wear and replace as needed.",
+                "Clean Air Filters: Keep filters free from debris to maintain airflow.",
+                "Check Fuel Lines: Look for any signs of wear or leaks."
+            ]
+        },
+        {
+            "question": "Why is my Bonhoeffer machine smoking?",
+            "answer": "Excessive smoke can indicate an oil-rich mixture or an internal issue. Ensure proper mixing ratios and consult a technician if the problem continues."
+        },
+        {
+            "question": "How can I improve fuel efficiency?",
+            "answer": [
+                "Use high-quality fuel and oil.",
+                "Keep the engine well-maintained.",
+                "Avoid prolonged idling and unnecessary revving."
+            ]
+        },
+        {
+            "question": "What are common troubleshooting tips?",
+            "answer": [
+                "Starting Issues: Check the spark plug and fuel supply.",
+                "Loss of Power: Inspect the air filter and exhaust for blockages.",
+                "Overheating: Ensure proper cooling and check the fuel mix."
+            ]
+        },
+        {
+            "question": "Where can I find replacement parts?",
+            "answer": "Replacement parts can usually be obtained through authorized dealers or the manufacturer’s website. Always ensure compatibility with your specific model."
+        }
+    ],
+
+    "multi-tool": [
+        {
+            "question": "What is the Bonhoeffer Multi Tool BON-P-MT45 used for?",
+            "answer": "The BON-P-MT45 is a versatile multitool designed for various tasks such as pole sawing, grass trimming, and hedge trimming, offering professional-grade performance for both DIY users and contractors."
+        },
+        {
+            "question": "What are the main features of the BON-P-MT45 Multi Tool?",
+            "answer": "It includes better axle and motor connectivity for low vibration, a double-layer air filter for extended engine life, and a superior spark plug structure that delivers 30% more power compared to traditional motors."
+        },
+        {
+            "question": "What is the engine specification of the BON-P-MT45?",
+            "answer": "The engine displacement is 44.8 cc, delivering 2.5 hp. It is a 2-stroke, single-cylinder, air-cooled engine."
+        },
+        {
+            "question": "What is the fuel and oil ratio required?",
+            "answer": "The BON-P-MT45 requires a 25:1 fuel-to-oil ratio for optimal performance."
+        },
+        {
+            "question": "What is the fuel tank capacity?",
+            "answer": "The fuel tank can hold up to 920 ml of fuel."
+        },
+        {
+            "question": "How does the axle and motor connectivity help?",
+            "answer": "The advanced axle and motor connectivity system significantly reduces vibrations, ensuring smoother operation and easier handling even during demanding tasks."
+        },
+        {
+            "question": "What cutting tools are included in the BON-P-MT45?",
+            "answer": "It comes with a pole saw (Oregon 10” bar), grass trimmer (2.8 mm nylon thread), 3T and 2T blades, and a hedge trimmer with a 24mm cutting length."
+        },
+        {
+            "question": "What is the chain oil tank capacity?",
+            "answer": "The chain oil tank capacity is 125 ml."
+        },
+        {
+            "question": "How does the double-layer air filter improve performance?",
+            "answer": "The double-layer air filter protects the engine from dust and debris, extending engine life, ensuring reliable performance, and reducing maintenance costs."
+        },
+        {
+            "question": "What warranty is offered with the BON-P-MT45?",
+            "answer": "The BON-P-MT45 comes with a 15-month warranty."
+        }
+    ],
+
+    "chainsaw": [
+        {
+            "question": "What is a two-stroke Bonhoeffer machine?",
+            "answer": "A two-stroke Bonhoeffer machine is an engine designed for efficient operation, commonly used in specific industrial applications, utilizing a two-stroke cycle for power generation."
+        },
+        {
+            "question": "What are the benefits of using a Bonhoeffer machine?",
+            "answer": [
+                "Efficiency: Provides high power output relative to size.",
+                "Compact Design: Takes up less space compared to four-stroke engines.",
+                "Simplicity: Fewer parts mean easier maintenance and repair."
+            ]
+        },
+        {
+            "question": "How does a two-stroke Bonhoeffer machine work?",
+            "answer": "It operates on a two-stroke cycle, where the intake and exhaust processes occur in one crankshaft revolution, allowing for a quicker power stroke and improved performance."
+        },
+        {
+            "question": "What maintenance is necessary for optimal performance?",
+            "answer": [
+                "Regular Oil Mixing: Ensure the correct oil-to-fuel ratio.",
+                "Inspect the Spark Plug: Check for wear and replace as needed.",
+                "Clean Air Filters: Keep filters free from debris to maintain airflow.",
+                "Check Fuel Lines: Look for any signs of wear or leaks."
+            ]
+        },
+        {
+            "question": "Why is my Bonhoeffer machine smoking?",
+            "answer": "Excessive smoke can indicate an oil-rich mixture or an internal issue. Ensure proper mixing ratios and consult a technician if the problem continues."
+        },
+        {
+            "question": "How can I improve fuel efficiency?",
+            "answer": [
+                "Use high-quality fuel and oil.",
+                "Keep the engine well-maintained.",
+                "Avoid prolonged idling and unnecessary revving."
+            ]
+        },
+        {
+            "question": "What are common troubleshooting tips?",
+            "answer": [
+                "Starting Issues: Check the spark plug and fuel supply.",
+                "Loss of Power: Inspect the air filter and exhaust for blockages.",
+                "Overheating: Ensure proper cooling and check the fuel mix."
+            ]
+        },
+        {
+            "question": "Where can I find replacement parts?",
+            "answer": "Replacement parts can usually be obtained through authorized dealers or the manufacturer’s website. Always ensure compatibility with your specific model."
+        }
+    ],
+
+    "backpack-brush-cutter": [
+        {
+            "question": "Can I use synthetic oil in my Bonhoeffer engine?",
+            "answer": "Bonhoeffer engines are developed, tested and certified with petroleum based motor oils as a lubricant. Synthetic oils may be used; however, any motor oil used in our engines must meet all oil requirements as stated in the owner Manual. In addition, recommended oil change intervals must be followed."
+        },
+        {
+            "question": "How do I check my oil?",
+            "answer": "Please see your owner's manual for detailed instructions for your specific model."
+        },
+        {
+            "question": "What fuel should I use in my Bonhoeffer Engine?",
+            "answer": "Bonhoeffer engines are designed and certified to run on regular unleaded gasoline containing no more than 5% ethanol (E10). Gasoline is allowed, by regulation, to contain a variety of additives. The same regulation limits how much of some additives, such as alcohol, can be included in the fuel and still allow it to be sold as gasoline. If you look in a Bonhoeffer product owner’s manual, you will see that a maximum of 5% ethanol is allowed (other oxygenates are also listed). Bonhoeffer engines are designed for good performance and efficient operation using gasoline containing from 0 to 5% ethanol. Always refer to the owner’s manual for your Bonhoeffer to get a list of recommended fuel and the current approved additives. For more information, see our Fuel Recommendations page. Download or print a handout on how to avoid fuel-related problems for your Bonhoeffer general purpose engine"
+        }
+    ],
+
+    "hedge-trimmer": [
+        {
+            "question": "What type of fuel do hedge trimmers use?",
+            "answer": "Most petrol-powered hedge trimmers use a 2-stroke engine that requires a fuel mixture of gasoline and 2-stroke oil, usually at a 50:1 ratio. Electric and battery-powered models do not require fuel."
+        },
+        {
+            "question": "How do I maintain the blades of my hedge trimmer?",
+            "answer": "After each use, clean the blades to remove sap and debris, then apply a light coating of oil to prevent rust. Regular sharpening is recommended to keep the blades cutting efficiently."
+        },
+        {
+            "question": "Are hedge trimmers heavy to use?",
+            "answer": "The weight of hedge trimmers varies by model. Petrol trimmers are usually heavier, while electric and cordless models are lighter and easier to handle for extended periods."
+        },
+        {
+            "question": "Can I use a hedge trimmer on thick branches?",
+            "answer": "Hedge trimmers are designed for twigs and branches up to a certain thickness (usually 15–25 mm depending on the model). For thicker branches, a pruning saw or chainsaw is recommended."
+        },
+        {
+            "question": "How can I reduce vibration and fatigue while using a hedge trimmer?",
+            "answer": "Choose a trimmer with anti-vibration features, use both hands while trimming, and take short breaks during longer sessions to reduce arm and hand strain."
+        },
+        {
+            "question": "Are hedge trimmers safe to use?",
+            "answer": "Yes, when used correctly. Always wear safety gloves, goggles, and hearing protection, and ensure the trimmer is turned off before making any adjustments or cleaning the blades."
+        }
+    ]
 }
