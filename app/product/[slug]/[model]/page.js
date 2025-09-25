@@ -244,9 +244,7 @@ function ModelSpecificPage() {
   const renderBannerSection = () => {
     if (modelDetails.isBannerImage && modelDetails.bannerImage) {
       // Banner image (single or array)
-      const bannerSrc = Array.isArray(modelDetails.bannerImage)
-        ? modelDetails.bannerImage[0]
-        : modelDetails.bannerImage;
+      const bannerSrc = modelDetails.bannerImage;
       return (
         // <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden mt-5">
         //   <div className="absolute inset-0">
@@ -277,12 +275,12 @@ function ModelSpecificPage() {
         // </section>
       <section className="relative h-[22vh] xs:h-[26vh] sm:h-[32vh] md:h-[38vh] lg:h-[44vh] min-h-[160px] sm:min-h-[200px] md:min-h-[260px] lg:min-h-[320px] flex items-center overflow-hidden mt-20 md:mt-20">
         <div className="absolute inset-0">
-          <Image
+          <img
             src={bannerSrc}
             alt="Product Banner"
-            fill
+            // fill
             className="object-cover object-left md:object-center"
-            priority
+            // priority
           />
           <div className="absolute inset-0 bg-black/10" />
         </div>
