@@ -1,0 +1,170 @@
+# Bonhoeffer Machines - LLMs.txt
+
+> This file provides context about Bonhoeffer Machines website structure, content, and functionality for AI models and language learning models.
+
+## Company Overview
+
+Bonhoeffer Machines is a leading manufacturer of high-quality agricultural and industrial machinery. The company specializes in reliable, durable equipment including generators, water pumps, lawn mowers, chainsaws, engines, and other power tools used in farming, construction, and industrial applications worldwide.
+
+## Website Structure
+
+### Core Pages
+- **Homepage (/)** - Company overview, featured products, global presence
+- **About Us (/about-us)** - Company history, mission, vision, leadership
+- **Products (/product)** - Complete product catalog with categories
+- **Contact Us (/contact-us)** - Contact information, inquiry forms
+- **Gallery (/gallery)** - Product images, company events, testimonials
+
+### Product Categories
+The website features detailed product pages for the following categories:
+
+1. **Generators**
+   - Diesel Generators (/product/diesel-generator)
+   - Gasoline Generators (/product/gasoline-generator) 
+   - Gasoline Inverters (/product/gasoline-inverter)
+
+2. **Water Pumps**
+   - Gasoline Water Pumps (/product/gasoline-water-pump)
+   - Diesel Water Pumps (/product/diesel-water-pump)
+
+3. **Engines**
+   - Gasoline Engines (/product/gasoline-engine)
+   - Diesel Engines (/product/diesel-engine)
+
+4. **Garden & Lawn Equipment**
+   - Lawn Mowers (/product/lawn-mower)
+   - Brush Cutters (/product/brush-cutter)
+   - Backpack Brush Cutters (/product/backpack-brush-cutter)
+   - Chainsaws (/product/chainsaw)
+   - Hedge Trimmers (/product/hedge-trimmer)
+   - Leaf Blowers (/product/leaf-blower)
+
+5. **Agricultural Equipment**
+   - Gasoline Tillers (/product/gasoline-tiller)
+   - Mini Cultivators (/product/mini-cultivator)
+
+6. **Multi-Tools & Welding**
+   - Multi Tools (/product/multi-tool)
+   - Welding Machines (/product/welding-machines)
+
+### Business Pages
+- **Careers (/careers)** - Job opportunities and company culture
+- **Become a Dealer (/become-a-dealer)** - Partnership opportunities
+- **Certifications (/certifications)** - Quality standards and certifications
+- **Events (/events)** - Trade shows, exhibitions, company events
+- **Fair (/fair)** - Trade fair participation and exhibitions
+- **Sponsorship (/sponsorship)** - Sponsorship programs and partnerships
+- **Spare Parts (/spare-parts)** - Parts catalog and ordering information
+- **Warranty Registration (/warranty-registration)** - Product warranty registration
+
+### Legal Pages
+- **Privacy Policy (/privacy)** - Data privacy and protection policies
+- **Terms & Conditions (/terms)** - Terms of service and usage
+- **Cookies Policy (/cookies)** - Cookie usage and preferences
+
+## Product Information Structure
+
+Each product model page follows this structure:
+- **URL Pattern**: `/product/{category}/{model-name}`
+- **Content Includes**:
+  - Product name and model number
+  - High-resolution showcase images with zoom functionality
+  - Technical specifications (engine power, dimensions, capacity, etc.)
+  - Key features and benefits
+  - Product description and use cases
+  - Banner images or promotional videos
+  - Product catalogs (left/right pages)
+  - Downloadable resources (user manuals, brochures, spare parts lists)
+  - Warranty information (12, 15, 24, or 36 months)
+  - FAQ sections
+  - Related/other models in the same category
+
+## Technical Implementation
+
+### Framework & Technology
+- **Framework**: Next.js 15.3.3 with React
+- **Styling**: Tailwind CSS with custom design system
+- **Database**: Notion API for dynamic content management
+- **Internationalization**: Multi-language support (English, Spanish, Portuguese)
+- **Images**: Next.js Image optimization with external CDN
+- **Animations**: Framer Motion for smooth transitions
+
+### API Endpoints
+- `/api/model-details` - Fetch specific product model information
+- `/api/other-models` - Get related models in same category  
+- `/api/model-faqs` - Retrieve frequently asked questions
+- `/api/firebase-submit` - Handle form submissions
+
+### SEO & Performance
+- Server-side rendering (SSR) for all pages
+- Dynamic sitemap generation
+- Structured data (JSON-LD) implementation
+- Open Graph and Twitter Card meta tags
+- Progressive Web App (PWA) support
+- Optimized images and lazy loading
+
+## Content Management
+
+The website uses Notion databases for content management:
+- **Model Details Database**: Complete product specifications, features, images, documents
+- **FAQ Database**: Frequently asked questions organized by product category
+- **Other Models Database**: Related product suggestions and cross-references
+
+## Brand Guidelines
+
+### Visual Identity
+- **Primary Color**: #989b2e (Olive green)
+- **Secondary Colors**: Various shades of green and earth tones
+- **Typography**: Montserrat font family
+- **Logo**: Available in multiple formats and color variations
+
+### Messaging
+- Focus on quality, reliability, and durability
+- Emphasis on worldwide trust and professional-grade equipment
+- Technical excellence and innovative engineering
+- Comprehensive customer support and warranty coverage
+
+## Key Features
+
+### Product Showcase
+- Interactive image galleries with zoom functionality
+- 360-degree product views where available
+- Technical specification tables
+- Feature comparison tools
+- Download center for manuals and documentation
+
+### User Experience
+- Responsive design for all device types
+- Fast loading times with optimized assets
+- Intuitive navigation and search functionality
+- Multi-language content support
+- Accessible design following WCAG guidelines
+
+### Business Features
+- Dealer locator and partnership programs
+- Warranty registration and tracking
+- Spare parts ordering system
+- Event and trade show information
+- Career opportunities and recruitment
+
+## Target Audience
+
+### Primary Users
+- **Agricultural Professionals**: Farmers, agricultural contractors, rural businesses
+- **Industrial Users**: Construction companies, manufacturing facilities, service providers  
+- **Dealers & Distributors**: Equipment dealers, machinery distributors, retail partners
+- **Maintenance Professionals**: Service technicians, repair shops, parts suppliers
+
+### Geographic Markets
+- Global presence with focus on developing markets
+- Strong presence in Latin America, Africa, and Asia
+- Growing markets in Europe and North America
+- Localized content and support for key regions
+
+## Contact Information
+
+For technical support, business inquiries, or partnership opportunities, users can access contact forms and information through the website's contact pages. The company maintains customer service in multiple languages and provides comprehensive technical support for all products.
+
+---
+
+*This llms.txt file is maintained to help AI models understand the Bonhoeffer Machines website structure and provide accurate information about the company's products and services.*
