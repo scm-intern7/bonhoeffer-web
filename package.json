@@ -25,15 +25,17 @@
     "locomotive-scroll": "^4.1.4",
     "lucide-react": "^0.525.0",
     "motion": "^12.16.0",
-    "next": "15.3.3",
+    "next": "^15.5.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
     "react-intersection-observer": "^9.16.0",
+    "react-server-dom-webpack": "^19.2.0",
     "react-spring": "^10.0.1",
     "tailwind-merge": "^3.3.1",
     "three": "^0.178.0",
-    "three-globe": "^2.44.0"
+    "three-globe": "^2.44.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
